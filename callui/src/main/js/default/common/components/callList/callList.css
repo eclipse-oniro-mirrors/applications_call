@@ -1,0 +1,82 @@
+/*
+ * Copyright (c) 2021 Huawei Device Co., Ltd.
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+.list-wrap {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    height: 256px;
+    position: relative;
+    top: -100px;
+}
+
+.list-item {
+    width: 100%;
+    margin: 0 48px;
+    height: 128px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid grey;
+}
+
+.left text {
+    color: #fff;
+    font-size: 30px;
+}
+
+.right div {
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.60);
+}
+
+.icon text {
+    font-size: 18px;
+}
+
+.time {
+    margin-left: 16px;
+    font-size: 30px;
+    color: #fff;
+}
+
+.time text {
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.60);
+}
+
+.iconCall {
+    margin-left: 30px;
+    margin-bottom: 10px;
+    width: 50px;
+    height: 40px;
+    background-image: url(assets/picture/userCall.png);
+    background-repeat: no-repeat;
+    background-size: 50px;
+}
+
+.hold text {
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 28px;
+}
