@@ -1,0 +1,56 @@
+<!--
+ /*
+ * Copyright (c) 2021 Huawei Device Co., Ltd.
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+
+<element name="contact-card" src="../../common/components/contactCard/contactCard.hml"></element>
+<element name="key-board" src="../../common/components/keyboard/keyboard.hml"></element>
+<element name="func-btn-group" src="../../common/components/funcBtnGroup/funcBtnGroup.hml"></element>
+<element name="bottom-button" src="../../common/components/bottomBtn/bottomBtn.hml"></element>
+<element name="incoming-com" src="../../common/components/IncomingCom/IncomingCom.hml"></element>
+
+<div class="container">
+    <div class="card-wrap">
+        <contact-card id="contactCard"
+                      call-data="{{ callData }}"
+                      is-show-keyboard="{{ isShowKeyboard }}"
+                      kb-command="{{ inputValue }}"
+                      call-List="{{ callList }}">
+        </contact-card>
+    </div>
+
+<!-- outgoing and calling -->
+    <div if="{{ callState !== callStateObj.CALL_STATUS_WAITING && callState !== callStateObj.CALL_STATUS_INCOMING }}"
+         class="menu-wrap">
+        <div show="{{ ! isShowKeyboard }}" class="func-btn-group">
+            <func-btn-group id="funcBtnGroup"
+                            call-data="{{ callData }}"
+                            call-List="{{ callList }}"></func-btn-group>
+        </div>
+        <div show="{{ isShowKeyboard }}" class="keyboard-warp">
+            <key-board @cell-handle="cellClick"
+                       call-data="{{ callData }}"></key-board>
+        </div>
+        <div class="bottom-btn">
+            <bottom-button @show-keyboard="showKeyboard"
+                           call-data="{{ callData }}"></bottom-button>
+        </div>
+    </div>
+
+<!-- incoming -->
+    <div else class="menu-wrap">
+        <incoming-com call-data="{{ callData }}"></incoming-com>
+    </div>
+</div>

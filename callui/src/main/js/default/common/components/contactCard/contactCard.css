@@ -1,0 +1,144 @@
+/*
+ * Copyright (c) 2021 Huawei Device Co., Ltd.
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+.contact-card {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 200px;
+    height: 600px;
+}
+
+.informationBar {
+    flex-direction: column;
+    align-items: center;
+}
+
+.phone-num {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.phone-num text {
+    color: #fff;
+    text-align: center;
+    font-size: 52px;
+}
+
+.address {
+    justify-content: center;
+}
+
+.address text {
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 28px;
+}
+
+.time {
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+}
+
+.time text {
+    color: #fff;
+    color: rgba(255, 255, 255, 0.60);
+}
+
+.time .icon {
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    background-color: rgba(255, 255, 255, 0.60);
+}
+
+.time .icon text {
+    font-size: 18px;
+    color: #000;
+}
+
+.call-state {
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.points {
+    height: 38px;
+    width: 30px;
+    justify-content: flex-start;
+    align-items: center;
+    color: #fff;
+}
+
+.nullCharacter {
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.call-state text {
+    font-size: 28px;
+    color: rgba(255, 255, 255, 0.60);
+}
+
+.iconGo {
+    margin-left: 20px;
+    margin-top: 8px;
+    height: 36px;
+    width: 20px;
+    background-image: url(assets/picture/messageGo.png);
+    background-repeat: no-repeat;
+}
+
+.conference {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.conferenceText {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.meetingBox {
+    align-items: center;
+    margin-bottom: 15px;
+    justify-content: center;
+    width: 330px;
+}
+
+.meetingBox image {
+    width: 24px;
+    height: 26px;
+    margin-left: 16px;
+}
+
+.meetingContent {
+    color: #fff;
+    font-size: 56px;
+}
+
+.inputFrame {
+    flex-direction: column;
+}
+
+
