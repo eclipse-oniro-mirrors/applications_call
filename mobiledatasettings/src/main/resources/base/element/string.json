@@ -1,0 +1,20 @@
+{
+  "string": [
+    {
+      "name": "mobiledatasettings_MainAbility",
+      "value": "mobiledatasettings_MainAbility"
+    },
+    {
+      "name": "mainability_description",
+      "value": "JS_Empty Ability"
+    },
+    {
+      "name": "mobile_data",
+      "value": "mobile data"
+    },
+    {
+      "name": "mobile_data_charges",
+      "value": "mobile data charges"
+    }
+  ]
+}

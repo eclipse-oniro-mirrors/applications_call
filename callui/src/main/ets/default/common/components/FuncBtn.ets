@@ -1,0 +1,110 @@
+/**
+ * Copyright (c) 2022 Huawei Device Co., Ltd.
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+import Method from '../utils/Method.ets';
+import HiLog from '../utils/Hilog.ets';
+
+const TAG = "FuncBtn";
+
+@Component
+export default struct FuncBtn {
+  @State btnType: string = '';
+  @State iconDisableUrl: string = '';
+  @State iconDefaultUrl: string = '';
+  @State iconActiveUrl: string = '';
+  @State isDisable: boolean = false;
+  @State @Watch('iconClassName') isActive: boolean = false;
+  @State iconText: string= '';
+  btnClick: Function = null;
+  @State textColor: string = 'rgb(255, 255, 255)';
+
+  /**
+   * Button group picture change control
+   *
+   * @return {string} - return iconUrl
+   */
+  iconUrl() {
+    if (this.isDisable && this.iconDisableUrl) {
+      HiLog.i(TAG, "iconUrl this.isDisable : %s" + this.isDisable);
+      return this.iconDisableUrl;
+    }
+    HiLog.i(TAG, "show icon status : %s" + JSON.stringify(this.isDisable) + JSON.stringify( this.iconDisableUrl));
+    HiLog.i(TAG, "show icon status : %s" + JSON.stringify(this.isActive) + JSON.stringify(this.iconDefaultUrl));
+    return this.isActive && this.iconDefaultUrl ? this.iconActiveUrl : this.iconDefaultUrl;
+  }
+
+  /**
+   * Button group  change picture
+   */
+  changeBtn(type) {
+    HiLog.i(TAG, "changeBtn type : %s" + type);
+    const BtnName = ['record', 'keep', 'video', 'mute'];
+    if (Method.includes(BtnName, type)) {
+      this.isActive = !this.isActive;
+    }
+  }
+
+  /**
+   * Button group style display
+   *
+   * @return {string} - Button group style display
+   */
+  iconClassName() {
+    if (this.isDisable) {
+      this.textColor = '#8c8c8c';
+      return 'disable';
+    }
+    if (this.isActive) {
+      this.textColor = '#007DFF';
+      return 'enable';
+    }
+    this.textColor = 'rgb(255, 255, 255)';
+    HiLog.i(TAG, "iconClassName this.isDisable : " );
+    return 'default';
+  }
+
+  private aboutToAppear(): void {
+    HiLog.i(TAG, "aboutToAppear ");
+    this.iconClassName();
+  }
+
+  build() {
+    Flex({ direction: FlexDirection.Column, justifyContent: FlexAlign.Center, alignItems: ItemAlign.Center }) {
+      Flex({ justifyContent: FlexAlign.Center, alignItems: ItemAlign.Center }) {
+        Column() {
+          Column() {
+            Image(this.iconUrl())
+          }
+          .width(30)
+          .height(30)
+
+          Column() {
+            Text(this.iconText)
+              .fontColor(this.textColor)
+              .fontSize(14)
+              .height(19.5)
+              .lineHeight(19.5)
+          }
+          .margin({ top: 2 })
+        }
+        .enabled(!this.isDisable)
+        .onClick(() => {
+          this.changeBtn(this.btnType)
+          this.btnClick(this.btnType);
+        })
+      }
+    }
+  }
+}

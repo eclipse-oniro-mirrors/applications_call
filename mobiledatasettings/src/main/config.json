@@ -1,0 +1,68 @@
+{
+  "app": {
+    "bundleName": "com.ohos.callui",
+    "vendor": "ohos",
+    "version": {
+      "code": 1000000,
+      "name": "1.0.0"
+    }
+  },
+  "deviceConfig": {},
+  "module": {
+    "package": "com.ohos.mobiledatasettings",
+    "name": ".MyApplication",
+    "mainAbility": "com.ohos.mobiledatasettings.MainAbility",
+    "srcPath": "",
+    "deviceType": [
+      "phone",
+      "tablet"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "mobiledatasettings",
+      "moduleType": "feature",
+      "installationFree": true
+    },
+    "abilities": [
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ],
+        "orientation": "unspecified",
+        "visible": true,
+        "srcPath": "default",
+        "srcLanguage": "ets",
+        "name": "com.ohos.mobiledatasettings.MainAbility",
+        "icon": "$media:icon",
+        "description": "JS_Empty Ability",
+        "formsEnabled": false,
+        "label": "$string:mobiledatasettings_MainAbility",
+        "type": "page",
+        "launchType": "standard"
+      }
+    ],
+    "js": [
+      {
+        "mode": {
+          "syntax": "ets",
+          "type": "pageAbility"
+        },
+        "pages": [
+          "pages/index"
+        ],
+        "name": "com.ohos.mobiledatasettings.MainAbility",
+        "window": {
+          "designWidth": 720,
+          "autoDesignWidth": false
+        }
+      }
+    ]
+  }
+}
