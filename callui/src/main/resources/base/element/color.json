@@ -1,0 +1,40 @@
+{
+  "color": [
+    {
+      "name": "red",
+      "value": "#ff0000"
+    },
+    {
+      "name": "blue",
+      "value": "#FF0022FF"
+    },
+    {
+      "name": "yellow",
+      "value": "#FFFFF200"
+    },
+    {
+      "name": "orange",
+      "value": "#FFFF7700"
+    },
+    {
+      "name": "black",
+      "value": "#FF0E0E0E"
+    },
+    {
+      "name": "green",
+      "value": "#FF3B8642"
+    },
+    {
+      "name": "pink",
+      "value": "#FFF6A2A0"
+    },
+    {
+      "name": "jing",
+      "value": "#FFE9DE10"
+    },
+    {
+      "name": "zi",
+      "value": "#FFC110E9"
+    }
+  ]
+}

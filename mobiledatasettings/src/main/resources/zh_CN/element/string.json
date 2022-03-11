@@ -1,0 +1,20 @@
+{
+  "string": [
+    {
+      "name": "mobiledatasettings_MainAbility",
+      "value": "mobiledatasettings_MainAbility"
+    },
+    {
+      "name": "mainability_description",
+      "value": "JS_Empty Ability"
+    },
+    {
+      "name": "mobile_data",
+      "value": "移动数据"
+    },
+    {
+      "name": "mobile_data_charges",
+      "value": "启用后，产生的费用由运营商收取"
+    }
+  ]
+}
