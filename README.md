@@ -11,16 +11,27 @@
 ### 1.2 架构图介绍：
 
 ![img](./figures/callui_en.png)
+应用整体采用了多模块设计的方式，用于处理通话应用的业务逻辑与数据管理以及界面显示，每个模块都遵循上述架构的划分原则。
+各模块的作用分别如下：
+* FA-UI:负责处理和用户交互的界面显示
+* Public Module：负责公共方法的处理，辅助连通界面显示，业务逻辑和数据管理的交互
+* Adapter Module：负责业务逻辑和数据管理
 
-| 模块 | 层级 | 类名 | 作用 |
+应用各层中重要类及其功能如下表所示
+
+| 模块 | 功能 | 类名 | 作用 |
 | ---- | ---- | ---- | ---- |
-| FA-UI | 视图层 | Voice Calls FA | 主要提供语音通话相关用户交互界面 |
-| FA-UI | 视图层 | video Calls FA | 主要提供视频通话相关用户交互界面 |
-| FA-UI | 视图层 | video Calls FA | 主要提供视频通话相关用户交互界面 |
-| FA-UI | 视图层 | Voice Calls FA | 主要提供语音通话相关用户交互界面 |
-| FA-UI | 视图层 | video Calls FA | 主要提供视频通话相关用户交互界面 |
-| FA-UI | 视图层 | video Calls FA | 主要提供视频通话相关用户交互界面 |
-| FA-UI | 视图层 | video Calls FA | 主要提供视频通话相关用户交互界面 |
+| FA-UI | 界面显示 | Voice Calls FA | 主要提供语音通话相关用户交互界面 |
+| FA-UI | 界面显示 | video Calls FA | 主要提供视频通话相关用户交互界面 |
+| FA-UI | 界面显示 | SIMCard Management FA | SIM卡相关用户交互管理界面 |
+| FA-UI | 界面显示 | Emergency Dialing FA | 紧急拨号用户交互界面 |
+| FA-UI | 界面显示 | Call Settings FA | 通话设置相关用户交互的界面 |
+| FA-UI | 界面显示 | Personal Emergency Information FA | 个人设置紧急号码用户交互界面 |
+| FA-UI | 界面显示 | Mobile NetWork Settings FA | 移动网络设置用户交互界面 |
+| Public Module | 公共组件和方法 | Common Components | 公共组件的处理类 |
+| Adapter Module | 业务处理接口 | Dial Module | 处理拨号相关的功能 |
+| Adapter Module | 业务处理接口| Status Monitoring Module | 监听业务状态模块 |
+
 
 ## 2. 目录
 
