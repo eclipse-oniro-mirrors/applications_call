@@ -15,7 +15,6 @@
 
 import CallServiceProxy from '../../model/CallServiceProxy.ets';
 import DtmfBtn from '../components/DtmfBtn.ets';
-import cellClick from '../../pages/index.ets';
 import HiLog from '../utils/Hilog.ets';
 
 const TAG = "Keyboard";

@@ -16,7 +16,7 @@
 import CallServiceProxy from "../../model/CallServiceProxy";
 import HiLog from '../utils/Hilog.ets';
 
-const TAG = "DtmfBTn";
+const TAG = "DtmfBtn";
 
 @Component
 export default struct DtmfBtn {
@@ -25,7 +25,6 @@ export default struct DtmfBtn {
   @Link dataList: any;
   @Link textInput: string;
   @Link textInputValue: string;
-
   private item: any;
   private mCallServiceProxy;
   callData :any;

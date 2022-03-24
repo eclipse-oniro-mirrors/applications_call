@@ -15,7 +15,7 @@
 
 import HiLog from '../utils/Hilog.ets';
 
-const TAG = "InComDialog";
+const TAG = 'InComDialog';
 
 @CustomDialog
 export default struct InComDialog {
@@ -51,7 +51,7 @@ export default struct InComDialog {
                 .onClick(() => {
                   this.controller.close();
                   this.confirm(item)
-                  HiLog.i(TAG, "onClick and confirm : %s",JSON.stringify(item));
+                  HiLog.i(TAG, "onClick and confirm : %s");
                 })
                 if(item.id !== 4){
                   Image($r("app.media.divider"))

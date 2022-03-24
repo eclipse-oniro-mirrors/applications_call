@@ -215,7 +215,7 @@ export default class CallServiceProxy {
         HiLog.i(TAG,prefixLog +  "call.on registerCallStateCallback : %s" + JSON.stringify(err))
         return;
       }
-      HiLog.i(TAG,prefixLog +  "call.on registerCallStateCallback callState : %s" + JSON.stringify(res.callState))
+      HiLog.i(TAG,prefixLog +  "call.on registerCallStateCallback callState : %s")
       callBack(res);
     });
   }
@@ -241,7 +241,7 @@ export default class CallServiceProxy {
       if (err) {
         HiLog.i(TAG,prefixLog +  "call.on callEventChange : %s" + JSON.stringify(err))
       } else {
-        HiLog.i(TAG,prefixLog +  "call.on callEventChange : %s" + JSON.stringify(value))
+        HiLog.i(TAG,prefixLog +  "call.on callEventChange : %s")
       }
     });
   }
@@ -254,7 +254,7 @@ export default class CallServiceProxy {
       if (err) {
         HiLog.i(TAG,prefixLog +  "call.off unRegisterCallEventCallback : %s" + JSON.stringify(err))
       } else {
-        HiLog.i(TAG,prefixLog +  "call.off unRegisterCallEventCallback : %s" + JSON.stringify(value))
+        HiLog.i(TAG,prefixLog +  "call.off unRegisterCallEventCallback : %s")
       }
     });
   }

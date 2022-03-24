@@ -23,8 +23,7 @@ import ConferenceConst from '../constant/ConferenceConst.ets';
 import BtnGroupConfig from '../configs/BtnGroupConfig.ets';
 import HiLog from '../utils/Hilog.ets';
 
-const TAG = "FuncBtnGroup";
-
+const TAG = 'FuncBtnGroup';
 const textMap =
   {
     'record': $r('app.string.recording'),
@@ -39,7 +38,7 @@ const textMap =
 
 @Component
 export default struct FuncBtnGroup {
-  @Link @Watch ('updataBtnList') callData: any;
+  @Link @Watch ('updateBtnList') callData: any;
   @Link callList: Array<any>;
   @State count: number = 0;
   @State btnList: Array<any> = [];
@@ -64,39 +63,32 @@ export default struct FuncBtnGroup {
       v.iconText = textMap[v.type];
     });
     this.btnListCall = this.mClone.clone(this.mBtnGroupConfig.btnGroupList);
-    this.getbtnListCall()
+    this.getBtnListCall()
     this.btnList = this.btnListCall
-    this.updataBtnList()
+    this.updateBtnList()
     HiLog.i(TAG, "aboutToAppear : ");
   }
 
   /**
    * Switching BtnList Based on CallStatus
    */
-  updataBtnList() {
+  updateBtnList() {
     if (this.callData.callState === CallStateConst.CALL_STATUS_DIALING|| this.callData.callState === CallStateConst.CALL_STATUS_ALERTING) {
       this.btnList = this.btnListDialing
     }else{
       this.btnList = this.btnListCall
     }
-    HiLog.i(TAG, "upData BtnList : %s" + this.btnList);
-  }
-
-  getbtnListCall() {
-    this.btnListDialing = this.mClone.clone(this.mBtnGroupConfig.btnGroupList);
-    this.btnListDialing[1].isDisable = true
-    this.btnListDialing[2].isDisable = true
-    HiLog.i(TAG, "get btnListCall : %s" + JSON.stringify(this.btnListDialing));
+    HiLog.i(TAG, "upData BtnList : %s");
   }
 
   /**
-   * call state
-   *
-   * @return {number} - call state
+   * Get BtnList Based on CallStatus
    */
-  callState() {
-    HiLog.i(TAG, "get callState : ");
-    return this.callData.callState;
+  getBtnListCall() {
+    this.btnListDialing = this.mClone.clone(this.mBtnGroupConfig.btnGroupList);
+    this.btnListDialing[1].isDisable = true
+    this.btnListDialing[2].isDisable = true
+    HiLog.i(TAG, "get btnListCall : %s");
   }
 
   /**
@@ -105,7 +97,7 @@ export default struct FuncBtnGroup {
    * @param {Object} callData - call data
    */
   onCallStateChange(newVal) {
-    HiLog.i(TAG, "Calling status changed : %s" + JSON.stringify(newVal));
+    HiLog.i(TAG, "Calling status changed : %s");
     const BtnName= ['video', 'record', 'add', 'mute', 'contact']
     if (this.callList.length >= 2 && this.callList.every((v) =>
     v.conferenceState !== ConferenceConst.TEL_CONFERENCE_ACTIVE)) {
@@ -139,7 +131,7 @@ export default struct FuncBtnGroup {
    * @param {Object} obj - object
    */
   btnClick(obj) {
-    HiLog.i(TAG, "btnClick get icon type : %s" + JSON.stringify(obj));
+    HiLog.i(TAG, "btnClick get icon type : %s");
     const BtnName= ['record', 'keep', 'video', 'mute']
     const type = obj.type;
     const { callId } = this.callData;
@@ -210,7 +202,7 @@ export default struct FuncBtnGroup {
    */
   keepHandle(type) {
     const awaitIsActive = this.btnList.find((v) => v.type === type).isActive;
-    HiLog.i(TAG, "keep handle %s" + JSON.stringify(awaitIsActive));
+    HiLog.i(TAG, "keep handle %s");
     awaitIsActive ? this.mCallServiceProxy.holdCall(this.callData.callId) : this.mCallServiceProxy.unHoldCall(this.callData.callId);
   }
 
@@ -221,7 +213,7 @@ export default struct FuncBtnGroup {
    */
   muteHandle(type) {
     const awaitIsActive = this.btnList.find((v) => v.type === type).isActive;
-    HiLog.i(TAG, "mute Handle %s" + JSON.stringify(awaitIsActive));
+    HiLog.i(TAG, "mute Handle %s");
     awaitIsActive ? this.mCallServiceProxy.setMuted() : this.mCallServiceProxy.cancelMuted();
   }
 
@@ -258,7 +250,7 @@ export default struct FuncBtnGroup {
         .columnsGap(24)
         .rowsGap(29.5)
         .height(132.5)
-        .columnsTemplate('1fr 1fr 1fr ')
+        .columnsTemplate('1fr 1fr 1fr')
         .rowsTemplate('1fr 1fr ')
       }
       .useSizeType({

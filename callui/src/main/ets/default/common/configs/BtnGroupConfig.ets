@@ -97,11 +97,11 @@ const secondBtns = [
   }
 ];
 
-  /**
-   * Process the image text of the button group
-   *
-   * @param {Array} arr - Pass in an array
-   */
+/**
+ * Process the image text of the button group
+ *
+ * @param {Array} arr - Pass in an array
+ */
 function addIconUrl(arr) {
   const regExp = /^icon.*.*Url$/;
   arr.forEach((item) => {

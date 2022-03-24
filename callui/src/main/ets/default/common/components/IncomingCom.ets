@@ -49,7 +49,7 @@ const SEND_SMS_FAILURE_SERVICE_UNAVAILABLE = 3;
 
 @Component
 export default struct IncomingCom {
-  @State SendResult: any = {}
+  @State SendResult: any = {};
   @Link callData: any;
   private btnList= [];
   private msgList = [];
@@ -62,7 +62,7 @@ export default struct IncomingCom {
       cancel: () => {
       },
       confirm: (item) => {
-        HiLog.i(TAG, "confirm : %s" + JSON.stringify(item));
+        HiLog.i(TAG, "confirm : %s");
         this.msgItemClick(item);
       },
       cancelHandle: () => {
@@ -94,23 +94,25 @@ export default struct IncomingCom {
         content = typeName
         HiLog.i(TAG, "sendMessage  resourceManager.getResourceManager : " );
         return new Promise(function (resolve, reject) {
-          sms.sendMessage({
-            slotId: slotId,
-            destinationHost: destinationHost,
-            content: content,
-            sendCallback: (err, sendResult) => {
-              this.SendResult = sendResult
-              if (err) {
-                reject(err);
-              } else {
-                if (sendResult.result === SEND_SMS_SUCCESS) {
-                  resolve(true);
+          if(globalThis.sendPermissionFlag){
+            sms.sendMessage({
+              slotId: slotId,
+              destinationHost: destinationHost,
+              content: content,
+              sendCallback: (err, sendResult) => {
+                this.SendResult = sendResult
+                if (err) {
+                  reject(err);
                 } else {
-                  resolve(false);
+                  if (sendResult.result === SEND_SMS_SUCCESS) {
+                    resolve(true);
+                  } else {
+                    resolve(false);
+                  }
                 }
               }
-            }
-          });
+            });
+          }
         }
         );
       })
@@ -135,10 +137,6 @@ export default struct IncomingCom {
         id: 4,
         msg: $r("app.string.beThereSoon")
       },
-//      {
-//        id: 5,
-//        msg: $r("app.string.customSMS")
-//      }
     ];
   }
 
@@ -162,7 +160,7 @@ export default struct IncomingCom {
    */
   private msgItemClick(obj) {
     let Content: string = "";
-    let Err: string = ""
+    let Err: string = "";
     this.sendMessage(obj)
     if (this.SendResult) {
       resourceManager.getResourceManager().then(result => {
@@ -187,7 +185,6 @@ export default struct IncomingCom {
         })
       })
     }
-
   }
 
   /**
@@ -208,7 +205,7 @@ export default struct IncomingCom {
    * Enable the SMS reply pop-up
    */
   private btnClick(type){
-    HiLog.i(TAG, "btnClick : %s" + JSON.stringify(type));
+    HiLog.i(TAG, "btnClick : %s");
     if (type === 'msg') {
       this.msgDialogController.open();
     }

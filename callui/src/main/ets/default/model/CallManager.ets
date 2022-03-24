@@ -23,16 +23,16 @@ import featureAbility from '@ohos.ability.featureAbility';
 import CallServiceProxy from './CallServiceProxy.ets';
 import ContactManager from './ContactManager.ets';
 import HiLog from '../common/utils/Hilog.ets';
+import call from '@ohos.telephony.call';
 
 const TAG = "CallManager";
-
 let subscriber;
 const TIMING = 1000;
 const events = ['callui.event.callDetailsChange'];
 
-  /**
-   * class CallManager
-   */
+/**
+ * class CallManager
+ */
 export default class CallManager {
   private callData: any = {};
   private timer = null ;
@@ -51,13 +51,14 @@ export default class CallManager {
     this.callData = ctx.callData;
     this.timer = null;
     this.ctx = ctx;
-    this.callTimeList = ctx.callTimeList;
+    this.callTimeList =ctx.callTimeList;
     this.mCallDataManager = new CallDataManager(ctx.callData, ctx.callList, ctx.callTimeList);
     this.openTimer(this.updateCallTimeList.bind(this));
     this.sendNotificationHandle = (arg) => arg;
     this.registerSubscriber();
     this.initCallData();
   }
+
   /*
    * init CallData
    */
@@ -122,20 +123,20 @@ export default class CallManager {
    *
    * @param { Object } callData -Object
    */
-  async  update(callData) {
-    await this.contactManager.getContactInfo(callData);
+  async update(callData) {
+    if (globalThis.permissionFlag) {
+      await this.contactManager.getContactInfo(callData)
+    }
     this.mCallDataManager.update(callData);
+    call.formatPhoneNumber(callData.accountNumber, (err, data) => {
+      if(data === undefined ){
+        AppStorage.SetOrCreate("AccountNumber",callData.accountNumber)
+      } else {
+        AppStorage.SetOrCreate("AccountNumber",data)
+      }
+    });
     HiLog.i(TAG, "update : ")
   }
-
-  /**
-   * add callStateChange callBack
-   *
-   * @param { Function } callBack - Function
-   */
-  //  addCallBack(callBack) {
-  //    this.mCallDataManager.callStateChange = callBack;
-  //  }
 
   /**
    * update call time list

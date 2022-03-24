@@ -2,7 +2,7 @@
   "string": [
     {
       "name": "mobiledatasettings_MainAbility",
-      "value": "mobiledatasettings_MainAbility"
+      "value": "Phone"
     },
     {
       "name": "mainability_description",
@@ -14,7 +14,7 @@
     },
     {
       "name": "mobile_data_charges",
-      "value": "mobile data charges"
+      "value": "After activation, the charges incurred are charged by the operator"
     }
   ]
 }

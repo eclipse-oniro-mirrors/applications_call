@@ -39,6 +39,7 @@ export default class Getclone {
   public static getInstance(): Getclone{
     return this.getclone;
   }
+
   /**
    * forEach
    *

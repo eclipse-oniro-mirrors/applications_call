@@ -29,10 +29,6 @@ const ID = 0;
 const CALL_BUNDLE_NAME = 'com.ohos.callui';
 const CALL_ABILITY_NAME = 'com.ohos.callui.MainAbility';
 
-//const wantAgent = {
-//  getWantAgent: (obj) => Promise.resolve(obj),
-//};
-
 const notificationRequest = {
   content: {
     contentType: notification.ContentType.NOTIFICATION_CONTENT_LONG_TEXT,
@@ -72,14 +68,6 @@ export default class NotificationManager {
    */
   async sendNotification(text, callData) {
     const {callState, callId} = callData;
-//    const mapObj = new Map([
-//      [callStateConst.CALL_STATUS_INCOMING, ['answer', 'reject']],
-//      [callStateConst.CALL_STATUS_ACTIVE, ['hangUp', 'mute']],
-//      [callStateConst.CALL_STATUS_HOLDING, ['hangUp', 'callHold']],
-//      [callStateConst.CALL_STATUS_ALERTING, ['hangUp']],
-//      [callStateConst.CALL_STATUS_DIALING, ['hangUp']],
-//      [callStateConst.CALL_STATUS_WAITING, ['answer', 'reject']]
-//    ]);
     const actionBtnKeys = this.getMapObj(callState) || [];
     const {START_ABILITY, SEND_COMMON_EVENT} = wantAgent.OperationType;
     const wantAgentObj = await this.getWantAgent(callData, START_ABILITY);
@@ -102,29 +90,32 @@ export default class NotificationManager {
                 title: value,
                 wantAgent: wantAgentObj
               });
+              Object.assign(notificationRequest.content.longText, {
+                title: text,
+                expandedTitle: text
+              });
+              notification.publish(notificationRequest);
             }
           });
         });
       }
     }
-    Object.assign(notificationRequest.content.longText, {
-      title: text,
-      expandedTitle: text
-    });
-    notification.publish(notificationRequest);
     HiLog.i(TAG, "sendNotification end : ")
   }
 
-  //todo
+  /**
+   * Get call status
+   * @param callState
+   */
   getMapObj(callState) {
     if (callState===callStateConst.CALL_STATUS_INCOMING) {
       return ['answer', 'reject']
     }
     if (callState===callStateConst.CALL_STATUS_ACTIVE) {
-      return ['hangUp', 'mute']
+      return ['hangUp']
     }
     if (callState===callStateConst.CALL_STATUS_HOLDING) {
-      return ['hangUp', 'callHold']
+      return ['hangUp']
     }
     if (callState===callStateConst.CALL_STATUS_ALERTING) {
       return ['hangUp']
@@ -183,7 +174,7 @@ export default class NotificationManager {
    */
   sendCapsuleNotification(callData, isBackground) {
     HiLog.i(TAG, "sendCapsuleNotification isBackground : %s"  + JSON.stringify(isBackground))
-    callData.startTime = (callData.startTime)*1000
+    callData.startTime = (callData.startTime)
     HiLog.i(TAG, "sendCapsuleNotification callData.startTime  : ")
     const {callState, startTime} = callData;
     commonEvent.publish('CAPSULE_EVENT_CALL_UI', {
@@ -191,7 +182,7 @@ export default class NotificationManager {
       isOrdered: false,
       data: JSON.stringify({
         callState,
-        startTime,
+        startTime: startTime*1000,
         isBackground,
         wantBundleName: CALL_BUNDLE_NAME,
         wantAbilityName: CALL_ABILITY_NAME

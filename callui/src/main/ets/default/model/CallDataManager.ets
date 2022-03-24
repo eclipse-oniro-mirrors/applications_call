@@ -19,7 +19,6 @@
 import CallStateManager from './CallStateManager.ets';
 import CallStateConst from '../common/constant/CallStateConst.ets';
 import app from '@system.app';
-import SendNotification from './SendNotification.ets';
 import NotificationManager from '../model/NotificationManager.ets';
 import HiLog from '../common/utils/Hilog.ets';
 
@@ -34,14 +33,13 @@ export default class CallDataManager {
   callTimeList :any = [];
   private callStateChange: any;
   private mCallStateManager: CallStateManager ;
-  private mSendNotification: SendNotification ;
+  private NotificationManager ;
   private sCallDataManager : CallDataManager ;
   constructor (callData, callList, callTimeList){
-    this.mSendNotification = SendNotification.getInstance();
+    this.NotificationManager =new NotificationManager()
     this.mCallStateManager = CallStateManager.getInstance()
     this.callData = callData;
     this.callList = callList;
-//    this.callTimeList = callTimeList;
     this.callStateChange = (arg) => arg;
     this.mCallStateManager = new CallStateManager(this.callData);
   }
@@ -79,7 +77,7 @@ export default class CallDataManager {
 
     if (callState === CallStateConst.CALL_STATUS_DISCONNECTED) {
       if (this.callList.length === 1) {
-        this.mSendNotification.cancelNotification();
+        this.NotificationManager.cancelNotification();
         AppStorage.Get<NotificationManager>('notificationManager').sendCapsuleNotification(callData, true);
         app.terminate();
       } else {

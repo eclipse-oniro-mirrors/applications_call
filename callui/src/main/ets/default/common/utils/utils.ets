@@ -16,10 +16,16 @@
 /**
  * @file: Tools
  */
-// Carry when the time is greater than 9 seconds
+
+
+/**
+ * Carry when the time is greater than 9 seconds
+ */
 const NINE_MAX = 9;
 
-// Divide by 60 to get minutes and seconds
+/**
+ * Divide by 60 to get minutes and seconds
+ */
 const SIXTY_SECONDS = 60;
 
 export default class Utils {
