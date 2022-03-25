@@ -50,9 +50,58 @@ export default class TelephonyApi {
         HiLog.i(TAG,prefixLog + 'call.off unRegisterCallStateCallback' + JSON.stringify(err))
         return;
       }
-      HiLog.i(TAG,prefixLog + 'call.off unRegisterCallStateCallback' + JSON.stringify(res))
+      HiLog.i(TAG,prefixLog + 'call.off unRegisterCallStateCallback')
     });
   }
+
+  /**
+   * accept call
+   *
+   * @param { number } callId - call id
+   */
+  public acceptCall = function (callId) {
+    call.answer(callId).then((res) => {
+      HiLog.i(TAG,prefixLog +  "call.answer : %s")
+    }).catch((err) => {
+      HiLog.i(TAG, prefixLog + "call.answer catch : %s" + JSON.stringify(err))
+    })
+  }
+
+  /**
+   * reject call
+   *
+   * @param { number } callId - call id
+   *
+   * @param { boolean } isSendSms - is send sms
+   *
+   * @param { string } msg - message string
+   */
+  public rejectCall = function (callId, isSendSms = false, msg = '') {
+    const rejectCallPromise = isSendSms ? call.reject(callId, {messageContent: msg}) : call.reject(callId);
+    rejectCallPromise.then((res) => {
+      HiLog.i(TAG,prefixLog +  "then:rejectCall : %s")
+    })
+      .catch((err) => {
+        HiLog.i(TAG, prefixLog + "catch:rejectCall : %s" + JSON.stringify(err))
+      });
+  };
+
+  /**
+   * hang up Call
+   *
+   * @param { number } callId - call id
+   *
+   * @return { Object } promise object
+   */
+  public hangUpCall = (callId) => new Promise((resolve, reject) => {
+    call.hangup(callId).then((res) => {
+      resolve(res);
+      HiLog.i(TAG, prefixLog + "then:hangUpCall : %s")
+    }).catch((err) => {
+      reject(err);
+      HiLog.i(TAG, prefixLog + "catch:hangUpCall : %s" + JSON.stringify(err))
+    });
+  });
 }
 
 

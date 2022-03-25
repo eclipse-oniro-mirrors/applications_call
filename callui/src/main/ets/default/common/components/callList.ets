@@ -13,6 +13,10 @@
  * limitations under the License.
  */
 
+/**
+ * @file: User list component
+ */
+
 import CallStateConst from '../constant/CallStateConst.ets';
 import CallServiceProxy from '../../model/CallServiceProxy.ets';
 import HiLog from '../utils/Hilog.ets';

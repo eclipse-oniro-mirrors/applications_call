@@ -13,6 +13,10 @@
  * limitations under the License.
  */
 
+/**
+ * @file: bottom button component
+ */
+
 import CallServiceProxy from '../../model/CallServiceProxy.ets';
 import HiLog from '../utils/Hilog.ets';
 
@@ -33,7 +37,9 @@ export default struct BottomBtn {
     this.getImageList();
     this.mCallServiceProxy = CallServiceProxy.getInstance();
   }
-
+  /**
+   * get Image List
+   */
   private getImageList() {
     this.imageList = [
       {
@@ -57,19 +63,6 @@ export default struct BottomBtn {
   onHangUp() {
     this.mCallServiceProxy.hangUpCall(this.callData.callId);
     HiLog.i(TAG, "onHangUp this.callData.callId : ");
-  }
-
-  /**
-   * click to amplify
-   */
-  async showAudio() {
-    try {
-      await this.mCallServiceProxy.setAudioDevice();
-      this.openSpeaker = !this.openSpeaker;
-    } catch (err) {
-      this.openSpeaker = !this.openSpeaker;
-    }
-    HiLog.i(TAG, "showAudio this.openSpeaker : %s" ,this.openSpeaker);
   }
 
   /**
@@ -99,10 +92,6 @@ export default struct BottomBtn {
       this.onHangUp();
     }
 
-    if (type == 'speakerphone') {
-      //        this.showAudio()
-    }
-
   }
 
   build() {
@@ -126,7 +115,7 @@ export default struct BottomBtn {
         }
         .columnsGap(24)
         .height(56)
-        .columnsTemplate('1fr 1fr 1fr ')
+        .columnsTemplate('1fr 1fr 1fr')
         .rowsTemplate('1fr')
       }
       .useSizeType({

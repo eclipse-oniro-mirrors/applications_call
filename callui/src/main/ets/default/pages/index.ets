@@ -23,16 +23,16 @@ import Keyboard from '../common/components/Keyboard.ets';
 import BottomBtn from '../common/components/BottomBtn.ets';
 import IncomingCom from '../common/components/IncomingCom.ets';
 import CallStateConst from '../common/constant/CallStateConst.ets';
-import SendNotification from '../model/sendNotification.ets';
 import NotificationManager from '../model/NotificationManager.ets';
 import call from '@ohos.telephony.call';
 import CallManager from '../model/CallManager.ets';
 import HiLog from '../common/utils/Hilog.ets';
-//import Test from "../common/components/Test.ets";
+import bundle from '@ohos.bundle';
+import abilityAccessCtrl from "@ohos.abilityAccessCtrl";
+import featureAbility from "@ohos.ability.featureAbility"
 
 const TAG = "Index";
 const prefixLog = 'callUI app:@ohos.telephony.call:';
-const MARGIN_VALUE = 60;
 const SIM_CARD_DELAYED_DISPLAY = 100;
 const TIMER_DELAY = 0;
 const textMap =
@@ -58,10 +58,6 @@ export default struct Index {
   @State inputValue: string = '';
   private consoleTxt: '';
   private callStateConst;
-  private contactCard;
-  private funcBtnGroup;
-  private sendNotificationHandle;
-  private addCallBack;
   private notificationManager: NotificationManager;
 
   /**
@@ -74,9 +70,9 @@ export default struct Index {
   }
 
   /**
-   * Input content
+   * method to control the display of DTMF keyboard
    *
-   * @param {boolean} bool - Incoming value
+   * parent component pass by value child component
    */
   public showKeyboard() {
     this.isShowKeyboard = !this.isShowKeyboard;
@@ -93,38 +89,18 @@ export default struct Index {
       dialScene
     });
   }
- 
-  /**
-   * Create timer
-   *
-   * @param {number} newVal - Incoming number
-   */
-  onCallStateChange(newVal) {
-    //    this.contactCard.onCallStateChange(newVal);
-    //    let timer = setTimeout(() => {
-    //      const funcBtnGroupDom = this.funcBtnGroup;
-    //      if (funcBtnGroupDom && typeof funcBtnGroupDom.onCallStateChange === 'function') {
-    //        funcBtnGroupDom.onCallStateChange(newVal);
-    //      }
-    //      clearTimeout(timer);
-    //    }, TIMER_DELAY);
-  }
+
 
   private aboutToAppear(): void {
+    this.initPermissions()
     HiLog.i(TAG, "aboutToAppear :")
     this.callStateConst = new CallStateConst();
     this.notificationManager = new NotificationManager();
     globalThis.callManager = new CallManager(this)
     AppStorage.SetOrCreate<NotificationManager>('notificationManager', this.notificationManager);
-    globalThis.callManager.addCallBack(this.onCallStateChange.bind(this));
-    this.sendNotificationHandle = SendNotification;
-    this.onCallStateChange(this.callData.callState);
     let delayMethod = setTimeout(() => {
       clearTimeout(delayMethod);
     }, SIM_CARD_DELAYED_DISPLAY);
-    this.callStateConst = new CallStateConst();
-    this.contactCard = new ContactCard();
-    this.funcBtnGroup = new FuncBtnGroup();
   }
 
   onPageShow() {
@@ -132,7 +108,57 @@ export default struct Index {
     this.appInactiveState = false;
     this.notificationManager.cancelNotification();
     this.notificationManager.sendCapsuleNotification(this.callData, false);
-    HiLog.i(TAG, "onPageShow end : " )
+    HiLog.i(TAG, "onPageShow end : ")
+  }
+
+  async initPermissions() {
+    let array: Array<string> = ["ohos.permission.READ_CONTACTS", "ohos.permission.SEND_MESSAGES"];
+    var bundleFlag = 0;
+    var tokenID = undefined;
+    var userID = 100;
+    var appInfo = await bundle.getApplicationInfo("com.ohos.callui", bundleFlag, userID);
+    tokenID = appInfo.accessTokenId;
+    var atManager = abilityAccessCtrl.createAtManager();
+    let requestPermissions: Array<string> = [];
+    for (let i = 0;i < array.length; i++) {
+      var result = await atManager.verifyAccessToken(tokenID, array[i]);
+      if (result != abilityAccessCtrl.GrantStatus.PERMISSION_GRANTED) {
+        requestPermissions.push(array[i]);
+      }
+    }
+    HiLog.i(TAG, "initPermissions requestPermissions : " + requestPermissions.length)
+    if (requestPermissions.length > 0) {
+      let context = featureAbility.getContext()
+      context.requestPermissionsFromUser(requestPermissions, 2345, (data) => {
+        for (let i = 0;i < data.authResults.length; i++) {
+            if(data.permissions[i] === "ohos.permission.READ_CONTACTS"){
+              if (data.authResults[i] === 0) {
+                globalThis.permissionFlag = true
+                globalThis.callManager.update(this.callData)
+              } else {
+                globalThis.permissionFlag = false
+                globalThis.sendPermissionFlag = true
+              }
+            }
+          if(data.permissions[i] === "ohos.permission.SEND_MESSAGES"){
+            if (data.authResults[i] === 0) {
+              globalThis.sendPermissionFlag = true
+            } else {
+              globalThis.permissionFlag = true
+              globalThis.callManager.update(this.callData)
+              globalThis.sendPermissionFlag = false
+            }
+          }
+        }
+      }).catch((error)=>{
+        HiLog.i(TAG, "Application catch error")
+      })
+    } else {
+      globalThis.permissionFlag = true
+      globalThis.sendPermissionFlag = true
+      globalThis.callManager.update(this.callData)
+    }
+    HiLog.i(TAG, "Application requestPermissionsFromUser end")
   }
 
   onPageHide() {
@@ -141,14 +167,6 @@ export default struct Index {
     const {callState, accountNumber, contactName, callId} = this.callData;
     let fool = (callState !== CallStateConst.callStateObj.CALL_STATUS_DISCONNECTED && callId)
     if (callState !== CallStateConst.callStateObj.CALL_STATUS_DISCONNECTED && callId) {
-      const key = this.callStateConst.getCallStateText(callState) || '';
-//      let callStateText = key ? textMap[key] : '';
-//      if (callState === CallStateConst.callStateObj.CALL_STATUS_INCOMING) {
-//        callStateText = $r("app.string.incomingCall")
-//      }
-//      if (callState === CallStateConst.callStateObj.CALL_STATUS_ACTIVE) {
-//        callStateText = $r("app.string.calling")
-//      }
       let text = contactName + '  ' + accountNumber + '  ';
       if (!contactName) {
         text = accountNumber + '  ' ;
@@ -176,17 +194,17 @@ export default struct Index {
           if (this.callState() !== CallStateConst.callStateObj.CALL_STATUS_WAITING
           && this.callState() !== CallStateConst.callStateObj.CALL_STATUS_INCOMING) {
             Column() {
-              if (!this.isShowKeyboard) {
-                Column() {
-                  FuncBtnGroup({ callData: $callData, callList: $callList })
-                }
-                .margin({ bottom: 29.5 })
-              } else {
-                Column() {
-                  Keyboard({ callData: $callData })
-                }
-                .margin({ bottom: 32 })
+              Column() {
+                FuncBtnGroup({ callData: $callData, callList: $callList })
               }
+              .visibility(!this.isShowKeyboard ? Visibility.Visible : Visibility.None)
+              .margin({ bottom: 29.5 })
+
+              Column() {
+                Keyboard({ callData: $callData })
+              }
+              .visibility(this.isShowKeyboard ? Visibility.Visible : Visibility.None)
+              .margin({ bottom: 32 })
 
               Column() {
                 BottomBtn({
@@ -207,27 +225,6 @@ export default struct Index {
             .margin({ bottom: 106 })
           }
         }
-
-//        Column() {
-//          Test({
-//            callData: $callData,
-//            callList: $callList
-//          })
-
-//          Column() {
-//            Button("拨号开始")
-//              .onClick(() => {
-//                console.info("wuchaoert" + this.inputNum.join().replace(/,/g, ""))
-//                this.dialCall(this.inputNum.join().replace(/,/g, ""))
-//              })
-//          }
-//          .margin({ top: 15 })
-
-//        }
-//        .position({
-//          x: 15,
-//          y: 15
-//        })
       }
     }
     .width("100%")

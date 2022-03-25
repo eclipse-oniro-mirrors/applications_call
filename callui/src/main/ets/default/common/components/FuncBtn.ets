@@ -24,11 +24,11 @@ export default struct FuncBtn {
   @State iconDisableUrl: string = '';
   @State iconDefaultUrl: string = '';
   @State iconActiveUrl: string = '';
-  @State isDisable: boolean = false;
   @State @Watch('iconClassName') isActive: boolean = false;
+  @State @Watch('iconClassName') isDisable: boolean = false;
   @State iconText: string= '';
-  btnClick: Function = null;
   @State textColor: string = 'rgb(255, 255, 255)';
+  btnClick: Function = null;
 
   /**
    * Button group picture change control
@@ -40,8 +40,6 @@ export default struct FuncBtn {
       HiLog.i(TAG, "iconUrl this.isDisable : %s" + this.isDisable);
       return this.iconDisableUrl;
     }
-    HiLog.i(TAG, "show icon status : %s" + JSON.stringify(this.isDisable) + JSON.stringify( this.iconDisableUrl));
-    HiLog.i(TAG, "show icon status : %s" + JSON.stringify(this.isActive) + JSON.stringify(this.iconDefaultUrl));
     return this.isActive && this.iconDefaultUrl ? this.iconActiveUrl : this.iconDefaultUrl;
   }
 
@@ -49,7 +47,7 @@ export default struct FuncBtn {
    * Button group  change picture
    */
   changeBtn(type) {
-    HiLog.i(TAG, "changeBtn type : %s" + type);
+    HiLog.i(TAG, "changeBtn type : %s");
     const BtnName = ['record', 'keep', 'video', 'mute'];
     if (Method.includes(BtnName, type)) {
       this.isActive = !this.isActive;
@@ -69,6 +67,10 @@ export default struct FuncBtn {
     if (this.isActive) {
       this.textColor = '#007DFF';
       return 'enable';
+    }
+    if(this.btnType == 'msg'){
+      this.textColor = '#8c8c8c';
+      return '';
     }
     this.textColor = 'rgb(255, 255, 255)';
     HiLog.i(TAG, "iconClassName this.isDisable : " );

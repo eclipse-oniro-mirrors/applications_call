@@ -13,10 +13,13 @@
  * limitations under the License.
  */
 
+/**
+ * @file: Header information display component
+ */
+
 import callList from '../components/CallList.ets';
 import Utils from '../utils/utils.ets';
 import callStateConst from '../constant/CallStateConst.ets';
-import conferenceConst from '../constant/ConferenceConst.ets';
 import HiLog from '../utils/Hilog.ets';
 
 const TAG = "contactCard";
@@ -32,8 +35,6 @@ if (defaultTemp != undefined) {
 
 @Component
 export default struct ContactCard {
-//  @State address: string = "北京";
-//  @State simCardType: string = "移动";
   @State callStateText: string = '';
   @State pointText: string = "";
   @Prop isShowKeyboard: boolean;
@@ -44,6 +45,7 @@ export default struct ContactCard {
   @StorageLink("CallTimeList") callTimeList: any = [];
   @StorageLink("TextInput") textInput: string = '';
   @StorageLink("TextInputValue") textInputValue: string = '';
+  @StorageLink("AccountNumber") accountNumber: string = '';
 
   public aboutToAppear(callData, callList, callTimeList): void  {
     HiLog.i(TAG, "aboutToAppear");
@@ -56,7 +58,7 @@ export default struct ContactCard {
    * @return {number} - Call status
    */
   public callState() {
-    HiLog.i(TAG, "callState this.callData.callState : %s",this.callData.callState);
+    HiLog.i(TAG, "callState this.callData.callState : %s", this.callData.callState);
     return this.callData.callState;
   }
 
@@ -80,15 +82,6 @@ export default struct ContactCard {
   }
 
   /**
-   * Conference call status
-   *
-   * @return {number} - Conference call status
-   */
-  conferenceState() {
-    return this.callData.conferenceState;
-  }
-
-  /**
    * Reference call-list component
    *
    * @return {boolean} - return success true fail false
@@ -100,125 +93,108 @@ export default struct ContactCard {
 
   build() {
     GridContainer({ gutter: 24, margin: 24 }) {
-      Row() {
-        GridContainer({ gutter: 24, margin: 0 }) {
+      Column() {
+        if (!this.isShowKeyboard) {
           Column() {
-            if (!this.isShowKeyboard) {
-              Column() {
-                Image($r("app.media.ic_public_avatar"))
-                  .width(110)
-                  .height(110)
-                  .borderRadius(55)
-                  .margin({ bottom: 18 })
-              }
-            }
-
-            if (this.isShowKeyboard && this.textInput.length === 0) {
-              Column() {
-                Text(this.callData.contactName ? this.callData.contactName : this.callData.accountNumber)
-                  .fontSize(30)
-                  .height(40)
-                  .lineHeight(40)
-                  .fontWeight(FontWeight.Medium)
-                  .fontColor('#FFFFFF')
-                  .margin({ bottom: 8, top: 64 })
-              }
-            } else if (!this.isShowKeyboard) {
-              Column() {
-                Text(this.callData.contactName ? this.callData.contactName : this.callData.accountNumber)
-                  .fontSize(30)
-                  .height(40)
-                  .lineHeight(40)
-                  .fontWeight(FontWeight.Medium)
-                  .fontColor('#FFFFFF')
-                  .margin({ bottom: 8 })
-              }
-            } else if (this.isShowKeyboard && this.textInput.length != 0) {
-              Scroll() {
-                Text(this.textInputValue)
-                  .height(40)
-                  .fontSize(30)
-                  .lineHeight(40)
-                  .fontWeight(FontWeight.Medium)
-                  .margin({ bottom: 8, top: 64 })
-                  .fontColor('#FFFFFF')
-                  .onTouch((event: TouchEvent) => {
-                    if (event.type === TouchType.Move) {
-                      this.textInputValue = this.textInput
-                    }
-                  })
-              }
-              .scrollable(ScrollDirection.Horizontal)
-              .scrollBar(BarState.Off)
-              .width('100%')
-            }
-
-            Row() {
-              if (this.isShowKeyboard && this.kbCommand) {
-                Text(this.kbCommand)
-              } else if (!this.isShowKeyboard || this.isShowKeyboard && this.textInput.length === 0) {
-                Text(this.callData.contactName ? this.callData.accountNumber : '')
-                  .fontSize(14)
-                  .height(19)
-                  .lineHeight(16)
-                  .fontColor('#FFFFFF')
-              }
-
-              if (this.isShowTime() && this.callData.contactName == '') {
-                Column() {
-                  Text(this.callTimeList[0].callTime)
-                    .fontSize(14)
-                    .height(19)
-                    .lineHeight(19)
-                    .fontColor('#FFFFFF')
-                }
-              }
-
-              if (this.callData.callState === 2) {
-                Column() {
-                  Text($r("app.string.dialing"))
-                    .fontSize(14)
-                    .height(19)
-                    .lineHeight(16)
-                    .fontColor('#FFFFFF')
-                    .margin({ left: 10 })
-                }
-              }
-
-              if (this.callData.callState === 3) {
-                Column() {
-                  Text($r("app.string.partyIsRinging"))
-                    .fontSize(14)
-                    .height(19)
-                    .lineHeight(16)
-                    .fontColor('#FFFFFF')
-                    .margin({ left: 10 })
-                }
-              }
-
-              if (this.isShowTime() && this.callData.contactName != '') {
-                Column() {
-                  Text(this.callTimeList[0].callTime)
-                    .fontSize(14)
-                    .height(19)
-                    .lineHeight(19)
-                    .fontColor('#FFFFFF')
-                }
-              }
-            }
-            .useSizeType({
-              sm: { span: 4, offset: 0 },
-              md: { span: 6, offset: 0 },
-              lg: { span: 4, offset: 0 }
-            })
+            Image($r("app.media.ic_public_avatar"))
+              .width(110)
+              .height(110)
+              .borderRadius(55)
+              .margin({ bottom: 18 })
           }
         }
-        .useSizeType({
-          sm: { span: 4, offset: 0 },
-          md: { span: 6, offset: 1 },
-          lg: { span: 6, offset: 3 }
-        })
+
+        if (this.isShowKeyboard && this.textInput.length === 0) {
+          Column() {
+            Text(this.callData.contactName ? this.callData.contactName : this.accountNumber)
+              .fontSize(30)
+              .height(40)
+              .lineHeight(40)
+              .fontWeight(FontWeight.Medium)
+              .fontColor('#FFFFFF')
+              .margin({ bottom: 8, top: 64 })
+          }
+        } else if (!this.isShowKeyboard) {
+          Column() {
+            Text(this.callData.contactName ? this.callData.contactName : this.accountNumber)
+              .fontSize(30)
+              .height(40)
+              .lineHeight(40)
+              .fontWeight(FontWeight.Medium)
+              .fontColor('#FFFFFF')
+              .margin({ bottom: 8 })
+          }
+        } else if (this.isShowKeyboard && this.textInput.length != 0) {
+          Scroll() {
+            Text(this.textInputValue)
+              .height(40)
+              .fontSize(30)
+              .lineHeight(40)
+              .fontWeight(FontWeight.Medium)
+              .margin({ bottom: 8, top: 64 })
+              .fontColor('#FFFFFF')
+              .onTouch((event: TouchEvent) => {
+                if (event.type === TouchType.Move) {
+                  this.textInputValue = this.textInput
+                }
+              })
+          }
+          .scrollable(ScrollDirection.Horizontal)
+          .scrollBar(BarState.Off)
+          .width('100%')
+        }
+
+        Row() {
+          if (this.isShowKeyboard && this.kbCommand) {
+            Text(this.kbCommand)
+          } else if (!this.isShowKeyboard || this.isShowKeyboard && this.textInput.length === 0) {
+            Text(this.callData.contactName ? this.accountNumber : '')
+              .fontSize(14)
+              .height(19)
+              .lineHeight(16)
+              .fontColor('#FFFFFF')
+              .visibility(this.callData.contactName && !this.isShowKeyboard ? Visibility.Visible : Visibility.None)
+          }
+
+          if (this.callData.callState === 2) {
+            Column() {
+              Text($r("app.string.dialing"))
+                .fontSize(14)
+                .height(19)
+                .lineHeight(16)
+                .fontColor('#FFFFFF')
+                .margin({ left: 10 })
+            }
+          }
+
+          if (this.callData.callState === 3) {
+            Column() {
+              Text($r("app.string.partyIsRinging"))
+                .fontSize(14)
+                .height(19)
+                .lineHeight(16)
+                .fontColor('#FFFFFF')
+                .margin({ left: 10 })
+            }
+          }
+        }
+
+
+        if (this.isShowTime()) {
+          Column() {
+            Text(this.callTimeList[0].callTime)
+              .fontSize(14)
+              .height(19)
+              .lineHeight(19)
+              .fontColor('#FFFFFF')
+          }
+        }
       }
+      .useSizeType({
+        sm: { span: 4, offset: 0 },
+        md: { span: 6, offset: 1 },
+        lg: { span: 6, offset: 3 }
+      })
     }
   }
 }

@@ -30,7 +30,7 @@ const CALL_STATUS_INCOMING = 4;
 const CALL_STATUS_DIALING = 2;
 const CALL_STATUS_DISCONNECTED = 6;
 const CALL_STATUS_DISCONNECTING = 7;
-const events = ['callui.event.callEvent'];
+const events = ['callui.event.callEvent', 'callui.event.click'];
 
 /**
  * class CallManagerService
@@ -50,8 +50,10 @@ export default class CallManagerService {
    * add callui app subscriber
    */
   async addSubscriber() {
-      subscriber = await new Promise((resolve) => {
-      commonEvent.createSubscriber({events }, (err, data) => {
+    subscriber = await new Promise((resolve) => {
+      commonEvent.createSubscriber({
+        events
+      }, (err, data) => {
         HiLog.i(TAG, "addSubscriber  %s")
         resolve(data);
       });
@@ -59,15 +61,45 @@ export default class CallManagerService {
 
     commonEvent.subscribe(subscriber, (err, res) => {
       if (err.code === 0) {
-        const obj = JSON.parse(res.data);
-        const {key} = obj;
-        if (key === 'getInitCallData') {
-          this.publishData(this.callData);
+        if (res.event === events[0]) {
+          const obj = JSON.parse(res.data);
+          if (obj && obj.key === 'getInitCallData') {
+            this.publishData(this.callData);
+          }
+        }
+
+        if (res.event === events[1]) {
+          const {callId,btnType} = res.parameters
+          this.btnclickAgent(callId, btnType)
         }
       } else {
         HiLog.i(TAG, "callui service commonEvent.subscribe failed err : %s" + JSON.stringify(err))
       }
     });
+  }
+
+  /**
+   * click button agent
+   *
+   * @param { number } callId - call id
+   * @param { string } btnType - button type
+   */
+  btnclickAgent(callId, btnType) {
+    HiLog.i(TAG, "btnType : %s" + btnType)
+    this.getMapObj(btnType, callId)
+  }
+
+  getMapObj(typeKey, callId) {
+    if (typeKey === 'answer') {
+      this.mTelephonyCall.acceptCall(callId)
+      this.startAbility(this.callData)
+    }
+    if (typeKey === 'reject') {
+      this.mTelephonyCall.rejectCall(callId)
+    }
+    if (typeKey === 'hangUp') {
+      this.mTelephonyCall.hangUpCall(callId)
+    }
   }
 
   /**
@@ -92,7 +124,7 @@ export default class CallManagerService {
      */
     if ((callState === CALL_STATUS_INCOMING && this.callList.length === 1) || callState === CALL_STATUS_DIALING) {
       this.startAbility(callData);
-    } else if (callState!== CALL_STATUS_DISCONNECTING){
+    } else if (callState !== CALL_STATUS_DISCONNECTING) {
       this.publishData(callData);
     }
   }
@@ -107,9 +139,10 @@ export default class CallManagerService {
       want: {
         bundleName: CALL_BUNDLE_NAME,
         abilityName: ABILITY_NAME,
-        parameters: callData}
+        parameters: callData
+      }
     }).then((data) => {
-      HiLog.i(TAG, "callUI service PA.startAbility data : %s" + JSON.stringify(data))
+      HiLog.i(TAG, "callUI service PA.startAbility data : %s")
     }).catch((err) => {
       HiLog.i(TAG, "callUI service PA.startAbility err : %s" + JSON.stringify(err))
     });
@@ -147,7 +180,7 @@ export default class CallManagerService {
       isOrdered: false,
       data: JSON.stringify(callData)
     }, (res) => {
-      HiLog.i(TAG, "callUI service commonEvent.publish callback res : %s" + JSON.stringify(res))
+      HiLog.i(TAG, "callUI service commonEvent.publish callback res : %s")
     });
   }
 

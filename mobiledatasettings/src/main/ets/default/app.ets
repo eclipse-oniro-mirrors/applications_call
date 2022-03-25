@@ -19,9 +19,7 @@
 
 export default {
   onCreate() {
-    console.info('MobileDataApplication onCreate');
   },
   onDestroy() {
-    console.info('MobileDataApplication onDestroy');
   },
 }
