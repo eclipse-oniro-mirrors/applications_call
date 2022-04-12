@@ -36,12 +36,12 @@ if (defaultTemp != undefined) {
 @Component
 export default struct ContactCard {
   @State callStateText: string = '';
-  @State pointText: string = "";
+  @State dialing: string = '.';
   @Prop isShowKeyboard: boolean;
-  @Prop kbCommand: string;
   @Link callList: Array<any>;
   @Link callData: any;
   private mUtils: Utils;
+  private timer;
   @StorageLink("CallTimeList") callTimeList: any = [];
   @StorageLink("TextInput") textInput: string = '';
   @StorageLink("TextInputValue") textInputValue: string = '';
@@ -50,6 +50,15 @@ export default struct ContactCard {
   public aboutToAppear(callData, callList, callTimeList): void  {
     HiLog.i(TAG, "aboutToAppear");
     this.mUtils = Utils.getInstance();
+    this.timer = setInterval(() => {
+      if (this.dialing === '...') {
+        this.dialing = '';
+      }
+      this.dialing += '.';
+    },500)
+    if (this.callData.callState === 3) {
+      clearInterval(this.timer)
+    }
   }
 
   /**
@@ -79,16 +88,6 @@ export default struct ContactCard {
   private isShowCard() {
     return this.callList.length === 1 || (this.callList.length > 1 && this.callList.some((v) =>
     v.callState === callStateConst.CALL_STATUS_WAITING));
-  }
-
-  /**
-   * Reference call-list component
-   *
-   * @return {boolean} - return success true fail false
-   */
-  private isShowCallList() {
-    return (!this.kbCommand || (this.kbCommand && !this.isShowKeyboard))
-    && (this.callState() === callStateConst.callStateObj.CALL_STATUS_WAITING || this.callList.length >= 2);
   }
 
   build() {
@@ -145,40 +144,41 @@ export default struct ContactCard {
         }
 
         Row() {
-          if (this.isShowKeyboard && this.kbCommand) {
-            Text(this.kbCommand)
-          } else if (!this.isShowKeyboard || this.isShowKeyboard && this.textInput.length === 0) {
+          if (!this.isShowKeyboard || this.isShowKeyboard && this.textInput.length === 0) {
             Text(this.callData.contactName ? this.accountNumber : '')
               .fontSize(14)
               .height(19)
               .lineHeight(16)
               .fontColor('#FFFFFF')
+              .margin({ bottom: 8 })
               .visibility(this.callData.contactName && !this.isShowKeyboard ? Visibility.Visible : Visibility.None)
-          }
-
-          if (this.callData.callState === 2) {
-            Column() {
-              Text($r("app.string.dialing"))
-                .fontSize(14)
-                .height(19)
-                .lineHeight(16)
-                .fontColor('#FFFFFF')
-                .margin({ left: 10 })
-            }
-          }
-
-          if (this.callData.callState === 3) {
-            Column() {
-              Text($r("app.string.partyIsRinging"))
-                .fontSize(14)
-                .height(19)
-                .lineHeight(16)
-                .fontColor('#FFFFFF')
-                .margin({ left: 10 })
-            }
           }
         }
 
+        if (this.callData.callState === 2) {
+          Row() {
+            Text($r("app.string.dialing"))
+              .fontSize(14)
+              .height(19)
+              .lineHeight(16)
+              .fontColor('#FFFFFF')
+              .align(Alignment.Start)
+
+            Text(this.dialing)
+              .fontColor('#FFFFFF')
+          }
+          .width(60)
+        }
+
+        if (this.callData.callState === 3) {
+          Column() {
+            Text($r("app.string.partyIsRinging"))
+              .fontSize(14)
+              .height(19)
+              .lineHeight(16)
+              .fontColor('#FFFFFF')
+          }
+        }
 
         if (this.isShowTime()) {
           Column() {

@@ -34,7 +34,6 @@ import featureAbility from "@ohos.ability.featureAbility"
 const TAG = "Index";
 const prefixLog = 'callUI app:@ohos.telephony.call:';
 const SIM_CARD_DELAYED_DISPLAY = 100;
-const TIMER_DELAY = 0;
 const textMap =
   {
     'answer': $r('app.string.answer'),
@@ -55,7 +54,6 @@ export default struct Index {
   @State isShowKeyboard: boolean = false;
   private appInactiveState = false
   @State callList: Array<any> = [];
-  @State inputValue: string = '';
   private consoleTxt: '';
   private callStateConst;
   private notificationManager: NotificationManager;
@@ -92,7 +90,6 @@ export default struct Index {
 
 
   private aboutToAppear(): void {
-    this.initPermissions()
     HiLog.i(TAG, "aboutToAppear :")
     this.callStateConst = new CallStateConst();
     this.notificationManager = new NotificationManager();
@@ -108,24 +105,12 @@ export default struct Index {
     this.appInactiveState = false;
     this.notificationManager.cancelNotification();
     this.notificationManager.sendCapsuleNotification(this.callData, false);
+    this.initPermissions()
     HiLog.i(TAG, "onPageShow end : ")
   }
 
   async initPermissions() {
-    let array: Array<string> = ["ohos.permission.READ_CONTACTS", "ohos.permission.SEND_MESSAGES"];
-    var bundleFlag = 0;
-    var tokenID = undefined;
-    var userID = 100;
-    var appInfo = await bundle.getApplicationInfo("com.ohos.callui", bundleFlag, userID);
-    tokenID = appInfo.accessTokenId;
-    var atManager = abilityAccessCtrl.createAtManager();
-    let requestPermissions: Array<string> = [];
-    for (let i = 0;i < array.length; i++) {
-      var result = await atManager.verifyAccessToken(tokenID, array[i]);
-      if (result != abilityAccessCtrl.GrantStatus.PERMISSION_GRANTED) {
-        requestPermissions.push(array[i]);
-      }
-    }
+    let requestPermissions: Array<string> = ["ohos.permission.READ_CONTACTS", "ohos.permission.SEND_MESSAGES"];
     HiLog.i(TAG, "initPermissions requestPermissions : " + requestPermissions.length)
     if (requestPermissions.length > 0) {
       let context = featureAbility.getContext()
@@ -153,10 +138,6 @@ export default struct Index {
       }).catch((error)=>{
         HiLog.i(TAG, "Application catch error")
       })
-    } else {
-      globalThis.permissionFlag = true
-      globalThis.sendPermissionFlag = true
-      globalThis.callManager.update(this.callData)
     }
     HiLog.i(TAG, "Application requestPermissionsFromUser end")
   }
@@ -185,7 +166,6 @@ export default struct Index {
             ContactCard({
               callData: $callData,
               isShowKeyboard: this.isShowKeyboard,
-              kbCommand: this.inputValue,
               callList: $callList
             })
           }
@@ -195,16 +175,20 @@ export default struct Index {
           && this.callState() !== CallStateConst.callStateObj.CALL_STATUS_INCOMING) {
             Column() {
               Column() {
-                FuncBtnGroup({ callData: $callData, callList: $callList })
+                Column() {
+                  FuncBtnGroup({ callData: $callData, callList: $callList })
+                }
+                .margin({ bottom: 29.5 })
               }
               .visibility(!this.isShowKeyboard ? Visibility.Visible : Visibility.None)
-              .margin({ bottom: 29.5 })
 
               Column() {
-                Keyboard({ callData: $callData })
+                Column() {
+                  Keyboard({ callData: $callData })
+                }
+                .margin({ bottom: 32 })
               }
               .visibility(this.isShowKeyboard ? Visibility.Visible : Visibility.None)
-              .margin({ bottom: 32 })
 
               Column() {
                 BottomBtn({

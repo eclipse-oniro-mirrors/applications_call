@@ -30,13 +30,16 @@ export default struct InComDialog {
       Row() {
         Flex({ justifyContent: FlexAlign.Start }) {
           Column() {
-            Flex({justifyContent: FlexAlign.Start, alignItems: ItemAlign.Start}) {
+            Flex({ justifyContent: FlexAlign.Start, alignItems: ItemAlign.Start }) {
               Text($r("app.string.hangUpReply"))
                 .fontSize(20)
                 .fontWeight(FontWeight.Medium)
                 .fontColor('#182431')
                 .height(56)
             }
+            .onClick(() => {
+              return;
+            })
 
             Column() {
               ForEach(this.List, (item) => {
@@ -53,7 +56,8 @@ export default struct InComDialog {
                   this.confirm(item)
                   HiLog.i(TAG, "onClick and confirm : %s");
                 })
-                if(item.id !== 4){
+
+                if (item.id !== 4) {
                   Image($r("app.media.divider"))
                     .height(0.5)
                 }

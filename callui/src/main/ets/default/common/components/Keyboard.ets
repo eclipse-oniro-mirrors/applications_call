@@ -15,7 +15,6 @@
 
 import CallServiceProxy from '../../model/CallServiceProxy.ets';
 import DtmfBtn from '../components/DtmfBtn.ets';
-import HiLog from '../utils/Hilog.ets';
 
 const TAG = "Keyboard";
 
@@ -80,26 +79,6 @@ export default struct Keyboard {
 
   public aboutToAppear(): void  {
     this.mCallServiceProxy = CallServiceProxy.getInstance();
-  }
-
-  /**
-   * Call and press the DTMF interface
-   *
-   * @param {Object} obj - Object
-   */
-  onBtnTouchStart(obj) {
-    this.mCallServiceProxy.startDTMF(this.callData.callId, String(obj.value));
-    HiLog.i(TAG, "onBtnTouchStart : %s" );
-  }
-
-  /**
-   * Call release and send DTMF interface
-   *
-   * @param {Object} obj - Incoming value
-   */
-  onBtnTouchEnd() {
-    this.mCallServiceProxy.stopDTMF(this.callData.callId);
-    HiLog.i(TAG, "onBtnTouchEnd : %s" );
   }
 
   build() {

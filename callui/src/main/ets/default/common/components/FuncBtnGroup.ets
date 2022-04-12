@@ -229,7 +229,7 @@ export default struct FuncBtnGroup {
     GridContainer({ gutter: 24, margin: 24 }) {
       Row() {
         Grid() {
-          ForEach(this.btnList, (item,) => {
+          ForEach(this.btnList, (item) => {
             GridItem() {
                 FuncBtn({
                   btnType: item.type,
@@ -251,7 +251,7 @@ export default struct FuncBtnGroup {
         .rowsGap(29.5)
         .height(132.5)
         .columnsTemplate('1fr 1fr 1fr')
-        .rowsTemplate('1fr 1fr ')
+        .rowsTemplate('1fr 1fr')
       }
       .useSizeType({
         sm: { span: 4, offset: 0 },

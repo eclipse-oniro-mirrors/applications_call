@@ -161,25 +161,39 @@ export default struct IncomingCom {
   private msgItemClick(obj) {
     let Content: string = "";
     let Err: string = "";
+    let Message: string =""
     this.sendMessage(obj)
-    if (this.SendResult) {
-      resourceManager.getResourceManager().then(result => {
-        result.getString($r("app.string.SMS_Sent").id, (err, typeName) => {
-          Content = typeName
-          prompt.showToast({
-            message: this.callData.contactName ? Content + `${this.callData.contactName}` : Content + `${this.callData.accountNumber}`,
-            duration: 2000,
-          });
-          this.mCallServiceProxy.rejectCall(this.callData.callId, obj.msg);
-          HiLog.i(TAG, "msgItemClick : " );
+    if (globalThis.sendPermissionFlag) {
+      if (this.SendResult) {
+        resourceManager.getResourceManager().then(result => {
+          result.getString($r("app.string.SMS_Sent")
+          .id, (err, typeName) => {
+            Content = typeName
+            prompt.showToast({
+              message: this.callData.contactName ? Content + `${this.callData.contactName}` : Content + `${this.callData.accountNumber}`,
+              duration: 2000,
+            });
+            this.mCallServiceProxy.rejectCall(this.callData.callId, obj.msg);
+            HiLog.i(TAG, "msgItemClick : ");
+          })
         })
-      })
+      } else {
+        resourceManager.getResourceManager().then(result => {
+          result.getString($r("app.string.message_Failed").id, (err, typeName) => {
+            Err = typeName
+            prompt.showToast({
+              message: Err,
+              duration: 2000,
+            });
+          })
+        })
+      }
     } else {
       resourceManager.getResourceManager().then(result => {
-        result.getString($r("app.string.message_Failed").id, (err, typeName) => {
-          Err = typeName
+        result.getString($r("app.string.SMS_Authorization_Notification").id, (err, typeName) => {
+          Message = typeName
           prompt.showToast({
-            message: Err ,
+            message: Message,
             duration: 2000,
           });
         })

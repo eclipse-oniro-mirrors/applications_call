@@ -199,6 +199,10 @@
     {
       "name": "SMS_Sent",
       "value": "SMS sent to"
+    },
+    {
+      "name": "SMS_Authorization_Notification",
+      "value": "Go to settings for SMS Authorization"
     }
   ]
 }

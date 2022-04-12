@@ -27,6 +27,8 @@ const NINE_MAX = 9;
  * Divide by 60 to get minutes and seconds
  */
 const SIXTY_SECONDS = 60;
+const SEC_VAL = 1000;
+const MIN_VAL = SIXTY_SECONDS * SEC_VAL
 
 export default class Utils {
   private static sUtils: Utils
@@ -59,9 +61,9 @@ export default class Utils {
    * @param { number } count
    */
   public formatTime (count) {
-    const second = count % SIXTY_SECONDS;
-    const minute = Math.floor(count / SIXTY_SECONDS) % SIXTY_SECONDS;
-    const hour = Math.floor(count / (SIXTY_SECONDS * SIXTY_SECONDS));
+    const second = Math.floor((count % MIN_VAL) / SEC_VAL);
+    const minute = Math.floor((count / MIN_VAL) % SIXTY_SECONDS) ;
+    const hour = Math.floor(count / (SIXTY_SECONDS * MIN_VAL));
     const secondStr = second <= NINE_MAX ? '0' + second : second;
     const minuteStr = minute <= NINE_MAX ? '0' + minute : minute;
     return hour > 0 ? `${hour}:${minuteStr}:${secondStr}` : `${minuteStr}:${secondStr}`;
