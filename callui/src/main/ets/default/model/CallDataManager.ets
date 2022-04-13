@@ -28,15 +28,16 @@ const TAG = "CallDataManager";
  * class CallDataManager
  */
 export default class CallDataManager {
-  callData :any= {};
-  callList :any = [];
-  callTimeList :any = [];
+  callData: any= {};
+  callList: any = [];
+  callTimeList: any = [];
   private callStateChange: any;
   private mCallStateManager: CallStateManager ;
   private NotificationManager ;
-  private sCallDataManager : CallDataManager ;
-  constructor (callData, callList, callTimeList){
-    this.NotificationManager =new NotificationManager()
+  private sCallDataManager: CallDataManager ;
+
+  constructor(callData, callList, callTimeList) {
+    this.NotificationManager = new NotificationManager()
     this.mCallStateManager = CallStateManager.getInstance()
     this.callData = callData;
     this.callList = callList;
@@ -52,7 +53,7 @@ export default class CallDataManager {
   public update(callData) {
     const { callState, callId } = callData;
     const targetObj = this.callList.find((v) => v.callId === callId);
-    HiLog.i(TAG, "update : " )
+    HiLog.i(TAG, "update : ")
     if (targetObj) {
       Object.assign(targetObj, {
         ...callData
@@ -123,12 +124,12 @@ export default class CallDataManager {
    */
   updateCallTimeList(callData) {
     const CallTimeObj = this.callTimeList.find((v) => v.callId === callData.callId);
-    HiLog.i(TAG, "updateCallTimeList : %s" )
+    HiLog.i(TAG, "updateCallTimeList : %s")
     if (!CallTimeObj && callData.callState === CallStateConst.CALL_STATUS_ACTIVE) {
       const obj = {
         callId: callData.callId,
         callTime: '00:00',
-        startTimestamp: callData.startTime || (new Date().getTime()/1000),
+        startTimestamp: (callData.startTime * 1000).valueOf() || new Date().valueOf(),
         endTimestamp: 0,
       };
       this.callTimeList.push(obj);

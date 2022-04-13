@@ -54,7 +54,7 @@
     },
     {
       "name": "dialing",
-      "value": "正在拨号..."
+      "value": "正在拨号"
     },
     {
       "name": "calling",
@@ -200,6 +200,10 @@
     {
       "name": "SMS_Sent",
       "value": "短信已发送至"
+    },
+    {
+      "name": "SMS_Authorization_Notification",
+      "value": "请前往设置进行短信授权"
     }
   ]
 }

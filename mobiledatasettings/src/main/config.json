@@ -45,7 +45,7 @@
         "formsEnabled": false,
         "label": "$string:mobiledatasettings_MainAbility",
         "type": "page",
-        "launchType": "standard"
+        "launchType": "singleton"
       }
     ],
     "js": [

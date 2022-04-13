@@ -75,6 +75,10 @@ export default class CallManagerService {
       } else {
         HiLog.i(TAG, "callui service commonEvent.subscribe failed err : %s" + JSON.stringify(err))
       }
+      subscriber.finishCommonEvent()
+        .then(() => {
+        HiLog.i(TAG, "addSubscriber finishCommonEvent : %s")
+      })
     });
   }
 

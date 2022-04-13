@@ -26,9 +26,6 @@ const TAG = "BottomBtn";
 export default struct BottomBtn {
   onItemClick: Function = null;
   @Link callData: any;
-  @State showKeyboard: boolean = false;
-  @State isSpeaker: boolean = false;
-  @State openSpeaker: boolean = false;
   private mCallServiceProxy: CallServiceProxy;
   private imageList;
 
@@ -37,6 +34,7 @@ export default struct BottomBtn {
     this.getImageList();
     this.mCallServiceProxy = CallServiceProxy.getInstance();
   }
+
   /**
    * get Image List
    */
@@ -87,11 +85,9 @@ export default struct BottomBtn {
     if (type == 'keyboard') {
       this.onItemClick();
     }
-
     if (type == 'hangUP') {
       this.onHangUp();
     }
-
   }
 
   build() {

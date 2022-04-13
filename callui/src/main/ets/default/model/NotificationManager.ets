@@ -138,7 +138,7 @@ export default class NotificationManager {
   getWantAgent(data, operationTypes) {
     return wantAgent.getWantAgent({
       wants: [{
-                deviceId: 'receive',
+                deviceId: '',
                 bundleName: CALL_BUNDLE_NAME,
                 abilityName: CALL_ABILITY_NAME,
                 uri: '',

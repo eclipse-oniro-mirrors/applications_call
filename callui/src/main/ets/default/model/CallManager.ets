@@ -24,6 +24,7 @@ import CallServiceProxy from './CallServiceProxy.ets';
 import ContactManager from './ContactManager.ets';
 import HiLog from '../common/utils/Hilog.ets';
 import call from '@ohos.telephony.call';
+import CallStateConst from '../common/constant/CallStateConst.ets';
 
 const TAG = "CallManager";
 let subscriber;
@@ -43,6 +44,8 @@ export default class CallManager {
   private mCallServiceProxy: CallServiceProxy ;
   private mUtils: Utils;
   private contactManager;
+  private diffSeconds
+  private mTimeMeter
 
   constructor(ctx) {
     this.contactManager = new ContactManager();
@@ -51,9 +54,9 @@ export default class CallManager {
     this.callData = ctx.callData;
     this.timer = null;
     this.ctx = ctx;
-    this.callTimeList =ctx.callTimeList;
+    this.callTimeList = ctx.callTimeList;
     this.mCallDataManager = new CallDataManager(ctx.callData, ctx.callList, ctx.callTimeList);
-    this.openTimer(this.updateCallTimeList.bind(this));
+    this.openTimer();
     this.sendNotificationHandle = (arg) => arg;
     this.registerSubscriber();
     this.initCallData();
@@ -66,7 +69,7 @@ export default class CallManager {
     featureAbility.getWant().then((want) => {
       if (want && want.parameters && ('callState' in want.parameters)) {
         this.update(want.parameters);
-        HiLog.i(TAG, "initCallData featureAbility.getWant :  %s" )
+        HiLog.i(TAG, "initCallData featureAbility.getWant :  %s")
       } else {
         this.mCallServiceProxy.publish({
           key: 'getInitCallData',
@@ -96,11 +99,12 @@ export default class CallManager {
     commonEvent.subscribe(subscriber, (err, res) => {
       if (err.code === 0) {
         const callData = JSON.parse(res.data);
+        this.callData = callData
         HiLog.i(TAG, "commonEvent subscribe : %s")
         if (callData) {
           this.update(callData);
         }
-        HiLog.i(TAG, "commonEvent subscribe : %s" )
+        HiLog.i(TAG, "commonEvent subscribe : %s")
       } else {
         HiLog.i(TAG, "commonEvent.subscribe err: %s" + JSON.stringify(err))
       }
@@ -129,10 +133,10 @@ export default class CallManager {
     }
     this.mCallDataManager.update(callData);
     call.formatPhoneNumber(callData.accountNumber, (err, data) => {
-      if(data === undefined ){
-        AppStorage.SetOrCreate("AccountNumber",callData.accountNumber)
+      if (data === undefined) {
+        AppStorage.SetOrCreate("AccountNumber", callData.accountNumber)
       } else {
-        AppStorage.SetOrCreate("AccountNumber",data)
+        AppStorage.SetOrCreate("AccountNumber", data)
       }
     });
     HiLog.i(TAG, "update : ")
@@ -142,16 +146,24 @@ export default class CallManager {
    * update call time list
    */
   updateCallTimeList() {
-    this.callTimeList =AppStorage.Get("CallTimeList")
+    if (this.callData.callState != CallStateConst.CALL_STATUS_ACTIVE && this.callData.callState != CallStateConst.CALL_STATUS_HOLDING) {
+      return;
+    }
+    this.callTimeList = AppStorage.Get("CallTimeList")
     this.callTimeList.forEach((item, i) => {
-      item.endTimestamp = new Date().getTime() / TIMING;
-      const diffSeconds = Math.floor((item.endTimestamp - item.startTimestamp));
+      item.endTimestamp = new Date().valueOf();
+      const diffSeconds = item.endTimestamp - item.startTimestamp;
+      this.diffSeconds = diffSeconds
       item.callTime = this.mUtils.formatTime(diffSeconds);
       this.callTimeList.splice(i, 1, {
         ...item,
       });
-      AppStorage.SetOrCreate("CallTimeList",this.callTimeList)
+      AppStorage.SetOrCreate("CallTimeList", this.callTimeList)
     });
+    this.mTimeMeter = setTimeout(() => {
+      this.updateCallTimeList();
+    }, 1000 - this.diffSeconds % 1000);
+
   }
 
   /**
@@ -159,8 +171,13 @@ export default class CallManager {
    *
    * @param { Function } callBack - add updateCallTimeList callBack
    */
-  openTimer(callBack) {
-    this.timer = setInterval(callBack, TIMING);
+  openTimer() {
+    this.timer = setInterval(() => {
+      this.updateCallTimeList();
+      if (this.callData.callState === CallStateConst.CALL_STATUS_ACTIVE) {
+        clearInterval(this.timer);
+      }
+    }, TIMING);
   }
 
   /**
