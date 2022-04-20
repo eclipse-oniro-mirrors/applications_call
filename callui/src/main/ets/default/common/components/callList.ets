@@ -17,9 +17,9 @@
  * @file: User list component
  */
 
-import CallStateConst from '../constant/CallStateConst.ets';
-import CallServiceProxy from '../../model/CallServiceProxy.ets';
-import HiLog from '../utils/Hilog.ets';
+import CallStateConst from '../constant/CallStateConst';
+import CallServiceProxy from '../../model/CallServiceProxy';
+import HiLog from '../utils/Hilog';
 
 const TAG = "CallList";
 const font_color = "rgba(255, 255, 255, 0.60)";

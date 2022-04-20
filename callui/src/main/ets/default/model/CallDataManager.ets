@@ -16,11 +16,11 @@
 /**
  * @file: Call data management
  */
-import CallStateManager from './CallStateManager.ets';
-import CallStateConst from '../common/constant/CallStateConst.ets';
+import CallStateManager from './CallStateManager';
+import CallStateConst from '../common/constant/CallStateConst';
 import app from '@system.app';
-import NotificationManager from '../model/NotificationManager.ets';
-import HiLog from '../common/utils/Hilog.ets';
+import NotificationManager from '../model/NotificationManager';
+import HiLog from '../common/utils/Hilog';
 
 const TAG = "CallDataManager";
 

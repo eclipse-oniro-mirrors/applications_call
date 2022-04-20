@@ -13,15 +13,15 @@
  * limitations under the License.
  */
 
-import FuncBtn from './FuncBtn.ets';
-import InComDialog from './InComDialog.ets';
-import ImagePathConst from '../constant/ImagePathConst.ets';
-import CallStateConst from '../constant/callStateConst.ets';
-import CallServiceProxy from '../../model/CallServiceProxy.ets';
+import FuncBtn from './FuncBtn';
+import InComDialog from './InComDialog';
+import ImagePathConst from '../constant/ImagePathConst';
+import CallStateConst from '../constant/callStateConst';
+import CallServiceProxy from '../../model/CallServiceProxy';
 import sms from '@ohos.telephony.sms';
 import resourceManager from '@ohos.resourceManager';
 import prompt from '@system.prompt';
-import HiLog from '../utils/Hilog.ets';
+import HiLog from '../utils/Hilog';
 
 const TAG = "IncomingCom";
 const SMS_REJECTION = `${ImagePathConst.BASE_URL}ic_public_message.svg`;
@@ -67,6 +67,7 @@ export default struct IncomingCom {
       },
       cancelHandle: () => {
       },
+      // @ts-ignore
       List: this.msgList
     }),
     cancel: () => {

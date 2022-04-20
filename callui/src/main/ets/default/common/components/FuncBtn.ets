@@ -13,8 +13,8 @@
  * limitations under the License.
  */
 
-import Method from '../utils/Method.ets';
-import HiLog from '../utils/Hilog.ets';
+import Method from '../utils/Method';
+import HiLog from '../utils/Hilog';
 
 const TAG = "FuncBtn";
 

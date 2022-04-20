@@ -16,7 +16,7 @@
 /**
  * @file: Deep copy
  */
-import Method from './Method.ets';
+import Method from './Method';
 
 const mapType = '[object Map]';
 const setType = '[object Set]';

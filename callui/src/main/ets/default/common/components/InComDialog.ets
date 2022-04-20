@@ -13,7 +13,7 @@
  * limitations under the License.
  */
 
-import HiLog from '../utils/Hilog.ets';
+import HiLog from '../utils/Hilog';
 
 const TAG = 'InComDialog';
 

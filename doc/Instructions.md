@@ -39,9 +39,10 @@
 ### 2.2 异步回调的使用
 - 在需要回调操作的ets文件中创建回调函数
 ```JavaScript
-subscribeCallback(err, data){
+subscribeCallback(err, data)
+{
     // do something
-},
+}
 ```
 - 调用应用内部封装的接口，并传入回调函数
 ```JavaScript
@@ -49,7 +50,8 @@ Notification.subscribe(mSubscriber, this.subscribeCallback.bind(this));
 ```
 - 在AsyncCallback返回数据时可以获取到错误信息或目标数据
 ```JavaScript
-subscribeCallback(err, data) {
+subscribeCallback(err, data) 
+{
     Log.showInfo(TAG, 'subscribeCallback finished ====================' + JSON.stringify(data));
 }
 ```

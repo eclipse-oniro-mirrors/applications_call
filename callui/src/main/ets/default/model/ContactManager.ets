@@ -19,7 +19,7 @@
 
 import featureAbility from '@ohos.ability.featureAbility';
 import dataAbility from '@ohos.data.dataAbility';
-import HiLog from '../common/utils/Hilog.ets';
+import HiLog from '../common/utils/Hilog';
 
 const TAG = "ContactManager";
 const DBbaseUri = 'dataability:///com.ohos.contactsdataability';
@@ -40,7 +40,7 @@ export default class ContactManager {
             const columns = ['id', 'display_name', 'detail_info'];
             const predicates = new dataAbility.DataAbilityPredicates();
             predicates.equalTo('detail_info', callData.accountNumber);
-            const dataAbilityHelper = await featureAbility.getDataAbilityHelper(DBbaseUri);
+            const dataAbilityHelper = await featureAbility.acquireDataAbilityHelper(DBbaseUri);
             const resSet = await dataAbilityHelper.query(DBUri, columns, predicates);
             HiLog.i(TAG, "getContactInfo resSet : %s")
             if (resSet.rowCount > 0) {

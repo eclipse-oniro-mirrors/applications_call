@@ -12,32 +12,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
-/**
- * @file: service entry
- */
-
-import CallManagerService from './CallManagerService';
-import HiLog from '../default/common/utils/Hilog';
-
-const TAG = "Service";
-
-export default {
-
-  /**
-   * onStart
-   */
-  onStart() {
-    HiLog.i(TAG, "onStart callUI service")
-    this.callManagerService = new CallManagerService();
+{
+  apiType: 'faMode',
+  showInServiceCenter: false,
+  buildOption: {
+    arkEnable: true,
   },
-
-  /**
-   * onStop
-   */
-  onStop() {
-    HiLog.i(TAG, "onStop callUI service")
-    this.callManagerService.unsubscribe();
-    this.callManagerService.removeRegisterListener();
-  }
-};
+  "targets": [
+    {
+      "name": "default",
+    }
+  ]
+}

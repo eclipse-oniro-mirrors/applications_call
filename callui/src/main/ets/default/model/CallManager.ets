@@ -16,15 +16,15 @@
 /**
  * @file: Call management
  */
-import CallDataManager from './CallDataManager.ets';
-import Utils from '../common/utils/utils.ets';
-import commonEvent from '@ohos.commonevent';
+import CallDataManager from './CallDataManager';
+import Utils from '../common/utils/utils';
+import commonEvent from '@ohos.commonEvent';
 import featureAbility from '@ohos.ability.featureAbility';
-import CallServiceProxy from './CallServiceProxy.ets';
-import ContactManager from './ContactManager.ets';
-import HiLog from '../common/utils/Hilog.ets';
+import CallServiceProxy from './CallServiceProxy';
+import ContactManager from './ContactManager';
+import HiLog from '../common/utils/Hilog';
 import call from '@ohos.telephony.call';
-import CallStateConst from '../common/constant/CallStateConst.ets';
+import CallStateConst from '../common/constant/CallStateConst';
 
 const TAG = "CallManager";
 let subscriber;
