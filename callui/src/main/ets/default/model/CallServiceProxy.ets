@@ -23,10 +23,10 @@
  * which is convenient for development, so I will leave it for now.
  */
 
-import commonEvent from '@ohos.commonevent';
+import commonEvent from '@ohos.commonEvent';
 import call from '@ohos.telephony.call';
 import app from '@system.app';
-import HiLog from '../common/utils/Hilog.ets';
+import HiLog from '../common/utils/Hilog';
 
 const TAG = "CallServiceProxy";
 const prefixLog = 'callUI app:@ohos.telephony.call:';
@@ -210,13 +210,13 @@ export default class CallServiceProxy {
    * @param { Function } callBack - inject an Function
    */
   public registerCallStateCallback(callBack) {
-    call.on('callDetailsChange', (err, res) => {
-      if (err) {
-        HiLog.i(TAG,prefixLog +  "call.on registerCallStateCallback : %s" + JSON.stringify(err))
+    call.on('callDetailsChange', (data) => {
+      if (!data) {
+        HiLog.i(TAG,prefixLog +  "call.on registerCallStateCallback : %s")
         return;
       }
       HiLog.i(TAG,prefixLog +  "call.on registerCallStateCallback callState : %s")
-      callBack(res);
+      callBack(data);
     });
   }
 
@@ -224,9 +224,9 @@ export default class CallServiceProxy {
    * onRegister call state callback
    */
   public unRegisterCallStateCallback() {
-    call.off('callDetailsChange', (err, res) => {
-      if (err) {
-        HiLog.i(TAG,prefixLog +  "call.off unRegisterCallStateCallback : %s" + JSON.stringify(err))
+    call.off('callDetailsChange', (data) => {
+      if (!data) {
+        HiLog.i(TAG,prefixLog +  "call.off unRegisterCallStateCallback : %s")
         return;
       }
       HiLog.i(TAG,prefixLog +  "call.off unRegisterCallStateCallback : %s")
@@ -237,9 +237,9 @@ export default class CallServiceProxy {
    * register call event callback
    */
   public registerCallEventCallback() {
-    call.on('callEventChange', (err, value) => {
-      if (err) {
-        HiLog.i(TAG,prefixLog +  "call.on callEventChange : %s" + JSON.stringify(err))
+    call.on('callEventChange', (data) => {
+      if (!data) {
+        HiLog.i(TAG,prefixLog +  "call.on callEventChange : %s")
       } else {
         HiLog.i(TAG,prefixLog +  "call.on callEventChange : %s")
       }
@@ -250,9 +250,9 @@ export default class CallServiceProxy {
    * unRegister call event callback
    */
   public unRegisterCallEventCallback() {
-    call.off('callEventChange', (err, value) => {
-      if (err) {
-        HiLog.i(TAG,prefixLog +  "call.off unRegisterCallEventCallback : %s" + JSON.stringify(err))
+    call.off('callEventChange', (data) => {
+      if (!data) {
+        HiLog.i(TAG,prefixLog +  "call.off unRegisterCallEventCallback : %s")
       } else {
         HiLog.i(TAG,prefixLog +  "call.off unRegisterCallEventCallback : %s")
       }

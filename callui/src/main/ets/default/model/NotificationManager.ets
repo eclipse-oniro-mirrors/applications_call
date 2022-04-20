@@ -19,9 +19,9 @@
 
 import wantAgent from '@ohos.wantAgent';
 import notification from '@ohos.notification';
-import commonEvent from '@ohos.commonevent';
-import callStateConst from '../common/constant/CallStateConst.ets';
-import HiLog from '../common/utils/Hilog.ets';
+import commonEvent from '@ohos.commonEvent';
+import callStateConst from '../common/constant/CallStateConst';
+import HiLog from '../common/utils/Hilog';
 import resourceManager from '@ohos.resourceManager';
 
 const TAG = "NotificationManager";

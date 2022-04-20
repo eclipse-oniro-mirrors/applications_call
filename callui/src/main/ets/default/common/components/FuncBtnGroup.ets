@@ -13,15 +13,15 @@
  * limitations under the License.
  */
 
-import  Method from '../utils/Method.ets';
-import FuncBtn from './FuncBtn.ets';
+import  Method from '../utils/Method';
+import FuncBtn from './FuncBtn';
 import FA from '@ohos.ability.featureAbility';
-import CallStateConst from '../constant/CallStateConst.ets';
-import CallServiceProxy from '../../model/CallServiceProxy.ets';
-import Clone from '../utils/clone.ets';
-import ConferenceConst from '../constant/ConferenceConst.ets';
-import BtnGroupConfig from '../configs/BtnGroupConfig.ets';
-import HiLog from '../utils/Hilog.ets';
+import CallStateConst from '../constant/CallStateConst';
+import CallServiceProxy from '../../model/CallServiceProxy';
+import Clone from '../utils/clone';
+import ConferenceConst from '../constant/ConferenceConst';
+import BtnGroupConfig from '../configs/BtnGroupConfig';
+import HiLog from '../utils/Hilog';
 
 const TAG = 'FuncBtnGroup';
 const textMap =

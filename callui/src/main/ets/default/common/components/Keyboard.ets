@@ -13,8 +13,8 @@
  * limitations under the License.
  */
 
-import CallServiceProxy from '../../model/CallServiceProxy.ets';
-import DtmfBtn from '../components/DtmfBtn.ets';
+import CallServiceProxy from '../../model/CallServiceProxy';
+import DtmfBtn from '../components/DtmfBtn';
 
 const TAG = "Keyboard";
 

@@ -17,10 +17,10 @@
  * @file: Header information display component
  */
 
-import callList from '../components/CallList.ets';
-import Utils from '../utils/utils.ets';
-import callStateConst from '../constant/CallStateConst.ets';
-import HiLog from '../utils/Hilog.ets';
+import callList from '../components/CallList';
+import Utils from '../utils/utils';
+import callStateConst from '../constant/CallStateConst';
+import HiLog from '../utils/Hilog';
 
 const TAG = "contactCard";
 

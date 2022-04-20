@@ -17,7 +17,7 @@
  * @file: data storage
  */
 import storage from '@ohos.data.storage';
-import ImagePathConst from '../constant/ImagePathConst.ets';
+import ImagePathConst from '../constant/ImagePathConst';
 
 const storageObj = storage.getStorageSync(ImagePathConst.PHONE_NUMBER);
 

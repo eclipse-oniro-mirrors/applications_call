@@ -18,9 +18,9 @@
  */
 
 import PA from '@ohos.ability.particleAbility';
-import TelephonyCall from './TelephonyApi.ets';
-import commonEvent from '@ohos.commonevent';
-import HiLog from '../default/common/utils/Hilog.ets';
+import TelephonyCall from './TelephonyApi';
+import commonEvent from '@ohos.commonEvent';
+import HiLog from '../default/common/utils/Hilog';
 
 let subscriber;
 const TAG = "CallManagerService";

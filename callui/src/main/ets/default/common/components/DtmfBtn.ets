@@ -14,7 +14,7 @@
  */
 
 import CallServiceProxy from "../../model/CallServiceProxy";
-import HiLog from '../utils/Hilog.ets';
+import HiLog from '../utils/Hilog';
 
 const TAG = "DtmfBtn";
 

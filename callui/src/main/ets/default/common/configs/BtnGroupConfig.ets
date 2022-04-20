@@ -17,7 +17,7 @@
  * @file: Button group configuration file
  */
 
-import ImagePathConst from '../constant/ImagePathConst.ets';
+import ImagePathConst from '../constant/ImagePathConst';
 
 const firstBtns = [
   {

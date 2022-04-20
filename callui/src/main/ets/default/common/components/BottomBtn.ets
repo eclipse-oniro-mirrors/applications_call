@@ -17,8 +17,8 @@
  * @file: bottom button component
  */
 
-import CallServiceProxy from '../../model/CallServiceProxy.ets';
-import HiLog from '../utils/Hilog.ets';
+import CallServiceProxy from '../../model/CallServiceProxy';
+import HiLog from '../utils/Hilog';
 
 const TAG = "BottomBtn";
 

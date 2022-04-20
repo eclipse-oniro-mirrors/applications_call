@@ -13,9 +13,9 @@
  * limitations under the License.
  */
 
-import CallManager from './model/CallManager.ets';
-import CallStateConst from './common/constant/CallStateConst.ets';
-import HiLog from './common/utils/Hilog.ets';
+import CallManager from './model/CallManager';
+import CallStateConst from './common/constant/CallStateConst';
+import HiLog from './common/utils/Hilog';
 
 const TAG = "App";
 

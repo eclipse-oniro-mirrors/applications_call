@@ -17,16 +17,16 @@
  * @file: Main interface
  */
 
-import ContactCard from '../common/components/ContactCard.ets';
-import FuncBtnGroup from '../common/components/FuncBtnGroup.ets';
-import Keyboard from '../common/components/Keyboard.ets';
-import BottomBtn from '../common/components/BottomBtn.ets';
-import IncomingCom from '../common/components/IncomingCom.ets';
-import CallStateConst from '../common/constant/CallStateConst.ets';
-import NotificationManager from '../model/NotificationManager.ets';
+import ContactCard from '../common/components/ContactCard';
+import FuncBtnGroup from '../common/components/FuncBtnGroup';
+import Keyboard from '../common/components/Keyboard';
+import BottomBtn from '../common/components/BottomBtn';
+import IncomingCom from '../common/components/IncomingCom';
+import CallStateConst from '../common/constant/CallStateConst';
+import NotificationManager from '../model/NotificationManager';
 import call from '@ohos.telephony.call';
-import CallManager from '../model/CallManager.ets';
-import HiLog from '../common/utils/Hilog.ets';
+import CallManager from '../model/CallManager';
+import HiLog from '../common/utils/Hilog';
 import bundle from '@ohos.bundle';
 import abilityAccessCtrl from "@ohos.abilityAccessCtrl";
 import featureAbility from "@ohos.ability.featureAbility"
@@ -114,7 +114,7 @@ export default struct Index {
     HiLog.i(TAG, "initPermissions requestPermissions : " + requestPermissions.length)
     if (requestPermissions.length > 0) {
       let context = featureAbility.getContext()
-      context.requestPermissionsFromUser(requestPermissions, 2345, (data) => {
+      context.requestPermissionsFromUser(requestPermissions, 2345, (err, data) => {
         for (let i = 0;i < data.authResults.length; i++) {
             if(data.permissions[i] === "ohos.permission.READ_CONTACTS"){
               if (data.authResults[i] === 0) {
@@ -135,8 +135,6 @@ export default struct Index {
             }
           }
         }
-      }).catch((error)=>{
-        HiLog.i(TAG, "Application catch error")
       })
     }
     HiLog.i(TAG, "Application requestPermissionsFromUser end")

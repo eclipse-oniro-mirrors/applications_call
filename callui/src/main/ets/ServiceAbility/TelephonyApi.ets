@@ -18,7 +18,7 @@
  */
 
 import call from '@ohos.telephony.call';
-import HiLog from '../default/common/utils/Hilog.ets';
+import HiLog from '../default/common/utils/Hilog';
 
 const prefixLog = 'callui service:@ohos.telephony.call:';
 const TAG = "TelephonyApi";
@@ -31,13 +31,13 @@ export default class TelephonyApi {
    * @param { Function } callBack - inject an Function
    */
   public registerCallStateCallback(callBack) {
-    call.on('callDetailsChange', (err, res) => {
-      if (err) {
-        HiLog.i(TAG,prefixLog + 'call.on registerCallStateCallback' + JSON.stringify(err))
+    call.on('callDetailsChange', (data) => {
+      if (!data) {
+        HiLog.i(TAG,prefixLog + 'call.on registerCallStateCallback' + JSON.stringify(data))
         return;
       }
-      HiLog.i(TAG,prefixLog + 'call.on registerCallStateCallback callState: ' + JSON.stringify(res.callState))
-      callBack(res);
+      HiLog.i(TAG,prefixLog + 'call.on registerCallStateCallback callState: ' + JSON.stringify(data.callState))
+      callBack(data);
     });
   }
 
@@ -45,9 +45,9 @@ export default class TelephonyApi {
    * onRegister call state callback
    */
   public unRegisterCallStateCallback() {
-    call.off('callDetailsChange', (err, res) => {
-      if (err) {
-        HiLog.i(TAG,prefixLog + 'call.off unRegisterCallStateCallback' + JSON.stringify(err))
+    call.off('callDetailsChange', (data) => {
+      if (!data) {
+        HiLog.i(TAG,prefixLog + 'call.off unRegisterCallStateCallback' + JSON.stringify(data))
         return;
       }
       HiLog.i(TAG,prefixLog + 'call.off unRegisterCallStateCallback')
