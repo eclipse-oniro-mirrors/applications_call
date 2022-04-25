@@ -99,23 +99,14 @@ import dataStorage from '@ohos.data.storage';
 ## 4. 签名打包
 
 ### 4.1 签名
-#### 4.1.1 签名文件的获取
-
-* 拷贝OpenHarmony/signcenter_tool/key文件下的OpenHarmony.p12到工程的signature文件夹下
-
-* 拷贝OpenHarmony/signcenter_tool/certificates文件下的OpenHarmonyApplication.pem文件，并将其后缀名.pem改为.cer，然后放到工程的signature文件夹下
-
-
-
-#### 4.1.2 签名文件的配置
-
 （1）打开项目工程，选择 File → Project Structure
 
 ![](../doc/image/signature_1.png)
 
 
 
-（2）选择 Project → Signing Configs，将对应的签名文件配置如下，找到上述复制文件的路径，依次填入下图中，完成后点击Apply，再点击OK
+（2）选择 Project → Signing Configs，添加StorePassword：123456abcdef，KeyPassword：123456，
+    依次填入下图中，完成后点击Apply，再点击OK
 
 ![](../doc/image/signature_2.png)
 

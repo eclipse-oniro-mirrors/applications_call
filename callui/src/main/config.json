@@ -2,16 +2,21 @@
   "app": {
     "bundleName": "com.ohos.callui",
     "vendor": "ohos",
+    "singleton": true,
     "version": {
       "code": 1000000,
       "name": "1.0.0"
     }
   },
-  "deviceConfig": {},
+  "deviceConfig": {
+    "default": {
+      "keepAlive": true
+    }
+  },
   "module": {
     "package": "com.ohos.callui",
     "name": ".MyApplication",
-    "mainAbility": ".MainAbility",
+    "mainAbility": ".ServiceAbility",
     "srcPath": "",
     "deviceType": [
       "phone",
