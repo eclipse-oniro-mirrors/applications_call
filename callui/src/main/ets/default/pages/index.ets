@@ -114,7 +114,8 @@ export default struct Index {
     HiLog.i(TAG, "initPermissions requestPermissions : " + requestPermissions.length)
     if (requestPermissions.length > 0) {
       let context = featureAbility.getContext()
-      context.requestPermissionsFromUser(requestPermissions, 2345, (err, data) => {
+      context.requestPermissionsFromUser(requestPermissions, 2345, (results) => {
+        let data:any = results;
         for (let i = 0;i < data.authResults.length; i++) {
             if(data.permissions[i] === "ohos.permission.READ_CONTACTS"){
               if (data.authResults[i] === 0) {
