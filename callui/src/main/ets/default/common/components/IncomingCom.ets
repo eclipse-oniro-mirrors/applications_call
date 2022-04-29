@@ -276,8 +276,6 @@ export default struct IncomingCom {
               lg: { span: 6, offset: 0 }
             })
 
-            Blank()
-
             Column() {
               Image($r("app.media.ic_public_answer"))
                 .width(56)
@@ -292,7 +290,6 @@ export default struct IncomingCom {
               lg: { span: 6, offset: 6 }
             })
           }
-          .width((globalThis.deviceTypeInfo === "phone" || globalThis.deviceTypeInfo === "default") ? 224 : 300)
           .margin({ top: 30 })
         }
       }
@@ -302,5 +299,6 @@ export default struct IncomingCom {
         lg: { span: 6, offset: 3 }
       })
     }
+    .width("100%")
   }
 }
