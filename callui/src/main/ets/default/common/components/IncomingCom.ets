@@ -55,7 +55,6 @@ export default struct IncomingCom {
   private msgList = [];
   private remindList= [];
   mCallServiceProxy: CallServiceProxy= null;
-
   msgDialogController: CustomDialogController = new CustomDialogController
   ({
     builder: InComDialog({
@@ -72,7 +71,8 @@ export default struct IncomingCom {
     }),
     cancel: () => {
     },
-    customStyle: true
+    customStyle: true,
+    alignment: (globalThis.deviceTypeInfo === "phone" || globalThis.deviceTypeInfo === "default") ? DialogAlignment.Bottom : DialogAlignment.Default
   });
 
   private aboutToAppear(): void {
@@ -93,9 +93,9 @@ export default struct IncomingCom {
     resourceManager.getResourceManager().then(result => {
       result.getString(obj.msg.id, (err, typeName) => {
         content = typeName
-        HiLog.i(TAG, "sendMessage  resourceManager.getResourceManager : " );
+        HiLog.i(TAG, "sendMessage  resourceManager.getResourceManager : ");
         return new Promise(function (resolve, reject) {
-          if(globalThis.sendPermissionFlag){
+          if (globalThis.sendPermissionFlag) {
             sms.sendMessage({
               slotId: slotId,
               destinationHost: destinationHost,
@@ -148,9 +148,9 @@ export default struct IncomingCom {
         iconText: $r("app.string.sms"),
         iconDefaultUrl: SMS_REJECTION,
         iconDisableUrl: SMS_REJECTION,
-        isDisable:false
+        isDisable: false
       },
-    
+
     ];
   }
 
@@ -162,7 +162,7 @@ export default struct IncomingCom {
   private msgItemClick(obj) {
     let Content: string = "";
     let Err: string = "";
-    let Message: string =""
+    let Message: string = ""
     this.sendMessage(obj)
     if (globalThis.sendPermissionFlag) {
       if (this.SendResult) {
@@ -219,7 +219,7 @@ export default struct IncomingCom {
   /**
    * Enable the SMS reply pop-up
    */
-  private btnClick(type){
+  private btnClick(type) {
     HiLog.i(TAG, "btnClick : %s");
     if (type === 'msg') {
       this.msgDialogController.open();
@@ -235,18 +235,18 @@ export default struct IncomingCom {
   }
 
   build() {
-    GridContainer({  gutter: 24, margin: 24 } ) {
+    GridContainer({ gutter: 24, margin: 24 }) {
       Row() {
-        GridContainer({ gutter:24, margin:0 }) {
+        GridContainer({ gutter: 24, margin: 0 }) {
           Row() {
             ForEach(this.btnList, (item) => {
               Column() {
                 FuncBtn({
                   btnType: item.type,
                   iconDisableUrl: item.iconDefaultUrl,
-                  iconDefaultUrl:item.iconDefaultUrl,
+                  iconDefaultUrl: item.iconDefaultUrl,
                   iconText: item.iconText,
-                  isDisable:item.isDisable,
+                  isDisable: item.isDisable,
                   btnClick: (type) => {
                     this.btnClick(type)
                   }
@@ -276,6 +276,8 @@ export default struct IncomingCom {
               lg: { span: 6, offset: 0 }
             })
 
+            Blank()
+
             Column() {
               Image($r("app.media.ic_public_answer"))
                 .width(56)
@@ -290,6 +292,7 @@ export default struct IncomingCom {
               lg: { span: 6, offset: 6 }
             })
           }
+          .width((globalThis.deviceTypeInfo === "phone" || globalThis.deviceTypeInfo === "default") ? 224 : 300)
           .margin({ top: 30 })
         }
       }

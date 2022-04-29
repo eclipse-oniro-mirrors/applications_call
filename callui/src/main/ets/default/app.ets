@@ -16,6 +16,7 @@
 import CallManager from './model/CallManager';
 import CallStateConst from './common/constant/CallStateConst';
 import HiLog from './common/utils/Hilog';
+import deviceInfo from '@ohos.deviceInfo';
 
 const TAG = "App";
 
@@ -33,6 +34,7 @@ export default  {
    * onCreate
    */
   onCreate() {
+    globalThis.deviceTypeInfo = deviceInfo.deviceType;
     HiLog.i(TAG, "callui app Application onCreate")
   },
 
