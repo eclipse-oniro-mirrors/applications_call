@@ -16,9 +16,11 @@
 /**
  * @file: Module root file app
  */
+import deviceInfo from '@ohos.deviceInfo';
 
 export default {
   onCreate() {
+    globalThis.deviceTypeInfo = deviceInfo.deviceType;
   },
   onDestroy() {
   },

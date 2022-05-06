@@ -88,6 +88,7 @@ export default struct InComDialog {
       })
       .borderRadius(32)
     }
+    .margin({ bottom: globalThis.deviceTypeInfo === "phone" || globalThis.deviceTypeInfo === "default" ? "16vp" : 0 })
     .onClick(() => {
       this.controller.close();
     })

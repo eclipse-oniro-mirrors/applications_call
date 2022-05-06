@@ -56,7 +56,11 @@ struct Index {
               }
               .width("100%")
               .height(56)
-              .padding({ left: 24, top: 14, bottom: 14 })
+              .padding({
+                left: globalThis.deviceTypeInfo === "phone" || globalThis.deviceTypeInfo === "default" ? 12 : 24,
+                top: 14,
+                bottom: 14
+              })
               .margin({ bottom: 8 })
             }
 
@@ -111,11 +115,11 @@ struct Index {
             }
           }
         }
-          .useSizeType({
-            sm: { span: 4, offset: 0 },
-            md: { span: 6, offset: 1 },
-            lg: { span: 8, offset: 2 }
-          })
+        .useSizeType({
+          sm: { span: 4, offset: 0 },
+          md: { span: 6, offset: 1 },
+          lg: { span: 8, offset: 2 }
+        })
       }
     }
     .width('100%')
