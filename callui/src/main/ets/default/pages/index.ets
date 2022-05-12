@@ -105,40 +105,7 @@ export default struct Index {
     this.appInactiveState = false;
     this.notificationManager.cancelNotification();
     this.notificationManager.sendCapsuleNotification(this.callData, false);
-    this.initPermissions()
     HiLog.i(TAG, "onPageShow end : ")
-  }
-
-  async initPermissions() {
-    let requestPermissions: Array<string> = ["ohos.permission.READ_CONTACTS", "ohos.permission.SEND_MESSAGES"];
-    HiLog.i(TAG, "initPermissions requestPermissions : " + requestPermissions.length)
-    if (requestPermissions.length > 0) {
-      let context = featureAbility.getContext()
-      context.requestPermissionsFromUser(requestPermissions, 2345, (results) => {
-        let data:any = results;
-        for (let i = 0;i < data.authResults.length; i++) {
-            if(data.permissions[i] === "ohos.permission.READ_CONTACTS"){
-              if (data.authResults[i] === 0) {
-                globalThis.permissionFlag = true
-                globalThis.callManager.update(this.callData)
-              } else {
-                globalThis.permissionFlag = false
-                globalThis.sendPermissionFlag = true
-              }
-            }
-          if(data.permissions[i] === "ohos.permission.SEND_MESSAGES"){
-            if (data.authResults[i] === 0) {
-              globalThis.sendPermissionFlag = true
-            } else {
-              globalThis.permissionFlag = true
-              globalThis.callManager.update(this.callData)
-              globalThis.sendPermissionFlag = false
-            }
-          }
-        }
-      })
-    }
-    HiLog.i(TAG, "Application requestPermissionsFromUser end")
   }
 
   onPageHide() {

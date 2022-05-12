@@ -95,25 +95,23 @@ export default struct IncomingCom {
         content = typeName
         HiLog.i(TAG, "sendMessage  resourceManager.getResourceManager : ");
         return new Promise(function (resolve, reject) {
-          if (globalThis.sendPermissionFlag) {
-            sms.sendMessage({
-              slotId: slotId,
-              destinationHost: destinationHost,
-              content: content,
-              sendCallback: (err, sendResult) => {
-                this.SendResult = sendResult
-                if (err) {
-                  reject(err);
+          sms.sendMessage({
+            slotId: slotId,
+            destinationHost: destinationHost,
+            content: content,
+            sendCallback: (err, sendResult) => {
+              this.SendResult = sendResult
+              if (err) {
+                reject(err);
+              } else {
+                if (sendResult.result === SEND_SMS_SUCCESS) {
+                  resolve(true);
                 } else {
-                  if (sendResult.result === SEND_SMS_SUCCESS) {
-                    resolve(true);
-                  } else {
-                    resolve(false);
-                  }
+                  resolve(false);
                 }
               }
-            });
-          }
+            }
+          });
         }
         );
       })
@@ -164,37 +162,25 @@ export default struct IncomingCom {
     let Err: string = "";
     let Message: string = ""
     this.sendMessage(obj)
-    if (globalThis.sendPermissionFlag) {
-      if (this.SendResult) {
-        resourceManager.getResourceManager().then(result => {
-          result.getString($r("app.string.SMS_Sent")
-          .id, (err, typeName) => {
-            Content = typeName
-            prompt.showToast({
-              message: this.callData.contactName ? Content + `${this.callData.contactName}` : Content + `${this.callData.accountNumber}`,
-              duration: 2000,
-            });
-            this.mCallServiceProxy.rejectCall(this.callData.callId, obj.msg);
-            HiLog.i(TAG, "msgItemClick : ");
-          })
+    if (this.SendResult) {
+      resourceManager.getResourceManager().then(result => {
+        result.getString($r("app.string.SMS_Sent")
+        .id, (err, typeName) => {
+          Content = typeName
+          prompt.showToast({
+            message: this.callData.contactName ? Content + `${this.callData.contactName}` : Content + `${this.callData.accountNumber}`,
+            duration: 2000,
+          });
+          this.mCallServiceProxy.rejectCall(this.callData.callId, obj.msg);
+          HiLog.i(TAG, "msgItemClick : ");
         })
-      } else {
-        resourceManager.getResourceManager().then(result => {
-          result.getString($r("app.string.message_Failed").id, (err, typeName) => {
-            Err = typeName
-            prompt.showToast({
-              message: Err,
-              duration: 2000,
-            });
-          })
-        })
-      }
+      })
     } else {
       resourceManager.getResourceManager().then(result => {
-        result.getString($r("app.string.SMS_Authorization_Notification").id, (err, typeName) => {
-          Message = typeName
+        result.getString($r("app.string.message_Failed").id, (err, typeName) => {
+          Err = typeName
           prompt.showToast({
-            message: Message,
+            message: Err,
             duration: 2000,
           });
         })
