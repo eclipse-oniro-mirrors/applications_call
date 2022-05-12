@@ -128,9 +128,7 @@ export default class CallManager {
    * @param { Object } callData -Object
    */
   async update(callData) {
-    if (globalThis.permissionFlag) {
-      await this.contactManager.getContactInfo(callData)
-    }
+    await this.contactManager.getContactInfo(callData)
     this.mCallDataManager.update(callData);
     call.formatPhoneNumber(callData.accountNumber, (err, data) => {
       if (data === undefined) {
