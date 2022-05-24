@@ -1,0 +1,20 @@
+{
+  "string": [
+    {
+      "name": "mobiledatasettings_MainAbility",
+      "value": "Phone"
+    },
+    {
+      "name": "mainability_description",
+      "value": "JS_Empty Ability"
+    },
+    {
+      "name": "mobile_data",
+      "value": "mobile data"
+    },
+    {
+      "name": "mobile_data_charges",
+      "value": "After activation, the charges incurred are charged by the operator"
+    }
+  ]
+}
