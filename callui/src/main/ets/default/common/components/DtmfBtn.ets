@@ -41,7 +41,7 @@ export default struct DtmfBtn {
    */
   onBtnTouchStart(obj) {
     this.mCallServiceProxy.startDTMF(this.callData.callId, String(obj.value));
-    HiLog.i(TAG, "onBtnTouchStart : ");
+    HiLog.i(TAG, "onBtnTouchStart :");
   }
 
   /**
@@ -51,7 +51,7 @@ export default struct DtmfBtn {
    */
   onBtnTouchEnd() {
     this.mCallServiceProxy.stopDTMF(this.callData.callId);
-    HiLog.i(TAG, "onBtnTouchEnd : ");
+    HiLog.i(TAG, "onBtnTouchEnd :");
   }
 
   build() {
@@ -86,16 +86,19 @@ export default struct DtmfBtn {
       .onTouch((event: TouchEvent) => {
         if (event.type === TouchType.Down) {
           this.color = "rgba(255, 255, 255, 0.4)"
+          if (!this.textInput) {
+            this.textInput = "";
+          }
           this.textInput = this.textInput + this.item.value
-          if(this.textInput.length > 35) {
-            this.subStr = this.textInput.substr(this.textInput.length-35,this.textInput.length-1)
+          if (this.textInput.length > 35) {
+            this.subStr = this.textInput.substr(this.textInput.length - 35, this.textInput.length - 1)
             this.textInputValue = this.subStr
           } else {
             this.textInputValue = this.textInput
           }
-          AppStorage.SetOrCreate("textInputValue",this.textInputValue)
-          AppStorage.SetOrCreate("TextInput",this.textInput)
-          HiLog.i(TAG, "textInputValue + TextInput : %s" + JSON.stringify( AppStorage.Get("textInputValue")) + JSON.stringify( AppStorage.Get("TextInput")));
+          AppStorage.SetOrCreate("textInputValue", this.textInputValue)
+          AppStorage.SetOrCreate("TextInput", this.textInput)
+          HiLog.i(TAG, "textInputValue + TextInput : %s" + JSON.stringify(AppStorage.Get("textInputValue")) + JSON.stringify(AppStorage.Get("TextInput")));
           this.onBtnTouchStart(this.item)
         }
         if (event.type === TouchType.Up) {

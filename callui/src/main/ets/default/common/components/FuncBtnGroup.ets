@@ -66,7 +66,7 @@ export default struct FuncBtnGroup {
     this.getBtnListCall()
     this.btnList = this.btnListCall
     this.updateBtnList()
-    HiLog.i(TAG, "aboutToAppear : ");
+    HiLog.i(TAG, "aboutToAppear :");
   }
 
   /**
@@ -78,7 +78,7 @@ export default struct FuncBtnGroup {
     }else{
       this.btnList = this.btnListCall
     }
-    HiLog.i(TAG, "upData BtnList : %s");
+    HiLog.i(TAG, "upData BtnList");
   }
 
   /**
@@ -88,7 +88,7 @@ export default struct FuncBtnGroup {
     this.btnListDialing = this.mClone.clone(this.mBtnGroupConfig.btnGroupList);
     this.btnListDialing[1].isDisable = true
     this.btnListDialing[2].isDisable = true
-    HiLog.i(TAG, "get btnListCall : %s");
+    HiLog.i(TAG, "get btnListCall");
   }
 
   /**
@@ -97,7 +97,7 @@ export default struct FuncBtnGroup {
    * @param {Object} callData - call data
    */
   onCallStateChange(newVal) {
-    HiLog.i(TAG, "Calling status changed : %s");
+    HiLog.i(TAG, "Calling status changed : %s" + JSON.stringify(newVal));
     const BtnName= ['video', 'record', 'add', 'mute', 'contact']
     if (this.callList.length >= 2 && this.callList.every((v) =>
     v.conferenceState !== ConferenceConst.TEL_CONFERENCE_ACTIVE)) {
@@ -131,7 +131,7 @@ export default struct FuncBtnGroup {
    * @param {Object} obj - object
    */
   btnClick(obj) {
-    HiLog.i(TAG, "btnClick get icon type : %s");
+    HiLog.i(TAG, "btnClick get icon type : %s" + JSON.stringify(obj));
     const BtnName= ['record', 'keep', 'video', 'mute']
     const type = obj.type;
     const { callId } = this.callData;
@@ -202,7 +202,7 @@ export default struct FuncBtnGroup {
    */
   keepHandle(type) {
     const awaitIsActive = this.btnList.find((v) => v.type === type).isActive;
-    HiLog.i(TAG, "keep handle %s");
+    HiLog.i(TAG, "keep handle");
     awaitIsActive ? this.mCallServiceProxy.holdCall(this.callData.callId) : this.mCallServiceProxy.unHoldCall(this.callData.callId);
   }
 
@@ -213,7 +213,7 @@ export default struct FuncBtnGroup {
    */
   muteHandle(type) {
     const awaitIsActive = this.btnList.find((v) => v.type === type).isActive;
-    HiLog.i(TAG, "mute Handle %s");
+    HiLog.i(TAG, "mute Handle");
     awaitIsActive ? this.mCallServiceProxy.setMuted() : this.mCallServiceProxy.cancelMuted();
   }
 
@@ -221,7 +221,7 @@ export default struct FuncBtnGroup {
    * Clear timer
    */
   onDestroy() {
-    HiLog.i(TAG, "onDestroy %s");
+    HiLog.i(TAG, "onDestroy");
     this.timer && clearInterval(this.timer);
   }
 

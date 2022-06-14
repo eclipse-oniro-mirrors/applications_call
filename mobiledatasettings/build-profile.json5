@@ -16,7 +16,6 @@
   apiType: 'faMode',
   showInServiceCenter: false,
   buildOption: {
-    arkEnable: true,
   },
   "targets": [
     {

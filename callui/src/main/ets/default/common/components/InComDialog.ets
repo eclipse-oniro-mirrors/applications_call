@@ -54,7 +54,7 @@ export default struct InComDialog {
                 .onClick(() => {
                   this.controller.close();
                   this.confirm(item)
-                  HiLog.i(TAG, "onClick and confirm : %s");
+                  HiLog.i(TAG, "onClick and confirm");
                 })
 
                 if (item.id !== 4) {
@@ -73,7 +73,7 @@ export default struct InComDialog {
             }
             .margin({ top: 8, bottom: 16 })
             .onClick(() => {
-              HiLog.i(TAG, "onClick %s");
+              HiLog.i(TAG, "onClick");
               this.controller.close();
             })
           }

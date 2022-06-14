@@ -69,7 +69,7 @@ export default class CallManager {
     featureAbility.getWant().then((want) => {
       if (want && want.parameters && ('callState' in want.parameters)) {
         this.update(want.parameters);
-        HiLog.i(TAG, "initCallData featureAbility.getWant :  %s")
+        HiLog.i(TAG, "initCallData featureAbility.getWant :")
       } else {
         this.mCallServiceProxy.publish({
           key: 'getInitCallData',
@@ -78,7 +78,7 @@ export default class CallManager {
       }
     })
       .catch((error) => {
-        HiLog.i(TAG, "initCallData catch error :  %s" + JSON.stringify(error))
+        HiLog.i(TAG, "initCallData catch error : %s" + JSON.stringify(error))
       });
   }
 
@@ -99,14 +99,13 @@ export default class CallManager {
     commonEvent.subscribe(subscriber, (err, res) => {
       if (err.code === 0) {
         const callData = JSON.parse(res.data);
-        this.callData = callData
-        HiLog.i(TAG, "commonEvent subscribe : %s")
+        HiLog.i(TAG, "commonEvent subscribe : %s" + JSON.stringify(subscriber))
         if (callData) {
+          this.callData = callData
           this.update(callData);
         }
-        HiLog.i(TAG, "commonEvent subscribe : %s")
       } else {
-        HiLog.i(TAG, "commonEvent.subscribe err: %s" + JSON.stringify(err))
+        HiLog.i(TAG, "commonEvent.subscribe err : %s" + JSON.stringify(err))
       }
     });
   }
@@ -137,7 +136,7 @@ export default class CallManager {
         AppStorage.SetOrCreate("AccountNumber", data)
       }
     });
-    HiLog.i(TAG, "update : ")
+    HiLog.i(TAG, "update :")
   }
 
   /**

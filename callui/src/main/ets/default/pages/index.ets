@@ -80,7 +80,7 @@ export default struct Index {
    * Dialing function
    */
   public dialCall(phoneNumber, accountId = 0, videoState = 0, dialScene = 0) {
-    HiLog.i(TAG, "dialCall phoneNumber : ")
+    HiLog.i(TAG, "dialCall phoneNumber :")
     call.dial(phoneNumber, {
       accountId,
       videoState,
@@ -120,7 +120,7 @@ export default struct Index {
       }
       this.notificationManager.sendNotification(text, this.callData);
       this.notificationManager.sendCapsuleNotification(this.callData, true);
-      HiLog.i(TAG, "onPageHide end :  ")
+      HiLog.i(TAG, "onPageHide end : ")
     }
   }
 

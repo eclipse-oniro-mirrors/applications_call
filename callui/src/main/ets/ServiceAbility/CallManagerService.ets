@@ -54,7 +54,7 @@ export default class CallManagerService {
       commonEvent.createSubscriber({
         events
       }, (err, data) => {
-        HiLog.i(TAG, "addSubscriber  %s")
+        HiLog.i(TAG, "addSubscriber")
         resolve(data);
       });
     });
@@ -77,7 +77,7 @@ export default class CallManagerService {
       }
       subscriber.finishCommonEvent()
         .then(() => {
-        HiLog.i(TAG, "addSubscriber finishCommonEvent : %s")
+        HiLog.i(TAG, "addSubscriber finishCommonEvent")
       })
     });
   }
@@ -146,7 +146,7 @@ export default class CallManagerService {
         parameters: callData
       }
     }).then((data) => {
-      HiLog.i(TAG, "callUI service PA.startAbility data : %s")
+      HiLog.i(TAG, "callUI service PA.startAbility data : %s" + JSON.stringify(data))
     }).catch((err) => {
       HiLog.i(TAG, "callUI service PA.startAbility err : %s" + JSON.stringify(err))
     });
@@ -184,7 +184,7 @@ export default class CallManagerService {
       isOrdered: false,
       data: JSON.stringify(callData)
     }, (res) => {
-      HiLog.i(TAG, "callUI service commonEvent.publish callback res : %s")
+      HiLog.i(TAG, "callUI service commonEvent.publish callback res")
     });
   }
 

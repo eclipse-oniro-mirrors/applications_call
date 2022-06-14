@@ -1,1 +1,1 @@
-module.exports = require('@ohos/hvigor-ohos-plugin').appTasks
+module.exports = require('@ohos/hvigor-ohos-plugin').legacyAppTasks
