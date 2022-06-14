@@ -53,7 +53,7 @@ export default class CallDataManager {
   public update(callData) {
     const { callState, callId } = callData;
     const targetObj = this.callList.find((v) => v.callId === callId);
-    HiLog.i(TAG, "update : ")
+    HiLog.i(TAG, "update :")
     if (targetObj) {
       Object.assign(targetObj, {
         ...callData
@@ -124,7 +124,7 @@ export default class CallDataManager {
    */
   updateCallTimeList(callData) {
     const CallTimeObj = this.callTimeList.find((v) => v.callId === callData.callId);
-    HiLog.i(TAG, "updateCallTimeList : %s")
+    HiLog.i(TAG, "updateCallTimeList : %s" + JSON.stringify(CallTimeObj))
     if (!CallTimeObj && callData.callState === CallStateConst.CALL_STATUS_ACTIVE) {
       const obj = {
         callId: callData.callId,
@@ -134,7 +134,7 @@ export default class CallDataManager {
       };
       this.callTimeList.push(obj);
       AppStorage.SetOrCreate("CallTimeList", this.callTimeList)
-      HiLog.i(TAG, "updateCallTimeList : %s")
+      HiLog.i(TAG, "updateCallTimeList : %s" + JSON.stringify(this.callTimeList))
     }
   }
 }

@@ -30,7 +30,7 @@ export default struct BottomBtn {
   private imageList;
 
   public aboutToAppear(callData, callList, callTimeList): void  {
-    HiLog.i(TAG, "aboutToAppear : ");
+    HiLog.i(TAG, "aboutToAppear :");
     this.getImageList();
     this.mCallServiceProxy = CallServiceProxy.getInstance();
   }
@@ -60,7 +60,7 @@ export default struct BottomBtn {
    */
   onHangUp() {
     this.mCallServiceProxy.hangUpCall(this.callData.callId);
-    HiLog.i(TAG, "onHangUp this.callData.callId : ");
+    HiLog.i(TAG, "onHangUp this.callData.callId :");
   }
 
   /**

@@ -1,1 +1,1 @@
-module.exports = require('@ohos/hvigor-ohos-plugin'). legacyHapTasks 
+module.exports = require('@ohos/hvigor-ohos-plugin').legacyHapTasks 

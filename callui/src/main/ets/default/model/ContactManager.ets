@@ -42,7 +42,7 @@ export default class ContactManager {
             predicates.equalTo('detail_info', callData.accountNumber);
             const dataAbilityHelper = await featureAbility.acquireDataAbilityHelper(DBbaseUri);
             const resSet = await dataAbilityHelper.query(DBUri, columns, predicates);
-            HiLog.i(TAG, "getContactInfo resSet : %s")
+            HiLog.i(TAG, "getContactInfo resSet : %s" + JSON.stringify(resSet))
             if (resSet.rowCount > 0) {
                 resSet.goToFirstRow();
                 callData.contactName = resSet.getString(resSet.getColumnIndex('display_name'));

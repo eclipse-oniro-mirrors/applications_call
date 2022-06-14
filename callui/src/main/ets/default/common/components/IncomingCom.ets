@@ -61,7 +61,6 @@ export default struct IncomingCom {
       cancel: () => {
       },
       confirm: (item) => {
-        HiLog.i(TAG, "confirm : %s");
         this.msgItemClick(item);
       },
       cancelHandle: () => {
@@ -93,7 +92,7 @@ export default struct IncomingCom {
     resourceManager.getResourceManager().then(result => {
       result.getString(obj.msg.id, (err, typeName) => {
         content = typeName
-        HiLog.i(TAG, "sendMessage  resourceManager.getResourceManager : ");
+        HiLog.i(TAG, "sendMessage  resourceManager.getResourceManager :");
         return new Promise(function (resolve, reject) {
           sms.sendMessage({
             slotId: slotId,
@@ -172,7 +171,7 @@ export default struct IncomingCom {
             duration: 2000,
           });
           this.mCallServiceProxy.rejectCall(this.callData.callId, obj.msg);
-          HiLog.i(TAG, "msgItemClick : ");
+          HiLog.i(TAG, "msgItemClick :");
         })
       })
     } else {
@@ -195,10 +194,10 @@ export default struct IncomingCom {
     const {callId, callState} = this.callData;
     if (callState !== CallStateConst.CALL_STATUS_WAITING) {
       this.mCallServiceProxy.rejectCall(callId);
-      HiLog.i(TAG, "onReject this.mCallServiceProxy.rejectCall : ");
+      HiLog.i(TAG, "onReject this.mCallServiceProxy.rejectCall :");
     } else {
       this.mCallServiceProxy.hangUpCall(callId);
-      HiLog.i(TAG, "onReject this.mCallServiceProxy.hangUpCall : ");
+      HiLog.i(TAG, "onReject this.mCallServiceProxy.hangUpCall :");
     }
   }
 
@@ -206,7 +205,7 @@ export default struct IncomingCom {
    * Enable the SMS reply pop-up
    */
   private btnClick(type) {
-    HiLog.i(TAG, "btnClick : %s");
+    HiLog.i(TAG, "btnClick : %s" + JSON.stringify(type));
     if (type === 'msg') {
       this.msgDialogController.open();
     }
@@ -216,7 +215,7 @@ export default struct IncomingCom {
    * Answer the phone interface
    */
   private onAnswer() {
-    HiLog.i(TAG, "onAnswer : ");
+    HiLog.i(TAG, "onAnswer :");
     this.mCallServiceProxy.acceptCall(this.callData.callId);
   }
 

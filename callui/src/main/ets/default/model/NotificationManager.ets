@@ -100,7 +100,7 @@ export default class NotificationManager {
         });
       }
     }
-    HiLog.i(TAG, "sendNotification end : ")
+    HiLog.i(TAG, "sendNotification end :")
   }
 
   /**
@@ -157,9 +157,9 @@ export default class NotificationManager {
    * Cancel notice
    */
   cancelNotification() {
-    HiLog.i(TAG, "cancelNotification : %s")
+    HiLog.i(TAG, "cancelNotification")
     notification.cancel(ID).then((res) => {
-      HiLog.i(TAG, "notify.cancel res data : %s")
+      HiLog.i(TAG, "notify.cancel res data : %s" + JSON.stringify(res))
     }).catch((err) => {
       HiLog.i(TAG, "notify.cancel err data : %s" + JSON.stringify(err))
     });
@@ -175,7 +175,7 @@ export default class NotificationManager {
   sendCapsuleNotification(callData, isBackground) {
     HiLog.i(TAG, "sendCapsuleNotification isBackground : %s"  + JSON.stringify(isBackground))
     callData.startTime = (callData.startTime)
-    HiLog.i(TAG, "sendCapsuleNotification callData.startTime  : ")
+    HiLog.i(TAG, "sendCapsuleNotification callData.startTime :")
     const {callState, startTime} = callData;
     commonEvent.publish('CAPSULE_EVENT_CALL_UI', {
       bundleName: 'com.ohos.callui',
@@ -188,7 +188,7 @@ export default class NotificationManager {
         wantAbilityName: CALL_ABILITY_NAME
       })
     }, (res) => {
-      HiLog.i(TAG, "callUI app commonEvent.publish CAPSULE_EVENT_CALL_UI callback res  : %s")
+      HiLog.i(TAG, "callUI app commonEvent.publish CAPSULE_EVENT_CALL_UI callback res : %s" + JSON.stringify(res))
     });
   }
 }

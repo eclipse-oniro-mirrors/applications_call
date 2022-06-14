@@ -33,10 +33,10 @@ export default class TelephonyApi {
   public registerCallStateCallback(callBack) {
     call.on('callDetailsChange', (data) => {
       if (!data) {
-        HiLog.i(TAG,prefixLog + 'call.on registerCallStateCallback' + JSON.stringify(data))
+        HiLog.i(TAG, prefixLog + "call.on registerCallStateCallback" + JSON.stringify(data))
         return;
       }
-      HiLog.i(TAG,prefixLog + 'call.on registerCallStateCallback callState: ' + JSON.stringify(data.callState))
+      HiLog.i(TAG, prefixLog + "call.on registerCallStateCallback callState :" + JSON.stringify(data.callState))
       callBack(data);
     });
   }
@@ -47,10 +47,10 @@ export default class TelephonyApi {
   public unRegisterCallStateCallback() {
     call.off('callDetailsChange', (data) => {
       if (!data) {
-        HiLog.i(TAG,prefixLog + 'call.off unRegisterCallStateCallback' + JSON.stringify(data))
+        HiLog.i(TAG, prefixLog + "call.off unRegisterCallStateCallback" + JSON.stringify(data))
         return;
       }
-      HiLog.i(TAG,prefixLog + 'call.off unRegisterCallStateCallback')
+      HiLog.i(TAG, prefixLog + "call.off unRegisterCallStateCallback")
     });
   }
 
@@ -61,7 +61,7 @@ export default class TelephonyApi {
    */
   public acceptCall = function (callId) {
     call.answer(callId).then((res) => {
-      HiLog.i(TAG,prefixLog +  "call.answer : %s")
+      HiLog.i(TAG, prefixLog + "call.answer")
     }).catch((err) => {
       HiLog.i(TAG, prefixLog + "call.answer catch : %s" + JSON.stringify(err))
     })
@@ -79,7 +79,7 @@ export default class TelephonyApi {
   public rejectCall = function (callId, isSendSms = false, msg = '') {
     const rejectCallPromise = isSendSms ? call.reject(callId, {messageContent: msg}) : call.reject(callId);
     rejectCallPromise.then((res) => {
-      HiLog.i(TAG,prefixLog +  "then:rejectCall : %s")
+      HiLog.i(TAG, prefixLog + "then:rejectCall")
     })
       .catch((err) => {
         HiLog.i(TAG, prefixLog + "catch:rejectCall : %s" + JSON.stringify(err))
@@ -96,7 +96,7 @@ export default class TelephonyApi {
   public hangUpCall = (callId) => new Promise((resolve, reject) => {
     call.hangup(callId).then((res) => {
       resolve(res);
-      HiLog.i(TAG, prefixLog + "then:hangUpCall : %s")
+      HiLog.i(TAG, prefixLog + "then:hangUpCall : %s" + JSON.stringify(callId))
     }).catch((err) => {
       reject(err);
       HiLog.i(TAG, prefixLog + "catch:hangUpCall : %s" + JSON.stringify(err))

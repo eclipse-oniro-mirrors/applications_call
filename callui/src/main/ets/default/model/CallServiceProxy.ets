@@ -46,7 +46,7 @@ export default class CallServiceProxy {
    * Make a phone call
    */
   public dialCall(phoneNumber, accountId = 0, videoState = 0, dialScene = 0) {
-    HiLog.i(TAG, "dialCall phoneNumber : ")
+    HiLog.i(TAG, "dialCall phoneNumber :")
     return call.dial(phoneNumber, {
       accountId,
       videoState,
@@ -68,7 +68,7 @@ export default class CallServiceProxy {
    */
   public acceptCall = function (callId) {
     call.answer(callId).then((res) => {
-      HiLog.i(TAG,prefixLog +  "call.answer : %s")
+      HiLog.i(TAG, prefixLog + "call.answer : %s" + JSON.stringify(callId))
     }).catch((err) => {
       HiLog.i(TAG, prefixLog + "call.answer catch : %s" + JSON.stringify(err))
     });
@@ -86,7 +86,7 @@ export default class CallServiceProxy {
   public rejectCall = function (callId, isSendSms = false, msg = '') {
     const rejectCallPromise = isSendSms ? call.reject(callId, {messageContent: msg}) : call.reject(callId);
     rejectCallPromise.then((res) => {
-      HiLog.i(TAG,prefixLog +  "then:rejectCall : %s")
+      HiLog.i(TAG,prefixLog +  "then:rejectCall")
     })
       .catch((err) => {
         HiLog.i(TAG, prefixLog + "catch:rejectCall : %s" + JSON.stringify(err))
@@ -103,7 +103,7 @@ export default class CallServiceProxy {
   public hangUpCall = (callId) => new Promise((resolve, reject) => {
     call.hangup(callId).then((res) => {
       resolve(res);
-      HiLog.i(TAG, prefixLog + "then:hangUpCall : %s")
+      HiLog.i(TAG, prefixLog + "then:hangUpCall : %s" + JSON.stringify(callId))
     }).catch((err) => {
       reject(err);
       HiLog.i(TAG, prefixLog + "catch:hangUpCall : %s" + JSON.stringify(err))
@@ -120,11 +120,11 @@ export default class CallServiceProxy {
   public holdCall = (callId) => new Promise((resolve, reject) => {
     call.holdCall(callId).then((res) => {
       resolve(res);
-      HiLog.i(TAG,prefixLog +  "then:holdCall : %s")
+      HiLog.i(TAG, prefixLog + "then:holdCall : %s" + JSON.stringify(callId))
     })
       .catch((err) => {
         reject(err);
-        HiLog.i(TAG,prefixLog +  "catch:holdCall : %s" + JSON.stringify(err))
+        HiLog.i(TAG, prefixLog +  "catch:holdCall : %s" + JSON.stringify(err))
     });
   });
 
@@ -138,11 +138,11 @@ export default class CallServiceProxy {
   public unHoldCall = (callId) => new Promise((resolve, reject) => {
     call.unHoldCall(callId).then((res) => {
       resolve(res);
-      HiLog.i(TAG,prefixLog +  "then:unHoldCall : %s")
+      HiLog.i(TAG, prefixLog + "then:holdCall : %s" + JSON.stringify(callId))
     })
       .catch((err) => {
         reject(err);
-        HiLog.i(TAG,prefixLog +  "catch:unHoldCall : %s" + JSON.stringify(err))
+        HiLog.i(TAG, prefixLog +  "catch:unHoldCall : %s" + JSON.stringify(err))
     });
   });
 
@@ -156,11 +156,11 @@ export default class CallServiceProxy {
    */
   public setAudioDevice = (device = 1) => new Promise((resolve, reject) => {
     call.setAudioDevice(device).then((res) => {
-      HiLog.i(TAG,prefixLog +  "then:setAudioDevice : %s")
+      HiLog.i(TAG, prefixLog + "then:setAudioDevice : %s" + JSON.stringify(device))
       resolve(res);
     }).catch((err) => {
       reject(err);
-      HiLog.i(TAG,prefixLog +  "catch:setAudioDevice : %s" + JSON.stringify(err))
+      HiLog.i(TAG, prefixLog +  "catch:setAudioDevice : %s" + JSON.stringify(err))
     });
   });
 
@@ -169,7 +169,7 @@ export default class CallServiceProxy {
    */
   public setMuted() {
     call.setMuted().then((res) => {
-      HiLog.i(TAG,prefixLog +  "then:setMute : %s")
+      HiLog.i(TAG, prefixLog +  "then:setMute")
     }).catch((err) => {
       HiLog.i(TAG,prefixLog +  "catch:setMute : %s" + JSON.stringify(err))
     });
@@ -180,9 +180,9 @@ export default class CallServiceProxy {
    */
   public cancelMuted() {
     call.cancelMuted().then((res) => {
-      HiLog.i(TAG,prefixLog +  "then:cancelMuted : %s")
+      HiLog.i(TAG,prefixLog +  "then:cancelMuted")
     }).catch((err) => {
-      HiLog.i(TAG,prefixLog +  "catch:cancelMuted : %s" + JSON.stringify(err))
+      HiLog.i(TAG, prefixLog +  "catch:cancelMuted : %s" + JSON.stringify(err))
     });
   };
 
@@ -196,11 +196,11 @@ export default class CallServiceProxy {
   public switchCall = (callId) => new Promise((resolve, reject) => {
     call.switchCall(callId).then((res) => {
       resolve(res);
-      HiLog.i(TAG,prefixLog +  "then:switchCall : %s")
+      HiLog.i(TAG, prefixLog + "then:switchCall : %s" + JSON.stringify(callId))
     })
       .catch((err) => {
         reject(err);
-        HiLog.i(TAG,prefixLog +  "catch:switchCall : %s" + JSON.stringify(err))
+        HiLog.i(TAG, prefixLog +  "catch:switchCall : %s" + JSON.stringify(err))
     });
   });
 
@@ -212,10 +212,10 @@ export default class CallServiceProxy {
   public registerCallStateCallback(callBack) {
     call.on('callDetailsChange', (data) => {
       if (!data) {
-        HiLog.i(TAG,prefixLog +  "call.on registerCallStateCallback : %s")
+        HiLog.i(TAG, prefixLog +  "call.on registerCallStateCallback")
         return;
       }
-      HiLog.i(TAG,prefixLog +  "call.on registerCallStateCallback callState : %s")
+      HiLog.i(TAG, prefixLog +  "call.on registerCallStateCallback callState")
       callBack(data);
     });
   }
@@ -226,10 +226,10 @@ export default class CallServiceProxy {
   public unRegisterCallStateCallback() {
     call.off('callDetailsChange', (data) => {
       if (!data) {
-        HiLog.i(TAG,prefixLog +  "call.off unRegisterCallStateCallback : %s")
+        HiLog.i(TAG, prefixLog +  "call.off unRegisterCallStateCallback")
         return;
       }
-      HiLog.i(TAG,prefixLog +  "call.off unRegisterCallStateCallback : %s")
+      HiLog.i(TAG, prefixLog +  "call.off unRegisterCallStateCallback")
     });
   }
 
@@ -239,9 +239,9 @@ export default class CallServiceProxy {
   public registerCallEventCallback() {
     call.on('callEventChange', (data) => {
       if (!data) {
-        HiLog.i(TAG,prefixLog +  "call.on callEventChange : %s")
+        HiLog.i(TAG, prefixLog +  "call.on callEventChange")
       } else {
-        HiLog.i(TAG,prefixLog +  "call.on callEventChange : %s")
+        HiLog.i(TAG, prefixLog +  "call.on callEventChange")
       }
     });
   }
@@ -268,9 +268,9 @@ export default class CallServiceProxy {
    */
   public startDTMF = (callId, str) => {
     call.startDTMF(callId, str).then((res) => {
-      HiLog.i(TAG,prefixLog +  "then:startDtmf : %s")
+      HiLog.i(TAG, prefixLog + "then:startDtmf : %s" + JSON.stringify(callId) + JSON.stringify(str))
     }).catch((err) => {
-      HiLog.i(TAG,prefixLog +  "catch:startDtmf : %s" + JSON.stringify(err))
+      HiLog.i(TAG, prefixLog + "catch:startDtmf : %s" + JSON.stringify(err))
     });
   };
 
@@ -281,9 +281,9 @@ export default class CallServiceProxy {
    */
   public stopDTMF = (callId) => {
     call.stopDTMF(callId).then((res) => {
-      HiLog.i(TAG,prefixLog +  "then:stopDtmf : %s")
+      HiLog.i(TAG, prefixLog + "then:stopDtmf : %s" + JSON.stringify(callId))
     }).catch((err) => {
-      HiLog.i(TAG,prefixLog +  "then:startDtmf : %s" + JSON.stringify(err))
+      HiLog.i(TAG, prefixLog + "then:startDtmf : %s" + JSON.stringify(err))
     });
   };
 
@@ -294,22 +294,22 @@ export default class CallServiceProxy {
    */
   public combineConference = (callId) => {
     call.combineConference(callId).then((res) => {
-      HiLog.i(TAG,prefixLog +  "then:combineConference : %s")
+      HiLog.i(TAG, prefixLog + "then:combineConference : %s" + JSON.stringify(callId))
     }).catch((err) => {
-      HiLog.i(TAG,prefixLog +  "catch:combineConference : %s" + JSON.stringify(err))
+      HiLog.i(TAG, prefixLog + "catch:combineConference : %s" + JSON.stringify(err))
     });
   };
 
   public publish(data) {
-    HiLog.i(TAG,prefixLog +  "callui.event.callEvent publish  : %s")
+    HiLog.i(TAG, prefixLog + "callui.event.callEvent publish")
     commonEvent.publish('callui.event.callEvent', {
       bundleName: 'com.ohos.callui',
       isOrdered: false,
       data: JSON.stringify(data)
     }, (res) => {
-      HiLog.i(TAG,prefixLog +  "callui.event.callEvent success  : %s")
+      HiLog.i(TAG, prefixLog + "callui.event.callEvent success")
     });
-    HiLog.i(TAG,prefixLog +  "callui.event.callEvent publish end : %s")
+    HiLog.i(TAG, prefixLog + "callui.event.callEvent publish end")
   }
 }
 

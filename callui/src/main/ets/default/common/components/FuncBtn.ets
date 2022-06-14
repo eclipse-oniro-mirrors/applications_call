@@ -47,7 +47,7 @@ export default struct FuncBtn {
    * Button group  change picture
    */
   changeBtn(type) {
-    HiLog.i(TAG, "changeBtn type : %s");
+    HiLog.i(TAG, "changeBtn type : %s" + type);
     const BtnName = ['record', 'keep', 'video', 'mute'];
     if (Method.includes(BtnName, type)) {
       this.isActive = !this.isActive;
@@ -73,12 +73,12 @@ export default struct FuncBtn {
       return '';
     }
     this.textColor = 'rgb(255, 255, 255)';
-    HiLog.i(TAG, "iconClassName this.isDisable : " );
+    HiLog.i(TAG, "iconClassName this.isDisable :");
     return 'default';
   }
 
   private aboutToAppear(): void {
-    HiLog.i(TAG, "aboutToAppear ");
+    HiLog.i(TAG, "aboutToAppear");
     this.iconClassName();
   }
 
