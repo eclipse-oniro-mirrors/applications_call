@@ -67,7 +67,6 @@ export default struct ContactCard {
    * @return {number} - Call status
    */
   public callState() {
-    HiLog.i(TAG, "callState this.callData.callState : %s", this.callData.callState);
     return this.callData.callState;
   }
 
