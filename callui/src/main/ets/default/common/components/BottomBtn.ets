@@ -60,7 +60,7 @@ export default struct BottomBtn {
    */
   onHangUp() {
     this.mCallServiceProxy.hangUpCall(this.callData.callId);
-    HiLog.i(TAG, "onHangUp this.callData.callId :");
+    HiLog.i(TAG, "onHangUp this.callData.callId : %s", this.callData.callId);
   }
 
   /**
