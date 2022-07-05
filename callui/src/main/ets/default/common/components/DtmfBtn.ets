@@ -29,7 +29,7 @@ export default struct DtmfBtn {
   private mCallServiceProxy;
   callData :any;
 
-  public aboutToAppear(): void  {
+  public aboutToAppear(): void {
     this.textInput = "";
     HiLog.i(TAG, "aboutToAppear");
     this.mCallServiceProxy = new CallServiceProxy();
