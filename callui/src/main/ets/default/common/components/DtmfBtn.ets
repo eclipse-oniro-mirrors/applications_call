@@ -29,9 +29,10 @@ export default struct DtmfBtn {
   private mCallServiceProxy;
   callData :any;
 
-  public aboutToAppear(): void  {
+  public aboutToAppear(): void {
+    this.textInput = "";
     HiLog.i(TAG, "aboutToAppear");
-    this.mCallServiceProxy = new CallServiceProxy()
+    this.mCallServiceProxy = new CallServiceProxy();
   }
 
   /**
@@ -86,9 +87,6 @@ export default struct DtmfBtn {
       .onTouch((event: TouchEvent) => {
         if (event.type === TouchType.Down) {
           this.color = "rgba(255, 255, 255, 0.4)"
-          if (!this.textInput) {
-            this.textInput = "";
-          }
           this.textInput = this.textInput + this.item.value
           if (this.textInput.length > 35) {
             this.subStr = this.textInput.substr(this.textInput.length - 35, this.textInput.length - 1)
