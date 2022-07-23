@@ -19,17 +19,55 @@
 
 import router from '@system.router';
 import telephonyData from '@ohos.telephony.data';
+import telephonyObserver from '@ohos.telephony.observer';
+import telephonySim from '@ohos.telephony.sim';
+
+const TAG = "MobileDataSettings:";
 
 @Entry
 @Component
 struct Index {
+  @State isDataOn: boolean = false;
   @State isDataEnable: boolean = false;
 
-  private onPageShow(): void {
-    telephonyData.isCellularDataEnabled().then((dataEnable) => {
-      this.isDataEnable = dataEnable
-    }).catch((error) => {
+  aboutToAppear(): void {
+    console.info(TAG + "aboutToAppear");
+    telephonyObserver.on("simStateChange", (simStateData) => {
+      if (!simStateData) {
+        return;
+      }
+      console.info(TAG + "simStateChange simState: " + simStateData.state);
+      this.updateDataEnableState(simStateData.state);
     });
+  }
+
+  onPageShow(): void {
+    console.info(TAG + "onPageShow");
+    telephonySim.getSimState(0).then((simState) => {
+      console.info(TAG + "onPageShow simState: " + simState);
+      this.updateDataEnableState(simState);
+    }).catch((error) => {
+      console.error(TAG + "onPageShow getSimState error: " + error);
+    });
+  }
+
+  aboutToDisappear(): void {
+    console.info(TAG + "aboutToDisappear");
+  }
+
+  private updateDataEnableState(simState) {
+    if (simState == telephonySim.SimState.SIM_STATE_NOT_PRESENT) {
+      this.isDataEnable = false;
+      this.isDataOn = false;
+    } else {
+      this.isDataEnable = true;
+      telephonyData.isCellularDataEnabled().then((dataEnable) => {
+        console.info(TAG + "updateDataEnableState isCellularDataEnabled: " + dataEnable);
+        this.isDataOn = dataEnable;
+      }).catch((error) => {
+        console.error(TAG + "updateDataEnableState isCellularDataEnabled error: " + error);
+      });
+    }
   }
 
   build() {
@@ -88,7 +126,7 @@ struct Index {
                 .margin({ left: 12 })
                 .alignItems(HorizontalAlign.Start)
 
-                Toggle({ type: ToggleType.Switch, isOn: this.isDataEnable })
+                Toggle({ type: ToggleType.Switch, isOn: this.isDataOn })
                   .onChange((isOn: boolean) => {
                     if (isOn) {
                       telephonyData.enableCellularData()
@@ -107,6 +145,7 @@ struct Index {
                   .height(20)
                   .width(36)
                   .margin({ right: 12 })
+                  .enabled(this.isDataEnable)
               }
               .height(72)
               .width('100%')

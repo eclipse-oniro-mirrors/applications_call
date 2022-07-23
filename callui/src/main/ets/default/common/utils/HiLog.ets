@@ -16,16 +16,13 @@
 /**
  * Log Util
  *
- * standard :
- * 1. define TAG, recommend class name。
+ * standard:
+ * 1. define TAG, recommend class name.
  * 2. switch IS_DEBUG_ON as true, when debugging.
  * 3. msg should be short and valuable.
  * 4. choose appropriate function.
  * 5. the function execute many times can not print.
  * 6. uniqueness.
- *
- * @author wwx1105401
- * @since 2022-02-18
  */
 export default class HiLog {
   private static readonly IS_DEBUG_ON: boolean = false;

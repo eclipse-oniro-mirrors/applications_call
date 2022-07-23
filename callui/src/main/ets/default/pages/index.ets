@@ -88,8 +88,7 @@ export default struct Index {
     });
   }
 
-
-  private aboutToAppear(): void {
+  aboutToAppear(): void {
     HiLog.i(TAG, "aboutToAppear :")
     this.callStateConst = new CallStateConst();
     this.notificationManager = new NotificationManager();
