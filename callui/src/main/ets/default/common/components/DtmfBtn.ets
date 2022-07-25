@@ -73,12 +73,6 @@ export default struct DtmfBtn {
           .opacity(0.6)
           .fontWeight(FontWeight.Regular)
           .fontColor('#FFFFFF')
-
-        Image('../../assets/picture/ic_public_Smart_Speaker_filed.svg')
-          .width(15.5)
-          .height(7)
-          .opacity(0.6)
-          .backgroundColor('#FFFFFF')
       }
       .width(56.5)
       .height(56.5)
