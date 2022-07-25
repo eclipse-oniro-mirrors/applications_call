@@ -19,6 +19,7 @@
 
 import CallStateConst from '../constant/CallStateConst';
 import CallServiceProxy from '../../model/CallServiceProxy';
+import app from '@system.app';
 import HiLog from '../utils/Hilog';
 
 const TAG = "CallList";
@@ -86,6 +87,9 @@ export default struct callList {
    */
   public onHangUp(callId) {
     this.mCallServiceProxy.hangUpCall(callId);
+    if (this.callList.length === 1) {
+      app.terminate();
+    }
   }
 
   build() {
