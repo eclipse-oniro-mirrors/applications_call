@@ -53,6 +53,7 @@ struct Index {
 
   aboutToDisappear(): void {
     console.info(TAG + "aboutToDisappear");
+    telephonyObserver.off("simStateChange");
   }
 
   private updateDataEnableState(simState) {
