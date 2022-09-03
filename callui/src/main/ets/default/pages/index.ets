@@ -30,6 +30,7 @@ import HiLog from '../common/utils/Hilog';
 import bundle from '@ohos.bundle';
 import abilityAccessCtrl from "@ohos.abilityAccessCtrl";
 import featureAbility from "@ohos.ability.featureAbility"
+import byTrace from "@ohos.bytrace"
 
 const TAG = "Index";
 const prefixLog = 'callUI app:@ohos.telephony.call:';
@@ -90,6 +91,7 @@ export default struct Index {
 
   aboutToAppear(): void {
     HiLog.i(TAG, "aboutToAppear :")
+    byTrace.startTrace('aboutToAppear', 0);
     this.callStateConst = new CallStateConst();
     this.notificationManager = new NotificationManager();
     globalThis.callManager = new CallManager(this)
@@ -97,13 +99,16 @@ export default struct Index {
     let delayMethod = setTimeout(() => {
       clearTimeout(delayMethod);
     }, SIM_CARD_DELAYED_DISPLAY);
+    byTrace.finishTrace('aboutToAppear', 0);
   }
 
   onPageShow() {
     HiLog.i(TAG, "onPageShow : ")
+    byTrace.startTrace('onPageShow', 1);
     this.appInactiveState = false;
     this.notificationManager.cancelNotification();
     this.notificationManager.sendCapsuleNotification(this.callData, false);
+    byTrace.finishTrace('onPageShow', 1);
     HiLog.i(TAG, "onPageShow end : ")
   }
 
