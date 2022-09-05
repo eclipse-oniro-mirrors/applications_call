@@ -104,7 +104,7 @@ export default struct FuncBtnGroup {
       this.btnList.forEach((item) => {
         if (!Method.includes(BtnName,(item.type))) {
           item.isDisable = false;
-          this.btnList[1].isActive = false;
+          item.isActive = false;
         }
       });
       if (newVal === CallStateConst.CALL_STATUS_HOLDING) {
