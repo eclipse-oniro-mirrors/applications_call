@@ -204,6 +204,10 @@
     {
       "name": "SMS_Authorization_Notification",
       "value": "请前往设置进行短信授权"
+    },
+    {
+      "name": "emergency",
+      "value": "紧急通话"
     }
   ]
 }

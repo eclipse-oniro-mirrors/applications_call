@@ -138,7 +138,7 @@ export default class CallServiceProxy {
   public unHoldCall = (callId) => new Promise((resolve, reject) => {
     call.unHoldCall(callId).then((res) => {
       resolve(res);
-      HiLog.i(TAG, prefixLog + "then:holdCall : %s" + JSON.stringify(callId))
+      HiLog.i(TAG, prefixLog + "then:unholdCall : %s" + JSON.stringify(callId))
     })
       .catch((err) => {
         reject(err);

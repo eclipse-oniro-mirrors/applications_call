@@ -78,6 +78,7 @@ export default struct FuncBtnGroup {
     }else{
       this.btnList = this.btnListCall
     }
+    this.onCallStateChange(this.callData.callState)
     HiLog.i(TAG, "upData BtnList");
   }
 
@@ -98,18 +99,12 @@ export default struct FuncBtnGroup {
    */
   onCallStateChange(newVal) {
     HiLog.i(TAG, "Calling status changed : %s" + JSON.stringify(newVal));
-    const BtnName= ['video', 'record', 'add', 'mute', 'contact']
-    if (this.callList.length >= 2 && this.callList.every((v) =>
-    v.conferenceState !== ConferenceConst.TEL_CONFERENCE_ACTIVE)) {
-      this.btnList.splice(1, 2, ...this.mClone.clone(BtnGroupConfig.threePartyList));
-    } else {
-      this.btnList.splice(1, 2, new Array(BtnGroupConfig.btnGroupList).splice(1, 2));
-      this.btnList.splice(1, 2, ...this.mClone.clone(BtnGroupConfig.btnGroupList).splice(1, 2));
-    }
+    const BtnName= ['video', 'record', 'add', 'contact']
     if (newVal === CallStateConst.CALL_STATUS_ACTIVE || newVal === CallStateConst.CALL_STATUS_HOLDING) {
       this.btnList.forEach((item) => {
         if (!Method.includes(BtnName,(item.type))) {
           item.isDisable = false;
+          this.btnList[1].isActive = false;
         }
       });
       if (newVal === CallStateConst.CALL_STATUS_HOLDING) {
@@ -132,7 +127,7 @@ export default struct FuncBtnGroup {
    */
   btnClick(obj) {
     HiLog.i(TAG, "btnClick get icon type : %s" + JSON.stringify(obj));
-    const BtnName= ['record', 'keep', 'video', 'mute']
+    const BtnName= ['record', 'video', 'mute']
     const type = obj.type;
     const { callId } = this.callData;
     if (Method.includes(BtnName,type)) {
@@ -203,7 +198,7 @@ export default struct FuncBtnGroup {
   keepHandle(type) {
     const awaitIsActive = this.btnList.find((v) => v.type === type).isActive;
     HiLog.i(TAG, "keep handle");
-    awaitIsActive ? this.mCallServiceProxy.holdCall(this.callData.callId) : this.mCallServiceProxy.unHoldCall(this.callData.callId);
+    !awaitIsActive ? this.mCallServiceProxy.holdCall(this.callData.callId) : this.mCallServiceProxy.unHoldCall(this.callData.callId);
   }
 
   /**
