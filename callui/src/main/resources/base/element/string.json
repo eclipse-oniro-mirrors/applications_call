@@ -203,6 +203,10 @@
     {
       "name": "SMS_Authorization_Notification",
       "value": "Go to settings for SMS Authorization"
+    },
+    {
+      "name": "emergency",
+      "value": "Emergency"
     }
   ]
 }

@@ -42,10 +42,12 @@ export default struct ContactCard {
   @Link callData: any;
   private mUtils: Utils;
   private timer;
+  private emergency = $r('app.string.emergency');
   @StorageLink("CallTimeList") callTimeList: any = [];
   @StorageLink("TextInput") textInput: string = '';
   @StorageLink("TextInputValue") textInputValue: string = '';
   @StorageLink("AccountNumber") accountNumber: string = '';
+  @StorageLink("IsEmergencyPhoneNumber") isEmergencyPhoneNumber: boolean = false;
 
   public aboutToAppear(callData, callList, callTimeList): void  {
     HiLog.i(TAG, "aboutToAppear");
@@ -114,7 +116,7 @@ export default struct ContactCard {
           }
         } else if (!this.isShowKeyboard) {
           Column() {
-            Text(this.callData.contactName ? this.callData.contactName : this.accountNumber)
+            Text(this.isEmergencyPhoneNumber ? this.emergency : this.callData.contactName ? this.callData.contactName : this.accountNumber)
               .fontSize(30)
               .height(40)
               .lineHeight(40)
@@ -151,6 +153,17 @@ export default struct ContactCard {
               .fontColor('#FFFFFF')
               .margin({ bottom: 8 })
               .visibility(this.callData.contactName && !this.isShowKeyboard ? Visibility.Visible : Visibility.None)
+          }
+        }
+
+        if (this.callData.callState === 1) {
+          Row() {
+            Text($r("app.string.callHold"))
+              .fontSize(14)
+              .height(19)
+              .lineHeight(19)
+              .fontColor('#FFFFFF')
+              .fontWeight(FontWeight.Medium)
           }
         }
 

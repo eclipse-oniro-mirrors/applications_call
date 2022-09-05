@@ -48,7 +48,7 @@ export default struct FuncBtn {
    */
   changeBtn(type) {
     HiLog.i(TAG, "changeBtn type : %s" + type);
-    const BtnName = ['record', 'keep', 'video', 'mute'];
+    const BtnName = ['record', 'video', 'mute'];
     if (Method.includes(BtnName, type)) {
       this.isActive = !this.isActive;
     }
