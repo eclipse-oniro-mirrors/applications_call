@@ -1,0 +1,36 @@
+{
+  "module": {
+    "name": "com.ohos.mobiledatasettings",
+    "type": "feature",
+    "srcEntrance": "./ets/Application/MyAbilityStage.ts",
+    "description": "$string:mobiledatasettings_MainAbility",
+    "mainElement": "com.ohos.mobiledatasettings.MainAbility",
+    "deviceTypes": [
+      "default",
+      "tablet"
+    ],
+    "deliveryWithInstall": true,
+    "installationFree": false,
+    "pages": "$profile:main_pages",
+    "abilities": [
+      {
+        "name": "com.ohos.mobiledatasettings.MainAbility",
+        "srcEntrance": "./ets/MainAbility/MainAbility.ts",
+        "description": "$string:mainability_description",
+        "icon": "$media:ic_icon",
+        "label": "$string:MainAbility_label",
+        "startWindowIcon": "$media:ic_icon",
+        "startWindowBackground": "$color:white",
+        "visible": true
+      }
+    ],
+    "requestPermissions" : [
+      {
+        "name": "ohos.permission.GET_NETWORK_INFO"
+      },
+      {
+        "name": "ohos.permission.SET_TELEPHONY_STATE"
+      }
+    ]
+  }
+}

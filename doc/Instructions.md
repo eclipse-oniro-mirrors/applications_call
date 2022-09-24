@@ -105,7 +105,7 @@ import dataStorage from '@ohos.data.storage';
 
 
 
-（2）选择 Project → Signing Configs，添加StorePassword：123456abcdef，KeyPassword：123456，
+（2）选择 Project → Signing Configs，添加StorePassword：123456abc，KeyPassword：123456abc，
     依次填入下图中，完成后点击Apply，再点击OK
 
 ![](../doc/image/signature_2.png)
