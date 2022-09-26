@@ -16,7 +16,7 @@
   "app": {
     "signingConfigs": [
       {
-        "name": "default",
+        "name": "release",
         "material": {
           "storePassword": "",
           "certpath": "signature/OpenHarmony.cer",
@@ -28,19 +28,19 @@
         }
       }
     ],
-    "compileSdkVersion": 8,
-    "compatibleSdkVersion": 8,
+    "compileSdkVersion": 9,
+    "compatibleSdkVersion": 9,
     "products": [
       {
         "name": "default",
-        "signingConfig": "default",
+        "signingConfig": "release",
       }
     ]
   },
   "modules": [
     {
-      "name": "callui",
-      "srcPath": "./callui",
+      "name": "com.ohos.callui",
+      "srcPath": "./entry",
       "targets": [
         {
           "name": "default",
@@ -51,7 +51,11 @@
       ]
     },
     {
-      "name": "mobiledatasettings",
+      "name": "common",
+      "srcPath": "./common"
+    },
+    {
+      "name": "com.ohos.mobiledatasettings",
       "srcPath": "./mobiledatasettings",
       "targets": [
         {
