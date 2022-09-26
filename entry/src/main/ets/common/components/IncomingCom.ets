@@ -52,7 +52,6 @@ export default struct IncomingCom {
   @Link callData: any;
   private btnList = [];
   private msgList = [];
-  private remindList = [];
   mCallServiceProxy: CallServiceProxy = null;
   msgDialogController: CustomDialogController = new CustomDialogController
   ({
@@ -88,42 +87,40 @@ export default struct IncomingCom {
     let slotId = 0
     let destinationHost = this.callData.accountNumber
     let contactName = this.callData.contactName
-    let content: string = "";
     globalThis.calluiAbilityContext?.resourceManager.getString(obj.msg.id, (err, typeName) => {
-      content = typeName
-      LogUtils.i(TAG, "sendMessage  resourceManager getString :");
-      return new Promise(function (resolve, reject) {
-        sms.sendMessage({
-          slotId: slotId,
-          destinationHost: destinationHost,
-          content: content,
-          sendCallback: (err, sendResult) => {
-            if (err) {
-              return;
-            }
-            if (sendResult.result === SEND_SMS_SUCCESS) {
-              globalThis.calluiAbilityContext?.resourceManager.getString($r("app.string.SMS_Sent")
-                .id, (err, typeName) => {
-                prompt.showToast({
-                  message: contactName ? typeName + `${contactName}` : typeName + `${destinationHost}`,
-                  duration: 2000,
-                });
-              })
-            } else {
-              globalThis.calluiAbilityContext?.resourceManager.getString($r("app.string.message_Failed").id, (err, typeName) => {
-                if (err) {
-                  return;
-                }
-                prompt.showToast({
-                  message: typeName,
-                  duration: 2000,
-                });
-              })
-            }
+      LogUtils.i(TAG, "sendMessage");
+      sms.sendMessage({
+        slotId: slotId,
+        destinationHost: destinationHost,
+        content: typeName,
+        sendCallback: (err, sendResult) => {
+          if (err) {
+            return;
           }
-        });
-      }
-      );
+          if (sendResult.result === SEND_SMS_SUCCESS) {
+            globalThis.calluiAbilityContext?.resourceManager.getString($r("app.string.SMS_Sent")
+              .id, (err, typeName) => {
+              if (err) {
+                return;
+              }
+              prompt.showToast({
+                message: contactName ? typeName + `${contactName}` : typeName + `${destinationHost}`,
+                duration: 2000,
+              });
+            })
+          } else {
+            globalThis.calluiAbilityContext?.resourceManager.getString($r("app.string.message_Failed").id, (err, typeName) => {
+              if (err) {
+                return;
+              }
+              prompt.showToast({
+                message: typeName,
+                duration: 2000,
+              });
+            })
+          }
+        }
+      });
     })
   }
 
