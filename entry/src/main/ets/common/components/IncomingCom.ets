@@ -49,11 +49,9 @@ const SEND_SMS_FAILURE_SERVICE_UNAVAILABLE = 3;
 
 @Component
 export default struct IncomingCom {
-  @State SendResult: any = {};
   @Link callData: any;
   private btnList = [];
   private msgList = [];
-  private remindList = [];
   mCallServiceProxy: CallServiceProxy = null;
   msgDialogController: CustomDialogController = new CustomDialogController
   ({
@@ -88,32 +86,41 @@ export default struct IncomingCom {
   private sendMessage(obj) {
     let slotId = 0
     let destinationHost = this.callData.accountNumber
-    let content: string = "";
-    resourceManager.getResourceManager().then(result => {
-      result.getString(obj.msg.id, (err, typeName) => {
-        content = typeName
-        LogUtils.i(TAG, "sendMessage  resourceManager.getResourceManager :");
-        return new Promise(function (resolve, reject) {
-          sms.sendMessage({
-            slotId: slotId,
-            destinationHost: destinationHost,
-            content: content,
-            sendCallback: (err, sendResult) => {
-              this.SendResult = sendResult
+    let contactName = this.callData.contactName
+    globalThis.calluiAbilityContext?.resourceManager.getString(obj.msg.id, (err, typeName) => {
+      LogUtils.i(TAG, "sendMessage");
+      sms.sendMessage({
+        slotId: slotId,
+        destinationHost: destinationHost,
+        content: typeName,
+        sendCallback: (err, sendResult) => {
+          if (err) {
+            return;
+          }
+          if (sendResult.result === SEND_SMS_SUCCESS) {
+            globalThis.calluiAbilityContext?.resourceManager.getString($r("app.string.SMS_Sent")
+              .id, (err, typeName) => {
               if (err) {
-                reject(err);
-              } else {
-                if (sendResult.result === SEND_SMS_SUCCESS) {
-                  resolve(true);
-                } else {
-                  resolve(false);
-                }
+                return;
               }
-            }
-          });
+              prompt.showToast({
+                message: contactName ? typeName + `${contactName}` : typeName + `${destinationHost}`,
+                duration: 2000,
+              });
+            })
+          } else {
+            globalThis.calluiAbilityContext?.resourceManager.getString($r("app.string.message_Failed").id, (err, typeName) => {
+              if (err) {
+                return;
+              }
+              prompt.showToast({
+                message: typeName,
+                duration: 2000,
+              });
+            })
+          }
         }
-        );
-      })
+      });
     })
   }
 
@@ -157,34 +164,9 @@ export default struct IncomingCom {
    * @param {string} msg - Send SMS content
    */
   private msgItemClick(obj) {
-    let Content: string = "";
-    let Err: string = "";
-    let Message: string = ""
-    this.sendMessage(obj)
-    if (this.SendResult) {
-      resourceManager.getResourceManager().then(result => {
-        result.getString($r("app.string.SMS_Sent")
-        .id, (err, typeName) => {
-          Content = typeName
-          prompt.showToast({
-            message: this.callData.contactName ? Content + `${this.callData.contactName}` : Content + `${this.callData.accountNumber}`,
-            duration: 2000,
-          });
-          this.mCallServiceProxy.rejectCall(this.callData.callId, obj.msg);
-          LogUtils.i(TAG, "msgItemClick :");
-        })
-      })
-    } else {
-      resourceManager.getResourceManager().then(result => {
-        result.getString($r("app.string.message_Failed").id, (err, typeName) => {
-          Err = typeName
-          prompt.showToast({
-            message: Err,
-            duration: 2000,
-          });
-        })
-      })
-    }
+    LogUtils.i(TAG, "msgItemClick rejectCall");
+    this.mCallServiceProxy.rejectCall(this.callData.callId, obj.msg);
+    this.sendMessage(obj);
   }
 
   /**

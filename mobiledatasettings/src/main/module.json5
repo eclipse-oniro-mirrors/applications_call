@@ -18,7 +18,7 @@
     "name": "com.ohos.mobiledatasettings",
     "type": "feature",
     "srcEntrance": "./ets/Application/MyAbilityStage.ts",
-    "description": "$string:mobiledatasettings_MainAbility",
+    "description": "$string:app_name",
     "mainElement": "com.ohos.mobiledatasettings.MainAbility",
     "deviceTypes": [
       "default",
@@ -33,7 +33,7 @@
         "srcEntrance": "./ets/MainAbility/MainAbility.ts",
         "description": "$string:mainability_description",
         "icon": "$media:app_icon",
-        "label": "$string:MainAbility_label",
+        "label": "$string:mainability_description",
         "startWindowIcon": "$media:app_icon",
         "startWindowBackground": "$color:white",
         "visible": true

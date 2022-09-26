@@ -1,14 +1,6 @@
 {
   "string": [
     {
-      "name": "MainAbility_label",
-      "value": "label"
-    },
-    {
-      "name": "mobiledatasettings_MainAbility",
-      "value": "Phone"
-    },
-    {
       "name": "mainability_description",
       "value": "Mobile data settings"
     },
