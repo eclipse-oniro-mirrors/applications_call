@@ -16,24 +16,11 @@
 /**
  * @file: Header information display component
  */
-
-
 import LogUtils from '../utils/LogUtils';
 import callStateConst from '../constant/CallStateConst';
 import Utils from '../utils/utils'
 
 const TAG = "contactCard";
-
-/**
- * call global variable  会黑屏
- */
-/*
-let callTimeList;
-let defaultTemp = globalThis.exports.default;
-if (defaultTemp != undefined) {
-  callTimeList = defaultTemp.data.callTimeList;
-}
-*/
 
 @Component
 export default struct ContactCard {
@@ -198,7 +185,6 @@ export default struct ContactCard {
         if (this.isShowTime()) {
           Column() {
             Text(this.callTimeList[0].callTime)
-              // Text('00:56     ')
               .fontSize(14)
               .height(19)
               .lineHeight(19)

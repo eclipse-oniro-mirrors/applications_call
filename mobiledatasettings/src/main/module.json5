@@ -17,9 +17,9 @@
         "name": "com.ohos.mobiledatasettings.MainAbility",
         "srcEntrance": "./ets/MainAbility/MainAbility.ts",
         "description": "$string:mainability_description",
-        "icon": "$media:ic_icon",
+        "icon": "$media:app_icon",
         "label": "$string:MainAbility_label",
-        "startWindowIcon": "$media:ic_icon",
+        "startWindowIcon": "$media:app_icon",
         "startWindowBackground": "$color:white",
         "visible": true
       }

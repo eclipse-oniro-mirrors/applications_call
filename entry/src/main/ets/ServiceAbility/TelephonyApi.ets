@@ -33,7 +33,7 @@ export default class TelephonyApi {
   public registerCallStateCallback(callBack) {
     call.on('callDetailsChange', (data) => {
       if (!data) {
-        LogUtils.i(TAG, prefixLog + "call.on registerCallStateCallback: " + JSON.stringify(data))
+        LogUtils.i(TAG, prefixLog + "call.on registerCallStateCallback")
         return;
       }
       LogUtils.i(TAG, prefixLog + "call.on registerCallStateCallback callState: " + JSON.stringify(data.callState))
@@ -47,7 +47,7 @@ export default class TelephonyApi {
   public unRegisterCallStateCallback() {
     call.off('callDetailsChange', (data) => {
       if (!data) {
-        LogUtils.i(TAG, prefixLog + "call.off unRegisterCallStateCallback" + JSON.stringify(data))
+        LogUtils.i(TAG, prefixLog + "call.off unRegisterCallStateCallback")
         return;
       }
       LogUtils.i(TAG, prefixLog + "call.off unRegisterCallStateCallback")
@@ -61,9 +61,9 @@ export default class TelephonyApi {
    */
   public acceptCall = function (callId) {
     call.answer(callId).then((res) => {
-      LogUtils.i(TAG, prefixLog + "call.answer")
+      LogUtils.i(TAG, prefixLog + "call.answer callId: " + JSON.stringify(callId))
     }).catch((err) => {
-      LogUtils.i(TAG, prefixLog + "call.answer catch : %s" + JSON.stringify(err))
+      LogUtils.i(TAG, prefixLog + "call.answer catch : " + JSON.stringify(err))
     })
   }
 

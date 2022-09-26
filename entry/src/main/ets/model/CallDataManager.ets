@@ -47,7 +47,6 @@ export default class CallDataManager {
   /**
    * update callList and callData callTimeList
    *`
-   *
    * @param { object } callData
    */
   public update(callData) {
@@ -85,7 +84,7 @@ export default class CallDataManager {
         this.NotificationManager.cancelNotification();
         AppStorage.Get<NotificationManager>('notificationManager').sendCapsuleNotification(callData, true);
         AppStorage.Delete("CallTimeList");
-        globalThis.calluiAbilityContext.terminateSelf().then((data) => {
+        globalThis.calluiAbilityContext?.terminateSelf().then((data) => {
           LogUtils.i(TAG, "calluiAbility terminateSelf");
         });
       } else {

@@ -79,8 +79,8 @@ export default class CallManagerService {
       }
       subscriber.finishCommonEvent()
         .then(() => {
-         LogUtils.i(TAG, "addSubscriber finishCommonEvent")
-      })
+          LogUtils.i(TAG, "addSubscriber finishCommonEvent")
+        })
     });
   }
 
@@ -142,9 +142,9 @@ export default class CallManagerService {
    */
   startAbility(callData) {
     this.context.startAbility({
-        bundleName: CALL_BUNDLE_NAME,
-        abilityName: ABILITY_NAME,
-        parameters: callData
+      bundleName: CALL_BUNDLE_NAME,
+      abilityName: ABILITY_NAME,
+      parameters: callData
     }).then((data) => {
       LogUtils.i(TAG, "callUI service startAbility data :" + JSON.stringify(data))
     }).catch((err) => {
@@ -179,7 +179,7 @@ export default class CallManagerService {
    * @param { Object } callData - Object
    */
   publishData(callData) {
-      commonEvent.publish('callui.event.callDetailsChange', {
+    commonEvent.publish('callui.event.callDetailsChange', {
       bundleName: 'com.ohos.callui',
       isOrdered: false,
       data: JSON.stringify(callData)

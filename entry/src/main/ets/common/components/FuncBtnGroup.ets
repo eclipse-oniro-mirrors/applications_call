@@ -154,12 +154,12 @@ export default struct FuncBtnGroup {
         this.mCallServiceProxy.switchCall(callId);
         break;
       case 'add':
-        globalThis.calluiAbilityContext.startAbility({
-            bundleName: 'com.ohos.contacts',
-            abilityName: 'com.ohos.contacts.MainAbility',
-            parameters: {
-              pageFlag : 'page_flag_dialer'
-            }
+        globalThis.calluiAbilityContext?.startAbility({
+          bundleName: 'com.ohos.contacts',
+          abilityName: 'com.ohos.contacts.MainAbility',
+          parameters: {
+            pageFlag: 'page_flag_dialer'
+          }
         });
         break;
       case 'video':
@@ -168,12 +168,12 @@ export default struct FuncBtnGroup {
         this.muteHandle('mute');
         break;
       case 'contact':
-        globalThis.calluiAbilityContext.startAbility({
-            bundleName: 'com.ohos.contacts',
-            abilityName: 'com.ohos.contacts.MainAbility',
-            parameters: {
-              pageFlag: "page_flag_choose_contacts"
-            }
+        globalThis.calluiAbilityContext?.startAbility({
+          bundleName: 'com.ohos.contacts',
+          abilityName: 'com.ohos.contacts.MainAbility',
+          parameters: {
+            pageFlag: "page_flag_choose_contacts"
+          }
         });
         break;
       case 'merge':

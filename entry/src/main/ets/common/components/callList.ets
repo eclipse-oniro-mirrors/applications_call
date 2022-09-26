@@ -88,7 +88,7 @@ export default struct callList {
   public onHangUp(callId) {
     this.mCallServiceProxy.hangUpCall(callId);
     if (this.callList.length === 1) {
-      globalThis.calluiAbilityContext.terminateSelf().then((data) => {
+      globalThis.calluiAbilityContext?.terminateSelf().then((data) => {
         LogUtils.i(TAG, "onHangUp terminateSelfCallBack");
       });
     }

@@ -79,7 +79,7 @@ export default class NotificationManager {
           callId, btnType: key
         };
         const wantAgentObj = await this.getWantAgent(data, SEND_COMMON_EVENT);
-        globalThis.calluiAbilityContext.resourceManager.getString(textMap[key].id, (error, value) => {
+        globalThis.calluiAbilityContext?.resourceManager.getString(textMap[key].id, (error, value) => {
           if (error != null) {
             LogUtils.i(TAG, "sendNotification getResourceManager getString err")
           } else {

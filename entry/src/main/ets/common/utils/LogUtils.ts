@@ -29,21 +29,21 @@
  *  log package tool class
  */
 export class LogUtils {
-    d(TAG, msg): void {
-        console.debug("[callui:]" + TAG + ":" + msg);
-    }
+  d(TAG, msg): void {
+    console.debug("[callui:]" + TAG + ":" + msg);
+  }
 
-    i(TAG, msg): void {
-        console.info("[callui:]" + TAG + ":" + msg);
-    }
+  i(TAG, msg): void {
+    console.info("[callui:]" + TAG + ":" + msg);
+  }
 
-    w(TAG, msg): void {
-        console.warn("[callui:]" + TAG + ":" + msg);
-    }
+  w(TAG, msg): void {
+    console.warn("[callui:]" + TAG + ":" + msg);
+  }
 
-    e(TAG, msg): void {
-        console.error("[callui:]" + TAG + ":" + msg);
-    }
+  e(TAG, msg): void {
+    console.error("[callui:]" + TAG + ":" + msg);
+  }
 }
 
 let mLogUtil = new LogUtils();

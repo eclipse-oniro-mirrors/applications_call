@@ -164,7 +164,7 @@ export default struct IncomingCom {
     if (this.SendResult) {
       resourceManager.getResourceManager().then(result => {
         result.getString($r("app.string.SMS_Sent")
-          .id, (err, typeName) => {
+        .id, (err, typeName) => {
           Content = typeName
           prompt.showToast({
             message: this.callData.contactName ? Content + `${this.callData.contactName}` : Content + `${this.callData.accountNumber}`,

@@ -7,12 +7,9 @@ import CallStateConst from '../common/constant/CallStateConst';
 import LogUtils from '../common/utils/LogUtils';
 import byTrace from "@ohos.bytrace"
 import NotificationManager from '../model/NotificationManager';
-import call from '@ohos.telephony.call';
 import CallManager from '../model/CallManager';
-import notification from '@ohos.notification';
 
-const TAG = "MainAbility Index";
-const SIM_CARD_DELAYED_DISPLAY = 100;
+const TAG = "MainAbility";
 
 /**
  * @file: Main interface
@@ -25,20 +22,14 @@ struct Index {
   @State callData: any = CallStateConst.defaultCallData;
   @State isShowKeyboard: boolean = false;
   @State callList: Array<any> = [];
-  private consoleTxt: '';
-  private callStateConst;
   private notificationManager: NotificationManager;
 
   aboutToAppear(): void {
     LogUtils.i(TAG, "aboutToAppear :")
     byTrace.startTrace('aboutToAppear', 0);
-    this.callStateConst = new CallStateConst();
     this.notificationManager = new NotificationManager();
     globalThis.callManager = new CallManager(this)
     AppStorage.SetOrCreate<NotificationManager>('notificationManager', this.notificationManager);
-    let delayMethod = setTimeout(() => {
-      clearTimeout(delayMethod);
-    }, SIM_CARD_DELAYED_DISPLAY);
     byTrace.finishTrace('aboutToAppear', 0);
   }
 
@@ -58,8 +49,10 @@ struct Index {
     const {callState, accountNumber, contactName, callId} = this.callData;
     let fool = (callState !== CallStateConst.callStateObj.CALL_STATUS_DISCONNECTED && callId)
     if (callState !== CallStateConst.callStateObj.CALL_STATUS_DISCONNECTED && callId) {
-      let text = contactName + '  ' + accountNumber + '  ';
-      if (!contactName) {
+      let text = '';
+      if (contactName) {
+        text = contactName + '  ' + accountNumber + '  ';
+      } else {
         text = accountNumber + '  ';
       }
       this.notificationManager.sendNotification(text, this.callData);
@@ -85,18 +78,6 @@ struct Index {
   private callState() {
     LogUtils.i(TAG, "callState : " + this.callData.callState)
     return this.callData.callState;
-  }
-
-  /**
-   * Dialing function
-   */
-  public dialCall(phoneNumber, accountId = 0, videoState = 0, dialScene = 0) {
-    LogUtils.i(TAG, "dialCall phoneNumber :")
-    call.dial(phoneNumber, {
-      accountId,
-      videoState,
-      dialScene
-    });
   }
 
   build() {

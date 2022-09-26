@@ -28,28 +28,26 @@ const DBUri = DBbaseUri + '/contacts/contact_data';
  * class ContactManager
  */
 export default class ContactManager {
-
-    /**
-     * get contact info
-     *
-     * @param { Object } callData -Object
-     */
-    async getContactInfo(callData) {
-        try {
-            const columns = ['id', 'display_name', 'detail_info'];
-            const predicates = new dataAbility.DataAbilityPredicates();
-            predicates.equalTo('detail_info', callData.accountNumber);
-            predicates.equalTo('is_deleted', 0);
-            const dataAbilityHelper = await featureAbility.acquireDataAbilityHelper(globalThis.calluiAbilityContext, DBbaseUri);
-            const resSet = await dataAbilityHelper.query(DBUri, columns, predicates);
-            LogUtils.i(TAG, "getContactInfo resSet : " + JSON.stringify(resSet))
-            if (resSet.rowCount > 0) {
-                resSet.goToFirstRow();
-                callData.contactName = resSet.getString(resSet.getColumnIndex('display_name'));
-                LogUtils.i(TAG, "getContactInfo callData.contactName:" + callData.contactName);
-            }
-        } catch (err) {
-            LogUtils.i(TAG, "getContactInfo catch err : %s" + JSON.stringify(err))
-        }
+  /**
+   * get contact info
+   *
+   * @param { Object } callData -Object
+   */
+  async getContactInfo(callData) {
+    try {
+      const columns = ['id', 'display_name', 'detail_info'];
+      const predicates = new dataAbility.DataAbilityPredicates();
+      predicates.equalTo('detail_info', callData.accountNumber);
+      predicates.equalTo('is_deleted', 0);
+      const dataAbilityHelper = await featureAbility.acquireDataAbilityHelper(globalThis.calluiAbilityContext, DBbaseUri);
+      const resSet = await dataAbilityHelper.query(DBUri, columns, predicates);
+      LogUtils.i(TAG, "getContactInfo resSet : " + JSON.stringify(resSet.rowCount))
+      if (resSet.rowCount > 0) {
+        resSet.goToFirstRow();
+        callData.contactName = resSet.getString(resSet.getColumnIndex('display_name'));
+      }
+    } catch (err) {
+      LogUtils.i(TAG, "getContactInfo catch err : %s" + JSON.stringify(err))
     }
+  }
 }
