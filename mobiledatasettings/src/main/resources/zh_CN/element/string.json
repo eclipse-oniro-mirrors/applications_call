@@ -1,10 +1,6 @@
 {
   "string": [
     {
-      "name": "mobiledatasettings_MainAbility",
-      "value": "通话"
-    },
-    {
       "name": "mainability_description",
       "value": "移动网络设置"
     },
