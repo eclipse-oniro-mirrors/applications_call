@@ -55,7 +55,8 @@ export default class CallManagerService {
     LogUtils.i(TAG, "addSubscriber")
     subscriber = await new Promise((resolve) => {
       commonEvent.createSubscriber({
-        events
+        events,
+        publisherPermission: "ohos.permission.GET_TELEPHONY_STATE"
       }, (err, data) => {
         resolve(data);
       });
@@ -182,6 +183,7 @@ export default class CallManagerService {
     commonEvent.publish('callui.event.callDetailsChange', {
       bundleName: 'com.ohos.callui',
       isOrdered: false,
+      subscriberPermissions: ["ohos.permission.GET_TELEPHONY_STATE"],
       data: JSON.stringify(callData)
     }, (res) => {
       LogUtils.i(TAG, "publishData commonEvent.publish callback res: callui.event.callDetailsChange")

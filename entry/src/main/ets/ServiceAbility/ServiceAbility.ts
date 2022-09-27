@@ -21,6 +21,10 @@ export default class ServiceAbility extends ServiceExtension {
     callData.videoState = want.parameters?.videoState;
     callData.callType = want.parameters?.callType;
     callData.callState = want.parameters?.callState;
+    callData.callId = want.parameters?.callId;
+    callData.startTime = want.parameters?.startTime;
+    callData.accountId = want.parameters?.accountId;
+    callData.isEcc = want.parameters?.isEcc;
     callData.conferenceState = want.parameters?.conferenceState;
     this.callManagerService.getCallData(callData);
     return new Stub("ServiceAbility");
