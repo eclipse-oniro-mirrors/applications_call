@@ -305,6 +305,7 @@ export default class CallServiceProxy {
     commonEvent.publish('callui.event.callEvent', {
       bundleName: 'com.ohos.callui',
       isOrdered: false,
+      subscriberPermissions: ["ohos.permission.GET_TELEPHONY_STATE"],
       data: JSON.stringify(data)
     }, (res) => {
       LogUtils.i(TAG, prefixLog + "callui.event.callEvent success")

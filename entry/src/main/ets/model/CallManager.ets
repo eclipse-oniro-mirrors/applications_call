@@ -82,7 +82,8 @@ export default class CallManager {
   private async registerSubscriber() {
     subscriber = await new Promise((resolve) => {
       commonEvent.createSubscriber({
-        events
+        events,
+        publisherPermission: "ohos.permission.GET_TELEPHONY_STATE"
       },
         (err, data) => {
           resolve(data);

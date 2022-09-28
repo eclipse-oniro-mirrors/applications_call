@@ -181,6 +181,7 @@ export default class NotificationManager {
     let commonEventPublishData = {
       bundleName: 'com.ohos.systemui',
       isOrdered: false,
+      subscriberPermissions: ["ohos.permission.GET_TELEPHONY_STATE"],
       data: JSON.stringify({
         callState,
         startTime: startTime * 1000,

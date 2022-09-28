@@ -32,7 +32,6 @@ const TAG = "MainAbility";
 @Entry
 @Component
 struct Index {
-  @State message: string = 'Hello World'
   @StorageLink("InputNum") inputNum: any = [];
   @State callData: any = CallStateConst.defaultCallData;
   @State isShowKeyboard: boolean = false;
