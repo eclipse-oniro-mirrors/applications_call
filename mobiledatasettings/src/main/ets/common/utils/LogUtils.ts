@@ -30,19 +30,19 @@
  */
 export class LogUtils {
   d(TAG, msg): void {
-    console.debug("[mobiledatasettins:]" + TAG + ":" + msg);
+    console.debug("[mobiledatasettings:]" + TAG + ":" + msg);
   }
 
   i(TAG, msg): void {
-    console.info("[mobiledatasettins:]" + TAG + ":" + msg);
+    console.info("[mobiledatasettings:]" + TAG + ":" + msg);
   }
 
   w(TAG, msg): void {
-    console.warn("[mobiledatasettins:]" + TAG + ":" + msg);
+    console.warn("[mobiledatasettings:]" + TAG + ":" + msg);
   }
 
   e(TAG, msg): void {
-    console.error("[mobiledatasettins:]" + TAG + ":" + msg);
+    console.error("[mobiledatasettings:]" + TAG + ":" + msg);
   }
 }
 
