@@ -1,51 +1,44 @@
-import hilog from '@ohos.hilog';
 import Ability from '@ohos.application.Ability'
 import Window from '@ohos.window'
+import LogUtils from '../common/utils/LogUtils'
+
+const TAG = "MainAbility";
 
 export default class MainAbility extends Ability {
-    onCreate(want, launchParam) {
-        hilog.isLoggable(0x0000, 'testTag', hilog.LogLevel.INFO);
-        hilog.info(0x0000, 'testTag', '%{public}s', 'Ability onCreate');
-        hilog.info(0x0000, 'testTag', '%{public}s', 'want param:' + JSON.stringify(want) ?? '');
-        hilog.info(0x0000, 'testTag', '%{public}s', 'launchParam:' + JSON.stringify(launchParam) ?? '');
-    }
+  onCreate(want, launchParam) {
+    LogUtils.i(TAG, "onCreate")
+    globalThis.settingsAbilityContext = this.context;
+  }
 
-    onDestroy() {
-        hilog.isLoggable(0x0000, 'testTag', hilog.LogLevel.INFO);
-        hilog.info(0x0000, 'testTag', '%{public}s', 'Ability onDestroy');
-    }
+  onDestroy() {
+    LogUtils.i(TAG, "onDestroy")
+  }
 
-    onWindowStageCreate(windowStage: Window.WindowStage) {
-        // Main window is created, set main page for this ability
-        hilog.isLoggable(0x0000, 'testTag', hilog.LogLevel.INFO);
-        hilog.info(0x0000, 'testTag', '%{public}s', 'Ability onWindowStageCreate');
+  onWindowStageCreate(windowStage: Window.WindowStage) {
+    // Main window is created, set main page for this ability
+    LogUtils.i(TAG, "onWindowStageCreate")
 
-        windowStage.loadContent('pages/index', (err, data) => {
-            if (err.code) {
-                hilog.isLoggable(0x0000, 'testTag', hilog.LogLevel.ERROR);
-                hilog.error(0x0000, 'testTag', 'Failed to load the content. Cause: %{public}s', JSON.stringify(err) ?? '');
-                return;
-            }
-            hilog.isLoggable(0x0000, 'testTag', hilog.LogLevel.INFO);
-            hilog.info(0x0000, 'testTag', 'Succeeded in loading the content. Data: %{public}s', JSON.stringify(data) ?? '');
-        });
-    }
+    windowStage.loadContent('pages/index', (err, data) => {
+      if (err.code) {
+        LogUtils.e(TAG, 'Failed to load the content. Cause:' + JSON.stringify(err));
+        return;
+      }
+      LogUtils.e(TAG, 'Succeeded in loading the content. Data: ' + JSON.stringify(data))
+    });
+  }
 
-    onWindowStageDestroy() {
-        // Main window is destroyed, release UI related resources
-        hilog.isLoggable(0x0000, 'testTag', hilog.LogLevel.INFO);
-        hilog.info(0x0000, 'testTag', '%{public}s', 'Ability onWindowStageDestroy');
-    }
+  onWindowStageDestroy() {
+    // Main window is destroyed, release UI related resources
+    LogUtils.i(TAG, "onWindowStageDestroy")
+  }
 
-    onForeground() {
-        // Ability has brought to foreground
-        hilog.isLoggable(0x0000, 'testTag', hilog.LogLevel.INFO);
-        hilog.info(0x0000, 'testTag', '%{public}s', 'Ability onForeground');
-    }
+  onForeground() {
+    // Ability has brought to foreground
+    LogUtils.i(TAG, "onForeground")
+  }
 
-    onBackground() {
-        // Ability has back to background
-        hilog.isLoggable(0x0000, 'testTag', hilog.LogLevel.INFO);
-        hilog.info(0x0000, 'testTag', '%{public}s', 'Ability onBackground');
-    }
+  onBackground() {
+    // Ability has back to background
+    LogUtils.i(TAG, "onBackground")
+  }
 }

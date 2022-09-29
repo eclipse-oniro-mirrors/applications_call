@@ -16,10 +16,10 @@ export default class MainAbility extends Ability {
     LogUtils.i(TAG, "onWindowStageCreate")
     windowStage.loadContent("pages/index", (err, data) => {
       if (err.code) {
-        console.error('Failed to load the content. Cause:' + JSON.stringify(err));
+        LogUtils.e(TAG, 'Failed to load the content. Cause:' + JSON.stringify(err));
         return;
       }
-      console.info('Succeeded in loading the content. Data: ' + JSON.stringify(data))
+      LogUtils.e(TAG, 'Succeeded in loading the content. Data: ' + JSON.stringify(data))
     });
   }
 

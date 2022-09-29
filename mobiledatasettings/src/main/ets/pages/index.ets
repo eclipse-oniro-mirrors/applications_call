@@ -1,21 +1,3 @@
-/*
-@Entry
-@Component
-struct Index {
-  @State message: string = 'Hello World'
-
-  build() {
-    Row() {
-      Column() {
-        Text(this.message)
-          .fontSize(50)
-          .fontWeight(FontWeight.Bold)
-      }
-      .width('100%')
-    }
-    .height('100%')
-  }
-}*/
 /**
  * Copyright (c) 2022 Huawei Device Co., Ltd.
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -34,11 +16,10 @@ struct Index {
 /**
  * @file: Mobile Network Home page
  */
-
-import router from '@system.router';
 import telephonyData from '@ohos.telephony.data';
 import telephonyObserver from '@ohos.telephony.observer';
 import telephonySim from '@ohos.telephony.sim';
+import LogUtils from '../common/utils/LogUtils'
 
 const TAG = "MobileDataSettings:";
 
@@ -49,29 +30,36 @@ struct Index {
   @State isDataEnable: boolean = false;
 
   aboutToAppear(): void {
-    console.info(TAG + "aboutToAppear");
+    LogUtils.i(TAG, "aboutToAppear");
     telephonyObserver.on("simStateChange", (simStateData) => {
       if (!simStateData) {
         return;
       }
-      console.info(TAG + "simStateChange simState: " + simStateData.state);
+      LogUtils.i(TAG, "simStateChange simState: " + simStateData.state);
       this.updateDataEnableState(simStateData.state);
     });
   }
 
   onPageShow(): void {
-    console.info(TAG + "onPageShow");
+    LogUtils.i(TAG, "onPageShow  3333");
     telephonySim.getSimState(0).then((simState) => {
-      console.info(TAG + "onPageShow simState: " + simState);
+      LogUtils.i(TAG, "onPageShow simState: " + simState);
       this.updateDataEnableState(simState);
     }).catch((error) => {
-      console.error(TAG + "onPageShow getSimState error: " + error);
+      LogUtils.i(TAG, "onPageShow getSimState error: " + error);
     });
   }
 
   aboutToDisappear(): void {
-    console.info(TAG + "aboutToDisappear");
+    LogUtils.i(TAG, "aboutToDisappear");
     telephonyObserver.off("simStateChange");
+  }
+
+  terminateAbility(): void {
+    LogUtils.i(TAG, "onclick back")
+    globalThis.settingsAbilityContext?.terminateSelf().then((data) => {
+      LogUtils.i(TAG, "mobiledatasettings terminateSelfCallBack");
+    });
   }
 
   private updateDataEnableState(simState) {
@@ -81,10 +69,10 @@ struct Index {
     } else {
       this.isDataEnable = true;
       telephonyData.isCellularDataEnabled().then((dataEnable) => {
-        console.info(TAG + "updateDataEnableState isCellularDataEnabled: " + dataEnable);
+        LogUtils.i(TAG, "updateDataEnableState isCellularDataEnabled: " + dataEnable);
         this.isDataOn = dataEnable;
       }).catch((error) => {
-        console.error(TAG + "updateDataEnableState isCellularDataEnabled error: " + error);
+        LogUtils.i(TAG, "updateDataEnableState isCellularDataEnabled error: " + error);
       });
     }
   }
@@ -101,7 +89,7 @@ struct Index {
                   .width(24)
                   .margin({ top: 2, bottom: 2, right: 16 })
                   .onClick(() => {
-                    router.back()
+                    this.terminateAbility();
                   })
 
                 Text($r("app.string.mobile_data"))
