@@ -76,6 +76,9 @@
       },
       {
         "name": "ohos.permission.NOTIFICATION_CONTROLLER"
+      },
+      {
+        "name": "ohos.permission.START_ABILITIES_FROM_BACKGROUND"
       }
     ]
   }
