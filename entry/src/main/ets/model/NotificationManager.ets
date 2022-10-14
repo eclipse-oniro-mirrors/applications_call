@@ -140,8 +140,8 @@ export default class NotificationManager {
     return wantAgent.getWantAgent({
       wants: [{
                 deviceId: '',
-                bundleName: CALL_BUNDLE_NAME,
-                abilityName: CALL_ABILITY_NAME,
+                bundleName: Constants.CALL_BUNDLE_NAME,
+                abilityName: Constants.CALL_ABILITY_NAME,
                 uri: '',
                 type: 'phone',
                 action: 'callui.event.click',
@@ -186,8 +186,8 @@ export default class NotificationManager {
         callState,
         startTime: startTime * 1000,
         isBackground,
-        wantBundleName: CALL_BUNDLE_NAME,
-        wantAbilityName: CALL_ABILITY_NAME
+        wantBundleName: Constants.CALL_BUNDLE_NAME,
+        wantAbilityName: Constants.CALL_ABILITY_NAME
       })
     }
 

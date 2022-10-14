@@ -20,8 +20,10 @@ import CallStateManager from './CallStateManager';
 import CallStateConst from '../common/constant/CallStateConst';
 import NotificationManager from '../model/NotificationManager';
 import LogUtils from '../common/utils/LogUtils';
+import getSingleInstance from '../common/utils/SingleInstanceHelper'
 
 const TAG = "CallDataManager";
+const CALL_DATA_MANAGER_KEY = 'AppStorage_CallDataManager';
 
 /**
  * class CallDataManager
@@ -33,9 +35,15 @@ export default class CallDataManager {
   private callStateChange: any;
   private mCallStateManager: CallStateManager ;
   private NotificationManager ;
-  private sCallDataManager: CallDataManager ;
 
-  constructor(callData, callList, callTimeList) {
+  public static getInstance():CallDataManager{
+    return getSingleInstance(CallDataManager, CALL_DATA_MANAGER_KEY);
+  }
+
+  /**
+   * Init data.
+   */
+  public init(callData, callList, callTimeList) {
     this.NotificationManager = new NotificationManager()
     this.mCallStateManager = CallStateManager.getInstance()
     this.callData = callData;
@@ -99,6 +107,15 @@ export default class CallDataManager {
         }
       }
     }
+  }
+
+  /**
+   * Judge whether the call exists.
+   */
+  public hasAliveCall(): Boolean {
+    LogUtils.i(TAG, "hasAliveCall 1: true")
+    return this.callList.find((call) => call.callState !== CallStateConst.CALL_STATUS_DISCONNECTED
+    && call.callState !== CallStateConst.CALL_STATUS_DISCONNECTING);
   }
 
   /**

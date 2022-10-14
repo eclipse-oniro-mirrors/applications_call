@@ -54,7 +54,8 @@ export default class CallManager {
     this.timer = null;
     this.ctx = ctx;
     this.callTimeList = ctx.callTimeList;
-    this.mCallDataManager = new CallDataManager(ctx.callData, ctx.callList, ctx.callTimeList);
+    this.mCallDataManager = CallDataManager.getInstance();
+    this.mCallDataManager.init(ctx.callData, ctx.callList, ctx.callTimeList);
     this.openTimer();
     this.sendNotificationHandle = (arg) => arg;
     this.registerSubscriber();
