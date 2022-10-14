@@ -113,7 +113,6 @@ export default class CallDataManager {
    * Judge whether the call exists.
    */
   public hasAliveCall(): Boolean {
-    LogUtils.i(TAG, "hasAliveCall 1: true")
     return this.callList.find((call) => call.callState !== CallStateConst.CALL_STATUS_DISCONNECTED
     && call.callState !== CallStateConst.CALL_STATUS_DISCONNECTING);
   }
