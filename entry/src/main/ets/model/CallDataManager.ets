@@ -49,7 +49,6 @@ export default class CallDataManager {
     this.callData = callData;
     this.callList = callList;
     this.callStateChange = (arg) => arg;
-    this.callTimeList = callTimeList;
     this.mCallStateManager = new CallStateManager(this.callData);
   }
 
