@@ -13,7 +13,6 @@
  * limitations under the License.
  */
 
-
 /**
  *  constants package tool class
  */

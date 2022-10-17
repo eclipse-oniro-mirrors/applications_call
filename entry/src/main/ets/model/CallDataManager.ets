@@ -36,7 +36,7 @@ export default class CallDataManager {
   private mCallStateManager: CallStateManager ;
   private NotificationManager ;
 
-  public static getInstance():CallDataManager{
+  public static getInstance():CallDataManager {
     return getSingleInstance(CallDataManager, CALL_DATA_MANAGER_KEY);
   }
 
@@ -49,6 +49,7 @@ export default class CallDataManager {
     this.callData = callData;
     this.callList = callList;
     this.callStateChange = (arg) => arg;
+    this.callTimeList = callTimeList;
     this.mCallStateManager = new CallStateManager(this.callData);
   }
 

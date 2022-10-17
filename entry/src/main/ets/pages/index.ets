@@ -44,27 +44,28 @@ struct Index {
   private mCallDataManager: CallDataManager;
 
   aboutToAppear(): void {
-    LogUtils.i(TAG, "aboutToAppear :")
+    LogUtils.i(TAG, "aboutToAppear")
     byTrace.startTrace('aboutToAppear', 0);
     this.notificationManager = new NotificationManager();
     globalThis.callManager = new CallManager(this)
     AppStorage.SetOrCreate<NotificationManager>('notificationManager', this.notificationManager);
+    this.mCallDataManager = CallDataManager.getInstance();
     byTrace.finishTrace('aboutToAppear', 0);
   }
 
   onPageShow() {
-    LogUtils.i(TAG, "onPageShow : ")
+    LogUtils.i(TAG, "onPageShow")
     byTrace.startTrace('onPageShow', 1);
     globalThis.appInactiveState = false;
     this.stopBackgroundRunning();
     this.notificationManager.cancelNotification();
     this.notificationManager.sendCapsuleNotification(this.callData, false);
     byTrace.finishTrace('onPageShow', 1);
-    LogUtils.i(TAG, "onPageShow end : ")
+    LogUtils.i(TAG, "onPageShow end")
   }
 
   onPageHide() {
-    LogUtils.i(TAG, "onPageHide :")
+    LogUtils.i(TAG, "onPageHide")
     globalThis.appInactiveState = true;
     const {callState, accountNumber, contactName, callId} = this.callData;
     let fool = (callState !== CallStateConst.callStateObj.CALL_STATUS_DISCONNECTED && callId)
@@ -75,18 +76,17 @@ struct Index {
       } else {
         text = accountNumber + '  ';
       }
-      this.mCallDataManager = CallDataManager.getInstance();
       if (this.mCallDataManager.hasAliveCall()) {
         this.startBackgroundRunning();
       }
       this.notificationManager.sendNotification(text, this.callData);
       this.notificationManager.sendCapsuleNotification(this.callData, true);
-      LogUtils.i(TAG, "onPageHide end : ")
+      LogUtils.i(TAG, "onPageHide end")
     }
   }
 
   aboutToDisappear() {
-    LogUtils.i(TAG, "aboutToDisappear :")
+    LogUtils.i(TAG, "aboutToDisappear")
     this.stopBackgroundRunning();
   }
 

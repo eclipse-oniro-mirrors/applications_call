@@ -22,12 +22,11 @@ import notification from '@ohos.notification';
 import commonEvent from '@ohos.commonEvent';
 import callStateConst from '../common/constant/CallStateConst';
 import LogUtils from '../common/utils/LogUtils';
+import Constants from '../common/utils/Constants';
 import resourceManager from '@ohos.resourceManager';
 
 const TAG = "NotificationManager";
 const ID = 0;
-const CALL_BUNDLE_NAME = 'com.ohos.callui';
-const CALL_ABILITY_NAME = 'com.ohos.callui.MainAbility';
 
 const notificationRequest = {
   content: {
