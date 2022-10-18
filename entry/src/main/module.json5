@@ -15,7 +15,7 @@
 
 {
   "module": {
-    "name": "com.ohos.callui",
+    "name": "callui",
     "type": "entry",
     "srcEntrance": "./ets/Application/MyAbilityStage.ts",
     "description": "$string:callui_description",
@@ -47,6 +47,9 @@
               "action.system.home"
             ]
           }
+        ],
+        "backgroundModes": [
+          "voip"
         ]
       }
     ],
@@ -79,6 +82,12 @@
       },
       {
         "name": "ohos.permission.START_ABILITIES_FROM_BACKGROUND"
+      },
+      {
+        "name": "ohos.permission.KEEP_BACKGROUND_RUNNING"
+      },
+      {
+        "name": "ohos.permission.ANSWER_CALL"
       }
     ]
   }

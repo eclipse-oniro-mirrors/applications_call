@@ -15,7 +15,7 @@
 
 {
   "module": {
-    "name": "com.ohos.mobiledatasettings",
+    "name": "mobiledatasettings",
     "type": "feature",
     "srcEntrance": "./ets/Application/MyAbilityStage.ts",
     "description": "$string:app_name",

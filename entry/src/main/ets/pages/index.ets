@@ -13,6 +13,7 @@
  * limitations under the License.
  */
 
+import wantAgent from '@ohos.wantAgent';
 import ContactCard from '../common/components/ContactCard';
 import FuncBtnGroup from '../common/components/FuncBtnGroup';
 import BottomBtn from '../common/components/BottomBtn';
@@ -23,6 +24,9 @@ import LogUtils from '../common/utils/LogUtils';
 import byTrace from "@ohos.bytrace"
 import NotificationManager from '../model/NotificationManager';
 import CallManager from '../model/CallManager';
+import backgroundTaskManager from '@ohos.backgroundTaskManager';
+import Constants from '../common/utils/Constants';
+import CallDataManager from '../model/CallDataManager';
 
 const TAG = "MainAbility";
 
@@ -36,29 +40,33 @@ struct Index {
   @State callData: any = CallStateConst.defaultCallData;
   @State isShowKeyboard: boolean = false;
   @State callList: Array<any> = [];
+  @State callTimeList: Array<any> = [];
   private notificationManager: NotificationManager;
+  private mCallDataManager: CallDataManager;
 
   aboutToAppear(): void {
-    LogUtils.i(TAG, "aboutToAppear :")
+    LogUtils.i(TAG, "aboutToAppear")
     byTrace.startTrace('aboutToAppear', 0);
     this.notificationManager = new NotificationManager();
     globalThis.callManager = new CallManager(this)
     AppStorage.SetOrCreate<NotificationManager>('notificationManager', this.notificationManager);
+    this.mCallDataManager = CallDataManager.getInstance();
     byTrace.finishTrace('aboutToAppear', 0);
   }
 
   onPageShow() {
-    LogUtils.i(TAG, "onPageShow : ")
+    LogUtils.i(TAG, "onPageShow")
     byTrace.startTrace('onPageShow', 1);
     globalThis.appInactiveState = false;
+    this.stopBackgroundRunning();
     this.notificationManager.cancelNotification();
     this.notificationManager.sendCapsuleNotification(this.callData, false);
     byTrace.finishTrace('onPageShow', 1);
-    LogUtils.i(TAG, "onPageShow end : ")
+    LogUtils.i(TAG, "onPageShow end")
   }
 
   onPageHide() {
-    LogUtils.i(TAG, "onPageHide :")
+    LogUtils.i(TAG, "onPageHide")
     globalThis.appInactiveState = true;
     const {callState, accountNumber, contactName, callId} = this.callData;
     let fool = (callState !== CallStateConst.callStateObj.CALL_STATUS_DISCONNECTED && callId)
@@ -69,10 +77,46 @@ struct Index {
       } else {
         text = accountNumber + '  ';
       }
+      if (this.mCallDataManager.hasAliveCall()) {
+        this.startBackgroundRunning();
+      }
       this.notificationManager.sendNotification(text, this.callData);
       this.notificationManager.sendCapsuleNotification(this.callData, true);
-      LogUtils.i(TAG, "onPageHide end : ")
+      LogUtils.i(TAG, "onPageHide end")
     }
+  }
+
+  aboutToDisappear() {
+    LogUtils.i(TAG, "aboutToDisappear")
+    this.stopBackgroundRunning();
+  }
+
+  private stopBackgroundRunning() {
+    backgroundTaskManager.stopBackgroundRunning(globalThis.calluiAbilityContext).then(() => {
+      LogUtils.i(TAG, "stopBackgroundRunning succeeded")
+    }).catch((err) => {
+      LogUtils.i(TAG, "stopBackgroundRunning failed")
+    });
+  }
+
+  private startBackgroundRunning() {
+    let wantAgentInfo = {
+      wants: [{
+                bundleName: Constants.CALL_BUNDLE_NAME,
+                abilityName: Constants.CALL_ABILITY_NAME,
+              }],
+      requestCode: 0,
+      operationType: wantAgent.OperationType.START_ABILITY,
+      wantAgentFlags: [wantAgent.WantAgentFlags.UPDATE_PRESENT_FLAG]
+    };
+    wantAgent.getWantAgent(wantAgentInfo).then((wantAgentObj) => {
+      backgroundTaskManager.startBackgroundRunning(globalThis.calluiAbilityContext,
+      backgroundTaskManager.BackgroundMode.VOIP, wantAgentObj).then(() => {
+        LogUtils.i(TAG, "startBackgroundRunning succeeded")
+      }).catch((err) => {
+        LogUtils.i(TAG, "startBackgroundRunning failed cause:" + JSON.stringify(err))
+      });
+    });
   }
 
   /**

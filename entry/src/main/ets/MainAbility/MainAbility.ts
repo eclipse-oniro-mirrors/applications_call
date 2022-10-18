@@ -1,4 +1,3 @@
-import featureAbility from '@ohos.ability.featureAbility';
 import Ability from '@ohos.application.Ability'
 import LogUtils from '../common/utils/LogUtils'
 

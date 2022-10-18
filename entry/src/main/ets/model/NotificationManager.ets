@@ -22,12 +22,11 @@ import notification from '@ohos.notification';
 import commonEvent from '@ohos.commonEvent';
 import callStateConst from '../common/constant/CallStateConst';
 import LogUtils from '../common/utils/LogUtils';
+import Constants from '../common/utils/Constants';
 import resourceManager from '@ohos.resourceManager';
 
 const TAG = "NotificationManager";
 const ID = 0;
-const CALL_BUNDLE_NAME = 'com.ohos.callui';
-const CALL_ABILITY_NAME = 'com.ohos.callui.MainAbility';
 
 const notificationRequest = {
   content: {
@@ -140,8 +139,8 @@ export default class NotificationManager {
     return wantAgent.getWantAgent({
       wants: [{
                 deviceId: '',
-                bundleName: CALL_BUNDLE_NAME,
-                abilityName: CALL_ABILITY_NAME,
+                bundleName: Constants.CALL_BUNDLE_NAME,
+                abilityName: Constants.CALL_ABILITY_NAME,
                 uri: '',
                 type: 'phone',
                 action: 'callui.event.click',
@@ -186,8 +185,8 @@ export default class NotificationManager {
         callState,
         startTime: startTime * 1000,
         isBackground,
-        wantBundleName: CALL_BUNDLE_NAME,
-        wantAbilityName: CALL_ABILITY_NAME
+        wantBundleName: Constants.CALL_BUNDLE_NAME,
+        wantAbilityName: Constants.CALL_ABILITY_NAME
       })
     }
 
