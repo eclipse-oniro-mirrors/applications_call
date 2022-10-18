@@ -22,7 +22,7 @@
           "certpath": "signature/OpenHarmony.cer",
           "keyAlias": "OpenHarmony Application Profile Release",
           "keyPassword": "0000001996325AC41FCA6086C9759E9A2219B545DE3659C414052013C4398CF2371B8055916384CA7F",
-          "profile": "signature/com_ohos_Callui.p7b",
+          "profile": "signature/callui.p7b",
           "signAlg": "SHA256withECDSA",
           "storeFile": "signature/OpenHarmony.p12"
         }

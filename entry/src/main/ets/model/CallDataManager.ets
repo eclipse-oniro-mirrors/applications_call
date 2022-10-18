@@ -113,9 +113,9 @@ export default class CallDataManager {
   /**
    * Judge whether the call exists.
    */
-  public hasAliveCall(): Boolean {
+  public hasAliveCall(): boolean {
     return this.callList.find((call) => call.callState !== CallStateConst.CALL_STATUS_DISCONNECTED
-    && call.callState !== CallStateConst.CALL_STATUS_DISCONNECTING);
+      && call.callState !== CallStateConst.CALL_STATUS_DISCONNECTING);
   }
 
   /**
