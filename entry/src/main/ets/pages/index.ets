@@ -40,6 +40,7 @@ struct Index {
   @State callData: any = CallStateConst.defaultCallData;
   @State isShowKeyboard: boolean = false;
   @State callList: Array<any> = [];
+  @State callTimeList: Array<any> = [];
   private notificationManager: NotificationManager;
   private mCallDataManager: CallDataManager;
 

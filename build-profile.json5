@@ -18,11 +18,11 @@
       {
         "name": "release",
         "material": {
-          "storePassword": "0000001917266F7FCFA666CD16B22465F734A804AFCC9A892AF4876E2BC7E0E5411BDDE4B269F858F0",
-          "certpath": "D:/litingting/1009/applications_call/signature/OpenHarmony.cer",
+          "storePassword": "0000001950E8C9471F34BF6AF2993988AE51926BD1B2E8FC47CC66A5BB5E77110D5758F5AEAC636B2C",
+          "certpath": "signature/OpenHarmony.cer",
           "keyAlias": "OpenHarmony Application Profile Release",
-          "keyPassword": "000000196E711F5AEAC1B62C475832B07C3BEBA10D41394D9CCAFDAB583F114EB43022FA6E54ACC4F9",
-          "profile": "D:/litingting/1009/applications_call/signature/callui.p7b",
+          "keyPassword": "0000001996325AC41FCA6086C9759E9A2219B545DE3659C414052013C4398CF2371B8055916384CA7F",
+          "profile": "signature/com_ohos_Callui.p7b",
           "signAlg": "SHA256withECDSA",
           "storeFile": "signature/OpenHarmony.p12"
         }
