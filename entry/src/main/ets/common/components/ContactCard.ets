@@ -41,7 +41,6 @@ export default struct ContactCard {
   public aboutToAppear(): void {
     LogUtils.i(TAG, "aboutToAppear");
     this.mUtils = Utils.getInstance();
-    this.callTimeList = [];
     this.timer = setInterval(() => {
       if (this.dialing === '...') {
         this.dialing = '';
@@ -184,7 +183,7 @@ export default struct ContactCard {
 
         if (this.isShowTime()) {
           Column() {
-            Text(this.callTimeList[0].callTime)
+            Text(this.callTimeList[0]?.callTime)
               .fontSize(14)
               .height(19)
               .lineHeight(19)

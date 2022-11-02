@@ -78,7 +78,6 @@ export default struct FuncBtnGroup {
       this.btnList = this.btnListCall
     }
     this.onCallStateChange(this.callData.callState)
-    LogUtils.i(TAG, "upData BtnList");
   }
 
   /**
