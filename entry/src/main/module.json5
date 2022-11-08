@@ -38,6 +38,8 @@
         "startWindowIcon": "$media:app_icon",
         "startWindowBackground": "$color:black",
         "visible": true,
+        "minWindowHeight": 700,
+        "minWindowWidth": 320,
         "skills": [
           {
             "entities": [

@@ -13,6 +13,7 @@
  * limitations under the License.
  */
 
+import mediaQuery from '@ohos.mediaquery';
 import wantAgent from '@ohos.wantAgent';
 import ContactCard from '../common/components/ContactCard';
 import FuncBtnGroup from '../common/components/FuncBtnGroup';
@@ -43,6 +44,28 @@ struct Index {
   @State callTimeList: Array<any> = [];
   private notificationManager: NotificationManager;
   private mCallDataManager: CallDataManager;
+  @State curBp: string = 'md'; // 代表当前窗口断点
+  private smListener: mediaQuery.MediaQueryListener;
+  private mdListener: mediaQuery.MediaQueryListener;
+  private lgListener: mediaQuery.MediaQueryListener;
+  isBreakpointSM = (mediaQueryResult) => {
+    if (mediaQueryResult.matches) {
+      this.curBp = 'sm'
+      AppStorage.SetOrCreate('curBp', this.curBp)
+    }
+  }
+  isBreakpointMD = (mediaQueryResult) => {
+    if (mediaQueryResult.matches) {
+      this.curBp = 'md'
+      AppStorage.SetOrCreate('curBp', this.curBp)
+    }
+  }
+  isBreakpointLG = (mediaQueryResult) => {
+    if (mediaQueryResult.matches) {
+      this.curBp = 'lg'
+      AppStorage.SetOrCreate('curBp', this.curBp)
+    }
+  }
 
   aboutToAppear(): void {
     LogUtils.i(TAG, "aboutToAppear")
@@ -52,6 +75,12 @@ struct Index {
     AppStorage.SetOrCreate<NotificationManager>('notificationManager', this.notificationManager);
     this.mCallDataManager = CallDataManager.getInstance();
     byTrace.finishTrace('aboutToAppear', 0);
+    this.smListener = mediaQuery.matchMediaSync('(320vp<width<=520vp)');
+    this.smListener.on("change", this.isBreakpointSM);
+    this.mdListener = mediaQuery.matchMediaSync('(520vp<width<=840vp)');
+    this.mdListener.on("change", this.isBreakpointMD);
+    this.lgListener = mediaQuery.matchMediaSync('(840vp<width)');
+    this.lgListener.on("change", this.isBreakpointLG);
   }
 
   onPageShow() {
@@ -139,62 +168,40 @@ struct Index {
   }
 
   build() {
-    Column() {
-      Stack() {
-        Flex({
-          direction: FlexDirection.Column,
-          alignItems: ItemAlign.Center,
-          justifyContent: FlexAlign.SpaceBetween
-        }) {
-          Column() {
-            ContactCard({
-              callData: $callData,
-              isShowKeyboard: this.isShowKeyboard,
-              callList: $callList
-            })
-          }
-          .margin({ top: 56 })
-
-          if (this.callState() !== CallStateConst.callStateObj.CALL_STATUS_WAITING
-          && this.callState() !== CallStateConst.callStateObj.CALL_STATUS_INCOMING) {
-            Column() {
-              Column() {
-                Column() {
-                  FuncBtnGroup({ callData: $callData, callList: $callList })
-                }
-                .margin({ bottom: 29.5 })
-              }
-              .visibility(!this.isShowKeyboard ? Visibility.Visible : Visibility.None)
-
-              Column() {
-                Column() {
-                  Keyboard({ callData: $callData })
-                }
-                .margin({ bottom: 32 })
-              }
-              .visibility(this.isShowKeyboard ? Visibility.Visible : Visibility.None)
-
-              Column() {
-                BottomBtn({
-                  callData: $callData,
-                  onItemClick: () => {
-                    this.showKeyboard()
-                  }
-                })
-              }
-            }
-            .margin({ bottom: 106 })
+    Flex({
+      direction: FlexDirection.Column,
+      alignItems: ItemAlign.Center,
+      justifyContent: FlexAlign.SpaceBetween
+    }) {
+      ContactCard({
+        callData: $callData,
+        isShowKeyboard: this.isShowKeyboard,
+        callList: $callList
+      })
+        .margin({ top: this.isShowKeyboard ? 0 : 56 })
+        .layoutWeight(this.isShowKeyboard ? 1 : 0)
+      if (this.callState() !== CallStateConst.callStateObj.CALL_STATUS_WAITING
+      && this.callState() !== CallStateConst.callStateObj.CALL_STATUS_INCOMING) {
+        Column() {
+          if (!this.isShowKeyboard) {
+            FuncBtnGroup({ callData: $callData, callList: $callList })
+              .margin({ bottom: 32 })
           } else {
-            Column() {
-              IncomingCom({
-                callData: $callData,
-              })
-            }
-            .margin({ bottom: 106 })
+            Keyboard({ callData: $callData })
+              .margin({ bottom: 32 })
           }
+          BottomBtn({
+            callData: $callData,
+            onItemClick: () => {
+              this.showKeyboard()
+            }
+          })
         }
+      } else {
+        IncomingCom({ callData: $callData })
       }
     }
+    .padding({ bottom: 106 })
     .width("100%")
     .height("100%")
     .backgroundImage('assets/picture/wallpaper.png', ImageRepeat.NoRepeat)

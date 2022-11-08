@@ -74,16 +74,15 @@ export default struct Keyboard {
         sign: '(W)'
       },
     ];
-
   private mCallServiceProxy: CallServiceProxy;
 
-  public aboutToAppear(): void  {
+  public aboutToAppear(): void {
     this.mCallServiceProxy = CallServiceProxy.getInstance();
   }
 
   build() {
-    GridContainer({  gutter: 24, margin: 24 }) {
-      Row() {
+    GridRow({ columns: { sm: 4, md: 8, lg: 12 }, gutter: 24 }) {
+      GridCol({ span: { sm: 4, md: 6, lg: 6 }, offset: { md: 1, lg: 3 } }) {
         Grid() {
           ForEach(this.dataList, (item) => {
             GridItem() {
@@ -92,7 +91,7 @@ export default struct Keyboard {
                 textInput: $textInput,
                 textInputValue: $textInputValue,
                 dataList: $dataList,
-                callData:this.callData
+                callData: this.callData
               })
             }
             .height(56.5)
@@ -104,11 +103,7 @@ export default struct Keyboard {
         .rowsTemplate('1fr 1fr 1fr 1fr')
       }
       .height(287.5)
-      .useSizeType({
-        sm: { span: 4, offset: 0 },
-        md: { span: 6, offset: 1 },
-        lg: { span: 6, offset: 3 }
-      })
     }
+    .margin({ left: 24, right: 24 })
   }
 }
