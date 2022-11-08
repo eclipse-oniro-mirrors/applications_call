@@ -44,7 +44,7 @@ struct Index {
   @State callTimeList: Array<any> = [];
   private notificationManager: NotificationManager;
   private mCallDataManager: CallDataManager;
-  @State curBp: string = 'md'; // 代表当前窗口断点
+  @State curBp: string = 'md';
   private smListener: mediaQuery.MediaQueryListener;
   private mdListener: mediaQuery.MediaQueryListener;
   private lgListener: mediaQuery.MediaQueryListener;
