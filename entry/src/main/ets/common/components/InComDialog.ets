@@ -19,6 +19,7 @@ const TAG = 'InComDialog';
 
 @CustomDialog
 export default struct InComDialog {
+  @StorageLink('curBp') curBp: string = 'md'
   controller: CustomDialogController;
   cancel: () => void;
   confirm: (msg) => void;
@@ -26,9 +27,9 @@ export default struct InComDialog {
   List: [];
 
   build() {
-    GridContainer({ gutter: 12, margin: 12 }) {
-      Row() {
-        Flex({ justifyContent: FlexAlign.Start }) {
+    GridRow({ columns: { xs: 4, sm: 4, md: 8, lg: 12 }, gutter: 12 }) {
+      GridCol({ span: 4, offset: { md: 2, lg: 4 } }) {
+        Column() {
           Column() {
             Flex({ justifyContent: FlexAlign.Start, alignItems: ItemAlign.Start }) {
               Text($r("app.string.hangUpReply"))
@@ -58,7 +59,8 @@ export default struct InComDialog {
                 })
 
                 if (item.id !== 4) {
-                  Image($r("app.media.divider"))
+                  Divider()
+                    .color($r('app.color.divider_gray'))
                     .height(0.5)
                 }
               })
@@ -77,18 +79,15 @@ export default struct InComDialog {
               this.controller.close();
             })
           }
+          .padding({ left: 24, right: 24 })
+          .backgroundColor(Color.White)
+          .borderRadius(32)
         }
-        .padding({ left: 24, right: 24 })
-      }.backgroundColor(Color.White)
-      .useSizeType({
-        xs: { span: 1, offset: 0 },
-        sm: { span: 4, offset: 0 },
-        md: { span: 4, offset: 2 },
-        lg: { span: 4, offset: 4 }
-      })
-      .borderRadius(32)
+        .height('100%')
+        .justifyContent(this.curBp === 'sm' ? FlexAlign.End : FlexAlign.Center)
+      }
     }
-    .margin({ bottom: globalThis.deviceTypeInfo === "phone" || globalThis.deviceTypeInfo === "default" ? "16vp" : 0 })
+    .margin({ left: 12, right: 12, bottom: this.curBp === 'sm' ? 16 : 0 })
     .onClick(() => {
       this.controller.close();
     })

@@ -68,8 +68,7 @@ export default struct IncomingCom {
     }),
     cancel: () => {
     },
-    customStyle: true,
-    alignment: (globalThis.deviceTypeInfo === "phone" || globalThis.deviceTypeInfo === "default") ? DialogAlignment.Bottom : DialogAlignment.Default
+    customStyle: true
   });
 
   aboutToAppear() {
@@ -202,9 +201,9 @@ export default struct IncomingCom {
   }
 
   build() {
-    GridContainer({ gutter: 24, margin: 24 }) {
-      Row() {
-        GridContainer({ gutter: 24, margin: 0 }) {
+    GridRow({ columns: { sm: 4, md: 8, lg: 12 }, gutter: 24 }) {
+      GridCol({ span: { sm: 4, md: 6, lg: 6 }, offset: { sm: 0, md: 1, lg: 3 } }) {
+        Column() {
           Row() {
             ForEach(this.btnList, (item) => {
               Column() {
@@ -222,11 +221,6 @@ export default struct IncomingCom {
             })
           }
           .height(51)
-          .useSizeType({
-            sm: { span: 4, offset: 0 },
-            md: { span: 8, offset: 0 },
-            lg: { span: 12, offset: 0 }
-          })
 
           Row() {
             Column() {
@@ -236,12 +230,7 @@ export default struct IncomingCom {
                 .onClick(() => {
                   this.onReject()
                 })
-            }
-            .useSizeType({
-              sm: { span: 2, offset: 0 },
-              md: { span: 4, offset: 0 },
-              lg: { span: 6, offset: 0 }
-            })
+            }.layoutWeight(1)
 
             Column() {
               Image($r("app.media.ic_public_answer"))
@@ -250,22 +239,13 @@ export default struct IncomingCom {
                 .onClick(() => {
                   this.onAnswer()
                 })
-            }
-            .useSizeType({
-              sm: { span: 2, offset: 2 },
-              md: { span: 4, offset: 4 },
-              lg: { span: 6, offset: 6 }
-            })
+            }.layoutWeight(1)
           }
-          .margin({ top: 30 })
+          .margin({ top: 32 })
         }
       }
-      .useSizeType({
-        sm: { span: 4, offset: 0 },
-        md: { span: 6, offset: 1 },
-        lg: { span: 6, offset: 3 }
-      })
     }
-    .width("100%")
+    .width('100%')
+    .margin({ left: 24, right: 24 })
   }
 }
