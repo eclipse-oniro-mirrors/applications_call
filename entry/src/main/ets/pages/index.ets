@@ -83,6 +83,12 @@ struct Index {
     this.lgListener.on("change", this.isBreakpointLG);
   }
 
+  aboutToDisappear(): void {
+    this.smListener.off('change', this.isBreakpointSM);
+    this.mdListener.off('change', this.isBreakpointMD);
+    this.lgListener.off('change', this.isBreakpointLG);
+  }
+
   onPageShow() {
     LogUtils.i(TAG, "onPageShow")
     byTrace.startTrace('onPageShow', 1);
