@@ -79,7 +79,6 @@ export default class NotificationManager {
       titleName = accountNumber + '  ';
       expandedName = ' ';
     }
-    LogUtils.i(TAG, "sendNotification contactName:" + contactName + "accountNumber;" + accountNumber + "callState:" + callState)
     notificationRequest.wantAgent = wantAgentObj;
     notificationRequest.actionButtons = [];
     if (actionBtnKeys.length) {
@@ -97,7 +96,6 @@ export default class NotificationManager {
               title: value,
               wantAgent: wantAgentObj
             });
-            LogUtils.i(TAG, "sendNotification getResourceManager getString value" + text)
             Object.assign(notificationRequest.content.longText, {
               title: titleName,
               text: expandedName,

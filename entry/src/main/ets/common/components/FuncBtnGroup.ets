@@ -193,7 +193,7 @@ export default struct FuncBtnGroup {
   keepHandle(type) {
     const awaitIsActive = this.btnList.find((v) => v.type === type).isActive;
     LogUtils.i(TAG, "keep handle awaitIsActive : " + !awaitIsActive);
-      !awaitIsActive ? this.mCallServiceProxy.holdCall(this.callData.callId) : this.mCallServiceProxy.unHoldCall(this.callData.callId);
+    !awaitIsActive ? this.mCallServiceProxy.holdCall(this.callData.callId) : this.mCallServiceProxy.unHoldCall(this.callData.callId);
   }
 
   /**
@@ -204,7 +204,7 @@ export default struct FuncBtnGroup {
   muteHandle(type) {
     const awaitIsActive = this.btnList.find((v) => v.type === type).isActive;
     LogUtils.i(TAG, "mute Handle awaitIsActive : " + awaitIsActive);
-      awaitIsActive ? this.mCallServiceProxy.setMuted() : this.mCallServiceProxy.cancelMuted();
+    awaitIsActive ? this.mCallServiceProxy.setMuted() : this.mCallServiceProxy.cancelMuted();
   }
 
   /**
