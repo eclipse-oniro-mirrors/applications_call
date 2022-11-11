@@ -65,7 +65,7 @@ export default class NotificationManager {
    *
    * @param { FUnction } $t - i18n format
    */
-  async sendNotification(text, callData) {
+  async sendNotification(callData) {
     const {callState, accountNumber, contactName, callId} = callData;
     const actionBtnKeys = this.getMapObj(callState) || [];
     const {START_ABILITY, SEND_COMMON_EVENT} = wantAgent.OperationType;
@@ -73,10 +73,10 @@ export default class NotificationManager {
     let titleName = ' ';
     let expandedName = ' '
     if (contactName) {
-      titleName = contactName + '  ';
-      expandedName = accountNumber + ' ';
+      titleName = contactName;
+      expandedName = accountNumber;
     } else {
-      titleName = accountNumber + '  ';
+      titleName = accountNumber;
       expandedName = ' ';
     }
     notificationRequest.wantAgent = wantAgentObj;
