@@ -21,6 +21,7 @@ import Clone from '../utils/Clone';
 import ConferenceConst from '../constant/ConferenceConst';
 import BtnGroupConfig from '../configs/BtnGroupConfig';
 import LogUtils from '../utils/LogUtils';
+import screenLock from '@ohos.screenLock'
 
 const TAG = 'FuncBtnGroup';
 const textMap =
@@ -152,13 +153,8 @@ export default struct FuncBtnGroup {
         this.mCallServiceProxy.switchCall(callId);
         break;
       case 'add':
-        globalThis.calluiAbilityContext?.startAbility({
-          bundleName: 'com.ohos.contacts',
-          abilityName: 'com.ohos.contacts.MainAbility',
-          parameters: {
-            pageFlag: 'page_flag_dialer'
-          }
-        });
+        this.startContactAbility('page_flag_dialer')
+
         break;
       case 'video':
         break;
@@ -166,13 +162,7 @@ export default struct FuncBtnGroup {
         this.muteHandle('mute');
         break;
       case 'contact':
-        globalThis.calluiAbilityContext?.startAbility({
-          bundleName: 'com.ohos.contacts',
-          abilityName: 'com.ohos.contacts.MainAbility',
-          parameters: {
-            pageFlag: "page_flag_choose_contacts"
-          }
-        });
+        this.startContactAbility("page_flag_choose_contacts")
         break;
       case 'merge':
         this.mCallServiceProxy.combineConference(callId);
@@ -180,6 +170,19 @@ export default struct FuncBtnGroup {
       default:
         break;
     }
+  }
+
+  startContactAbility(pageFlag) {
+    if (screenLock.isLocked) {
+      screenLock.unlock();
+    }
+    globalThis.calluiAbilityContext?.startAbility({
+      bundleName: 'com.ohos.contacts',
+      abilityName: 'com.ohos.contacts.MainAbility',
+      parameters: {
+        pageFlag: pageFlag
+      }
+    });
   }
 
   /**

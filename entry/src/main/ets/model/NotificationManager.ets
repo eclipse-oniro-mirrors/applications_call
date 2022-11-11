@@ -65,11 +65,20 @@ export default class NotificationManager {
    *
    * @param { FUnction } $t - i18n format
    */
-  async sendNotification(text, callData) {
-    const {callState, callId} = callData;
+  async sendNotification(callData) {
+    const {callState, accountNumber, contactName, callId} = callData;
     const actionBtnKeys = this.getMapObj(callState) || [];
     const {START_ABILITY, SEND_COMMON_EVENT} = wantAgent.OperationType;
     const wantAgentObj = await this.getWantAgent(callData, START_ABILITY);
+    let titleName = ' ';
+    let expandedName = ' '
+    if (contactName) {
+      titleName = contactName;
+      expandedName = accountNumber;
+    } else {
+      titleName = accountNumber;
+      expandedName = ' ';
+    }
     notificationRequest.wantAgent = wantAgentObj;
     notificationRequest.actionButtons = [];
     if (actionBtnKeys.length) {
@@ -88,8 +97,10 @@ export default class NotificationManager {
               wantAgent: wantAgentObj
             });
             Object.assign(notificationRequest.content.longText, {
-              title: text,
-              expandedTitle: text
+              title: titleName,
+              text: expandedName,
+              expandedTitle: titleName,
+              longText: expandedName
             });
             notification.publish(notificationRequest).then((data) => {
               LogUtils.i(TAG, "sendNotification publish success")

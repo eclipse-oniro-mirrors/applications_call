@@ -83,12 +83,6 @@ struct Index {
     this.lgListener.on("change", this.isBreakpointLG);
   }
 
-  aboutToDisappear(): void {
-    this.smListener.off('change', this.isBreakpointSM);
-    this.mdListener.off('change', this.isBreakpointMD);
-    this.lgListener.off('change', this.isBreakpointLG);
-  }
-
   onPageShow() {
     LogUtils.i(TAG, "onPageShow")
     byTrace.startTrace('onPageShow', 1);
@@ -103,27 +97,25 @@ struct Index {
   onPageHide() {
     LogUtils.i(TAG, "onPageHide")
     globalThis.appInactiveState = true;
-    const {callState, accountNumber, contactName, callId} = this.callData;
+    const {callState, callId} = this.callData;
     let fool = (callState !== CallStateConst.callStateObj.CALL_STATUS_DISCONNECTED && callId)
     if (callState !== CallStateConst.callStateObj.CALL_STATUS_DISCONNECTED && callId) {
-      let text = '';
-      if (contactName) {
-        text = contactName + '  ' + accountNumber + '  ';
-      } else {
-        text = accountNumber + '  ';
-      }
       if (this.mCallDataManager.hasAliveCall()) {
         this.startBackgroundRunning();
       }
-      this.notificationManager.sendNotification(text, this.callData);
+      this.notificationManager.sendNotification(this.callData);
       this.notificationManager.sendCapsuleNotification(this.callData, true);
       LogUtils.i(TAG, "onPageHide end")
     }
   }
 
+
   aboutToDisappear() {
     LogUtils.i(TAG, "aboutToDisappear")
     this.stopBackgroundRunning();
+    this.smListener.off('change', this.isBreakpointSM);
+    this.mdListener.off('change', this.isBreakpointMD);
+    this.lgListener.off('change', this.isBreakpointLG);
   }
 
   private stopBackgroundRunning() {
