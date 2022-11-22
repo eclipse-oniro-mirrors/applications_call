@@ -100,6 +100,8 @@ export default struct ContactCard {
               .fontWeight(FontWeight.Medium)
               .fontColor('#FFFFFF')
               .margin({ bottom: 8 })
+              .maxLines(1)
+              .textOverflow({ overflow: TextOverflow.Ellipsis })
           } else if (!this.isShowKeyboard) {
             Text(this.isEmergencyPhoneNumber ? this.emergency : this.callData.contactName ? this.callData.contactName : this.accountNumber)
               .fontSize(30)
@@ -108,6 +110,8 @@ export default struct ContactCard {
               .fontWeight(FontWeight.Medium)
               .fontColor('#FFFFFF')
               .margin({ bottom: 8 })
+              .maxLines(1)
+              .textOverflow({ overflow: TextOverflow.Ellipsis })
           } else if (this.isShowKeyboard && this.textInput.length != 0) {
             Scroll() {
               Text(this.textInputValue)
@@ -130,13 +134,13 @@ export default struct ContactCard {
 
           Row() {
             if (!this.isShowKeyboard || this.isShowKeyboard && this.textInput.length === 0) {
-              Text(this.callData.contactName ? this.accountNumber : '')
+              Text((this.callData.contactName || this.isEmergencyPhoneNumber) ? this.accountNumber : '')
                 .fontSize(14)
                 .height(19)
                 .lineHeight(16)
                 .fontColor('#FFFFFF')
                 .margin({ bottom: 8 })
-                .visibility(this.callData.contactName && !this.isShowKeyboard ? Visibility.Visible : Visibility.None)
+                .visibility((this.callData.contactName || this.isEmergencyPhoneNumber) && !this.isShowKeyboard ? Visibility.Visible : Visibility.None)
             }
           }
 

@@ -153,8 +153,7 @@ export default struct FuncBtnGroup {
         this.mCallServiceProxy.switchCall(callId);
         break;
       case 'add':
-        this.startContactAbility('page_flag_dialer')
-
+        this.startContact('page_flag_dialer')
         break;
       case 'video':
         break;
@@ -162,7 +161,7 @@ export default struct FuncBtnGroup {
         this.muteHandle('mute');
         break;
       case 'contact':
-        this.startContactAbility("page_flag_choose_contacts")
+        this.startContact("page_flag_choose_contacts")
         break;
       case 'merge':
         this.mCallServiceProxy.combineConference(callId);
@@ -172,10 +171,21 @@ export default struct FuncBtnGroup {
     }
   }
 
-  startContactAbility(pageFlag) {
-    if (screenLock.isLocked) {
-      screenLock.unlock();
+  startContact(pageFlag) {
+    if (screenLock.isLocked()) {
+      screenLock.unlock((err, isUnlock) => {
+        if (isUnlock) {
+          this.startContactAbility(pageFlag)
+        } else {
+          LogUtils.i(TAG, "startContact screen isLocked")
+        }
+      });
+    } else {
+        this.startContactAbility(pageFlag)
     }
+  }
+
+  startContactAbility(pageFlag) {
     globalThis.calluiAbilityContext?.startAbility({
       bundleName: 'com.ohos.contacts',
       abilityName: 'com.ohos.contacts.MainAbility',
