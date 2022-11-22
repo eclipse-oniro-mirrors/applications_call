@@ -20,7 +20,6 @@ import CallDataManager from './CallDataManager';
 import Utils from '../common/utils/utils';
 import commonEvent from '@ohos.commonEvent';
 import CallServiceProxy from './CallServiceProxy';
-import ContactManager from './ContactManager';
 import LogUtils from '../common/utils/LogUtils'
 import call from '@ohos.telephony.call';
 import CallStateConst from '../common/constant/CallStateConst';
@@ -42,12 +41,10 @@ export default class CallManager {
   private mCallDataManager: CallDataManager;
   private mCallServiceProxy: CallServiceProxy ;
   private mUtils: Utils;
-  private contactManager;
   private diffSeconds
   private mTimeMeter
 
   constructor(ctx) {
-    this.contactManager = new ContactManager();
     this.mCallServiceProxy = CallServiceProxy.getInstance();
     this.mUtils = Utils.getInstance();
     this.callData = ctx.callData;
@@ -62,12 +59,13 @@ export default class CallManager {
     this.initCallData();
   }
 
-  /*
+  /**
    * init CallData
    */
   private initCallData() {
     if (globalThis.abilityWant && globalThis.abilityWant.parameters && ('callState' in globalThis.abilityWant.parameters)) {
-      this.update(globalThis.abilityWant.parameters);
+      this.callData = this.getCallDataFromWant(globalThis.abilityWant.parameters);
+      this.update(this.callData);
       LogUtils.i(TAG, "initCallData featureAbility.getWant :")
     } else {
       this.mCallServiceProxy.publish({
@@ -77,7 +75,23 @@ export default class CallManager {
     }
   }
 
-  /*
+  /**
+   * get callData from want parameters
+   */
+  private getCallDataFromWant(parameters) {
+    return Object.assign({}, {
+      accountId: parameters.accountId,
+      accountNumber: parameters.accountNumber,
+      callId: parameters.callId,
+      callState: parameters.callState,
+      callType: parameters.callType,
+      conferenceState: parameters.conferenceState,
+      isEcc: parameters.isEcc,
+      startTime: parameters.startTime,
+      videoState: parameters.videoState});
+  }
+
+  /**
    * Registered subscribers
    */
   private async registerSubscriber() {
@@ -123,7 +137,6 @@ export default class CallManager {
    * @param { Object } callData -Object
    */
   async update(callData) {
-    await this.contactManager.getContactInfo(callData)
     this.mCallDataManager.update(callData);
     call.formatPhoneNumber(callData.accountNumber, (err, data) => {
       if (data === undefined) {
