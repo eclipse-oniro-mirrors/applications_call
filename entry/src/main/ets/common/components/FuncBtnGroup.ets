@@ -13,7 +13,7 @@
  * limitations under the License.
  */
 
-import  Method from '../utils/Method';
+import Method from '../utils/Method';
 import FuncBtn from './FuncBtn';
 import CallStateConst from '../constant/CallStateConst';
 import CallServiceProxy from '../../model/CallServiceProxy';
@@ -21,6 +21,7 @@ import Clone from '../utils/Clone';
 import ConferenceConst from '../constant/ConferenceConst';
 import BtnGroupConfig from '../configs/BtnGroupConfig';
 import LogUtils from '../utils/LogUtils';
+import screenLock from '@ohos.screenLock'
 
 const TAG = 'FuncBtnGroup';
 const textMap =
@@ -37,16 +38,15 @@ const textMap =
 
 @Component
 export default struct FuncBtnGroup {
-  @Link @Watch ('updateBtnList') callData: any;
+  @Link @Watch('updateBtnList') callData: any;
   @Link callList: Array<any>;
   @State count: number = 0;
   @State btnList: Array<any> = [];
   @State m: number = 0;
   @State n: number = 0;
   @State oldCallState: any = CallStateConst.CALL_STATUS_IDLE;
-
   private mCallServiceProxy: CallServiceProxy;
-  private mBtnGroupConfig  = BtnGroupConfig;
+  private mBtnGroupConfig = BtnGroupConfig;
   private timer: any = null;
   private mClone: Clone;
   private btnListCall;
@@ -78,7 +78,6 @@ export default struct FuncBtnGroup {
       this.btnList = this.btnListCall
     }
     this.onCallStateChange(this.callData.callState)
-    LogUtils.i(TAG, "upData BtnList");
   }
 
   /**
@@ -97,10 +96,10 @@ export default struct FuncBtnGroup {
    */
   onCallStateChange(newVal) {
     LogUtils.i(TAG, "Calling status changed newState : " + JSON.stringify(newVal));
-    const BtnName= ['video', 'record', 'add', 'contact']
+    const BtnName = ['video', 'record', 'add', 'contact']
     if (newVal === CallStateConst.CALL_STATUS_ACTIVE || newVal === CallStateConst.CALL_STATUS_HOLDING) {
       this.btnList.forEach((item) => {
-        if (!Method.includes(BtnName,(item.type))) {
+        if (!Method.includes(BtnName, (item.type))) {
           item.isDisable = false;
           item.isActive = false;
         }
@@ -125,10 +124,10 @@ export default struct FuncBtnGroup {
    */
   btnClick(obj) {
     LogUtils.i(TAG, "btnClick get icon type : " + JSON.stringify(obj));
-    const BtnName= ['record', 'video', 'mute']
+    const BtnName = ['record', 'video', 'mute']
     const type = obj.type;
     const { callId } = this.callData;
-    if (Method.includes(BtnName,type)) {
+    if (Method.includes(BtnName, type)) {
       this.btnList.forEach((item) => {
         if (item.type === type) {
           item.isActive = !item.isActive;
@@ -154,13 +153,7 @@ export default struct FuncBtnGroup {
         this.mCallServiceProxy.switchCall(callId);
         break;
       case 'add':
-        globalThis.calluiAbilityContext?.startAbility({
-          bundleName: 'com.ohos.contacts',
-          abilityName: 'com.ohos.contacts.MainAbility',
-          parameters: {
-            pageFlag: 'page_flag_dialer'
-          }
-        });
+        this.startContact('page_flag_dialer')
         break;
       case 'video':
         break;
@@ -168,13 +161,7 @@ export default struct FuncBtnGroup {
         this.muteHandle('mute');
         break;
       case 'contact':
-        globalThis.calluiAbilityContext?.startAbility({
-          bundleName: 'com.ohos.contacts',
-          abilityName: 'com.ohos.contacts.MainAbility',
-          parameters: {
-            pageFlag: "page_flag_choose_contacts"
-          }
-        });
+        this.startContact("page_flag_choose_contacts")
         break;
       case 'merge':
         this.mCallServiceProxy.combineConference(callId);
@@ -182,6 +169,30 @@ export default struct FuncBtnGroup {
       default:
         break;
     }
+  }
+
+  startContact(pageFlag) {
+    if (screenLock.isLocked()) {
+      screenLock.unlock((err, isUnlock) => {
+        if (isUnlock) {
+          this.startContactAbility(pageFlag)
+        } else {
+          LogUtils.i(TAG, "startContact screen isLocked")
+        }
+      });
+    } else {
+        this.startContactAbility(pageFlag)
+    }
+  }
+
+  startContactAbility(pageFlag) {
+    globalThis.calluiAbilityContext?.startAbility({
+      bundleName: 'com.ohos.contacts',
+      abilityName: 'com.ohos.contacts.MainAbility',
+      parameters: {
+        pageFlag: pageFlag
+      }
+    });
   }
 
   /**
@@ -215,23 +226,23 @@ export default struct FuncBtnGroup {
   }
 
   build() {
-    GridContainer({ gutter: 24, margin: 24 }) {
-      Row() {
+    GridRow({ columns: { sm: 4, md: 8, lg: 12 }, gutter: 0 }) {
+      GridCol({ span: { sm: 4, md: 6, lg: 6 }, offset: { md: 1, lg: 3 } }) {
         Grid() {
           ForEach(this.btnList, (item) => {
             GridItem() {
-                FuncBtn({
-                  btnType: item.type,
-                  isDisable: item.isDisable,
-                  isActive: item.isActive,
-                  iconText: item.iconText,
-                  iconDisableUrl: item.iconDisableUrl,
-                  iconDefaultUrl: item.iconDefaultUrl,
-                  iconActiveUrl: item.iconActiveUrl,
-                  btnClick: () => {
-                    this.btnClick(item)
-                  }
-                })
+              FuncBtn({
+                btnType: item.type,
+                isDisable: item.isDisable,
+                isActive: item.isActive,
+                iconText: item.iconText,
+                iconDisableUrl: item.iconDisableUrl,
+                iconDefaultUrl: item.iconDefaultUrl,
+                iconActiveUrl: item.iconActiveUrl,
+                btnClick: () => {
+                  this.btnClick(item)
+                }
+              })
             }
             .height(51.5)
           })
@@ -242,11 +253,7 @@ export default struct FuncBtnGroup {
         .columnsTemplate('1fr 1fr 1fr')
         .rowsTemplate('1fr 1fr')
       }
-      .useSizeType({
-        sm: { span: 4, offset: 0 },
-        md: { span: 6, offset: 1 },
-        lg: { span: 6, offset: 3 }
-      })
     }
+    .margin(24)
   }
 }

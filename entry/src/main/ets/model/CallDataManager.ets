@@ -18,6 +18,7 @@
  */
 import CallStateManager from './CallStateManager';
 import CallStateConst from '../common/constant/CallStateConst';
+import ContactManager from './ContactManager';
 import NotificationManager from '../model/NotificationManager';
 import LogUtils from '../common/utils/LogUtils';
 import getSingleInstance from '../common/utils/SingleInstanceHelper'
@@ -34,7 +35,8 @@ export default class CallDataManager {
   callTimeList: any = [];
   private callStateChange: any;
   private mCallStateManager: CallStateManager ;
-  private NotificationManager ;
+  private NotificationManager;
+  private contactManager;
 
   public static getInstance():CallDataManager {
     return getSingleInstance(CallDataManager, CALL_DATA_MANAGER_KEY);
@@ -44,7 +46,8 @@ export default class CallDataManager {
    * Init data.
    */
   public init(callData, callList, callTimeList) {
-    this.NotificationManager = new NotificationManager()
+    this.NotificationManager = new NotificationManager();
+    this.contactManager = new ContactManager();
     this.mCallStateManager = CallStateManager.getInstance()
     this.callData = callData;
     this.callList = callList;
@@ -74,6 +77,11 @@ export default class CallDataManager {
       this.addCallList({
         ...callData
       });
+
+      // use setTimeout to avoid block ui show
+      setTimeout(() => {
+        this.contactManager.getContactInfo(callData)
+      }, 0);
     }
 
     if (callData.callState === CallStateConst.CALL_STATUS_ACTIVE) {

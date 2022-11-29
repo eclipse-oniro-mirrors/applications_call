@@ -18,14 +18,11 @@
   "buildOption": {
   },
   "entryModules": [
-    "com.ohos.callui"
+    "callui"
   ],
   "targets": [
     {
       "name": "default"
-    },
-    {
-      "name": "ohosTest",
     }
   ]
 }
