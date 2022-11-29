@@ -13,6 +13,7 @@ export default class MainAbility extends Ability {
   onWindowStageCreate(windowStage) {
     // Main window is created, set main page for this ability
     LogUtils.i(TAG, "onWindowStageCreate")
+    windowStage.setShowOnLockScreen(true);
     windowStage.loadContent("pages/index", (err, data) => {
       if (err.code) {
         LogUtils.e(TAG, 'Failed to load the content. Cause:' + JSON.stringify(err));

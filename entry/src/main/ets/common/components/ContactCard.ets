@@ -41,7 +41,6 @@ export default struct ContactCard {
   public aboutToAppear(): void {
     LogUtils.i(TAG, "aboutToAppear");
     this.mUtils = Utils.getInstance();
-    this.callTimeList = [];
     this.timer = setInterval(() => {
       if (this.dialing === '...') {
         this.dialing = '';
@@ -82,30 +81,28 @@ export default struct ContactCard {
   }
 
   build() {
-    GridContainer({ gutter: 24, margin: 24 }) {
-      Column() {
-        if (!this.isShowKeyboard) {
-          Column() {
+    GridRow({ columns: { sm: 4, md: 8, lg: 12 }, gutter: 24 }) {
+      GridCol({ span: { sm: 4, md: 6, lg: 6 }, offset: { md: 1, lg: 3 } }) {
+        Column() {
+          if (!this.isShowKeyboard) {
             Image($r("app.media.ic_public_avatar"))
               .width(110)
               .height(110)
               .borderRadius(55)
               .margin({ bottom: 18 })
           }
-        }
 
-        if (this.isShowKeyboard && this.textInput.length === 0) {
-          Column() {
+          if (this.isShowKeyboard && this.textInput.length === 0) {
             Text(this.callData.contactName ? this.callData.contactName : this.accountNumber)
               .fontSize(30)
               .height(40)
               .lineHeight(40)
               .fontWeight(FontWeight.Medium)
               .fontColor('#FFFFFF')
-              .margin({ bottom: 8, top: 64 })
-          }
-        } else if (!this.isShowKeyboard) {
-          Column() {
+              .margin({ bottom: 8 })
+              .maxLines(1)
+              .textOverflow({ overflow: TextOverflow.Ellipsis })
+          } else if (!this.isShowKeyboard) {
             Text(this.isEmergencyPhoneNumber ? this.emergency : this.callData.contactName ? this.callData.contactName : this.accountNumber)
               .fontSize(30)
               .height(40)
@@ -113,78 +110,76 @@ export default struct ContactCard {
               .fontWeight(FontWeight.Medium)
               .fontColor('#FFFFFF')
               .margin({ bottom: 8 })
+              .maxLines(1)
+              .textOverflow({ overflow: TextOverflow.Ellipsis })
+          } else if (this.isShowKeyboard && this.textInput.length != 0) {
+            Scroll() {
+              Text(this.textInputValue)
+                .height(40)
+                .fontSize(30)
+                .lineHeight(40)
+                .fontWeight(FontWeight.Medium)
+                .margin({ bottom: 8 })
+                .fontColor('#FFFFFF')
+                .onTouch((event: TouchEvent) => {
+                  if (event.type === TouchType.Move) {
+                    this.textInputValue = this.textInput
+                  }
+                })
+            }
+            .scrollable(ScrollDirection.Horizontal)
+            .scrollBar(BarState.Off)
+            .width('100%')
           }
-        } else if (this.isShowKeyboard && this.textInput.length != 0) {
-          Scroll() {
-            Text(this.textInputValue)
-              .height(40)
-              .fontSize(30)
-              .lineHeight(40)
-              .fontWeight(FontWeight.Medium)
-              .margin({ bottom: 8, top: 64 })
-              .fontColor('#FFFFFF')
-              .onTouch((event: TouchEvent) => {
-                if (event.type === TouchType.Move) {
-                  this.textInputValue = this.textInput
-                }
-              })
-          }
-          .scrollable(ScrollDirection.Horizontal)
-          .scrollBar(BarState.Off)
-          .width('100%')
-        }
 
-        Row() {
-          if (!this.isShowKeyboard || this.isShowKeyboard && this.textInput.length === 0) {
-            Text(this.callData.contactName ? this.accountNumber : '')
-              .fontSize(14)
-              .height(19)
-              .lineHeight(16)
-              .fontColor('#FFFFFF')
-              .margin({ bottom: 8 })
-              .visibility(this.callData.contactName && !this.isShowKeyboard ? Visibility.Visible : Visibility.None)
-          }
-        }
-
-        if (this.callData.callState === 1) {
           Row() {
-            Text($r("app.string.callHold"))
-              .fontSize(14)
-              .height(19)
-              .lineHeight(19)
-              .fontColor('#FFFFFF')
-              .fontWeight(FontWeight.Medium)
+            if (!this.isShowKeyboard || this.isShowKeyboard && this.textInput.length === 0) {
+              Text((this.callData.contactName || this.isEmergencyPhoneNumber) ? this.accountNumber : '')
+                .fontSize(14)
+                .height(19)
+                .lineHeight(16)
+                .fontColor('#FFFFFF')
+                .margin({ bottom: 8 })
+                .visibility((this.callData.contactName || this.isEmergencyPhoneNumber) && !this.isShowKeyboard ? Visibility.Visible : Visibility.None)
+            }
           }
-        }
 
-        if (this.callData.callState === 2) {
-          Row() {
-            Text($r("app.string.dialing"))
-              .fontSize(14)
-              .height(19)
-              .lineHeight(16)
-              .fontColor('#FFFFFF')
-              .align(Alignment.Start)
-
-            Text(this.dialing)
-              .fontColor('#FFFFFF')
+          if (this.callData.callState === 1) {
+            Row() {
+              Text($r("app.string.callHold"))
+                .fontSize(14)
+                .height(19)
+                .lineHeight(19)
+                .fontColor('#FFFFFF')
+                .fontWeight(FontWeight.Medium)
+            }
           }
-          .width(60)
-        }
 
-        if (this.callData.callState === 3) {
-          Column() {
+          if (this.callData.callState === 2) {
+            Row() {
+              Text($r("app.string.dialing"))
+                .fontSize(14)
+                .height(19)
+                .lineHeight(16)
+                .fontColor('#FFFFFF')
+                .align(Alignment.Start)
+
+              Text(this.dialing)
+                .fontColor('#FFFFFF')
+            }
+            .width(60)
+          }
+
+          if (this.callData.callState === 3) {
             Text($r("app.string.partyIsRinging"))
               .fontSize(14)
               .height(19)
               .lineHeight(16)
               .fontColor('#FFFFFF')
           }
-        }
 
-        if (this.isShowTime()) {
-          Column() {
-            Text(this.callTimeList[0].callTime)
+          if (this.isShowTime()) {
+            Text(this.callTimeList[0]?.callTime)
               .fontSize(14)
               .height(19)
               .lineHeight(19)
@@ -192,11 +187,7 @@ export default struct ContactCard {
           }
         }
       }
-      .useSizeType({
-        sm: { span: 4, offset: 0 },
-        md: { span: 6, offset: 1 },
-        lg: { span: 6, offset: 3 }
-      })
     }
+    .margin({ left: 24, right: 24 })
   }
 }

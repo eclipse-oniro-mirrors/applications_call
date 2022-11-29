@@ -31,7 +31,6 @@ export default struct DtmfBtn {
 
   public aboutToAppear(): void {
     this.textInput = "";
-    LogUtils.i(TAG, "aboutToAppear");
     this.mCallServiceProxy = new CallServiceProxy();
   }
 

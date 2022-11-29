@@ -33,19 +33,24 @@ export default class ContactManager {
    *
    * @param { Object } callData -Object
    */
-  async getContactInfo(callData) {
+  getContactInfo(callData) {
+    if (callData.contactName) {
+      return;
+    }
     try {
       const columns = ['id', 'display_name', 'detail_info'];
       const predicates = new dataAbility.DataAbilityPredicates();
       predicates.equalTo('detail_info', callData.accountNumber);
       predicates.equalTo('is_deleted', 0);
-      const dataAbilityHelper = await featureAbility.acquireDataAbilityHelper(globalThis.calluiAbilityContext, DBbaseUri);
-      const resSet = await dataAbilityHelper.query(DBUri, columns, predicates);
-      LogUtils.i(TAG, "getContactInfo resSet : " + JSON.stringify(resSet.rowCount))
-      if (resSet.rowCount > 0) {
-        resSet.goToFirstRow();
-        callData.contactName = resSet.getString(resSet.getColumnIndex('display_name'));
-      }
+      const dataAbilityHelper = featureAbility.acquireDataAbilityHelper(globalThis.calluiAbilityContext, DBbaseUri);
+      dataAbilityHelper.query(DBUri, columns, predicates, (err, resSet) => {
+        LogUtils.i(TAG, "getContactInfo resSet : " + JSON.stringify(resSet.rowCount))
+        if (resSet.rowCount > 0) {
+          resSet.goToFirstRow();
+          callData.contactName = resSet.getString(resSet.getColumnIndex('display_name'));
+          globalThis.callManager.update(callData);
+        }
+      });
     } catch (err) {
       LogUtils.i(TAG, "getContactInfo catch err : %s" + JSON.stringify(err))
     }
