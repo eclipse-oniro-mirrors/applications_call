@@ -22,6 +22,7 @@
         "label": "$string:callui_description",
         "startWindowIcon": "$media:app_icon",
         "startWindowBackground": "$color:black",
+        "removeMissionAfterTerminate": true,
         "visible": true,
         "minWindowHeight": 700,
         "minWindowWidth": 320,
