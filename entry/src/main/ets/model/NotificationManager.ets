@@ -185,7 +185,6 @@ export default class NotificationManager {
    */
   sendCapsuleNotification(callData, isBackground) {
     LogUtils.i(TAG, "sendCapsuleNotification isBackground : " + JSON.stringify(isBackground))
-    callData.startTime = (callData.startTime)
     LogUtils.i(TAG, "sendCapsuleNotification callData.startTime :")
     const {callState, startTime} = callData;
     let commonEventPublishData = {

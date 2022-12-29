@@ -29,7 +29,7 @@ import backgroundTaskManager from '@ohos.backgroundTaskManager';
 import Constants from '../common/utils/Constants';
 import CallDataManager from '../model/CallDataManager';
 
-const TAG = "MainAbility";
+const TAG = "Index";
 
 /**
  * @file: Main interface
@@ -97,8 +97,12 @@ struct Index {
   onPageHide() {
     LogUtils.i(TAG, "onPageHide")
     globalThis.appInactiveState = true;
+    this.updateNotification()
+  }
+
+  updateNotification() {
+    LogUtils.i(TAG, "onBackPress")
     const {callState, callId} = this.callData;
-    let fool = (callState !== CallStateConst.callStateObj.CALL_STATUS_DISCONNECTED && callId)
     if (callState !== CallStateConst.callStateObj.CALL_STATUS_DISCONNECTED && callId) {
       if (this.mCallDataManager.hasAliveCall()) {
         this.startBackgroundRunning();
@@ -113,6 +117,7 @@ struct Index {
   aboutToDisappear() {
     LogUtils.i(TAG, "aboutToDisappear")
     this.stopBackgroundRunning();
+    this.updateNotification()
     this.smListener.off('change', this.isBreakpointSM);
     this.mdListener.off('change', this.isBreakpointMD);
     this.lgListener.off('change', this.isBreakpointLG);

@@ -180,6 +180,9 @@ export default class CallManagerService {
    * @param { Object } callData - Object
    */
   publishData(callData) {
+    if (globalThis.callManager !== undefined) {
+      globalThis.callManager.update(callData)
+    } else {
     commonEvent.publish('callui.event.callDetailsChange', {
       bundleName: 'com.ohos.callui',
       isOrdered: false,
@@ -188,6 +191,7 @@ export default class CallManagerService {
     }, (res) => {
       LogUtils.i(TAG, "publishData commonEvent.publish callback res: callui.event.callDetailsChange")
     });
+    }
   }
 
   /**
