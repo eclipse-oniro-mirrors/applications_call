@@ -183,14 +183,14 @@ export default class CallManagerService {
     if (globalThis.callManager !== undefined) {
       globalThis.callManager.update(callData)
     } else {
-    commonEvent.publish('callui.event.callDetailsChange', {
-      bundleName: 'com.ohos.callui',
-      isOrdered: false,
-      subscriberPermissions: ["ohos.permission.GET_TELEPHONY_STATE"],
-      data: JSON.stringify(callData)
-    }, (res) => {
-      LogUtils.i(TAG, "publishData commonEvent.publish callback res: callui.event.callDetailsChange")
-    });
+      commonEvent.publish('callui.event.callDetailsChange', {
+        bundleName: 'com.ohos.callui',
+        isOrdered: false,
+        subscriberPermissions: ["ohos.permission.GET_TELEPHONY_STATE"],
+        data: JSON.stringify(callData)
+      }, (res) => {
+        LogUtils.i(TAG, "publishData commonEvent.publish callback res: callui.event.callDetailsChange")
+      });
     }
   }
 

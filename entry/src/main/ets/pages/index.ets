@@ -72,7 +72,8 @@ struct Index {
     byTrace.startTrace('aboutToAppear', 0);
     this.notificationManager = new NotificationManager();
     globalThis.callManager = new CallManager(this)
-    AppStorage.SetOrCreate<NotificationManager>('notificationManager', this.notificationManager);
+    AppStorage.SetOr
+    Create<NotificationManager>('notificationManager', this.notificationManager);
     this.mCallDataManager = CallDataManager.getInstance();
     byTrace.finishTrace('aboutToAppear', 0);
     this.smListener = mediaQuery.matchMediaSync('(320vp<width<=520vp)');
@@ -98,10 +99,10 @@ struct Index {
     LogUtils.i(TAG, "onPageHide")
     globalThis.appInactiveState = true;
     this.updateNotification()
+    LogUtils.i(TAG, "onPageHide end")
   }
 
   updateNotification() {
-    LogUtils.i(TAG, "onBackPress")
     const {callState, callId} = this.callData;
     if (callState !== CallStateConst.callStateObj.CALL_STATUS_DISCONNECTED && callId) {
       if (this.mCallDataManager.hasAliveCall()) {
@@ -109,7 +110,6 @@ struct Index {
       }
       this.notificationManager.sendNotification(this.callData);
       this.notificationManager.sendCapsuleNotification(this.callData, true);
-      LogUtils.i(TAG, "onPageHide end")
     }
   }
 
