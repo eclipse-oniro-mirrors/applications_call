@@ -111,7 +111,6 @@ export default class CallManager {
         const callData = JSON.parse(res.data);
         LogUtils.i(TAG, "commonEvent subscribe : %s" + JSON.stringify(subscriber))
         if (callData) {
-          this.callData = callData
           this.update(callData);
         }
       } else {
@@ -137,6 +136,7 @@ export default class CallManager {
    * @param { Object } callData -Object
    */
   async update(callData) {
+    this.callData = callData;
     this.mCallDataManager.update(callData);
     call.formatPhoneNumber(callData.accountNumber, (err, data) => {
       if (data === undefined) {
