@@ -136,7 +136,7 @@ export default class CallManager {
    * @param { Object } callData -Object
    */
   async update(callData) {
-    this.callData = callData
+    this.callData = callData;
     this.mCallDataManager.update(callData);
     call.formatPhoneNumber(callData.accountNumber, (err, data) => {
       if (data === undefined) {
