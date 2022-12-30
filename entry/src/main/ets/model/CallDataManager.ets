@@ -124,8 +124,8 @@ export default class CallDataManager {
   public hasAliveCall() {
     const callData = this.callList.find((call) => call.callState !== CallStateConst.CALL_STATUS_DISCONNECTED
       && call.callState !== CallStateConst.CALL_STATUS_DISCONNECTING);
-    LogUtils.i(TAG, "hasAliveCall:" + JSON.stringify(callData !== undefined))
-    return callData !== undefined
+    LogUtils.i(TAG, "hasAliveCall:" + JSON.stringify(callData !== undefined));
+    return callData !== undefined;
   }
 
   /**

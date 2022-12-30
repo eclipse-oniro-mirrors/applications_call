@@ -72,8 +72,7 @@ struct Index {
     byTrace.startTrace('aboutToAppear', 0);
     this.notificationManager = new NotificationManager();
     globalThis.callManager = new CallManager(this)
-    AppStorage.SetOr
-    Create<NotificationManager>('notificationManager', this.notificationManager);
+    AppStorage.SetOrCreate<NotificationManager>('notificationManager', this.notificationManager);
     this.mCallDataManager = CallDataManager.getInstance();
     byTrace.finishTrace('aboutToAppear', 0);
     this.smListener = mediaQuery.matchMediaSync('(320vp<width<=520vp)');
@@ -98,7 +97,7 @@ struct Index {
   onPageHide() {
     LogUtils.i(TAG, "onPageHide")
     globalThis.appInactiveState = true;
-    this.updateNotification()
+    this.updateNotification();
     LogUtils.i(TAG, "onPageHide end")
   }
 
@@ -117,7 +116,7 @@ struct Index {
   aboutToDisappear() {
     LogUtils.i(TAG, "aboutToDisappear")
     this.stopBackgroundRunning();
-    this.updateNotification()
+    this.updateNotification();
     this.smListener.off('change', this.isBreakpointSM);
     this.mdListener.off('change', this.isBreakpointMD);
     this.lgListener.off('change', this.isBreakpointLG);
