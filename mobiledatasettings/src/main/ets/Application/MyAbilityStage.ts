@@ -1,4 +1,4 @@
-import AbilityStage from "@ohos.application.AbilityStage"
+import AbilityStage from "@ohos.app.ability.AbilityStage"
 import LogUtils from '../common/utils/LogUtils'
 
 const TAG = "MyAbilityStage";
