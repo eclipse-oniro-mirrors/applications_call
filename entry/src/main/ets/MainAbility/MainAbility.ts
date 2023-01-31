@@ -1,4 +1,4 @@
-import Ability from '@ohos.application.Ability'
+import Ability from '@ohos.app.ability.UIAbility'
 import LogUtils from '../common/utils/LogUtils'
 
 const TAG = "MainAbility";
