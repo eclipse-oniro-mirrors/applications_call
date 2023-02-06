@@ -17,6 +17,7 @@
  * @file: Call management
  */
 import CallDataManager from './CallDataManager';
+import CallUtils from '../common/utils/CallUtils';
 import Utils from '../common/utils/utils';
 import commonEvent from '@ohos.commonEvent';
 import CallServiceProxy from './CallServiceProxy';
@@ -145,29 +146,9 @@ export default class CallManager {
         AppStorage.SetOrCreate("AccountNumber", data)
       }
     });
-    this.isEmergencyPhoneNumber(callData.accountNumber)
+    CallUtils.isEmergencyPhoneNumber(callData.accountNumber)
     LogUtils.i(TAG, "update :")
   }
-
-  /**
-   * Determine whether the call is an emergency call.
-   *
-   * @param { phoneNumber } phoneNumber-number
-   *
-   * @return { boolean } - return success true fail false
-   */
-  private isEmergencyPhoneNumber = (phoneNumber) => new Promise((resolve, reject) => {
-    call.isEmergencyPhoneNumber(phoneNumber, {
-      slotId: 0
-    }).then((res) => {
-      resolve(res);
-      AppStorage.SetOrCreate("IsEmergencyPhoneNumber", res)
-      LogUtils.i(TAG, "then:isEmergencyPhoneNumber : %s" + JSON.stringify(res))
-    }).catch((err) => {
-      reject(err);
-      LogUtils.i(TAG, "catch:isEmergencyPhoneNumber : %s" + JSON.stringify(err))
-    });
-  });
 
   /**
    * update call time list
