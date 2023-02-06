@@ -66,8 +66,7 @@ export default struct ContactCard {
    */
   private isShowCard() {
     return this.callList.length === 1 || (this.callList.length > 1 && this.callList.some((v) =>
-    v.callState === callStateConst.
-    CALL_STATUS_WAITING));
+    v.callState === callStateConst.CALL_STATUS_WAITING));
   }
 
   /**
