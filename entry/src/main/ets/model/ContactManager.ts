@@ -34,7 +34,9 @@ export default class ContactManager {
    * @param { Object } callData -Object
    */
   async getContactInfo(callData) {
-    LogUtils.i(TAG, "getContactInfo callData: " + JSON.stringify(callData))
+    if (callData.contactName) {
+      return;
+    }
     try {
       const columns = ['id', 'display_name', 'detail_info'];
       const predicates = new dataSharePredicates.DataSharePredicates();
