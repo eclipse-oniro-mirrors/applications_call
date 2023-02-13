@@ -16,12 +16,12 @@
 /**
  * @file: Contact management
  */
-import featureAbility from '@ohos.ability.featureAbility';
-import dataAbility from '@ohos.data.dataAbility';
+import dataShare from '@ohos.data.dataShare';
+import dataSharePredicates from '@ohos.data.dataSharePredicates';
 import LogUtils from '../common/utils/LogUtils';
 
 const TAG = "ContactManager";
-const DBbaseUri = 'dataability:///com.ohos.contactsdataability';
+const DBbaseUri = 'datashare:///com.ohos.contactsdataability';
 const DBUri = DBbaseUri + '/contacts/contact_data';
 
 /**
@@ -33,24 +33,23 @@ export default class ContactManager {
    *
    * @param { Object } callData -Object
    */
-  getContactInfo(callData) {
+  async getContactInfo(callData) {
     if (callData.contactName) {
       return;
     }
     try {
       const columns = ['id', 'display_name', 'detail_info'];
-      const predicates = new dataAbility.DataAbilityPredicates();
+      const predicates = new dataSharePredicates.DataSharePredicates();
       predicates.equalTo('detail_info', callData.accountNumber);
       predicates.equalTo('is_deleted', 0);
-      const dataAbilityHelper = featureAbility.acquireDataAbilityHelper(globalThis.calluiAbilityContext, DBbaseUri);
-      dataAbilityHelper.query(DBUri, columns, predicates, (err, resSet) => {
-        LogUtils.i(TAG, "getContactInfo resSet : " + JSON.stringify(resSet.rowCount))
-        if (resSet.rowCount > 0) {
-          resSet.goToFirstRow();
-          callData.contactName = resSet.getString(resSet.getColumnIndex('display_name'));
-          globalThis.callManager.update(callData);
-        }
-      });
+      const dataAbilityHelper = await dataShare.createDataShareHelper(globalThis.calluiAbilityContext, DBbaseUri);
+      const resSet = await dataAbilityHelper.query(DBUri, predicates, columns);
+      LogUtils.i(TAG, "getContactInfo resSet : " + JSON.stringify(resSet.rowCount))
+      if (resSet.rowCount > 0) {
+        resSet.goToFirstRow();
+        callData.contactName = resSet.getString(resSet.getColumnIndex('display_name'));
+        globalThis.callManager.update(callData);
+      }
     } catch (err) {
       LogUtils.i(TAG, "getContactInfo catch err : %s" + JSON.stringify(err))
     }
