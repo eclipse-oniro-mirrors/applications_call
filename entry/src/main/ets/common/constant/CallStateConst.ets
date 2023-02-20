@@ -57,16 +57,17 @@ export default class CallStateConst {
     CALL_STATUS_DISCONNECTING: CallStateConst.CALL_STATUS_DISCONNECTING,
     CALL_STATUS_IDLE: CallStateConst.CALL_STATUS_IDLE
   };
+
   public static callStateTextMap = {
     [CallStateConst.CALL_STATUS_ACTIVE]: '',
-    [CallStateConst.CALL_STATUS_HOLDING]: 'callHold',
-    [CallStateConst.CALL_STATUS_DIALING]: 'dialing',
-    [CallStateConst.CALL_STATUS_ALERTING]: 'partyIsRinging',
+    [CallStateConst.CALL_STATUS_HOLDING]: $r('app.string.callHold'),
+    [CallStateConst.CALL_STATUS_DIALING]: $r("app.string.dialing"),
+    [CallStateConst.CALL_STATUS_ALERTING]: $r("app.string.partyIsRinging"),
     [CallStateConst.CALL_STATUS_INCOMING]: '',
-    [CallStateConst.CALL_STATUS_WAITING]: 'thirdPartyCalls',
-    [CallStateConst.CALL_STATUS_DISCONNECTED]: 'hangUpCompleted',
-    [CallStateConst.CALL_STATUS_DISCONNECTING]: 'hangingUp',
-    [CallStateConst.CALL_STATUS_IDLE]: 'callIdle'
+    [CallStateConst.CALL_STATUS_WAITING]: '',
+    [CallStateConst.CALL_STATUS_DISCONNECTED]: $r("app.string.hangUpCompleted"),
+    [CallStateConst.CALL_STATUS_DISCONNECTING]: $r("app.string.hangingUp"),
+    [CallStateConst.CALL_STATUS_IDLE]: ''
   };
 
   public static defaultCallData = {

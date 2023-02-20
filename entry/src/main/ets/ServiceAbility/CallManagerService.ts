@@ -27,6 +27,7 @@ const TAG = "CallManagerService";
 const CALL_BUNDLE_NAME = 'com.ohos.callui';
 const ABILITY_NAME = 'com.ohos.callui.MainAbility';
 const CALL_STATUS_INCOMING = 4;
+const CALL_STATUS_WAITING = 5
 const CALL_STATUS_DIALING = 2;
 const CALL_STATUS_DISCONNECTED = 6;
 const CALL_STATUS_DISCONNECTING = 7;
@@ -129,7 +130,10 @@ export default class CallManagerService {
     /**
      * single call or dialing pull up the application
      */
-    if ((callState === CALL_STATUS_INCOMING && this.callList.length === 1) || callState === CALL_STATUS_DIALING) {
+    if (callState === CALL_STATUS_INCOMING || callState === CALL_STATUS_WAITING || callState === CALL_STATUS_DIALING) {
+      if (this.callList.length > 1) {
+        this.publishData(callData)
+      }
       this.startAbility(callData);
     } else if (callState !== CALL_STATUS_DISCONNECTING) {
       this.publishData(callData);

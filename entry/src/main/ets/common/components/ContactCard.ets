@@ -104,7 +104,7 @@ export default struct ContactCard {
           }
 
           if (this.isShowKeyboard && this.textInput.length === 0) {
-            Text(this.callData.contactName ? this.callData.contactName : this.accountNumber)
+            Text(this.callData.contactName ? this.callData.contactName : this.callData.accountNumber)
               .fontSize(30)
               .height(40)
               .lineHeight(40)
@@ -114,7 +114,7 @@ export default struct ContactCard {
               .maxLines(1)
               .textOverflow({ overflow: TextOverflow.Ellipsis })
           } else if (!this.isShowKeyboard) {
-            Text(this.isEmergencyPhoneNumber ? this.emergency : this.callData.contactName ? this.callData.contactName : this.accountNumber)
+            Text(this.isEmergencyPhoneNumber ? this.emergency : this.callData.contactName ? this.callData.contactName : this.callData.accountNumber)
               .fontSize(30)
               .height(40)
               .lineHeight(40)
@@ -145,7 +145,7 @@ export default struct ContactCard {
 
           Row() {
             if (!this.isShowKeyboard || this.isShowKeyboard && this.textInput.length === 0) {
-              Text((this.callData.contactName || this.isEmergencyPhoneNumber) ? this.accountNumber : '')
+              Text((this.callData.contactName || this.isEmergencyPhoneNumber) ? this.callData.accountNumber : '')
                 .fontSize(14)
                 .height(19)
                 .lineHeight(16)
