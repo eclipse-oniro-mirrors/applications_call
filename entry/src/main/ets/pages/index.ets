@@ -28,6 +28,7 @@ import CallManager from '../model/CallManager';
 import backgroundTaskManager from '@ohos.backgroundTaskManager';
 import Constants from '../common/utils/Constants';
 import CallDataManager from '../model/CallDataManager';
+import MultiContactCard from '../common/components/MultiContactCard';
 
 const TAG = "Index";
 
@@ -169,19 +170,41 @@ struct Index {
     return this.callData.callState;
   }
 
+  /**
+   * is Triple Call
+   *
+   * @return {boolean} - isTripleCall
+   */
+  private isTripleCall() {
+    return (this.callData.callState === CallStateConst.callStateObj.CALL_STATUS_WAITING
+      || this.callData.callState === CallStateConst.callStateObj.CALL_STATUS_INCOMING)
+      && this.callList.length === 3;
+  }
+
   build() {
     Flex({
       direction: FlexDirection.Column,
       alignItems: ItemAlign.Center,
       justifyContent: FlexAlign.SpaceBetween
     }) {
-      ContactCard({
-        callData: $callData,
-        isShowKeyboard: this.isShowKeyboard,
-        callList: $callList
-      })
-        .margin({ top: this.isShowKeyboard ? 0 : 56 })
-        .layoutWeight(this.isShowKeyboard ? 1 : 0)
+      if (this.callList.length > 1) {
+        MultiContactCard({
+          callData: $callData,
+          isShowKeyboard: this.isShowKeyboard,
+          callList: $callList
+        })
+          .margin({ top: this.isShowKeyboard ? 0 : 56 })
+          .layoutWeight(this.isShowKeyboard ? 1 : 0)
+      } else {
+        ContactCard({
+          callData: $callData,
+          isShowKeyboard: this.isShowKeyboard,
+          callList: $callList
+        })
+          .margin({ top: this.isShowKeyboard ? 0 : 56 })
+          .layoutWeight(this.isShowKeyboard ? 1 : 0)
+      }
+
       if (this.callState() !== CallStateConst.callStateObj.CALL_STATUS_WAITING
       && this.callState() !== CallStateConst.callStateObj.CALL_STATUS_INCOMING) {
         Column() {
@@ -200,10 +223,23 @@ struct Index {
           })
         }
       } else {
-        IncomingCom({ callData: $callData })
+        Column() {
+          IncomingCom({ callData: $callData })
+
+          if (this.isTripleCall()) {
+            Column() {
+              Text($r("app.string.end_holding_call"))
+                .fontColor('#FFFFFF')
+                .fontSize(14)
+                .height(19)
+                .lineHeight(19)
+            }
+            .margin({ top: 16 })
+          }
+        }
       }
     }
-    .padding({ bottom: 106 })
+    .padding({ bottom: this.isTripleCall() ? 71 : 106 })
     .width("100%")
     .height("100%")
     .backgroundImage('assets/picture/wallpaper.png', ImageRepeat.NoRepeat)

@@ -38,8 +38,8 @@ const textMap =
 
 @Component
 export default struct FuncBtnGroup {
-  @Link @Watch('updateBtnList') callData: any;
-  @Link callList: Array<any>;
+  @Link @Watch("updateBtnList") callData: any;
+  @Link @Watch("updateBtnList") callList: Array<any>;
   @State count: number = 0;
   @State btnList: Array<any> = [];
   @State m: number = 0;
@@ -51,6 +51,7 @@ export default struct FuncBtnGroup {
   private mClone: Clone;
   private btnListCall;
   private btnListDialing;
+  private btnListMulti;
 
   aboutToAppear() {
     this.mClone = Clone.getInstance()
@@ -62,9 +63,10 @@ export default struct FuncBtnGroup {
       v.iconText = textMap[v.type];
     });
     this.btnListCall = this.mClone.clone(this.mBtnGroupConfig.btnGroupList);
-    this.getBtnListCall()
-    this.btnList = this.btnListCall
-    this.updateBtnList()
+    this.getBtnListCall();
+    this.btnList = this.btnListCall;
+    this.getBtnListMulti();
+    this.updateBtnList();
     LogUtils.i(TAG, "aboutToAppear :");
   }
 
@@ -73,11 +75,13 @@ export default struct FuncBtnGroup {
    */
   updateBtnList() {
     if (this.callData.callState === CallStateConst.CALL_STATUS_DIALING || this.callData.callState === CallStateConst.CALL_STATUS_ALERTING) {
-      this.btnList = this.btnListDialing
+      this.btnList = this.btnListDialing;
+    } else if (this.callList.length > 1){
+      this.btnList = this.btnListMulti;
     } else {
-      this.btnList = this.btnListCall
+      this.btnList = this.btnListCall;
     }
-    this.onCallStateChange(this.callData.callState)
+    this.onCallStateChange(this.callData.callState);
   }
 
   /**
@@ -87,6 +91,15 @@ export default struct FuncBtnGroup {
     this.btnListDialing = this.mClone.clone(this.mBtnGroupConfig.btnGroupList);
     this.btnListDialing[1].isDisable = true
     this.btnListDialing[2].isDisable = true
+  }
+
+  /**
+   * Get BtnList for Multi Calls
+   */
+  getBtnListMulti() {
+    this.btnListMulti = this.mClone.clone(this.mBtnGroupConfig.btnGroupList);
+    this.btnListMulti[1] = this.mClone.clone(this.mBtnGroupConfig.threePartyList[0]);
+    this.btnListMulti[2] = this.mClone.clone(this.mBtnGroupConfig.threePartyList[1]);
   }
 
   /**
@@ -150,7 +163,13 @@ export default struct FuncBtnGroup {
         this.keepHandle('keep');
         break;
       case 'exchange':
-        this.mCallServiceProxy.switchCall(callId);
+        LogUtils.i(TAG, "exchange button clicked, callid: " + callId);
+        this.callList.forEach((item) => {
+          if (item.callState === CallStateConst.CALL_STATUS_HOLDING) {
+            this.mCallServiceProxy.unHoldCall(item.callId);
+            return;
+          }
+        });
         break;
       case 'add':
         this.startContact('page_flag_dialer')

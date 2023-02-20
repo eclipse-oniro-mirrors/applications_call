@@ -203,6 +203,10 @@
     {
       "name": "emergency",
       "value": "紧急通话"
+    },
+    {
+      "name": "end_holding_call",
+      "value": "接听来电将挂断之前保持的通话"
     }
   ]
 }

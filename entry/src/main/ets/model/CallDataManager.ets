@@ -129,6 +129,22 @@ export default class CallDataManager {
   }
 
   /**
+   * Judge whether the call exists.
+   */
+  public hasActiveCall(): boolean {
+    return this.callList.find((call) => call.callState === CallStateConst.CALL_STATUS_ACTIVE
+    || call.callState === CallStateConst.CALL_STATUS_HOLDING);
+  }
+
+  /**
+   * Judge whether the call is active or holding.
+   */
+  public isActiveCall(callId): boolean {
+    return this.callList.find((call) => call.callId === callId && (call.callState === CallStateConst.CALL_STATUS_ACTIVE
+    || call.callState === CallStateConst.CALL_STATUS_HOLDING));
+  }
+
+  /**
    * addCallList
    *
    * @param { object } callData

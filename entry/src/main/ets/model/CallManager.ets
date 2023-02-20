@@ -154,19 +154,23 @@ export default class CallManager {
    * update call time list
    */
   updateCallTimeList() {
-    if (this.callData.callState != CallStateConst.CALL_STATUS_ACTIVE && this.callData.callState != CallStateConst.CALL_STATUS_HOLDING) {
+    if (!this.mCallDataManager.hasActiveCall()) {
+      LogUtils.i(TAG, "no active calls to update");
       return;
     }
+
     this.callTimeList = AppStorage.Get("CallTimeList")
     this.callTimeList.forEach((item, i) => {
-      item.endTimestamp = new Date().valueOf();
-      const diffSeconds = item.endTimestamp - item.startTimestamp;
-      this.diffSeconds = diffSeconds
-      item.callTime = this.mUtils.formatTime(diffSeconds);
-      this.callTimeList.splice(i, 1, {
-        ...item,
-      });
-      AppStorage.SetOrCreate("CallTimeList", this.callTimeList)
+      if (this.mCallDataManager.isActiveCall(item.callId)) {
+        item.endTimestamp = new Date().valueOf();
+        const diffSeconds = item.endTimestamp - item.startTimestamp;
+        this.diffSeconds = diffSeconds
+        item.callTime = this.mUtils.formatTime(diffSeconds);
+        this.callTimeList.splice(i, 1, {
+          ...item,
+        });
+        AppStorage.SetOrCreate("CallTimeList", this.callTimeList);
+      }
     });
     this.mTimeMeter = setTimeout(() => {
       this.updateCallTimeList();
