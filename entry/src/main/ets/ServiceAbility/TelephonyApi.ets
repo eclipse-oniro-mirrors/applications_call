@@ -60,10 +60,10 @@ export default class TelephonyApi {
    * @param { number } callId - call id
    */
   public acceptCall = function (callId) {
-    call.answer(callId).then((res) => {
-      LogUtils.i(TAG, prefixLog + "call.answer callId: " + JSON.stringify(callId))
+    call.answerCall(callId).then((res) => {
+      LogUtils.i(TAG, prefixLog + "call.answerCall callId: " + JSON.stringify(callId))
     }).catch((err) => {
-      LogUtils.i(TAG, prefixLog + "call.answer catch : " + JSON.stringify(err))
+      LogUtils.i(TAG, prefixLog + "call.answerCall catch : " + JSON.stringify(err))
     })
   }
 
@@ -77,9 +77,9 @@ export default class TelephonyApi {
    * @param { string } msg - message string
    */
   public rejectCall = function (callId, isSendSms = false, msg = '') {
-    const rejectCallPromise = isSendSms ? call.reject(callId, {
+    const rejectCallPromise = isSendSms ? call.rejectCall(callId, {
       messageContent: msg
-    }) : call.reject(callId);
+    }) : call.rejectCall(callId);
     rejectCallPromise.then((res) => {
       LogUtils.i(TAG, prefixLog + "then:rejectCall")
     })
@@ -96,7 +96,7 @@ export default class TelephonyApi {
    * @return { Object } promise object
    */
   public hangUpCall = (callId) => new Promise((resolve, reject) => {
-    call.hangup(callId).then((res) => {
+    call.hangUpCall(callId).then((res) => {
       resolve(res);
       LogUtils.i(TAG, prefixLog + "then:hangUpCall : %s" + JSON.stringify(callId))
     }).catch((err) => {
