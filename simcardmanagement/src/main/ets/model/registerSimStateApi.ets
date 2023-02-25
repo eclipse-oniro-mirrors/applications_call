@@ -19,6 +19,7 @@
 
 import { observer } from './api';
 import LogUtils from '../common/utils/LogUtils'
+import sim from '@ohos.telephony.sim';
 
 const TAG = "registerSimStateApi"
 
@@ -36,4 +37,9 @@ export function registerSimStateChange(slotId, callBack) {
     callBack(callStateInfo);
     return callStateInfo
   });
+}
+
+export function getMaxSimCount() {
+  LogUtils.i(TAG, "getMaxSimCount:" + JSON.stringify(sim.getMaxSimCount()))
+  return sim.getMaxSimCount();
 }

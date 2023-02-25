@@ -18,7 +18,7 @@ import StopSim from './dialog/stopSim'
 import EditSimInfo from './dialog/editSimInfo'
 import simServiceProxy from '../../model/simServiceProxy'
 import radioServiceProxy from '../../model/radioServiceProxy'
-import { registerSimStateChange } from '../../model/registerSimStateApi'
+import { registerSimStateChange, getMaxSimCount } from '../../model/registerSimStateApi'
 import dataServiceProxy from '../../model/dataServiceProxy';
 import LogUtils from '../../common/utils/LogUtils'
 
@@ -430,8 +430,10 @@ export default struct eSimSet {
 
   aboutToAppear() {
     this.onInit();
+    if (getMaxSimCount() === 2) {
+      this.addRegisterSimStateChange(1);
+    }
     this.addRegisterSimStateChange(0);
-    this.addRegisterSimStateChange(1);
     this.isChange = !this.isChange;
   }
 

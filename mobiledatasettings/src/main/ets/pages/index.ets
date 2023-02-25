@@ -19,7 +19,7 @@
 import publiccontent from '../common/components/publiccontent';
 import item from '../common/components/listItem/listItem';
 import call from '@ohos.telephony.call';
-import { registerSimStateChange } from '../model/registerSimStateApi'
+import { registerSimStateChange, getMaxSimCount } from '../model/registerSimStateApi'
 import { getSimStateCardOne, getSimStateCardTwo } from '../common/model/getSimStateApi';
 import { getSimCardOnePhoneNumber, getSimCardTwoPhoneNumber } from '../common/model/getSimTelephoneNumberApi';
 import {
@@ -238,15 +238,17 @@ struct Index {
 
   aboutToAppear() {
     LogUtils.i(TAG, "aboutToAppear")
+    if (getMaxSimCount() == 2) {
+      this.addRegisterSimStateChange(1);
+      this.isImsSwitchEnabled(1);
+      this.getSimStateDataCardTwo();
+    }
     this.addRegisterSimStateChange(0);
-    this.addRegisterSimStateChange(1);
     //Get data roaming status
     this.getCellularDataRoamingEnabled();
     //Get HD call status
     this.isImsSwitchEnabled(0);
-    this.isImsSwitchEnabled(1);
     this.getSimStateDataCardOne();
-    this.getSimStateDataCardTwo();
     //Get network mode
     this.getPreferredNetwork(this.slotId);
     getOperatorName().then((res) => {
@@ -289,185 +291,193 @@ struct Index {
   }
 
   build() {
-    Column() {
-      Column() {
+    GridRow({ columns: { sm: 4, md: 8, lg: 12 }, gutter: { x: 12 } }) {
+      GridCol({ span: { sm: 4, md: 8, lg: 8 }, offset: { sm: 0, md: 1, lg: 2 } }) {
+        Column() {
+          Column() {
 
-        HeadComponent();
+            HeadComponent();
 
-        Stack({ alignContent: Alignment.TopStart }) {
-          Scroll(this.scroller) {
-            Column() {
-              SubHeader({ titleContent: $r('app.string.mobile_data_general'), subTitleContent: '' });
-
-              Flex({
-                direction: FlexDirection.Row,
-                justifyContent: FlexAlign.SpaceBetween,
-                alignItems: ItemAlign.Center
-              }) {
+            Stack({ alignContent: Alignment.TopStart }) {
+              Scroll(this.scroller) {
                 Column() {
-                  Row() {
-                    Text($r('app.string.mobile_data'))
-                      .fontSize(16)
-                      .fontWeight(FontWeight.Medium)
-                      .fontFamily('HarmonyHeiTi')
-                      .lineHeight(22)
-                      .fontColor($r('app.color.font_color_182431'))
-                      .opacity(this.isDataEnable ? 0.9 : 0.6)
-                  }
+                  SubHeader({ titleContent: $r('app.string.mobile_data_general'), subTitleContent: '' });
 
-                  Row() {
-                    Text($r('app.string.mobile_data_charges'))
-                      .fontSize(14)
-                      .fontWeight(FontWeight.Regular)
-                      .fontFamily('HarmonyHeiTi')
-                      .fontColor('#555')
-                      .opacity(0.6)
-                      .lineHeight(19)
-                      .maxLines(2)
-                  }
-                  .margin({ top: 2, right: 26 })
-                }
-                .opacity(this.simStateStatusCardOne ? 1 : 0.4)
-                .alignItems(HorizontalAlign.Start)
+                  Flex({
+                    direction: FlexDirection.Row,
+                    justifyContent: FlexAlign.SpaceBetween,
+                    alignItems: ItemAlign.Center
+                  }) {
+                    Column() {
+                      Row() {
+                        Text($r('app.string.mobile_data'))
+                          .fontSize(16)
+                          .fontWeight(FontWeight.Medium)
+                          .fontFamily('HarmonyHeiTi')
+                          .lineHeight(22)
+                          .fontColor($r('app.color.font_color_182431'))
+                          .opacity(this.isDataEnable ? 0.9 : 0.6)
+                      }
 
-                Toggle({ type: ToggleType.Switch, isOn: this.isDataEnable })
-                  .width(36)
-                  .height(20)
-                  .enabled(this.simStateStatusCardOne)
-                  .opacity(this.simStateStatusCardOne ? 1 : 0.4)
-                  .onChange((isOn: boolean) => {
-                    this.isDataEnable = !this.isDataEnable
-                    if (this.isDataEnable == false) {
-                      disableCellularData().then((data) => {
-                        LogUtils.i(TAG, "disableCellularData: then" + JSON.stringify(data))
-                      }).catch((error) => {
-                        LogUtils.i(TAG, "disableCellularData: catch" + JSON.stringify(error))
-                      });
-                    } else {
-                      enableCellularData().then((data) => {
-                        LogUtils.i(TAG, "enableCellularData: then" + JSON.stringify(data))
-                      }).catch((error) => {
-                        LogUtils.i(TAG, "enableCellularData: catch" + JSON.stringify(error))
-                      });
+                      Row() {
+                        Text($r('app.string.mobile_data_charges'))
+                          .fontSize(14)
+                          .fontWeight(FontWeight.Regular)
+                          .fontFamily('HarmonyHeiTi')
+                          .fontColor('#555')
+                          .opacity(0.6)
+                          .lineHeight(19)
+                          .maxLines(2)
+                      }
+                      .margin({ top: 2, right: 26 })
                     }
+                    .opacity(this.simStateStatusCardOne ? 1 : 0.4)
+                    .alignItems(HorizontalAlign.Start)
+
+                    Toggle({ type: ToggleType.Switch, isOn: this.isDataEnable })
+                      .width(36)
+                      .height(20)
+                      .enabled(this.simStateStatusCardOne)
+                      .opacity(this.simStateStatusCardOne ? 1 : 0.4)
+                      .onChange((isOn: boolean) => {
+                        this.isDataEnable = !this.isDataEnable
+                        if (this.isDataEnable == false) {
+                          disableCellularData().then((data) => {
+                            LogUtils.i(TAG, "disableCellularData: then" + JSON.stringify(data))
+                          }).catch((error) => {
+                            LogUtils.i(TAG, "disableCellularData: catch" + JSON.stringify(error))
+                          });
+                        } else {
+                          enableCellularData().then((data) => {
+                            LogUtils.i(TAG, "enableCellularData: then" + JSON.stringify(data))
+                          }).catch((error) => {
+                            LogUtils.i(TAG, "enableCellularData: catch" + JSON.stringify(error))
+                          });
+                        }
+                      })
+                  }
+                  .padding({
+                    left: 12,
+                    right: 12,
+                    top: 4,
+                    bottom: 4
                   })
+                  .height(90)
+                  .width("100%")
+                  .borderRadius(24)
+                  .backgroundColor($r("sys.color.ohos_id_color_foreground_contrary"))
+
+                  SubHeader({
+                    titleContent: $r('app.string.mobile_data_card1'),
+                    subTitleContent: this.TelephoneNumber
+                  });
+
+                  Column() {
+                    item({
+                      isBtn: this.moisBtn,
+                      LastOne: this.moislastone,
+                      Controlswitch: this.DataRoamSwitch,
+                      title: $r('app.string.mobile_data_dataRoaming'),
+                      describe: $r('app.string.mobile_data_enableDataWhileRoaming'),
+                      isDisabled: this.simStateStatusCardOne,
+                      isCard: true,
+                      isSupport: false,
+                      isCon: 0,
+                    })
+                    Divider()
+                      .strokeWidth(0.5)
+                      .color("#E3E3E3")
+                      .lineCap(LineCapStyle.Round)
+                      .margin({ right: '2%' })
+
+                    item({
+                      isBtn: this.gqBtn,
+                      LastOne: this.moislastone,
+                      Controlswitch: this.enableISM,
+                      title: $r('app.string.mobile_data_volte'),
+                      describe: $r('app.string.mobile_data_confirmation_function'),
+                      isDisabled: this.simStateStatusCardOne,
+                      isSupport: false,
+                      isCard: true,
+                      isCon: 22,
+                    })
+                  }
+                  .padding({
+                    left: 12,
+                    right: 12,
+                    top: 4,
+                    bottom: 4
+                  })
+                  .width("100%")
+                  .borderRadius(24)
+                  .backgroundColor($r("sys.color.ohos_id_color_foreground_contrary"))
+
+                  SubHeader({
+                    titleContent: $r('app.string.mobile_data_card2'),
+                    subTitleContent: this.TelephoneNumber2
+                  });
+
+                  Column() {
+                    item({
+                      isBtn: this.moisBtn,
+                      LastOne: this.moislastone,
+                      Controlswitch: this.mobileDataDisabled2,
+                      title: $r('app.string.mobile_data_dataRoaming'),
+                      describe: $r('app.string.mobile_data_enableDataWhileRoaming'),
+                      isDisabled: this.simStateStatusCardTwo,
+                      isSupport: false,
+                      isCard: true,
+                      isCon: 0,
+                    })
+                    Divider()
+                      .strokeWidth(0.5)
+                      .color("#E3E3E3")
+                      .lineCap(LineCapStyle.Round)
+                      .margin({ right: '2%' })
+                    item({
+                      isBtn: this.gqBtn,
+                      LastOne: this.moislastone,
+                      Controlswitch: this.enableISM2,
+                      title: $r('app.string.mobile_data_volte'),
+                      describe: $r('app.string.mobile_data_confirmation_function'),
+                      isDisabled: this.simStateStatusCardTwo,
+                      isSupport: false,
+                      isCard: true,
+                      isCon: 22,
+                    })
+                  }
+                  .padding({
+                    left: 12,
+                    right: 12,
+                    top: 4,
+                    bottom: 4
+                  })
+                  .padding({
+                    left: 12,
+                    right: 12,
+                    top: 4,
+                    bottom: 4
+                  })
+                  .width("100%")
+                  .borderRadius(24)
+                  .backgroundColor($r("sys.color.ohos_id_color_foreground_contrary"))
+                }
+                .alignItems(HorizontalAlign.Start)
               }
-              .padding({
-                left: 12,
-                right: 12,
-                top: 4,
-                bottom: 4
-              })
-              .height(90)
-              .width("100%")
-              .borderRadius(24)
-              .backgroundColor($r("sys.color.ohos_id_color_foreground_contrary"))
-
-              SubHeader({ titleContent: $r('app.string.mobile_data_card1'), subTitleContent: this.TelephoneNumber });
-
-              Column() {
-                item({
-                  isBtn: this.moisBtn,
-                  LastOne: this.moislastone,
-                  Controlswitch: this.DataRoamSwitch,
-                  title: $r('app.string.mobile_data_dataRoaming'),
-                  describe: $r('app.string.mobile_data_enableDataWhileRoaming'),
-                  isDisabled: this.simStateStatusCardOne,
-                  isCard: true,
-                  isSupport: false,
-                  isCon: 0,
-                })
-                Divider()
-                  .strokeWidth(0.5)
-                  .color("#E3E3E3")
-                  .lineCap(LineCapStyle.Round)
-                  .margin({ right: '2%' })
-
-                item({
-                  isBtn: this.gqBtn,
-                  LastOne: this.moislastone,
-                  Controlswitch: this.enableISM,
-                  title: $r('app.string.mobile_data_volte'),
-                  describe: $r('app.string.mobile_data_confirmation_function'),
-                  isDisabled: this.simStateStatusCardOne,
-                  isSupport: false,
-                  isCard: true,
-                  isCon: 22,
-                })
-              }
-              .padding({
-                left: 12,
-                right: 12,
-                top: 4,
-                bottom: 4
-              })
-              .width("100%")
-              .borderRadius(24)
-              .backgroundColor($r("sys.color.ohos_id_color_foreground_contrary"))
-
-              SubHeader({ titleContent: $r('app.string.mobile_data_card2'), subTitleContent: this.TelephoneNumber2 });
-
-              Column() {
-                item({
-                  isBtn: this.moisBtn,
-                  LastOne: this.moislastone,
-                  Controlswitch: this.mobileDataDisabled2,
-                  title: $r('app.string.mobile_data_dataRoaming'),
-                  describe: $r('app.string.mobile_data_enableDataWhileRoaming'),
-                  isDisabled: this.simStateStatusCardTwo,
-                  isSupport: false,
-                  isCard: true,
-                  isCon: 0,
-                })
-                Divider()
-                  .strokeWidth(0.5)
-                  .color("#E3E3E3")
-                  .lineCap(LineCapStyle.Round)
-                  .margin({ right: '2%' })
-                item({
-                  isBtn: this.gqBtn,
-                  LastOne: this.moislastone,
-                  Controlswitch: this.enableISM2,
-                  title: $r('app.string.mobile_data_volte'),
-                  describe: $r('app.string.mobile_data_confirmation_function'),
-                  isDisabled: this.simStateStatusCardTwo,
-                  isSupport: false,
-                  isCard: true,
-                  isCon: 22,
-                })
-              }
-              .padding({
-                left: 12,
-                right: 12,
-                top: 4,
-                bottom: 4
-              })
-              .padding({
-                left: 12,
-                right: 12,
-                top: 4,
-                bottom: 4
-              })
-              .width("100%")
-              .borderRadius(24)
-              .backgroundColor($r("sys.color.ohos_id_color_foreground_contrary"))
             }
-            .alignItems(HorizontalAlign.Start)
           }
+          .useSizeType({
+            sm: { span: 4, offset: 0 },
+            md: { span: 6, offset: 1 },
+            lg: { span: 8, offset: 2 }
+          })
         }
+        .visibility(this.isLoading ? Visibility.Visible : Visibility.Hidden)
       }
-      .useSizeType({
-        sm: { span: 4, offset: 0 },
-        md: { span: 6, offset: 1 },
-        lg: { span: 8, offset: 2 }
-      })
     }
-    .visibility(this.isLoading ? Visibility.Visible : Visibility.Hidden)
-    .padding({
-      left: 12,
-      right: 12 })
+    .padding({ left: 12, right: 12 })
+    .width('100%')
+    .height('100%')
     .backgroundColor($r("sys.color.ohos_id_color_sub_background"))
-    .width("100%")
-    .height("100%")
   }
 }
