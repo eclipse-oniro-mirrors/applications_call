@@ -11,6 +11,142 @@
     {
       "name": "mobile_data_charges",
       "value": "After activation, the charges incurred are charged by the operator"
+    },
+    {
+      "name": "mobile_data_general",
+      "value": "mobile_data_general"
+    },
+    {
+      "name": "mobile_data_cancel",
+      "value": "mobile_data_cancel"
+    },
+    {
+      "name": "mobile_data_card1",
+      "value": "mobile_data_card1"
+    },
+    {
+      "name": "mobile_data_card2",
+      "value": "mobile_data_card2"
+    },
+    {
+      "name": "mobile_data_network",
+      "value": "mobile_data_network"
+    },
+    {
+      "name": "mobile_data_dataRoaming",
+      "value": "mobile_data_dataRoaming"
+    },
+    {
+      "name": "mobile_data_enableDataWhileRoaming",
+      "value": "mobile_data_enableDataWhileRoaming"
+    },
+    {
+      "name": "mobile_data_netFive",
+      "value": "mobile_data_netFive"
+    },
+    {
+      "name": "mobile_data_accessPointNamesAPN",
+      "value": "mobile_data_accessPointNamesAPN"
+    },
+    {
+      "name": "mobile_data_networkProvider",
+      "value": "mobile_data_networkProvider"
+    },
+    {
+      "name": "mobile_data_chooseNetworkProvider",
+      "value": "mobile_data_chooseNetworkProvider"
+    },
+    {
+      "name": "mobile_data_more",
+      "value": "mobile_data_more"
+    },
+    {
+      "name": "mobile_data_fiveAuto",
+      "value": "mobile_data_fiveAuto"
+    },
+    {
+      "name": "mobile_data_fourAuto",
+      "value": "mobile_data_fourAuto"
+    },
+    {
+      "name": "mobile_data_threeAuto",
+      "value": "mobile_data_threeAuto"
+    },
+    {
+      "name": "mobile_data_twoOnly",
+      "value": "mobile_data_twoOnly"
+    },
+    {
+      "name": "mobile_data_automaticRecognition",
+      "value": "mobile_data_automaticRecognition"
+    },
+    {
+      "name": "mobile_data_preferredNetwork",
+      "value": "mobile_data_preferredNetwork"
+    },
+    {
+      "name": "mobile_data_closeAutoSelect",
+      "value": "mobile_data_closeAutoSelect"
+    },
+    {
+      "name": "mobile_data_whetherToClose",
+      "value": "mobile_data_whetherToClose"
+    },
+    {
+      "name": "mobile_data_networkMode",
+      "value": "mobile_data_networkMode"
+    },
+    {
+      "name": "mobile_data_apnOpen",
+      "value": "mobile_data_apnOpen"
+    },
+    {
+      "name": "mobile_data_apnName",
+      "value": "mobile_data_apnName"
+    },
+    {
+      "name": "mobile_data_notSet",
+      "value": "mobile_data_notSet"
+    },
+    {
+      "name": "mobile_data_volte",
+      "value": "VoLTE HD call"
+    },
+    {
+      "name": "mobile_data_confirmation_function",
+      "value": "Confirm to the operator that this function is enabled before enabling, otherwise normal calls may be affected"
+    },
+    {
+      "name": "mobile_data_5g",
+      "value": "5G/4G/3G/2G automatic selection"
+    },
+    {
+      "name": "mobile_data_4g",
+      "value": "4G/3G/2G automatic selection"
+    },
+    {
+      "name": "mobile_data_3g",
+      "value": "3G/2G automatic selection"
+    },
+    {
+      "name": "mobile_data_2g",
+      "value": "2G only"
+    },
+    {
+      "name": "mobile_data_tips",
+      "value": "be careful"
+    },
+    {
+      "name": "mobile_data_turn_on_data_roaming",
+      "value": "Enabling data roaming may incur roaming charges. Open?"
+    },
+    {
+      "name": "cancel_space",
+      "value": "cancel"
+    },
+    {
+      "name": "confim_space",
+      "value": "Confim"
     }
   ]
 }
