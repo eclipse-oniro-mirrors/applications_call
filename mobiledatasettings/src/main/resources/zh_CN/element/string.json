@@ -142,11 +142,11 @@
     },
     {
       "name": "cancel_space",
-      "value": "取  消"
+      "value": "取 消"
     },
     {
       "name": "confim_space",
-      "value": "确  定"
+      "value": "确 定"
     }
   ]
 }

@@ -39,6 +39,5 @@ export function registerSimStateChange(slotId, callBack) {
 }
 
 export function getMaxSimCount() {
-  LogUtils.i(TAG, "getMaxSimCount:" + JSON.stringify(sim.getMaxSimCount()))
   return sim.getMaxSimCount();
 }

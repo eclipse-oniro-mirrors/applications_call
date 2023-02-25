@@ -54,7 +54,7 @@
     },
     {
       "name": "sim_card_manage",
-      "value": "SIM 卡管理"
+      "value": "SIM card management"
     },
     {
       "name": "default_mobile_data",
@@ -154,7 +154,7 @@
     },
     {
       "name": "card_1_phone",
-      "value": "卡 1 手机号"
+      "value": "Card 1 mobile number"
     },
     {
       "name": "sim_headName",

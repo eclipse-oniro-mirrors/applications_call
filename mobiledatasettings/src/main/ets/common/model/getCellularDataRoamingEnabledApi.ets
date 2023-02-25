@@ -42,8 +42,7 @@ export function getSupportNetwork(slotId = 0) {
       reject(error);
     }
   });
-}
-;
+};
 
 /**
  * Enabling Data Roaming

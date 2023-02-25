@@ -37,7 +37,7 @@ export default struct listItem {
   dialogTitle: string = '';
   radio_state_enable5g = 'RADIO_STATE_ENABLE5G';
   recordTypeDialog: CustomDialogController = new CustomDialogController({
-    builder: recoveryAPN({ isCon: this.isCon, isMsg: $Controlswitch }),
+    builder: dataRomingDialog({ isCon: this.isCon, isMsg: $Controlswitch }),
     alignment: DialogAlignment.Bottom,
     autoCancel: false,
     offset: { dx: 0, dy: -10 }
@@ -142,7 +142,7 @@ export default struct listItem {
 }
 
 @CustomDialog
-struct recoveryAPN {
+struct dataRomingDialog {
   controller: CustomDialogController;
   isCon: number;
   @Link isMsg: boolean;
