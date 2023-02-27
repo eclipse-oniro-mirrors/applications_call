@@ -1,0 +1,232 @@
+{
+  "string": [
+    {
+      "name": "simcardmanagement_desc",
+      "value": "description"
+    },
+    {
+      "name": "MainAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "MainAbility_label",
+      "value": "label"
+    },
+    {
+      "name": "card_1",
+      "value": "card 1"
+    },
+    {
+      "name": "card_2",
+      "value": "card 2"
+    },
+    {
+      "name": "card_1_set",
+      "value": "card 1 set"
+    },
+    {
+      "name": "card_2_set",
+      "value": "caard 2 set"
+    },
+    {
+      "name": "type",
+      "value": "type"
+    },
+    {
+      "name": "entity_card",
+      "value": "entity card"
+    },
+    {
+      "name": "eSim_card",
+      "value": "eSIM card"
+    },
+    {
+      "name": "eSim_card_set",
+      "value": "eSIM card set"
+    },
+    {
+      "name": "add_esim_communication",
+      "value": "Add ESIM card to adapt to communication related services"
+    },
+    {
+      "name": "add_esim_card",
+      "value": "Add eSIM card"
+    },
+    {
+      "name": "sim_card_manage",
+      "value": "SIM card management"
+    },
+    {
+      "name": "default_mobile_data",
+      "value": "defalut mobile data"
+    },
+    {
+      "name": "intellect_change_inter_card",
+      "value": "intellect change internet card"
+    },
+    {
+      "name": "intellect_change_inter_card_bottom",
+      "value": "According to the network quality status and call status, temporarily switch to"
+    },
+    {
+      "name": "intellect_change_inter_card_bottom_2",
+      "value": "surfing the internet，consumption required"
+    },
+    {
+      "name": "intellect_change_inter_card_bottom_3",
+      "value": "flow"
+    },
+    {
+      "name": "go_to_set",
+      "value": "go to set"
+    },
+    {
+      "name": "package_limit",
+      "value": "package limit"
+    },
+    {
+      "name": "default_dial_card",
+      "value": "default dial card"
+    },
+    {
+      "name": "not_set",
+      "value": "not set"
+    },
+    {
+      "name": "call_transfer_between_two_cards",
+      "value": "call transfer between two cards"
+    },
+    {
+      "name": "call_forwarding",
+      "value": "When an incoming call cannot be received from one card, the call will be transferred to another card"
+    },
+    {
+      "name": "closed",
+      "value": "closed"
+    },
+    {
+      "name": "long_sentence",
+      "value": "In order to ensure the normal opening of this function, please ensure that the mobile phone number corresponding to the SIM card is accurate and has opened the call waiting service. For tariff details, please consult the local operator."
+    },
+    {
+      "name": "check_phone_number",
+      "value": "check phone number"
+    },
+    {
+      "name": "select_call_forwarding_method",
+      "value": "select call forwarding method"
+    },
+    {
+      "name": "Card_1_call_forwarding_to_card_2",
+      "value": "card 1 call forwarding to card 2"
+    },
+    {
+      "name": "Card_2_call_forwarding_to_card_1",
+      "value": "card 2 call forwarding to card 1"
+    },
+    {
+      "name": "switch_on_at_the_same_time",
+      "value": "When the switch is turned on at the same time, it indicates that 'call forwarding between card 1 and card 2' is enabled"
+    },
+    {
+      "name": "confirm",
+      "value": "confirm"
+    },
+    {
+      "name": "cancel",
+      "value": "cancel"
+    },
+    {
+      "name": "set",
+      "value": "set"
+    },
+    {
+      "name": "stop_use",
+      "value": "stop"
+    },
+    {
+      "name": "stop_use_card",
+      "value": "stop%s"
+    },
+    {
+      "name": "opening_on_this_function",
+      "value": "Opening this function will consume"
+    },
+    {
+      "name": "card_1_phone",
+      "value": "Card 1 mobile number"
+    },
+    {
+      "name": "sim_headName",
+      "value": "SIM card management"
+    },
+    {
+      "name": "sim_not_enabled",
+      "value": "not enabled"
+    },
+    {
+      "name": "sim_enabled",
+      "value": "enabled"
+    },
+    {
+      "name": "sim_no_service",
+      "value": "no service"
+    },
+    {
+      "name": "sim_no_card_inserted",
+      "value": "No card inserted"
+    },
+    {
+      "name": "sim_card_one_no_space",
+      "value": "Card1"
+    },
+    {
+      "name": "sim_card_two_no_space",
+      "value": "Card2"
+    },
+    {
+      "name": "sim_add_esim",
+      "value": "Add eSIM"
+    },
+    {
+      "name": "sim_card_name",
+      "value": "Card name"
+    },
+    {
+      "name": "sim_phone_number",
+      "value": "Phone number"
+    },
+    {
+      "name": "sim_edit",
+      "value": "Edit %s"
+    },
+    {
+      "name": "sim_information",
+      "value": "Information"
+    },
+    {
+      "name": "sim_stop_information",
+      "value": "Is%s%s。Please wait···"
+    },
+    {
+      "name": "sim_mobile_data_change",
+      "value": "Default mobile data will be switched to%s。During the switching process, data services, phone calls and other functions will not be available. Deactivate or not%s？"
+    },
+    {
+      "name": "sim_package_limit",
+      "value": "Set%spackage limit"
+    },
+    {
+      "name": "sim_additional_costs",
+      "value": "Enabling this function will consume%s traffic. After setting the package limit, you can be reminded intelligently to avoid additional costs."
+    },
+    {
+      "name": "sim_null_character",
+      "value": " "
+    },
+    {
+      "name": "china_mobile",
+      "value": "China Mobile"
+    }
+  ]
+}

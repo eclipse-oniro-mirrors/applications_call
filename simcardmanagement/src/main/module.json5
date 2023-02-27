@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2022 Huawei Device Co., Ltd.
+ * Copyright (c) 2023 Huawei Device Co., Ltd.
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -15,11 +15,11 @@
 
 {
   "module": {
-    "name": "mobiledatasettings",
+    "name": "simcardmanagement",
     "type": "feature",
     "srcEntrance": "./ets/Application/MyAbilityStage.ts",
-    "description": "$string:app_name",
-    "mainElement": "com.ohos.mobiledatasettings.MainAbility",
+    "description": "$string:simcardmanagement_desc",
+    "mainElement": "com.ohos.simcardmanagement.MainAbility",
     "deviceTypes": [
       "default",
       "tablet"
@@ -35,12 +35,12 @@
     ],
     "abilities": [
       {
-        "name": "com.ohos.mobiledatasettings.MainAbility",
+        "name": "com.ohos.simcardmanagement.MainAbility",
         "srcEntrance": "./ets/MainAbility/MainAbility.ts",
-        "description": "$string:mainability_description",
-        "icon": "$media:app_icon",
-        "label": "$string:mainability_description",
-        "startWindowIcon": "$media:app_icon",
+        "description": "$string:MainAbility_desc",
+        "icon": "$media:icon",
+        "label": "$string:MainAbility_label",
+        "startWindowIcon": "$media:icon",
         "startWindowBackground": "$color:white",
         "visible": true
       }
@@ -50,10 +50,10 @@
         "name": "ohos.permission.GET_NETWORK_INFO"
       },
       {
-        "name": "ohos.permission.SET_TELEPHONY_STATE"
+        "name" : "ohos.permission.SET_TELEPHONY_STATE"
       },
       {
-        "name": "ohos.permission.GET_TELEPHONY_STATE"
+        "name" : "ohos.permission.GET_TELEPHONY_STATE"
       }
     ]
   }
