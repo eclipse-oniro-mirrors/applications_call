@@ -19,7 +19,7 @@ import CardInfomation from '../common/components/cardInfomation'
 import CardSetData from '../common/config/cardSetData';
 import SetFlowLimit from '../common/components/dialog/setFlowLimit'
 import DefaultDialCard from '../common/components/dialog/defalutDialing'
-import cardInfoData from '../common/config/cardinfodata';
+import cardInfoData from '../common/config/cardInfoData';
 import { setCache, getCache } from '../common/utils/KvManager'
 import dataServiceProxy from '../model/dataServiceProxy';
 import simServiceProxy from '../model/simServiceProxy'
