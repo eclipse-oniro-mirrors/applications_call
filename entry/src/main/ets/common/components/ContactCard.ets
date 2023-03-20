@@ -199,11 +199,13 @@ export default struct ContactCard {
 
           if (this.isShowTime()) {
             Row() {
-              Image($r("app.media.ic_public_phone_HD"))
-              .margin({right:4})
-              .width(12)
-              .height(12)
-              .opacity(0.6)
+              if (this.callData.callType === 1) {
+                Image($r("app.media.ic_public_phone_HD"))
+                  .margin({ right: 4 })
+                  .width(12)
+                  .height(12)
+                  .opacity(0.6)
+              }
 
               Text(this.callTimeList[0]?.callTime)
                 .fontSize(14)

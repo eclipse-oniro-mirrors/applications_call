@@ -49,14 +49,13 @@ export default struct HeadComponent {
 
       Text($r('app.string.mobile_data'))
         .fontSize(20)
-        .lineHeight(33)
         .fontFamily('HarmonyHeiTi-Bold')
         .fontWeight(FontWeight.Medium)
         .fontColor($r('app.color.font_color_182431'))
         .maxLines(1)
         .textOverflow({ overflow: TextOverflow.Ellipsis })
         .textAlign(TextAlign.Start)
-        .margin({ top: 13, bottom: 15 });
+        .margin({ top: 15, bottom: 15 });
     }
     .width("100%")
     .padding({ left: 12 })

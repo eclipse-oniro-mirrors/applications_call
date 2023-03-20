@@ -15,6 +15,10 @@
     {
       "name": "divider_calllist",
       "value": "#14FFFFFF"
+    },
+    {
+      "name": "button_active",
+      "value": "#007DFF"
     }
   ]
 }

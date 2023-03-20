@@ -19,11 +19,12 @@
 import publiccontent from '../common/components/publiccontent';
 import item from '../common/components/listItem/listItem';
 import call from '@ohos.telephony.call';
-import { registerSimStateChange, getMaxSimCount } from '../model/registerSimStateApi'
+import { registerSimStateChange, getMaxSimCount } from '../model/registerSimStateApi';
 import { getSimStateCardOne, getSimStateCardTwo } from '../common/model/getSimStateApi';
 import { getSimCardOnePhoneNumber, getSimCardTwoPhoneNumber } from '../common/model/getSimTelephoneNumberApi';
 import {
-  isCellularDataRoamingEnabled,
+  isCellularDataRoamingEnabledCardOne,
+  isCellularDataRoamingEnabledCardTwo,
   enableCellularDataRoaming,
   disableCellularDataRoaming,
   getSupportNetwork
@@ -31,17 +32,16 @@ import {
 import { setPreferredNetwork } from '../common/model/setPreferredNetworkApi';
 import { getPreferredNetwork } from '../common/model/getPreferredNetworkModeApi';
 import {
-  getCellularDataState,
+  isCellularDataEnabled,
   enableCellularData,
   disableCellularData,
   getOperatorName
 } from '../model/mobileDataStatus';
-import { MOBILE_DATA_STATUS } from '../common/constant/moblieDataConst';
-import HeadComponent from '../common/components/headComponent'
-import { SubHeader } from '../common/components/subHeader'
-import LogUtils from '../common/utils/LogUtils'
+import HeadComponent from '../common/components/headComponent';
+import { SubHeader } from '../common/components/subHeader';
+import LogUtils from '../common/utils/LogUtils';
 
-const TAG = "Index"
+const TAG = "Index";
 
 @Entry
 @Component
@@ -61,7 +61,8 @@ struct Index {
   // Mobile data switch
   @State isDataEnable: boolean = true;
   // Data roaming switch
-  @State DataRoamSwitch: boolean = false;
+  @State dataRoamSwitchCardOne: boolean = false;
+  @State dataRoamSwitchCardTwo: boolean = false;
   // HD call switch
   @State volteSwitch: boolean = false;
   // Card I status
@@ -74,11 +75,13 @@ struct Index {
   setCache_cun_name = 'DISTRIBUTEDDATA_CUN_NAME';
   setCache_wl_name = 'SETCACHE_WL_NAME';
   @State enable5g: boolean = false;
-  @State enableISM: boolean = false;
+  @StorageLink("imsOne")enableISM: boolean = false;
   @State enableISM2: boolean = false;
   @State TelephoneNumber: string = '';
   @State TelephoneNumber2?: string = '';
   @State ceshi: boolean = false;
+  @State cardOne: number = 0;
+  @State cardTwo: number = 1;
 
   /**
    * Get network mode
@@ -119,6 +122,7 @@ struct Index {
         this.simStateStatusCardOne = false;
       }
     }).catch((err) => {
+      this.simStateStatusCardOne = false;
       LogUtils.i(TAG, 'getSimStateData Card1 :console.error() ' + JSON.stringify(err.message));
     });
   }
@@ -128,7 +132,7 @@ struct Index {
    */
   getSimStateDataCardTwo() {
     getSimStateCardTwo().then((res: any) => {
-      LogUtils.i(TAG, "getSimState Card2 :success " + JSON.stringify(res));
+      LogUtils.i(TAG, "getSimState Card2 :success then" + JSON.stringify(res));
       const simState = {
         SIM_STATE_UNKNOWN: 0,
         SIM_STATE_NOT_PRESENT: 1,
@@ -143,6 +147,7 @@ struct Index {
         this.simStateStatusCardTwo = false;
       }
     }).catch((err) => {
+      this.simStateStatusCardTwo = false;
       LogUtils.i(TAG, 'getSimState Card2 :console.error() ' + JSON.stringify(err.message));
     });
   }
@@ -155,7 +160,7 @@ struct Index {
         this.isSupport = false;
       }
     }).catch((err) => {
-    })
+    });
   }
 
   /**
@@ -164,7 +169,7 @@ struct Index {
   getSimCardOnePhoneNumber() {
     getSimCardOnePhoneNumber().then((res) => {
       LogUtils.i(TAG, "getSimTelephoneNumber card1 other success" + JSON.stringify(res));
-      this.TelephoneNumber = res
+      this.TelephoneNumber = res;
     }).catch((err) => {
       LogUtils.i(TAG, "getSimTelephoneNumber card1 other catch" + JSON.stringify(err));
     });
@@ -186,30 +191,11 @@ struct Index {
    * Get mobile data on or off
    */
   getCellularDataState() {
-    getCellularDataState().then((data) => {
-      if (data == MOBILE_DATA_STATUS.DATA_STATE_CONNECTED) {
-        /**
-         * Gets the status of the mobile data
-         */
-        enableCellularData().then((data) => {
-          LogUtils.i(TAG, "enableCellularData success" + JSON.stringify(data));
-        }).catch((error) => {
-          LogUtils.i(TAG, "enableCellularData catch" + JSON.stringify(error));
-        });
-        this.isDataEnable = true;
-      } else if (data == MOBILE_DATA_STATUS.DATA_STATE_DISCONNECTED || data == MOBILE_DATA_STATUS.DATA_STATE_UNKNOWN) {
-        this.isDataEnable = false;
-        /**
-         * Gets the status of the disableCellularData
-         */
-        disableCellularData().then((data) => {
-          LogUtils.i(TAG, "disableCellularData success" + JSON.stringify(data));
-        }).catch((error) => {
-          LogUtils.i(TAG, "disableCellularData error" + JSON.stringify(error));
-        });
-      }
+    isCellularDataEnabled().then((data) => {
+      LogUtils.i(TAG, "isCellularDataEnabled success: isON:" + JSON.stringify(data));
+      this.isDataEnable = data;
     }).catch((error) => {
-      LogUtils.i(TAG, "disableCellularData catch" + JSON.stringify(error));
+      LogUtils.i(TAG, "isCellularDataEnabled error catch" + JSON.stringify(error));
     });
   }
 
@@ -223,6 +209,10 @@ struct Index {
       this.getSimCardOnePhoneNumber();
       this.getSimCardTwoPhoneNumber();
       this.getCellularDataState();
+      this.isImsSwitchEnabled(0);
+      if (getMaxSimCount() === 2) {
+        this.isImsSwitchEnabled(1);
+      }
     })
   }
 
@@ -230,15 +220,17 @@ struct Index {
     call.isImsSwitchEnabled(slotId).then((res: any) => {
       if (slotId) {
         this.enableISM2 = res;
+        LogUtils.i(TAG, "isImsSwitchEnable enable 1:" + JSON.stringify(this.enableISM2));
       } else {
         this.enableISM = res;
+        LogUtils.i(TAG, "isImsSwitchEnable enable 0:" + JSON.stringify(this.enableISM));
       }
-    })
+    });
   }
 
   aboutToAppear() {
     LogUtils.i(TAG, "aboutToAppear")
-    if (getMaxSimCount() == 2) {
+    if (getMaxSimCount() === 2) {
       this.addRegisterSimStateChange(1);
       this.isImsSwitchEnabled(1);
       this.getSimStateDataCardTwo();
@@ -260,6 +252,10 @@ struct Index {
     this.getCellularDataState();
   }
 
+  onPageShow() {
+    this.isImsSwitchEnabled(0);
+  }
+
   /**
    * Set network mode
    */
@@ -269,25 +265,22 @@ struct Index {
   }
 
   getCellularDataRoamingEnabled() {
-    isCellularDataRoamingEnabled().then((res) => {
-      if (!res) {
-        this.DataRoamSwitch = false;
-        disableCellularDataRoaming().then((data) => {
-          LogUtils.i(TAG, "disableCellularDataRoaming success: then" + JSON.stringify(data));
-        }).catch((error) => {
-          LogUtils.i(TAG, "disableCellularDataRoaming error" + JSON.stringify(error));
-        });
-      } else {
-        this.DataRoamSwitch = true;
-        enableCellularDataRoaming().then((data) => {
-          LogUtils.i(TAG, "enableCellularDataRoaming success: then" + JSON.stringify(data));
-        }).catch((error) => {
-          LogUtils.i(TAG, "enableCellularDataRoaming error" + JSON.stringify(error));
-        });
-      }
+    isCellularDataRoamingEnabledCardOne().then((res) => {
+      LogUtils.i(TAG,"getCellularDataRoamingEnabled card one success then:" + JSON.stringify(res));
+      this.dataRoamSwitchCardOne = res;
     }).catch((err) => {
-      LogUtils.i(TAG, "enableCellularDataRoaming catch:" + JSON.stringify(err));
+      this.dataRoamSwitchCardOne = false;
+      LogUtils.i(TAG, "enableCellularDataRoaming card one catch:" + JSON.stringify(err));
     });
+    if (getMaxSimCount() === 2) {
+      isCellularDataRoamingEnabledCardTwo().then((res) => {
+        LogUtils.i(TAG,"getCellularDataRoamingEnabled card two success then:" + JSON.stringify(res));
+        this.dataRoamSwitchCardTwo = res;
+      }).catch((err) => {
+        this.dataRoamSwitchCardTwo = false;
+        LogUtils.i(TAG, "enableCellularDataRoaming card two catch:" + JSON.stringify(err));
+      });
+    }
   }
 
   build() {
@@ -331,27 +324,26 @@ struct Index {
                       }
                       .margin({ top: 2, right: 26 })
                     }
-                    .opacity(this.simStateStatusCardOne ? 1 : 0.4)
                     .alignItems(HorizontalAlign.Start)
 
                     Toggle({ type: ToggleType.Switch, isOn: this.isDataEnable })
                       .width(36)
                       .height(20)
-                      .enabled(this.simStateStatusCardOne)
-                      .opacity(this.simStateStatusCardOne ? 1 : 0.4)
+                      .enabled(this.simStateStatusCardOne || this.simStateStatusCardTwo)
                       .onChange((isOn: boolean) => {
-                        this.isDataEnable = !this.isDataEnable
+                        this.isDataEnable = !this.isDataEnable;
+                        LogUtils.i(TAG, "mobile data switch changes enable:" + JSON.stringify(this.isDataEnable));
                         if (this.isDataEnable == false) {
                           disableCellularData().then((data) => {
-                            LogUtils.i(TAG, "disableCellularData: then" + JSON.stringify(data))
+                            LogUtils.i(TAG, "disableCellularData: success then" + JSON.stringify(data));
                           }).catch((error) => {
-                            LogUtils.i(TAG, "disableCellularData: catch" + JSON.stringify(error))
+                            LogUtils.i(TAG, "disableCellularData: error catch" + JSON.stringify(error));
                           });
                         } else {
                           enableCellularData().then((data) => {
-                            LogUtils.i(TAG, "enableCellularData: then" + JSON.stringify(data))
+                            LogUtils.i(TAG, "enableCellularData: success then" + JSON.stringify(data));
                           }).catch((error) => {
-                            LogUtils.i(TAG, "enableCellularData: catch" + JSON.stringify(error))
+                            LogUtils.i(TAG, "enableCellularData: error catch" + JSON.stringify(error));
                           });
                         }
                       })
@@ -366,6 +358,7 @@ struct Index {
                   .width("100%")
                   .borderRadius(24)
                   .backgroundColor($r("sys.color.ohos_id_color_foreground_contrary"))
+                  .opacity((this.simStateStatusCardOne || this.simStateStatusCardTwo) ? 1 : 0.4)
 
                   SubHeader({
                     titleContent: $r('app.string.mobile_data_card1'),
@@ -375,8 +368,8 @@ struct Index {
                   Column() {
                     item({
                       isBtn: this.moisBtn,
-                      LastOne: this.moislastone,
-                      Controlswitch: this.DataRoamSwitch,
+                      cardType: this.cardOne,
+                      controlSwitch: $dataRoamSwitchCardOne,
                       title: $r('app.string.mobile_data_dataRoaming'),
                       describe: $r('app.string.mobile_data_enableDataWhileRoaming'),
                       isDisabled: this.simStateStatusCardOne,
@@ -384,6 +377,7 @@ struct Index {
                       isSupport: false,
                       isCon: 0,
                     })
+
                     Divider()
                       .strokeWidth(0.5)
                       .color("#E3E3E3")
@@ -392,8 +386,8 @@ struct Index {
 
                     item({
                       isBtn: this.gqBtn,
-                      LastOne: this.moislastone,
-                      Controlswitch: this.enableISM,
+                      cardType: this.cardOne,
+                      controlSwitch: $enableISM,
                       title: $r('app.string.mobile_data_volte'),
                       describe: $r('app.string.mobile_data_confirmation_function'),
                       isDisabled: this.simStateStatusCardOne,
@@ -411,17 +405,19 @@ struct Index {
                   .width("100%")
                   .borderRadius(24)
                   .backgroundColor($r("sys.color.ohos_id_color_foreground_contrary"))
+                  .opacity(this.simStateStatusCardOne ? 1 : 0.4)
 
                   SubHeader({
                     titleContent: $r('app.string.mobile_data_card2'),
                     subTitleContent: this.TelephoneNumber2
-                  });
+                  })
+                  .visibility(getMaxSimCount() === 2 ? Visibility.Visible : Visibility.Hidden)
 
                   Column() {
                     item({
                       isBtn: this.moisBtn,
-                      LastOne: this.moislastone,
-                      Controlswitch: this.mobileDataDisabled2,
+                      cardType: this.cardTwo,
+                      controlSwitch: $mobileDataDisabled2,
                       title: $r('app.string.mobile_data_dataRoaming'),
                       describe: $r('app.string.mobile_data_enableDataWhileRoaming'),
                       isDisabled: this.simStateStatusCardTwo,
@@ -436,8 +432,8 @@ struct Index {
                       .margin({ right: '2%' })
                     item({
                       isBtn: this.gqBtn,
-                      LastOne: this.moislastone,
-                      Controlswitch: this.enableISM2,
+                      cardType: this.cardTwo,
+                      controlSwitch: $enableISM2,
                       title: $r('app.string.mobile_data_volte'),
                       describe: $r('app.string.mobile_data_confirmation_function'),
                       isDisabled: this.simStateStatusCardTwo,
@@ -461,6 +457,8 @@ struct Index {
                   .width("100%")
                   .borderRadius(24)
                   .backgroundColor($r("sys.color.ohos_id_color_foreground_contrary"))
+                  .opacity(this.simStateStatusCardTwo ? 1 : 0.4)
+                  .visibility(getMaxSimCount() === 2 ? Visibility.Visible : Visibility.Hidden)
                 }
                 .alignItems(HorizontalAlign.Start)
               }

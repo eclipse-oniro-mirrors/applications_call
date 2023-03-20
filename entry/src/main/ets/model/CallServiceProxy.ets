@@ -25,12 +25,10 @@
 
 import commonEvent from '@ohos.commonEvent';
 import call from '@ohos.telephony.call';
-import getSingleInstance from '../common/utils/SingleInstanceHelper'
 import LogUtils from '../common/utils/LogUtils';
 
 const TAG = "CallServiceProxy";
 const prefixLog = 'callUI app:@ohos.telephony.call:';
-const CALL_SERVICE_PROXY_KEY = 'AppStorage_CallServiceProxy'
 
 /**
  * dial call
@@ -41,8 +39,13 @@ const CALL_SERVICE_PROXY_KEY = 'AppStorage_CallServiceProxy'
  * @return { Object } promise object
  */
 export default class CallServiceProxy {
+  private static sCallServiceProxy: CallServiceProxy;
+
   public static getInstance(): CallServiceProxy {
-    return getSingleInstance(CallServiceProxy, CALL_SERVICE_PROXY_KEY);
+    if (!CallServiceProxy.sCallServiceProxy) {
+      CallServiceProxy.sCallServiceProxy = new CallServiceProxy();
+    }
+    return CallServiceProxy.sCallServiceProxy;
   }
 
   /**
@@ -142,24 +145,6 @@ export default class CallServiceProxy {
         reject(err);
         LogUtils.i(TAG, prefixLog + "catch:unHoldCall : %s" + JSON.stringify(err))
       });
-  });
-
-
-  /**
-   * audio channel switch
-   *
-   * @param {number} device - device type
-   *
-   * @return {Promise} promise object
-   */
-  public setAudioDevice = (device = 1) => new Promise((resolve, reject) => {
-    call.setAudioDevice(device).then((res) => {
-      LogUtils.i(TAG, prefixLog + "then:setAudioDevice : %s" + JSON.stringify(device))
-      resolve(res);
-    }).catch((err) => {
-      reject(err);
-      LogUtils.i(TAG, prefixLog + "catch:setAudioDevice : %s" + JSON.stringify(err))
-    });
   });
 
   /**

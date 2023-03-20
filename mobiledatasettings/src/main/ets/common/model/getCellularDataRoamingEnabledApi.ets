@@ -27,7 +27,11 @@ const TAG = "getCellularDataRomingEnabledApi"
  *
  * @return {Promise}
  */
-export function isCellularDataRoamingEnabled(slotId = 0) {
+export function isCellularDataRoamingEnabledCardOne(slotId = 0) {
+  return telephonyData.isCellularDataRoamingEnabled(slotId);
+}
+
+export function isCellularDataRoamingEnabledCardTwo(slotId = 1) {
   return telephonyData.isCellularDataRoamingEnabled(slotId);
 }
 
