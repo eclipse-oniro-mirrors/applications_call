@@ -18,10 +18,11 @@ import FuncBtn from './FuncBtn';
 import CallStateConst from '../constant/CallStateConst';
 import CallServiceProxy from '../../model/CallServiceProxy';
 import Clone from '../utils/Clone';
-import ConferenceConst from '../constant/ConferenceConst';
 import BtnGroupConfig from '../configs/BtnGroupConfig';
 import LogUtils from '../utils/LogUtils';
-import screenLock from '@ohos.screenLock'
+import screenLock from '@ohos.screenLock';
+import GlobalThisHelper from '../utils/GlobalThisHelper';
+import Constants from '../utils/Constants';
 
 const TAG = 'FuncBtnGroup';
 const textMap =
@@ -205,7 +206,7 @@ export default struct FuncBtnGroup {
   }
 
   startContactAbility(pageFlag) {
-    globalThis.calluiAbilityContext?.startAbility({
+    GlobalThisHelper.get<any>(Constants.GLOBALTHIS_CONTEXT)?.startAbility({
       bundleName: 'com.ohos.contacts',
       abilityName: 'com.ohos.contacts.MainAbility',
       parameters: {

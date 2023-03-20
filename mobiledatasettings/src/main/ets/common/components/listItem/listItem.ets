@@ -15,7 +15,16 @@
 import publiccontent from '../publiccontent'
 import router from '@system.router';
 import call from '@ohos.telephony.call';
-import { enableCellularDataRoaming, disableCellularDataRoaming } from '../../../model/mobileDataStatus';
+import {
+  enableCellularDataRoamingCardOne,
+  enableCellularDataRoamingCardTwo,
+  disableCellularDataRoamingCardOne,
+  disableCellularDataRoamingCardTwo,
+  enableImsSwitchCardOne,
+  enableImsSwitchCardTwo,
+  disableImsSwitchCardOne,
+  disableImsSwitchCardTwo
+} from '../../../model/mobileDataStatus';
 import { setCache } from '../../utils/KvManager';
 import LogUtils from '../../utils/LogUtils'
 
@@ -26,8 +35,8 @@ export default struct listItem {
   @Prop isCard: boolean;
   @Prop isBtn: boolean;
   @Prop isDisabled: boolean;
-  @Prop LastOne: boolean;
-  @Prop Controlswitch: boolean;
+  @Prop cardType: number;
+  @Link controlSwitch: boolean;
   @State title: any = '';
   @State describe: any = '';
   @Prop isSupport: boolean;
@@ -37,7 +46,7 @@ export default struct listItem {
   dialogTitle: string = '';
   radio_state_enable5g = 'RADIO_STATE_ENABLE5G';
   recordTypeDialog: CustomDialogController = new CustomDialogController({
-    builder: dataRomingDialog({ isCon: this.isCon, isMsg: $Controlswitch }),
+    builder: dataRomingDialog({ isCon: this.isCon, isMsg: $controlSwitch, cardType: this.cardType }),
     alignment: DialogAlignment.Bottom,
     autoCancel: false,
     offset: { dx: 0, dy: -10 }
@@ -71,7 +80,7 @@ export default struct listItem {
               .fontSize(16)
               .fontWeight(FontWeight.Medium)
               .fontColor('#000')
-              .opacity(this.Controlswitch ? 0.9 : 0.6)
+              .opacity(this.controlSwitch ? 0.9 : 0.6)
               .visibility(this.isSupport ? Visibility.None : Visibility.Visible)
               .letterSpacing(1)
               .lineHeight(22)
@@ -91,7 +100,7 @@ export default struct listItem {
           .margin({ right: 26 })
           .onClick(() => {
             LogUtils.i(TAG, "onclick clickHandle")
-            this.clickHandle()
+            this.clickHandle();
           })
           .enabled(this.isDisabled)
 
@@ -99,29 +108,26 @@ export default struct listItem {
             .width(16)
             .height(18)
             .visibility(!this.isBtn ? Visibility.Visible : Visibility.None)
-          Toggle({ type: ToggleType.Switch, isOn: this.Controlswitch })
+          Toggle({ type: ToggleType.Switch, isOn: this.controlSwitch })
             .width(36)
             .height(20)
             .enabled(this.isDisabled)
             .onChange((isOn: boolean) => {
-              this.Controlswitch = !this.Controlswitch;
-              if (this.isCon == 1) {
+              this.controlSwitch = !this.controlSwitch;
+              LogUtils.i(TAG, 'onclick cardType is :' + JSON.stringify(this.cardType) + 'switcher is:' + JSON.stringify(this.isCon) + "Switch status:" + this.controlSwitch);
+              if (this.isCon === 1) {
                 setCache(this.radio_state_enable5g, isOn);
               }
-              if (this.Controlswitch && this.isCon == 0) {
+              if (this.controlSwitch && this.isCon === 0) {
                 this.dialogTitle = this.title;
                 this.recordTypeDialog.open();
-              } else if (this.Controlswitch == false && this.isCon == 0) {
-                disableCellularDataRoaming().then((data) => {
-                  LogUtils.i(TAG, "disableCellularDataRoaming：then" + JSON.stringify(data))
-                }).catch((error) => {
-                  LogUtils.i(TAG, "disableCellularDataRoaming：catch" + JSON.stringify(error))
-                });
+              } else if (this.controlSwitch == false && this.isCon === 0) {
+                  this.cardType === 0 ? disableCellularDataRoamingCardOne() : disableCellularDataRoamingCardTwo();
               }
-              if (this.isCon == 22 && this.Controlswitch) {
-                call.enableImsSwitch(0);
-              } else if (this.isCon == 22 && this.Controlswitch == false) {
-                call.disableImsSwitch(0);
+              if (this.isCon === 22 && this.controlSwitch) {
+                  this.cardType === 0 ? enableImsSwitchCardOne() : enableImsSwitchCardTwo();
+              } else if (this.isCon === 22 && this.controlSwitch === false) {
+                  this.cardType === 0 ? disableImsSwitchCardOne() : disableImsSwitchCardTwo();
               }
             })
             .visibility(this.isBtn ? Visibility.Visible : Visibility.None)
@@ -146,6 +152,7 @@ struct dataRomingDialog {
   controller: CustomDialogController;
   isCon: number;
   @Link isMsg: boolean;
+  cardType: number;
 
   build() {
     Column() {
@@ -175,6 +182,7 @@ struct dataRomingDialog {
           .fontColor($r('sys.color.ohos_id_color_text_primary_activated'))
           .fontSize(16)
           .onClick(() => {
+            LogUtils.i(TAG, "dataRomingDialog onclick cancel");
             this.controller.close();
             this.isMsg = false;
           })
@@ -187,13 +195,10 @@ struct dataRomingDialog {
           .fontColor($r('sys.color.ohos_id_color_text_primary_activated'))
           .fontSize(16)
           .onClick(() => {
+            LogUtils.i(TAG, "dataRomingDialog onclick confim toggletype: " + JSON.stringify(this.isCon) + " for cardtype:" + JSON.stringify(this.cardType));
             this.controller.close();
             this.isMsg = true;
-            enableCellularDataRoaming().then((data) => {
-              LogUtils.i(TAG, "enableCellularDataRoaming：then" + JSON.stringify(data))
-            }).catch((error) => {
-              LogUtils.i(TAG, "enableCellularDataRoaming：catch" + JSON.stringify(error))
-            });
+              this.cardType == 0 ? enableCellularDataRoamingCardOne() : enableCellularDataRoamingCardTwo();
           })
       }
       .margin({ top: 18 })

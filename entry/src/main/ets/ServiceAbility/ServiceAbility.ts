@@ -27,7 +27,12 @@ export default class ServiceAbility extends ServiceExtension {
     callData.isEcc = want.parameters?.isEcc;
     callData.conferenceState = want.parameters?.conferenceState;
     this.callManagerService.getCallData(callData);
-    return new Stub("ServiceAbility");
+    return new Stub('ServiceAbility');
+  }
+
+  onDisconnect(): void {
+    LogUtils.i(TAG, 'onDisconnect callUI service');
+    this.callManagerService.onDisconnected();
   }
 
   onRequest(want: Want, startId: number) {

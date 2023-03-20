@@ -20,6 +20,10 @@ export class Constants {
   public APP_KEY_CALLDATAMANGER_MANAGER: string = "CallDataManager";
   public CALL_BUNDLE_NAME = 'com.ohos.callui';
   public CALL_ABILITY_NAME = 'com.ohos.callui.MainAbility';
+  public GLOBALTHIS_CALLMANAGER = 'callManager';
+  public GLOBALTHIS_ABILITY_WANT = 'abilityWant';
+  public GLOBALTHIS_CONTEXT = 'calluiAbilityContext';
+  public GLOBALTHIS_APPINACTIVE_STATE = 'appInactiveState';
 }
 
 let mConstants = new Constants();

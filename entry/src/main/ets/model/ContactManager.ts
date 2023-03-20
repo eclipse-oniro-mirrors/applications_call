@@ -19,6 +19,9 @@
 import dataShare from '@ohos.data.dataShare';
 import dataSharePredicates from '@ohos.data.dataSharePredicates';
 import LogUtils from '../common/utils/LogUtils';
+import CallManager from '../model/CallManager';
+import GlobalThisHelper from '../common/utils/GlobalThisHelper';
+import Constants from '../common/utils/Constants';
 
 const TAG = "ContactManager";
 const DBbaseUri = 'datashare:///com.ohos.contactsdataability';
@@ -42,13 +45,13 @@ export default class ContactManager {
       const predicates = new dataSharePredicates.DataSharePredicates();
       predicates.equalTo('detail_info', callData.accountNumber);
       predicates.equalTo('is_deleted', 0);
-      const dataAbilityHelper = await dataShare.createDataShareHelper(globalThis.calluiAbilityContext, DBbaseUri);
+      const dataAbilityHelper = await dataShare.createDataShareHelper(GlobalThisHelper.get<any>(Constants.GLOBALTHIS_CONTEXT), DBbaseUri);
       const resSet = await dataAbilityHelper.query(DBUri, predicates, columns);
       LogUtils.i(TAG, "getContactInfo resSet : " + JSON.stringify(resSet.rowCount))
       if (resSet.rowCount > 0) {
         resSet.goToFirstRow();
         callData.contactName = resSet.getString(resSet.getColumnIndex('display_name'));
-        globalThis.callManager.update(callData);
+        CallManager.getInstance().update(callData);
       }
     } catch (err) {
       LogUtils.i(TAG, "getContactInfo catch err : %s" + JSON.stringify(err))

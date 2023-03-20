@@ -29,6 +29,7 @@ import backgroundTaskManager from '@ohos.backgroundTaskManager';
 import Constants from '../common/utils/Constants';
 import CallDataManager from '../model/CallDataManager';
 import MultiContactCard from '../common/components/MultiContactCard';
+import GlobalThisHelper from '../common/utils/GlobalThisHelper';
 
 const TAG = "Index";
 
@@ -72,7 +73,7 @@ struct Index {
     LogUtils.i(TAG, "aboutToAppear")
     byTrace.startTrace('aboutToAppear', 0);
     this.notificationManager = new NotificationManager();
-    globalThis.callManager = new CallManager(this)
+    CallManager.getInstance()?.init(this);
     AppStorage.SetOrCreate<NotificationManager>('notificationManager', this.notificationManager);
     this.mCallDataManager = CallDataManager.getInstance();
     byTrace.finishTrace('aboutToAppear', 0);
@@ -85,21 +86,21 @@ struct Index {
   }
 
   onPageShow() {
-    LogUtils.i(TAG, "onPageShow")
+    LogUtils.i(TAG, "onPageShow");
     byTrace.startTrace('onPageShow', 1);
-    globalThis.appInactiveState = false;
+    GlobalThisHelper.set<boolean>(Constants.GLOBALTHIS_APPINACTIVE_STATE, false);
     this.stopBackgroundRunning();
-    this.notificationManager.cancelNotification();
-    this.notificationManager.sendCapsuleNotification(this.callData, false);
+    this.notificationManager?.cancelNotification();
+    this.notificationManager?.sendCapsuleNotification(this.callData, false);
     byTrace.finishTrace('onPageShow', 1);
-    LogUtils.i(TAG, "onPageShow end")
+    LogUtils.i(TAG, "onPageShow end");
   }
 
   onPageHide() {
-    LogUtils.i(TAG, "onPageHide")
-    globalThis.appInactiveState = true;
+    LogUtils.i(TAG, "onPageHide");
+    GlobalThisHelper.set<boolean>(Constants.GLOBALTHIS_APPINACTIVE_STATE, true);
     this.updateNotification();
-    LogUtils.i(TAG, "onPageHide end")
+    LogUtils.i(TAG, "onPageHide end");
   }
 
   updateNotification() {
@@ -108,14 +109,14 @@ struct Index {
       if (this.mCallDataManager.hasAliveCall()) {
         this.startBackgroundRunning();
       }
-      this.notificationManager.sendNotification(this.callData);
-      this.notificationManager.sendCapsuleNotification(this.callData, true);
+      this.notificationManager?.sendNotification(this.callData);
+      this.notificationManager?.sendCapsuleNotification(this.callData, true);
     }
   }
 
 
   aboutToDisappear() {
-    LogUtils.i(TAG, "aboutToDisappear")
+    LogUtils.i(TAG, "aboutToDisappear");
     this.stopBackgroundRunning();
     this.updateNotification();
     this.smListener.off('change', this.isBreakpointSM);
@@ -124,10 +125,10 @@ struct Index {
   }
 
   private stopBackgroundRunning() {
-    backgroundTaskManager.stopBackgroundRunning(globalThis.calluiAbilityContext).then(() => {
-      LogUtils.i(TAG, "stopBackgroundRunning succeeded")
+    backgroundTaskManager.stopBackgroundRunning(GlobalThisHelper.get<any>(Constants.GLOBALTHIS_CONTEXT)).then(() => {
+      LogUtils.i(TAG, "stopBackgroundRunning succeeded");
     }).catch((err) => {
-      LogUtils.i(TAG, "stopBackgroundRunning failed")
+      LogUtils.i(TAG, "stopBackgroundRunning failed");
     });
   }
 
@@ -142,7 +143,7 @@ struct Index {
       wantAgentFlags: [wantAgent.WantAgentFlags.UPDATE_PRESENT_FLAG]
     };
     wantAgent.getWantAgent(wantAgentInfo).then((wantAgentObj) => {
-      backgroundTaskManager.startBackgroundRunning(globalThis.calluiAbilityContext,
+      backgroundTaskManager.startBackgroundRunning(GlobalThisHelper.get<any>(Constants.GLOBALTHIS_CONTEXT),
       backgroundTaskManager.BackgroundMode.VOIP, wantAgentObj).then(() => {
         LogUtils.i(TAG, "startBackgroundRunning succeeded")
       }).catch((err) => {

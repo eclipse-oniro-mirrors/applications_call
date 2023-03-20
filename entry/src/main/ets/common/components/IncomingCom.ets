@@ -22,6 +22,8 @@ import sms from '@ohos.telephony.sms';
 import resourceManager from '@ohos.resourceManager';
 import prompt from '@system.prompt';
 import LogUtils from '../utils/LogUtils';
+import GlobalThisHelper from '../utils/GlobalThisHelper';
+import Constants from '../utils/Constants';
 
 const TAG = "IncomingCom";
 const SMS_REJECTION = `${ImagePathConst.BASE_URL}ic_public_message.svg`;
@@ -83,10 +85,10 @@ export default struct IncomingCom {
    * @param obj
    */
   private sendMessage(obj) {
-    let slotId = 0
+    let slotId = this.callData.accountId
     let destinationHost = this.callData.accountNumber
     let contactName = this.callData.contactName
-    globalThis.calluiAbilityContext?.resourceManager.getString(obj.msg.id, (err, typeName) => {
+    GlobalThisHelper.get<any>(Constants.GLOBALTHIS_CONTEXT)?.resourceManager.getString(obj.msg.id, (err, typeName) => {
       LogUtils.i(TAG, "sendMessage");
       sms.sendMessage({
         slotId: slotId,
@@ -97,7 +99,7 @@ export default struct IncomingCom {
             return;
           }
           if (sendResult.result === SEND_SMS_SUCCESS) {
-            globalThis.calluiAbilityContext?.resourceManager.getString($r("app.string.SMS_Sent")
+            GlobalThisHelper.get<any>(Constants.GLOBALTHIS_CONTEXT)?.resourceManager.getString($r("app.string.SMS_Sent")
               .id, (err, typeName) => {
               if (err) {
                 return;
@@ -108,7 +110,7 @@ export default struct IncomingCom {
               });
             })
           } else {
-            globalThis.calluiAbilityContext?.resourceManager.getString($r("app.string.message_Failed").id, (err, typeName) => {
+            GlobalThisHelper.get<any>(Constants.GLOBALTHIS_CONTEXT)?.resourceManager.getString($r("app.string.message_Failed").id, (err, typeName) => {
               if (err) {
                 return;
               }

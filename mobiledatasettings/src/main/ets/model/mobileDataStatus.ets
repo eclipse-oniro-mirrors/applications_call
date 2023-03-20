@@ -14,7 +14,8 @@
  */
 import telephonyData from '@ohos.telephony.data';
 import radio from '@ohos.telephony.radio';
-import LogUtils from '../common/utils/LogUtils'
+import LogUtils from '../common/utils/LogUtils';
+import call from '@ohos.telephony.call';
 
 const TAG = "mobileDataStatus"
 
@@ -23,9 +24,9 @@ const TAG = "mobileDataStatus"
  *
  * @return {Promise} promise object
  */
-export function getCellularDataState() {
-  if (telephonyData.getCellularDataState) {
-    return telephonyData.getCellularDataState();
+export function isCellularDataEnabled() {
+  if (telephonyData.isCellularDataEnabled()) {
+    return telephonyData.isCellularDataEnabled();
   }
 }
 
@@ -84,8 +85,42 @@ export function getCellularDataRoaming(slotId = 0) {
  *
  * @return {Promise}
  */
-export function enableCellularDataRoaming(slotId = 0) {
-  return telephonyData.enableCellularDataRoaming(slotId);
+export function enableCellularDataRoamingCardOne(slotId = 0) {
+  return new Promise((resolve, reject) => {
+    try {
+      telephonyData.enableCellularDataRoaming(slotId, (error, value) => {
+        if (error) {
+          LogUtils.i(TAG, "enableCellularDataRoaming card one error :" + JSON.stringify(error));
+          reject(error);
+        } else {
+          LogUtils.i(TAG, "enableCellularDataRoaming card one success : then" + JSON.stringify(value));
+          resolve(value);
+        }
+      });
+    } catch (error) {
+      LogUtils.i(TAG, "enableCellularDataRoaming card one catch: " + JSON.stringify(error));
+      reject(error);
+    }
+  });
+}
+
+export function enableCellularDataRoamingCardTwo(slotId = 1) {
+  return new Promise((resolve, reject) => {
+    try {
+      telephonyData.enableCellularDataRoaming(slotId, (error, value) => {
+        if (error) {
+          LogUtils.i(TAG, "enableCellularDataRoaming card two error :" + JSON.stringify(error));
+          reject(error);
+        } else {
+          LogUtils.i(TAG, "enableCellularDataRoaming card two success :then" + JSON.stringify(value));
+          resolve(value);
+        }
+      });
+    } catch (error) {
+      LogUtils.i(TAG, "enableCellularDataRoaming card two catch: " + JSON.stringify(error));
+      reject(error);
+    }
+  });
 }
 
 /**
@@ -93,6 +128,75 @@ export function enableCellularDataRoaming(slotId = 0) {
  *
  * @return {Promise}
  */
-export function disableCellularDataRoaming(slotId = 0) {
-  return telephonyData.disableCellularDataRoaming(slotId);
+export function disableCellularDataRoamingCardOne(slotId = 0) {
+  return new Promise((resolve, reject) => {
+    try {
+      telephonyData.disableCellularDataRoaming(slotId, (error, value) => {
+        if (error) {
+          LogUtils.i(TAG, "disableCellularDataRoaming card one error : " + JSON.stringify(error));
+          reject(error);
+        } else {
+          LogUtils.i(TAG, "disableCellularDataRoaming card one success : then" + JSON.stringify(value));
+          resolve(value);
+        }
+      });
+    } catch (error) {
+      LogUtils.i(TAG, "disableCellularDataRoaming card one catch:" + JSON.stringify(error));
+      reject(error);
+    }
+  });
+}
+
+export function disableCellularDataRoamingCardTwo(slotId = 1) {
+  return new Promise((resolve, reject) => {
+    try {
+      telephonyData.disableCellularDataRoaming(slotId, (error, value) => {
+        if (error) {
+          LogUtils.i(TAG, "disableCellularDataRoaming card two error :" + JSON.stringify(error));
+          reject(error);
+        } else {
+          LogUtils.i(TAG, "disableCellularDataRoaming card two success :then" + JSON.stringify(value));
+          resolve(value);
+        }
+      });
+    } catch (error) {
+      LogUtils.i(TAG, "disableCellularDataRoaming card two catch:" + JSON.stringify(error));
+      reject(error);
+    }
+  });
+}
+
+
+export function enableImsSwitchCardOne() {
+  call.enableImsSwitch(0).then((data) => {
+    AppStorage.SetOrCreate("imsOne", true);
+    LogUtils.i(TAG, "enableImsSwitch card one : success then " + JSON.stringify(data));
+  }).catch((error) => {
+    LogUtils.i(TAG, "enableImsSwitch card one : catch" + JSON.stringify(error));
+  });
+}
+
+export function enableImsSwitchCardTwo() {
+  call.enableImsSwitch(1).then((data) => {
+    LogUtils.i(TAG, "enableImsSwitch card two : success then " + JSON.stringify(data));
+  }).catch((error) => {
+    LogUtils.i(TAG, "enableImsSwitch card two : catch" + JSON.stringify(error));
+  });
+}
+
+export function disableImsSwitchCardOne() {
+  call.disableImsSwitch(0).then((data) => {
+    AppStorage.SetOrCreate("imsOne", false);
+    LogUtils.i(TAG, "disableImsSwitch card one : success then " + JSON.stringify(data));
+  }).catch((error) => {
+    LogUtils.i(TAG, "disableImsSwitch card one : catch" + JSON.stringify(error));
+  });
+}
+
+export function disableImsSwitchCardTwo() {
+  call.disableImsSwitch(1).then((data) => {
+    LogUtils.i(TAG, "disableImsSwitch card two : success then " + JSON.stringify(data));
+  }).catch((error) => {
+    LogUtils.i(TAG, "disableImsSwitch card two : catch" + JSON.stringify(error));
+  });
 }

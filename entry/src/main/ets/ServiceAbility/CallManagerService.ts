@@ -17,17 +17,17 @@
  * @file: call manager service
  */
 
-import PA from '@ohos.ability.particleAbility';
 import TelephonyCall from './TelephonyApi';
 import commonEvent from '@ohos.commonEvent';
-import LogUtils from "../common/utils/LogUtils"
+import LogUtils from "../common/utils/LogUtils";
+import CallManager from '../model/CallManager'
 
 let subscriber;
 const TAG = "CallManagerService";
 const CALL_BUNDLE_NAME = 'com.ohos.callui';
 const ABILITY_NAME = 'com.ohos.callui.MainAbility';
 const CALL_STATUS_INCOMING = 4;
-const CALL_STATUS_WAITING = 5
+const CALL_STATUS_WAITING = 5;
 const CALL_STATUS_DIALING = 2;
 const CALL_STATUS_DISCONNECTED = 6;
 const CALL_STATUS_DISCONNECTING = 7;
@@ -141,6 +141,16 @@ export default class CallManagerService {
   }
 
   /**
+   * service disconnected
+   *
+   * @return void
+   */
+  public onDisconnected(): void {
+    this.callData.callState = CALL_STATUS_DISCONNECTED;
+    this.publishData(this.callData);
+  }
+
+  /**
    * start ability
    *
    * @param { Object } callData - Object
@@ -184,18 +194,7 @@ export default class CallManagerService {
    * @param { Object } callData - Object
    */
   publishData(callData) {
-    if (globalThis.callManager !== undefined) {
-      globalThis.callManager.update(callData);
-    } else {
-      commonEvent.publish('callui.event.callDetailsChange', {
-        bundleName: 'com.ohos.callui',
-        isOrdered: false,
-        subscriberPermissions: ["ohos.permission.GET_TELEPHONY_STATE"],
-        data: JSON.stringify(callData)
-      }, (res) => {
-        LogUtils.i(TAG, "publishData commonEvent.publish callback res: callui.event.callDetailsChange");
-      });
-    }
+    CallManager.getInstance().update(callData);
   }
 
   /**

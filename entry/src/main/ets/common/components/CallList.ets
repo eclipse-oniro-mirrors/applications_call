@@ -19,8 +19,9 @@
 
 import CallStateConst from '../constant/CallStateConst';
 import CallServiceProxy from '../../model/CallServiceProxy';
-import app from '@system.app';
 import LogUtils from '../utils/LogUtils';
+import GlobalThisHelper from '../utils/GlobalThisHelper'
+import Constants from '../utils/Constants'
 
 const TAG = "CallList";
 
@@ -80,7 +81,6 @@ export default struct CallList {
    * @return {number} -  callState
    */
   private callState() {
-    LogUtils.i(TAG, "callState : " + this.callData.callState)
     return this.callData.callState;
   }
 
@@ -93,7 +93,7 @@ export default struct CallList {
     LogUtils.i(TAG, "onHangUp : " + callId);
     this.mCallServiceProxy.hangUpCall(callId);
     if (this.callList.length === 1) {
-      globalThis.calluiAbilityContext?.terminateSelf().then((data) => {
+      GlobalThisHelper.get<any>(Constants.GLOBALTHIS_CONTEXT)?.terminateSelf().then((data) => {
         LogUtils.i(TAG, "onHangUp terminateSelfCallBack");
       });
     }
