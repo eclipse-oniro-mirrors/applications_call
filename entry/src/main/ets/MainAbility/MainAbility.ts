@@ -1,13 +1,16 @@
 import Ability from '@ohos.app.ability.UIAbility'
 import LogUtils from '../common/utils/LogUtils'
+import CallManager from '../model/CallManager'
+import GlobalThisHelper from '../common/utils/GlobalThisHelper'
+import Constants from '../common/utils/Constants'
 
 const TAG = "MainAbility";
 
 export default class MainAbility extends Ability {
   onCreate(want, launchParam) {
     LogUtils.i(TAG, "onCreate")
-    globalThis.abilityWant = want;
-    globalThis.calluiAbilityContext = this.context;
+    GlobalThisHelper.set<any>(Constants.GLOBALTHIS_ABILITY_WANT, want);
+    GlobalThisHelper.set<any>(Constants.GLOBALTHIS_CONTEXT, this.context);
   }
 
   onWindowStageCreate(windowStage) {
@@ -40,7 +43,6 @@ export default class MainAbility extends Ability {
 
   onDestroy() {
     LogUtils.i(TAG, "onDestroy")
-    globalThis.callManager.clearTimer();
-    globalThis.callManager.unsubscribe();
+    CallManager.getInstance()?.clearTimer();
   }
 };

@@ -17,17 +17,17 @@
  * @file: Call management
  */
 import CallDataManager from './CallDataManager';
+import CallUtils from '../common/utils/CallUtils';
 import Utils from '../common/utils/utils';
-import commonEvent from '@ohos.commonEvent';
 import CallServiceProxy from './CallServiceProxy';
 import LogUtils from '../common/utils/LogUtils'
 import call from '@ohos.telephony.call';
 import CallStateConst from '../common/constant/CallStateConst';
+import GlobalThisHelper from '../common/utils/GlobalThisHelper'
+import Constants from '../common/utils/Constants'
 
 const TAG = "CallManager";
-let subscriber;
 const TIMING = 1000;
-const events = ['callui.event.callDetailsChange'];
 
 /**
  * class CallManager
@@ -44,18 +44,27 @@ export default class CallManager {
   private diffSeconds
   private mTimeMeter
 
-  constructor(ctx) {
+  public static getInstance(): CallManager {
+    if (GlobalThisHelper.get<any>(Constants.GLOBALTHIS_CALLMANAGER) === undefined) {
+      GlobalThisHelper.set<any>(Constants.GLOBALTHIS_CALLMANAGER, new CallManager());
+    }
+    return GlobalThisHelper.get<any>(Constants.GLOBALTHIS_CALLMANAGER);
+  }
+
+  private constructor() {
     this.mCallServiceProxy = CallServiceProxy.getInstance();
     this.mUtils = Utils.getInstance();
+    this.timer = null;
+    this.mCallDataManager = CallDataManager.getInstance();
+  }
+  init(ctx) {
     this.callData = ctx.callData;
     this.timer = null;
     this.ctx = ctx;
     this.callTimeList = ctx.callTimeList;
-    this.mCallDataManager = CallDataManager.getInstance();
-    this.mCallDataManager.init(ctx.callData, ctx.callList, ctx.callTimeList);
+    this.mCallDataManager?.init(ctx.callData, ctx.callList, ctx.callTimeList);
     this.openTimer();
     this.sendNotificationHandle = (arg) => arg;
-    this.registerSubscriber();
     this.initCallData();
   }
 
@@ -63,9 +72,11 @@ export default class CallManager {
    * init CallData
    */
   private initCallData() {
-    if (globalThis.abilityWant && globalThis.abilityWant.parameters && ('callState' in globalThis.abilityWant.parameters)) {
-      this.callData = this.getCallDataFromWant(globalThis.abilityWant.parameters);
-      this.update(this.callData);
+    if (!GlobalThisHelper.get<any>(Constants.GLOBALTHIS_ABILITY_WANT)
+      && GlobalThisHelper.get<any>(Constants.GLOBALTHIS_ABILITY_WANT)?.parameters
+      && ('callState' in GlobalThisHelper.get<any>(Constants.GLOBALTHIS_ABILITY_WANT)?.parameters)) {
+      let callData = this.getCallDataFromWant(GlobalThisHelper.get<any>(Constants.GLOBALTHIS_ABILITY_WANT).parameters);
+      this.update(callData);
       LogUtils.i(TAG, "initCallData featureAbility.getWant :")
     } else {
       this.mCallServiceProxy.publish({
@@ -92,51 +103,22 @@ export default class CallManager {
   }
 
   /**
-   * Registered subscribers
-   */
-  private async registerSubscriber() {
-    subscriber = await new Promise((resolve) => {
-      commonEvent.createSubscriber({
-        events,
-        publisherPermission: "ohos.permission.GET_TELEPHONY_STATE"
-      },
-        (err, data) => {
-          resolve(data);
-        }
-      );
-    });
-
-    commonEvent.subscribe(subscriber, (err, res) => {
-      if (err.code === 0) {
-        const callData = JSON.parse(res.data);
-        LogUtils.i(TAG, "commonEvent subscribe : %s" + JSON.stringify(subscriber))
-        if (callData) {
-          this.callData = callData
-          this.update(callData);
-        }
-      } else {
-        LogUtils.i(TAG, "commonEvent.subscribe err : %s" + JSON.stringify(err))
-      }
-    });
-  }
-
-  /**
-   * unsubscribe
-   */
-  private unsubscribe() {
-    commonEvent.unsubscribe(subscriber, (err) => {
-      if (err.code !== 0) {
-        LogUtils.i(TAG, "commonEvent.unsubscribe err: %s" + JSON.stringify(err))
-      }
-    });
-  }
-
-  /**
    * update callData callBack
    *
    * @param { Object } callData -Object
    */
   async update(callData) {
+    LogUtils.i(TAG, "update calldata:")
+    if (this.callData != undefined && this.callData.callId === callData.callId) {
+      const { callState } = this.callData;
+      if (callState === 6) {
+        GlobalThisHelper.get<any>(Constants.GLOBALTHIS_CONTEXT)?.terminateSelf().then((data) => {
+          LogUtils.i(TAG, "calluiAbility terminateSelf because service disconnected");
+        });
+        return;
+      }
+    }
+    this.callData = callData;
     this.mCallDataManager.update(callData);
     call.formatPhoneNumber(callData.accountNumber, (err, data) => {
       if (data === undefined) {
@@ -145,47 +127,31 @@ export default class CallManager {
         AppStorage.SetOrCreate("AccountNumber", data)
       }
     });
-    this.isEmergencyPhoneNumber(callData.accountNumber)
+    CallUtils.isEmergencyPhoneNumber(callData.accountNumber)
     LogUtils.i(TAG, "update :")
   }
-
-  /**
-   * Determine whether the call is an emergency call.
-   *
-   * @param { phoneNumber } phoneNumber-number
-   *
-   * @return { boolean } - return success true fail false
-   */
-  private isEmergencyPhoneNumber = (phoneNumber) => new Promise((resolve, reject) => {
-    call.isEmergencyPhoneNumber(phoneNumber, {
-      slotId: 0
-    }).then((res) => {
-      resolve(res);
-      AppStorage.SetOrCreate("IsEmergencyPhoneNumber", res)
-      LogUtils.i(TAG, "then:isEmergencyPhoneNumber : %s" + JSON.stringify(res))
-    }).catch((err) => {
-      reject(err);
-      LogUtils.i(TAG, "catch:isEmergencyPhoneNumber : %s" + JSON.stringify(err))
-    });
-  });
 
   /**
    * update call time list
    */
   updateCallTimeList() {
-    if (this.callData.callState != CallStateConst.CALL_STATUS_ACTIVE && this.callData.callState != CallStateConst.CALL_STATUS_HOLDING) {
+    if (!this.mCallDataManager.hasActiveCall()) {
+      LogUtils.i(TAG, "no active calls to update");
       return;
     }
+
     this.callTimeList = AppStorage.Get("CallTimeList")
     this.callTimeList.forEach((item, i) => {
-      item.endTimestamp = new Date().valueOf();
-      const diffSeconds = item.endTimestamp - item.startTimestamp;
-      this.diffSeconds = diffSeconds
-      item.callTime = this.mUtils.formatTime(diffSeconds);
-      this.callTimeList.splice(i, 1, {
-        ...item,
-      });
-      AppStorage.SetOrCreate("CallTimeList", this.callTimeList)
+      if (this.mCallDataManager.isActiveCall(item.callId)) {
+        item.endTimestamp = new Date().valueOf();
+        const diffSeconds = item.endTimestamp - item.startTimestamp;
+        this.diffSeconds = diffSeconds
+        item.callTime = this.mUtils.formatTime(diffSeconds);
+        this.callTimeList.splice(i, 1, {
+          ...item,
+        });
+        AppStorage.SetOrCreate("CallTimeList", this.callTimeList);
+      }
     });
     this.mTimeMeter = setTimeout(() => {
       this.updateCallTimeList();

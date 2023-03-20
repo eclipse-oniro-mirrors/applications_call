@@ -25,12 +25,10 @@
 
 import commonEvent from '@ohos.commonEvent';
 import call from '@ohos.telephony.call';
-import getSingleInstance from '../common/utils/SingleInstanceHelper'
 import LogUtils from '../common/utils/LogUtils';
 
 const TAG = "CallServiceProxy";
 const prefixLog = 'callUI app:@ohos.telephony.call:';
-const CALL_SERVICE_PROXY_KEY = 'AppStorage_CallServiceProxy'
 
 /**
  * dial call
@@ -41,8 +39,13 @@ const CALL_SERVICE_PROXY_KEY = 'AppStorage_CallServiceProxy'
  * @return { Object } promise object
  */
 export default class CallServiceProxy {
+  private static sCallServiceProxy: CallServiceProxy;
+
   public static getInstance(): CallServiceProxy {
-    return getSingleInstance(CallServiceProxy, CALL_SERVICE_PROXY_KEY);
+    if (!CallServiceProxy.sCallServiceProxy) {
+      CallServiceProxy.sCallServiceProxy = new CallServiceProxy();
+    }
+    return CallServiceProxy.sCallServiceProxy;
   }
 
   /**
@@ -63,10 +66,10 @@ export default class CallServiceProxy {
    * @param { number } callId - call id
    */
   public acceptCall = function (callId) {
-    call.answer(callId).then((res) => {
-      LogUtils.i(TAG, prefixLog + "call.answer : %s" + JSON.stringify(callId))
+    call.answerCall(callId).then((res) => {
+      LogUtils.i(TAG, prefixLog + "call.answerCall : %s" + JSON.stringify(callId))
     }).catch((err) => {
-      LogUtils.i(TAG, prefixLog + "call.answer catch : %s" + JSON.stringify(err))
+      LogUtils.i(TAG, prefixLog + "call.answerCall catch : %s" + JSON.stringify(err))
     });
   };
 
@@ -80,9 +83,9 @@ export default class CallServiceProxy {
    * @param { string } msg - message string
    */
   public rejectCall = function (callId, isSendSms = false, msg = '') {
-    const rejectCallPromise = isSendSms ? call.reject(callId, {
+    const rejectCallPromise = isSendSms ? call.rejectCall(callId, {
       messageContent: msg
-    }) : call.reject(callId);
+    }) : call.rejectCall(callId);
     rejectCallPromise.then((res) => {
       LogUtils.i(TAG, prefixLog + "then:rejectCall")
     })
@@ -99,7 +102,7 @@ export default class CallServiceProxy {
    * @return { Object } promise object
    */
   public hangUpCall = (callId) => new Promise((resolve, reject) => {
-    call.hangup(callId).then((res) => {
+    call.hangUpCall(callId).then((res) => {
       resolve(res);
       LogUtils.i(TAG, prefixLog + "then:hangUpCall : %s" + JSON.stringify(callId))
     }).catch((err) => {
@@ -142,24 +145,6 @@ export default class CallServiceProxy {
         reject(err);
         LogUtils.i(TAG, prefixLog + "catch:unHoldCall : %s" + JSON.stringify(err))
       });
-  });
-
-
-  /**
-   * audio channel switch
-   *
-   * @param {number} device - device type
-   *
-   * @return {Promise} promise object
-   */
-  public setAudioDevice = (device = 1) => new Promise((resolve, reject) => {
-    call.setAudioDevice(device).then((res) => {
-      LogUtils.i(TAG, prefixLog + "then:setAudioDevice : %s" + JSON.stringify(device))
-      resolve(res);
-    }).catch((err) => {
-      reject(err);
-      LogUtils.i(TAG, prefixLog + "catch:setAudioDevice : %s" + JSON.stringify(err))
-    });
   });
 
   /**

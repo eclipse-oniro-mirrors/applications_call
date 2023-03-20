@@ -203,6 +203,10 @@
     {
       "name": "emergency",
       "value": "Emergency"
+    },
+    {
+      "name": "end_holding_call",
+      "value": "Answering this call will end the one currently on hold"
     }
   ]
 }

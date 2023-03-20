@@ -1,6 +1,7 @@
 import Ability from '@ohos.app.ability.UIAbility'
 import Window from '@ohos.window'
 import LogUtils from '../common/utils/LogUtils'
+import { closeKVStore } from '../common/utils/KvManager'
 
 const TAG = "MainAbility";
 
@@ -11,6 +12,7 @@ export default class MainAbility extends Ability {
   }
 
   onDestroy() {
+    closeKVStore();
     LogUtils.i(TAG, "onDestroy")
   }
 

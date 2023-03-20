@@ -27,6 +27,12 @@
     "deliveryWithInstall": true,
     "installationFree": false,
     "pages": "$profile:main_pages",
+    "metadata": [
+      {
+        "name": "ArkTSPartialUpdate",
+        "value": "false"
+      }
+    ],
     "uiSyntax": "ets",
     "abilities": [
       {
@@ -37,6 +43,7 @@
         "label": "$string:callui_description",
         "startWindowIcon": "$media:app_icon",
         "startWindowBackground": "$color:black",
+        "removeMissionAfterTerminate": true,
         "visible": true,
         "minWindowHeight": 700,
         "minWindowWidth": 320,

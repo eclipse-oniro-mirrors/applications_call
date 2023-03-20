@@ -79,18 +79,18 @@ const firstBtns = [
 const secondBtns = [
   {
     type: 'exchange',
-    iconDisableUrl: 'exchangeGrey',
-    iconDefaultUrl: 'exchangeIcon',
-    iconActiveUrl: 'exchangeIcon',
+    iconDisableUrl: 'ic_public_shuffle_Grey',
+    iconDefaultUrl: 'ic_public_shuffle',
+    iconActiveUrl: 'ic_public_shuffle_Enabled',
     isDisable: false,
     isActive: false,
     iconText: ''
   },
   {
     type: 'merge',
-    iconDisableUrl: 'addCallGrey',
-    iconDefaultUrl: 'addCall',
-    iconActiveUrl: 'addCall',
+    iconDisableUrl: 'ic_merge_Grey',
+    iconDefaultUrl: 'ic_merge',
+    iconActiveUrl: 'ic_merge_Enabled',
     isDisable: false,
     isActive: false,
     iconText: ''

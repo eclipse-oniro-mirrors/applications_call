@@ -21,11 +21,10 @@ import CallStateConst from '../common/constant/CallStateConst';
 import ContactManager from './ContactManager';
 import NotificationManager from '../model/NotificationManager';
 import LogUtils from '../common/utils/LogUtils';
-import getSingleInstance from '../common/utils/SingleInstanceHelper'
+import GlobalThisHelper from '../common/utils/GlobalThisHelper';
+import Constants from '../common/utils/Constants';
 
 const TAG = "CallDataManager";
-const CALL_DATA_MANAGER_KEY = 'AppStorage_CallDataManager';
-
 /**
  * class CallDataManager
  */
@@ -37,9 +36,13 @@ export default class CallDataManager {
   private mCallStateManager: CallStateManager ;
   private NotificationManager;
   private contactManager;
+  private static sCallDataManager: CallDataManager;
 
-  public static getInstance():CallDataManager {
-    return getSingleInstance(CallDataManager, CALL_DATA_MANAGER_KEY);
+  public static getInstance(): CallDataManager {
+    if (!CallDataManager.sCallDataManager) {
+      CallDataManager.sCallDataManager = new CallDataManager();
+    }
+    return CallDataManager.sCallDataManager;
   }
 
   /**
@@ -71,7 +74,7 @@ export default class CallDataManager {
         ...callData
       });
       if (oldCallState != callState) {
-        AppStorage.Get<NotificationManager>('notificationManager').sendCapsuleNotification(callData, globalThis.appInactiveState);
+        AppStorage.Get<NotificationManager>('notificationManager').sendCapsuleNotification(callData, GlobalThisHelper.get<boolean>(Constants.GLOBALTHIS_APPINACTIVE_STATE));
       }
     } else {
       this.addCallList({
@@ -80,7 +83,9 @@ export default class CallDataManager {
 
       // use setTimeout to avoid block ui show
       setTimeout(() => {
-        this.contactManager.getContactInfo(callData)
+        if (this.contactManager != undefined) {
+          this.contactManager.getContactInfo(callData)
+        }
       }, 0);
     }
 
@@ -101,7 +106,7 @@ export default class CallDataManager {
         this.NotificationManager.cancelNotification();
         AppStorage.Get<NotificationManager>('notificationManager').sendCapsuleNotification(callData, true);
         AppStorage.Delete("CallTimeList");
-        globalThis.calluiAbilityContext?.terminateSelf().then((data) => {
+        GlobalThisHelper.get<any>(Constants.GLOBALTHIS_CONTEXT)?.terminateSelf().then((data) => {
           LogUtils.i(TAG, "calluiAbility terminateSelf");
         });
       } else {
@@ -121,9 +126,27 @@ export default class CallDataManager {
   /**
    * Judge whether the call exists.
    */
-  public hasAliveCall(): boolean {
-    return this.callList.find((call) => call.callState !== CallStateConst.CALL_STATUS_DISCONNECTED
+  public hasAliveCall() {
+    const callData = this.callList.find((call) => call.callState !== CallStateConst.CALL_STATUS_DISCONNECTED
       && call.callState !== CallStateConst.CALL_STATUS_DISCONNECTING);
+    LogUtils.i(TAG, "hasAliveCall:" + JSON.stringify(callData !== undefined));
+    return callData !== undefined;
+  }
+
+  /**
+   * Judge whether the call exists.
+   */
+  public hasActiveCall(): boolean {
+    return this.callList.find((call) => call.callState === CallStateConst.CALL_STATUS_ACTIVE
+    || call.callState === CallStateConst.CALL_STATUS_HOLDING);
+  }
+
+  /**
+   * Judge whether the call is active or holding.
+   */
+  public isActiveCall(callId): boolean {
+    return this.callList.find((call) => call.callId === callId && (call.callState === CallStateConst.CALL_STATUS_ACTIVE
+    || call.callState === CallStateConst.CALL_STATUS_HOLDING));
   }
 
   /**
