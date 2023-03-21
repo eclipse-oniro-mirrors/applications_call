@@ -28,7 +28,7 @@
         }
       }
     ],
-    "compileSdkVersion": 10,
+    "compileSdkVersion": 9,
     "compatibleSdkVersion": 9,
     "products": [
       {
