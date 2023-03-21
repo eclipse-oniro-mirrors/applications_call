@@ -23,7 +23,7 @@ import commonEvent from '@ohos.commonEvent';
 import callStateConst from '../common/constant/CallStateConst';
 import LogUtils from '../common/utils/LogUtils';
 import Constants from '../common/utils/Constants';
-import resourceManager from '@ohos.resourceManager';
+import GlobalThisHelper from '../common/utils/GlobalThisHelper';
 
 const TAG = "NotificationManager";
 const ID = 0;
@@ -71,7 +71,7 @@ export default class NotificationManager {
     const {START_ABILITY, SEND_COMMON_EVENT} = wantAgent.OperationType;
     const wantAgentObj = await this.getWantAgent(callData, START_ABILITY);
     let titleName = ' ';
-    let expandedName = ' '
+    let expandedName = ' ';
     if (contactName) {
       titleName = contactName;
       expandedName = accountNumber;
@@ -87,11 +87,11 @@ export default class NotificationManager {
           callId, btnType: key
         };
         const wantAgentObj = await this.getWantAgent(data, SEND_COMMON_EVENT);
-        globalThis.calluiAbilityContext?.resourceManager.getString(textMap[key].id, (error, value) => {
+        GlobalThisHelper.get<any>(Constants.GLOBALTHIS_CONTEXT)?.resourceManager.getString(textMap[key].id, (error, value) => {
           if (error != null) {
-            LogUtils.i(TAG, "sendNotification getResourceManager getString err")
+            LogUtils.i(TAG, "sendNotification getResourceManager getString err");
           } else {
-            LogUtils.i(TAG, "sendNotification getResourceManager getString value" + value)
+            LogUtils.i(TAG, "sendNotification getResourceManager getString value" + value);
             notificationRequest.actionButtons.push({
               title: value,
               wantAgent: wantAgentObj
@@ -185,7 +185,6 @@ export default class NotificationManager {
    */
   sendCapsuleNotification(callData, isBackground) {
     LogUtils.i(TAG, "sendCapsuleNotification isBackground : " + JSON.stringify(isBackground))
-    callData.startTime = (callData.startTime)
     LogUtils.i(TAG, "sendCapsuleNotification callData.startTime :")
     const {callState, startTime} = callData;
     let commonEventPublishData = {

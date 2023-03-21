@@ -7,7 +7,6 @@ const TAG = "MyAbilityStage";
 
 export default class MyAbilityStage extends AbilityStage {
   onCreate() {
-    globalThis.deviceTypeInfo = deviceInfo.deviceType;
     notification.enableNotification({
       bundle: "com.ohos.callui"
     }, true, (err, data) => {

@@ -1,5 +1,5 @@
-/**
- * Copyright (c) 2022 Huawei Device Co., Ltd.
+/*
+ * Copyright (c) 2023 Huawei Device Co., Ltd.
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -13,14 +13,15 @@
  * limitations under the License.
  */
 
-import LogUtils from './LogUtils'
+/**
+ * @file: SIM card,mobile data,Card Status,Operators so
+ */
 
-const TAG = "SingleInstanceHelper";
+import sim from '@ohos.telephony.sim';
+import telephonyData from '@ohos.telephony.data';
+import observer from '@ohos.telephony.observer';
+import radio from '@ohos.telephony.radio';
 
-export default function createOrGet<T>(objectClass: { new(): T }, storageKey: string): T {
-  if (!globalThis[storageKey]) {
-    globalThis[storageKey] = new objectClass();
-    LogUtils.i(TAG, "Create key of: " + JSON.stringify(storageKey));
-  }
-  return globalThis[storageKey];
-}
+export { sim, telephonyData, radio, observer };
+
+

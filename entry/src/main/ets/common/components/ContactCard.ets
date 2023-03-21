@@ -19,6 +19,7 @@
 import LogUtils from '../utils/LogUtils';
 import callStateConst from '../constant/CallStateConst';
 import Utils from '../utils/utils'
+import CallUtils from '../utils/CallUtils'
 
 const TAG = "contactCard";
 
@@ -34,6 +35,8 @@ export default struct ContactCard {
   @StorageLink("CallTimeList") callTimeList: any = [];
   @StorageLink("AccountNumber") accountNumber: string = '';
   @StorageLink("IsEmergencyPhoneNumber") isEmergencyPhoneNumber: boolean = false;
+  @StorageLink("hasSimCard1") hasSimCard1: boolean = false;
+  @StorageLink("hasSimCard2") hasSimCard2: boolean = false;
   private mUtils: Utils;
   private timer;
   private emergency = $r('app.string.emergency');
@@ -49,6 +52,10 @@ export default struct ContactCard {
     }, 500)
     if (this.callData.callState === 3) {
       clearInterval(this.timer)
+    }
+    if (this.callData.callState === 4) {
+      CallUtils.hasSimeCard(0);
+      CallUtils.hasSimeCard(1);
     }
   }
 
@@ -80,6 +87,10 @@ export default struct ContactCard {
     return this.callState() === callStateConst.CALL_STATUS_ACTIVE && this.callList.length === 1;
   }
 
+  private isShowSim() {
+    return this.callState() === callStateConst.CALL_STATUS_INCOMING && this.hasSimCard1 && this.hasSimCard2;
+  }
+
   build() {
     GridRow({ columns: { sm: 4, md: 8, lg: 12 }, gutter: 24 }) {
       GridCol({ span: { sm: 4, md: 6, lg: 6 }, offset: { md: 1, lg: 3 } }) {
@@ -93,7 +104,7 @@ export default struct ContactCard {
           }
 
           if (this.isShowKeyboard && this.textInput.length === 0) {
-            Text(this.callData.contactName ? this.callData.contactName : this.accountNumber)
+            Text(this.callData.contactName ? this.callData.contactName : this.callData.accountNumber)
               .fontSize(30)
               .height(40)
               .lineHeight(40)
@@ -103,7 +114,7 @@ export default struct ContactCard {
               .maxLines(1)
               .textOverflow({ overflow: TextOverflow.Ellipsis })
           } else if (!this.isShowKeyboard) {
-            Text(this.isEmergencyPhoneNumber ? this.emergency : this.callData.contactName ? this.callData.contactName : this.accountNumber)
+            Text(this.isEmergencyPhoneNumber ? this.emergency : this.callData.contactName ? this.callData.contactName : this.callData.accountNumber)
               .fontSize(30)
               .height(40)
               .lineHeight(40)
@@ -134,7 +145,7 @@ export default struct ContactCard {
 
           Row() {
             if (!this.isShowKeyboard || this.isShowKeyboard && this.textInput.length === 0) {
-              Text((this.callData.contactName || this.isEmergencyPhoneNumber) ? this.accountNumber : '')
+              Text((this.callData.contactName || this.isEmergencyPhoneNumber) ? this.callData.accountNumber : '')
                 .fontSize(14)
                 .height(19)
                 .lineHeight(16)
@@ -178,12 +189,30 @@ export default struct ContactCard {
               .fontColor('#FFFFFF')
           }
 
+          if (this.isShowSim()) {
+            Image(this.callData.accountId == 1 ? $r("app.media.ic_public_phone_sim2") : $r("app.media.ic_public_phone_sim1"))
+              .margin({ right: 4 })
+              .width(12)
+              .height(12)
+              .opacity(0.6)
+          }
+
           if (this.isShowTime()) {
-            Text(this.callTimeList[0]?.callTime)
-              .fontSize(14)
-              .height(19)
-              .lineHeight(19)
-              .fontColor('#FFFFFF')
+            Row() {
+              if (this.callData.callType === 1) {
+                Image($r("app.media.ic_public_phone_HD"))
+                  .margin({ right: 4 })
+                  .width(12)
+                  .height(12)
+                  .opacity(0.6)
+              }
+
+              Text(this.callTimeList[0]?.callTime)
+                .fontSize(14)
+                .height(19)
+                .lineHeight(19)
+                .fontColor('#FFFFFF')
+            }
           }
         }
       }

@@ -28,8 +28,10 @@ import CallManager from '../model/CallManager';
 import backgroundTaskManager from '@ohos.backgroundTaskManager';
 import Constants from '../common/utils/Constants';
 import CallDataManager from '../model/CallDataManager';
+import MultiContactCard from '../common/components/MultiContactCard';
+import GlobalThisHelper from '../common/utils/GlobalThisHelper';
 
-const TAG = "MainAbility";
+const TAG = "Index";
 
 /**
  * @file: Main interface
@@ -71,7 +73,7 @@ struct Index {
     LogUtils.i(TAG, "aboutToAppear")
     byTrace.startTrace('aboutToAppear', 0);
     this.notificationManager = new NotificationManager();
-    globalThis.callManager = new CallManager(this)
+    CallManager.getInstance()?.init(this);
     AppStorage.SetOrCreate<NotificationManager>('notificationManager', this.notificationManager);
     this.mCallDataManager = CallDataManager.getInstance();
     byTrace.finishTrace('aboutToAppear', 0);
@@ -84,45 +86,49 @@ struct Index {
   }
 
   onPageShow() {
-    LogUtils.i(TAG, "onPageShow")
+    LogUtils.i(TAG, "onPageShow");
     byTrace.startTrace('onPageShow', 1);
-    globalThis.appInactiveState = false;
+    GlobalThisHelper.set<boolean>(Constants.GLOBALTHIS_APPINACTIVE_STATE, false);
     this.stopBackgroundRunning();
-    this.notificationManager.cancelNotification();
-    this.notificationManager.sendCapsuleNotification(this.callData, false);
+    this.notificationManager?.cancelNotification();
+    this.notificationManager?.sendCapsuleNotification(this.callData, false);
     byTrace.finishTrace('onPageShow', 1);
-    LogUtils.i(TAG, "onPageShow end")
+    LogUtils.i(TAG, "onPageShow end");
   }
 
   onPageHide() {
-    LogUtils.i(TAG, "onPageHide")
-    globalThis.appInactiveState = true;
+    LogUtils.i(TAG, "onPageHide");
+    GlobalThisHelper.set<boolean>(Constants.GLOBALTHIS_APPINACTIVE_STATE, true);
+    this.updateNotification();
+    LogUtils.i(TAG, "onPageHide end");
+  }
+
+  updateNotification() {
     const {callState, callId} = this.callData;
-    let fool = (callState !== CallStateConst.callStateObj.CALL_STATUS_DISCONNECTED && callId)
     if (callState !== CallStateConst.callStateObj.CALL_STATUS_DISCONNECTED && callId) {
       if (this.mCallDataManager.hasAliveCall()) {
         this.startBackgroundRunning();
       }
-      this.notificationManager.sendNotification(this.callData);
-      this.notificationManager.sendCapsuleNotification(this.callData, true);
-      LogUtils.i(TAG, "onPageHide end")
+      this.notificationManager?.sendNotification(this.callData);
+      this.notificationManager?.sendCapsuleNotification(this.callData, true);
     }
   }
 
 
   aboutToDisappear() {
-    LogUtils.i(TAG, "aboutToDisappear")
+    LogUtils.i(TAG, "aboutToDisappear");
     this.stopBackgroundRunning();
+    this.updateNotification();
     this.smListener.off('change', this.isBreakpointSM);
     this.mdListener.off('change', this.isBreakpointMD);
     this.lgListener.off('change', this.isBreakpointLG);
   }
 
   private stopBackgroundRunning() {
-    backgroundTaskManager.stopBackgroundRunning(globalThis.calluiAbilityContext).then(() => {
-      LogUtils.i(TAG, "stopBackgroundRunning succeeded")
+    backgroundTaskManager.stopBackgroundRunning(GlobalThisHelper.get<any>(Constants.GLOBALTHIS_CONTEXT)).then(() => {
+      LogUtils.i(TAG, "stopBackgroundRunning succeeded");
     }).catch((err) => {
-      LogUtils.i(TAG, "stopBackgroundRunning failed")
+      LogUtils.i(TAG, "stopBackgroundRunning failed");
     });
   }
 
@@ -137,7 +143,7 @@ struct Index {
       wantAgentFlags: [wantAgent.WantAgentFlags.UPDATE_PRESENT_FLAG]
     };
     wantAgent.getWantAgent(wantAgentInfo).then((wantAgentObj) => {
-      backgroundTaskManager.startBackgroundRunning(globalThis.calluiAbilityContext,
+      backgroundTaskManager.startBackgroundRunning(GlobalThisHelper.get<any>(Constants.GLOBALTHIS_CONTEXT),
       backgroundTaskManager.BackgroundMode.VOIP, wantAgentObj).then(() => {
         LogUtils.i(TAG, "startBackgroundRunning succeeded")
       }).catch((err) => {
@@ -165,19 +171,41 @@ struct Index {
     return this.callData.callState;
   }
 
+  /**
+   * is Triple Call
+   *
+   * @return {boolean} - isTripleCall
+   */
+  private isTripleCall() {
+    return (this.callData.callState === CallStateConst.callStateObj.CALL_STATUS_WAITING
+      || this.callData.callState === CallStateConst.callStateObj.CALL_STATUS_INCOMING)
+      && this.callList.length === 3;
+  }
+
   build() {
     Flex({
       direction: FlexDirection.Column,
       alignItems: ItemAlign.Center,
       justifyContent: FlexAlign.SpaceBetween
     }) {
-      ContactCard({
-        callData: $callData,
-        isShowKeyboard: this.isShowKeyboard,
-        callList: $callList
-      })
-        .margin({ top: this.isShowKeyboard ? 0 : 56 })
-        .layoutWeight(this.isShowKeyboard ? 1 : 0)
+      if (this.callList.length > 1) {
+        MultiContactCard({
+          callData: $callData,
+          isShowKeyboard: this.isShowKeyboard,
+          callList: $callList
+        })
+          .margin({ top: this.isShowKeyboard ? 0 : 56 })
+          .layoutWeight(this.isShowKeyboard ? 1 : 0)
+      } else {
+        ContactCard({
+          callData: $callData,
+          isShowKeyboard: this.isShowKeyboard,
+          callList: $callList
+        })
+          .margin({ top: this.isShowKeyboard ? 0 : 56 })
+          .layoutWeight(this.isShowKeyboard ? 1 : 0)
+      }
+
       if (this.callState() !== CallStateConst.callStateObj.CALL_STATUS_WAITING
       && this.callState() !== CallStateConst.callStateObj.CALL_STATUS_INCOMING) {
         Column() {
@@ -196,10 +224,23 @@ struct Index {
           })
         }
       } else {
-        IncomingCom({ callData: $callData })
+        Column() {
+          IncomingCom({ callData: $callData })
+
+          if (this.isTripleCall()) {
+            Column() {
+              Text($r("app.string.end_holding_call"))
+                .fontColor('#FFFFFF')
+                .fontSize(14)
+                .height(19)
+                .lineHeight(19)
+            }
+            .margin({ top: 16 })
+          }
+        }
       }
     }
-    .padding({ bottom: 106 })
+    .padding({ bottom: this.isTripleCall() ? 71 : 106 })
     .width("100%")
     .height("100%")
     .backgroundImage('assets/picture/wallpaper.png', ImageRepeat.NoRepeat)

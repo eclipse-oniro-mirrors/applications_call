@@ -27,6 +27,12 @@
     "deliveryWithInstall": true,
     "installationFree": false,
     "pages": "$profile:main_pages",
+    "metadata": [
+      {
+        "name": "ArkTSPartialUpdate",
+        "value": "false"
+      }
+    ],
     "abilities": [
       {
         "name": "com.ohos.mobiledatasettings.MainAbility",
@@ -45,6 +51,9 @@
       },
       {
         "name": "ohos.permission.SET_TELEPHONY_STATE"
+      },
+      {
+        "name": "ohos.permission.GET_TELEPHONY_STATE"
       }
     ]
   }
