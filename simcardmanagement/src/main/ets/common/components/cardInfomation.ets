@@ -12,7 +12,6 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { setCache, getCache, deleteCache } from '../utils/KvManager'
 import UpdataInfo from './dialog/upDataInfo'
 import StopSim from './dialog/stopSim'
 import EditSimInfo from './dialog/editSimInfo'
@@ -137,7 +136,6 @@ export default struct eSimSet {
       action: (stop) => {
         this.defaultSetString = $r('app.string.sim_null_character');
         if (this.curEditList.id === 0) {
-          setCache(this.SIM_CARD_Change, 1);
           this.setSimActive(0, false)
           this.list[0].name = $r('app.string.sim_not_enabled');
           this.isStop1 = false;

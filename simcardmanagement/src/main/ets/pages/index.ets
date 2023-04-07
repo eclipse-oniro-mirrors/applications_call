@@ -20,7 +20,6 @@ import CardSetData from '../common/config/cardSetData';
 import SetFlowLimit from '../common/components/dialog/setFlowLimit'
 import DefaultDialCard from '../common/components/dialog/defalutDialing'
 import cardInfoData from '../common/config/cardInfoData';
-import { setCache, getCache } from '../common/utils/KvManager'
 import dataServiceProxy from '../model/dataServiceProxy';
 import simServiceProxy from '../model/simServiceProxy'
 import DefaultCard from '../common/components/defaultCard'
@@ -134,13 +133,6 @@ struct Index {
 
   aboutToAppear() {
     LogUtils.i(TAG, "aboutToAppear")
-    getCache(this.SHOW_CHANGE, (data) => {
-      if (data == 0) {
-        this.isShow = false;
-      } else {
-        this.isShow = true;
-      };
-    });
   }
 
   getDefaultDataSlotId() {
@@ -159,28 +151,6 @@ struct Index {
     this.getShowNumber(1);
     this.getDefaultVoiceSlotld();
     this.getDefaultDataSlotId();
-    getCache(this.SIM_CARD_Change, (data) => {
-      if (data == null) {
-        setCache(this.SIM_CARD_Change, 0);
-      } else {
-        if (data == 0) {
-          this.defaultDataChange = true;
-        } else {
-          this.defaultDataChange = false;
-        };
-      };
-    });
-
-    getCache(this.SIM_CARD_STOP, (data) => {
-      if (data != null) {
-        this.isStop = data;
-      }
-      ;
-    });
-
-    getCache(this.SIM_CARD_DEFAULT, (data) => {
-      this.defaultset = data.replace('\'', '').replace('\'', '');
-    });
 
     LogUtils.i(TAG, "onPageShow end ")
   }
@@ -226,7 +196,6 @@ struct Index {
                   .opacity(this.isStop ? 1 : 0.4)
                   .onClick(() => {
                     LogUtils.i(TAG, "onclick defaultcard card one")
-                    setCache(this.SIM_CARD_Change, 0);
                     this.setDefaultDataSlotId(0)
                     this.defaultDataChange = !this.defaultDataChange;
                   })

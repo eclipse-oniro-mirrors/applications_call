@@ -12,7 +12,6 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { setCache } from '../../utils/KvManager'
 import { getString } from '../../utils/Utils'
 
 @CustomDialog
@@ -57,7 +56,6 @@ export default struct StopSim {
           Text($r('app.string.stop_use'))
             .fontSize('16vp')
             .onClick(() => {
-              setCache(this.SIM_CARD_DEFAULT, '不设置');
               this.isChange = false;
               this.controller.close();
               this.action(false);
