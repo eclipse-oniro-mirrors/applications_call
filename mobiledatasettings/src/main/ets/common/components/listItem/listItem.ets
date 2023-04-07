@@ -25,7 +25,6 @@ import {
   disableImsSwitchCardOne,
   disableImsSwitchCardTwo
 } from '../../../model/mobileDataStatus';
-import { setCache } from '../../utils/KvManager';
 import LogUtils from '../../utils/LogUtils'
 
 const TAG = "ListItem"
@@ -115,9 +114,6 @@ export default struct listItem {
             .onChange((isOn: boolean) => {
               this.controlSwitch = !this.controlSwitch;
               LogUtils.i(TAG, 'onclick cardType is :' + JSON.stringify(this.cardType) + 'switcher is:' + JSON.stringify(this.isCon) + "Switch status:" + this.controlSwitch);
-              if (this.isCon === 1) {
-                setCache(this.radio_state_enable5g, isOn);
-              }
               if (this.controlSwitch && this.isCon === 0) {
                 this.dialogTitle = this.title;
                 this.recordTypeDialog.open();
