@@ -12,7 +12,6 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { setCache, getCache } from '../../utils/KvManager'
 import simServiceProxy from '../../../model/simServiceProxy'
 import LogUtils from '../../../common/utils/LogUtils'
 
@@ -182,10 +181,8 @@ export default struct DefaultDialCard {
           }
         }.height(64)
         .onClick(() => {
-          setCache(this.SIM_CARD_DEFAULT, '+8618851354122');
           this.action($r('app.string.sim_card_two_no_space'));
           this.changeCard1 = false;
-          setCache(this.SIM_CARD_KEYWORD, 2)
           this.setDefaultVoiceSlotId(1)
           this.changeCard2 = true;
           this.changeDefault = false;
