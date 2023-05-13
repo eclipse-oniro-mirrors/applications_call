@@ -17,7 +17,7 @@
  * @file: Move data interface call
  */
 
-import { telephonyData } from './api';
+import telephonyData from '@ohos.telephony.data';
 import radio from '@ohos.telephony.radio';
 import LogUtils from '../utils/LogUtils'
 

@@ -19,7 +19,7 @@
 @Component
 export default struct DefaultCard {
   @State cardTextBackgrounColor: string = " #0A59F7";
-  @State cardName: any = "";
+  @State cardName: Resource = $r('app.string.card_1');
   @State cardTextColor: string = "#FFFFFF"
 
   build() {

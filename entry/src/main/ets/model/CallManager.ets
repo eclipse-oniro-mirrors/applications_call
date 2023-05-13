@@ -23,8 +23,8 @@ import CallServiceProxy from './CallServiceProxy';
 import LogUtils from '../common/utils/LogUtils'
 import call from '@ohos.telephony.call';
 import CallStateConst from '../common/constant/CallStateConst';
-import GlobalThisHelper from '../common/utils/GlobalThisHelper'
-import Constants from '../common/utils/Constants'
+import DefaultCallData from '../common/struct/TypeUtils';
+import CallListStruct from '../common/struct/CallListStruct';
 
 const TAG = "CallManager";
 const TIMING = 1000;
@@ -33,11 +33,12 @@ const TIMING = 1000;
  * class CallManager
  */
 export default class CallManager {
-  private callData: any = {};
+  private callData: DefaultCallData = new DefaultCallData();
+  private callList: Array<CallListStruct> = [];
   private timer = null ;
   callTimeList = [];
   private ctx = [];
-  private sendNotificationHandle: any;
+  private sendNotificationHandle: Function;
   private mCallDataManager: CallDataManager;
   private mCallServiceProxy: CallServiceProxy ;
   private mUtils: Utils;
@@ -45,10 +46,10 @@ export default class CallManager {
   private mTimeMeter
 
   public static getInstance(): CallManager {
-    if (GlobalThisHelper.get<any>(Constants.GLOBALTHIS_CALLMANAGER) === undefined) {
-      GlobalThisHelper.set<any>(Constants.GLOBALTHIS_CALLMANAGER, new CallManager());
+    if (!globalThis.callManager) {
+      globalThis.callManager = new CallManager();
     }
-    return GlobalThisHelper.get<any>(Constants.GLOBALTHIS_CALLMANAGER);
+    return globalThis.callManager;
   }
 
   private constructor() {
@@ -57,9 +58,9 @@ export default class CallManager {
     this.timer = null;
     this.mCallDataManager = CallDataManager.getInstance();
   }
+
   init(ctx) {
     this.callData = ctx.callData;
-    this.timer = null;
     this.ctx = ctx;
     this.callTimeList = ctx.callTimeList;
     this.mCallDataManager?.init(ctx.callData, ctx.callList, ctx.callTimeList);
@@ -72,10 +73,8 @@ export default class CallManager {
    * init CallData
    */
   private initCallData() {
-    if (!GlobalThisHelper.get<any>(Constants.GLOBALTHIS_ABILITY_WANT)
-      && GlobalThisHelper.get<any>(Constants.GLOBALTHIS_ABILITY_WANT)?.parameters
-      && ('callState' in GlobalThisHelper.get<any>(Constants.GLOBALTHIS_ABILITY_WANT)?.parameters)) {
-      let callData = this.getCallDataFromWant(GlobalThisHelper.get<any>(Constants.GLOBALTHIS_ABILITY_WANT).parameters);
+    if (globalThis.abilityWant && globalThis.abilityWant.parameters && ('callState' in globalThis.abilityWant.parameters)) {
+      let callData = this.getCallDataFromWant(globalThis.abilityWant.parameters);
       this.update(callData);
       LogUtils.i(TAG, "initCallData featureAbility.getWant :")
     } else {
@@ -111,8 +110,8 @@ export default class CallManager {
     LogUtils.i(TAG, "update calldata:")
     if (this.callData != undefined && this.callData.callId === callData.callId) {
       const { callState } = this.callData;
-      if (callState === 6) {
-        GlobalThisHelper.get<any>(Constants.GLOBALTHIS_CONTEXT)?.terminateSelf().then((data) => {
+      if (callState === 6 && this.callList.length === 1) {
+        globalThis.calluiAbilityContext?.terminateSelf().then((data) => {
           LogUtils.i(TAG, "calluiAbility terminateSelf because service disconnected");
         });
         return;
@@ -121,14 +120,17 @@ export default class CallManager {
     this.callData = callData;
     this.mCallDataManager.update(callData);
     call.formatPhoneNumber(callData.accountNumber, (err, data) => {
-      if (data === undefined) {
-        AppStorage.SetOrCreate("AccountNumber", callData.accountNumber)
+      if (err) {
+        LogUtils.i(TAG, "updata calldata formatPhoneNumber err:" + JSON.stringify(err));
+      } else if (data === undefined) {
+        AppStorage.SetOrCreate("AccountNumber", callData.accountNumber);
       } else {
-        AppStorage.SetOrCreate("AccountNumber", data)
+        LogUtils.i(TAG, "updata calldata formatPhoneNumber success:" + JSON.stringify(data));
+        AppStorage.SetOrCreate("AccountNumber", data);
       }
     });
-    CallUtils.isEmergencyPhoneNumber(callData.accountNumber)
-    LogUtils.i(TAG, "update :")
+    CallUtils.isEmergencyPhoneNumber(callData.accountNumber);
+    LogUtils.i(TAG, "update :");
   }
 
   /**
@@ -167,7 +169,7 @@ export default class CallManager {
   openTimer() {
     this.timer = setInterval(() => {
       this.updateCallTimeList();
-      if (this.callData.callState === CallStateConst.CALL_STATUS_ACTIVE) {
+      if (this.callData.callState === CallStateConst.CALL_STATUS_ACTIVE && this.callList.length === 1) {
         clearInterval(this.timer);
       }
     }, TIMING);

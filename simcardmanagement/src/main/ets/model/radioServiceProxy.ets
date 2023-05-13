@@ -36,7 +36,7 @@ let getSupportNetwork = function (slotId = 0) {
       LogUtils.i(TAG, "getSupportNetwork isNrSupported:" + isSupported);
       resolve(isSupported);
     } catch (error) {
-      LogUtils.i(TAG, "getSupportNetwork isNrSupported:catch" +  JSON.stringify(error));
+      LogUtils.i(TAG, "getSupportNetwork isNrSupported:catch" + JSON.stringify(error));
       reject(error);
     }
   });
@@ -71,6 +71,31 @@ let getOperatorName = function (slotId = 0) {
     }
   });
 };
+
+/**
+ * Get show name
+ *
+ * @param  {number} slotId - slot ID
+ * @return {Promise}
+ */
+export function getPrimarySlotId() {
+  return new Promise(function (resolve, reject) {
+    try {
+      radio.getPrimarySlotId((error, value) => {
+        if (error) {
+          LogUtils.i(TAG, "getPrimarySlotId error:" + JSON.stringify(error));
+          reject(error);
+        } else {
+          LogUtils.i(TAG, "getPrimarySlotId data:" + JSON.stringify(value));
+          resolve(value);
+        }
+      });
+    } catch (error) {
+      LogUtils.i(TAG, "getPrimarySlotId catch:" + JSON.stringify(error));
+      reject(error);
+    }
+  });
+}
 
 export default {
   getSupportNetwork,

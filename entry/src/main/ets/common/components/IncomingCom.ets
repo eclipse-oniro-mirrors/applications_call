@@ -22,12 +22,12 @@ import sms from '@ohos.telephony.sms';
 import resourceManager from '@ohos.resourceManager';
 import prompt from '@system.prompt';
 import LogUtils from '../utils/LogUtils';
-import GlobalThisHelper from '../utils/GlobalThisHelper';
-import Constants from '../utils/Constants';
+import DefaultCallData from '../struct/TypeUtils';
+import CallListStruct from '../struct/CallListStruct'
+
 
 const TAG = "IncomingCom";
 const SMS_REJECTION = `${ImagePathConst.BASE_URL}ic_public_message.svg`;
-const SMS_REMINDER = `${ImagePathConst.BASE_URL}remindDisabled.png`;
 
 /**
  * SMS sent successfully
@@ -51,7 +51,8 @@ const SEND_SMS_FAILURE_SERVICE_UNAVAILABLE = 3;
 
 @Component
 export default struct IncomingCom {
-  @Link callData: any;
+  @Link callList: Array<CallListStruct>;
+  @Link callData: DefaultCallData;
   private btnList = [];
   private msgList = [];
   mCallServiceProxy: CallServiceProxy = null;
@@ -85,10 +86,10 @@ export default struct IncomingCom {
    * @param obj
    */
   private sendMessage(obj) {
-    let slotId = this.callData.accountId
+    let slotId = this.callData.accountId;
     let destinationHost = this.callData.accountNumber
     let contactName = this.callData.contactName
-    GlobalThisHelper.get<any>(Constants.GLOBALTHIS_CONTEXT)?.resourceManager.getString(obj.msg.id, (err, typeName) => {
+    globalThis.calluiAbilityContext?.resourceManager.getString(obj.msg.id, (err, typeName) => {
       LogUtils.i(TAG, "sendMessage");
       sms.sendMessage({
         slotId: slotId,
@@ -99,7 +100,7 @@ export default struct IncomingCom {
             return;
           }
           if (sendResult.result === SEND_SMS_SUCCESS) {
-            GlobalThisHelper.get<any>(Constants.GLOBALTHIS_CONTEXT)?.resourceManager.getString($r("app.string.SMS_Sent")
+            globalThis.calluiAbilityContext?.resourceManager.getString($r("app.string.SMS_Sent")
               .id, (err, typeName) => {
               if (err) {
                 return;
@@ -110,7 +111,7 @@ export default struct IncomingCom {
               });
             })
           } else {
-            GlobalThisHelper.get<any>(Constants.GLOBALTHIS_CONTEXT)?.resourceManager.getString($r("app.string.message_Failed").id, (err, typeName) => {
+            globalThis.calluiAbilityContext?.resourceManager.getString($r("app.string.message_Failed").id, (err, typeName) => {
               if (err) {
                 return;
               }
@@ -155,7 +156,6 @@ export default struct IncomingCom {
         iconDisableUrl: SMS_REJECTION,
         isDisable: false
       },
-
     ];
   }
 
@@ -174,6 +174,10 @@ export default struct IncomingCom {
    * Handling interface call hangup and rejection
    */
   private async onReject() {
+    const incomingData = this.callList.find((v) => v.callState === CallStateConst.callStateObj.CALL_STATUS_WAITING || v.callState === CallStateConst.callStateObj.CALL_STATUS_INCOMING);
+    Object.assign(this.callData, {
+      ...incomingData
+    });
     const {callId, callState} = this.callData;
     if (callState !== CallStateConst.CALL_STATUS_WAITING) {
       this.mCallServiceProxy.rejectCall(callId);
@@ -199,7 +203,12 @@ export default struct IncomingCom {
    */
   private onAnswer() {
     LogUtils.i(TAG, "onAnswer :");
-    this.mCallServiceProxy.acceptCall(this.callData.callId);
+    const incomingData = this.callList.find((v) => v.callState === CallStateConst.callStateObj.CALL_STATUS_WAITING || v.callState === CallStateConst.callStateObj.CALL_STATUS_INCOMING);
+    if (incomingData !== undefined) {
+      this.mCallServiceProxy.acceptCall(incomingData.callId);
+    } else {
+      this.mCallServiceProxy.acceptCall(this.callData.callId);
+    }
   }
 
   build() {

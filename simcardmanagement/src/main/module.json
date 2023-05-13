@@ -23,22 +23,25 @@
         "name": "com.ohos.simcardmanagement.MainAbility",
         "srcEntrance": "./ets/MainAbility/MainAbility.ts",
         "description": "$string:MainAbility_desc",
-        "icon": "$media:icon",
+        "icon": "$media:app_icon",
         "label": "$string:MainAbility_label",
-        "startWindowIcon": "$media:icon",
+        "startWindowIcon": "$media:app_start_window_icon",
         "startWindowBackground": "$color:white",
         "visible": true
       }
     ],
     "requestPermissions" : [
       {
-        "name": "ohos.permission.GET_NETWORK_INFO"
+        "name": "ohos.permission.GET_NETWORK_INFO",
+        "reason": "$string:GET_NETWORK_INFO"
       },
       {
-        "name" : "ohos.permission.SET_TELEPHONY_STATE"
+        "name": "ohos.permission.SET_TELEPHONY_STATE",
+        "reason": "$string:SET_TELEPHONY_STATE"
       },
       {
-        "name" : "ohos.permission.GET_TELEPHONY_STATE"
+        "name": "ohos.permission.GET_TELEPHONY_STATE",
+        "reason": "$string:GET_TELEPHONY_STATE"
       }
     ]
   }

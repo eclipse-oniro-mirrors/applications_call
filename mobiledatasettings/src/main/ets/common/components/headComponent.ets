@@ -51,7 +51,7 @@ export default struct HeadComponent {
         .fontSize(20)
         .fontFamily('HarmonyHeiTi-Bold')
         .fontWeight(FontWeight.Medium)
-        .fontColor($r('app.color.font_color_182431'))
+        .fontColor($r('sys.color.ohos_id_color_text_primary'))
         .maxLines(1)
         .textOverflow({ overflow: TextOverflow.Ellipsis })
         .textAlign(TextAlign.Start)

@@ -15,15 +15,20 @@
 
 import CallServiceProxy from '../../model/CallServiceProxy';
 import DtmfBtn from '../components/DtmfBtn';
+import DefaultCallData from '../struct/TypeUtils';
 
+class DataListStruct {
+   value
+   sign
+}
 const TAG = "Keyboard";
 
 @Component
 export default struct Keyboard {
-  @Link callData: any;
+  @Link callData: DefaultCallData;
   @StorageLink("TextInput") textInput: string = '';
   @StorageLink("TextInputValue") textInputValue: string = '';
-  @State dataList: any =
+  @State dataList: Array<DataListStruct> =
     [
       {
         value: '1',

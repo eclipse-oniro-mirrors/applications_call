@@ -20,6 +20,16 @@ import { getString } from '../../utils/Utils'
 
 const TAG = "EditSimInfo"
 
+class CardInfoStruct {
+  id
+  title
+  isOpened
+  disabled
+  name
+  info
+  isSimCardClosed
+}
+
 @CustomDialog
 export default struct EditSimInfo {
   controller: CustomDialogController;
@@ -27,7 +37,7 @@ export default struct EditSimInfo {
   disabledState: true;
   inputVal: '';
   isShow: true;
-  curEditList: any = [];
+  curEditList: CardInfoStruct = new CardInfoStruct();
   MinLength: number = 0;
   MaxLength: number = 17;
   @State simName: string = '';
@@ -141,6 +151,7 @@ export default struct EditSimInfo {
             this.simName = value;
             LogUtils.i(TAG, "simName: " + JSON.stringify(this.simName))
           })
+        Divider().vertical(false).strokeWidth(0.5).color('#ccc')
         TextInput({ text: this.phoneNumber, placeholder: $r('app.string.sim_phone_number') })
           .maxLength(15)
           .height(48)
@@ -156,13 +167,14 @@ export default struct EditSimInfo {
             ;
             this.isChange = !this.isChange;
           })
+        Divider().vertical(false).strokeWidth(0.5).color('#ccc')
         Flex({ justifyContent: FlexAlign.SpaceAround }) {
           Text($r('app.string.cancel'))
             .fontSize(16)
             .fontWeight(FontWeight.Medium)
             .fontFamily("HarmonyHeiTi")
             .lineHeight(21)
-            .fontColor('#2871d4')
+            .fontColor($r('sys.color.ohos_id_color_text_primary_activated'))
             .onClick(() => {
               this.controller.close();
               this.phoneNumber = '';
@@ -171,6 +183,7 @@ export default struct EditSimInfo {
           Divider().vertical(true).height(0.5).strokeWidth(1).opacity(0.5)
           Text($r('app.string.confirm'))
             .fontSize(16)
+            .fontColor($r('sys.color.ohos_id_color_text_primary_activated'))
             .fontWeight(FontWeight.Medium)
             .fontFamily("HarmonyHeiTi")
             .lineHeight(21)
@@ -212,14 +225,16 @@ export default struct EditSimInfo {
               }
               this.isChange = !this.isChange;
               this.controller.close()
-            }).fontColor(this.isChange ? '#2871d4' : '#2871d4')
+            })
+            .fontColor(this.isChange ? '#2871d4' : '#2871d4')
         }
         .margin({ left: 12, right: 12, top: 18 })
         .height(56)
       }
     }
     .height(216)
+    .padding({ left: 24, right: 24 })
     .backgroundColor($r("sys.color.ohos_id_color_list_card_bg"))
-    .padding({ left: 12, right: 12 })
+    .borderRadius(26)
   }
 }

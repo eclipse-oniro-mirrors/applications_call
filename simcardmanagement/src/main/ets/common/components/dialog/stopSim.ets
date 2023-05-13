@@ -14,12 +14,22 @@
  */
 import { getString } from '../../utils/Utils'
 
+class CardInfoStruct {
+  id
+  title
+  isOpened
+  disabled
+  name
+  info
+  isSimCardClosed
+}
+
 @CustomDialog
 export default struct StopSim {
   controller: CustomDialogController;
   action: (stop) => void;
-  curEditList: any = [];
-  title: any = '';
+  curEditList: CardInfoStruct = new CardInfoStruct();
+  title: Resource = $r('app.string.sim_card_one_no_space');
   cancel: (boolean) => void;
   @State isChange: boolean = false;
   SIM_CARD_Change = 'sim_card_management_card_change_boolean';
@@ -39,10 +49,9 @@ export default struct StopSim {
           .fontSize($r('sys.float.ohos_id_text_size_body1'))
           .fontWeight(FontWeight.Regular)
           .textAlign(TextAlign.Start)
-          .height(56)
         Flex({ justifyContent: FlexAlign.SpaceAround }) {
           Text($r('app.string.cancel'))
-            .fontSize('16vp')
+            .fontSize($r('sys.float.ohos_id_text_size_button1'))
             .onClick(() => {
               this.isChange = true;
               this.controller.close();
@@ -52,9 +61,14 @@ export default struct StopSim {
             .fontFamily("HarmonnyHeiTi")
             .lineHeight(21)
             .fontColor($r('sys.color.ohos_id_color_text_primary_activated'))
-          Divider().vertical(true).height(1).strokeWidth(1).lineCap(LineCapStyle.Round).opacity(0.5)
+          Divider()
+            .vertical(true)
+            .height(1)
+            .strokeWidth(1)
+            .lineCap(LineCapStyle.Round)
+            .opacity(0.5)
           Text($r('app.string.stop_use'))
-            .fontSize('16vp')
+            .fontSize($r('sys.float.ohos_id_text_size_button1'))
             .onClick(() => {
               this.isChange = false;
               this.controller.close();
@@ -66,10 +80,11 @@ export default struct StopSim {
             .fontColor($r('sys.color.ohos_id_color_text_primary_activated'))
         }
         .height(56)
-        .margin({ top: 18 })
+        .margin({ top: 8 })
+        .padding({ top: 12 })
       }
     }
-    .height(183)
+    .height(180)
     .padding({ left: 24, right: 24 })
   }
 }

@@ -125,6 +125,14 @@
       "value": "手机听筒"
     },
     {
+      "name": "wiredHeadset",
+      "value": "有线耳机"
+    },
+    {
+      "name": "blueetoothDevice",
+      "value": "蓝牙设备"
+    },
+    {
       "name": "mobileNetwork",
       "value": "无法访问移动网络。"
     },
@@ -207,6 +215,38 @@
     {
       "name": "end_holding_call",
       "value": "接听来电将挂断之前保持的通话"
+    },
+    {
+      "name": "READ_CONTACTS",
+      "value": "读取联系人"
+    },
+    {
+      "name": "SEND_MESSAGES",
+      "value": "发送短信"
+    },
+    {
+      "name": "GET_BUNDLE_INFO_PRIVILEGED",
+      "value": "获取绑定信息特权"
+    },
+    {
+      "name": "GET_TELEPHONY_STATE",
+      "value": "获取电话状态"
+    },
+    {
+      "name": "NOTIFICATION_CONTROLLER",
+      "value": "发送通知"
+    },
+    {
+      "name": "START_ABILITIES_FROM_BACKGROUND",
+      "value": "从后台启动的能力"
+    },
+    {
+      "name": "KEEP_BACKGROUND_RUNNING",
+      "value": "后台运行能力"
+    },
+    {
+      "name": "ANSWER_CALL",
+      "value": "接听电话"
     }
   ]
 }

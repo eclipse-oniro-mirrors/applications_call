@@ -12,71 +12,54 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import UpdataInfo from './dialog/upDataInfo'
-import StopSim from './dialog/stopSim'
-import EditSimInfo from './dialog/editSimInfo'
-import simServiceProxy from '../../model/simServiceProxy'
-import radioServiceProxy from '../../model/radioServiceProxy'
-import { registerSimStateChange, getMaxSimCount } from '../../model/registerSimStateApi'
+import UpdataInfo from './dialog/upDataInfo';
+import StopSim from './dialog/stopSim';
+import EditSimInfo from './dialog/editSimInfo';
+import simServiceProxy from '../../model/simServiceProxy';
+import radioServiceProxy from '../../model/radioServiceProxy';
+import { registerSimStateChange, getMaxSimCount } from '../../model/registerSimStateApi';
 import dataServiceProxy from '../../model/dataServiceProxy';
-import LogUtils from '../../common/utils/LogUtils'
+import LogUtils from '../../common/utils/LogUtils';
+import SimStateConst from '../utils/SimStateConst';
+import OperaNameStruct from '../struct/operaNameStruct';
+import SubscriberManager from '../utils/SubscriberManager';
 
 const TAG = "cardInformation"
 
+class CardInfoStruct {
+  id
+  title
+  isOpened
+  disabled
+  name
+  info
+  isSimCardClosed
+}
+
 @Component
 export default struct eSimSet {
-  @State list: any = [
-    {
-      id: 0,
-      title: $r('app.string.sim_card_one_no_space'),
-      isOpened: true,
-      disabled: true,
-      name: $r('app.string.sim_null_character'),
-      info: ''
-    },
-    {
-      id: 1,
-      title: $r('app.string.sim_card_two_no_space'),
-      isOpened: true,
-      disabled: true,
-      name: $r('app.string.sim_null_character'),
-      info: ''
-    }
-  ];
-/*  @State eSimCard: any =
-    {
-      title: '卡2',
-      subTitle: 'eSIM',
-      name: '添加eSIM',
-      info: '2G/3G/4G/5G'
-    };*/
+  @Link list: Array<CardInfoStruct>;
   @State flowCardId: number = 1;
   @State phone1Number: string = '';
   @State phone2Number: string = '';
-  @State title: any = '';
-  @State curEditList : any = [];
+  @State title: Resource = $r('app.string.sim_card_one_no_space');
+  @State curEditList: CardInfoStruct = new CardInfoStruct();
   @State isSimCardClosed: boolean = true;
   @State simName: string = '';
   @State phoneNumber: string = '';
-  @State simId: string = '';
-  @State index: number = 0;
-  @State storage: any = [];
   @State isChange: boolean = true;
   @State diaLing: number = 0;
   @State upisChange: boolean = true;
   @State isCancel: boolean = false;
-  @State isCard: boolean = true;
-  @Link  isCardChange: boolean;
-  @State listIndex: number = 0;
-  @State upDataTitle: any = '';
-  @State card1: boolean = true;
-  @State card2: boolean = true;
+  @Link isCardChange: boolean;
+  @State upDataTitle: Resource = $r('app.string.sim_card_one_no_space');
   @State isStop1: boolean = true;
   @State isStop2: boolean = true;
-  @Link simCardStop: boolean;
+  @State simCardStop: boolean = false;
   @Link changeCard: boolean;
   @Link isCardChange2: boolean;
-  @Link defaultSetString: any;
+  @Link defaultSetString: Resource;
+  @StorageLink("operatorName") @Watch('updateOperatorName') operatorRes: OperaNameStruct = new OperaNameStruct();
   timer = null;
   SIM_CARD_DEFAULT = 'sim_card_management_card_default_call';
   SIM_CARD_INFO = 'sim_card_management_storage_card_info';
@@ -121,24 +104,29 @@ export default struct eSimSet {
       } }),
     alignment: DialogAlignment.Bottom,
     autoCancel: false,
-    offset: { dx: 0, dy: -30 }
+    offset: { dx: 0, dy: -16 }
   })
   stopSim: CustomDialogController = new CustomDialogController({
-    builder: StopSim({ curEditList: this.curEditList, title: this.title, isChange: $isChange, cancel: (isChange) => {
-      this.isCancel = true;
-      if (this.curEditList.id === 0) {
-        this.list[0].isOpened = true;
-      } else {
-        this.list[1].isOpened = true;
-      };
-      this.simCardStop = isChange
-    },
+    builder: StopSim({
+      curEditList: this.curEditList,
+      title: this.title,
+      isChange: $isChange,
+      cancel: (isChange) => {
+        this.isCancel = true;
+        if (this.curEditList.id === 0) {
+          this.list[0].isOpened = true;
+        } else {
+          this.list[1].isOpened = true;
+        };
+        this.simCardStop = isChange;
+      },
       action: (stop) => {
         this.defaultSetString = $r('app.string.sim_null_character');
         if (this.curEditList.id === 0) {
           this.setSimActive(0, false)
           this.list[0].name = $r('app.string.sim_not_enabled');
           this.isStop1 = false;
+          this.list[0].isOpened = false;
           this.isStop2 = true;
           this.changeCard = false;
           this.isCardChange = false
@@ -146,6 +134,7 @@ export default struct eSimSet {
           this.changeCard = true;
           this.setSimActive(1, false)
           this.list[1].name = $r('app.string.sim_not_enabled');
+          this.list[1].isOpened = false;
           this.isStop1 = true;
           this.isStop2 = false;
           this.isCardChange = true;
@@ -154,7 +143,7 @@ export default struct eSimSet {
     }),
     alignment: DialogAlignment.Bottom,
     autoCancel: false,
-    offset: { dx: 0, dy: -30 }
+    offset: { dx: 0, dy: -16 }
   })
   updataInfo: CustomDialogController = new CustomDialogController({
     builder: UpdataInfo({ title: this.upDataTitle, isChange: this.upisChange }),
@@ -188,6 +177,7 @@ export default struct eSimSet {
     if (!boolean) {
     };
     this.upisChange = boolean;
+    item.isOpened = boolean;
   };
 
   UpdataInfo(v) {
@@ -203,26 +193,18 @@ export default struct eSimSet {
    * Get the customized mobile phone number set by the user
    */
   getShowNumber(slotId) {
-    simServiceProxy.getShowNumber(slotId).then((res: any) => {
+    simServiceProxy.getShowNumber(slotId).then((res: string) => {
       if (!slotId) {
         if (res === 'null') {
           this.getPhoneNumber(0)
         } else {
-          if (slotId) {
-            this.phone2Number = res;
-          } else {
-            this.phone1Number = res;
-          }
+          this.phone1Number = res;
         }
       } else {
         if (res === 'null') {
           this.getPhoneNumber(1)
         } else {
-          if (slotId) {
-            this.phone2Number = res;
-          } else {
-            this.phone1Number = res;
-          }
+          this.phone2Number = res;
         }
       };
     }).catch((err) => {
@@ -274,30 +256,39 @@ export default struct eSimSet {
    */
   hasSimCard(slotId) {
     simServiceProxy.hasSimCard(slotId).then((res: boolean) => {
-      this.isSimCardClosed = res;
+      LogUtils.i(TAG, "getSimState: hasSimCard card : " + JSON.stringify(slotId) + "  " + JSON.stringify(res));
+      this.list[slotId].isSimCardClosed = res;
+      this.list[slotId] = { ...this.list[slotId] }
       this.isChange = !this.isChange;
     }).catch((err) => {
     })
   }
 
+  updateOperatorName() {
+    this.list[this.operatorRes.CUR_SLOT_ID].name = this.operatorRes.CUR_PLMN;
+    this.hasSimCard(0);
+    this.hasSimCard(1);
+    this.onInit();
+    this.list[this.operatorRes.CUR_SLOT_ID] = { ...this.list[this.operatorRes.CUR_SLOT_ID] }
+  }
   /**
    * Get card status
    */
   async getSimState(slotId) {
     this.getSupportNetwork(slotId);
     this.hasSimCard(slotId);
-    this.isSimActive(slotId);
     simServiceProxy.getSimState(slotId).then((res: number) => {
-      if (![4, 5].indexOf(res)) {
+      LogUtils.i(TAG, "getSimstate: id" + JSON.stringify(slotId) + JSON.stringify(res));
+      if (res === SimStateConst.SIM_STATE_READY || res === SimStateConst.SIM_STATE_LOADED) {
         this.list[slotId].disabled = true;
         this.list[slotId].isOpened = true;
         this.getShowName(slotId);
         this.getShowNumber(slotId);
-      } else if (![2, 3].indexOf(res)) {
+      } else if (res === SimStateConst.SIM_STATE_NOT_READY || res === SimStateConst.SIM_STATE_LOCKED) {
         this.list[slotId].name = $r('app.string.sim_no_service');
         this.list[slotId].isOpened = false;
         this.getShowNumber(slotId);
-      } else if (![1].indexOf(res) && !this.isSimCardClosed) {
+      } else if (res === SimStateConst.SIM_STATE_NOT_PRESENT) {
         this.list[slotId].name = $r('app.string.sim_no_card_inserted');
         this.list[slotId].isOpened = false;
         if (slotId) {
@@ -307,10 +298,9 @@ export default struct eSimSet {
         }
         this.list[slotId].disabled = false;
         this.list[slotId].info = '4G/3G/2G';
-      } else if (![-1].indexOf(res)) {
+      } else {
         this.list[slotId].info = '4G/3G/2G';
         this.list[slotId].disabled = false;
-        this.list[slotId].isOpened = false;
         this.list[slotId].isOpened = false;
         if (slotId) {
           this.phone2Number = '';
@@ -352,7 +342,7 @@ export default struct eSimSet {
       } else {
         this.phone2Number = res;
       }
-    }).catch((err) => {
+    }).catch(() => {
       this.phone2Number = '';
     })
   }
@@ -376,25 +366,32 @@ export default struct eSimSet {
    */
   isSimActive(slotId) {
     simServiceProxy.isSimActive(slotId).then((res) => {
-      if (!res && this.isSimCardClosed) {
+      LogUtils.i(TAG, "isSimActive id" + JSON.stringify(slotId) + "  " + JSON.stringify(res));
+      if (!res && this.list[slotId].isSimCardClosed) {
         this.list[slotId].isOpened = false;
-        this.list[slotId].name = $r('app.string.sim_not_enabled');
+        this.list[slotId].name = $r('app.string.not_set');
         this.list[slotId].info = '4G/3G/2G';
+      } else if (res && this.list[slotId].isSimCardClosed) {
+        this.list[slotId].isOpened = true;
+        this.getShowName(slotId);
+        this.getShowNumber(slotId);
+        this.list[slotId] = { ...this.list[slotId] };
       }
     }).catch((err) => {
       this.list[slotId].isOpened = false;
-    })
+    });
   }
 
   getSupportNetwork(slotId) {
     radioServiceProxy.getSupportNetwork(slotId).then((res) => {
+      LogUtils.i(TAG, "4g/3g/2g/:" + JSON.stringify(slotId) + "   " + JSON.stringify(res));
       if (res) {
         this.list[slotId].info = '5G/4G/3G/2G';
       } else {
         this.list[slotId].info = '4G/3G/2G';
       }
     }).catch((err) => {
-    })
+    });
   }
 
   /**
@@ -418,20 +415,26 @@ export default struct eSimSet {
   addRegisterSimStateChange(slotId) {
     registerSimStateChange(slotId, async () => {
       this.getSimState(slotId);
-      this.isChange = !this.isChange
+      this.isChange = !this.isChange;
+      this.simCardStop = this.list[0].isOpened && this.list[1].isOpened;
+      this.list[slotId] = { ...this.list[slotId] };
+      this.editSimInfo.close();
     })
   }
 
   setDefaultDataSlotId(slotId) {
-    dataServiceProxy.setDefaultDataSlotId(slotId)
+    dataServiceProxy.setDefaultDataSlotId(slotId);
   }
 
   aboutToAppear() {
+    LogUtils.i(TAG, "aboutToAppear");
     this.onInit();
     if (getMaxSimCount() === 2) {
       this.addRegisterSimStateChange(1);
+      this.isSimActive(1);
     }
     this.addRegisterSimStateChange(0);
+    this.isSimActive(0);
     this.isChange = !this.isChange;
   }
 
@@ -441,29 +444,49 @@ export default struct eSimSet {
         Row() {
           Stack() {
             Image($r('app.media.phone')).width(62).height(42)
-            Text(this.list[0].title).fontSize('12vp').fontColor('#333333')
-              .align(Alignment.Start)
+            Text(this.list[0].title)
+              .fontSize('12vp')
+              .fontColor('#333333')
               .lineHeight(21)
               .fontWeight(FontWeight.Regular)
               .fontFamily("HarmonyHeiTi")
+              .margin({ right: 30 })
           }
 
           Column() {
-            Text(this.list[0].name).fontSize('16vp').margin({
-              bottom: 2
-            }).fontFamily("HarmonyHeiTi").fontWeight(FontWeight.Medium)
+            Text(this.list[0].name)
+              .fontSize('16vp')
+              .margin({
+                bottom: 2
+              })
+              .fontFamily("HarmonyHeiTi")
+              .fontWeight(FontWeight.Medium)
               .lineHeight(22)
-            Text(this.phone1Number).fontColor('#555').fontSize('14vp').margin({ bottom: this.phone2Number ? 0 : 2 })
-              .lineHeight(19).fontFamily("HarmonyHeiTi").fontWeight(FontWeight.Regular)
-            Text(this.list[0].info).fontColor(this.isChange ? '#555' : '#555').fontSize('14vp')
-              .lineHeight(19).fontFamily("HarmonyHeiTi").fontWeight(FontWeight.Regular)
+            Text(this.phone1Number)
+              .fontColor('#555')
+              .fontSize('14vp')
+              .margin({ bottom: this.phone2Number ? 0 : 2 })
+              .lineHeight(19)
+              .fontFamily("HarmonyHeiTi")
+              .fontWeight(FontWeight.Regular)
+            Text(this.list[0].info)
+              .fontColor(this.isChange ? '#555' : '#555')
+              .fontSize('14vp')
+              .lineHeight(19)
+              .fontFamily("HarmonyHeiTi")
+              .fontWeight(FontWeight.Regular)
           }
           .margin({ left: 16 })
+          .opacity(this.list[0].isOpened ? 1 : 0.4)
 
-          Image($r('app.media.redact')).width('15vp').height('15vp')
+          Image($r('app.media.redact'))
+            .width('15vp')
+            .height('15vp')
             .onClick(() => {
               this.edit(this.list[0])
-            }).margin({ left: 20 }).enabled(this.list[0].isOpened)
+            })
+            .margin({ left: 20 })
+            .enabled(this.list[0].isOpened)
         }
 
         Row() {
@@ -522,7 +545,7 @@ export default struct eSimSet {
             })
         }
       }
-      .opacity(this.list[0].isOpened ? 1 : 0.4)
+      .opacity(this.list[0].isOpened ? 1 : 0.6)
       .enabled(this.list[0].disabled)
       .padding({
         left: 12,
@@ -532,9 +555,8 @@ export default struct eSimSet {
       })
       .height(104)
       .width("100%")
-      .borderRadius($r('app.float.radius_24'))
+      .borderRadius($r('app.float.radius_16'))
       .backgroundColor($r("sys.color.ohos_id_color_foreground_contrary"))
-
 
       Column() {
       }
@@ -545,28 +567,48 @@ export default struct eSimSet {
         Row() {
           Stack() {
             Image($r('app.media.phone')).width(62).height(42)
-            Text(this.list[1].title).fontSize('12vp').fontColor('#333333')
+            Text(this.list[1].title)
+              .fontSize('12vp')
+              .fontColor('#333333')
               .align(Alignment.Start)
               .lineHeight(21)
               .fontWeight(FontWeight.Regular)
               .fontFamily("HarmonyHeiTi")
+              .margin({ right: 30 })
           }
 
           Column() {
-            Text(this.list[1].name).fontSize('16vp').margin({ bottom: 2 })
-              .fontFamily("HarmonyHeiTi").fontWeight(FontWeight.Medium)
+            Text(this.list[1].name)
+              .fontSize('16vp')
+              .margin({ bottom: 2 })
+              .fontFamily("HarmonyHeiTi")
+              .fontWeight(FontWeight.Medium)
               .lineHeight(22)
-            Text(this.phone2Number).fontColor('#555').fontSize('14vp').margin({ bottom: this.phone2Number ? 0 : 2 })
-              .lineHeight(19).fontFamily("HarmonyHeiTi").fontWeight(FontWeight.Regular)
-            Text(this.list[1].info).fontColor(this.isChange ? '#555' : '#555').fontSize('14vp')
-              .lineHeight(19).fontFamily("HarmonyHeiTi").fontWeight(FontWeight.Regular)
+            Text(this.phone2Number)
+              .fontColor('#555')
+              .fontSize('14vp')
+              .margin({ bottom: this.phone2Number ? 0 : 2 })
+              .lineHeight(19)
+              .fontFamily("HarmonyHeiTi")
+              .fontWeight(FontWeight.Regular)
+            Text(this.list[1].info)
+              .fontColor(this.isChange ? '#555' : '#555')
+              .fontSize('14vp')
+              .lineHeight(19)
+              .fontFamily("HarmonyHeiTi")
+              .fontWeight(FontWeight.Regular)
           }
           .margin({ left: 16 })
+          .opacity(this.list[1].isOpened ? 1 : 0.4)
 
-          Image($r('app.media.redact')).width('15vp').height('15vp')
+          Image($r('app.media.redact'))
+            .width('12vp')
+            .height('12vp')
             .onClick(() => {
               this.edit(this.list[1]);
-            }).margin({ left: 20 }).enabled(this.list[1].isOpened)
+            })
+            .margin({ left: 4 })
+            .enabled(this.list[1].isOpened)
         }
 
         Row() {
@@ -625,7 +667,8 @@ export default struct eSimSet {
             })
         }
       }
-      .opacity(this.list[1].isOpened ? 1 : 0.4)
+      .height(104)
+      .opacity(this.list[1].isOpened ? 1 : 0.6)
       .enabled(this.list[1].disabled)
       .padding({
         left: 12,
@@ -635,7 +678,7 @@ export default struct eSimSet {
       })
       .width("100%")
       .backgroundColor($r("sys.color.ohos_id_color_foreground_contrary"))
-      .borderRadius($r('app.float.radius_24'))
+      .borderRadius($r('app.float.radius_16'))
     }
     .width('100%')
   }

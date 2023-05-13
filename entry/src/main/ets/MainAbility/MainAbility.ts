@@ -1,16 +1,14 @@
 import Ability from '@ohos.app.ability.UIAbility'
 import LogUtils from '../common/utils/LogUtils'
 import CallManager from '../model/CallManager'
-import GlobalThisHelper from '../common/utils/GlobalThisHelper'
-import Constants from '../common/utils/Constants'
 
 const TAG = "MainAbility";
 
 export default class MainAbility extends Ability {
   onCreate(want, launchParam) {
     LogUtils.i(TAG, "onCreate")
-    GlobalThisHelper.set<any>(Constants.GLOBALTHIS_ABILITY_WANT, want);
-    GlobalThisHelper.set<any>(Constants.GLOBALTHIS_CONTEXT, this.context);
+    globalThis.abilityWant = want;
+    globalThis.calluiAbilityContext = this.context;
   }
 
   onWindowStageCreate(windowStage) {

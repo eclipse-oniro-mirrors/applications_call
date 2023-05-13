@@ -18,7 +18,7 @@ import { getString } from '../../utils/Utils'
 export default struct UpdataInfo {
   controller: CustomDialogController;
   action: () => void;
-  title: any = '';
+  title: Resource = $r('app.string.sim_card_one_no_space');
   cancel: () => void;
   isChange: boolean;
 

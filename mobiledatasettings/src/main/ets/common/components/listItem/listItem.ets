@@ -36,8 +36,8 @@ export default struct listItem {
   @Prop isDisabled: boolean;
   @Prop cardType: number;
   @Link controlSwitch: boolean;
-  @State title: any = '';
-  @State describe: any = '';
+  @State title: Resource = $r('app.string.mobile_data_dataRoaming');
+  @State describe: Resource = $r('app.string.mobile_data_enableDataWhileRoaming');
   @Prop isSupport: boolean;
   @State titleopacity: boolean = false;
   @Prop isCon: number;
@@ -48,7 +48,7 @@ export default struct listItem {
     builder: dataRomingDialog({ isCon: this.isCon, isMsg: $controlSwitch, cardType: this.cardType }),
     alignment: DialogAlignment.Bottom,
     autoCancel: false,
-    offset: { dx: 0, dy: -10 }
+    offset: { dx: 0, dy: -16 }
   })
 
   clickHandle() {
@@ -71,14 +71,14 @@ export default struct listItem {
 
   build() {
     Column() {
-      Row({}) {
+      Row() {
         Flex({ justifyContent: FlexAlign.SpaceBetween, alignItems: ItemAlign.Center }) {
           Column() {
             Text(this.title)
               .fontFamily('HarmonyHeiTi')
-              .fontSize(16)
+              .fontSize($r('sys.float.ohos_id_text_size_body1'))
               .fontWeight(FontWeight.Medium)
-              .fontColor('#000')
+              .fontColor($r('sys.color.ohos_id_color_text_primary'))
               .opacity(this.controlSwitch ? 0.9 : 0.6)
               .visibility(this.isSupport ? Visibility.None : Visibility.Visible)
               .letterSpacing(1)
@@ -87,12 +87,13 @@ export default struct listItem {
             Text(this.describe)
               .margin({ top: 2 })
               .fontFamily('HarmonyHeiTi')
-              .fontSize(14)
-              .fontColor('#555')
+              .fontWeight(FontWeight.Regular)
+              .fontSize($r('sys.float.ohos_id_text_size_body2'))
+              .fontColor($r('sys.color.ohos_id_color_text_secondary'))
               .opacity(0.6)
               .lineHeight(19)
               .letterSpacing(1)
-              .visibility(this.describe == '' ? Visibility.None : Visibility.Visible)
+              .visibility(this.describe == $r("app.string.mobile_empty_string") ? Visibility.None : Visibility.Visible)
           }
           .width('100%')
           .alignItems(HorizontalAlign.Start)
@@ -103,10 +104,6 @@ export default struct listItem {
           })
           .enabled(this.isDisabled)
 
-          Image($r('app.media.right'))
-            .width(16)
-            .height(18)
-            .visibility(!this.isBtn ? Visibility.Visible : Visibility.None)
           Toggle({ type: ToggleType.Switch, isOn: this.controlSwitch })
             .width(36)
             .height(20)
@@ -115,7 +112,6 @@ export default struct listItem {
               this.controlSwitch = !this.controlSwitch;
               LogUtils.i(TAG, 'onclick cardType is :' + JSON.stringify(this.cardType) + 'switcher is:' + JSON.stringify(this.isCon) + "Switch status:" + this.controlSwitch);
               if (this.controlSwitch && this.isCon === 0) {
-                this.dialogTitle = this.title;
                 this.recordTypeDialog.open();
               } else if (this.controlSwitch == false && this.isCon === 0) {
                   this.cardType === 0 ? disableCellularDataRoamingCardOne() : disableCellularDataRoamingCardTwo();
@@ -132,7 +128,7 @@ export default struct listItem {
     }
     .backgroundColor($r("sys.color.ohos_id_color_foreground_contrary"))
     .opacity(this.isDisabled ? 1 : 0.4)
-    .margin({ top: 10, bottom: this.isSupport ? 5 : 11 })
+    .margin({ top: 8, bottom: this.isSupport ? 5 : 11 })
     .onClick(() => {
       if (!this.isDisabled) {
         return;
@@ -163,7 +159,6 @@ struct dataRomingDialog {
           .fontSize($r('sys.float.ohos_id_text_size_body1'))
           .fontWeight(FontWeight.Regular)
           .textAlign(TextAlign.Start)
-          .height(56)
           .fontFamily('HarmonyHeiTi')
           .letterSpacing(3)
           .visibility(this.isCon == 0 ? Visibility.Visible : Visibility.None)
@@ -174,9 +169,9 @@ struct dataRomingDialog {
         Text(publiccontent.strings.cancel)
           .fontWeight(FontWeight.Medium)
           .fontFamily("HarmonnyHeiTi")
-          .lineHeight(21)
+          .height(21)
           .fontColor($r('sys.color.ohos_id_color_text_primary_activated'))
-          .fontSize(16)
+          .fontSize($r('sys.float.ohos_id_text_size_button1'))
           .onClick(() => {
             LogUtils.i(TAG, "dataRomingDialog onclick cancel");
             this.controller.close();
@@ -187,19 +182,20 @@ struct dataRomingDialog {
         Text(publiccontent.strings.confirm)
           .fontWeight(FontWeight.Medium)
           .fontFamily("HarmonnyHeiTi")
-          .lineHeight(21)
+          .height(21)
           .fontColor($r('sys.color.ohos_id_color_text_primary_activated'))
-          .fontSize(16)
+          .fontSize($r('sys.float.ohos_id_text_size_button1'))
           .onClick(() => {
             LogUtils.i(TAG, "dataRomingDialog onclick confim toggletype: " + JSON.stringify(this.isCon) + " for cardtype:" + JSON.stringify(this.cardType));
             this.controller.close();
             this.isMsg = true;
-              this.cardType == 0 ? enableCellularDataRoamingCardOne() : enableCellularDataRoamingCardTwo();
+            this.cardType == 0 ? enableCellularDataRoamingCardOne() : enableCellularDataRoamingCardTwo();
           })
       }
-      .margin({ top: 18 })
+      .margin({ top: 8 })
+      .height(56)
+      .padding({top: 12})
     }
-    .height(183)
     .padding({ left: 24, right: 24 })
     .borderRadius(20)
   }

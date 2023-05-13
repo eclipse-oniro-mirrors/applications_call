@@ -81,36 +81,34 @@ export default class NotificationManager {
     }
     notificationRequest.wantAgent = wantAgentObj;
     notificationRequest.actionButtons = [];
+
     if (actionBtnKeys.length) {
       for (const key of actionBtnKeys) {
         const data = {
           callId, btnType: key
         };
+        LogUtils.i(TAG, "sendNotification getResourceManager key:" + JSON.stringify(key));
         const wantAgentObj = await this.getWantAgent(data, SEND_COMMON_EVENT);
-        GlobalThisHelper.get<any>(Constants.GLOBALTHIS_CONTEXT)?.resourceManager.getString(textMap[key].id, (error, value) => {
-          if (error != null) {
-            LogUtils.i(TAG, "sendNotification getResourceManager getString err");
-          } else {
-            LogUtils.i(TAG, "sendNotification getResourceManager getString value" + value);
-            notificationRequest.actionButtons.push({
-              title: value,
-              wantAgent: wantAgentObj
-            });
-            Object.assign(notificationRequest.content.longText, {
-              title: titleName,
-              text: expandedName,
-              expandedTitle: titleName,
-              longText: expandedName
-            });
-            notification.publish(notificationRequest).then((data) => {
-              LogUtils.i(TAG, "sendNotification publish success")
-            }).catch((err) => {
-              LogUtils.i(TAG, "sendNotification public err" + JSON.stringify(err))
-            });
-          }
+        const title = globalThis.calluiAbilityContext?.resourceManager.getStringSync(textMap[key]);
+        LogUtils.i(TAG, "sendNotification getResourceManager textMap[key].id:" + JSON.stringify(title));
+        notificationRequest.actionButtons.push({
+          title: title,
+          wantAgent: wantAgentObj
         });
+        LogUtils.i(TAG, "sendNotification getResourceManager notificationRequest.actionButtons.push:" + JSON.stringify(notificationRequest.actionButtons));
       }
     }
+    Object.assign(notificationRequest.content.longText, {
+      title: titleName,
+      text: expandedName,
+      expandedTitle: titleName,
+      longText: expandedName
+    });
+    notification.publish(notificationRequest).then((data) => {
+      LogUtils.i(TAG, "sendNotification publish success")
+    }).catch((err) => {
+      LogUtils.i(TAG, "sendNotification public err" + JSON.stringify(err))
+    });
     LogUtils.i(TAG, "sendNotification end :")
   }
 

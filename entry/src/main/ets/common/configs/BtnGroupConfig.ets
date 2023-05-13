@@ -91,7 +91,7 @@ const secondBtns = [
     iconDisableUrl: 'ic_merge_Grey',
     iconDefaultUrl: 'ic_merge',
     iconActiveUrl: 'ic_merge_Enabled',
-    isDisable: false,
+    isDisable: true,
     isActive: false,
     iconText: ''
   }

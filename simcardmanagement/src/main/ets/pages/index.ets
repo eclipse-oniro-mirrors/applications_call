@@ -16,14 +16,16 @@
  SIM_CARD_INFO */
 import HeadComponent from '../common/components/headComponent'
 import CardInfomation from '../common/components/cardInfomation'
-import CardSetData from '../common/config/cardSetData';
 import SetFlowLimit from '../common/components/dialog/setFlowLimit'
 import DefaultDialCard from '../common/components/dialog/defalutDialing'
-import cardInfoData from '../common/config/cardInfoData';
 import dataServiceProxy from '../model/dataServiceProxy';
 import simServiceProxy from '../model/simServiceProxy'
 import DefaultCard from '../common/components/defaultCard'
 import LogUtils from '../common/utils/LogUtils'
+import { registerSimStateChange, getMaxSimCount } from '../model/registerSimStateApi'
+import SubscriberManager from '../common/utils/SubscriberManager'
+import { getPrimarySlotId } from '../model/radioServiceProxy'
+import OperaNameStruct from '../common/struct/operaNameStruct';
 
 export const CARD_HOT_PULL_PLUG = {
   HOT_PULL: 1,
@@ -31,33 +33,55 @@ export const CARD_HOT_PULL_PLUG = {
 };
 
 const TAG = "Index"
+class CardInfoStruct {
+  id
+  title
+  isOpened
+  disabled
+  name
+  info
+  isSimCardClosed
+}
 
 @Entry
 @Component
 struct Index {
   scroller: Scroller = new Scroller();
-  @State simId: string = '';
+  @State list: Array<CardInfoStruct> = [
+    {
+      id: 0,
+      title: $r('app.string.sim_card_one_no_space'),
+      isOpened: false,
+      disabled: true,
+      name: $r('app.string.sim_null_character'),
+      info: '',
+      isSimCardClosed: false
+    },
+    {
+      id: 1,
+      title: $r('app.string.sim_card_two_no_space'),
+      isOpened: false,
+      disabled: true,
+      name: $r('app.string.sim_null_character'),
+      info: '',
+      isSimCardClosed: false
+    }
+  ];
   @State isShow: boolean = false;
   @State isShow2: boolean = false;
   private number1: string = '';
   private number2: string = '';
-  @State phoneNumber: boolean = false;
-  @State cardData: any = JSON.parse(JSON.stringify(CardSetData));
-  @State isRegisterObserver: boolean = false;
   @State defaultDataChange: boolean = true;
   @State isStop: boolean = true;
-  @State defaultset: any = '';
-  @State closeTransfer: boolean = false;
-  @State list: any = [
-    JSON.parse(JSON.stringify(cardInfoData)),
-    JSON.parse(JSON.stringify(cardInfoData))
-  ];
+  @State defaultSet: Resource = $r('app.string.not_set');
+  @State simActive: boolean = false;
+  @StorageLink("operatorName") @Watch('updateInfo') operatorInfo: OperaNameStruct = new OperaNameStruct();
   SIM_CARD_STOP = 'sim_card_management_card_stop_boolean';
   SIM_CARD_Change = 'sim_card_management_card_change_boolean';
   SIM_CARD_DEFAULT = 'sim_card_management_card_default_call';
   SIM_CARD_TRANSFER = 'sim_card_management_transfer';
   SIM_CARD_TRANSFER2 = 'sim_card_management_transfer2';
-  SHOW_CHANGE = 'sim_change_data'
+  SHOW_CHANGE = 'sim_change_data';
   setFlowLimit: CustomDialogController = new CustomDialogController({
     builder: SetFlowLimit({ change: this.defaultDataChange }),
     alignment: DialogAlignment.Bottom,
@@ -65,17 +89,14 @@ struct Index {
     offset: { dx: 0, dy: -30 }
   })
   defaultDialCard: CustomDialogController = new CustomDialogController({
-    builder: DefaultDialCard({ action: (v) => {
-      this.defaultset = v;
-    }}),
+    builder: DefaultDialCard({ defaultSet: $defaultSet,
+      action: (v) => {
+        this.defaultSet = v;
+      } }),
     alignment: DialogAlignment.Bottom,
     autoCancel: false,
-    offset: { dx: 0, dy: -30 }
+    offset: { dx: 0, dy: -16 }
   })
-
- /* set(item) {
-    this.setFlowLimit.open();
-  };*/
 
   defaultCard() {
     LogUtils.i(TAG, "onclick defaultDialCard open")
@@ -96,7 +117,7 @@ struct Index {
       } else {
         this.getPhoneNumber(slotId);
       }
-    })
+    });
   }
 
   /**
@@ -116,15 +137,44 @@ struct Index {
    * Get the default voice sim card
    */
   getDefaultVoiceSlotld() {
-    simServiceProxy.getDefaultVoiceSlotId().then((res: string) => {
-      if (res == '0') {
-        this.defaultset = $r('app.string.sim_card_one_no_space');
-      } else if (res == '1') {
-        this.defaultset = $r('app.string.sim_card_two_no_space');
+    simServiceProxy.getDefaultVoiceSlotId().then((res: number) => {
+      LogUtils.i(TAG, "isSimActive getDefaultVoiceSlotId:" + "  " + JSON.stringify(res));
+      if (res === 0 || res === 1) {
+        this.isSimActive(res);
       } else {
-        this.defaultset = $r('app.string.not_set');
+        this.defaultSet = $r('app.string.not_set');
       }
+    }).catch((err) => {
+      this.defaultSet = $r('app.string.not_set');
     })
+  }
+
+  isSimActive(slotId) {
+    simServiceProxy.isSimActive(slotId).then((res: boolean) => {
+      LogUtils.i(TAG, "isSimActive simServiceProxy.isSimActive:" + JSON.stringify(slotId) + "  " + JSON.stringify(res));
+      this.simActive = res;
+      if (res) {
+        if (slotId === 0) {
+          this.defaultSet = $r('app.string.sim_card_one_no_space');
+        }
+        else if (slotId === 1) {
+          this.defaultSet = $r('app.string.sim_card_two_no_space');
+        } else {
+          this.defaultSet = $r('app.string.not_set');
+        }
+      } else {
+        this.defaultSet = $r('app.string.not_set');
+      }
+    }).catch((err) => {
+      this.defaultSet = $r('app.string.not_set');
+    })
+  }
+
+  updateInfo() {
+    this.getShowNumber(0);
+    this.getShowNumber(1);
+    this.getDefaultVoiceSlotld();
+    this.getDefaultDataSlotId();
   }
 
   setDefaultDataSlotId(slotId) {
@@ -132,27 +182,52 @@ struct Index {
   }
 
   aboutToAppear() {
-    LogUtils.i(TAG, "aboutToAppear")
+    LogUtils.i(TAG, "aboutToAppear:");
+    SubscriberManager.registerSubscriber();
+
+    if (getMaxSimCount() >= 2) {
+      this.addRegisterSimStateChange(1);
+    }
+    this.addRegisterSimStateChange(0);
   }
 
   getDefaultDataSlotId() {
-    dataServiceProxy.getDefaultDataSlotId().then((res) => {
-      if (res === 1) {
-        this.defaultDataChange = false;
-      } else {
-        this.defaultDataChange = true;
-      }
-    })
+    if (this.list[0].isSimCardClosed && this.list[1].isSimCardClosed) {
+      dataServiceProxy.getDefaultDataSlotId().then((res) => {
+        this.setDefaultDataChange(res);
+      })
+    } else {
+      getPrimarySlotId().then((res) => {
+        LogUtils.i(TAG, "getPrimarySlotId: then: " + JSON.stringify(res));
+        this.setDefaultDataChange(res);
+      });
+    }
+  }
+
+  setDefaultDataChange(res) {
+    if (res === 1) {
+      this.defaultDataChange = false;
+    } else {
+      this.defaultDataChange = true;
+    }
   }
 
   onPageShow() {
-    LogUtils.i(TAG, "onPageShow start ")
-    this.getShowNumber(0);
-    this.getShowNumber(1);
-    this.getDefaultVoiceSlotld();
-    this.getDefaultDataSlotId();
-
+    LogUtils.i(TAG, "onPageShow start ");
+    this.updateInfo();
     LogUtils.i(TAG, "onPageShow end ")
+  }
+
+  addRegisterSimStateChange(slotId) {
+    registerSimStateChange(slotId, async (callStateInfo) => {
+      LogUtils.i(TAG, "registerSimStateChange:" + JSON.stringify(callStateInfo));
+      this.updateInfo();
+      this.defaultDialCard.close();
+    })
+  }
+
+  aboutToDisappear() {
+    SubscriberManager.unsubscribe();
   }
 
   build() {
@@ -168,13 +243,13 @@ struct Index {
             .width("100%")
 
             CardInfomation({
-              simCardStop: $isStop,
+              list: $list,
               changeCard: $defaultDataChange,
               phone1Number: this.number1,
               phone2Number: this.number2,
               isCardChange: $defaultDataChange,
               isCardChange2: $isShow,
-              defaultSetString: $defaultset,
+              defaultSetString: $defaultSet,
             })
 
             Column() {
@@ -187,16 +262,17 @@ struct Index {
                 Text($r('app.string.default_mobile_data')).fontSize('16vp').fontFamily("HarmonyHeiTi").fontWeight(FontWeight.Medium).maxLines(1)
               }
               .opacity(this.isStop ? 1 : 0.4)
+              .opacity((this.list[0].isOpened && this.list[1].isOpened) ? 1 : 0.4)
               .align(Alignment.Center)
 
               Row() {
                 DefaultCard({ cardName: $r('app.string.card_1'),
                   cardTextBackgrounColor: this.defaultDataChange ? "#0A59F7" : "#FFFFFF",
                   cardTextColor: this.defaultDataChange ? "#FFFFFF" : "#0A59F7" })
-                  .opacity(this.isStop ? 1 : 0.4)
+                  .opacity((this.list[0].isOpened && this.list[1].isOpened) ? 1 : 0.4)
                   .onClick(() => {
                     LogUtils.i(TAG, "onclick defaultcard card one")
-                    this.setDefaultDataSlotId(0)
+                    this.setDefaultDataSlotId(0);
                     this.defaultDataChange = !this.defaultDataChange;
                   })
                   .margin({ right: 6 })
@@ -204,14 +280,14 @@ struct Index {
                 DefaultCard({ cardName: $r('app.string.card_2'),
                   cardTextBackgrounColor: this.defaultDataChange ? "#FFFFFF" : "#0A59F7",
                   cardTextColor: this.defaultDataChange ? "#0A59F7" : "#FFFFFF" })
-                  .opacity(this.isStop ? 1 : 0.4)
+                  .opacity((this.list[0].isOpened && this.list[1].isOpened) ? 1 : 0.4)
                   .onClick(() => {
                     LogUtils.i(TAG, "onclick defaultcard card two")
-                    this.setDefaultDataSlotId(1)
+                    this.setDefaultDataSlotId(1);
                     this.defaultDataChange = !this.defaultDataChange;
                   })
               }
-              .enabled(this.isStop)
+              .enabled((this.list[0].isOpened && this.list[1].isOpened))
               .margin({ right: 1 })
               .width(148)
               .height(40)
@@ -232,7 +308,8 @@ struct Index {
             })
             .width("100%")
             .backgroundColor($r("sys.color.ohos_id_color_foreground_contrary"))
-            .borderRadius($r('app.float.radius_24'))
+            .opacity((this.list[0].isOpened && this.list[1].isOpened) ? 1 : 0.6)
+            .borderRadius($r('app.float.radius_16'))
 
             Column() {
             }
@@ -242,21 +319,23 @@ struct Index {
             Flex({ justifyContent: FlexAlign.SpaceBetween, alignItems: ItemAlign.Center }) {
               Text($r('app.string.default_dial_card')).fontSize('16vp').fontFamily("HarmonyHeiTi").fontWeight(FontWeight.Medium).maxLines(1)
                 .lineHeight(21)
+                .opacity((this.list[0].isOpened && this.list[1].isOpened) ? 1 : 0.4)
+
               Row() {
-                Text(this.defaultset ? this.defaultset : $r('app.string.not_set')).fontSize(14).fontColor('#555').margin({
+                Text(this.defaultSet ? this.defaultSet : $r('app.string.not_set')).fontSize(14).fontColor('#555').margin({
                   right: 5
                 }).lineHeight(19)
                   .fontFamily("HarmonyHeiTi").fontWeight(FontWeight.Regular)
                 Image($r('app.media.next_icon')).height(20).width(12)
               }
+              .opacity((this.list[0].isOpened && this.list[1].isOpened) ? 1 : 0.4)
             }
-            .opacity(this.isStop ? 1 : 0.4)
-            .enabled(this.isStop)
+            .opacity((this.list[0].isOpened && this.list[1].isOpened) ? 1 : 0.6)
+            .enabled((this.list[0].isOpened && this.list[1].isOpened))
             .onClick(() => {
               this.defaultCard();
             })
             .height(60)
-            .backgroundColor('rgba(255, 255, 255, 1)')
             .padding({
               left: 12,
               right: 12,
@@ -265,7 +344,7 @@ struct Index {
             })
             .width("100%")
             .backgroundColor($r("sys.color.ohos_id_color_foreground_contrary"))
-            .borderRadius($r('app.float.radius_24'))
+            .borderRadius($r('app.float.radius_16'))
           }
           .useSizeType({
             sm: { span: 4, offset: 0 },

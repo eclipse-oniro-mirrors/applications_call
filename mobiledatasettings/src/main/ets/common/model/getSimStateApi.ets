@@ -17,8 +17,7 @@
  * @file: Obtaining card status
  */
 
-import { sim } from './api';
-import LogUtils from '../utils/LogUtils'
+import sim from '@ohos.telephony.sim';
 
 const TAG = "GetSimStateApi"
 

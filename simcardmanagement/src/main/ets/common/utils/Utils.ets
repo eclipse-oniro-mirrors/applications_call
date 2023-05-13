@@ -20,4 +20,3 @@ export function getString(value: Resource) {
   return globalThis.simCardAbilityContext.resourceManager.getStringSync(value);
 }
 
-

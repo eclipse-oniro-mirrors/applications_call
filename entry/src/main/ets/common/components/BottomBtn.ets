@@ -19,13 +19,16 @@
 
 import CallServiceProxy from '../../model/CallServiceProxy';
 import LogUtils from '../utils/LogUtils';
+import DefaultCallData from '../struct/TypeUtils';
+import CallListStruct from '../struct/CallListStruct'
 
 const TAG = "BottomBtn";
 
 @Component
 export default struct BottomBtn {
   onItemClick: Function = null;
-  @Link callData: any;
+  @Link callData: DefaultCallData;
+  @Link callList: Array<CallListStruct>;
   private mCallServiceProxy: CallServiceProxy;
   private imageList;
 
@@ -60,6 +63,11 @@ export default struct BottomBtn {
    */
   onHangUp() {
     this.mCallServiceProxy.hangUpCall(this.callData.callId);
+    if (this.callList.length === 1) {
+      globalThis.calluiAbilityContext?.terminateSelf().then((data) => {
+        LogUtils.i(TAG, "onHangUp terminateSelfCallBack");
+      });
+    }
     LogUtils.i(TAG, "onHangUp this.callData.callId : " + this.callData.callId);
   }
 

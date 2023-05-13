@@ -22,6 +22,9 @@ import Utils from '../utils/utils'
 import CallList from './CallList'
 import callStateConst from '../constant/CallStateConst';
 import CallUtils from '../utils/CallUtils'
+import DefaultCallData from '../struct/TypeUtils'
+import CallListStruct from '../struct/CallListStruct'
+import CallTimeListStruct from '../struct/CallTimeListStruct'
 
 const TAG = "MultiContactCard";
 
@@ -30,15 +33,18 @@ export default struct MultiContactCard {
   @State callStateText: string = '';
   @State dialing: string = '.';
   @Prop isShowKeyboard: boolean;
-  @Link callList: Array<any>;
-  @Link callData: any;
+  @Link callList: Array<CallListStruct>;
+  @Link callData: DefaultCallData;
+  @Link incomingData: DefaultCallData;
   @StorageLink("TextInput") textInput: string = '';
   @StorageLink("TextInputValue") textInputValue: string = '';
-  @StorageLink("CallTimeList") callTimeList: any = [];
+  @StorageLink("CallTimeList") callTimeList: Array<CallTimeListStruct> = [];
   @StorageLink("AccountNumber") accountNumber: string = '';
   @StorageLink("IsEmergencyPhoneNumber") isEmergencyPhoneNumber: boolean = false;
   @StorageLink("hasSimCard1") hasSimCard1: boolean = false;
   @StorageLink("hasSimCard2") hasSimCard2: boolean = false;
+  @State multiContactName: string = '';
+  @State multiContactNumber: string = '';
   private mUtils: Utils;
   private timer;
   private emergency = $r('app.string.emergency');
@@ -67,6 +73,20 @@ export default struct MultiContactCard {
     || this.callData.callState === CallStateConst.callStateObj.CALL_STATUS_INCOMING) && this.hasSimCard1 && this.hasSimCard2;
   }
 
+    getInComingCallState() {
+      let incomingState = false;
+      this.callList.forEach((v) => {
+        if (v.callState === CallStateConst.callStateObj.CALL_STATUS_WAITING || v.callState === CallStateConst.callStateObj.CALL_STATUS_INCOMING) {
+          this.incomingData = v;
+          this.multiContactName = v.contactName;
+          this.multiContactNumber = v.accountNumber;
+          incomingState = true;
+        }
+      });
+      LogUtils.i(TAG, "getInComingCallState incomingState:" + JSON.stringify(incomingState));
+      return incomingState;
+    }
+
   build() {
     GridRow({ columns: { sm: 4, md: 8, lg: 12 }, gutter: 24 }) {
       GridCol({ span: { sm: 4, md: 6, lg: 6 }, offset: { md: 1, lg: 3 } }) {
@@ -77,11 +97,10 @@ export default struct MultiContactCard {
               callData: $callData
             })
 
-            if (this.callData.callState === CallStateConst.callStateObj.CALL_STATUS_WAITING
-            || this.callData.callState === CallStateConst.callStateObj.CALL_STATUS_INCOMING) {
+            if (this.getInComingCallState()) {
               Column() {
                 if (!this.isShowKeyboard || this.isShowKeyboard && this.textInput.length === 0) {
-                  Text(this.isEmergencyPhoneNumber ? this.emergency : this.callData.contactName ? this.callData.contactName : this.callData.accountNumber)
+                  Text(this.isEmergencyPhoneNumber ? this.emergency : this.multiContactName ? this.multiContactName : this.multiContactNumber)
                     .fontSize(30)
                     .height(40)
                     .lineHeight(40)
@@ -89,13 +108,13 @@ export default struct MultiContactCard {
                     .fontColor('#FFFFFF')
                     .margin({ bottom: 8 })
 
-                  Text((this.callData.contactName || this.isEmergencyPhoneNumber) ? this.callData.accountNumber : '')
+                  Text((this.multiContactName || this.isEmergencyPhoneNumber) ? this.multiContactNumber : '')
                     .fontSize(14)
                     .height(19)
                     .lineHeight(19)
                     .fontColor('#FFFFFF')
                     .opacity(0.60)
-                    .visibility((this.callData.contactName || this.isEmergencyPhoneNumber) && !this.isShowKeyboard ? Visibility.Visible : Visibility.None)
+                    .visibility((this.multiContactName || this.isEmergencyPhoneNumber) && !this.isShowKeyboard ? Visibility.Visible : Visibility.None)
                 }
               }
               .margin({ top: 56 })

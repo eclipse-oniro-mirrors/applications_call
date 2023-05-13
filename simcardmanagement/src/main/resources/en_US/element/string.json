@@ -227,6 +227,18 @@
     {
       "name": "china_mobile",
       "value": "China Mobile"
+    },
+    {
+      "name": "GET_NETWORK_INFO",
+      "value": "get network info"
+    },
+    {
+      "name": "SET_TELEPHONY_STATE",
+      "value": "set telephony state"
+    },
+    {
+      "name": "GET_TELEPHONY_STATE",
+      "value": "get telephony state"
     }
   ]
 }
