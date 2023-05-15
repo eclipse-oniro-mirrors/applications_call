@@ -23,7 +23,6 @@ import commonEvent from '@ohos.commonEvent';
 import callStateConst from '../common/constant/CallStateConst';
 import LogUtils from '../common/utils/LogUtils';
 import Constants from '../common/utils/Constants';
-import GlobalThisHelper from '../common/utils/GlobalThisHelper';
 
 const TAG = "NotificationManager";
 const ID = 0;

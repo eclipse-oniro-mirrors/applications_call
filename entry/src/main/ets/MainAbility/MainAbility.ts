@@ -1,6 +1,6 @@
 import Ability from '@ohos.app.ability.UIAbility'
 import LogUtils from '../common/utils/LogUtils'
-import CallManager from '../model/CallManager'
+import CallManager from '../model/CallManager';
 
 const TAG = "MainAbility";
 
@@ -24,7 +24,7 @@ export default class MainAbility extends Ability {
     });
   }
 
-  onWindowStageDestroy() {
+  onWindowStageDestroy(): void {
     // Main window is destroyed, release UI related resources
     LogUtils.i(TAG, "onWindowStageDestroy")
   }
