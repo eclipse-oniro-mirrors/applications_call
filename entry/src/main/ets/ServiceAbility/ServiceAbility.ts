@@ -2,7 +2,7 @@ import Want from '@ohos.application.Want';
 import ServiceExtension from '@ohos.app.ability.ServiceExtensionAbility';
 import CallManagerService from './CallManagerService';
 import rpc from '@ohos.rpc';
-import LogUtils from "../common/utils/LogUtils";
+import LogUtils from '../common/utils/LogUtils';
 import DefaultCallData from '../common/struct/TypeUtils';
 
 const TAG = "ServiceAbility";
