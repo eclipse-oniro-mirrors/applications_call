@@ -46,16 +46,16 @@ export default class ContactManager {
       let context = globalThis.calluiAbilityContext;
       const dataAbilityHelper = await dataShare.createDataShareHelper(context, DBbaseUri);
       const resSet = await dataAbilityHelper.query(DBUri, predicates, columns);
-      LogUtils.i(TAG, "getContactInfo resSet : " + JSON.stringify(resSet.rowCount));
+      LogUtils.i(TAG, 'getContactInfo resSet : ' + JSON.stringify(resSet.rowCount));
       if (resSet.rowCount > 0) {
         resSet.goToFirstRow();
         callData.contactName = resSet.getString(resSet.getColumnIndex('display_name'));
       } else {
-        callData.contactName = "";
+        callData.contactName = '';
       }
       CallManager.getInstance().update(callData);
     } catch (err) {
-      LogUtils.i(TAG, "getContactInfo catch err : %s" + JSON.stringify(err));
+      LogUtils.i(TAG, 'getContactInfo catch err : ' + JSON.stringify(err));
     }
   }
 }

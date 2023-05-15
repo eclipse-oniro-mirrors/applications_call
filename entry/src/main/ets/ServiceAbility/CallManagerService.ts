@@ -54,7 +54,7 @@ export default class CallManagerService {
   }
 
 
-  public init(context) {
+  public init(context): void {
     this.mTelephonyCall = new TelephonyCall;
     this.addRegisterListener();
     this.addSubscriber();

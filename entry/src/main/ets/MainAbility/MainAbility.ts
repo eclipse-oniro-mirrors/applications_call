@@ -11,9 +11,9 @@ export default class MainAbility extends Ability {
     globalThis.calluiAbilityContext = this.context;
   }
 
-  onWindowStageCreate(windowStage) {
+  onWindowStageCreate(windowStage): void {
     // Main window is created, set main page for this ability
-    LogUtils.i(TAG, "onWindowStageCreate")
+    LogUtils.i(TAG, 'onWindowStageCreate');
     windowStage.setShowOnLockScreen(true);
     windowStage.loadContent("pages/index", (err, data) => {
       if (err.code) {
