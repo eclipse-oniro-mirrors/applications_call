@@ -17,7 +17,7 @@
  * @file: Interface for obtaining the card number
  */
 
-import { sim } from './api';
+import sim from '@ohos.telephony.sim';
 
 /**
  * Get cardOnePhoneNumber

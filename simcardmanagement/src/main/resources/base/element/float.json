@@ -123,6 +123,10 @@
     {
       "name": "radius_24",
       "value": "24vp"
+    },
+    {
+      "name": "radius_16",
+      "value": "16vp"
     }
   ]
 }

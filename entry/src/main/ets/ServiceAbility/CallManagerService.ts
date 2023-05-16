@@ -40,9 +40,21 @@ export default class CallManagerService {
   private mTelephonyCall: TelephonyCall ;
   private callData = null;
   private callList = [];
-  private context: any;
+  private context;
+  private static sCallManagerService: CallManagerService;
 
-  public constructor(context: any) {
+  public static getInstance(): CallManagerService {
+    if (!CallManagerService.sCallManagerService) {
+      CallManagerService.sCallManagerService = new CallManagerService();
+    }
+    return CallManagerService.sCallManagerService;
+  }
+
+  public constructor() {
+  }
+
+
+  public init(context): void {
     this.mTelephonyCall = new TelephonyCall;
     this.addRegisterListener();
     this.addSubscriber();
@@ -131,10 +143,10 @@ export default class CallManagerService {
      * single call or dialing pull up the application
      */
     if (callState === CALL_STATUS_INCOMING || callState === CALL_STATUS_WAITING || callState === CALL_STATUS_DIALING) {
-      if (this.callList.length > 1) {
-        this.publishData(callData)
-      }
       this.startAbility(callData);
+      if (this.callList.length > 1) {
+        this.publishData(callData);
+      }
     } else if (callState !== CALL_STATUS_DISCONNECTING) {
       this.publishData(callData);
     }

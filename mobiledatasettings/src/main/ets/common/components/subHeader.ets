@@ -14,7 +14,7 @@
  */
 @Component
 export struct SubHeader {
-  @State titleContent: any = '';
+  @State titleContent: Resource = $r('app.string.mobile_data_card1');
   @Prop subTitleContent: string;
 
   titleContenet() {

@@ -227,6 +227,18 @@
     {
       "name": "china_mobile",
       "value": "中国移动"
+    },
+    {
+      "name": "GET_NETWORK_INFO",
+      "value": "获取网络信息权限"
+    },
+    {
+      "name": "SET_TELEPHONY_STATE",
+      "value": "设置卡的状态"
+    },
+    {
+      "name": "GET_TELEPHONY_STATE",
+      "value": "获取卡的状态"
     }
   ]
 }

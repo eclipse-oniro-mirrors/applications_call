@@ -16,8 +16,8 @@
 /**
  * @file: Network mode interface
  */
-import { radio } from './api';
-import LogUtils from '../utils/LogUtils'
+import radio from '@ohos.telephony.radio';
+import LogUtils from '../utils/LogUtils';
 
 const TAG = "setPreferredNetworkModelApi"
 

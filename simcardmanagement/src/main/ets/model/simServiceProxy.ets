@@ -59,16 +59,16 @@ export function hasSimCard(slotId = 0) {
     try {
       sim.hasSimCard(slotId, (error, data) => {
         if (error) {
-          LogUtils.i(TAG, "hasSimCard error:" + JSON.stringify(error));
+          LogUtils.i(TAG, "hasSimCard error card : " + JSON.stringify(slotId) + "  " + JSON.stringify(error));
           reject(error);
         } else {
-          LogUtils.i(TAG, "hasSimCard data:" + JSON.stringify(data));
+          LogUtils.i(TAG, "hasSimCard data card : " + JSON.stringify(slotId) + "  " + JSON.stringify(data));
           resolve(data);
         }
         ;
       });
     } catch (error) {
-      LogUtils.i(TAG, "hasSimCard catch:" + JSON.stringify(error));
+      LogUtils.i(TAG, "hasSimCard catch card : " + JSON.stringify(slotId) + "  " + JSON.stringify(error));
       reject(error);
     }
   });
@@ -135,15 +135,15 @@ export function isSimActive(slotId = 0) {
     try {
       sim.isSimActive(slotId, (error, value) => {
         if (error) {
-          LogUtils.i(TAG, "isSimActive error:" + JSON.stringify(error));
+          LogUtils.i(TAG, "isSimActive error slotId: " + JSON.stringify(slotId) + " " + JSON.stringify(error));
           reject(error);
         } else {
-          LogUtils.i(TAG, "isSimActive data:" + JSON.stringify(value));
+          LogUtils.i(TAG, "isSimActive data slotId: " + JSON.stringify(slotId) + " " + JSON.stringify(value));
           resolve(value);
         }
       });
     } catch (error) {
-      LogUtils.i(TAG, "isSimActive catch:" + JSON.stringify(error));
+      LogUtils.i(TAG, "isSimActive catch slotId: " + JSON.stringify(slotId) + " " + JSON.stringify(error));
       reject(error);
     }
   });
@@ -160,15 +160,15 @@ export function getSimState(slotId = 0) {
     try {
       sim.getSimState(slotId, (error, value) => {
         if (error) {
-          LogUtils.i(TAG, "getSimState error:" + JSON.stringify(error));
+          LogUtils.i(TAG, "getSimState card :" + JSON.stringify(slotId) + " error: " + JSON.stringify(error));
           reject(error);
         } else {
-          LogUtils.i(TAG, "getSimState data:" + JSON.stringify(value));
+          LogUtils.i(TAG, "getSimState data:" + JSON.stringify(slotId) + " data: " + JSON.stringify(value));
           resolve(value);
         }
       });
     } catch (error) {
-      LogUtils.i(TAG, "getSimState catch:" + JSON.stringify(error));
+      LogUtils.i(TAG, "getSimState catch:" + JSON.stringify(slotId) + " catch: " + JSON.stringify(error));
       reject(error);
     }
   });
@@ -209,15 +209,15 @@ export function setDefaultVoiceSlotId(slotId = 0) {
     try {
       sim.setDefaultVoiceSlotId(slotId, (error, data) => {
         if (error) {
-          LogUtils.i(TAG, "setDefaultVoiceSlotId error:" + JSON.stringify(error));
+          LogUtils.i(TAG, "setDefaultVoiceSlotId error:" + JSON.stringify(slotId) + " " + JSON.stringify(error));
           reject(error);
         } else {
-          LogUtils.i(TAG, "setDefaultVoiceSlotId data:" + JSON.stringify(data));
+          LogUtils.i(TAG, "setDefaultVoiceSlotId data:" + JSON.stringify(slotId) + " " + JSON.stringify(data));
           resolve(true);
         }
       });
     } catch (error) {
-      LogUtils.i(TAG, "setDefaultVoiceSlotId catch:" + JSON.stringify(error));
+      LogUtils.i(TAG, "setDefaultVoiceSlotId catch:" + JSON.stringify(slotId) + " " + JSON.stringify(error));
       reject(error);
     }
   });

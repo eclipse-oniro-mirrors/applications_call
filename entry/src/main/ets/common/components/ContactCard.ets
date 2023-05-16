@@ -20,6 +20,9 @@ import LogUtils from '../utils/LogUtils';
 import callStateConst from '../constant/CallStateConst';
 import Utils from '../utils/utils'
 import CallUtils from '../utils/CallUtils'
+import DefaultCallData from '../struct/TypeUtils'
+import CallListStruct from '../struct/CallListStruct'
+import CallTimeListStruct from '../struct/CallTimeListStruct'
 
 const TAG = "contactCard";
 
@@ -28,11 +31,11 @@ export default struct ContactCard {
   @State callStateText: string = '';
   @State dialing: string = '.';
   @Prop isShowKeyboard: boolean;
-  @Link callList: Array<any>;
-  @Link callData: any;
+  @Link callList: Array<CallListStruct>;
+  @Link callData: DefaultCallData;
   @StorageLink("TextInput") textInput: string = '';
   @StorageLink("TextInputValue") textInputValue: string = '';
-  @StorageLink("CallTimeList") callTimeList: any = [];
+  @StorageLink("CallTimeList") callTimeList: Array<CallTimeListStruct> = [];
   @StorageLink("AccountNumber") accountNumber: string = '';
   @StorageLink("IsEmergencyPhoneNumber") isEmergencyPhoneNumber: boolean = false;
   @StorageLink("hasSimCard1") hasSimCard1: boolean = false;

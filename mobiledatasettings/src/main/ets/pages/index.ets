@@ -25,8 +25,6 @@ import { getSimCardOnePhoneNumber, getSimCardTwoPhoneNumber } from '../common/mo
 import {
   isCellularDataRoamingEnabledCardOne,
   isCellularDataRoamingEnabledCardTwo,
-  enableCellularDataRoaming,
-  disableCellularDataRoaming,
   getSupportNetwork
 } from '../common/model/getCellularDataRoamingEnabledApi';
 import { setPreferredNetwork } from '../common/model/setPreferredNetworkApi';
@@ -47,10 +45,9 @@ const TAG = "Index";
 @Component
 struct Index {
   scroller: Scroller = new Scroller();
-  @State byValueWLMS: any = publiccontent.strings.fourAuto;
-  @State publicheader: any = publiccontent.strings.mobileData;
+  @State byValueWLMS: Resource = publiccontent.strings.fourAuto;
+  @State publicheader: Resource = publiccontent.strings.mobileData;
   @State isLoading: boolean = true;
-  @State simState: string = '';
   @State moisBtn: boolean = true;
   @State isBtn: boolean = true;
   @State gqBtn: boolean = true;
@@ -71,7 +68,7 @@ struct Index {
   @State simStateStatusCardTwo: boolean = false;
   @State ControlswitchWLMS: boolean = false;
   @State slotId: number = 0;
-  @State dialogTitle: any = publiccontent.strings.preferredNetworkMode;
+  @State dialogTitle: Resource = publiccontent.strings.preferredNetworkMode;
   setCache_cun_name = 'DISTRIBUTEDDATA_CUN_NAME';
   setCache_wl_name = 'SETCACHE_WL_NAME';
   @State enable5g: boolean = false;
@@ -105,7 +102,7 @@ struct Index {
    * This interface is used to obtain sim cardOne status
    */
   getSimStateDataCardOne() {
-    getSimStateCardOne().then((res: any) => {
+    getSimStateCardOne().then((res: number) => {
       LogUtils.i(TAG, "getSimStateData Card1 :success " + JSON.stringify(res))
       const simState = {
         SIM_STATE_UNKNOWN: 0,
@@ -115,7 +112,6 @@ struct Index {
         SIM_STATE_READY: 4,
         SIM_STATE_LOADED: 5
       };
-      this.simState = res;
       if (res == simState.SIM_STATE_LOADED || res == simState.SIM_STATE_READY) {
         this.simStateStatusCardOne = true;
       } else {
@@ -131,7 +127,7 @@ struct Index {
    * This interface is used to obtain sim cardTwo status
    */
   getSimStateDataCardTwo() {
-    getSimStateCardTwo().then((res: any) => {
+    getSimStateCardTwo().then((res: number) => {
       LogUtils.i(TAG, "getSimState Card2 :success then" + JSON.stringify(res));
       const simState = {
         SIM_STATE_UNKNOWN: 0,
@@ -217,7 +213,7 @@ struct Index {
   }
 
   isImsSwitchEnabled(slotId) {
-    call.isImsSwitchEnabled(slotId).then((res: any) => {
+    call.isImsSwitchEnabled(slotId).then((res: boolean) => {
       if (slotId) {
         this.enableISM2 = res;
         LogUtils.i(TAG, "isImsSwitchEnable enable 1:" + JSON.stringify(this.enableISM2));
@@ -225,6 +221,15 @@ struct Index {
         this.enableISM = res;
         LogUtils.i(TAG, "isImsSwitchEnable enable 0:" + JSON.stringify(this.enableISM));
       }
+    }).catch((err) => {
+      if (slotId) {
+        this.enableISM2 = true;
+        LogUtils.i(TAG, "isImsSwitchEnable err 1:" + JSON.stringify(this.enableISM2));
+      } else {
+        this.enableISM = true;
+        LogUtils.i(TAG, "isImsSwitchEnable err 0:" + JSON.stringify(this.enableISM));
+      }
+      LogUtils.i(TAG, "isImsSwitchEnabled card catch:" + JSON.stringify(err));
     });
   }
 
@@ -309,7 +314,6 @@ struct Index {
                           .fontFamily('HarmonyHeiTi')
                           .lineHeight(22)
                           .fontColor($r('app.color.font_color_182431'))
-                          .opacity(this.isDataEnable ? 0.9 : 0.6)
                       }
 
                       Row() {
@@ -356,7 +360,7 @@ struct Index {
                   })
                   .height(90)
                   .width("100%")
-                  .borderRadius(24)
+                  .borderRadius(16)
                   .backgroundColor($r("sys.color.ohos_id_color_foreground_contrary"))
                   .opacity((this.simStateStatusCardOne || this.simStateStatusCardTwo) ? 1 : 0.4)
 
@@ -403,7 +407,7 @@ struct Index {
                     bottom: 4
                   })
                   .width("100%")
-                  .borderRadius(24)
+                  .borderRadius(16)
                   .backgroundColor($r("sys.color.ohos_id_color_foreground_contrary"))
                   .opacity(this.simStateStatusCardOne ? 1 : 0.4)
 
@@ -455,7 +459,7 @@ struct Index {
                     bottom: 4
                   })
                   .width("100%")
-                  .borderRadius(24)
+                  .borderRadius(16)
                   .backgroundColor($r("sys.color.ohos_id_color_foreground_contrary"))
                   .opacity(this.simStateStatusCardTwo ? 1 : 0.4)
                   .visibility(getMaxSimCount() === 2 ? Visibility.Visible : Visibility.Hidden)

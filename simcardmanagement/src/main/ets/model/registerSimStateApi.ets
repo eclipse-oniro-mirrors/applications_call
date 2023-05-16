@@ -17,7 +17,7 @@
  * @file: registerSimStateApi
  */
 
-import { observer } from './api';
+import observer from '@ohos.telephony.observer';
 import LogUtils from '../common/utils/LogUtils'
 import sim from '@ohos.telephony.sim';
 
@@ -33,7 +33,7 @@ export function registerSimStateChange(slotId, callBack) {
   return observer.on('simStateChange', {
     slotId: slotId
   }, (callStateInfo) => {
-    LogUtils.i(TAG, "registerSimStateChange: then" + JSON.stringify(callStateInfo));
+    LogUtils.i(TAG, "registerSimStateChange: then" + "slotid: " + JSON.stringify(slotId) + " callstateinfo:" + JSON.stringify(callStateInfo));
     callBack(callStateInfo);
     return callStateInfo
   });

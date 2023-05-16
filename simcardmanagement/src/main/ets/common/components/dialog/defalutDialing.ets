@@ -21,12 +21,12 @@ const TAG = "DefaultDialCard:"
 export default struct DefaultDialCard {
   controller: CustomDialogController;
   action: (cardname) => void;
+  @Link defaultSet: Resource;
   @State changeDefault: boolean = true;
   @State changeCard1: boolean = false;
   @State changeCard2: boolean = false;
   @State phoneNumber1: string = '';
   @State phoneNumber2: string = '';
-  @State defaultSetCard: any = '';
   SIM_CARD_DEFAULT = 'sim_card_management_card_default_call';
   SIM_CARD_KEYWORD = 'sim_card_keyword';
 
@@ -41,7 +41,7 @@ export default struct DefaultDialCard {
         this.phoneNumber2 = res;
       }
     }).catch((err) => {
-    })
+    });
   }
 
   /**
@@ -56,47 +56,34 @@ export default struct DefaultDialCard {
           this.phoneNumber2 = res;
         }
       } else {
-        this.getPhoneNumber(slotId)
+        this.getPhoneNumber(slotId);
       }
     }).catch((err) => {
-    })
-  }
-
-  /**
-   * Get default voice
-   */
-  getDefaultVoiceSlotId() {
-    simServiceProxy.getDefaultVoiceSlotId().then((res: string) => {
-      if (res == '0') {
-        this.changeCard1 = true;
-        this.changeCard2 = false;
-        this.changeDefault = false;
-      } else if (res == '1') {
-        this.changeCard1 = false;
-        this.changeCard2 = true;
-        this.changeDefault = false;
-      } else {
-        this.changeCard1 = false;
-        this.changeCard2 = false;
-        this.changeDefault = true;
-      }
-    }).catch((err) => {
-    })
+    });
   }
 
   /**
    * Set default voice
    */
   setDefaultVoiceSlotId(slotId) {
-    simServiceProxy.setDefaultVoiceSlotId(slotId).catch((err) => {
-    })
+    simServiceProxy.setDefaultVoiceSlotId(slotId).then((res) => {
+      if (res) {
+        if (slotId === -1) {
+          this.action($r('app.string.not_set'));
+        } else if (slotId === 0) {
+          this.action($r('app.string.sim_card_one_no_space'));
+        } else if (slotId === 1) {
+          this.action($r('app.string.sim_card_two_no_space'));
+        }
+      }
+    }).catch((err) => {
+    });
   }
 
   aboutToAppear() {
     LogUtils.i(TAG, "aboutToAppear:")
     this.getShowNumber(0);
     this.getShowNumber(1);
-    this.getDefaultVoiceSlotId()
   }
 
   build() {
@@ -111,19 +98,18 @@ export default struct DefaultDialCard {
           .fontFamily("HarmonyHeiTi")
           .align(Alignment.Start)
         Flex({ justifyContent: FlexAlign.SpaceBetween, alignItems: ItemAlign.Center }) {
-          Text($r('app.string.not_set')).fontSize(16)
-            .fontWeight(FontWeight.Medium)
+          Text($r('app.string.not_set'))
+            .fontSize($r('sys.float.ohos_id_text_size_body2'))
+            .fontWeight(FontWeight.Regular)
             .fontFamily("HarmonyHeiTi")
             .align(Alignment.Center | Alignment.Start)
             .lineHeight(21)
-          Image(this.changeDefault ? $r('app.media.ic_Radiobtn_on') : $r('app.media.ic_Radiobtn_off')).height(24).width(24)
+          Image(JSON.stringify(this.defaultSet) === JSON.stringify($r('app.string.not_set')) ? $r('app.media.ic_Radiobtn_on') : $r('app.media.ic_Radiobtn_off'))
+            .height(24)
+            .width(24)
         }.height(48)
         .onClick(() => {
-          this.action($r('app.string.not_set'));
-          this.setDefaultVoiceSlotId(-1)
-          this.changeCard1 = false;
-          this.changeCard2 = false;
-          this.changeDefault = true;
+          this.setDefaultVoiceSlotId(-1);
           this.controller.close();
         })
 
@@ -131,8 +117,8 @@ export default struct DefaultDialCard {
         Flex({ justifyContent: FlexAlign.SpaceBetween, alignItems: ItemAlign.Center }) {
           Column() {
             Text($r('app.string.card_1'))
-              .fontSize(16)
-              .fontWeight(FontWeight.Medium)
+              .fontSize($r('sys.float.ohos_id_text_size_body2'))
+              .fontWeight(FontWeight.Regular)
               .fontFamily("HarmonyHeiTi")
               .align(Alignment.Start)
               .lineHeight(22)
@@ -142,19 +128,17 @@ export default struct DefaultDialCard {
               .fontFamily("HarmonyHeiTi")
               .align(Alignment.Start)
               .lineHeight(19)
-              .fontColor('#555')
+              .fontColor($r('sys.color.ohos_id_color_text_secondary'))
           }.alignItems(HorizontalAlign.Start)
 
           Column() {
-            Image(this.changeCard1 ? $r('app.media.ic_Radiobtn_on') : $r('app.media.ic_Radiobtn_off')).height(24).width(24)
+            Image(JSON.stringify(this.defaultSet) == JSON.stringify($r('app.string.sim_card_one_no_space')) ? $r('app.media.ic_Radiobtn_on') : $r('app.media.ic_Radiobtn_off'))
+              .height(24)
+              .width(24)
           }
         }.height(64)
         .onClick(() => {
-          this.action($r('app.string.sim_card_one_no_space'));
-          this.changeCard1 = true;
           this.setDefaultVoiceSlotId(0)
-          this.changeCard2 = false;
-          this.changeDefault = false;
           this.controller.close();
         })
 
@@ -162,8 +146,8 @@ export default struct DefaultDialCard {
         Flex({ justifyContent: FlexAlign.SpaceBetween, alignItems: ItemAlign.Center }) {
           Column() {
             Text($r('app.string.card_2'))
-              .fontSize(16)
-              .fontWeight(FontWeight.Medium)
+              .fontSize($r('sys.float.ohos_id_text_size_body2'))
+              .fontWeight(FontWeight.Regular)
               .fontFamily("HarmonyHeiTi")
               .align(Alignment.Start)
               .lineHeight(22)
@@ -173,19 +157,17 @@ export default struct DefaultDialCard {
               .fontFamily("HarmonyHeiTi")
               .align(Alignment.Start)
               .lineHeight(19)
-              .fontColor('#555')
+              .fontColor($r('sys.color.ohos_id_color_text_secondary'))
           }.alignItems(HorizontalAlign.Start)
 
           Column() {
-            Image(this.changeCard2 ? $r('app.media.ic_Radiobtn_on') : $r('app.media.ic_Radiobtn_off')).height(24).width(24)
+            Image(JSON.stringify(this.defaultSet) == JSON.stringify($r('app.string.sim_card_two_no_space')) ? $r('app.media.ic_Radiobtn_on') : $r('app.media.ic_Radiobtn_off'))
+              .height(24)
+              .width(24)
           }
         }.height(64)
         .onClick(() => {
-          this.action($r('app.string.sim_card_two_no_space'));
-          this.changeCard1 = false;
           this.setDefaultVoiceSlotId(1)
-          this.changeCard2 = true;
-          this.changeDefault = false;
           this.controller.close();
         })
 
@@ -195,7 +177,7 @@ export default struct DefaultDialCard {
             .fontSize('16vp')
             .fontWeight(FontWeight.Medium)
             .fontFamily("HarmonyHeiTi")
-            .fontColor('#2871d4')
+            .fontColor($r('sys.color.ohos_id_color_text_primary'))
         }
         .onClick(() => {
           this.controller.close();

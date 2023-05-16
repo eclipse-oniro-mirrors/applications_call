@@ -20,17 +20,17 @@
 import CallStateConst from '../constant/CallStateConst';
 import CallServiceProxy from '../../model/CallServiceProxy';
 import LogUtils from '../utils/LogUtils';
-import GlobalThisHelper from '../utils/GlobalThisHelper'
-import Constants from '../utils/Constants'
+import DefaultCallData from '../struct/TypeUtils';
+import CallListStruct from '../struct/CallListStruct'
+import CallTimeListStruct from '../struct/CallTimeListStruct'
 
 const TAG = "CallList";
 
 @Component
 export default struct CallList {
-  @Link callList: Array<any>;
-  @Link callData: any;
-  @StorageLink("CallTimeList") callTimeList: any = [];
-
+  @Link callList: Array<CallListStruct>;
+  @Link callData: DefaultCallData;
+  @StorageLink("CallTimeList") callTimeList: Array<CallTimeListStruct> = [];
   private mCallStateConst: CallStateConst;
   private mCallServiceProxy: CallServiceProxy;
 
@@ -93,7 +93,7 @@ export default struct CallList {
     LogUtils.i(TAG, "onHangUp : " + callId);
     this.mCallServiceProxy.hangUpCall(callId);
     if (this.callList.length === 1) {
-      GlobalThisHelper.get<any>(Constants.GLOBALTHIS_CONTEXT)?.terminateSelf().then((data) => {
+      globalThis.calluiAbilityContext?.terminateSelf().then((data) => {
         LogUtils.i(TAG, "onHangUp terminateSelfCallBack");
       });
     }
@@ -113,6 +113,17 @@ export default struct CallList {
         return;
       }
     });
+  }
+
+  getInComingCallState() {
+    let incomingState = false;
+    this.callList.forEach((v) => {
+      if (v.callState === CallStateConst.callStateObj.CALL_STATUS_WAITING || v.callState === CallStateConst.callStateObj.CALL_STATUS_INCOMING) {
+        incomingState = true;
+      }
+    });
+    LogUtils.i(TAG, "getInComingCallState incomingState:" + JSON.stringify(incomingState));
+    return incomingState;
   }
 
   build() {
@@ -146,8 +157,7 @@ export default struct CallList {
                         .opacity(0.60)
                     }
 
-                    if (this.callState() === CallStateConst.callStateObj.CALL_STATUS_WAITING
-                    || this.callState() === CallStateConst.callStateObj.CALL_STATUS_INCOMING) {
+                    if (this.getInComingCallState()) {
                       Image($r("app.media.ic_hangup_list"))
                         .width(30)
                         .height(30)
@@ -171,11 +181,11 @@ export default struct CallList {
       .margin({ left: 24, right: 24 })
       .width("100%")
       .listDirection(Axis.Vertical)
+
       Divider()
         .color($r('app.color.divider_calllist'))
         .strokeWidth(1)
     }
-      .height(128)
-
+    .height(128)
   }
 }

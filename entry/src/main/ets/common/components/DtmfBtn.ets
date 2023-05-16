@@ -15,19 +15,24 @@
 
 import CallServiceProxy from "../../model/CallServiceProxy";
 import LogUtils from '../utils/LogUtils';
+import DefaultCallData from '../struct/TypeUtils';
 
 const TAG = "DtmfBtn";
+class DataListStruct {
+  value
+  sign
+}
 
 @Component
 export default struct DtmfBtn {
   @State color: string = "rgba(255, 255, 255, 0)";
   @State subStr:string = '';
-  @Link dataList: any;
+  @Link dataList: Array<DataListStruct>;
   @Link textInput: string;
   @Link textInputValue: string;
-  private item: any;
+  private item: DataListStruct;
   private mCallServiceProxy;
-  callData :any;
+  callData: DefaultCallData;
 
   public aboutToAppear(): void {
     this.mCallServiceProxy = new CallServiceProxy();

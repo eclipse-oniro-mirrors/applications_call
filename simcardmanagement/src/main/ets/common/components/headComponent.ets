@@ -19,12 +19,12 @@
 @Component
 export default struct HeadComponent {
   @State isTouch: boolean = false;
-  @State headName: any = '';
+  @State headName: Resource = $r('app.string.sim_headName');
 
   build() {
     Row() {
       Stack({ alignContent: Alignment.Center }) {
-        Image($r('app.media.back'))
+        Image($r('app.media.ic_back'))
           .width(24)
           .height(24)
           .fillColor($r("sys.color.ohos_id_color_primary"))
@@ -46,14 +46,13 @@ export default struct HeadComponent {
 
       Text(this.headName)
         .fontSize(20)
-        .lineHeight(33)
         .fontFamily('HarmonyHeiTi-Bold')
         .fontWeight(FontWeight.Medium)
-        .fontColor($r('app.color.font_color_182431'))
+        .fontColor($r('sys.color.ohos_id_color_text_primary'))
         .maxLines(1)
         .textOverflow({ overflow: TextOverflow.Ellipsis })
         .textAlign(TextAlign.Start)
-        .margin({ top: 13, bottom: 15 });
+        .margin({ top: 15, bottom: 15 });
     }
     .width("100%")
     .padding({ left: 12 })

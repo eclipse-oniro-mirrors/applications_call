@@ -29,7 +29,9 @@ import backgroundTaskManager from '@ohos.backgroundTaskManager';
 import Constants from '../common/utils/Constants';
 import CallDataManager from '../model/CallDataManager';
 import MultiContactCard from '../common/components/MultiContactCard';
-import GlobalThisHelper from '../common/utils/GlobalThisHelper';
+import DefaultCallData from '../common/struct/TypeUtils'
+import CallListStruct from '../common/struct/CallListStruct'
+import CallTimeListStruct from '../common/struct/CallTimeListStruct'
 
 const TAG = "Index";
 
@@ -39,14 +41,14 @@ const TAG = "Index";
 @Entry
 @Component
 struct Index {
-  @StorageLink("InputNum") inputNum: any = [];
-  @State callData: any = CallStateConst.defaultCallData;
+  @State callData: DefaultCallData = new DefaultCallData();
   @State isShowKeyboard: boolean = false;
-  @State callList: Array<any> = [];
-  @State callTimeList: Array<any> = [];
+  @State callList: Array<CallListStruct> = [];
+  @State callTimeList: Array<CallTimeListStruct> = [];
   private notificationManager: NotificationManager;
   private mCallDataManager: CallDataManager;
   @State curBp: string = 'md';
+  @State incomingData: DefaultCallData = new DefaultCallData();
   private smListener: mediaQuery.MediaQueryListener;
   private mdListener: mediaQuery.MediaQueryListener;
   private lgListener: mediaQuery.MediaQueryListener;
@@ -88,17 +90,17 @@ struct Index {
   onPageShow() {
     LogUtils.i(TAG, "onPageShow");
     byTrace.startTrace('onPageShow', 1);
-    GlobalThisHelper.set<boolean>(Constants.GLOBALTHIS_APPINACTIVE_STATE, false);
+    globalThis.appInactiveState = false;
     this.stopBackgroundRunning();
     this.notificationManager?.cancelNotification();
-    this.notificationManager?.sendCapsuleNotification(this.callData, false);
+    this.notificationManager?.sendCapsuleNotification(this.incomingData ? this.callData : this.incomingData, false);
     byTrace.finishTrace('onPageShow', 1);
     LogUtils.i(TAG, "onPageShow end");
   }
 
   onPageHide() {
     LogUtils.i(TAG, "onPageHide");
-    GlobalThisHelper.set<boolean>(Constants.GLOBALTHIS_APPINACTIVE_STATE, true);
+    globalThis.appInactiveState = true;
     this.updateNotification();
     LogUtils.i(TAG, "onPageHide end");
   }
@@ -109,23 +111,25 @@ struct Index {
       if (this.mCallDataManager.hasAliveCall()) {
         this.startBackgroundRunning();
       }
-      this.notificationManager?.sendNotification(this.callData);
-      this.notificationManager?.sendCapsuleNotification(this.callData, true);
+      this.notificationManager?.sendNotification(this.incomingData ? this.callData : this.incomingData);
+      this.notificationManager?.sendCapsuleNotification(this.incomingData ? this.callData : this.incomingData, true);
     }
   }
-
 
   aboutToDisappear() {
     LogUtils.i(TAG, "aboutToDisappear");
     this.stopBackgroundRunning();
-    this.updateNotification();
     this.smListener.off('change', this.isBreakpointSM);
     this.mdListener.off('change', this.isBreakpointMD);
     this.lgListener.off('change', this.isBreakpointLG);
   }
 
+  onBackPress() {
+    LogUtils.i(TAG, "onBackPress");
+  }
+
   private stopBackgroundRunning() {
-    backgroundTaskManager.stopBackgroundRunning(GlobalThisHelper.get<any>(Constants.GLOBALTHIS_CONTEXT)).then(() => {
+    backgroundTaskManager.stopBackgroundRunning(globalThis.calluiAbilityContext).then(() => {
       LogUtils.i(TAG, "stopBackgroundRunning succeeded");
     }).catch((err) => {
       LogUtils.i(TAG, "stopBackgroundRunning failed");
@@ -135,16 +139,16 @@ struct Index {
   private startBackgroundRunning() {
     let wantAgentInfo = {
       wants: [{
-                bundleName: Constants.CALL_BUNDLE_NAME,
-                abilityName: Constants.CALL_ABILITY_NAME,
-              }],
+        bundleName: Constants.CALL_BUNDLE_NAME,
+        abilityName: Constants.CALL_ABILITY_NAME,
+      }],
       requestCode: 0,
       operationType: wantAgent.OperationType.START_ABILITY,
       wantAgentFlags: [wantAgent.WantAgentFlags.UPDATE_PRESENT_FLAG]
     };
     wantAgent.getWantAgent(wantAgentInfo).then((wantAgentObj) => {
-      backgroundTaskManager.startBackgroundRunning(GlobalThisHelper.get<any>(Constants.GLOBALTHIS_CONTEXT),
-      backgroundTaskManager.BackgroundMode.VOIP, wantAgentObj).then(() => {
+      backgroundTaskManager.startBackgroundRunning(globalThis.calluiAbilityContext,
+        backgroundTaskManager.BackgroundMode.VOIP, wantAgentObj).then(() => {
         LogUtils.i(TAG, "startBackgroundRunning succeeded")
       }).catch((err) => {
         LogUtils.i(TAG, "startBackgroundRunning failed cause:" + JSON.stringify(err))
@@ -182,6 +186,26 @@ struct Index {
       && this.callList.length === 3;
   }
 
+  pageTransition() {
+    PageTransitionEnter({ duration: 0 });
+    PageTransitionExit({ duration: 0 });
+  }
+
+  getBtnCallState() {
+    if (this.callList.length > 1) {
+      let btnState = true;
+      this.callList.forEach((v) => {
+        if (v.callState === CallStateConst.callStateObj.CALL_STATUS_WAITING || v.callState === CallStateConst.callStateObj.CALL_STATUS_INCOMING) {
+          btnState = false;
+        }
+      });
+      return btnState;
+    } else {
+      return this.callState() !== CallStateConst.callStateObj.CALL_STATUS_WAITING
+      && this.callState() !== CallStateConst.callStateObj.CALL_STATUS_INCOMING
+    }
+  }
+
   build() {
     Flex({
       direction: FlexDirection.Column,
@@ -192,7 +216,8 @@ struct Index {
         MultiContactCard({
           callData: $callData,
           isShowKeyboard: this.isShowKeyboard,
-          callList: $callList
+          callList: $callList,
+          incomingData: $incomingData
         })
           .margin({ top: this.isShowKeyboard ? 0 : 56 })
           .layoutWeight(this.isShowKeyboard ? 1 : 0)
@@ -206,8 +231,7 @@ struct Index {
           .layoutWeight(this.isShowKeyboard ? 1 : 0)
       }
 
-      if (this.callState() !== CallStateConst.callStateObj.CALL_STATUS_WAITING
-      && this.callState() !== CallStateConst.callStateObj.CALL_STATUS_INCOMING) {
+      if (this.getBtnCallState()) {
         Column() {
           if (!this.isShowKeyboard) {
             FuncBtnGroup({ callData: $callData, callList: $callList })
@@ -218,6 +242,7 @@ struct Index {
           }
           BottomBtn({
             callData: $callData,
+            callList: $callList,
             onItemClick: () => {
               this.showKeyboard()
             }
@@ -225,7 +250,9 @@ struct Index {
         }
       } else {
         Column() {
-          IncomingCom({ callData: $callData })
+          IncomingCom({
+            callList: $callList,
+            callData: $callData })
 
           if (this.isTripleCall()) {
             Column() {

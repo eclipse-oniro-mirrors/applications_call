@@ -21,10 +21,21 @@ import Clone from '../utils/Clone';
 import BtnGroupConfig from '../configs/BtnGroupConfig';
 import LogUtils from '../utils/LogUtils';
 import screenLock from '@ohos.screenLock';
-import GlobalThisHelper from '../utils/GlobalThisHelper';
-import Constants from '../utils/Constants';
+import DefaultCallData from '../struct/TypeUtils'
+import CallListStruct from '../struct/CallListStruct'
+import FunctonBtnVM from '../../viewmodel/FunctonBtnVIewModel';
 
 const TAG = 'FuncBtnGroup';
+
+class BtnStruct {
+  type
+  iconDisableUrl
+  iconDefaultUrl
+  iconActiveUrl
+  isDisable
+  isActive
+  iconText
+}
 const textMap =
   {
     'record': $r('app.string.recording'),
@@ -39,16 +50,17 @@ const textMap =
 
 @Component
 export default struct FuncBtnGroup {
-  @Link @Watch("updateBtnList") callData: any;
-  @Link @Watch("updateBtnList") callList: Array<any>;
+  @Link @Watch("updateBtnList") callData: DefaultCallData;
+  @Link @Watch("updateBtnList") callList: Array<CallListStruct>;
   @State count: number = 0;
-  @State btnList: Array<any> = [];
+  @State btnList: Array<BtnStruct> = [];
   @State m: number = 0;
   @State n: number = 0;
-  @State oldCallState: any = CallStateConst.CALL_STATUS_IDLE;
+  @State oldCallState: number = CallStateConst.CALL_STATUS_IDLE;
+  @State mFunctonBtnVM: FunctonBtnVM = FunctonBtnVM.getInstance();
   private mCallServiceProxy: CallServiceProxy;
   private mBtnGroupConfig = BtnGroupConfig;
-  private timer: any = null;
+  private timer: number = null;
   private mClone: Clone;
   private btnListCall;
   private btnListDialing;
@@ -110,7 +122,7 @@ export default struct FuncBtnGroup {
    */
   onCallStateChange(newVal) {
     LogUtils.i(TAG, "Calling status changed newState : " + JSON.stringify(newVal));
-    const BtnName = ['video', 'record', 'add', 'contact']
+    const BtnName = ['video', 'record', 'add', 'contact', 'merge']
     if (newVal === CallStateConst.CALL_STATUS_ACTIVE || newVal === CallStateConst.CALL_STATUS_HOLDING) {
       this.btnList.forEach((item) => {
         if (!Method.includes(BtnName, (item.type))) {
@@ -206,7 +218,7 @@ export default struct FuncBtnGroup {
   }
 
   startContactAbility(pageFlag) {
-    GlobalThisHelper.get<any>(Constants.GLOBALTHIS_CONTEXT)?.startAbility({
+    globalThis.calluiAbilityContext?.startAbility({
       bundleName: 'com.ohos.contacts',
       abilityName: 'com.ohos.contacts.MainAbility',
       parameters: {

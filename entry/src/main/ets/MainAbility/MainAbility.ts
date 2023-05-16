@@ -1,21 +1,19 @@
 import Ability from '@ohos.app.ability.UIAbility'
 import LogUtils from '../common/utils/LogUtils'
-import CallManager from '../model/CallManager'
-import GlobalThisHelper from '../common/utils/GlobalThisHelper'
-import Constants from '../common/utils/Constants'
+import CallManager from '../model/CallManager';
 
 const TAG = "MainAbility";
 
 export default class MainAbility extends Ability {
   onCreate(want, launchParam) {
     LogUtils.i(TAG, "onCreate")
-    GlobalThisHelper.set<any>(Constants.GLOBALTHIS_ABILITY_WANT, want);
-    GlobalThisHelper.set<any>(Constants.GLOBALTHIS_CONTEXT, this.context);
+    globalThis.abilityWant = want;
+    globalThis.calluiAbilityContext = this.context;
   }
 
-  onWindowStageCreate(windowStage) {
+  onWindowStageCreate(windowStage): void {
     // Main window is created, set main page for this ability
-    LogUtils.i(TAG, "onWindowStageCreate")
+    LogUtils.i(TAG, 'onWindowStageCreate');
     windowStage.setShowOnLockScreen(true);
     windowStage.loadContent("pages/index", (err, data) => {
       if (err.code) {
@@ -26,7 +24,7 @@ export default class MainAbility extends Ability {
     });
   }
 
-  onWindowStageDestroy() {
+  onWindowStageDestroy(): void {
     // Main window is destroyed, release UI related resources
     LogUtils.i(TAG, "onWindowStageDestroy")
   }

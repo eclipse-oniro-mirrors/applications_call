@@ -205,8 +205,44 @@
       "value": "Emergency"
     },
     {
+      "name": "wiredHeadset",
+      "value": "WiredHeadset"
+    },
+    {
       "name": "end_holding_call",
       "value": "Answering this call will end the one currently on hold"
+    },
+    {
+      "name": "READ_CONTACTS",
+      "value": "Read contacts"
+    },
+    {
+      "name": "SEND_MESSAGES",
+      "value": "Send messages"
+    },
+    {
+      "name": "GET_BUNDLE_INFO_PRIVILEGED",
+      "value": "Get bundle info privileged"
+    },
+    {
+      "name": "GET_TELEPHONY_STATE",
+      "value": "Get telephony state"
+    },
+    {
+      "name": "NOTIFICATION_CONTROLLER",
+      "value": "Notification controller"
+    },
+    {
+      "name": "START_ABILITIES_FROM_BACKGROUND",
+      "value": "Start abilities from background"
+    },
+    {
+      "name": "KEEP_BACKGROUND_RUNNING",
+      "value": "Keep background running"
+    },
+    {
+      "name": "ANSWER_CALL",
+      "value": "Answer call"
     }
   ]
 }

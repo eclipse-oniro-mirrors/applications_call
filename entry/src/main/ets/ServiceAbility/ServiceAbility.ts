@@ -2,7 +2,8 @@ import Want from '@ohos.application.Want';
 import ServiceExtension from '@ohos.app.ability.ServiceExtensionAbility';
 import CallManagerService from './CallManagerService';
 import rpc from '@ohos.rpc';
-import LogUtils from "../common/utils/LogUtils"
+import LogUtils from '../common/utils/LogUtils';
+import DefaultCallData from '../common/struct/TypeUtils';
 
 const TAG = "ServiceAbility";
 
@@ -11,12 +12,13 @@ export default class ServiceAbility extends ServiceExtension {
 
   onCreate(want) {
     LogUtils.i(TAG, "onCreate callUI service");
-    this.callManagerService = new CallManagerService(this.context);
+    this.callManagerService = CallManagerService.getInstance();
+    this.callManagerService.init(this.context);
   }
 
   onConnect(want: Want) {
     LogUtils.i(TAG, "onConnect callUI service");
-    let callData: any = {};
+    let callData: DefaultCallData = new DefaultCallData();
     callData.accountNumber = want.parameters?.accountNumber;
     callData.videoState = want.parameters?.videoState;
     callData.callType = want.parameters?.callType;

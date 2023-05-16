@@ -20,8 +20,6 @@ import dataShare from '@ohos.data.dataShare';
 import dataSharePredicates from '@ohos.data.dataSharePredicates';
 import LogUtils from '../common/utils/LogUtils';
 import CallManager from '../model/CallManager';
-import GlobalThisHelper from '../common/utils/GlobalThisHelper';
-import Constants from '../common/utils/Constants';
 
 const TAG = "ContactManager";
 const DBbaseUri = 'datashare:///com.ohos.contactsdataability';
@@ -45,16 +43,19 @@ export default class ContactManager {
       const predicates = new dataSharePredicates.DataSharePredicates();
       predicates.equalTo('detail_info', callData.accountNumber);
       predicates.equalTo('is_deleted', 0);
-      const dataAbilityHelper = await dataShare.createDataShareHelper(GlobalThisHelper.get<any>(Constants.GLOBALTHIS_CONTEXT), DBbaseUri);
+      let context = globalThis.calluiAbilityContext;
+      const dataAbilityHelper = await dataShare.createDataShareHelper(context, DBbaseUri);
       const resSet = await dataAbilityHelper.query(DBUri, predicates, columns);
-      LogUtils.i(TAG, "getContactInfo resSet : " + JSON.stringify(resSet.rowCount))
+      LogUtils.i(TAG, 'getContactInfo resSet : ' + JSON.stringify(resSet.rowCount));
       if (resSet.rowCount > 0) {
         resSet.goToFirstRow();
         callData.contactName = resSet.getString(resSet.getColumnIndex('display_name'));
-        CallManager.getInstance().update(callData);
+      } else {
+        callData.contactName = '';
       }
+      CallManager.getInstance().update(callData);
     } catch (err) {
-      LogUtils.i(TAG, "getContactInfo catch err : %s" + JSON.stringify(err))
+      LogUtils.i(TAG, 'getContactInfo catch err : ' + JSON.stringify(err));
     }
   }
 }

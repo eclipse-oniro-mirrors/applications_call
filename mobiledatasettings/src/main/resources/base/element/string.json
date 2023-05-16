@@ -147,6 +147,22 @@
     {
       "name": "confim_space",
       "value": "Confim"
+    },
+    {
+      "name": "GET_NETWORK_INFO",
+      "value": "get network info"
+    },
+    {
+      "name": "SET_TELEPHONY_STATE",
+      "value": "set telephony state"
+    },
+    {
+      "name": "GET_TELEPHONY_STATE",
+      "value": "get telephony state"
+    },
+    {
+      "name": "mobile_empty_string",
+      "value": " "
     }
   ]
 }
