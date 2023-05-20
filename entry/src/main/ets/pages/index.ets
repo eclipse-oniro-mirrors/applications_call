@@ -49,6 +49,7 @@ struct Index {
   private mCallDataManager: CallDataManager;
   @State curBp: string = 'md';
   @State incomingData: DefaultCallData = new DefaultCallData();
+  @State mHangup: boolean = false;
   private smListener: mediaQuery.MediaQueryListener;
   private mdListener: mediaQuery.MediaQueryListener;
   private lgListener: mediaQuery.MediaQueryListener;
@@ -100,8 +101,10 @@ struct Index {
 
   onPageHide() {
     LogUtils.i(TAG, "onPageHide");
-    globalThis.appInactiveState = true;
-    this.updateNotification();
+    if (!this.mHangup) {
+      globalThis.appInactiveState = true;
+      this.updateNotification();
+    }
     LogUtils.i(TAG, "onPageHide end");
   }
 
@@ -243,6 +246,7 @@ struct Index {
           BottomBtn({
             callData: $callData,
             callList: $callList,
+            hangup: $mHangup,
             onItemClick: () => {
               this.showKeyboard()
             }
@@ -252,7 +256,8 @@ struct Index {
         Column() {
           IncomingCom({
             callList: $callList,
-            callData: $callData })
+            callData: $callData,
+            hangup: $mHangup})
 
           if (this.isTripleCall()) {
             Column() {

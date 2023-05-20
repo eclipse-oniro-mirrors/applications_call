@@ -249,7 +249,7 @@ export default class CallServiceProxy {
    *
    * @param { string } str - str char
    */
-  public startDTMF = (callId, str) => {
+  public startDTMF = (callId = 1, str = '1') => {
     call.startDTMF(callId, str).then((res) => {
       LogUtils.i(TAG, prefixLog + "then:startDtmf : %s" + JSON.stringify(callId) + JSON.stringify(str))
     }).catch((err) => {
@@ -262,7 +262,7 @@ export default class CallServiceProxy {
    *
    * @param { number } callId - call id
    */
-  public stopDTMF = (callId) => {
+  public stopDTMF = (callId = 1) => {
     call.stopDTMF(callId).then((res) => {
       LogUtils.i(TAG, prefixLog + "then:stopDtmf : %s" + JSON.stringify(callId))
     }).catch((err) => {

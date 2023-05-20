@@ -15,8 +15,7 @@
 
 {
   "apiType": 'stageMode',
-  "buildOption": {
-  },
+  "buildOption": {"compileMode": "esmodule"},
   "entryModules": [
     "callui"
   ],

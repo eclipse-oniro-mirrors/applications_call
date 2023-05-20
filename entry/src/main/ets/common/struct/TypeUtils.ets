@@ -13,8 +13,8 @@
  * limitations under the License.
  */
 export default class DefaultCallData {
-  callId
-  callState
+  callId: number
+  callState: number
   accountNumber: string
   videoState: number
   callType: number

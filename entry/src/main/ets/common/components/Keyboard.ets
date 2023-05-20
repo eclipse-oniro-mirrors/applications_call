@@ -18,8 +18,8 @@ import DtmfBtn from '../components/DtmfBtn';
 import DefaultCallData from '../struct/TypeUtils';
 
 class DataListStruct {
-   value
-   sign
+   value: string
+   sign: string
 }
 const TAG = "Keyboard";
 

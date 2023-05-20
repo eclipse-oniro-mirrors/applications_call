@@ -53,6 +53,7 @@ const SEND_SMS_FAILURE_SERVICE_UNAVAILABLE = 3;
 export default struct IncomingCom {
   @Link callList: Array<CallListStruct>;
   @Link callData: DefaultCallData;
+  @Link hangup: boolean;
   private btnList = [];
   private msgList = [];
   mCallServiceProxy: CallServiceProxy = null;
@@ -111,7 +112,8 @@ export default struct IncomingCom {
               });
             })
           } else {
-            globalThis.calluiAbilityContext?.resourceManager.getString($r("app.string.message_Failed").id, (err, typeName) => {
+            globalThis.calluiAbilityContext?.resourceManager.getString($r("app.string.message_Failed")
+              .id, (err, typeName) => {
               if (err) {
                 return;
               }
@@ -174,10 +176,12 @@ export default struct IncomingCom {
    * Handling interface call hangup and rejection
    */
   private async onReject() {
-    const incomingData = this.callList.find((v) => v.callState === CallStateConst.callStateObj.CALL_STATUS_WAITING || v.callState === CallStateConst.callStateObj.CALL_STATUS_INCOMING);
-    Object.assign(this.callData, {
-      ...incomingData
-    });
+    if (this.callList.length > 1) {
+      const incomingData = this.callList.find((v) => v.callState === CallStateConst.callStateObj.CALL_STATUS_WAITING || v.callState === CallStateConst.callStateObj.CALL_STATUS_INCOMING);
+      Object.assign(this.callData, {
+        ...incomingData
+      });
+    }
     const {callId, callState} = this.callData;
     if (callState !== CallStateConst.CALL_STATUS_WAITING) {
       this.mCallServiceProxy.rejectCall(callId);
@@ -185,6 +189,12 @@ export default struct IncomingCom {
     } else {
       this.mCallServiceProxy.hangUpCall(callId);
       LogUtils.i(TAG, "onReject this.mCallServiceProxy.hangUpCall :");
+    }
+    if (this.callList.length === 1) {
+      this.hangup = true;
+      globalThis.calluiAbilityContext?.terminateSelf().then((data) => {
+        LogUtils.i(TAG, "onReject terminateSelfCallBack");
+      });
     }
   }
 
