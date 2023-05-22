@@ -45,7 +45,7 @@
         "startWindowIcon": "$media:app_start_window_icon",
         "startWindowBackground": "$color:black",
         "removeMissionAfterTerminate": true,
-        "visible": true,
+        "visible": false,
         "minWindowHeight": 700,
         "minWindowWidth": 320,
         "skills": [
@@ -71,7 +71,10 @@
         "type": "service",
         "visible": true,
         "srcEntrance": "./ets/ServiceAbility/ServiceAbility.ts",
-        "label": "$string:callui_description"
+        "label": "$string:callui_description",
+        "permissions": [
+          "ohos.permission.PLACE_CALL"
+        ],
       }
     ],
     "requestPermissions": [

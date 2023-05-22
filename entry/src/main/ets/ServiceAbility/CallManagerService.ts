@@ -158,8 +158,12 @@ export default class CallManagerService {
    * @return void
    */
   public onDisconnected(): void {
-    this.callData.callState = CALL_STATUS_DISCONNECTED;
-    this.publishData(this.callData);
+    if (this.callData != null && this.callData.callState === 6) {
+      return;
+    } else {
+      this.callData.callState = CALL_STATUS_DISCONNECTED;
+      this.publishData(this.callData);
+    }
   }
 
   /**

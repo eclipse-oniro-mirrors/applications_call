@@ -12,15 +12,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-export default class DefaultCallData {
-  callId: number
-  callState: number
-  accountNumber: string
-  videoState: number
-  callType: number
-  conferenceState: number
-  contactName: string
-  accountId: number
-  isEcc: number
-  startTime: number
+{
+  "license": "ISC",
+  "types": "",
+  "devDependencies": {},
+  "name": "@ohos/common",
+  "description": "a npm package which contains common function",
+  "main": "index.ets",
+  "repository": {},
+  "version": "1.0.0",
+  "dependencies": {}
 }

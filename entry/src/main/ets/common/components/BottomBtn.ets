@@ -29,6 +29,7 @@ export default struct BottomBtn {
   onItemClick: Function = null;
   @Link callData: DefaultCallData;
   @Link callList: Array<CallListStruct>;
+  @Link hangup: boolean;
   private mCallServiceProxy: CallServiceProxy;
   private imageList;
 
@@ -64,6 +65,7 @@ export default struct BottomBtn {
   onHangUp() {
     this.mCallServiceProxy.hangUpCall(this.callData.callId);
     if (this.callList.length === 1) {
+      this.hangup = true;
       globalThis.calluiAbilityContext?.terminateSelf().then((data) => {
         LogUtils.i(TAG, "onHangUp terminateSelfCallBack");
       });
@@ -96,8 +98,13 @@ export default struct BottomBtn {
     if (type == 'hangUP') {
       this.onHangUp();
     }
+    if (type == 'speakerphone') {
+      this.onSpeakerButtonClicked();
+    }
   }
 
+  onSpeakerButtonClicked() {
+  }
   build() {
     GridRow({ columns: { sm: 4, md: 8, lg: 12 }, gutter: 24 }) {
       GridCol({ span: { sm: 4, md: 6, lg: 6 }, offset: { md: 1, lg: 3 } }) {

@@ -73,7 +73,8 @@ export default struct MultiContactCard {
     || this.callData.callState === CallStateConst.callStateObj.CALL_STATUS_INCOMING) && this.hasSimCard1 && this.hasSimCard2;
   }
 
-    getInComingCallState() {
+  getInComingCallState() {
+    if (this.callList.length > 1) {
       let incomingState = false;
       this.callList.forEach((v) => {
         if (v.callState === CallStateConst.callStateObj.CALL_STATUS_WAITING || v.callState === CallStateConst.callStateObj.CALL_STATUS_INCOMING) {
@@ -85,7 +86,10 @@ export default struct MultiContactCard {
       });
       LogUtils.i(TAG, "getInComingCallState incomingState:" + JSON.stringify(incomingState));
       return incomingState;
+    } else {
+      return this.callData.callState;
     }
+  }
 
   build() {
     GridRow({ columns: { sm: 4, md: 8, lg: 12 }, gutter: 24 }) {

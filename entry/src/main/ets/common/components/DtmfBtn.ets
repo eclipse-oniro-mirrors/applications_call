@@ -19,8 +19,8 @@ import DefaultCallData from '../struct/TypeUtils';
 
 const TAG = "DtmfBtn";
 class DataListStruct {
-  value
-  sign
+  value: string
+  sign: string
 }
 
 @Component

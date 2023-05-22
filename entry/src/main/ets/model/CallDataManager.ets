@@ -34,7 +34,7 @@ export default class CallDataManager {
   callList: Array<CallListStruct> = [];
   callTimeList: Array<CallTimeListStruct> = [];
   private callStateChange: Function;
-  private mCallStateManager: CallStateManager ;
+  private mCallStateManager: CallStateManager;
   private NotificationManager;
   private contactManager;
   private static sCallDataManager: CallDataManager;
@@ -53,7 +53,7 @@ export default class CallDataManager {
     this.NotificationManager = new NotificationManager();
     this.contactManager = new ContactManager();
     this.mCallStateManager = CallStateManager.getInstance()
-    if (this.callData) {
+    if (this.callData == null) {
       this.callData = callData;
     } else {
       let oldCallData = this.callData;
@@ -76,7 +76,6 @@ export default class CallDataManager {
       LogUtils.i(TAG, "init callTimeList: undefined");
       this.callTimeList = callTimeList;
     } else {
-      LogUtils.i(TAG, "init callTimeList else : " + JSON.stringify(this.callTimeList));
       let oldCallTimeList = this.callTimeList;
       this.callTimeList = callTimeList;
       Object.assign(this.callTimeList, {
@@ -134,6 +133,7 @@ export default class CallDataManager {
         this.NotificationManager.cancelNotification();
         AppStorage.Get<NotificationManager>('notificationManager').sendCapsuleNotification(callData, true);
         AppStorage.Delete("CallTimeList");
+        this.clearData();
         globalThis.calluiAbilityContext?.terminateSelf().then((data) => {
           LogUtils.i(TAG, "calluiAbility terminateSelf");
         });
@@ -229,5 +229,17 @@ export default class CallDataManager {
       AppStorage.SetOrCreate("CallTimeList", this.callTimeList)
       LogUtils.i(TAG, "updateCallTimeList : " + JSON.stringify(this.callTimeList))
     }
+  }
+
+  clearData() {
+    this.callList.splice(0, this.callList.length);
+    LogUtils.i(TAG, "clearData: " + JSON.stringify(this.callList));
+    let inputvalue = AppStorage.Delete("TextInputValue");
+    LogUtils.i(TAG, "clearData:TextInputValue " + JSON.stringify(inputvalue));
+    let textinput = AppStorage.Delete("TextInput");
+    AppStorage.Delete("CallTimeList");
+    AppStorage.Delete("notificationManager");
+    AppStorage.Delete("currentAudioDeviceIcon");
+    AppStorage.Delete("datalist");
   }
 }
