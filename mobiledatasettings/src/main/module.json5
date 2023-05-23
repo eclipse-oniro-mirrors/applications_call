@@ -57,6 +57,10 @@
       {
         "name": "ohos.permission.GET_TELEPHONY_STATE",
         "reason": "$string:GET_TELEPHONY_STATE"
+      },
+      {
+        "name": "ohos.permission.MANAGE_SECURE_SETTINGS",
+        "reason": "$string:MANAGE_SECURE_SETTINGS"
       }
     ]
   }

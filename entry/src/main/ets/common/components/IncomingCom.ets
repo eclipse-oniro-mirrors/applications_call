@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2022 Huawei Device Co., Ltd.
+ * Copyright (c) 2023 Huawei Device Co., Ltd.
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -24,7 +24,7 @@ import prompt from '@system.prompt';
 import LogUtils from '../utils/LogUtils';
 import DefaultCallData from '../struct/TypeUtils';
 import CallListStruct from '../struct/CallListStruct'
-
+import VibrationAndProximityUtils from '../utils/VibrationAndProximityUtils';
 
 const TAG = "IncomingCom";
 const SMS_REJECTION = `${ImagePathConst.BASE_URL}ic_public_message.svg`;
@@ -219,6 +219,8 @@ export default struct IncomingCom {
     } else {
       this.mCallServiceProxy.acceptCall(this.callData.callId);
     }
+    VibrationAndProximityUtils.addProximityListener();
+    VibrationAndProximityUtils.stopVibration();
   }
 
   build() {

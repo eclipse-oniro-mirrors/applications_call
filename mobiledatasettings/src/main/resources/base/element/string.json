@@ -163,6 +163,10 @@
     {
       "name": "mobile_empty_string",
       "value": " "
+    },
+    {
+      "name": "MANAGE_SECURE_SETTINGS",
+      "value": "manage secure settings"
     }
   ]
 }

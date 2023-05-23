@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2022 Huawei Device Co., Ltd.
+ * Copyright (c) 2023 Huawei Device Co., Ltd.
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -24,6 +24,7 @@ import LogUtils from '../common/utils/LogUtils';
 import CallTimeListStruct from '../common/struct/CallTimeListStruct';
 import CallListStruct from '../common/struct/CallListStruct';
 import DefaultCallData from '../common/struct/TypeUtils';
+import VibrationAndProximityUtils from '../common/utils/VibrationAndProximityUtils';
 
 const TAG = "CallDataManager";
 /**
@@ -130,13 +131,9 @@ export default class CallDataManager {
 
     if (callState === CallStateConst.CALL_STATUS_DISCONNECTED) {
       if (this.callList.length === 1) {
-        this.NotificationManager.cancelNotification();
-        AppStorage.Get<NotificationManager>('notificationManager').sendCapsuleNotification(callData, true);
-        AppStorage.Delete("CallTimeList");
-        this.clearData();
-        globalThis.calluiAbilityContext?.terminateSelf().then((data) => {
-          LogUtils.i(TAG, "calluiAbility terminateSelf");
-        });
+        if (!AppStorage.Get('AirplaneMode')) {
+          this.clearCall(callData);
+        }
       } else {
         this.removeCallById(callId);
         const activeCallData = this.callList.find((v) => v.callState === CallStateConst.CALL_STATUS_ACTIVE);
@@ -151,6 +148,19 @@ export default class CallDataManager {
         }
       }
     }
+  }
+
+  public clearCall(callData) {
+    this.NotificationManager.cancelNotification();
+    AppStorage.Get<NotificationManager>('notificationManager').sendCapsuleNotification(callData, true);
+    AppStorage.Delete("CallTimeList");
+    this.clearData();
+    globalThis.calluiAbilityContext?.terminateSelf().then((data) => {
+      LogUtils.i(TAG, "calluiAbility terminateSelf");
+    });
+    // remove Proximity Listener
+    VibrationAndProximityUtils.removeProximityListener();
+    VibrationAndProximityUtils.stopVibration();
   }
 
   sendNotification(callData) {

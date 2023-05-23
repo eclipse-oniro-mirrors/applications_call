@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2022 Huawei Device Co., Ltd.
+ * Copyright (c) 2023 Huawei Device Co., Ltd.
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -21,6 +21,7 @@ import TelephonyCall from './TelephonyApi';
 import commonEvent from '@ohos.commonEvent';
 import LogUtils from "../common/utils/LogUtils";
 import CallManager from '../model/CallManager'
+import VibrationAndProximityUtils from '../common/utils/VibrationAndProximityUtils';
 
 let subscriber;
 const TAG = "CallManagerService";
@@ -31,7 +32,7 @@ const CALL_STATUS_WAITING = 5;
 const CALL_STATUS_DIALING = 2;
 const CALL_STATUS_DISCONNECTED = 6;
 const CALL_STATUS_DISCONNECTING = 7;
-const events = ['callui.event.callEvent', 'callui.event.click'];
+const events = ['callui.event.callEvent', 'callui.event.click', 'usual.event.SCREEN_OFF'];
 
 /**
  * class CallManagerService
@@ -59,6 +60,8 @@ export default class CallManagerService {
     this.addRegisterListener();
     this.addSubscriber();
     this.context = context;
+    // voice
+    VibrationAndProximityUtils.addVoiceObserver();
   }
 
   /**
@@ -87,6 +90,10 @@ export default class CallManagerService {
         if (res.event === events[1]) {
           const {callId,btnType} = res.parameters
           this.btnclickAgent(callId, btnType)
+        }
+
+        if (res.event === events[2]) {
+          VibrationAndProximityUtils.stopVibration();
         }
       } else {
         LogUtils.i(TAG, "addSubscriber commonEvent.subscribe failed err :" + JSON.stringify(err))
@@ -147,8 +154,18 @@ export default class CallManagerService {
       if (this.callList.length > 1) {
         this.publishData(callData);
       }
+      if (callState === CALL_STATUS_DIALING) {
+        // add Proximity Listener
+        VibrationAndProximityUtils.addProximityListener();
+      }
     } else if (callState !== CALL_STATUS_DISCONNECTING) {
       this.publishData(callData);
+    }
+    if (callState === CALL_STATUS_INCOMING || callState === CALL_STATUS_WAITING) {
+      // incoming, vibration
+      VibrationAndProximityUtils.startVibration();
+    } else {
+      VibrationAndProximityUtils.stopVibration();
     }
   }
 

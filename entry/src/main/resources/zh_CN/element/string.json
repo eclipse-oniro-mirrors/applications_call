@@ -247,6 +247,30 @@
     {
       "name": "ANSWER_CALL",
       "value": "接听电话"
+    },
+    {
+      "name": "turn_off_airplane_and_calls",
+      "value": "是否关闭飞行模式以拨打电话？"
+    },
+    {
+      "name": "VIBRATE",
+      "value": "振动"
+    },
+    {
+      "name": "SET_TELEPHONY_STATE",
+      "value": "设置电话状态"
+    },
+    {
+      "name": "ACCELEROMETER",
+      "value": "加速度计"
+    },
+    {
+      "name": "MANAGE_SECURE_SETTINGS",
+      "value": "管理安全设置"
+    },
+    {
+      "name": "PLACE_CALL",
+      "value": "拨打电话"
     }
   ]
 }

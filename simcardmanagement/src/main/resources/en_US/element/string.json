@@ -239,6 +239,10 @@
     {
       "name": "GET_TELEPHONY_STATE",
       "value": "get telephony state"
+    },
+    {
+      "name": "MANAGE_SECURE_SETTINGS",
+      "value": "manage secure settings"
     }
   ]
 }

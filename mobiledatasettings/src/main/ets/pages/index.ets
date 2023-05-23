@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2022 Huawei Device Co., Ltd.
+ * Copyright (c) 2023 Huawei Device Co., Ltd.
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -16,6 +16,7 @@
 /**
  * @file: Mobile Network Home page
  */
+import { addAirPlaneModeListener, removeAirPlaneModeListener, queryAirPlaneMode } from '../common/utils/AirplaneMode';
 import publiccontent from '../common/components/publiccontent';
 import item from '../common/components/listItem/listItem';
 import call from '@ohos.telephony.call';
@@ -57,6 +58,8 @@ struct Index {
   @State mobileDataDisabled2: boolean = false;
   // Mobile data switch
   @State isDataEnable: boolean = true;
+  // Mobile AirPlane Mode
+  @State isAirPlaneMode: boolean = false;
   // Data roaming switch
   @State dataRoamSwitchCardOne: boolean = false;
   @State dataRoamSwitchCardTwo: boolean = false;
@@ -195,6 +198,32 @@ struct Index {
     });
   }
 
+  // init AirPlane Mode
+  initAirPlaneMode() {
+    LogUtils.i(TAG, 'initAirPlaneMode');
+    try {
+      addAirPlaneModeListener((data) => {
+        LogUtils.i(TAG, 'initAirPlaneMode callback');
+        this.isAirPlaneMode = data == 1 ? true : false;
+      });
+    } catch(err) {
+      LogUtils.e(TAG,`initAirPlaneMode err = ${JSON.stringify(err)}`);
+    }
+  }
+
+  // query AirPlane Mode
+  getAirPlaneMode() {
+    LogUtils.i(TAG, 'getAirPlaneMode');
+    try {
+      queryAirPlaneMode((data) => {
+        LogUtils.i(TAG, 'getAirPlaneMode callback');
+        this.isAirPlaneMode = data == 1 ? true : false;
+      });
+    } catch(err) {
+      LogUtils.e(TAG,`getAirPlaneMode err = ${JSON.stringify(err)}`);
+    }
+  }
+
   addRegisterSimStateChange(slotId) {
     registerSimStateChange(slotId, async () => {
       this.getCellularDataRoamingEnabled();
@@ -235,6 +264,7 @@ struct Index {
 
   aboutToAppear() {
     LogUtils.i(TAG, "aboutToAppear")
+    this.initAirPlaneMode();
     if (getMaxSimCount() === 2) {
       this.addRegisterSimStateChange(1);
       this.isImsSwitchEnabled(1);
@@ -259,6 +289,11 @@ struct Index {
 
   onPageShow() {
     this.isImsSwitchEnabled(0);
+    this.getAirPlaneMode();
+  }
+
+  onPageHide() {
+    removeAirPlaneModeListener();
   }
 
   /**
@@ -333,7 +368,7 @@ struct Index {
                     Toggle({ type: ToggleType.Switch, isOn: this.isDataEnable })
                       .width(36)
                       .height(20)
-                      .enabled(this.simStateStatusCardOne || this.simStateStatusCardTwo)
+                      .enabled((this.simStateStatusCardOne || this.simStateStatusCardTwo) && !this.isAirPlaneMode)
                       .onChange((isOn: boolean) => {
                         this.isDataEnable = !this.isDataEnable;
                         LogUtils.i(TAG, "mobile data switch changes enable:" + JSON.stringify(this.isDataEnable));
@@ -362,7 +397,7 @@ struct Index {
                   .width("100%")
                   .borderRadius(16)
                   .backgroundColor($r("sys.color.ohos_id_color_foreground_contrary"))
-                  .opacity((this.simStateStatusCardOne || this.simStateStatusCardTwo) ? 1 : 0.4)
+                  .opacity((this.simStateStatusCardOne || this.simStateStatusCardTwo) && !this.isAirPlaneMode ? 1 : 0.4)
 
                   SubHeader({
                     titleContent: $r('app.string.mobile_data_card1'),
@@ -376,7 +411,7 @@ struct Index {
                       controlSwitch: $dataRoamSwitchCardOne,
                       title: $r('app.string.mobile_data_dataRoaming'),
                       describe: $r('app.string.mobile_data_enableDataWhileRoaming'),
-                      isDisabled: this.simStateStatusCardOne,
+                      isDisabled: this.simStateStatusCardOne && !this.isAirPlaneMode,
                       isCard: true,
                       isSupport: false,
                       isCon: 0,
@@ -394,7 +429,7 @@ struct Index {
                       controlSwitch: $enableISM,
                       title: $r('app.string.mobile_data_volte'),
                       describe: $r('app.string.mobile_data_confirmation_function'),
-                      isDisabled: this.simStateStatusCardOne,
+                      isDisabled: this.simStateStatusCardOne && !this.isAirPlaneMode,
                       isSupport: false,
                       isCard: true,
                       isCon: 22,
@@ -409,7 +444,7 @@ struct Index {
                   .width("100%")
                   .borderRadius(16)
                   .backgroundColor($r("sys.color.ohos_id_color_foreground_contrary"))
-                  .opacity(this.simStateStatusCardOne ? 1 : 0.4)
+                  .opacity(this.simStateStatusCardOne && !this.isAirPlaneMode ? 1 : 0.4)
 
                   SubHeader({
                     titleContent: $r('app.string.mobile_data_card2'),
@@ -424,7 +459,7 @@ struct Index {
                       controlSwitch: $mobileDataDisabled2,
                       title: $r('app.string.mobile_data_dataRoaming'),
                       describe: $r('app.string.mobile_data_enableDataWhileRoaming'),
-                      isDisabled: this.simStateStatusCardTwo,
+                      isDisabled: this.simStateStatusCardTwo && !this.isAirPlaneMode,
                       isSupport: false,
                       isCard: true,
                       isCon: 0,
@@ -440,7 +475,7 @@ struct Index {
                       controlSwitch: $enableISM2,
                       title: $r('app.string.mobile_data_volte'),
                       describe: $r('app.string.mobile_data_confirmation_function'),
-                      isDisabled: this.simStateStatusCardTwo,
+                      isDisabled: this.simStateStatusCardTwo && !this.isAirPlaneMode,
                       isSupport: false,
                       isCard: true,
                       isCon: 22,
@@ -461,7 +496,7 @@ struct Index {
                   .width("100%")
                   .borderRadius(16)
                   .backgroundColor($r("sys.color.ohos_id_color_foreground_contrary"))
-                  .opacity(this.simStateStatusCardTwo ? 1 : 0.4)
+                  .opacity(this.simStateStatusCardTwo  && !this.isAirPlaneMode ? 1 : 0.4)
                   .visibility(getMaxSimCount() === 2 ? Visibility.Visible : Visibility.Hidden)
                 }
                 .alignItems(HorizontalAlign.Start)

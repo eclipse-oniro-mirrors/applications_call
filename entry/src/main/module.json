@@ -93,7 +93,27 @@
       },
       {
         "name": "ohos.permission.ANSWER_CALL",
-        "reason": "$string:ANSWER_CALL"
+	"reason": "$string:ANSWER_CALL"
+      },
+      {
+        "name": "ohos.permission.VIBRATE",
+        "reason": "$string:VIBRATE"
+      },
+      {
+        "name": "ohos.permission.SET_TELEPHONY_STATE",
+        "reason": "$string:SET_TELEPHONY_STATE"
+      },
+      {
+        "name": "ohos.permission.ACCELEROMETER",
+        "reason": "$string:ACCELEROMETER"
+      },
+      {
+        "name": "ohos.permission.MANAGE_SECURE_SETTINGS",
+        "reason": "$string:MANAGE_SECURE_SETTINGS"
+      },
+      {
+        "name": "ohos.permission.PLACE_CALL",
+        "reason": "$string:PLACE_CALL"
       }
     ]
   }
