@@ -14,6 +14,7 @@
  */
 /**
  SIM_CARD_INFO */
+import { addAirPlaneModeListener, removeAirPlaneModeListener, queryAirPlaneMode } from '../common/utils/AirplaneMode';
 import HeadComponent from '../common/components/headComponent'
 import CardInfomation from '../common/components/cardInfomation'
 import SetFlowLimit from '../common/components/dialog/setFlowLimit'
@@ -76,6 +77,8 @@ struct Index {
   @State defaultSet: Resource = $r('app.string.not_set');
   @State simActive: boolean = false;
   @StorageLink("operatorName") @Watch('updateInfo') operatorInfo: OperaNameStruct = new OperaNameStruct();
+  // Mobile AirPlane Mode
+  @State isAirPlaneMode: boolean = false;
   SIM_CARD_STOP = 'sim_card_management_card_stop_boolean';
   SIM_CARD_Change = 'sim_card_management_card_change_boolean';
   SIM_CARD_DEFAULT = 'sim_card_management_card_default_call';
@@ -102,6 +105,32 @@ struct Index {
     LogUtils.i(TAG, "onclick defaultDialCard open")
     this.defaultDialCard.open();
   };
+
+  // init AirPlane Mode
+  initAirPlaneMode() {
+    LogUtils.i(TAG, 'initAirPlaneMode');
+    try {
+      addAirPlaneModeListener((data) => {
+        LogUtils.i(TAG, 'initAirPlaneMode callback');
+        this.isAirPlaneMode = data == 1 ? true : false;
+      });
+    } catch(err) {
+      LogUtils.e(TAG,`initAirPlaneMode err = ${JSON.stringify(err)}`);
+    }
+  }
+
+  // query AirPlane Mode
+  getAirPlaneMode() {
+    LogUtils.i(TAG, 'getAirPlaneMode');
+    try {
+      queryAirPlaneMode((data) => {
+        LogUtils.i(TAG, 'getAirPlaneMode callback');
+        this.isAirPlaneMode = data == 1 ? true : false;
+      });
+    } catch(err) {
+      LogUtils.e(TAG,`getAirPlaneMode err = ${JSON.stringify(err)}`);
+    }
+  }
 
   /**
    * Get the customized mobile phone number set by the user
@@ -183,6 +212,7 @@ struct Index {
 
   aboutToAppear() {
     LogUtils.i(TAG, "aboutToAppear:");
+    this.initAirPlaneMode();
     SubscriberManager.registerSubscriber();
 
     if (getMaxSimCount() >= 2) {
@@ -214,6 +244,7 @@ struct Index {
 
   onPageShow() {
     LogUtils.i(TAG, "onPageShow start ");
+    this.getAirPlaneMode();
     this.updateInfo();
     LogUtils.i(TAG, "onPageShow end ")
   }
@@ -228,6 +259,10 @@ struct Index {
 
   aboutToDisappear() {
     SubscriberManager.unsubscribe();
+  }
+
+  onPageHide() {
+    removeAirPlaneModeListener();
   }
 
   build() {
@@ -250,6 +285,7 @@ struct Index {
               isCardChange: $defaultDataChange,
               isCardChange2: $isShow,
               defaultSetString: $defaultSet,
+              isAirPlaneMode: $isAirPlaneMode,
             })
 
             Column() {
@@ -261,15 +297,15 @@ struct Index {
               Column() {
                 Text($r('app.string.default_mobile_data')).fontSize('16vp').fontFamily("HarmonyHeiTi").fontWeight(FontWeight.Medium).maxLines(1)
               }
-              .opacity(this.isStop ? 1 : 0.4)
-              .opacity((this.list[0].isOpened && this.list[1].isOpened) ? 1 : 0.4)
+              .opacity(this.isStop && !this.isAirPlaneMode ? 1 : 0.4)
+              .opacity((this.list[0].isOpened && this.list[1].isOpened && !this.isAirPlaneMode) ? 1 : 0.4)
               .align(Alignment.Center)
 
               Row() {
                 DefaultCard({ cardName: $r('app.string.card_1'),
                   cardTextBackgrounColor: this.defaultDataChange ? "#0A59F7" : "#FFFFFF",
                   cardTextColor: this.defaultDataChange ? "#FFFFFF" : "#0A59F7" })
-                  .opacity((this.list[0].isOpened && this.list[1].isOpened) ? 1 : 0.4)
+                  .opacity((this.list[0].isOpened && this.list[1].isOpened && !this.isAirPlaneMode) ? 1 : 0.4)
                   .onClick(() => {
                     LogUtils.i(TAG, "onclick defaultcard card one")
                     this.setDefaultDataSlotId(0);
@@ -280,14 +316,14 @@ struct Index {
                 DefaultCard({ cardName: $r('app.string.card_2'),
                   cardTextBackgrounColor: this.defaultDataChange ? "#FFFFFF" : "#0A59F7",
                   cardTextColor: this.defaultDataChange ? "#0A59F7" : "#FFFFFF" })
-                  .opacity((this.list[0].isOpened && this.list[1].isOpened) ? 1 : 0.4)
+                  .opacity((this.list[0].isOpened && this.list[1].isOpened && !this.isAirPlaneMode) ? 1 : 0.4)
                   .onClick(() => {
                     LogUtils.i(TAG, "onclick defaultcard card two")
                     this.setDefaultDataSlotId(1);
                     this.defaultDataChange = !this.defaultDataChange;
                   })
               }
-              .enabled((this.list[0].isOpened && this.list[1].isOpened))
+              .enabled(this.list[0].isOpened && this.list[1].isOpened && !this.isAirPlaneMode)
               .margin({ right: 1 })
               .width(148)
               .height(40)
@@ -328,10 +364,10 @@ struct Index {
                   .fontFamily("HarmonyHeiTi").fontWeight(FontWeight.Regular)
                 Image($r('app.media.next_icon')).height(20).width(12)
               }
-              .opacity((this.list[0].isOpened && this.list[1].isOpened) ? 1 : 0.4)
+              .opacity((this.list[0].isOpened && this.list[1].isOpened && !this.isAirPlaneMode) ? 1 : 0.4)
             }
-            .opacity((this.list[0].isOpened && this.list[1].isOpened) ? 1 : 0.6)
-            .enabled((this.list[0].isOpened && this.list[1].isOpened))
+            .opacity((this.list[0].isOpened && this.list[1].isOpened && !this.isAirPlaneMode) ? 1 : 0.6)
+            .enabled((this.list[0].isOpened && this.list[1].isOpened && !this.isAirPlaneMode))
             .onClick(() => {
               this.defaultCard();
             })

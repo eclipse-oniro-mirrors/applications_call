@@ -110,7 +110,7 @@ export default class CallManager {
     LogUtils.i(TAG, "update calldata:")
     if (this.callData != undefined && this.callData.callId === callData.callId) {
       const { callState } = this.callData;
-      if (callState === 6 && this.callList.length === 1) {
+      if (callState === 6 && this.callList.length === 1 && !AppStorage.Get('AirplaneMode')) {
         globalThis.calluiAbilityContext?.terminateSelf().then((data) => {
           LogUtils.i(TAG, "calluiAbility terminateSelf because service disconnected");
         });

@@ -60,6 +60,7 @@ export default struct eSimSet {
   @Link isCardChange2: boolean;
   @Link defaultSetString: Resource;
   @StorageLink("operatorName") @Watch('updateOperatorName') operatorRes: OperaNameStruct = new OperaNameStruct();
+  @Link isAirPlaneMode: boolean;
   timer = null;
   SIM_CARD_DEFAULT = 'sim_card_management_card_default_call';
   SIM_CARD_INFO = 'sim_card_management_storage_card_info';
@@ -454,7 +455,7 @@ export default struct eSimSet {
           }
 
           Column() {
-            Text(this.list[0].name)
+            Text(this.isAirPlaneMode ? $r('app.string.sim_no_service') : this.list[0].name)
               .fontSize('16vp')
               .margin({
                 bottom: 2
@@ -477,7 +478,7 @@ export default struct eSimSet {
               .fontWeight(FontWeight.Regular)
           }
           .margin({ left: 16 })
-          .opacity(this.list[0].isOpened ? 1 : 0.4)
+          .opacity((this.list[0].isOpened && !this.isAirPlaneMode) ? 1 : 0.4)
 
           Image($r('app.media.redact'))
             .width('15vp')
@@ -485,14 +486,15 @@ export default struct eSimSet {
             .onClick(() => {
               this.edit(this.list[0])
             })
-            .margin({ left: 20 })
-            .enabled(this.list[0].isOpened)
+	    .margin({ left: 20 })
+	    .enabled(this.list[0].isOpened && !this.isAirPlaneMode)
         }
 
         Row() {
           Toggle({ type: ToggleType.Switch, isOn: this.list[0].isOpened })
             .width(36)
             .height(20)
+            .enabled(!this.isAirPlaneMode)
             .onChange((isOn: boolean) => {
               LogUtils.i(TAG, "onclick toggle card one")
               this.getDefaultVoiceSlotId();
@@ -545,8 +547,8 @@ export default struct eSimSet {
             })
         }
       }
-      .opacity(this.list[0].isOpened ? 1 : 0.6)
-      .enabled(this.list[0].disabled)
+      .opacity(this.list[0].isOpened && !this.isAirPlaneMode ? 1 : 0.6)
+      .enabled(this.list[0].disabled && !this.isAirPlaneMode)
       .padding({
         left: 12,
         right: 12,
@@ -578,7 +580,7 @@ export default struct eSimSet {
           }
 
           Column() {
-            Text(this.list[1].name)
+            Text(this.isAirPlaneMode ? $r('app.string.sim_no_service') : this.list[1].name)
               .fontSize('16vp')
               .margin({ bottom: 2 })
               .fontFamily("HarmonyHeiTi")
@@ -599,7 +601,7 @@ export default struct eSimSet {
               .fontWeight(FontWeight.Regular)
           }
           .margin({ left: 16 })
-          .opacity(this.list[1].isOpened ? 1 : 0.4)
+          .opacity((this.list[1].isOpened && !this.isAirPlaneMode) ? 1 : 0.4)
 
           Image($r('app.media.redact'))
             .width('12vp')
@@ -608,13 +610,14 @@ export default struct eSimSet {
               this.edit(this.list[1]);
             })
             .margin({ left: 4 })
-            .enabled(this.list[1].isOpened)
+	    .enabled(this.list[1].isOpened && !this.isAirPlaneMode)
         }
 
         Row() {
           Toggle({ type: ToggleType.Switch, isOn: this.list[1].isOpened })
             .width(36)
             .height(20)
+            .enabled(!this.isAirPlaneMode)
             .onChange((isOn: boolean) => {
               LogUtils.i(TAG, "onclick toggle card two")
               this.getDefaultVoiceSlotId();
@@ -668,8 +671,8 @@ export default struct eSimSet {
         }
       }
       .height(104)
-      .opacity(this.list[1].isOpened ? 1 : 0.6)
-      .enabled(this.list[1].disabled)
+      .opacity(this.list[1].isOpened  && !this.isAirPlaneMode ? 1 : 0.6)
+      .enabled(this.list[1].disabled && !this.isAirPlaneMode)
       .padding({
         left: 12,
         right: 12,

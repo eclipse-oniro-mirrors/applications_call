@@ -239,6 +239,10 @@
     {
       "name": "GET_TELEPHONY_STATE",
       "value": "获取卡的状态"
+    },
+    {
+      "name": "MANAGE_SECURE_SETTINGS",
+      "value": "管理安全设置"
     }
   ]
 }

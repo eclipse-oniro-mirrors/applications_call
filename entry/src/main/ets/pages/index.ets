@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2022 Huawei Device Co., Ltd.
+ * Copyright (c) 2023 Huawei Device Co., Ltd.
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -13,6 +13,9 @@
  * limitations under the License.
  */
 
+import { addAirPlaneModeListener, removeAirPlaneModeListener, turnOffAirPlaneMode } from '../common/utils/AirplaneMode';
+import ConfirmDialogEx from './dialog/ConfirmDialogEx';
+import EnvironmentProp from './dialog/EnvironmentProp';
 import mediaQuery from '@ohos.mediaquery';
 import wantAgent from '@ohos.wantAgent';
 import ContactCard from '../common/components/ContactCard';
@@ -33,6 +36,7 @@ import DefaultCallData from '../common/struct/TypeUtils'
 import CallListStruct from '../common/struct/CallListStruct'
 import CallTimeListStruct from '../common/struct/CallTimeListStruct'
 
+const AIRPLANE_MODE = 1;
 const TAG = "Index";
 
 /**
@@ -53,6 +57,31 @@ struct Index {
   private smListener: mediaQuery.MediaQueryListener;
   private mdListener: mediaQuery.MediaQueryListener;
   private lgListener: mediaQuery.MediaQueryListener;
+  private isNeedCallAgain: boolean = false;
+
+  airplaneModeDialogController: CustomDialogController = new CustomDialogController({
+    //Components shared by the TIP for creating or updating a contact by mistake and the TIP for deleting a contact
+    builder: ConfirmDialogEx({
+      cancel: () => {
+        this.airplaneModeDialogController.close();
+        LogUtils.i(TAG, 'dial airplaneModeDialogController cancel');
+        this.mCallDataManager.clearCall(this.callData);
+      },
+      confirm: () => {
+        LogUtils.i(TAG, 'dial airplaneModeDialogController confirm');
+        this.airplaneModeDialogController.close();
+        this.isNeedCallAgain = true;
+        turnOffAirPlaneMode();
+      },
+      title: $r('app.string.turn_off_airplane_and_calls'),
+      cancelText: $r('app.string.cancel'),
+      confirmText: $r('app.string.shutDown')
+    }),
+    autoCancel: false,
+    alignment: (EnvironmentProp.isTablet() ? DialogAlignment.Center : DialogAlignment.Bottom),
+    offset: { dx: 0, dy: -16 }
+  });
+
   isBreakpointSM = (mediaQueryResult) => {
     if (mediaQueryResult.matches) {
       this.curBp = 'sm'
@@ -86,6 +115,7 @@ struct Index {
     this.mdListener.on("change", this.isBreakpointMD);
     this.lgListener = mediaQuery.matchMediaSync('(840vp<width)');
     this.lgListener.on("change", this.isBreakpointLG);
+    this.initAirPlaneMode();
   }
 
   onPageShow() {
@@ -97,6 +127,25 @@ struct Index {
     this.notificationManager?.sendCapsuleNotification(this.incomingData ? this.callData : this.incomingData, false);
     byTrace.finishTrace('onPageShow', 1);
     LogUtils.i(TAG, "onPageShow end");
+  }
+
+  initAirPlaneMode() {
+    LogUtils.i(TAG, 'initAirPlaneMode');
+    try {
+      addAirPlaneModeListener((data) => {
+        LogUtils.i(TAG, 'initAirPlaneMode callback');
+        if (data == AIRPLANE_MODE) {
+          this.airplaneModeDialogController.open();
+          AppStorage.SetOrCreate('AirplaneMode', true);
+        } else if (this.isNeedCallAgain) {
+          this.isNeedCallAgain = false;
+          AppStorage.SetOrCreate('AirplaneMode', false);
+          this.mCallDataManager.clearCall(this.callData);
+        }
+      });
+    } catch(err) {
+      LogUtils.e(TAG, `initAirPlaneMode err = ${JSON.stringify(err)}`);
+    }
   }
 
   onPageHide() {
@@ -125,6 +174,7 @@ struct Index {
     this.smListener.off('change', this.isBreakpointSM);
     this.mdListener.off('change', this.isBreakpointMD);
     this.lgListener.off('change', this.isBreakpointLG);
+    removeAirPlaneModeListener();
   }
 
   onBackPress() {

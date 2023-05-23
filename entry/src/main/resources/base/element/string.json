@@ -243,6 +243,30 @@
     {
       "name": "ANSWER_CALL",
       "value": "Answer call"
+    },
+    {
+      "name": "turn_off_airplane_and_calls",
+      "value": "Do you want to turn off airplane mode and make phone calls?"
+    },
+    {
+      "name": "VIBRATE",
+      "value": "vibrate"
+    },
+    {
+      "name": "SET_TELEPHONY_STATE",
+      "value": "set telephony state"
+    },
+    {
+      "name": "ACCELEROMETER",
+      "value": "accelerometer"
+    },
+    {
+      "name": "MANAGE_SECURE_SETTINGS",
+      "value": "manage secure settings"
+    },
+    {
+      "name": "PLACE_CALL",
+      "value": "place call"
     }
   ]
 }
