@@ -61,6 +61,16 @@ export default class CallServiceProxy {
   }
 
   /**
+   * Stops the ringtone.
+   */
+  public muteRinger() {
+    LogUtils.i(TAG, 'muteRinger')
+    call.muteRinger((err) => {
+      LogUtils.e(TAG, `muteRinger callback: err->${JSON.stringify(err)}`);
+    });
+  }
+
+  /**
    * accept call
    *
    * @param { number } callId - call id

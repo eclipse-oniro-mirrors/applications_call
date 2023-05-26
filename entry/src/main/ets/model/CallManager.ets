@@ -25,6 +25,7 @@ import call from '@ohos.telephony.call';
 import CallStateConst from '../common/constant/CallStateConst';
 import DefaultCallData from '../common/struct/TypeUtils';
 import CallListStruct from '../common/struct/CallListStruct';
+import VibrationAndProximityUtils from '../common/utils/VibrationAndProximityUtils';
 
 const TAG = "CallManager";
 const TIMING = 1000;
@@ -114,6 +115,9 @@ export default class CallManager {
         globalThis.calluiAbilityContext?.terminateSelf().then((data) => {
           LogUtils.i(TAG, "calluiAbility terminateSelf because service disconnected");
         });
+        // remove Proximity Listener
+        VibrationAndProximityUtils.wakeupScreen();
+        VibrationAndProximityUtils.stopVibration();
         return;
       }
     }

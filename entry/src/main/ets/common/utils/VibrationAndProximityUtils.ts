@@ -25,14 +25,15 @@
  * 6. uniqueness.
  */
 import audio from '@ohos.multimedia.audio';
+import CallServiceProxy from '../../model/CallServiceProxy';
 import LogUtils from './LogUtils';
-import power from '@ohos.power';
+import runningLock from '@ohos.runningLock';
 import sensor from '@ohos.sensor';
 import vibrator from '@ohos.vibrator';
 
 const TAG = 'VibrationAndProximityUtils';
 const PROXIMITY_INTERVAL = 10000000;
-const VIBRATION_DURATION = 100 * 1000;
+const VIBRATION_COUNT = 20;
 
 /**
  *  Vibration And Proximity tool class
@@ -42,6 +43,7 @@ export class VibrationAndProximityUtils {
   startVibrationFlag = false;
   addProximityListenerFlag = false;
   recordDistance = -1;
+  recordLock = null;
 
   /**
    * add Proximity Listener
@@ -93,11 +95,23 @@ export class VibrationAndProximityUtils {
    * suspend Screen
    */
   public suspendScreen() {
-    try {
-      power.suspend();
-      LogUtils.i(TAG, 'suspendScreen  suspend');
-    } catch(err) {
-      LogUtils.e(TAG, 'suspendScreen suspend failed, err: '  + err);
+    if (this.recordLock) {
+      this.recordLock.hold(Number.MAX_VALUE);
+      LogUtils.i(TAG, 'suspendScreen hold');
+    } else {
+      let that = this;
+      runningLock.create('call_lock', runningLock.RunningLockType.PROXIMITY_SCREEN_CONTROL).then(lock => {
+        LogUtils.i(TAG, 'suspendScreen create running lock success');
+        try {
+          that.recordLock = lock;
+          lock.hold(Number.MAX_VALUE);
+          LogUtils.i(TAG, 'suspendScreen hold');
+        } catch(err) {
+          LogUtils.e(TAG, 'suspendScreen hold running lock failed, err: ' + err);
+        }
+      }).catch(err => {
+        LogUtils.e(TAG, 'suspendScreen create running lock failed, err: ' + err);
+      });
     }
   }
 
@@ -105,11 +119,23 @@ export class VibrationAndProximityUtils {
    * wakeup Screen
    */
   public wakeupScreen() {
-    try {
-      power.wakeup('wakeup_call');
-      LogUtils.i(TAG, 'wakeupScreen wakeup');
-    } catch(err) {
-      LogUtils.e(TAG, 'wakeupScreen wakeup failed, err: '  + err);
+    if (this.recordLock) {
+      this.recordLock.unhold();
+      LogUtils.i(TAG, 'wakeupScreen unhold');
+    } else {
+      let that = this;
+      runningLock.create('call_lock', runningLock.RunningLockType.PROXIMITY_SCREEN_CONTROL).then(lock => {
+        LogUtils.i(TAG, 'wakeupScreen create running lock success');
+        try {
+          that.recordLock = lock;
+          lock.unhold();
+          LogUtils.i(TAG, 'wakeupScreen unhold');
+        } catch(err) {
+          LogUtils.e(TAG, 'wakeupScreen unhold running lock failed, err: ' + err);
+        }
+      }).catch(err => {
+        LogUtils.e(TAG, 'wakeupScreen create running lock failed, err: ' + err);
+      });
     }
   }
 
@@ -124,8 +150,9 @@ export class VibrationAndProximityUtils {
       }
       let that = this;
       vibrator.startVibration({
-        type: 'time',
-        duration: VIBRATION_DURATION,
+        type: 'preset',
+        effectId: 'haptic.ringtone.T-Mobile_Ring',
+        count: VIBRATION_COUNT
       }, {
         usage: 'ring'
       }, (error) => {
@@ -151,7 +178,7 @@ export class VibrationAndProximityUtils {
     }
     try {
       let that = this;
-      vibrator.stopVibration(vibrator.VibratorStopMode.VIBRATOR_STOP_MODE_TIME, function (error) {
+      vibrator.stopVibration(vibrator.VibratorStopMode.VIBRATOR_STOP_MODE_PRESET, function (error) {
         if (error) {
           LogUtils.e(TAG, 'stopVibration error.code: ' + error.code + ', error.message: ' + error.message);
           return;
@@ -171,6 +198,7 @@ export class VibrationAndProximityUtils {
     audio.getAudioManager().on('volumeChange', () => {
       LogUtils.i(TAG, 'addVoiceObserver volumeChange');
       this.stopVibration();
+      CallServiceProxy.getInstance().muteRinger();
     });
   }
 }

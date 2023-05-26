@@ -42,7 +42,7 @@ export default struct ConfirmDialogEx {
           .textOverflow({ overflow: TextOverflow.Ellipsis })
           .maxLines(2)
       }
-      .margin({ bottom: 10, top: 10 })
+      .margin({ bottom: 8, top: 10 })
 
       Row() {
         Flex({

@@ -80,18 +80,15 @@ export function queryAirPlaneMode(callback) {
     return;
   }
   let condition = new dataSharePredicates.DataSharePredicates();
+  condition.equalTo('KEYWORD', 'airplane_mode');
   try {
     // ID, KEYWORD, VALUE
     dataShareHelper.query(SETTING_AIRPLANE_MODE_URI, condition, null).then((data) => {
       LogUtils.i(TAG, 'queryAirPlaneMode query succeed');
-      let hasNext = data.goToFirstRow();
-      while (hasNext) {
-        if (data.getString(data.getColumnIndex('KEYWORD')) == QUERY_AIRPLANE_MODE_KEY) {
-          LogUtils.i(TAG, 'queryAirPlaneMode query succeed return key');
-          callback(data.getLong(data.getColumnIndex('VALUE')));
-          return;
-        }
-        hasNext = data.goToNextRow();
+      if (data && data.goToFirstRow()) {
+        LogUtils.i(TAG, 'queryAirPlaneMode query succeed return key');
+        callback(data.getLong(data.getColumnIndex('VALUE')));
+        return;
       }
       callback(-1);
     }).catch((err) => {
