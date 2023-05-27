@@ -4,6 +4,7 @@ import CallManagerService from './CallManagerService';
 import rpc from '@ohos.rpc';
 import LogUtils from '../common/utils/LogUtils';
 import DefaultCallData from '../common/struct/TypeUtils';
+import CallManager from '../model/CallManager';
 
 const TAG = "ServiceAbility";
 
@@ -29,11 +30,13 @@ export default class ServiceAbility extends ServiceExtension {
     callData.isEcc = want.parameters?.isEcc;
     callData.conferenceState = want.parameters?.conferenceState;
     this.callManagerService.getCallData(callData);
+    CallManager.getInstance().setServiceConnected(true);
     return new Stub('ServiceAbility');
   }
 
   onDisconnect(): void {
     LogUtils.i(TAG, 'onDisconnect callUI service');
+    CallManager.getInstance().setServiceConnected(false);
     this.callManagerService.onDisconnected();
   }
 
