@@ -43,10 +43,11 @@ export default class CallManager {
   private mCallServiceProxy: CallServiceProxy ;
   private mUtils: Utils;
   private diffSeconds
-  private mTimeMeter
+  private mTimeMeter;
+  private isServiceConnected: boolean = false;
 
   public static getInstance(): CallManager {
-    if (!globalThis.callManager) {
+    if (globalThis.callManager == null) {
       globalThis.callManager = new CallManager();
     }
     return globalThis.callManager;
@@ -74,6 +75,12 @@ export default class CallManager {
    */
   private initCallData() {
     if (globalThis.abilityWant && globalThis.abilityWant.parameters && ('callState' in globalThis.abilityWant.parameters)) {
+      if (!this.isServiceConnected) {
+        globalThis.calluiAbilityContext?.terminateSelf().then((data) => {
+          LogUtils.i(TAG, "calluiAbility terminateSelf because service disconnected");
+        });
+        return;
+      }
       let callData = this.getCallDataFromWant(globalThis.abilityWant.parameters);
       this.update(callData);
       LogUtils.i(TAG, "initCallData featureAbility.getWant :")
@@ -83,6 +90,10 @@ export default class CallManager {
         params: []
       });
     }
+  }
+
+  setServiceConnected(isServiceConnected: boolean): void {
+      this.isServiceConnected = isServiceConnected;
   }
 
   /**
@@ -110,7 +121,7 @@ export default class CallManager {
     LogUtils.i(TAG, "update calldata:")
     if (this.callData != undefined && this.callData.callId === callData.callId) {
       const { callState } = this.callData;
-      if (callState === 6 && this.callList.length === 1 && !AppStorage.Get('AirplaneMode')) {
+      if (callState === 6 && this.callList.length === 1) {
         globalThis.calluiAbilityContext?.terminateSelf().then((data) => {
           LogUtils.i(TAG, "calluiAbility terminateSelf because service disconnected");
         });
