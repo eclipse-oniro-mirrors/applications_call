@@ -129,6 +129,10 @@
       {
         "name": "ohos.permission.PLACE_CALL",
         "reason": "$string:PLACE_CALL"
+      },
+      {
+        "name": "ohos.permission.RUNNING_LOCK",
+        "reason": "$string:RUNNING_LOCK"
       }
     ]
   }

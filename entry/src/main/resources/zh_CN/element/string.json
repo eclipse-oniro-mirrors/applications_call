@@ -271,6 +271,10 @@
     {
       "name": "PLACE_CALL",
       "value": "拨打电话"
+    },
+    {
+      "name": "RUNNING_LOCK",
+      "value": "屏幕运行锁"
     }
   ]
 }

@@ -159,7 +159,7 @@ export default class CallDataManager {
       LogUtils.i(TAG, "calluiAbility terminateSelf");
     });
     // remove Proximity Listener
-    VibrationAndProximityUtils.removeProximityListener();
+    VibrationAndProximityUtils.wakeupScreen();
     VibrationAndProximityUtils.stopVibration();
   }
 

@@ -16,7 +16,7 @@
 /**
  * @file: call manager service
  */
-
+import CallServiceProxy from '../model/CallServiceProxy';
 import TelephonyCall from './TelephonyApi';
 import commonEvent from '@ohos.commonEvent';
 import LogUtils from "../common/utils/LogUtils";
@@ -94,6 +94,7 @@ export default class CallManagerService {
 
         if (res.event === events[2]) {
           VibrationAndProximityUtils.stopVibration();
+          CallServiceProxy.getInstance().muteRinger();
         }
       } else {
         LogUtils.i(TAG, "addSubscriber commonEvent.subscribe failed err :" + JSON.stringify(err))
@@ -156,7 +157,7 @@ export default class CallManagerService {
       }
       if (callState === CALL_STATUS_DIALING) {
         // add Proximity Listener
-        VibrationAndProximityUtils.addProximityListener();
+        VibrationAndProximityUtils.suspendScreen();
       }
     } else if (callState !== CALL_STATUS_DISCONNECTING) {
       this.publishData(callData);

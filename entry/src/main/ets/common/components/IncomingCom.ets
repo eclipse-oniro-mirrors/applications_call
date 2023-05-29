@@ -219,7 +219,7 @@ export default struct IncomingCom {
     } else {
       this.mCallServiceProxy.acceptCall(this.callData.callId);
     }
-    VibrationAndProximityUtils.addProximityListener();
+    VibrationAndProximityUtils.suspendScreen();
     VibrationAndProximityUtils.stopVibration();
   }
 
