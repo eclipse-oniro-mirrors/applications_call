@@ -21,9 +21,9 @@ import dataSharePredicates from '@ohos.data.dataSharePredicates';
 import LogUtils from '../common/utils/LogUtils';
 import CallManager from '../model/CallManager';
 
-const TAG = "ContactManager";
-const DBbaseUri = 'datashare:///com.ohos.contactsdataability';
-const DBUri = DBbaseUri + '/contacts/contact_data';
+const TAG = 'ContactManager';
+const DB_BASE_URI = 'datashare:///com.ohos.contactsdataability';
+const DB_URI = DB_BASE_URI + '/contacts/contact_data';
 
 /**
  * class ContactManager
@@ -34,7 +34,7 @@ export default class ContactManager {
    *
    * @param { Object } callData -Object
    */
-  async getContactInfo(callData) {
+  async getContactInfo(callData): Promise<void> {
     if (callData.contactName) {
       return;
     }
@@ -44,8 +44,8 @@ export default class ContactManager {
       predicates.equalTo('detail_info', callData.accountNumber);
       predicates.equalTo('is_deleted', 0);
       let context = globalThis.calluiAbilityContext;
-      const dataAbilityHelper = await dataShare.createDataShareHelper(context, DBbaseUri);
-      const resSet = await dataAbilityHelper.query(DBUri, predicates, columns);
+      const dataAbilityHelper = await dataShare.createDataShareHelper(context, DB_BASE_URI);
+      const resSet = await dataAbilityHelper.query(DB_URI, predicates, columns);
       LogUtils.i(TAG, 'getContactInfo resSet : ' + JSON.stringify(resSet.rowCount));
       if (resSet.rowCount > 0) {
         resSet.goToFirstRow();

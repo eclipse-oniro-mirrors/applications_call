@@ -16,14 +16,5 @@
 /**
  *  constants package tool class
  */
-export class Constants {
-  public APP_KEY_CALLDATAMANGER_MANAGER: string = "CallDataManager";
-  public CALL_BUNDLE_NAME = 'com.ohos.callui';
-  public CALL_ABILITY_NAME = 'com.ohos.callui.MainAbility';
-  public GLOBALTHIS_CALLMANAGER = 'callManager';
-  public GLOBALTHIS_ABILITY_WANT = 'abilityWant';
-}
-
-let mConstants = new Constants();
-
-export default mConstants as Constants;
+export const CALL_BUNDLE_NAME = 'com.ohos.callui';
+export const CALL_ABILITY_NAME = 'com.ohos.callui.MainAbility';

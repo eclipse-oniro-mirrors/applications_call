@@ -30,19 +30,19 @@
  */
 export class LogUtils {
   d(TAG, msg): void {
-    console.debug("[callui:]" + TAG + ":" + msg);
+    console.debug('[callui:]' + TAG + ':' + msg);
   }
 
   i(TAG, msg): void {
-    console.info("[callui:]" + TAG + ":" + msg);
+    console.info('[callui:]' + TAG + ':' + msg);
   }
 
   w(TAG, msg): void {
-    console.warn("[callui:]" + TAG + ":" + msg);
+    console.warn('[callui:]' + TAG + ':' + msg);
   }
 
   e(TAG, msg): void {
-    console.error("[callui:]" + TAG + ":" + msg);
+    console.error('[callui:]' + TAG + ':' + msg);
   }
 }
 
