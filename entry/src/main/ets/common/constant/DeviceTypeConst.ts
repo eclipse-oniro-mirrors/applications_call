@@ -13,13 +13,7 @@
  * limitations under the License.
  */
 
-export default class DeviceTypeConst {
-  //DEVICE_EARPIECE
-  public static DEVICE_EARPIECE = 0;
-  //DEVICE_SPEAKER
-  public static DEVICE_SPEAKER = 1;
-  //DEVICE_WIRED_HEADSET
-  public static DEVICE_WIRED_HEADSET = 2;
-  //DEVICE_BLUETOOTH_SCO
-  public static DEVICE_BLUETOOTH_SCO = 3;
-}
+export const DEVICE_EARPIECE = 0;
+export const DEVICE_SPEAKER = 1;
+export const DEVICE_WIRED_HEADSET = 2;
+export const DEVICE_BLUETOOTH_SCO = 3;

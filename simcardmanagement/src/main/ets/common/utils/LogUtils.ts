@@ -30,19 +30,19 @@
  */
 export class LogUtils {
   d(TAG, msg): void {
-    console.debug("[simcardmanagement:]" + TAG + ":" + msg);
+    console.debug('[simcardmanagement:]' + TAG + ':' + msg);
   }
 
   i(TAG, msg): void {
-    console.info("[simcardmanagement:]" + TAG + ":" + msg);
+    console.info('[simcardmanagement:]' + TAG + ':' + msg);
   }
 
   w(TAG, msg): void {
-    console.warn("[simcardmanagement:]" + TAG + ":" + msg);
+    console.warn('[simcardmanagement:]' + TAG + ':' + msg);
   }
 
   e(TAG, msg): void {
-    console.error("[simcardmanagement:]" + TAG + ":" + msg);
+    console.error('[simcardmanagement:]' + TAG + ':' + msg);
   }
 }
 

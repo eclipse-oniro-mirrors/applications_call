@@ -28,85 +28,33 @@ import audio from '@ohos.multimedia.audio';
 import CallServiceProxy from '../../model/CallServiceProxy';
 import LogUtils from './LogUtils';
 import runningLock from '@ohos.runningLock';
-import sensor from '@ohos.sensor';
 import vibrator from '@ohos.vibrator';
 
 const TAG = 'VibrationAndProximityUtils';
-const PROXIMITY_INTERVAL = 10000000;
 const VIBRATION_COUNT = 20;
 
 /**
  *  Vibration And Proximity tool class
  */
 export class VibrationAndProximityUtils {
-
-  startVibrationFlag = false;
-  addProximityListenerFlag = false;
-  recordDistance = -1;
-  recordLock = null;
-
-  /**
-   * add Proximity Listener
-   */
-  public addProximityListener() {
-    try {
-      if (this.addProximityListenerFlag) {
-        LogUtils.e(TAG, 'addProximityListener return');
-        return;
-      }
-      this.addProximityListenerFlag = true;
-      let that = this
-      sensor.on(sensor.SensorId.PROXIMITY, function (data) {
-        if (data) {
-          if (that.recordDistance != data.distance) {
-            if (data.distance == 0) {
-              that.suspendScreen();
-            } else {
-              that.wakeupScreen();
-            }
-          }
-          that.recordDistance = data.distance;
-        }
-      }, { interval: PROXIMITY_INTERVAL });
-    } catch (err) {
-      LogUtils.e(TAG, 'addProximityListener sensor On fail, errCode: ' + err.code + ' ,msg: ' + err.message);
-    }
-  }
-
-  /**
-   * remove Proximity Listener Vibration
-   */
-  removeProximityListener() {
-    try {
-      if (!this.addProximityListenerFlag) {
-        LogUtils.e(TAG, 'removeProximityListener return');
-        return;
-      }
-      this.addProximityListenerFlag = false;
-      sensor.off(sensor.SensorId.PROXIMITY, function () {
-        LogUtils.i(TAG, 'removeProximityListener ');
-      })
-    } catch (err) {
-      LogUtils.e(TAG, 'removeProximityListener sensor off fail, errCode: ' + err.code + ' ,msg: ' + err.message);
-    }
-  }
+  private static startVibrationFlag = false;
+  private static recordLock = null;
 
   /**
    * suspend Screen
    */
-  public suspendScreen() {
-    if (this.recordLock) {
-      this.recordLock.hold(Number.MAX_VALUE);
+  public suspendScreen(): void {
+    if (VibrationAndProximityUtils.recordLock) {
+      VibrationAndProximityUtils.recordLock.hold(Number.MAX_VALUE);
       LogUtils.i(TAG, 'suspendScreen hold');
     } else {
-      let that = this;
       runningLock.create('call_lock', runningLock.RunningLockType.PROXIMITY_SCREEN_CONTROL).then(lock => {
         LogUtils.i(TAG, 'suspendScreen create running lock success');
         try {
-          that.recordLock = lock;
+          VibrationAndProximityUtils.recordLock = lock;
           lock.hold(Number.MAX_VALUE);
           LogUtils.i(TAG, 'suspendScreen hold');
-        } catch(err) {
+        } catch (err) {
           LogUtils.e(TAG, 'suspendScreen hold running lock failed, err: ' + err);
         }
       }).catch(err => {
@@ -118,19 +66,18 @@ export class VibrationAndProximityUtils {
   /**
    * wakeup Screen
    */
-  public wakeupScreen() {
-    if (this.recordLock) {
-      this.recordLock.unhold();
+  public wakeupScreen(): void {
+    if (VibrationAndProximityUtils.recordLock) {
+      VibrationAndProximityUtils.recordLock.unhold();
       LogUtils.i(TAG, 'wakeupScreen unhold');
     } else {
-      let that = this;
       runningLock.create('call_lock', runningLock.RunningLockType.PROXIMITY_SCREEN_CONTROL).then(lock => {
         LogUtils.i(TAG, 'wakeupScreen create running lock success');
         try {
-          that.recordLock = lock;
+          VibrationAndProximityUtils.recordLock = lock;
           lock.unhold();
           LogUtils.i(TAG, 'wakeupScreen unhold');
-        } catch(err) {
+        } catch (err) {
           LogUtils.e(TAG, 'wakeupScreen unhold running lock failed, err: ' + err);
         }
       }).catch(err => {
@@ -142,13 +89,12 @@ export class VibrationAndProximityUtils {
   /**
    * start Vibration
    */
-  public startVibration() {
+  public startVibration(): void {
     try {
-      if (this.startVibrationFlag) {
+      if (VibrationAndProximityUtils.startVibrationFlag) {
         LogUtils.e(TAG, 'startVibration return');
         return;
       }
-      let that = this;
       vibrator.startVibration({
         type: 'preset',
         effectId: 'haptic.ringtone.T-Mobile_Ring',
@@ -159,7 +105,7 @@ export class VibrationAndProximityUtils {
         if (error) {
           LogUtils.e(TAG, 'startVibration fail, error.code: ' + error.code + ', error.message: ' + error.message);
         } else {
-          that.startVibrationFlag = true;
+          VibrationAndProximityUtils.startVibrationFlag = true;
           LogUtils.i(TAG, 'startVibration Callback returned to indicate a successful vibration.');
         }
       });
@@ -171,21 +117,20 @@ export class VibrationAndProximityUtils {
   /**
    * stop Vibration
    */
-  public stopVibration() {
-    if (!this.startVibrationFlag) {
+  public stopVibration(): void {
+    if (!VibrationAndProximityUtils.startVibrationFlag) {
       LogUtils.e(TAG, 'stopVibration return');
       return;
     }
     try {
-      let that = this;
       vibrator.stopVibration(vibrator.VibratorStopMode.VIBRATOR_STOP_MODE_PRESET, function (error) {
         if (error) {
           LogUtils.e(TAG, 'stopVibration error.code: ' + error.code + ', error.message: ' + error.message);
           return;
         }
-        that.startVibrationFlag = false;
+        VibrationAndProximityUtils.startVibrationFlag = false;
         LogUtils.i(TAG, 'stopVibration Callback returned to indicate successful.');
-      })
+      });
     } catch (err) {
       LogUtils.e(TAG, 'stopVibration errCode: ' + err.code + ' ,msg: ' + err.message);
     }
@@ -194,7 +139,7 @@ export class VibrationAndProximityUtils {
   /**
    * add Voice Observe
    */
-  addVoiceObserver() {
+  addVoiceObserver(): void {
     audio.getAudioManager().on('volumeChange', () => {
       LogUtils.i(TAG, 'addVoiceObserver volumeChange');
       this.stopVibration();

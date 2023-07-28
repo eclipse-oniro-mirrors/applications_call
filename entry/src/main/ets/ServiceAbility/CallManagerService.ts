@@ -32,6 +32,9 @@ const CALL_STATUS_WAITING = 5;
 const CALL_STATUS_DIALING = 2;
 const CALL_STATUS_DISCONNECTED = 6;
 const CALL_STATUS_DISCONNECTING = 7;
+const CALL_EVENT = 0;
+const CALL_CLICK = 1;
+const CALL_SCREEN_OFF = 2;
 const events = ['callui.event.callEvent', 'callui.event.click', 'usual.event.SCREEN_OFF'];
 
 /**
@@ -80,19 +83,19 @@ export default class CallManagerService {
 
     commonEvent.subscribe(subscriber, (err, res) => {
       if (err.code === 0) {
-        if (res.event === events[0]) {
+        if (res.event === events[CALL_EVENT]) {
           const obj = JSON.parse(res.data);
           if (obj && obj.key === 'getInitCallData') {
             this.publishData(this.callData);
           }
         }
 
-        if (res.event === events[1]) {
+        if (res.event === events[CALL_CLICK]) {
           const {callId, btnType} = res.parameters;
           this.btnclickAgent(callId, btnType);
         }
 
-        if (res.event === events[2]) {
+        if (res.event === events[CALL_SCREEN_OFF]) {
           VibrationAndProximityUtils.stopVibration();
           CallServiceProxy.getInstance().muteRinger();
         }
@@ -176,7 +179,7 @@ export default class CallManagerService {
    * @return void
    */
   public onDisconnected(): void {
-    if (this.callData != null && this.callData.callState === 6) {
+    if (this.callData != null && this.callData.callState === CALL_STATUS_DISCONNECTED) {
       return;
     } else {
       this.callData.callState = CALL_STATUS_DISCONNECTED;
