@@ -29,7 +29,7 @@ import byTrace from "@ohos.bytrace"
 import NotificationManager from '../model/NotificationManager';
 import CallManager from '../model/CallManager';
 import backgroundTaskManager from '@ohos.backgroundTaskManager';
-import Constants from '../common/utils/Constants';
+import * as Constants from '../common/utils/Constants';
 import CallDataManager from '../model/CallDataManager';
 import MultiContactCard from '../common/components/MultiContactCard';
 import DefaultCallData from '../common/struct/TypeUtils'

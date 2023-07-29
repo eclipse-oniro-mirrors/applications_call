@@ -25,10 +25,10 @@
  * 6. uniqueness.
  */
 import call from '@ohos.telephony.call';
-import sim from '@ohos.telephony.sim'
-import LogUtils from './LogUtils'
+import sim from '@ohos.telephony.sim';
+import LogUtils from './LogUtils';
 
-const TAG = "CallUtils"
+const TAG = 'CallUtils';
 
 /**
  *  calllog package tool class
@@ -41,7 +41,7 @@ export class CallUtils {
    *
    * @return { boolean } - return success true fail false
    */
-  public hasSimeCard = (accountId) => new Promise((resolve, reject) => {
+  public hasSimeCard: Function = (accountId) => new Promise((resolve, reject) => {
     sim.hasSimCard(accountId).then((res) => {
       resolve(res);
       if (accountId === 0) {
@@ -63,7 +63,7 @@ export class CallUtils {
    *
    * @return { boolean } - return success true fail false
    */
-  public isEmergencyPhoneNumber = (phoneNumber) => new Promise((resolve, reject) => {
+  public isEmergencyPhoneNumber: Function = (phoneNumber) => new Promise((resolve, reject) => {
     call.isEmergencyPhoneNumber(phoneNumber, {
       slotId: 0
     }).then((res) => {

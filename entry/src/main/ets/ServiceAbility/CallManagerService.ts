@@ -19,12 +19,12 @@
 import CallServiceProxy from '../model/CallServiceProxy';
 import TelephonyCall from './TelephonyApi';
 import commonEvent from '@ohos.commonEvent';
-import LogUtils from "../common/utils/LogUtils";
-import CallManager from '../model/CallManager'
+import LogUtils from '../common/utils/LogUtils';
+import CallManager from '../model/CallManager';
 import VibrationAndProximityUtils from '../common/utils/VibrationAndProximityUtils';
 
 let subscriber;
-const TAG = "CallManagerService";
+const TAG = 'CallManagerService';
 const CALL_BUNDLE_NAME = 'com.ohos.callui';
 const ABILITY_NAME = 'com.ohos.callui.MainAbility';
 const CALL_STATUS_INCOMING = 4;
@@ -32,13 +32,16 @@ const CALL_STATUS_WAITING = 5;
 const CALL_STATUS_DIALING = 2;
 const CALL_STATUS_DISCONNECTED = 6;
 const CALL_STATUS_DISCONNECTING = 7;
+const CALL_EVENT = 0;
+const CALL_CLICK = 1;
+const CALL_SCREEN_OFF = 2;
 const events = ['callui.event.callEvent', 'callui.event.click', 'usual.event.SCREEN_OFF'];
 
 /**
  * class CallManagerService
  */
 export default class CallManagerService {
-  private mTelephonyCall: TelephonyCall ;
+  private mTelephonyCall: TelephonyCall;
   private callData = null;
   private callList = [];
   private context;
@@ -67,12 +70,12 @@ export default class CallManagerService {
   /**
    * add callui app subscriber
    */
-  async addSubscriber() {
-    LogUtils.i(TAG, "addSubscriber")
+  async addSubscriber(): Promise<void> {
+    LogUtils.i(TAG, 'addSubscriber');
     subscriber = await new Promise((resolve) => {
       commonEvent.createSubscriber({
         events,
-        publisherPermission: "ohos.permission.GET_TELEPHONY_STATE"
+        publisherPermission: 'ohos.permission.GET_TELEPHONY_STATE'
       }, (err, data) => {
         resolve(data);
       });
@@ -80,29 +83,29 @@ export default class CallManagerService {
 
     commonEvent.subscribe(subscriber, (err, res) => {
       if (err.code === 0) {
-        if (res.event === events[0]) {
+        if (res.event === events[CALL_EVENT]) {
           const obj = JSON.parse(res.data);
           if (obj && obj.key === 'getInitCallData') {
             this.publishData(this.callData);
           }
         }
 
-        if (res.event === events[1]) {
-          const {callId,btnType} = res.parameters
-          this.btnclickAgent(callId, btnType)
+        if (res.event === events[CALL_CLICK]) {
+          const {callId, btnType} = res.parameters;
+          this.btnclickAgent(callId, btnType);
         }
 
-        if (res.event === events[2]) {
+        if (res.event === events[CALL_SCREEN_OFF]) {
           VibrationAndProximityUtils.stopVibration();
           CallServiceProxy.getInstance().muteRinger();
         }
       } else {
-        LogUtils.i(TAG, "addSubscriber commonEvent.subscribe failed err :" + JSON.stringify(err))
+        LogUtils.i(TAG, 'addSubscriber commonEvent.subscribe failed err :' + JSON.stringify(err));
       }
       subscriber.finishCommonEvent()
         .then(() => {
-          LogUtils.i(TAG, "addSubscriber finishCommonEvent")
-        })
+          LogUtils.i(TAG, 'addSubscriber finishCommonEvent');
+        });
     });
   }
 
@@ -112,28 +115,28 @@ export default class CallManagerService {
    * @param { number } callId - call id
    * @param { string } btnType - button type
    */
-  btnclickAgent(callId, btnType) {
-    LogUtils.i(TAG, "btnclickAgent btnType :" + btnType)
-    this.getMapObj(btnType, callId)
+  btnclickAgent(callId, btnType): void {
+    LogUtils.i(TAG, 'btnclickAgent btnType :' + btnType);
+    this.getMapObj(btnType, callId);
   }
 
-  getMapObj(typeKey, callId) {
+  getMapObj(typeKey, callId): void {
     if (typeKey === 'answer') {
-      this.mTelephonyCall.acceptCall(callId)
-      this.startAbility(this.callData)
+      this.mTelephonyCall.acceptCall(callId);
+      this.startAbility(this.callData);
     }
     if (typeKey === 'reject') {
-      this.mTelephonyCall.rejectCall(callId)
+      this.mTelephonyCall.rejectCall(callId);
     }
     if (typeKey === 'hangUp') {
-      this.mTelephonyCall.hangUpCall(callId)
+      this.mTelephonyCall.hangUpCall(callId);
     }
   }
 
   /**
    * add register listener
    */
-  addRegisterListener() {
+  addRegisterListener(): void {
     this.mTelephonyCall.registerCallStateCallback(this.getCallData.bind(this));
   }
 
@@ -142,7 +145,7 @@ export default class CallManagerService {
    *
    * @param { Object } callData - Object
    */
-  getCallData(callData) {
+  getCallData(callData): void {
     this.callData = callData;
     this.updateCallList();
     const {callState} = this.callData;
@@ -176,7 +179,7 @@ export default class CallManagerService {
    * @return void
    */
   public onDisconnected(): void {
-    if (this.callData != null && this.callData.callState === 6) {
+    if (this.callData != null && this.callData.callState === CALL_STATUS_DISCONNECTED) {
       return;
     } else {
       this.callData.callState = CALL_STATUS_DISCONNECTED;
@@ -189,22 +192,22 @@ export default class CallManagerService {
    *
    * @param { Object } callData - Object
    */
-  startAbility(callData) {
+  startAbility(callData): void {
     this.context.startAbility({
       bundleName: CALL_BUNDLE_NAME,
       abilityName: ABILITY_NAME,
       parameters: callData
     }).then((data) => {
-      LogUtils.i(TAG, "callUI service startAbility data :" + JSON.stringify(data))
+      LogUtils.i(TAG, 'callUI service startAbility data :' + JSON.stringify(data));
     }).catch((err) => {
-      LogUtils.i(TAG, "callUI service startAbility err :" + JSON.stringify(err))
+      LogUtils.i(TAG, 'callUI service startAbility err :' + JSON.stringify(err));
     });
   }
 
   /**
    * update callList
    */
-  updateCallList() {
+  updateCallList(): void {
     const {callState, callId} = this.callData;
     const targetObj = this.callList.find((v) => v.callId === callId);
     if (targetObj) {
@@ -227,17 +230,17 @@ export default class CallManagerService {
    *
    * @param { Object } callData - Object
    */
-  publishData(callData) {
+  publishData(callData): void {
     CallManager.getInstance().update(callData);
   }
 
   /**
    * unsubscribe
    */
-  unsubscribe() {
+  unsubscribe(): void {
     commonEvent.unsubscribe(subscriber, (err) => {
       if (err.code !== 0) {
-        LogUtils.i(TAG, "unsubscribe commonEvent.unsubscribe err:" + JSON.stringify(err))
+        LogUtils.i(TAG, 'unsubscribe commonEvent.unsubscribe err:' + JSON.stringify(err));
       }
     });
   }
@@ -245,7 +248,7 @@ export default class CallManagerService {
   /**
    * remove register listener
    */
-  removeRegisterListener() {
+  removeRegisterListener(): void {
     this.mTelephonyCall.unRegisterCallStateCallback();
   }
 }
