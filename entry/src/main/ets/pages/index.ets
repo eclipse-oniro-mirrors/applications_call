@@ -110,11 +110,11 @@ struct Index {
     this.mCallDataManager = CallDataManager.getInstance();
     byTrace.finishTrace('aboutToAppear', 0);
     this.smListener = mediaQuery.matchMediaSync('(320vp<width<=520vp)');
-    this.smListener.on("change", this.isBreakpointSM);
+    this.smListener?.on("change", this.isBreakpointSM);
     this.mdListener = mediaQuery.matchMediaSync('(520vp<width<=840vp)');
-    this.mdListener.on("change", this.isBreakpointMD);
+    this.mdListener?.on("change", this.isBreakpointMD);
     this.lgListener = mediaQuery.matchMediaSync('(840vp<width)');
-    this.lgListener.on("change", this.isBreakpointLG);
+    this.lgListener?.on("change", this.isBreakpointLG);
     this.initAirPlaneMode();
   }
 
@@ -171,9 +171,9 @@ struct Index {
   aboutToDisappear() {
     LogUtils.i(TAG, "aboutToDisappear");
     this.stopBackgroundRunning();
-    this.smListener.off('change', this.isBreakpointSM);
-    this.mdListener.off('change', this.isBreakpointMD);
-    this.lgListener.off('change', this.isBreakpointLG);
+    this.smListener?.off('change', this.isBreakpointSM);
+    this.mdListener?.off('change', this.isBreakpointMD);
+    this.lgListener?.off('change', this.isBreakpointLG);
     removeAirPlaneModeListener();
   }
 

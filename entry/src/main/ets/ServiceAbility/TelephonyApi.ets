@@ -31,27 +31,35 @@ export default class TelephonyApi {
    * @param { Function } callBack - inject an Function
    */
   public registerCallStateCallback(callBack) {
-    call.on('callDetailsChange', (data) => {
-      if (!data) {
-        LogUtils.i(TAG, prefixLog + "call.on registerCallStateCallback")
-        return;
-      }
-      LogUtils.i(TAG, prefixLog + "call.on registerCallStateCallback callState: " + JSON.stringify(data.callState))
-      callBack(data);
-    });
+    try {
+      call.on('callDetailsChange', (data) => {
+        if (!data) {
+          LogUtils.i(TAG, prefixLog + "call.on registerCallStateCallback")
+          return;
+        }
+        LogUtils.i(TAG, prefixLog + "call.on registerCallStateCallback callState: " + JSON.stringify(data.callState))
+        callBack(data);
+      });
+    } catch (err) {
+      LogUtils.i(TAG, "call.on registerCallStateCallback catch:" + JSON.stringify(err));
+    }
   }
 
   /**
    * onRegister call state callback
    */
   public unRegisterCallStateCallback() {
-    call.off('callDetailsChange', (data) => {
-      if (!data) {
+    try {
+      call.off('callDetailsChange', (data) => {
+        if (!data) {
+          LogUtils.i(TAG, prefixLog + "call.off unRegisterCallStateCallback")
+          return;
+        }
         LogUtils.i(TAG, prefixLog + "call.off unRegisterCallStateCallback")
-        return;
-      }
-      LogUtils.i(TAG, prefixLog + "call.off unRegisterCallStateCallback")
-    });
+      });
+    } catch (err) {
+      LogUtils.i(TAG, "call.off unRegisterCallStateCallback catch:" + JSON.stringify(err));
+    }
   }
 
   /**

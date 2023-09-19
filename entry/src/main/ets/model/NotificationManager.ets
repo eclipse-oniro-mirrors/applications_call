@@ -144,6 +144,10 @@ export default class NotificationManager {
    * @param { number } operationType - type
    */
   getWantAgent(data, operationTypes) {
+    if (!wantAgent) {
+      LogUtils.i(TAG, 'wantAgent is not exist');
+      return;
+    }
     return wantAgent.getWantAgent({
       wants: [{
                 deviceId: '',
