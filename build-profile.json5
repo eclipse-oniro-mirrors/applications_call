@@ -65,18 +65,6 @@
           ]
         }
       ]
-    },
-    {
-      "name": "simcardmanagement",
-      "srcPath": "./simcardmanagement",
-      "targets": [
-        {
-          "name": "default",
-          "applyToProducts": [
-            "default"
-          ]
-        }
-      ]
     }
   ]
 }
