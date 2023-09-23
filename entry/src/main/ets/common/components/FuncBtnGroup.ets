@@ -121,7 +121,6 @@ export default struct FuncBtnGroup {
    * @param {Object} callData - call data
    */
   onCallStateChange(newVal) {
-    LogUtils.i(TAG, "Calling status changed newState : " + JSON.stringify(newVal));
     const BtnName = ['video', 'record', 'add', 'contact', 'merge']
     if (newVal === CallStateConst.CALL_STATUS_ACTIVE || newVal === CallStateConst.CALL_STATUS_HOLDING) {
       this.btnList.forEach((item) => {
