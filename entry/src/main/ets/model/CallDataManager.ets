@@ -94,6 +94,10 @@ export default class CallDataManager {
    */
   public update(callData) {
     const { callState, callId } = callData;
+    if (callId === undefined || callId === null) {
+      LogUtils.i(TAG, 'callId is not exist');
+      return;
+    }
     const targetObj = this.callList.find((v) => v.callId === callId);
     LogUtils.i(TAG, "update :")
     if (targetObj) {
