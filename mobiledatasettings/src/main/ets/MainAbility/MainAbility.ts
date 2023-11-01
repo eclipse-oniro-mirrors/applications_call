@@ -11,34 +11,34 @@ export default class MainAbility extends Ability {
   }
 
   onDestroy() {
-    LogUtils.i(TAG, 'onDestroy');
+    LogUtils.i(TAG, 'onDestroy!');
   }
 
   onWindowStageCreate(windowStage: Window.WindowStage): void {
     // Main window is created, set main page for this ability
-    LogUtils.i(TAG, 'onWindowStageCreate');
+    LogUtils.i(TAG, 'onWindowStageCreate!');
 
     windowStage.loadContent('pages/index', (err, data) => {
       if (err.code) {
-        LogUtils.e(TAG, 'Failed to load the content. Cause:' + JSON.stringify(err));
+        LogUtils.e(TAG, 'Failed to load the content. Cause: ' + JSON.stringify(err));
         return;
       }
-      LogUtils.e(TAG, 'Succeeded in loading the content. Data: ' + JSON.stringify(data));
+      LogUtils.i(TAG, 'Succeeded in loading the content. Data: ' + JSON.stringify(data));
     });
   }
 
   onWindowStageDestroy() {
     // Main window is destroyed, release UI related resources
-    LogUtils.i(TAG, 'onWindowStageDestroy');
+    LogUtils.i(TAG, 'onWindowStageDestroy!');
   }
 
   onForeground() {
     // Ability has brought to foreground
-    LogUtils.i(TAG, 'onForeground');
+    LogUtils.i(TAG, 'onForeground!');
   }
 
   onBackground() {
     // Ability has back to background
-    LogUtils.i(TAG, 'onBackground');
+    LogUtils.i(TAG, 'onBackground!');
   }
 }
