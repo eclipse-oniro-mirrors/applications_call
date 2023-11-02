@@ -51,12 +51,12 @@ export default class ServiceAbility extends ServiceExtension {
 }
 
 class Stub extends rpc.RemoteObject {
-  constructor(descriptor) {
-    super(descriptor);
-  }
-
   onRemoteRequest(code, date, reply, option): boolean {
     LogUtils.i(TAG, 'Stub onRemoteRequest code:' + code);
     return true;
+  }
+  
+  constructor(descriptor) {
+    super(descriptor);
   }
 }
