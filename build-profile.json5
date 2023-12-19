@@ -28,12 +28,12 @@
         }
       }
     ],
-    "compileSdkVersion": 10,
-    "compatibleSdkVersion": 9,
     "products": [
       {
         "name": "default",
         "signingConfig": "release",
+        "compileSdkVersion": 10,
+        "compatibleSdkVersion": 9
       }
     ]
   },
