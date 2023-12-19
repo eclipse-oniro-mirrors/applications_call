@@ -81,6 +81,10 @@ export default struct IncomingCom {
     this.getBtnList();
   }
 
+  aboutToDisappear() {
+    this.msgDialogController = null;
+  }
+
   /**
    * send Message   slotId : card slot, destinationHost : accountNumber ,content: content
    *

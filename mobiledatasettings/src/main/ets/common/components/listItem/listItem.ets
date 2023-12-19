@@ -69,6 +69,10 @@ export default struct listItem {
     };
   };
 
+  aboutToDisappear() {
+    this.recordTypeDialog = null;
+  }
+
   build() {
     Column() {
       Row() {
