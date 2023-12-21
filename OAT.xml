@@ -32,6 +32,7 @@
                 <filteritem type="filepath" name="gradle/wrapper/.*.jar" desc="out put files"/>
                 <filteritem type="filepath" name="dir name underproject/.*.uvwxyz" desc="Describe the reason for filtering scan results"/>
                 <filteritem type="filepath" name="projectroot/[a-zA-Z0-9]{20,}.sh" desc="Temp files"/>
+                <filteritem type="filepath" name="hvigor/.*.js" desc="Compile automatically generated files"/>
             </filefilter>
             <filefilter name="defaultPolicyFilter" desc="Filters for compatibility，license header policies">
             </filefilter>
