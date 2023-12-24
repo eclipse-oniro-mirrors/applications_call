@@ -175,6 +175,7 @@ struct Index {
     this.mdListener?.off('change', this.isBreakpointMD);
     this.lgListener?.off('change', this.isBreakpointLG);
     removeAirPlaneModeListener();
+    this.airplaneModeDialogController = null;
   }
 
   onBackPress() {
