@@ -21,7 +21,7 @@ import telephonyData from '@ohos.telephony.data';
 import radio from '@ohos.telephony.radio';
 import LogUtils from '../utils/LogUtils'
 
-const TAG = "getCellularDataRomingEnabledApi"
+const TAG = 'getCellularDataRomingEnabledApi'
 /**
  * Whether to enable cellular data roaming
  *
@@ -39,10 +39,10 @@ export function getSupportNetwork(slotId = 0) {
   return new Promise(function (resolve, reject) {
     try {
       let isSupported = radio.isNrSupported();
-      LogUtils.i(TAG, "getSupportNetwork success data:" + JSON.stringify(isSupported))
+      LogUtils.i(TAG, 'getSupportNetwork success data:' + JSON.stringify(isSupported))
       resolve(isSupported);
     } catch (error) {
-      LogUtils.i(TAG, "getSupportNetwork success catch:" + JSON.stringify(error))
+      LogUtils.i(TAG, 'getSupportNetwork success catch:' + JSON.stringify(error))
       reject(error);
     }
   });

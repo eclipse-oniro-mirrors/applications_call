@@ -26,7 +26,7 @@ import CallListStruct from '../common/struct/CallListStruct';
 import DefaultCallData from '../common/struct/TypeUtils';
 import VibrationAndProximityUtils from '../common/utils/VibrationAndProximityUtils';
 
-const TAG = "CallDataManager";
+const TAG = 'CallDataManager';
 /**
  * class CallDataManager
  */
@@ -64,7 +64,7 @@ export default class CallDataManager {
       });
     }
     if (this.callList.length === 0) {
-      LogUtils.i(TAG, "init callList: undefined");
+      LogUtils.i(TAG, 'init callList: undefined');
       this.callList = callList;
     } else {
       let oldCallList = this.callList;
@@ -74,7 +74,7 @@ export default class CallDataManager {
       });
     }
     if (this.callTimeList.length === 0) {
-      LogUtils.i(TAG, "init callTimeList: undefined");
+      LogUtils.i(TAG, 'init callTimeList: undefined');
       this.callTimeList = callTimeList;
     } else {
       let oldCallTimeList = this.callTimeList;
@@ -99,7 +99,7 @@ export default class CallDataManager {
       return;
     }
     const targetObj = this.callList.find((v) => v.callId === callId);
-    LogUtils.i(TAG, "update :")
+    LogUtils.i(TAG, 'update :')
     if (targetObj) {
       const { oldCallState } = targetObj;
       Object.assign(targetObj, {
@@ -157,10 +157,10 @@ export default class CallDataManager {
   public clearCall(callData) {
     this.NotificationManager.cancelNotification();
     AppStorage.Get<NotificationManager>('notificationManager').sendCapsuleNotification(callData, true);
-    AppStorage.Delete("CallTimeList");
+    AppStorage.Delete('CallTimeList');
     this.clearData();
     globalThis.calluiAbilityContext?.terminateSelf().then((data) => {
-      LogUtils.i(TAG, "calluiAbility terminateSelf");
+      LogUtils.i(TAG, 'calluiAbility terminateSelf');
     });
     // remove Proximity Listener
     VibrationAndProximityUtils.wakeupScreen();
@@ -180,7 +180,7 @@ export default class CallDataManager {
   public hasAliveCall() {
     const callData = this.callList.find((call) => call.callState !== CallStateConst.CALL_STATUS_DISCONNECTED
       && call.callState !== CallStateConst.CALL_STATUS_DISCONNECTING);
-    LogUtils.i(TAG, "hasAliveCall:" + JSON.stringify(callData !== undefined));
+    LogUtils.i(TAG, 'hasAliveCall:' + JSON.stringify(callData !== undefined));
     return callData !== undefined;
   }
 
@@ -231,7 +231,7 @@ export default class CallDataManager {
    */
   updateCallTimeList(callData) {
     const CallTimeObj = this.callTimeList.find((v) => v.callId === callData.callId);
-    LogUtils.i(TAG, "updateCallTimeList : " + JSON.stringify(CallTimeObj))
+    LogUtils.i(TAG, 'updateCallTimeList : ' + JSON.stringify(CallTimeObj))
     if (!CallTimeObj && callData.callState === CallStateConst.CALL_STATUS_ACTIVE) {
       const obj = {
         callId: callData.callId,
@@ -240,20 +240,20 @@ export default class CallDataManager {
         endTimestamp: 0,
       };
       this.callTimeList.push(obj);
-      AppStorage.SetOrCreate("CallTimeList", this.callTimeList)
-      LogUtils.i(TAG, "updateCallTimeList : " + JSON.stringify(this.callTimeList))
+      AppStorage.SetOrCreate('CallTimeList', this.callTimeList)
+      LogUtils.i(TAG, 'updateCallTimeList : ' + JSON.stringify(this.callTimeList))
     }
   }
 
   clearData() {
     this.callList.splice(0, this.callList.length);
-    LogUtils.i(TAG, "clearData: " + JSON.stringify(this.callList));
-    let inputvalue = AppStorage.Delete("TextInputValue");
-    LogUtils.i(TAG, "clearData:TextInputValue " + JSON.stringify(inputvalue));
-    let textinput = AppStorage.Delete("TextInput");
-    AppStorage.Delete("CallTimeList");
-    AppStorage.Delete("notificationManager");
-    AppStorage.Delete("currentAudioDeviceIcon");
-    AppStorage.Delete("datalist");
+    LogUtils.i(TAG, 'clearData: ' + JSON.stringify(this.callList));
+    let inputvalue = AppStorage.Delete('TextInputValue');
+    LogUtils.i(TAG, 'clearData:TextInputValue ' + JSON.stringify(inputvalue));
+    let textinput = AppStorage.Delete('TextInput');
+    AppStorage.Delete('CallTimeList');
+    AppStorage.Delete('notificationManager');
+    AppStorage.Delete('currentAudioDeviceIcon');
+    AppStorage.Delete('datalist');
   }
 }

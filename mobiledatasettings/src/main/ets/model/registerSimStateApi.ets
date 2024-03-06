@@ -20,7 +20,7 @@ import observer from '@ohos.telephony.observer';
 import LogUtils from '../common/utils/LogUtils';
 import sim from '@ohos.telephony.sim';
 
-const TAG = "registerSimStateAPi"
+const TAG = 'registerSimStateAPi';
 
 /**
  * Monitor the SIM card status
@@ -32,9 +32,9 @@ export function registerSimStateChange(slotId, callBack) {
   return observer.on('simStateChange', {
     slotId: slotId
   }, (callStateInfo) => {
-    LogUtils.i(TAG, "registerSimStateChange: then " + JSON.stringify(callStateInfo))
+    LogUtils.i(TAG, 'registerSimStateChange: then ' + JSON.stringify(callStateInfo));
     callBack(callStateInfo);
-    return callStateInfo
+    return callStateInfo;
   });
 }
 

@@ -25,7 +25,7 @@ import Keyboard from '../common/components/Keyboard';
 import IncomingCom from '../common/components/IncomingCom';
 import CallStateConst from '../common/constant/CallStateConst';
 import LogUtils from '../common/utils/LogUtils';
-import byTrace from "@ohos.bytrace"
+import byTrace from '@ohos.bytrace'
 import NotificationManager from '../model/NotificationManager';
 import CallManager from '../model/CallManager';
 import backgroundTaskManager from '@ohos.backgroundTaskManager';
@@ -37,7 +37,7 @@ import CallListStruct from '../common/struct/CallListStruct'
 import CallTimeListStruct from '../common/struct/CallTimeListStruct'
 
 const AIRPLANE_MODE = 1;
-const TAG = "Index";
+const TAG = 'Index';
 
 /**
  * @file: Main interface
@@ -102,7 +102,7 @@ struct Index {
   }
 
   aboutToAppear(): void {
-    LogUtils.i(TAG, "aboutToAppear")
+    LogUtils.i(TAG, 'aboutToAppear')
     byTrace.startTrace('aboutToAppear', 0);
     this.notificationManager = new NotificationManager();
     CallManager.getInstance()?.init(this);
@@ -110,23 +110,23 @@ struct Index {
     this.mCallDataManager = CallDataManager.getInstance();
     byTrace.finishTrace('aboutToAppear', 0);
     this.smListener = mediaQuery.matchMediaSync('(320vp<width<=520vp)');
-    this.smListener?.on("change", this.isBreakpointSM);
+    this.smListener?.on('change', this.isBreakpointSM);
     this.mdListener = mediaQuery.matchMediaSync('(520vp<width<=840vp)');
-    this.mdListener?.on("change", this.isBreakpointMD);
+    this.mdListener?.on('change', this.isBreakpointMD);
     this.lgListener = mediaQuery.matchMediaSync('(840vp<width)');
-    this.lgListener?.on("change", this.isBreakpointLG);
+    this.lgListener?.on('change', this.isBreakpointLG);
     this.initAirPlaneMode();
   }
 
   onPageShow() {
-    LogUtils.i(TAG, "onPageShow");
+    LogUtils.i(TAG, 'onPageShow');
     byTrace.startTrace('onPageShow', 1);
     globalThis.appInactiveState = false;
     this.stopBackgroundRunning();
     this.notificationManager?.cancelNotification();
     this.notificationManager?.sendCapsuleNotification(this.incomingData ? this.callData : this.incomingData, false);
     byTrace.finishTrace('onPageShow', 1);
-    LogUtils.i(TAG, "onPageShow end");
+    LogUtils.i(TAG, 'onPageShow end');
   }
 
   initAirPlaneMode() {
@@ -149,12 +149,12 @@ struct Index {
   }
 
   onPageHide() {
-    LogUtils.i(TAG, "onPageHide");
+    LogUtils.i(TAG, 'onPageHide');
     if (!this.mHangup) {
       globalThis.appInactiveState = true;
       this.updateNotification();
     }
-    LogUtils.i(TAG, "onPageHide end");
+    LogUtils.i(TAG, 'onPageHide end');
   }
 
   updateNotification() {
@@ -169,7 +169,7 @@ struct Index {
   }
 
   aboutToDisappear() {
-    LogUtils.i(TAG, "aboutToDisappear");
+    LogUtils.i(TAG, 'aboutToDisappear');
     this.stopBackgroundRunning();
     this.smListener?.off('change', this.isBreakpointSM);
     this.mdListener?.off('change', this.isBreakpointMD);
@@ -179,14 +179,14 @@ struct Index {
   }
 
   onBackPress() {
-    LogUtils.i(TAG, "onBackPress");
+    LogUtils.i(TAG, 'onBackPress');
   }
 
   private stopBackgroundRunning() {
     backgroundTaskManager.stopBackgroundRunning(globalThis.calluiAbilityContext).then(() => {
-      LogUtils.i(TAG, "stopBackgroundRunning succeeded");
+      LogUtils.i(TAG, 'stopBackgroundRunning succeeded');
     }).catch((err) => {
-      LogUtils.i(TAG, "stopBackgroundRunning failed");
+      LogUtils.i(TAG, 'stopBackgroundRunning failed');
     });
   }
 
@@ -203,9 +203,9 @@ struct Index {
     wantAgent.getWantAgent(wantAgentInfo).then((wantAgentObj) => {
       backgroundTaskManager.startBackgroundRunning(globalThis.calluiAbilityContext,
         backgroundTaskManager.BackgroundMode.VOIP, wantAgentObj).then(() => {
-        LogUtils.i(TAG, "startBackgroundRunning succeeded")
+        LogUtils.i(TAG, 'startBackgroundRunning succeeded')
       }).catch((err) => {
-        LogUtils.i(TAG, "startBackgroundRunning failed cause:" + JSON.stringify(err))
+        LogUtils.i(TAG, 'startBackgroundRunning failed cause:' + JSON.stringify(err))
       });
     });
   }
@@ -225,7 +225,7 @@ struct Index {
    * @return {number} -  callState
    */
   private callState() {
-    LogUtils.i(TAG, "callState : " + this.callData.callState)
+    LogUtils.i(TAG, 'callState : ' + this.callData.callState)
     return this.callData.callState;
   }
 
@@ -312,7 +312,7 @@ struct Index {
 
           if (this.isTripleCall()) {
             Column() {
-              Text($r("app.string.end_holding_call"))
+              Text($r('app.string.end_holding_call'))
                 .fontColor('#FFFFFF')
                 .fontSize(14)
                 .height(19)
@@ -324,8 +324,8 @@ struct Index {
       }
     }
     .padding({ bottom: this.isTripleCall() ? 71 : 106 })
-    .width("100%")
-    .height("100%")
+    .width('100%')
+    .height('100%')
     .backgroundImage('assets/picture/wallpaper.png', ImageRepeat.NoRepeat)
     .backgroundImageSize(ImageSize.Cover)
   }

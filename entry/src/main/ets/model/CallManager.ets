@@ -27,7 +27,7 @@ import DefaultCallData from '../common/struct/TypeUtils';
 import CallListStruct from '../common/struct/CallListStruct';
 import VibrationAndProximityUtils from '../common/utils/VibrationAndProximityUtils';
 
-const TAG = "CallManager";
+const TAG = 'CallManager';
 const TIMING = 1000;
 
 /**
@@ -78,13 +78,13 @@ export default class CallManager {
     if (globalThis.abilityWant && globalThis.abilityWant.parameters && ('callState' in globalThis.abilityWant.parameters)) {
       if (!this.isServiceConnected) {
         globalThis.calluiAbilityContext?.terminateSelf().then((data) => {
-          LogUtils.i(TAG, "calluiAbility terminateSelf because service disconnected");
+          LogUtils.i(TAG, 'calluiAbility terminateSelf because service disconnected');
         });
         return;
       }
       let callData = this.getCallDataFromWant(globalThis.abilityWant.parameters);
       this.update(callData);
-      LogUtils.i(TAG, "initCallData featureAbility.getWant :")
+      LogUtils.i(TAG, 'initCallData featureAbility.getWant :')
     } else {
       this.mCallServiceProxy.publish({
         key: 'getInitCallData',
@@ -119,12 +119,12 @@ export default class CallManager {
    * @param { Object } callData -Object
    */
   async update(callData) {
-    LogUtils.i(TAG, "update calldata:")
+    LogUtils.i(TAG, 'update calldata:')
     if (this.callData != undefined && this.callData.callId === callData.callId) {
       const { callState } = this.callData;
       if (callState === 6 && this.callList.length === 1) {
         globalThis.calluiAbilityContext?.terminateSelf().then((data) => {
-          LogUtils.i(TAG, "calluiAbility terminateSelf because service disconnected");
+          LogUtils.i(TAG, 'calluiAbility terminateSelf because service disconnected');
         });
         // remove Proximity Listener
         VibrationAndProximityUtils.wakeupScreen();
@@ -136,16 +136,16 @@ export default class CallManager {
     this.mCallDataManager.update(callData);
     call.formatPhoneNumber(callData.accountNumber, (err, data) => {
       if (err) {
-        LogUtils.i(TAG, "updata calldata formatPhoneNumber err:" + JSON.stringify(err));
+        LogUtils.i(TAG, 'updata calldata formatPhoneNumber err:' + JSON.stringify(err));
       } else if (data === undefined) {
-        AppStorage.SetOrCreate("AccountNumber", callData.accountNumber);
+        AppStorage.SetOrCreate('AccountNumber', callData.accountNumber);
       } else {
-        LogUtils.i(TAG, "updata calldata formatPhoneNumber success:" + JSON.stringify(data));
-        AppStorage.SetOrCreate("AccountNumber", data);
+        LogUtils.i(TAG, 'updata calldata formatPhoneNumber success:' + JSON.stringify(data));
+        AppStorage.SetOrCreate('AccountNumber', data);
       }
     });
     CallUtils.isEmergencyPhoneNumber(callData.accountNumber);
-    LogUtils.i(TAG, "update :");
+    LogUtils.i(TAG, 'update :');
   }
 
   /**
@@ -153,11 +153,11 @@ export default class CallManager {
    */
   updateCallTimeList() {
     if (!this.mCallDataManager.hasActiveCall()) {
-      LogUtils.i(TAG, "no active calls to update");
+      LogUtils.i(TAG, 'no active calls to update');
       return;
     }
 
-    this.callTimeList = AppStorage.Get("CallTimeList")
+    this.callTimeList = AppStorage.Get('CallTimeList');
     this.callTimeList.forEach((item, i) => {
       if (this.mCallDataManager.isActiveCall(item.callId)) {
         item.endTimestamp = new Date().valueOf();
@@ -167,7 +167,7 @@ export default class CallManager {
         this.callTimeList.splice(i, 1, {
           ...item,
         });
-        AppStorage.SetOrCreate("CallTimeList", this.callTimeList);
+        AppStorage.SetOrCreate('CallTimeList', this.callTimeList);
       }
     });
     this.mTimeMeter = setTimeout(() => {

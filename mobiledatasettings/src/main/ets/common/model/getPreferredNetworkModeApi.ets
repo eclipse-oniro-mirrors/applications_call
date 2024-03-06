@@ -19,7 +19,7 @@
 import radio from '@ohos.telephony.radio';
 import LogUtils from '../utils/LogUtils'
 
-const TAG = "getPreferredNetworkModelApi"
+const TAG = 'getPreferredNetworkModelApi'
 
 /**
  * Get the preferred network mode
@@ -30,10 +30,10 @@ const TAG = "getPreferredNetworkModelApi"
 export function getPreferredNetwork(val) {
     return new Promise((resolve) => {
         radio.getPreferredNetwork(val).then((res) => {
-            LogUtils.i(TAG, "getPreferredNetwork success data then:" + JSON.stringify(res))
+            LogUtils.i(TAG, 'getPreferredNetwork success data then:' + JSON.stringify(res))
             resolve(res);
         }).catch((err) => {
-            LogUtils.i(TAG, "getPreferredNetwork success catch:" + JSON.stringify(err))
+            LogUtils.i(TAG, 'getPreferredNetwork success catch:' + JSON.stringify(err))
         });
     });
 }

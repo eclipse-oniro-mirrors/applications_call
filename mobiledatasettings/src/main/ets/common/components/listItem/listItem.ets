@@ -27,7 +27,7 @@ import {
 } from '../../../model/mobileDataStatus';
 import LogUtils from '../../utils/LogUtils'
 
-const TAG = "ListItem"
+const TAG = 'ListItem'
 
 @Component
 export default struct listItem {
@@ -97,13 +97,13 @@ export default struct listItem {
               .opacity(0.6)
               .lineHeight(19)
               .letterSpacing(1)
-              .visibility(this.describe == $r("app.string.mobile_empty_string") ? Visibility.None : Visibility.Visible)
+              .visibility(this.describe == $r('app.string.mobile_empty_string') ? Visibility.None : Visibility.Visible)
           }
           .width('100%')
           .alignItems(HorizontalAlign.Start)
           .margin({ right: 26 })
           .onClick(() => {
-            LogUtils.i(TAG, "onclick clickHandle")
+            LogUtils.i(TAG, 'onclick clickHandle')
             this.clickHandle();
           })
           .enabled(this.isDisabled)
@@ -114,7 +114,7 @@ export default struct listItem {
             .enabled(this.isDisabled)
             .onChange((isOn: boolean) => {
               this.controlSwitch = !this.controlSwitch;
-              LogUtils.i(TAG, 'onclick cardType is :' + JSON.stringify(this.cardType) + 'switcher is:' + JSON.stringify(this.isCon) + "Switch status:" + this.controlSwitch);
+              LogUtils.i(TAG, 'onclick cardType is :' + JSON.stringify(this.cardType) + 'switcher is:' + JSON.stringify(this.isCon) + 'Switch status:' + this.controlSwitch);
               if (this.controlSwitch && this.isCon === 0) {
                 this.recordTypeDialog.open();
               } else if (this.controlSwitch == false && this.isCon === 0) {
@@ -130,7 +130,7 @@ export default struct listItem {
         }.visibility(this.isSupport ? Visibility.None : Visibility.Visible)
       }
     }
-    .backgroundColor($r("sys.color.ohos_id_color_foreground_contrary"))
+    .backgroundColor($r('sys.color.ohos_id_color_foreground_contrary'))
     .opacity(this.isDisabled ? 1 : 0.4)
     .margin({ top: 8, bottom: this.isSupport ? 5 : 11 })
     .onClick(() => {
@@ -156,7 +156,7 @@ struct dataRomingDialog {
         Text($r('app.string.mobile_data_tips'))
           .fontSize(20)
           .fontWeight(FontWeight.Medium)
-          .fontFamily("HarmonyHeiTi")
+          .fontFamily('HarmonyHeiTi')
           .height(56)
           .align(Alignment.Center)
         Text($r('app.string.mobile_data_turn_on_data_roaming'))
@@ -172,12 +172,12 @@ struct dataRomingDialog {
       Flex({ justifyContent: FlexAlign.SpaceAround }) {
         Text(publiccontent.strings.cancel)
           .fontWeight(FontWeight.Medium)
-          .fontFamily("HarmonnyHeiTi")
+          .fontFamily('HarmonnyHeiTi')
           .height(21)
           .fontColor($r('sys.color.ohos_id_color_text_primary_activated'))
           .fontSize($r('sys.float.ohos_id_text_size_button1'))
           .onClick(() => {
-            LogUtils.i(TAG, "dataRomingDialog onclick cancel");
+            LogUtils.i(TAG, 'dataRomingDialog onclick cancel');
             this.controller.close();
             this.isMsg = false;
           })
@@ -185,12 +185,12 @@ struct dataRomingDialog {
 
         Text(publiccontent.strings.confirm)
           .fontWeight(FontWeight.Medium)
-          .fontFamily("HarmonnyHeiTi")
+          .fontFamily('HarmonnyHeiTi')
           .height(21)
           .fontColor($r('sys.color.ohos_id_color_text_primary_activated'))
           .fontSize($r('sys.float.ohos_id_text_size_button1'))
           .onClick(() => {
-            LogUtils.i(TAG, "dataRomingDialog onclick confim toggletype: " + JSON.stringify(this.isCon) + " for cardtype:" + JSON.stringify(this.cardType));
+            LogUtils.i(TAG, 'dataRomingDialog onclick confim toggletype: ' + JSON.stringify(this.isCon) + ' for cardtype:' + JSON.stringify(this.cardType));
             this.controller.close();
             this.isMsg = true;
             this.cardType == 0 ? enableCellularDataRoamingCardOne() : enableCellularDataRoamingCardTwo();
