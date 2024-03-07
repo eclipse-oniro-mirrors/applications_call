@@ -24,7 +24,7 @@ import callStateConst from '../common/constant/CallStateConst';
 import LogUtils from '../common/utils/LogUtils';
 import * as Constants from '../common/utils/Constants';
 
-const TAG = "NotificationManager";
+const TAG = 'NotificationManager';
 const ID = 0;
 
 const notificationRequest = {
@@ -86,15 +86,15 @@ export default class NotificationManager {
         const data = {
           callId, btnType: key
         };
-        LogUtils.i(TAG, "sendNotification getResourceManager key:" + JSON.stringify(key));
+        LogUtils.i(TAG, 'sendNotification getResourceManager key:' + JSON.stringify(key));
         const wantAgentObj = await this.getWantAgent(data, SEND_COMMON_EVENT);
         const title = globalThis.calluiAbilityContext?.resourceManager.getStringSync(textMap[key]);
-        LogUtils.i(TAG, "sendNotification getResourceManager textMap[key].id:" + JSON.stringify(title));
+        LogUtils.i(TAG, 'sendNotification getResourceManager textMap[key].id:' + JSON.stringify(title));
         notificationRequest.actionButtons.push({
           title: title,
           wantAgent: wantAgentObj
         });
-        LogUtils.i(TAG, "sendNotification getResourceManager notificationRequest.actionButtons.push:" + JSON.stringify(notificationRequest.actionButtons));
+        LogUtils.i(TAG, 'sendNotification getResourceManager notificationRequest.actionButtons.push:' + JSON.stringify(notificationRequest.actionButtons));
       }
     }
     Object.assign(notificationRequest.content.longText, {
@@ -104,11 +104,11 @@ export default class NotificationManager {
       longText: expandedName
     });
     notification.publish(notificationRequest).then((data) => {
-      LogUtils.i(TAG, "sendNotification publish success")
+      LogUtils.i(TAG, 'sendNotification publish success')
     }).catch((err) => {
-      LogUtils.i(TAG, "sendNotification public err" + JSON.stringify(err))
+      LogUtils.i(TAG, 'sendNotification public err' + JSON.stringify(err))
     });
-    LogUtils.i(TAG, "sendNotification end :")
+    LogUtils.i(TAG, 'sendNotification end :')
   }
 
   /**
@@ -169,11 +169,11 @@ export default class NotificationManager {
    * Cancel notice
    */
   cancelNotification() {
-    LogUtils.i(TAG, "cancelNotification")
+    LogUtils.i(TAG, 'cancelNotification')
     notification.cancel(ID).then((res) => {
-      LogUtils.i(TAG, "notify.cancel res data : %s" + JSON.stringify(res))
+      LogUtils.i(TAG, 'notify.cancel res data : %s' + JSON.stringify(res))
     }).catch((err) => {
-      LogUtils.i(TAG, "notify.cancel err data : %s" + JSON.stringify(err))
+      LogUtils.i(TAG, 'notify.cancel err data : %s' + JSON.stringify(err))
     });
   }
 
@@ -185,13 +185,13 @@ export default class NotificationManager {
    * @param {boolean} isBackground - is background
    */
   sendCapsuleNotification(callData, isBackground) {
-    LogUtils.i(TAG, "sendCapsuleNotification isBackground : " + JSON.stringify(isBackground))
-    LogUtils.i(TAG, "sendCapsuleNotification callData.startTime :")
+    LogUtils.i(TAG, 'sendCapsuleNotification isBackground : ' + JSON.stringify(isBackground))
+    LogUtils.i(TAG, 'sendCapsuleNotification callData.startTime :')
     const {callState, startTime} = callData;
     let commonEventPublishData = {
       bundleName: 'com.ohos.systemui',
       isOrdered: false,
-      subscriberPermissions: ["ohos.permission.GET_TELEPHONY_STATE"],
+      subscriberPermissions: ['ohos.permission.GET_TELEPHONY_STATE'],
       data: JSON.stringify({
         callState,
         startTime: startTime * 1000,
@@ -203,9 +203,9 @@ export default class NotificationManager {
 
     commonEvent.publish('CAPSULE_EVENT_CALL_UI', commonEventPublishData, (err, data) => {
       if (err) {
-        LogUtils.i(TAG, "sendCapsuleNotification publish launcher err:" + JSON.stringify(err))
+        LogUtils.i(TAG, 'sendCapsuleNotification publish launcher err:' + JSON.stringify(err))
       } else {
-        LogUtils.i(TAG, "sendCapsuleNotification publish launcher success:" + JSON.stringify(data))
+        LogUtils.i(TAG, 'sendCapsuleNotification publish launcher success:' + JSON.stringify(data))
       }
     })
   }

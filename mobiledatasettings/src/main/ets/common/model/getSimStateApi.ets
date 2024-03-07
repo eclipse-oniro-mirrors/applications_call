@@ -19,7 +19,7 @@
 
 import sim from '@ohos.telephony.sim';
 
-const TAG = "GetSimStateApi"
+const TAG = 'GetSimStateApi'
 
 /**
  * Get cardOne status

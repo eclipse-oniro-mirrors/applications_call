@@ -45,14 +45,14 @@ export class CallUtils {
     sim.hasSimCard(accountId).then((res) => {
       resolve(res);
       if (accountId === 0) {
-        AppStorage.SetOrCreate("hasSimCard1", res);
+        AppStorage.SetOrCreate('hasSimCard1', res);
       } else if (accountId === 1) {
-        AppStorage.SetOrCreate("hasSimCard2", res);
+        AppStorage.SetOrCreate('hasSimCard2', res);
       }
     })
       .catch((err) => {
         reject(err);
-        LogUtils.i(TAG, "catch:hasSimeCard :" + JSON.stringify(err));
+        LogUtils.i(TAG, 'catch:hasSimeCard :' + JSON.stringify(err));
       });
   });
 
@@ -68,11 +68,11 @@ export class CallUtils {
       slotId: 0
     }).then((res) => {
       resolve(res);
-      AppStorage.SetOrCreate("IsEmergencyPhoneNumber", res)
-      LogUtils.i(TAG, "then:isEmergencyPhoneNumber :" + JSON.stringify(res));
+      AppStorage.SetOrCreate('IsEmergencyPhoneNumber', res)
+      LogUtils.i(TAG, 'then:isEmergencyPhoneNumber :' + JSON.stringify(res));
     }).catch((err) => {
       reject(err);
-      LogUtils.i(TAG, "catch:isEmergencyPhoneNumber :" + JSON.stringify(err));
+      LogUtils.i(TAG, 'catch:isEmergencyPhoneNumber :' + JSON.stringify(err));
     });
   });
 }

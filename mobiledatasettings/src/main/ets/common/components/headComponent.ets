@@ -14,7 +14,7 @@
  */
 import LogUtils from '../utils/LogUtils'
 
-const TAG = "HeadComponent"
+const TAG = 'HeadComponent'
 
 /**
  * head custom component
@@ -29,13 +29,13 @@ export default struct HeadComponent {
         Image($r('app.media.ic_back'))
           .width(24)
           .height(24)
-          .fillColor($r("sys.color.ohos_id_color_primary"))
+          .fillColor($r('sys.color.ohos_id_color_primary'))
       }
       .margin({ right: 16 })
       .backgroundColor(this.isTouch ? $r('app.color.color_E3E3E3_grey') : $r('app.color.color_00000000_transparent'))
       .onClick(() => {
         globalThis.settingsAbilityContext?.terminateSelf().then((data) => {
-          LogUtils.i(TAG, "terminateSelfCallBack");
+          LogUtils.i(TAG, 'terminateSelfCallBack');
         });
       })
       .onTouch((event: TouchEvent) => {
@@ -57,7 +57,7 @@ export default struct HeadComponent {
         .textAlign(TextAlign.Start)
         .margin({ top: 15, bottom: 15 });
     }
-    .width("100%")
+    .width('100%')
     .padding({ left: 12 })
     .height(56)
     .alignItems(VerticalAlign.Center)

@@ -27,7 +27,7 @@ import commonEvent from '@ohos.commonEvent';
 import call from '@ohos.telephony.call';
 import LogUtils from '../common/utils/LogUtils';
 
-const TAG = "CallServiceProxy";
+const TAG = 'CallServiceProxy';
 const prefixLog = 'callUI app:@ohos.telephony.call:';
 
 /**
@@ -52,7 +52,7 @@ export default class CallServiceProxy {
    * Make a phone call
    */
   public dialCall(phoneNumber, accountId = 0, videoState = 0, dialScene = 0) {
-    LogUtils.i(TAG, "dialCall phoneNumber :")
+    LogUtils.i(TAG, 'dialCall phoneNumber :');
     return call.dial(phoneNumber, {
       accountId,
       videoState,
@@ -77,9 +77,9 @@ export default class CallServiceProxy {
    */
   public acceptCall = function (callId) {
     call.answerCall(callId).then((res) => {
-      LogUtils.i(TAG, prefixLog + "call.answerCall : %s" + JSON.stringify(callId))
+      LogUtils.i(TAG, prefixLog + 'call.answerCall : %s' + JSON.stringify(callId))
     }).catch((err) => {
-      LogUtils.i(TAG, prefixLog + "call.answerCall catch : %s" + JSON.stringify(err))
+      LogUtils.i(TAG, prefixLog + 'call.answerCall catch : %s' + JSON.stringify(err))
     });
   };
 
@@ -97,10 +97,10 @@ export default class CallServiceProxy {
       messageContent: msg
     }) : call.rejectCall(callId);
     rejectCallPromise.then((res) => {
-      LogUtils.i(TAG, prefixLog + "then:rejectCall")
+      LogUtils.i(TAG, prefixLog + 'then:rejectCall');
     })
       .catch((err) => {
-        LogUtils.i(TAG, prefixLog + "catch:rejectCall : %s" + JSON.stringify(err))
+        LogUtils.i(TAG, prefixLog + 'catch:rejectCall : %s' + JSON.stringify(err));
       });
   };
 
@@ -114,10 +114,10 @@ export default class CallServiceProxy {
   public hangUpCall = (callId) => new Promise((resolve, reject) => {
     call.hangUpCall(callId).then((res) => {
       resolve(res);
-      LogUtils.i(TAG, prefixLog + "then:hangUpCall : %s" + JSON.stringify(callId))
+      LogUtils.i(TAG, prefixLog + 'then:hangUpCall : %s' + JSON.stringify(callId))
     }).catch((err) => {
       reject(err);
-      LogUtils.i(TAG, prefixLog + "catch:hangUpCall : %s" + JSON.stringify(err))
+      LogUtils.i(TAG, prefixLog + 'catch:hangUpCall : %s' + JSON.stringify(err))
     });
   });
 
@@ -131,11 +131,11 @@ export default class CallServiceProxy {
   public holdCall = (callId) => new Promise((resolve, reject) => {
     call.holdCall(callId).then((res) => {
       resolve(res);
-      LogUtils.i(TAG, prefixLog + "then:holdCall : %s" + JSON.stringify(callId))
+      LogUtils.i(TAG, prefixLog + 'then:holdCall : %s' + JSON.stringify(callId));
     })
       .catch((err) => {
         reject(err);
-        LogUtils.i(TAG, prefixLog + "catch:holdCall : %s" + JSON.stringify(err))
+        LogUtils.i(TAG, prefixLog + 'catch:holdCall : %s' + JSON.stringify(err));
       });
   });
 
@@ -149,11 +149,11 @@ export default class CallServiceProxy {
   public unHoldCall = (callId) => new Promise((resolve, reject) => {
     call.unHoldCall(callId).then((res) => {
       resolve(res);
-      LogUtils.i(TAG, prefixLog + "then:unholdCall : %s" + JSON.stringify(callId))
+      LogUtils.i(TAG, prefixLog + 'then:unholdCall : %s' + JSON.stringify(callId));
     })
       .catch((err) => {
         reject(err);
-        LogUtils.i(TAG, prefixLog + "catch:unHoldCall : %s" + JSON.stringify(err))
+        LogUtils.i(TAG, prefixLog + 'catch:unHoldCall : %s' + JSON.stringify(err));
       });
   });
 
@@ -162,9 +162,9 @@ export default class CallServiceProxy {
    */
   public setMuted() {
     call.setMuted().then((res) => {
-      LogUtils.i(TAG, prefixLog + "then:setMute")
+      LogUtils.i(TAG, prefixLog + 'then:setMute');
     }).catch((err) => {
-      LogUtils.i(TAG, prefixLog + "catch:setMute : %s" + JSON.stringify(err))
+      LogUtils.i(TAG, prefixLog + 'catch:setMute : %s' + JSON.stringify(err));
     });
   };
 
@@ -173,9 +173,9 @@ export default class CallServiceProxy {
    */
   public cancelMuted() {
     call.cancelMuted().then((res) => {
-      LogUtils.i(TAG, prefixLog + "then:cancelMuted")
+      LogUtils.i(TAG, prefixLog + 'then:cancelMuted');
     }).catch((err) => {
-      LogUtils.i(TAG, prefixLog + "catch:cancelMuted : %s" + JSON.stringify(err))
+      LogUtils.i(TAG, prefixLog + 'catch:cancelMuted : %s' + JSON.stringify(err))
     });
   };
 
@@ -189,11 +189,11 @@ export default class CallServiceProxy {
   public switchCall = (callId) => new Promise((resolve, reject) => {
     call.switchCall(callId).then((res) => {
       resolve(res);
-      LogUtils.i(TAG, prefixLog + "then:switchCall : %s" + JSON.stringify(callId))
+      LogUtils.i(TAG, prefixLog + 'then:switchCall : %s' + JSON.stringify(callId))
     })
       .catch((err) => {
         reject(err);
-        LogUtils.i(TAG, prefixLog + "catch:switchCall : %s" + JSON.stringify(err))
+        LogUtils.i(TAG, prefixLog + 'catch:switchCall : %s' + JSON.stringify(err))
       });
   });
 
@@ -205,10 +205,10 @@ export default class CallServiceProxy {
   public registerCallStateCallback(callBack) {
     call.on('callDetailsChange', (data) => {
       if (!data) {
-        LogUtils.i(TAG, prefixLog + "call.on registerCallStateCallback")
+        LogUtils.i(TAG, prefixLog + 'call.on registerCallStateCallback')
         return;
       }
-      LogUtils.i(TAG, prefixLog + "call.on registerCallStateCallback callState")
+      LogUtils.i(TAG, prefixLog + 'call.on registerCallStateCallback callState')
       callBack(data);
     });
   }
@@ -219,10 +219,10 @@ export default class CallServiceProxy {
   public unRegisterCallStateCallback() {
     call.off('callDetailsChange', (data) => {
       if (!data) {
-        LogUtils.i(TAG, prefixLog + "call.off unRegisterCallStateCallback")
+        LogUtils.i(TAG, prefixLog + 'call.off unRegisterCallStateCallback')
         return;
       }
-      LogUtils.i(TAG, prefixLog + "call.off unRegisterCallStateCallback")
+      LogUtils.i(TAG, prefixLog + 'call.off unRegisterCallStateCallback')
     });
   }
 
@@ -232,9 +232,9 @@ export default class CallServiceProxy {
   public registerCallEventCallback() {
     call.on('callEventChange', (data) => {
       if (!data) {
-        LogUtils.i(TAG, prefixLog + "call.on callEventChange")
+        LogUtils.i(TAG, prefixLog + 'call.on callEventChange')
       } else {
-        LogUtils.i(TAG, prefixLog + "call.on callEventChange")
+        LogUtils.i(TAG, prefixLog + 'call.on callEventChange')
       }
     });
   }
@@ -245,9 +245,9 @@ export default class CallServiceProxy {
   public unRegisterCallEventCallback() {
     call.off('callEventChange', (data) => {
       if (!data) {
-        LogUtils.i(TAG, prefixLog + "call.off unRegisterCallEventCallback : %s")
+        LogUtils.i(TAG, prefixLog + 'call.off unRegisterCallEventCallback : %s')
       } else {
-        LogUtils.i(TAG, prefixLog + "call.off unRegisterCallEventCallback : %s")
+        LogUtils.i(TAG, prefixLog + 'call.off unRegisterCallEventCallback : %s')
       }
     });
   }
@@ -261,9 +261,9 @@ export default class CallServiceProxy {
    */
   public startDTMF = (callId = 1, str = '1') => {
     call.startDTMF(callId, str).then((res) => {
-      LogUtils.i(TAG, prefixLog + "then:startDtmf : %s" + JSON.stringify(callId) + JSON.stringify(str))
+      LogUtils.i(TAG, prefixLog + 'then:startDtmf : %s' + JSON.stringify(callId) + JSON.stringify(str))
     }).catch((err) => {
-      LogUtils.i(TAG, prefixLog + "catch:startDtmf : %s" + JSON.stringify(err))
+      LogUtils.i(TAG, prefixLog + 'catch:startDtmf : %s' + JSON.stringify(err))
     });
   };
 
@@ -274,9 +274,9 @@ export default class CallServiceProxy {
    */
   public stopDTMF = (callId = 1) => {
     call.stopDTMF(callId).then((res) => {
-      LogUtils.i(TAG, prefixLog + "then:stopDtmf : %s" + JSON.stringify(callId))
+      LogUtils.i(TAG, prefixLog + 'then:stopDtmf : %s' + JSON.stringify(callId))
     }).catch((err) => {
-      LogUtils.i(TAG, prefixLog + "then:startDtmf : %s" + JSON.stringify(err))
+      LogUtils.i(TAG, prefixLog + 'then:startDtmf : %s' + JSON.stringify(err))
     });
   };
 
@@ -287,23 +287,23 @@ export default class CallServiceProxy {
    */
   public combineConference = (callId) => {
     call.combineConference(callId).then((res) => {
-      LogUtils.i(TAG, prefixLog + "then:combineConference : %s" + JSON.stringify(callId))
+      LogUtils.i(TAG, prefixLog + 'then:combineConference : %s' + JSON.stringify(callId))
     }).catch((err) => {
-      LogUtils.i(TAG, prefixLog + "catch:combineConference : %s" + JSON.stringify(err))
+      LogUtils.i(TAG, prefixLog + 'catch:combineConference : %s' + JSON.stringify(err))
     });
   };
 
   public publish(data) {
-    LogUtils.i(TAG, prefixLog + "callui.event.callEvent publish")
+    LogUtils.i(TAG, prefixLog + 'callui.event.callEvent publish')
     commonEvent.publish('callui.event.callEvent', {
       bundleName: 'com.ohos.callui',
       isOrdered: false,
-      subscriberPermissions: ["ohos.permission.GET_TELEPHONY_STATE"],
+      subscriberPermissions: ['ohos.permission.GET_TELEPHONY_STATE'],
       data: JSON.stringify(data)
     }, (res) => {
-      LogUtils.i(TAG, prefixLog + "callui.event.callEvent success")
+      LogUtils.i(TAG, prefixLog + 'callui.event.callEvent success')
     });
-    LogUtils.i(TAG, prefixLog + "callui.event.callEvent publish end")
+    LogUtils.i(TAG, prefixLog + 'callui.event.callEvent publish end')
   }
 }
 

@@ -34,14 +34,14 @@ export struct SubHeader {
         .fontFamily('HarmonyHeiTi')
         .fontWeight(FontWeight.Medium)
     }
-    .width("100%")
+    .width('100%')
     .height(48)
     .alignItems(VerticalAlign.Bottom)
     .padding({
       bottom: 9,
       top: 19.5,
       left: $r('sys.float.ohos_id_card_margin_start'),
-      right: $r("sys.float.ohos_id_card_margin_end")
+      right: $r('sys.float.ohos_id_card_margin_end')
     })
   }
 }
