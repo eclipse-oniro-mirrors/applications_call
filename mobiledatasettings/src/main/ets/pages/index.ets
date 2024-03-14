@@ -69,16 +69,14 @@ struct Index {
   @State simStateStatusCardOne: boolean = true;
   // Card 2 status
   @State simStateStatusCardTwo: boolean = false;
-  @State ControlswitchWLMS: boolean = false;
+  @State controlSwitchWLMS: boolean = false;
   @State slotId: number = 0;
   @State dialogTitle: Resource = publiccontent.strings.preferredNetworkMode;
-  setCache_cun_name = 'DISTRIBUTEDDATA_CUN_NAME';
-  setCache_wl_name = 'SETCACHE_WL_NAME';
   @State enable5g: boolean = false;
   @StorageLink('imsOne')enableISM: boolean = false;
   @State enableISM2: boolean = false;
-  @State TelephoneNumber: string = '';
-  @State TelephoneNumber2?: string = '';
+  @State mTelephoneNumber: string = '';
+  @State mTelephoneNumber2?: string = '';
   @State ceshi: boolean = false;
   @State cardOne: number = 0;
   @State cardTwo: number = 1;
@@ -168,7 +166,7 @@ struct Index {
   getSimCardOnePhoneNumber() {
     getSimCardOnePhoneNumber().then((res) => {
       LogUtils.i(TAG, 'getSimTelephoneNumber card1 other success' + JSON.stringify(res));
-      this.TelephoneNumber = res;
+      this.mTelephoneNumber = res;
     }).catch((err) => {
       LogUtils.i(TAG, 'getSimTelephoneNumber card1 other catch' + JSON.stringify(err));
     });
@@ -180,7 +178,7 @@ struct Index {
   getSimCardTwoPhoneNumber() {
     getSimCardTwoPhoneNumber().then((res) => {
       LogUtils.i(TAG, 'getSimTelephoneNumber card2 other success' + JSON.stringify(res));
-      this.TelephoneNumber2 = res;
+      this.mTelephoneNumber2 = res;
     }).catch((err) => {
       LogUtils.i(TAG, 'getSimTelephoneNumber card2 other catch' + JSON.stringify(err));
     });
@@ -206,8 +204,8 @@ struct Index {
         LogUtils.i(TAG, 'initAirPlaneMode callback');
         this.isAirPlaneMode = data == 1 ? true : false;
       });
-    } catch(err) {
-      LogUtils.e(TAG,`initAirPlaneMode err = ${JSON.stringify(err)}`);
+    } catch (err) {
+      LogUtils.e(TAG, `initAirPlaneMode err = ${JSON.stringify(err)}`);
     }
   }
 
@@ -219,8 +217,8 @@ struct Index {
         LogUtils.i(TAG, 'getAirPlaneMode callback');
         this.isAirPlaneMode = data == 1 ? true : false;
       });
-    } catch(err) {
-      LogUtils.e(TAG,`getAirPlaneMode err = ${JSON.stringify(err)}`);
+    } catch (err) {
+      LogUtils.e(TAG, `getAirPlaneMode err = ${JSON.stringify(err)}`);
     }
   }
 
@@ -401,7 +399,7 @@ struct Index {
 
                   SubHeader({
                     titleContent: $r('app.string.mobile_data_card1'),
-                    subTitleContent: this.TelephoneNumber
+                    subTitleContent: this.mTelephoneNumber
                   });
 
                   Column() {
@@ -448,7 +446,7 @@ struct Index {
 
                   SubHeader({
                     titleContent: $r('app.string.mobile_data_card2'),
-                    subTitleContent: this.TelephoneNumber2
+                    subTitleContent: this.mTelephoneNumber2
                   })
                   .visibility(getMaxSimCount() === 2 ? Visibility.Visible : Visibility.Hidden)
 
@@ -496,7 +494,7 @@ struct Index {
                   .width('100%')
                   .borderRadius(16)
                   .backgroundColor($r('sys.color.ohos_id_color_foreground_contrary'))
-                  .opacity(this.simStateStatusCardTwo  && !this.isAirPlaneMode ? 1 : 0.4)
+                  .opacity(this.simStateStatusCardTwo && !this.isAirPlaneMode ? 1 : 0.4)
                   .visibility(getMaxSimCount() === 2 ? Visibility.Visible : Visibility.Hidden)
                 }
                 .alignItems(HorizontalAlign.Start)

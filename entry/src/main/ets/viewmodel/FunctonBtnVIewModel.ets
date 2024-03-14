@@ -12,11 +12,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
 import BaseViewModel from './base/BaseViewModel';
 import LogUtils from '../common/utils/LogUtils';
+
 const TAG = 'FunctonBtnViewModel';
 
-export default class FunctonBtnViewModel extends BaseViewModel{
+export default class FunctonBtnViewModel extends BaseViewModel {
   private static sFunctonBtnViewModel: FunctonBtnViewModel;
   public isMuted: boolean;
   public mMuteEnabledListener: (boolean) => void = (arg) => arg;

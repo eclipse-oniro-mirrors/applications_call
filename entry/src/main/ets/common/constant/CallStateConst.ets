@@ -17,7 +17,7 @@
  * @file: Call status
  */
 const callStateTxtList = ['calling', 'callHold', 'dialing', 'partyIsRinging', '', 'thirdPartyCalls', 'hangUpCompleted',
-'hangingUp', 'callIdle'];
+  'hangingUp', 'callIdle'];
 
 export default class CallStateConst {
   // calling
@@ -61,12 +61,12 @@ export default class CallStateConst {
   public static callStateTextMap = {
     [CallStateConst.CALL_STATUS_ACTIVE]: '',
     [CallStateConst.CALL_STATUS_HOLDING]: $r('app.string.callHold'),
-    [CallStateConst.CALL_STATUS_DIALING]: $r("app.string.dialing"),
-    [CallStateConst.CALL_STATUS_ALERTING]: $r("app.string.partyIsRinging"),
+    [CallStateConst.CALL_STATUS_DIALING]: $r('app.string.dialing'),
+    [CallStateConst.CALL_STATUS_ALERTING]: $r('app.string.partyIsRinging'),
     [CallStateConst.CALL_STATUS_INCOMING]: '',
     [CallStateConst.CALL_STATUS_WAITING]: '',
-    [CallStateConst.CALL_STATUS_DISCONNECTED]: $r("app.string.hangUpCompleted"),
-    [CallStateConst.CALL_STATUS_DISCONNECTING]: $r("app.string.hangingUp"),
+    [CallStateConst.CALL_STATUS_DISCONNECTED]: $r('app.string.hangUpCompleted'),
+    [CallStateConst.CALL_STATUS_DISCONNECTING]: $r('app.string.hangingUp'),
     [CallStateConst.CALL_STATUS_IDLE]: ''
   };
 
@@ -79,5 +79,5 @@ export default class CallStateConst {
     conferenceState: 0
   };
 
-  public  getCallStateText = (state) => callStateTxtList[state] !== undefined ? callStateTxtList[state] : '';
+  public getCallStateText = (state) => callStateTxtList[state] !== undefined ? callStateTxtList[state] : '';
 }

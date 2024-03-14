@@ -21,7 +21,7 @@ import ImagePathConst from '../constant/ImagePathConst';
 
 const storageObj = storage.getStorageSync(ImagePathConst.PHONE_NUMBER);
 
-export default class storages {
+export default class Storages {
   /**
    * set sync storage
    *

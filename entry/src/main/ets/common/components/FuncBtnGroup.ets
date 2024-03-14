@@ -28,13 +28,13 @@ import FunctonBtnVM from '../../viewmodel/FunctonBtnVIewModel';
 const TAG = 'FuncBtnGroup';
 
 class BtnStruct {
-  type
-  iconDisableUrl
-  iconDefaultUrl
-  iconActiveUrl
-  isDisable
-  isActive
-  iconText
+  public type
+  public iconDisableUrl
+  public iconDefaultUrl
+  public iconActiveUrl
+  public isDisable
+  public isActive
+  public iconText
 }
 const textMap =
   {
@@ -50,8 +50,8 @@ const textMap =
 
 @Component
 export default struct FuncBtnGroup {
-  @Link @Watch("updateBtnList") callData: DefaultCallData;
-  @Link @Watch("updateBtnList") callList: Array<CallListStruct>;
+  @Link @Watch('updateBtnList') callData: DefaultCallData;
+  @Link @Watch('updateBtnList') callList: Array<CallListStruct>;
   @State count: number = 0;
   @State btnList: Array<BtnStruct> = [];
   @State m: number = 0;
@@ -80,16 +80,17 @@ export default struct FuncBtnGroup {
     this.btnList = this.btnListCall;
     this.getBtnListMulti();
     this.updateBtnList();
-    LogUtils.i(TAG, "aboutToAppear :");
+    LogUtils.i(TAG, 'aboutToAppear :');
   }
 
   /**
    * Switching BtnList Based on CallStatus
    */
   updateBtnList() {
-    if (this.callData.callState === CallStateConst.CALL_STATUS_DIALING || this.callData.callState === CallStateConst.CALL_STATUS_ALERTING) {
+    if (this.callData.callState === CallStateConst.CALL_STATUS_DIALING ||
+      this.callData.callState === CallStateConst.CALL_STATUS_ALERTING) {
       this.btnList = this.btnListDialing;
-    } else if (this.callList.length > 1){
+    } else if (this.callList.length > 1) {
       this.btnList = this.btnListMulti;
     } else {
       this.btnList = this.btnListCall;
@@ -121,10 +122,10 @@ export default struct FuncBtnGroup {
    * @param {Object} callData - call data
    */
   onCallStateChange(newVal) {
-    const BtnName = ['video', 'record', 'add', 'contact', 'merge']
+    const btnName = ['video', 'record', 'add', 'contact', 'merge'];
     if (newVal === CallStateConst.CALL_STATUS_ACTIVE || newVal === CallStateConst.CALL_STATUS_HOLDING) {
       this.btnList.forEach((item) => {
-        if (!Method.includes(BtnName, (item.type))) {
+        if (!Method.includes(btnName, (item.type))) {
           item.isDisable = false;
           item.isActive = false;
         }
@@ -148,11 +149,11 @@ export default struct FuncBtnGroup {
    * @param {Object} obj - object
    */
   btnClick(obj) {
-    LogUtils.i(TAG, "btnClick get icon type : " + JSON.stringify(obj));
-    const BtnName = ['record', 'video', 'mute']
+    LogUtils.i(TAG, 'btnClick get icon type : ' + JSON.stringify(obj));
+    const btnName = ['record', 'video', 'mute'];
     const type = obj.type;
     const { callId } = this.callData;
-    if (Method.includes(BtnName, type)) {
+    if (Method.includes(btnName, type)) {
       this.btnList.forEach((item) => {
         if (item.type === type) {
           item.isActive = !item.isActive;
@@ -175,7 +176,7 @@ export default struct FuncBtnGroup {
         this.keepHandle('keep');
         break;
       case 'exchange':
-        LogUtils.i(TAG, "exchange button clicked, callid: " + callId);
+        LogUtils.i(TAG, 'exchange button clicked, callid: ' + callId);
         this.callList.forEach((item) => {
           if (item.callState === CallStateConst.CALL_STATUS_HOLDING) {
             this.mCallServiceProxy.unHoldCall(item.callId);
@@ -192,7 +193,7 @@ export default struct FuncBtnGroup {
         this.muteHandle('mute');
         break;
       case 'contact':
-        this.startContact("page_flag_choose_contacts")
+        this.startContact('page_flag_choose_contacts')
         break;
       case 'merge':
         this.mCallServiceProxy.combineConference(callId);
@@ -208,7 +209,7 @@ export default struct FuncBtnGroup {
         if (isUnlock) {
           this.startContactAbility(pageFlag)
         } else {
-          LogUtils.i(TAG, "startContact screen isLocked")
+          LogUtils.i(TAG, 'startContact screen isLocked')
         }
       });
     } else {
@@ -233,8 +234,9 @@ export default struct FuncBtnGroup {
    */
   keepHandle(type) {
     const awaitIsActive = this.btnList.find((v) => v.type === type).isActive;
-    LogUtils.i(TAG, "keep handle awaitIsActive : " + !awaitIsActive);
-    !awaitIsActive ? this.mCallServiceProxy.holdCall(this.callData.callId) : this.mCallServiceProxy.unHoldCall(this.callData.callId);
+    LogUtils.i(TAG, 'keep handle awaitIsActive : ' + !awaitIsActive);
+    !awaitIsActive ? this.mCallServiceProxy.holdCall(this.callData.callId) :
+      this.mCallServiceProxy.unHoldCall(this.callData.callId);
   }
 
   /**
@@ -244,7 +246,7 @@ export default struct FuncBtnGroup {
    */
   muteHandle(type) {
     const awaitIsActive = this.btnList.find((v) => v.type === type).isActive;
-    LogUtils.i(TAG, "mute Handle awaitIsActive : " + awaitIsActive);
+    LogUtils.i(TAG, 'mute Handle awaitIsActive : ' + awaitIsActive);
     awaitIsActive ? this.mCallServiceProxy.setMuted() : this.mCallServiceProxy.cancelMuted();
   }
 
@@ -252,7 +254,7 @@ export default struct FuncBtnGroup {
    * Clear timer
    */
   onDestroy() {
-    LogUtils.i(TAG, "onDestroy");
+    LogUtils.i(TAG, 'onDestroy');
     this.timer && clearInterval(this.timer);
   }
 

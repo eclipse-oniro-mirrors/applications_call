@@ -13,19 +13,20 @@
  * limitations under the License.
  */
 
-import CallServiceProxy from "../../model/CallServiceProxy";
+import CallServiceProxy from '../../model/CallServiceProxy';
 import LogUtils from '../utils/LogUtils';
 import DefaultCallData from '../struct/TypeUtils';
 
-const TAG = "DtmfBtn";
+const TAG = 'DtmfBtn';
+
 class DataListStruct {
-  value: string
-  sign: string
+  public value: string
+  public sign: string
 }
 
 @Component
 export default struct DtmfBtn {
-  @State color: string = "rgba(255, 255, 255, 0)";
+  @State color: string = 'rgba(255, 255, 255, 0)';
   @State subStr:string = '';
   @Link dataList: Array<DataListStruct>;
   @Link textInput: string;
@@ -45,7 +46,7 @@ export default struct DtmfBtn {
    */
   onBtnTouchStart(obj) {
     this.mCallServiceProxy.startDTMF(this.callData.callId, String(obj.value));
-    LogUtils.i(TAG, "onBtnTouchStart :");
+    LogUtils.i(TAG, 'onBtnTouchStart :');
   }
 
   /**
@@ -55,20 +56,20 @@ export default struct DtmfBtn {
    */
   onBtnTouchEnd() {
     this.mCallServiceProxy.stopDTMF(this.callData.callId);
-    LogUtils.i(TAG, "onBtnTouchEnd :");
+    LogUtils.i(TAG, 'onBtnTouchEnd :');
   }
 
   build() {
     Row() {
       Column() {
         if (this.item.value == '*') {
-          Image($r("app.media.ic_star"))
+          Image($r('app.media.ic_star'))
             .width(24)
             .height(30)
             .margin({ bottom:10 })
             .padding({ top: 8 })
         } else if (this.item.value == '#') {
-          Image($r("app.media.ic_pound"))
+          Image($r('app.media.ic_pound'))
             .width(24)
             .height(30)
             .margin({ bottom:10 })
@@ -107,22 +108,23 @@ export default struct DtmfBtn {
       .borderRadius(28.25)
       .onTouch((event: TouchEvent) => {
         if (event.type === TouchType.Down) {
-          this.color = "rgba(255, 255, 255, 0.4)"
-          this.textInput = this.textInput + this.item.value
+          this.color = 'rgba(255, 255, 255, 0.4)';
+          this.textInput = this.textInput + this.item.value;
           if (this.textInput.length > 19) {
-            this.subStr = this.textInput.substr(this.textInput.length - 19, this.textInput.length - 1)
-            this.textInputValue = this.subStr
+            this.subStr = this.textInput.substr(this.textInput.length - 19, this.textInput.length - 1);
+            this.textInputValue = this.subStr;
           } else {
-            this.textInputValue = this.textInput
+            this.textInputValue = this.textInput;
           }
-          AppStorage.SetOrCreate("TextInputValue", this.textInputValue)
-          AppStorage.SetOrCreate("TextInput", this.textInput)
-          LogUtils.i(TAG, "textInputValue + TextInput : %s" + JSON.stringify(AppStorage.Get("TextInputValue")) + JSON.stringify(AppStorage.Get("TextInput")));
-          this.onBtnTouchStart(this.item)
+          AppStorage.SetOrCreate('TextInputValue', this.textInputValue);
+          AppStorage.SetOrCreate('TextInput', this.textInput);
+          LogUtils.i(TAG, 'textInputValue + TextInput : %s' + JSON.stringify(AppStorage.Get('TextInputValue')) +
+            JSON.stringify(AppStorage.Get('TextInput')));
+          this.onBtnTouchStart(this.item);
         }
         if (event.type === TouchType.Up) {
-          this.color = "rgba(255, 255, 255, 0)";
-          this.onBtnTouchEnd()
+          this.color = 'rgba(255, 255, 255, 0)';
+          this.onBtnTouchEnd();
         }
       })
     }

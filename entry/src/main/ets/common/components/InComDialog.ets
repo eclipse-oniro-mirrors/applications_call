@@ -32,7 +32,7 @@ export default struct InComDialog {
         Column() {
           Column() {
             Flex({ justifyContent: FlexAlign.Start, alignItems: ItemAlign.Start }) {
-              Text($r("app.string.hangUpReply"))
+              Text($r('app.string.hangUpReply'))
                 .fontSize(20)
                 .fontWeight(FontWeight.Medium)
                 .fontColor('#182431')
@@ -55,7 +55,7 @@ export default struct InComDialog {
                 .onClick(() => {
                   this.controller.close();
                   this.confirm(item)
-                  LogUtils.i(TAG, "onClick and confirm");
+                  LogUtils.i(TAG, 'onClick and confirm');
                 })
 
                 if (item.id !== 4) {
@@ -67,7 +67,7 @@ export default struct InComDialog {
             }
 
             Flex({ justifyContent: FlexAlign.Center, alignItems: ItemAlign.Center }) {
-              Text($r("app.string.cancel"))
+              Text($r('app.string.cancel'))
                 .fontColor('#00CB87')
                 .fontSize(16)
                 .height(40)
@@ -75,7 +75,7 @@ export default struct InComDialog {
             }
             .margin({ top: 8, bottom: 16 })
             .onClick(() => {
-              LogUtils.i(TAG, "onClick");
+              LogUtils.i(TAG, 'onClick');
               this.controller.close();
             })
           }

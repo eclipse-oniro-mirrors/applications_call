@@ -22,7 +22,7 @@ import LogUtils from '../utils/LogUtils';
 import DefaultCallData from '../struct/TypeUtils';
 import CallListStruct from '../struct/CallListStruct'
 
-const TAG = "BottomBtn";
+const TAG = 'BottomBtn';
 
 @Component
 export default struct BottomBtn {
@@ -34,7 +34,7 @@ export default struct BottomBtn {
   private imageList;
 
   public aboutToAppear() {
-    LogUtils.i(TAG, "aboutToAppear :");
+    LogUtils.i(TAG, 'aboutToAppear :');
     this.getImageList();
     this.mCallServiceProxy = CallServiceProxy.getInstance();
   }
@@ -46,15 +46,15 @@ export default struct BottomBtn {
     this.imageList = [
       {
         type: 'keyboard',
-        img: $r("app.media.ic_public_DTFS")
+        img: $r('app.media.ic_public_DTFS')
       },
       {
         type: 'hangUP',
-        img: $r("app.media.ic_public_ring_off")
+        img: $r('app.media.ic_public_ring_off')
       },
       {
         type: 'speakerphone',
-        img: $r("app.media.ic_public_sound_louder")
+        img: $r('app.media.ic_public_sound_louder')
       },
     ]
   }
@@ -67,10 +67,10 @@ export default struct BottomBtn {
     if (this.callList.length === 1) {
       this.hangup = true;
       globalThis.calluiAbilityContext?.terminateSelf().then((data) => {
-        LogUtils.i(TAG, "onHangUp terminateSelfCallBack");
+        LogUtils.i(TAG, 'onHangUp terminateSelfCallBack');
       });
     }
-    LogUtils.i(TAG, "onHangUp this.callData.callId : " + this.callData.callId);
+    LogUtils.i(TAG, 'onHangUp this.callData.callId : ' + this.callData.callId);
   }
 
   /**

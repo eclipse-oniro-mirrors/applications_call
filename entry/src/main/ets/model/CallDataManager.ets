@@ -31,12 +31,12 @@ const TAG = 'CallDataManager';
  * class CallDataManager
  */
 export default class CallDataManager {
-  callData: DefaultCallData = new DefaultCallData();
-  callList: Array<CallListStruct> = [];
-  callTimeList: Array<CallTimeListStruct> = [];
+  public callData: DefaultCallData = new DefaultCallData();
+  public callList: Array<CallListStruct> = [];
+  public callTimeList: Array<CallTimeListStruct> = [];
   private callStateChange: Function;
   private mCallStateManager: CallStateManager;
-  private NotificationManager;
+  private mNotificationManager;
   private contactManager;
   private static sCallDataManager: CallDataManager;
 
@@ -51,7 +51,7 @@ export default class CallDataManager {
    * Init data.
    */
   public init(callData, callList, callTimeList) {
-    this.NotificationManager = new NotificationManager();
+    this.mNotificationManager = new NotificationManager();
     this.contactManager = new ContactManager();
     this.mCallStateManager = CallStateManager.getInstance()
     if (this.callData == null) {
@@ -106,7 +106,8 @@ export default class CallDataManager {
         ...callData
       });
       if (oldCallState != callState) {
-        AppStorage.Get<NotificationManager>('notificationManager').sendCapsuleNotification(callData, globalThis.appInactiveState);
+        AppStorage.Get<NotificationManager>('notificationManager').sendCapsuleNotification(callData,
+          globalThis.appInactiveState);
       }
     } else {
       this.addCallList({
@@ -155,7 +156,7 @@ export default class CallDataManager {
   }
 
   public clearCall(callData) {
-    this.NotificationManager.cancelNotification();
+    this.mNotificationManager.cancelNotification();
     AppStorage.Get<NotificationManager>('notificationManager').sendCapsuleNotification(callData, true);
     AppStorage.Delete('CallTimeList');
     this.clearData();
@@ -170,7 +171,8 @@ export default class CallDataManager {
   sendNotification(callData) {
     if (globalThis.appInactiveState && callData) {
       AppStorage.Get<NotificationManager>('notificationManager')?.sendNotification(callData);
-      AppStorage.Get<NotificationManager>('notificationManager')?.sendCapsuleNotification(callData, globalThis.appInactiveState);
+      AppStorage.Get<NotificationManager>('notificationManager')?.sendCapsuleNotification(callData,
+        globalThis.appInactiveState);
     }
   }
 
@@ -178,8 +180,8 @@ export default class CallDataManager {
    * Judge whether the call exists.
    */
   public hasAliveCall() {
-    const callData = this.callList.find((call) => call.callState !== CallStateConst.CALL_STATUS_DISCONNECTED
-      && call.callState !== CallStateConst.CALL_STATUS_DISCONNECTING);
+    const callData = this.callList.find((call) => call.callState !== CallStateConst.CALL_STATUS_DISCONNECTED &&
+      call.callState !== CallStateConst.CALL_STATUS_DISCONNECTING);
     LogUtils.i(TAG, 'hasAliveCall:' + JSON.stringify(callData !== undefined));
     return callData !== undefined;
   }
@@ -188,8 +190,8 @@ export default class CallDataManager {
    * Judge whether the call exists.
    */
   public hasActiveCall(): boolean {
-    const callData = this.callList.find((call) => (call.callState === CallStateConst.CALL_STATUS_ACTIVE
-    || call.callState === CallStateConst.CALL_STATUS_HOLDING));
+    const callData = this.callList.find((call) => (call.callState === CallStateConst.CALL_STATUS_ACTIVE ||
+      call.callState === CallStateConst.CALL_STATUS_HOLDING));
     return callData !== undefined;
   }
 
@@ -197,8 +199,8 @@ export default class CallDataManager {
    * Judge whether the call is active or holding.
    */
   public isActiveCall(callId): boolean {
-    const callData = this.callList.find((call) => call.callId === callId && (call.callState === CallStateConst.CALL_STATUS_ACTIVE
-    || call.callState === CallStateConst.CALL_STATUS_HOLDING));
+    const callData = this.callList.find((call) => call.callId === callId && (call.callState ===
+      CallStateConst.CALL_STATUS_ACTIVE || call.callState === CallStateConst.CALL_STATUS_HOLDING));
     return callData !== undefined;
   }
 
@@ -230,9 +232,9 @@ export default class CallDataManager {
    * @param { object } callData
    */
   updateCallTimeList(callData) {
-    const CallTimeObj = this.callTimeList.find((v) => v.callId === callData.callId);
-    LogUtils.i(TAG, 'updateCallTimeList : ' + JSON.stringify(CallTimeObj))
-    if (!CallTimeObj && callData.callState === CallStateConst.CALL_STATUS_ACTIVE) {
+    const callTimeObj = this.callTimeList.find((v) => v.callId === callData.callId);
+    LogUtils.i(TAG, 'updateCallTimeList : ' + JSON.stringify(callTimeObj));
+    if (!callTimeObj && callData.callState === CallStateConst.CALL_STATUS_ACTIVE) {
       const obj = {
         callId: callData.callId,
         callTime: '00:00',

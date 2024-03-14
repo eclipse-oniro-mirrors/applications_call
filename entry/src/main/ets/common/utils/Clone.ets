@@ -82,8 +82,8 @@ export default class Getclone {
    * @param { any } target
    */
   private getInit(target) {
-    const Ctor = target.constructor;
-    return new Ctor();
+    const ctor = target.constructor;
+    return new ctor();
   }
 
   /**
@@ -142,14 +142,14 @@ export default class Getclone {
    * @param { any } type - data type
    */
   private cloneOtherType(target, type) {
-    const Ctor = target.constructor;
+    const ctor = target.constructor;
     switch (type) {
       case boolType:
       case numberType:
       case stringType:
       case errorType:
       case dateType:
-        return new Ctor(target);
+        return new ctor(target);
       case regexpType:
         return this.cloneRegister(target);
       case symbolType:

@@ -36,12 +36,12 @@ const TIMING = 1000;
 export default class CallManager {
   private callData: DefaultCallData = new DefaultCallData();
   private callList: Array<CallListStruct> = [];
-  private timer = null ;
-  callTimeList = [];
+  private timer = null;
+  public callTimeList = [];
   private ctx = [];
   private sendNotificationHandle: Function;
   private mCallDataManager: CallDataManager;
-  private mCallServiceProxy: CallServiceProxy ;
+  private mCallServiceProxy: CallServiceProxy;
   private mUtils: Utils;
   private diffSeconds
   private mTimeMeter;

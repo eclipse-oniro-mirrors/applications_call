@@ -33,7 +33,8 @@ export default class SimStateConst {
   public static SIM_STATE_READY: number = 4;
 
   // M card is in loading state
-  public static SIM_STATE_LOADED: number= 5;
+  public static SIM_STATE_LOADED: number = 5;
+
   public static getSimStateObj = {
     SIM_STATE_UNKNOWN: SimStateConst.SIM_STATE_UNKNOWN,
     SIM_STATE_NOT_PRESEN: SimStateConst.SIM_STATE_NOT_PRESEN,

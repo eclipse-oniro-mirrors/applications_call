@@ -16,7 +16,7 @@
 import Method from '../utils/Method';
 import LogUtils from '../utils/LogUtils';
 
-const TAG = "FuncBtn";
+const TAG = 'FuncBtn';
 
 @Component
 export default struct FuncBtn {
@@ -37,7 +37,7 @@ export default struct FuncBtn {
    */
   iconUrl() {
     if (this.isDisable && this.iconDisableUrl) {
-      LogUtils.i(TAG, "iconUrl this.isDisable : " + this.isDisable);
+      LogUtils.i(TAG, 'iconUrl this.isDisable : ' + this.isDisable);
       return this.iconDisableUrl;
     }
     return this.isActive && this.iconDefaultUrl ? this.iconActiveUrl : this.iconDefaultUrl;
@@ -47,9 +47,9 @@ export default struct FuncBtn {
    * Button group  change picture
    */
   changeBtn(type) {
-    LogUtils.i(TAG, "changeBtn type : " + type);
-    const BtnName = ['record', 'video', 'mute'];
-    if (Method.includes(BtnName, type)) {
+    LogUtils.i(TAG, 'changeBtn type : ' + type);
+    const btnName = ['record', 'video', 'mute'];
+    if (Method.includes(btnName, type)) {
       this.isActive = !this.isActive;
     }
   }
@@ -68,17 +68,17 @@ export default struct FuncBtn {
       this.textColor = '#007DFF';
       return 'enable';
     }
-    if(this.btnType == 'msg'){
+    if (this.btnType == 'msg') {
       this.textColor = '#8c8c8c';
       return '';
     }
     this.textColor = 'rgb(255, 255, 255)';
-    LogUtils.i(TAG, "iconClassName this.isDisable :");
+    LogUtils.i(TAG, 'iconClassName this.isDisable :');
     return 'default';
   }
 
   aboutToAppear() {
-    LogUtils.i(TAG, "aboutToAppear");
+    LogUtils.i(TAG, 'aboutToAppear');
     this.iconClassName();
   }
 

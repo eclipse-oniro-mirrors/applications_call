@@ -24,7 +24,7 @@ import DefaultCallData from '../struct/TypeUtils'
 import CallListStruct from '../struct/CallListStruct'
 import CallTimeListStruct from '../struct/CallTimeListStruct'
 
-const TAG = "contactCard";
+const TAG = 'contactCard';
 
 @Component
 export default struct ContactCard {
@@ -33,19 +33,19 @@ export default struct ContactCard {
   @Prop isShowKeyboard: boolean;
   @Link callList: Array<CallListStruct>;
   @Link callData: DefaultCallData;
-  @StorageLink("TextInput") textInput: string = '';
-  @StorageLink("TextInputValue") textInputValue: string = '';
-  @StorageLink("CallTimeList") callTimeList: Array<CallTimeListStruct> = [];
-  @StorageLink("AccountNumber") accountNumber: string = '';
-  @StorageLink("IsEmergencyPhoneNumber") isEmergencyPhoneNumber: boolean = false;
-  @StorageLink("hasSimCard1") hasSimCard1: boolean = false;
-  @StorageLink("hasSimCard2") hasSimCard2: boolean = false;
+  @StorageLink('TextInput') textInput: string = '';
+  @StorageLink('TextInputValue') textInputValue: string = '';
+  @StorageLink('CallTimeList') callTimeList: Array<CallTimeListStruct> = [];
+  @StorageLink('AccountNumber') accountNumber: string = '';
+  @StorageLink('IsEmergencyPhoneNumber') isEmergencyPhoneNumber: boolean = false;
+  @StorageLink('hasSimCard1') hasSimCard1: boolean = false;
+  @StorageLink('hasSimCard2') hasSimCard2: boolean = false;
   private mUtils: Utils;
   private timer;
   private emergency = $r('app.string.emergency');
 
   public aboutToAppear(): void {
-    LogUtils.i(TAG, "aboutToAppear");
+    LogUtils.i(TAG, 'aboutToAppear');
     this.mUtils = Utils.getInstance();
     this.timer = setInterval(() => {
       if (this.dialing === '...') {
@@ -99,7 +99,7 @@ export default struct ContactCard {
       GridCol({ span: { sm: 4, md: 6, lg: 6 }, offset: { md: 1, lg: 3 } }) {
         Column() {
           if (!this.isShowKeyboard) {
-            Image($r("app.media.ic_public_avatar"))
+            Image($r('app.media.ic_public_avatar'))
               .width(110)
               .height(110)
               .borderRadius(55)
@@ -117,7 +117,8 @@ export default struct ContactCard {
               .maxLines(1)
               .textOverflow({ overflow: TextOverflow.Ellipsis })
           } else if (!this.isShowKeyboard) {
-            Text(this.isEmergencyPhoneNumber ? this.emergency : this.callData.contactName ? this.callData.contactName : this.callData.accountNumber)
+            Text(this.isEmergencyPhoneNumber ? this.emergency : this.callData.contactName ?
+              this.callData.contactName : this.callData.accountNumber)
               .fontSize(30)
               .height(40)
               .lineHeight(40)
@@ -154,13 +155,14 @@ export default struct ContactCard {
                 .lineHeight(16)
                 .fontColor('#FFFFFF')
                 .margin({ bottom: 8 })
-                .visibility((this.callData.contactName || this.isEmergencyPhoneNumber) && !this.isShowKeyboard ? Visibility.Visible : Visibility.None)
+                .visibility((this.callData.contactName || this.isEmergencyPhoneNumber) && !this.isShowKeyboard ?
+                  Visibility.Visible : Visibility.None)
             }
           }
 
           if (this.callData.callState === 1) {
             Row() {
-              Text($r("app.string.callHold"))
+              Text($r('app.string.callHold'))
                 .fontSize(14)
                 .height(19)
                 .lineHeight(19)
@@ -171,7 +173,7 @@ export default struct ContactCard {
 
           if (this.callData.callState === 2) {
             Row() {
-              Text($r("app.string.dialing"))
+              Text($r('app.string.dialing'))
                 .fontSize(14)
                 .height(19)
                 .lineHeight(16)
@@ -185,7 +187,7 @@ export default struct ContactCard {
           }
 
           if (this.callData.callState === 3) {
-            Text($r("app.string.partyIsRinging"))
+            Text($r('app.string.partyIsRinging'))
               .fontSize(14)
               .height(19)
               .lineHeight(16)
@@ -193,7 +195,8 @@ export default struct ContactCard {
           }
 
           if (this.isShowSim()) {
-            Image(this.callData.accountId == 1 ? $r("app.media.ic_public_phone_sim2") : $r("app.media.ic_public_phone_sim1"))
+            Image(this.callData.accountId == 1 ? $r('app.media.ic_public_phone_sim2') :
+              $r('app.media.ic_public_phone_sim1'))
               .margin({ right: 4 })
               .width(12)
               .height(12)
@@ -203,7 +206,7 @@ export default struct ContactCard {
           if (this.isShowTime()) {
             Row() {
               if (this.callData.callType === 1) {
-                Image($r("app.media.ic_public_phone_HD"))
+                Image($r('app.media.ic_public_phone_HD'))
                   .margin({ right: 4 })
                   .width(12)
                   .height(12)

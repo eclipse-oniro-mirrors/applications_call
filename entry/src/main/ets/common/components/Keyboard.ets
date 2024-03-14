@@ -18,16 +18,16 @@ import DtmfBtn from '../components/DtmfBtn';
 import DefaultCallData from '../struct/TypeUtils';
 
 class DataListStruct {
-   value: string
-   sign: string
+  public value: string
+  public sign: string
 }
-const TAG = "Keyboard";
+const TAG = 'Keyboard';
 
 @Component
 export default struct Keyboard {
   @Link callData: DefaultCallData;
-  @StorageLink("TextInput") textInput: string = '';
-  @StorageLink("TextInputValue") textInputValue: string = '';
+  @StorageLink('TextInput') textInput: string = '';
+  @StorageLink('TextInputValue') textInputValue: string = '';
   @State dataList: Array<DataListStruct> =
     [
       {
