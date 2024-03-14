@@ -26,7 +26,7 @@ import DefaultCallData from '../struct/TypeUtils'
 import CallListStruct from '../struct/CallListStruct'
 import CallTimeListStruct from '../struct/CallTimeListStruct'
 
-const TAG = "MultiContactCard";
+const TAG = 'MultiContactCard';
 
 @Component
 export default struct MultiContactCard {
@@ -36,13 +36,13 @@ export default struct MultiContactCard {
   @Link callList: Array<CallListStruct>;
   @Link callData: DefaultCallData;
   @Link incomingData: DefaultCallData;
-  @StorageLink("TextInput") textInput: string = '';
-  @StorageLink("TextInputValue") textInputValue: string = '';
-  @StorageLink("CallTimeList") callTimeList: Array<CallTimeListStruct> = [];
-  @StorageLink("AccountNumber") accountNumber: string = '';
-  @StorageLink("IsEmergencyPhoneNumber") isEmergencyPhoneNumber: boolean = false;
-  @StorageLink("hasSimCard1") hasSimCard1: boolean = false;
-  @StorageLink("hasSimCard2") hasSimCard2: boolean = false;
+  @StorageLink('TextInput') textInput: string = '';
+  @StorageLink('TextInputValue') textInputValue: string = '';
+  @StorageLink('CallTimeList') callTimeList: Array<CallTimeListStruct> = [];
+  @StorageLink('AccountNumber') accountNumber: string = '';
+  @StorageLink('IsEmergencyPhoneNumber') isEmergencyPhoneNumber: boolean = false;
+  @StorageLink('hasSimCard1') hasSimCard1: boolean = false;
+  @StorageLink('hasSimCard2') hasSimCard2: boolean = false;
   @State multiContactName: string = '';
   @State multiContactNumber: string = '';
   private mUtils: Utils;
@@ -50,7 +50,7 @@ export default struct MultiContactCard {
   private emergency = $r('app.string.emergency');
 
   public aboutToAppear(): void {
-    LogUtils.i(TAG, "aboutToAppear");
+    LogUtils.i(TAG, 'aboutToAppear');
     this.mUtils = Utils.getInstance();
     this.timer = setInterval(() => {
       if (this.dialing === '...') {
@@ -69,22 +69,23 @@ export default struct MultiContactCard {
   }
 
   private isShowSim() {
-    return (this.callData.callState === CallStateConst.callStateObj.CALL_STATUS_WAITING
-    || this.callData.callState === CallStateConst.callStateObj.CALL_STATUS_INCOMING) && this.hasSimCard1 && this.hasSimCard2;
+    return (this.callData.callState === CallStateConst.callStateObj.CALL_STATUS_WAITING || this.callData.callState ===
+      CallStateConst.callStateObj.CALL_STATUS_INCOMING) && this.hasSimCard1 && this.hasSimCard2;
   }
 
   getInComingCallState() {
     if (this.callList.length > 1) {
       let incomingState = false;
       this.callList.forEach((v) => {
-        if (v.callState === CallStateConst.callStateObj.CALL_STATUS_WAITING || v.callState === CallStateConst.callStateObj.CALL_STATUS_INCOMING) {
+        if (v.callState === CallStateConst.callStateObj.CALL_STATUS_WAITING || v.callState ===
+          CallStateConst.callStateObj.CALL_STATUS_INCOMING) {
           this.incomingData = v;
           this.multiContactName = v.contactName;
           this.multiContactNumber = v.accountNumber;
           incomingState = true;
         }
       });
-      LogUtils.i(TAG, "getInComingCallState incomingState:" + JSON.stringify(incomingState));
+      LogUtils.i(TAG, 'getInComingCallState incomingState:' + JSON.stringify(incomingState));
       return incomingState;
     } else {
       return this.callData.callState;
@@ -104,7 +105,8 @@ export default struct MultiContactCard {
             if (this.getInComingCallState()) {
               Column() {
                 if (!this.isShowKeyboard || this.isShowKeyboard && this.textInput.length === 0) {
-                  Text(this.isEmergencyPhoneNumber ? this.emergency : this.multiContactName ? this.multiContactName : this.multiContactNumber)
+                  Text(this.isEmergencyPhoneNumber ? this.emergency : this.multiContactName ? this.multiContactName :
+                    this.multiContactNumber)
                     .fontSize(30)
                     .height(40)
                     .lineHeight(40)
@@ -118,13 +120,15 @@ export default struct MultiContactCard {
                     .lineHeight(19)
                     .fontColor('#FFFFFF')
                     .opacity(0.60)
-                    .visibility((this.multiContactName || this.isEmergencyPhoneNumber) && !this.isShowKeyboard ? Visibility.Visible : Visibility.None)
+                    .visibility((this.multiContactName || this.isEmergencyPhoneNumber) && !this.isShowKeyboard ?
+                      Visibility.Visible : Visibility.None)
                 }
               }
               .margin({ top: 56 })
 
               if (this.isShowSim()) {
-                Image(this.callData.accountId == 1 ? $r("app.media.ic_public_phone_sim2") : $r("app.media.ic_public_phone_sim1"))
+                Image(this.callData.accountId == 1 ? $r('app.media.ic_public_phone_sim2') :
+                  $r('app.media.ic_public_phone_sim1'))
                   .margin({ right: 4 })
                   .width(12)
                   .height(12)

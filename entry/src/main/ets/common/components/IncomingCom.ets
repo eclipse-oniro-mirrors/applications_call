@@ -26,7 +26,7 @@ import DefaultCallData from '../struct/TypeUtils';
 import CallListStruct from '../struct/CallListStruct'
 import VibrationAndProximityUtils from '../utils/VibrationAndProximityUtils';
 
-const TAG = "IncomingCom";
+const TAG = 'IncomingCom';
 const SMS_REJECTION = `${ImagePathConst.BASE_URL}ic_public_message.svg`;
 
 /**
@@ -57,21 +57,17 @@ export default struct IncomingCom {
   private btnList = [];
   private msgList = [];
   mCallServiceProxy: CallServiceProxy = null;
-  msgDialogController: CustomDialogController = new CustomDialogController
-  ({
+  msgDialogController: CustomDialogController = new CustomDialogController ({
     builder: InComDialog({
-      cancel: () => {
-      },
+      cancel: () => {},
       confirm: (item) => {
         this.msgItemClick(item);
       },
-      cancelHandle: () => {
-      },
+      cancelHandle: () => {},
       // @ts-ignore
       List: this.msgList
     }),
-    cancel: () => {
-    },
+    cancel: () => {},
     customStyle: true
   });
 
@@ -95,7 +91,7 @@ export default struct IncomingCom {
     let destinationHost = this.callData.accountNumber
     let contactName = this.callData.contactName
     globalThis.calluiAbilityContext?.resourceManager.getString(obj.msg.id, (err, typeName) => {
-      LogUtils.i(TAG, "sendMessage");
+      LogUtils.i(TAG, 'sendMessage');
       sms.sendMessage({
         slotId: slotId,
         destinationHost: destinationHost,
@@ -105,7 +101,7 @@ export default struct IncomingCom {
             return;
           }
           if (sendResult.result === SEND_SMS_SUCCESS) {
-            globalThis.calluiAbilityContext?.resourceManager.getString($r("app.string.SMS_Sent")
+            globalThis.calluiAbilityContext?.resourceManager.getString($r('app.string.SMS_Sent')
               .id, (err, typeName) => {
               if (err) {
                 return;
@@ -116,7 +112,7 @@ export default struct IncomingCom {
               });
             })
           } else {
-            globalThis.calluiAbilityContext?.resourceManager.getString($r("app.string.message_Failed")
+            globalThis.calluiAbilityContext?.resourceManager.getString($r('app.string.message_Failed')
               .id, (err, typeName) => {
               if (err) {
                 return;
@@ -136,19 +132,19 @@ export default struct IncomingCom {
     this.msgList = [
       {
         id: 1,
-        msg: $r("app.string.backLater")
+        msg: $r('app.string.backLater')
       },
       {
         id: 2,
-        msg: $r("app.string.answerThePhone")
+        msg: $r('app.string.answerThePhone')
       },
       {
         id: 3,
-        msg: $r("app.string.contactMeLater")
+        msg: $r('app.string.contactMeLater')
       },
       {
         id: 4,
-        msg: $r("app.string.beThereSoon")
+        msg: $r('app.string.beThereSoon')
       },
     ];
   }
@@ -157,7 +153,7 @@ export default struct IncomingCom {
     this.btnList = [
       {
         type: 'msg',
-        iconText: $r("app.string.sms"),
+        iconText: $r('app.string.sms'),
         iconDefaultUrl: SMS_REJECTION,
         iconDisableUrl: SMS_REJECTION,
         isDisable: false
@@ -171,7 +167,7 @@ export default struct IncomingCom {
    * @param {string} msg - Send SMS content
    */
   private msgItemClick(obj) {
-    LogUtils.i(TAG, "msgItemClick rejectCall");
+    LogUtils.i(TAG, 'msgItemClick rejectCall');
     this.mCallServiceProxy.rejectCall(this.callData.callId, obj.msg);
     this.sendMessage(obj);
   }
@@ -181,7 +177,8 @@ export default struct IncomingCom {
    */
   private async onReject() {
     if (this.callList.length > 1) {
-      const incomingData = this.callList.find((v) => v.callState === CallStateConst.callStateObj.CALL_STATUS_WAITING || v.callState === CallStateConst.callStateObj.CALL_STATUS_INCOMING);
+      const incomingData = this.callList.find((v) => v.callState === CallStateConst.callStateObj.CALL_STATUS_WAITING ||
+        v.callState === CallStateConst.callStateObj.CALL_STATUS_INCOMING);
       Object.assign(this.callData, {
         ...incomingData
       });
@@ -189,15 +186,15 @@ export default struct IncomingCom {
     const {callId, callState} = this.callData;
     if (callState !== CallStateConst.CALL_STATUS_WAITING) {
       this.mCallServiceProxy.rejectCall(callId);
-      LogUtils.i(TAG, "onReject this.mCallServiceProxy.rejectCall :");
+      LogUtils.i(TAG, 'onReject this.mCallServiceProxy.rejectCall :');
     } else {
       this.mCallServiceProxy.hangUpCall(callId);
-      LogUtils.i(TAG, "onReject this.mCallServiceProxy.hangUpCall :");
+      LogUtils.i(TAG, 'onReject this.mCallServiceProxy.hangUpCall :');
     }
     if (this.callList.length === 1) {
       this.hangup = true;
       globalThis.calluiAbilityContext?.terminateSelf().then((data) => {
-        LogUtils.i(TAG, "onReject terminateSelfCallBack");
+        LogUtils.i(TAG, 'onReject terminateSelfCallBack');
       });
     }
   }
@@ -206,7 +203,7 @@ export default struct IncomingCom {
    * Enable the SMS reply pop-up
    */
   private btnClick(type) {
-    LogUtils.i(TAG, "btnClick : %s" + JSON.stringify(type));
+    LogUtils.i(TAG, 'btnClick : %s' + JSON.stringify(type));
     if (type === 'msg') {
       this.msgDialogController.open();
     }
@@ -216,8 +213,9 @@ export default struct IncomingCom {
    * Answer the phone interface
    */
   private onAnswer() {
-    LogUtils.i(TAG, "onAnswer :");
-    const incomingData = this.callList.find((v) => v.callState === CallStateConst.callStateObj.CALL_STATUS_WAITING || v.callState === CallStateConst.callStateObj.CALL_STATUS_INCOMING);
+    LogUtils.i(TAG, 'onAnswer :');
+    const incomingData = this.callList.find((v) => v.callState === CallStateConst.callStateObj.CALL_STATUS_WAITING ||
+      v.callState === CallStateConst.callStateObj.CALL_STATUS_INCOMING);
     if (incomingData !== undefined) {
       this.mCallServiceProxy.acceptCall(incomingData.callId);
     } else {
@@ -251,7 +249,7 @@ export default struct IncomingCom {
 
           Row() {
             Column() {
-              Image($r("app.media.ic_public_ring_off"))
+              Image($r('app.media.ic_public_ring_off'))
                 .width(56)
                 .height(56)
                 .onClick(() => {
@@ -260,7 +258,7 @@ export default struct IncomingCom {
             }.layoutWeight(1)
 
             Column() {
-              Image($r("app.media.ic_public_answer"))
+              Image($r('app.media.ic_public_answer'))
                 .width(56)
                 .height(56)
                 .onClick(() => {

@@ -60,9 +60,9 @@ export default class Utils {
    *
    * @param { number } count
    */
-  public formatTime (count) {
+  public formatTime(count) {
     const second = Math.floor((count % MIN_VAL) / SEC_VAL);
-    const minute = Math.floor((count / MIN_VAL) % SIXTY_SECONDS) ;
+    const minute = Math.floor((count / MIN_VAL) % SIXTY_SECONDS);
     const hour = Math.floor(count / (SIXTY_SECONDS * MIN_VAL));
     const secondStr = second <= NINE_MAX ? '0' + second : second;
     const minuteStr = minute <= NINE_MAX ? '0' + minute : minute;

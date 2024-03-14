@@ -12,9 +12,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
 export default class CallTimeListStruct {
-  callId
-  callTime
-  startTimestamp
-  endTimestamp
+  public callId
+  public callTime
+  public startTimestamp
+  public endTimestamp
 }

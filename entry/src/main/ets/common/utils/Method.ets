@@ -13,7 +13,7 @@
  * limitations under the License.
  */
 
-export default  {
+export default {
   includes(array: Array<any>, num: any) {
     let bool = array.find((item) => {
       return item === num;

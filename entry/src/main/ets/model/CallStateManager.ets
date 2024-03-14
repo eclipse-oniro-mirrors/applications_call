@@ -33,7 +33,7 @@ export default class CallStateManager {
    *
    * @param { Object } data - callData
    */
-  public static getInstance():CallStateManager{
+  public static getInstance(): CallStateManager {
     return CallStateManager.sCallStateManager;
   }
 

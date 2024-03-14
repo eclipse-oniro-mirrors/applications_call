@@ -24,18 +24,18 @@ import DefaultCallData from '../struct/TypeUtils';
 import CallListStruct from '../struct/CallListStruct'
 import CallTimeListStruct from '../struct/CallTimeListStruct'
 
-const TAG = "CallList";
+const TAG = 'CallList';
 
 @Component
 export default struct CallList {
   @Link callList: Array<CallListStruct>;
   @Link callData: DefaultCallData;
-  @StorageLink("CallTimeList") callTimeList: Array<CallTimeListStruct> = [];
+  @StorageLink('CallTimeList') callTimeList: Array<CallTimeListStruct> = [];
   private mCallStateConst: CallStateConst;
   private mCallServiceProxy: CallServiceProxy;
 
   public aboutToAppear(): void {
-    LogUtils.i(TAG, "aboutToAppear");
+    LogUtils.i(TAG, 'aboutToAppear');
     this.mCallStateConst = new CallStateConst();
     this.mCallServiceProxy = CallServiceProxy.getInstance();
   }
@@ -90,11 +90,11 @@ export default struct CallList {
    * @param {number} callId - callId
    */
   public onHangUp(callId) {
-    LogUtils.i(TAG, "onHangUp : " + callId);
+    LogUtils.i(TAG, 'onHangUp : ' + callId);
     this.mCallServiceProxy.hangUpCall(callId);
     if (this.callList.length === 1) {
       globalThis.calluiAbilityContext?.terminateSelf().then((data) => {
-        LogUtils.i(TAG, "onHangUp terminateSelfCallBack");
+        LogUtils.i(TAG, 'onHangUp terminateSelfCallBack');
       });
     }
   }
@@ -105,7 +105,7 @@ export default struct CallList {
    * @param {number} callId - callId
    */
   public onUnHold(callId) {
-    LogUtils.i(TAG, "onUnHold : " + callId);
+    LogUtils.i(TAG, 'onUnHold : ' + callId);
 
     this.getCallList().forEach((item) => {
       if (item.callState === CallStateConst.CALL_STATUS_HOLDING) {
@@ -118,11 +118,12 @@ export default struct CallList {
   getInComingCallState() {
     let incomingState = false;
     this.callList.forEach((v) => {
-      if (v.callState === CallStateConst.callStateObj.CALL_STATUS_WAITING || v.callState === CallStateConst.callStateObj.CALL_STATUS_INCOMING) {
+      if (v.callState === CallStateConst.callStateObj.CALL_STATUS_WAITING ||
+        v.callState === CallStateConst.callStateObj.CALL_STATUS_INCOMING) {
         incomingState = true;
       }
     });
-    LogUtils.i(TAG, "getInComingCallState incomingState:" + JSON.stringify(incomingState));
+    LogUtils.i(TAG, 'getInComingCallState incomingState:' + JSON.stringify(incomingState));
     return incomingState;
   }
 
@@ -158,7 +159,7 @@ export default struct CallList {
                     }
 
                     if (this.getInComingCallState()) {
-                      Image($r("app.media.ic_hangup_list"))
+                      Image($r('app.media.ic_hangup_list'))
                         .width(30)
                         .height(30)
                         .onClick(() => {
@@ -179,7 +180,7 @@ export default struct CallList {
       }
       .divider({ strokeWidth: 1, color: $r('app.color.divider_calllist') })
       .margin({ left: 24, right: 24 })
-      .width("100%")
+      .width('100%')
       .listDirection(Axis.Vertical)
 
       Divider()

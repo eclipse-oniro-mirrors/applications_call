@@ -12,16 +12,17 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
 export default class DefaultCallData {
-  accountNumber
-  videoState
-  callType
-  callState
-  callId
-  startTime
-  accountId
-  isEcc
-  conferenceState
-  oldCallState
-  contactName
+  public accountNumber
+  public videoState
+  public callType
+  public callState
+  public callId
+  public startTime
+  public accountId
+  public isEcc
+  public conferenceState
+  public oldCallState
+  public contactName
 }
