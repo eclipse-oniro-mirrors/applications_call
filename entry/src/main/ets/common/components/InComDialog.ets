@@ -24,7 +24,7 @@ export default struct InComDialog {
   cancel: () => void;
   confirm: (msg) => void;
   cancelHandle: () => void;
-  List: [];
+  list: [];
 
   build() {
     GridRow({ columns: { xs: 4, sm: 4, md: 8, lg: 12 }, gutter: 12 }) {
@@ -43,7 +43,7 @@ export default struct InComDialog {
             })
 
             Column() {
-              ForEach(this.List, (item) => {
+              ForEach(this.list, (item) => {
                 Flex({ justifyContent: FlexAlign.Center, alignItems: ItemAlign.Center }) {
                   Text(item.msg)
                     .width('100%')

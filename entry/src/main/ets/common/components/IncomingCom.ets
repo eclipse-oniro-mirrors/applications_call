@@ -65,7 +65,7 @@ export default struct IncomingCom {
       },
       cancelHandle: () => {},
       // @ts-ignore
-      List: this.msgList
+      list: this.msgList
     }),
     cancel: () => {},
     customStyle: true
