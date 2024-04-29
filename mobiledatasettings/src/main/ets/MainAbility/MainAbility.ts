@@ -20,12 +20,12 @@ import LogUtils from '../common/utils/LogUtils';
 const TAG = 'MainAbility';
 
 export default class MainAbility extends Ability {
-  onCreate(want, launchParam) {
+  onCreate(want, launchParam): void {
     LogUtils.i(TAG, 'onCreate');
     globalThis.settingsAbilityContext = this.context;
   }
 
-  onDestroy() {
+  onDestroy(): void {
     LogUtils.i(TAG, 'onDestroy!');
   }
 
@@ -42,17 +42,17 @@ export default class MainAbility extends Ability {
     });
   }
 
-  onWindowStageDestroy() {
+  onWindowStageDestroy(): void {
     // Main window is destroyed, release UI related resources
     LogUtils.i(TAG, 'onWindowStageDestroy!');
   }
 
-  onForeground() {
+  onForeground(): void {
     // Ability has brought to foreground
     LogUtils.i(TAG, 'onForeground!');
   }
 
-  onBackground() {
+  onBackground(): void {
     // Ability has back to background
     LogUtils.i(TAG, 'onBackground!');
   }

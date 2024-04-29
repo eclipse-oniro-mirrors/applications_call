@@ -26,7 +26,7 @@ export default struct FuncBtn {
   @State iconActiveUrl: string = '';
   @State @Watch('iconClassName') isActive: boolean = false;
   @State @Watch('iconClassName') isDisable: boolean = false;
-  @State iconText: string= '';
+  @State iconText: string = '';
   @State textColor: string = 'rgb(255, 255, 255)';
   btnClick: Function = null;
 
