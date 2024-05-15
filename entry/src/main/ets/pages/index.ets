@@ -15,7 +15,6 @@
 
 import { addAirPlaneModeListener, removeAirPlaneModeListener, turnOffAirPlaneMode } from '../common/utils/AirplaneMode';
 import ConfirmDialogEx from './dialog/ConfirmDialogEx';
-import EnvironmentProp from './dialog/EnvironmentProp';
 import mediaQuery from '@ohos.mediaquery';
 import wantAgent from '@ohos.wantAgent';
 import ContactCard from '../common/components/ContactCard';
@@ -78,7 +77,7 @@ struct Index {
       confirmText: $r('app.string.shutDown')
     }),
     autoCancel: false,
-    alignment: (EnvironmentProp.isTablet() ? DialogAlignment.Center : DialogAlignment.Bottom),
+    alignment: DialogAlignment.Bottom,
     offset: { dx: 0, dy: -16 }
   });
 
