@@ -56,6 +56,8 @@
                 <filteritem type="filepath" name="doc/image/.*.png" desc="self developed image"/>
                 <filteritem type="filepath" name="mobiledatasettings/src/main/resources/base/media/.*.png" desc="self developed image"/>
                 <filteritem type="filepath" name="mobiledatasettings/src/main/resources/base/media/.*.svg" desc="self developed image"/>
+                <filteritem type="filepath" name="callui/src/main/ets/assets/picture/.*.png" desc="self developed image"/>
+                <filteritem type="filepath" name="AppScope/resource/base/media/.*.png" desc="self developed image"/>
             </filefilter>
 
         </filefilterlist>
