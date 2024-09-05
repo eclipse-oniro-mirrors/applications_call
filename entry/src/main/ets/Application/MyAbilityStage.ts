@@ -27,7 +27,7 @@ export default class MyAbilityStage extends AbilityStage {
       if (err) {
         LogUtils.e(TAG, 'enableNotification err: ' + JSON.stringify(err));
       }
-    })
+    });
     LogUtils.i(TAG, 'MyAbilityStage onCreate');
   }
 

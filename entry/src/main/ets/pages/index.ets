@@ -142,7 +142,7 @@ struct Index {
           this.mCallDataManager.clearCall(this.callData);
         }
       });
-    } catch(err) {
+    } catch (err) {
       LogUtils.e(TAG, `initAirPlaneMode err = ${JSON.stringify(err)}`);
     }
   }
@@ -234,9 +234,9 @@ struct Index {
    * @return {boolean} - isTripleCall
    */
   private isTripleCall() {
-    return (this.callData.callState === CallStateConst.callStateObj.CALL_STATUS_WAITING
-      || this.callData.callState === CallStateConst.callStateObj.CALL_STATUS_INCOMING)
-      && this.callList.length === 3;
+    return (this.callData.callState === CallStateConst.callStateObj.CALL_STATUS_WAITING ||
+      this.callData.callState === CallStateConst.callStateObj.CALL_STATUS_INCOMING) &&
+      this.callList.length === 3;
   }
 
   pageTransition() {
@@ -248,14 +248,15 @@ struct Index {
     if (this.callList.length > 1) {
       let btnState = true;
       this.callList.forEach((v) => {
-        if (v.callState === CallStateConst.callStateObj.CALL_STATUS_WAITING || v.callState === CallStateConst.callStateObj.CALL_STATUS_INCOMING) {
+        if (v.callState === CallStateConst.callStateObj.CALL_STATUS_WAITING ||
+          v.callState === CallStateConst.callStateObj.CALL_STATUS_INCOMING) {
           btnState = false;
         }
       });
       return btnState;
     } else {
-      return this.callState() !== CallStateConst.callStateObj.CALL_STATUS_WAITING
-      && this.callState() !== CallStateConst.callStateObj.CALL_STATUS_INCOMING
+      return this.callState() !== CallStateConst.callStateObj.CALL_STATUS_WAITING &&
+        this.callState() !== CallStateConst.callStateObj.CALL_STATUS_INCOMING
     }
   }
 
