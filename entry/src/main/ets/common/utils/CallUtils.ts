@@ -68,7 +68,7 @@ export class CallUtils {
       slotId: 0
     }).then((res) => {
       resolve(res);
-      AppStorage.SetOrCreate('IsEmergencyPhoneNumber', res)
+      AppStorage.SetOrCreate('IsEmergencyPhoneNumber', res);
       LogUtils.i(TAG, 'then:isEmergencyPhoneNumber :' + JSON.stringify(res));
     }).catch((err) => {
       reject(err);

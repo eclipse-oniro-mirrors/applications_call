@@ -304,7 +304,7 @@ struct Index {
 
   getCellularDataRoamingEnabled() {
     isCellularDataRoamingEnabledCardOne().then((res) => {
-      LogUtils.i(TAG,'getCellularDataRoamingEnabled card one success then:' + JSON.stringify(res));
+      LogUtils.i(TAG, 'getCellularDataRoamingEnabled card one success then:' + JSON.stringify(res));
       this.dataRoamSwitchCardOne = res;
     }).catch((err) => {
       this.dataRoamSwitchCardOne = false;
@@ -312,7 +312,7 @@ struct Index {
     });
     if (getMaxSimCount() === 2) {
       isCellularDataRoamingEnabledCardTwo().then((res) => {
-        LogUtils.i(TAG,'getCellularDataRoamingEnabled card two success then:' + JSON.stringify(res));
+        LogUtils.i(TAG, 'getCellularDataRoamingEnabled card two success then:' + JSON.stringify(res));
         this.dataRoamSwitchCardTwo = res;
       }).catch((err) => {
         this.dataRoamSwitchCardTwo = false;
