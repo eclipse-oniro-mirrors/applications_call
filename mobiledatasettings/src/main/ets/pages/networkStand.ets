@@ -3,7 +3,7 @@ import radio from '@ohos.telephony.radio';
 import HeadComponent from '../common/components/headComponent';
 import LogUtils from '../common/utils/LogUtils';
 
-const TAG = "NetworkStand";
+const TAG = 'NetworkStand';
 
 @Entry
 @Component
@@ -128,7 +128,7 @@ struct NetworkStand {
       .borderRadius(16)
       .backgroundColor(Color.White)
     }.height('100%')
-    .width("100%")
+    .width('100%')
     .backgroundColor($r('sys.color.ohos_id_color_sub_background'))
   }
 }
