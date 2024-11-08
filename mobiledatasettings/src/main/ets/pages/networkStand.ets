@@ -54,67 +54,67 @@ struct NetworkStand {
       Column() {
         NetworkStandItem({
           networkMode: $networkMode,
-          title: $r("app.string.mobile_data_fiveAuto"),
+          title: $r('app.string.mobile_data_fiveAuto'),
           thisNetworkMode: radio.PreferredNetworkMode.PREFERRED_NETWORK_MODE_NR_LTE_WCDMA_GSM//34
         })
         Divider()
           .strokeWidth(0.5)
-          .color("#E3E3E3")
+          .color('#E3E3E3')
           .lineCap(LineCapStyle.Round)
           .margin({ left: '2%', right: '2%' })
         NetworkStandItem({
           networkMode: $networkMode,
-          title: $r("app.string.mobile_data_fourAuto"),
+          title: $r('app.string.mobile_data_fourAuto'),
           thisNetworkMode: radio.PreferredNetworkMode.PREFERRED_NETWORK_MODE_LTE_WCDMA_GSM //5
         })
         Divider()
           .strokeWidth(0.5)
-          .color("#E3E3E3")
+          .color('#E3E3E3')
           .lineCap(LineCapStyle.Round)
           .margin({ left: '2%', right: '2%' })
         NetworkStandItem({
           networkMode: $networkMode,
-          title: $r("app.string.mobile_data_threeAuto"),
+          title: $r('app.string.mobile_data_threeAuto'),
           thisNetworkMode: radio.PreferredNetworkMode.PREFERRED_NETWORK_MODE_WCDMA_GSM//6
         })
         Divider()
           .strokeWidth(0.5)
-          .color("#E3E3E3")
+          .color('#E3E3E3')
           .lineCap(LineCapStyle.Round)
           .margin({ left: '2%', right: '2%' })
         NetworkStandItem({
           networkMode: $networkMode,
-          title: $r("app.string.mobile_data_only_5g"),
+          title: $r('app.string.mobile_data_only_5g'),
           thisNetworkMode: radio.PreferredNetworkMode.PREFERRED_NETWORK_MODE_NR//31
         })
         Divider()
           .strokeWidth(0.5)
-          .color("#E3E3E3")
+          .color('#E3E3E3')
           .lineCap(LineCapStyle.Round)
           .margin({ left: '2%', right: '2%' })
         NetworkStandItem({
           networkMode: $networkMode,
-          title: $r("app.string.mobile_data_only_4g"),
+          title: $r('app.string.mobile_data_only_4g'),
           thisNetworkMode: radio.PreferredNetworkMode.PREFERRED_NETWORK_MODE_LTE//3
         })
         Divider()
           .strokeWidth(0.5)
-          .color("#E3E3E3")
+          .color('#E3E3E3')
           .lineCap(LineCapStyle.Round)
           .margin({ left: '2%', right: '2%' })
         NetworkStandItem({
           networkMode: $networkMode,
-          title: $r("app.string.mobile_data_only_3g"),
+          title: $r('app.string.mobile_data_only_3g'),
           thisNetworkMode: radio.PreferredNetworkMode.PREFERRED_NETWORK_MODE_WCDMA//2
         })
         Divider()
           .strokeWidth(0.5)
-          .color("#E3E3E3")
+          .color('#E3E3E3')
           .lineCap(LineCapStyle.Round)
           .margin({ left: '2%', right: '2%' })
         NetworkStandItem({
           networkMode: $networkMode,
-          title: $r("app.string.mobile_data_2g"),
+          title: $r('app.string.mobile_data_2g'),
           thisNetworkMode: radio.PreferredNetworkMode.PREFERRED_NETWORK_MODE_GSM//1
         })
       }
@@ -124,7 +124,7 @@ struct NetworkStand {
         top: 4,
         bottom: 4
       })
-      .width("90%")
+      .width('90%')
       .borderRadius(16)
       .backgroundColor(Color.White)
     }.height('100%')
