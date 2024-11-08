@@ -96,11 +96,11 @@ struct Index {
     if (res == 0) {
       this.byValueWLMS = $r('app.string.mobile_data_5g');
     } else if (res == 5) {
-      this.byValueWLMS = $r("app.string.mobile_data_4g");
+      this.byValueWLMS = $r('app.string.mobile_data_4g');
     } else if (res == 6) {
-      this.byValueWLMS = $r("app.string.mobile_data_3g");
+      this.byValueWLMS = $r('app.string.mobile_data_3g');
     } else if (res == 1) {
-      this.byValueWLMS = $r("app.string.mobile_data_2g");
+      this.byValueWLMS = $r('app.string.mobile_data_2g');
     }
   }
 

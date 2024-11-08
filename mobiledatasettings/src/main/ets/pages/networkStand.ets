@@ -8,7 +8,7 @@ const TAG = "NetworkStand";
 @Entry
 @Component
 struct NetworkStand {
-  @State @Watch("networkModeChanged") networkMode: number = 5
+  @State @Watch('networkModeChanged') networkMode: number = 5
   @State slotId: number = 0;
 
   aboutToAppear(): void {
@@ -24,26 +24,26 @@ struct NetworkStand {
 
     radio.getPreferredNetwork(slotId, (err, data: radio.PreferredNetworkMode) => {
       if (err) {
-        LogUtils.e(TAG, "getPreferredNetwork error, callback: data->" + JSON.stringify(err))
+        LogUtils.e(TAG, 'getPreferredNetwork error, callback: data->' + JSON.stringify(err))
         return;
       }
 
       this.networkMode = data
-      LogUtils.i(TAG, "getPreferredNetwork success, callback: data-> " + JSON.stringify(data))
+      LogUtils.i(TAG, 'getPreferredNetwork success, callback: data-> ' + JSON.stringify(data))
     });
 
   }
 
   networkModeChanged() {
-    LogUtils.i(TAG, "networkMode Changed data-> " + JSON.stringify(this.networkMode))
+    LogUtils.i(TAG, 'networkMode Changed data-> ' + JSON.stringify(this.networkMode))
     try {
       radio.setPreferredNetwork(this.slotId, this.networkMode).then(() => {
-        LogUtils.i(TAG, "set 0 Preferred Network-> " + JSON.stringify(this.networkMode) + " success")
+        LogUtils.i(TAG, 'set 0 Preferred Network-> ' + JSON.stringify(this.networkMode) + ' success')
       }).catch((err) => {
-        LogUtils.i(TAG, "set 0 Preferred Network-> " + JSON.stringify(this.networkMode) + " failed" + JSON.stringify(err))
+        LogUtils.i(TAG, 'set 0 Preferred Network-> ' + JSON.stringify(this.networkMode) + ' failed' + JSON.stringify(err))
       });
     } catch (err) {
-      LogUtils.i(TAG, "set 0 Preferred Network-> " + JSON.stringify(this.networkMode) + " failed tryCatch " + JSON.stringify(err))
+      LogUtils.i(TAG, 'set 0 Preferred Network-> ' + JSON.stringify(this.networkMode) + ' failed tryCatch ' + JSON.stringify(err))
     }
   }
 
@@ -129,6 +129,6 @@ struct NetworkStand {
       .backgroundColor(Color.White)
     }.height('100%')
     .width("100%")
-    .backgroundColor($r("sys.color.ohos_id_color_sub_background"))
+    .backgroundColor($r('sys.color.ohos_id_color_sub_background'))
   }
 }
