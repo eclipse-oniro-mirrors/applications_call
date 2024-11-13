@@ -13,6 +13,8 @@
  * limitations under the License.
  */
 import LogUtils from '../utils/LogUtils'
+import { Router } from '@ohos.arkui.UIContext';
+import router from '@ohos.router';
 
 const TAG = "HeadComponent"
 
@@ -21,7 +23,9 @@ const TAG = "HeadComponent"
  */
 @Component
 export default struct HeadComponent {
-  @State isTouch: boolean = false;
+  @State isTouch?: boolean = false;
+  title: Resource = $r('app.string.mobile_data');
+  isTerminateSelf: boolean = true
 
   build() {
     Row() {
@@ -34,9 +38,13 @@ export default struct HeadComponent {
       .margin({ right: 16 })
       .backgroundColor(this.isTouch ? $r('app.color.color_E3E3E3_grey') : $r('app.color.color_00000000_transparent'))
       .onClick(() => {
-        globalThis.settingsAbilityContext?.terminateSelf().then((data) => {
-          LogUtils.i(TAG, "terminateSelfCallBack");
-        });
+        if (this.isTerminateSelf) {
+          globalThis.settingsAbilityContext?.terminateSelf().then((data) => {
+            LogUtils.i(TAG, "terminateSelfCallBack");
+          });
+        } else {
+          router.back()
+        }
       })
       .onTouch((event: TouchEvent) => {
         if (event.type === TouchType.Down) {
@@ -47,7 +55,7 @@ export default struct HeadComponent {
         }
       });
 
-      Text($r('app.string.mobile_data'))
+      Text(this.title)
         .fontSize(20)
         .fontFamily('HarmonyHeiTi-Bold')
         .fontWeight(FontWeight.Medium)
