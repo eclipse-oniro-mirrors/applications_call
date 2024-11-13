@@ -39,8 +39,9 @@ import {
 import HeadComponent from '../common/components/headComponent';
 import { SubHeader } from '../common/components/subHeader';
 import LogUtils from '../common/utils/LogUtils';
+import router from '@ohos.router';
 
-const TAG = 'Index';
+const TAG = "Index";
 
 @Entry
 @Component
@@ -69,17 +70,21 @@ struct Index {
   @State simStateStatusCardOne: boolean = true;
   // Card 2 status
   @State simStateStatusCardTwo: boolean = false;
-  @State controlSwitchWLMS: boolean = false;
+  @State ControlswitchWLMS: boolean = false;
   @State slotId: number = 0;
   @State dialogTitle: Resource = publiccontent.strings.preferredNetworkMode;
+  setCache_cun_name = 'DISTRIBUTEDDATA_CUN_NAME';
+  setCache_wl_name = 'SETCACHE_WL_NAME';
   @State enable5g: boolean = false;
-  @StorageLink('imsOne')enableISM: boolean = false;
+  @StorageLink("imsOne")enableISM: boolean = false;
   @State enableISM2: boolean = false;
-  @State mTelephoneNumber: string = '';
-  @State mTelephoneNumber2?: string = '';
+  @State TelephoneNumber: string = '';
+  @State TelephoneNumber2?: string = '';
   @State ceshi: boolean = false;
   @State cardOne: number = 0;
   @State cardTwo: number = 1;
+  @State controllerMobileNetworkIsOn: boolean = false;
+  childComponentTitle:Resource=$r('app.string.mobile_data')
 
   /**
    * Get network mode
@@ -104,7 +109,7 @@ struct Index {
    */
   getSimStateDataCardOne() {
     getSimStateCardOne().then((res: number) => {
-      LogUtils.i(TAG, 'getSimStateData Card1 :success ' + JSON.stringify(res))
+      LogUtils.i(TAG, "getSimStateData Card1 :success " + JSON.stringify(res))
       const simState = {
         SIM_STATE_UNKNOWN: 0,
         SIM_STATE_NOT_PRESENT: 1,
@@ -129,7 +134,7 @@ struct Index {
    */
   getSimStateDataCardTwo() {
     getSimStateCardTwo().then((res: number) => {
-      LogUtils.i(TAG, 'getSimState Card2 :success then' + JSON.stringify(res));
+      LogUtils.i(TAG, "getSimState Card2 :success then" + JSON.stringify(res));
       const simState = {
         SIM_STATE_UNKNOWN: 0,
         SIM_STATE_NOT_PRESENT: 1,
@@ -165,10 +170,10 @@ struct Index {
    */
   getSimCardOnePhoneNumber() {
     getSimCardOnePhoneNumber().then((res) => {
-      LogUtils.i(TAG, 'getSimTelephoneNumber card1 other success' + JSON.stringify(res));
-      this.mTelephoneNumber = res;
+      LogUtils.i(TAG, "getSimTelephoneNumber card1 other success" + JSON.stringify(res));
+      this.TelephoneNumber = res;
     }).catch((err) => {
-      LogUtils.i(TAG, 'getSimTelephoneNumber card1 other catch' + JSON.stringify(err));
+      LogUtils.i(TAG, "getSimTelephoneNumber card1 other catch" + JSON.stringify(err));
     });
   }
 
@@ -177,10 +182,10 @@ struct Index {
    */
   getSimCardTwoPhoneNumber() {
     getSimCardTwoPhoneNumber().then((res) => {
-      LogUtils.i(TAG, 'getSimTelephoneNumber card2 other success' + JSON.stringify(res));
-      this.mTelephoneNumber2 = res;
+      LogUtils.i(TAG, "getSimTelephoneNumber card2 other success" + JSON.stringify(res));
+      this.TelephoneNumber2 = res;
     }).catch((err) => {
-      LogUtils.i(TAG, 'getSimTelephoneNumber card2 other catch' + JSON.stringify(err));
+      LogUtils.i(TAG, "getSimTelephoneNumber card2 other catch" + JSON.stringify(err));
     });
   }
 
@@ -189,10 +194,10 @@ struct Index {
    */
   getCellularDataState() {
     isCellularDataEnabled().then((data) => {
-      LogUtils.i(TAG, 'isCellularDataEnabled success: isON:' + JSON.stringify(data));
+      LogUtils.i(TAG, "isCellularDataEnabled success: isON:" + JSON.stringify(data));
       this.isDataEnable = data;
     }).catch((error) => {
-      LogUtils.i(TAG, 'isCellularDataEnabled error catch' + JSON.stringify(error));
+      LogUtils.i(TAG, "isCellularDataEnabled error catch" + JSON.stringify(error));
     });
   }
 
@@ -204,8 +209,8 @@ struct Index {
         LogUtils.i(TAG, 'initAirPlaneMode callback');
         this.isAirPlaneMode = data == 1 ? true : false;
       });
-    } catch (err) {
-      LogUtils.e(TAG, `initAirPlaneMode err = ${JSON.stringify(err)}`);
+    } catch(err) {
+      LogUtils.e(TAG,`initAirPlaneMode err = ${JSON.stringify(err)}`);
     }
   }
 
@@ -217,8 +222,8 @@ struct Index {
         LogUtils.i(TAG, 'getAirPlaneMode callback');
         this.isAirPlaneMode = data == 1 ? true : false;
       });
-    } catch (err) {
-      LogUtils.e(TAG, `getAirPlaneMode err = ${JSON.stringify(err)}`);
+    } catch(err) {
+      LogUtils.e(TAG,`getAirPlaneMode err = ${JSON.stringify(err)}`);
     }
   }
 
@@ -243,25 +248,25 @@ struct Index {
     call.isImsSwitchEnabled(slotId).then((res: boolean) => {
       if (slotId) {
         this.enableISM2 = res;
-        LogUtils.i(TAG, 'isImsSwitchEnable enable 1:' + JSON.stringify(this.enableISM2));
+        LogUtils.i(TAG, "isImsSwitchEnable enable 1:" + JSON.stringify(this.enableISM2));
       } else {
         this.enableISM = res;
-        LogUtils.i(TAG, 'isImsSwitchEnable enable 0:' + JSON.stringify(this.enableISM));
+        LogUtils.i(TAG, "isImsSwitchEnable enable 0:" + JSON.stringify(this.enableISM));
       }
     }).catch((err) => {
       if (slotId) {
         this.enableISM2 = true;
-        LogUtils.i(TAG, 'isImsSwitchEnable err 1:' + JSON.stringify(this.enableISM2));
+        LogUtils.i(TAG, "isImsSwitchEnable err 1:" + JSON.stringify(this.enableISM2));
       } else {
         this.enableISM = true;
-        LogUtils.i(TAG, 'isImsSwitchEnable err 0:' + JSON.stringify(this.enableISM));
+        LogUtils.i(TAG, "isImsSwitchEnable err 0:" + JSON.stringify(this.enableISM));
       }
-      LogUtils.i(TAG, 'isImsSwitchEnabled card catch:' + JSON.stringify(err));
+      LogUtils.i(TAG, "isImsSwitchEnabled card catch:" + JSON.stringify(err));
     });
   }
 
   aboutToAppear() {
-    LogUtils.i(TAG, 'aboutToAppear')
+    LogUtils.i(TAG, "aboutToAppear")
     this.initAirPlaneMode();
     if (getMaxSimCount() === 2) {
       this.addRegisterSimStateChange(1);
@@ -299,25 +304,40 @@ struct Index {
    */
   radioChange(slotId, v) {
     const res = setPreferredNetwork(slotId, v);
-    LogUtils.i(TAG, 'radioChange res:' + JSON.stringify(res));
+    LogUtils.i(TAG, "radioChange res:" + JSON.stringify(res));
   }
 
   getCellularDataRoamingEnabled() {
     isCellularDataRoamingEnabledCardOne().then((res) => {
-      LogUtils.i(TAG,'getCellularDataRoamingEnabled card one success then:' + JSON.stringify(res));
+      LogUtils.i(TAG,"getCellularDataRoamingEnabled card one success then:" + JSON.stringify(res));
       this.dataRoamSwitchCardOne = res;
     }).catch((err) => {
       this.dataRoamSwitchCardOne = false;
-      LogUtils.i(TAG, 'enableCellularDataRoaming card one catch:' + JSON.stringify(err));
+      LogUtils.i(TAG, "enableCellularDataRoaming card one catch:" + JSON.stringify(err));
     });
     if (getMaxSimCount() === 2) {
       isCellularDataRoamingEnabledCardTwo().then((res) => {
-        LogUtils.i(TAG,'getCellularDataRoamingEnabled card two success then:' + JSON.stringify(res));
+        LogUtils.i(TAG,"getCellularDataRoamingEnabled card two success then:" + JSON.stringify(res));
         this.dataRoamSwitchCardTwo = res;
       }).catch((err) => {
         this.dataRoamSwitchCardTwo = false;
-        LogUtils.i(TAG, 'enableCellularDataRoaming card two catch:' + JSON.stringify(err));
+        LogUtils.i(TAG, "enableCellularDataRoaming card two catch:" + JSON.stringify(err));
       });
+    }
+  }
+
+  clickHandle(click:number) {
+    switch (click) {
+      case 0:
+        router.pushUrl({
+          url: 'pages/networkStand'
+        })
+        break
+      case 1:
+        router.pushUrl({
+          url: 'pages/apnSettings'
+        })
+        break
     }
   }
 
@@ -327,7 +347,7 @@ struct Index {
         Column() {
           Column() {
 
-            HeadComponent();
+            HeadComponent({isTouch:true,title:this.childComponentTitle});
 
             Stack({ alignContent: Alignment.TopStart }) {
               Scroll(this.scroller) {
@@ -369,18 +389,18 @@ struct Index {
                       .enabled((this.simStateStatusCardOne || this.simStateStatusCardTwo) && !this.isAirPlaneMode)
                       .onChange((isOn: boolean) => {
                         this.isDataEnable = !this.isDataEnable;
-                        LogUtils.i(TAG, 'mobile data switch changes enable:' + JSON.stringify(this.isDataEnable));
+                        LogUtils.i(TAG, "mobile data switch changes enable:" + JSON.stringify(this.isDataEnable));
                         if (this.isDataEnable == false) {
                           disableCellularData().then((data) => {
-                            LogUtils.i(TAG, 'disableCellularData: success then' + JSON.stringify(data));
+                            LogUtils.i(TAG, "disableCellularData: success then" + JSON.stringify(data));
                           }).catch((error) => {
-                            LogUtils.i(TAG, 'disableCellularData: error catch' + JSON.stringify(error));
+                            LogUtils.i(TAG, "disableCellularData: error catch" + JSON.stringify(error));
                           });
                         } else {
                           enableCellularData().then((data) => {
-                            LogUtils.i(TAG, 'enableCellularData: success then' + JSON.stringify(data));
+                            LogUtils.i(TAG, "enableCellularData: success then" + JSON.stringify(data));
                           }).catch((error) => {
-                            LogUtils.i(TAG, 'enableCellularData: error catch' + JSON.stringify(error));
+                            LogUtils.i(TAG, "enableCellularData: error catch" + JSON.stringify(error));
                           });
                         }
                       })
@@ -392,14 +412,14 @@ struct Index {
                     bottom: 4
                   })
                   .height(90)
-                  .width('100%')
+                  .width("100%")
                   .borderRadius(16)
-                  .backgroundColor($r('sys.color.ohos_id_color_foreground_contrary'))
+                  .backgroundColor($r("sys.color.ohos_id_color_foreground_contrary"))
                   .opacity((this.simStateStatusCardOne || this.simStateStatusCardTwo) && !this.isAirPlaneMode ? 1 : 0.4)
 
                   SubHeader({
                     titleContent: $r('app.string.mobile_data_card1'),
-                    subTitleContent: this.mTelephoneNumber
+                    subTitleContent: this.TelephoneNumber
                   });
 
                   Column() {
@@ -417,7 +437,7 @@ struct Index {
 
                     Divider()
                       .strokeWidth(0.5)
-                      .color('#E3E3E3')
+                      .color("#E3E3E3")
                       .lineCap(LineCapStyle.Round)
                       .margin({ right: '2%' })
 
@@ -432,6 +452,51 @@ struct Index {
                       isCard: true,
                       isCon: 22,
                     })
+                    Divider()
+                      .strokeWidth(0.5)
+                      .color("#E3E3E3")
+                      .lineCap(LineCapStyle.Round)
+                      .margin({ right: '2%' })
+
+                    Flex({ justifyContent: FlexAlign.SpaceBetween, alignItems: ItemAlign.Center }) {
+                      Column() {
+                        Text( $r('app.string.network_standard'))
+                          .fontFamily('HarmonyHeiTi')
+                          .fontSize($r('sys.float.ohos_id_text_size_body1'))
+                          .fontWeight(FontWeight.Medium)
+                          .fontColor($r('sys.color.ohos_id_color_text_primary'))
+                          .opacity((this.simStateStatusCardOne && !this.controllerMobileNetworkIsOn) ? 0.9 : 0.6)
+                          .letterSpacing(1)
+                          .lineHeight(22)
+                          .textAlign(TextAlign.Start)
+                        Text( $r('app.string.network_standard_select'))
+                          .margin({ top: 2 })
+                          .fontFamily('HarmonyHeiTi')
+                          .fontWeight(FontWeight.Regular)
+                          .fontSize($r('sys.float.ohos_id_text_size_body2'))
+                          .fontColor($r('sys.color.ohos_id_color_text_secondary'))
+                          .opacity(0.6)
+                          .lineHeight(19)
+                          .letterSpacing(1)
+                      }
+                      .width('100%')
+                      .alignItems(HorizontalAlign.Start)
+                      .margin({ right: 26 })
+                      Image($r('app.media.next_icon'))
+                        .width(10)
+                        .height(15)
+                        .margin({ right: 10 })
+                        .enabled(this.simStateStatusCardOne && !this.controllerMobileNetworkIsOn)
+
+                    }.backgroundColor($r("sys.color.ohos_id_color_foreground_contrary"))
+                    .opacity((this.simStateStatusCardOne && !this.controllerMobileNetworkIsOn) ? 1 : 0.4)
+                    .margin({ top: 8, bottom: this.isSupport ? 5 : 11 })
+                    .onClick(() => {
+                      if ((this.simStateStatusCardOne && !this.controllerMobileNetworkIsOn)) {
+                        this.clickHandle(0)
+                      }
+                    })
+
                   }
                   .padding({
                     left: 12,
@@ -439,14 +504,14 @@ struct Index {
                     top: 4,
                     bottom: 4
                   })
-                  .width('100%')
+                  .width("100%")
                   .borderRadius(16)
-                  .backgroundColor($r('sys.color.ohos_id_color_foreground_contrary'))
+                  .backgroundColor($r("sys.color.ohos_id_color_foreground_contrary"))
                   .opacity(this.simStateStatusCardOne && !this.isAirPlaneMode ? 1 : 0.4)
 
                   SubHeader({
                     titleContent: $r('app.string.mobile_data_card2'),
-                    subTitleContent: this.mTelephoneNumber2
+                    subTitleContent: this.TelephoneNumber2
                   })
                   .visibility(getMaxSimCount() === 2 ? Visibility.Visible : Visibility.Hidden)
 
@@ -464,7 +529,7 @@ struct Index {
                     })
                     Divider()
                       .strokeWidth(0.5)
-                      .color('#E3E3E3')
+                      .color("#E3E3E3")
                       .lineCap(LineCapStyle.Round)
                       .margin({ right: '2%' })
                     item({
@@ -491,10 +556,10 @@ struct Index {
                     top: 4,
                     bottom: 4
                   })
-                  .width('100%')
+                  .width("100%")
                   .borderRadius(16)
-                  .backgroundColor($r('sys.color.ohos_id_color_foreground_contrary'))
-                  .opacity(this.simStateStatusCardTwo && !this.isAirPlaneMode ? 1 : 0.4)
+                  .backgroundColor($r("sys.color.ohos_id_color_foreground_contrary"))
+                  .opacity(this.simStateStatusCardTwo  && !this.isAirPlaneMode ? 1 : 0.4)
                   .visibility(getMaxSimCount() === 2 ? Visibility.Visible : Visibility.Hidden)
                 }
                 .alignItems(HorizontalAlign.Start)
@@ -513,6 +578,6 @@ struct Index {
     .padding({ left: 12, right: 12 })
     .width('100%')
     .height('100%')
-    .backgroundColor($r('sys.color.ohos_id_color_sub_background'))
+    .backgroundColor($r("sys.color.ohos_id_color_sub_background"))
   }
 }
