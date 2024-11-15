@@ -62,15 +62,15 @@
     },
     {
       "name": "mobile_data_fiveAuto",
-      "value": "5G/4G/3G/2G Auto Select"
+      "value": "5G Network First"
     },
     {
       "name": "mobile_data_fourAuto",
-      "value": "4G/3G/2G Auto Select"
+      "value": "4G Network First"
     },
     {
       "name": "mobile_data_threeAuto",
-      "value": "3G/2G Auto Select"
+      "value": "3G Network First"
     },
     {
       "name": "mobile_data_twoOnly",
@@ -129,6 +129,18 @@
       "value": "3G/2G automatic selection"
     },
     {
+      "name": "mobile_data_only_5g",
+      "value": "5G only"
+    },
+    {
+      "name": "mobile_data_only_4g",
+      "value": "4G only"
+    },
+    {
+      "name": "mobile_data_only_3g",
+      "value": "3G only"
+    },
+    {
       "name": "mobile_data_2g",
       "value": "2G only"
     },
@@ -167,6 +179,14 @@
     {
       "name": "MANAGE_SECURE_SETTINGS",
       "value": "manage secure settings"
+    },
+    {
+      "name": "network_standard",
+      "value": "Network Standard"
+    },
+    {
+      "name": "network_standard_select",
+      "value": "Select The Network Type"
     }
   ]
 }
