@@ -20,6 +20,11 @@ import { addAirPlaneModeListener, removeAirPlaneModeListener, queryAirPlaneMode 
 import publiccontent from '../common/components/publiccontent';
 import item from '../common/components/listItem/listItem';
 import call from '@ohos.telephony.call';
+import CommonEvent from '@ohos.commonEvent';
+import settings from '@ohos.settings';
+import { CommonEventSubscriber } from './commonEvent/commonEventSubscriber';
+import { CommonEventSubscribeInfo } from './commonEvent/commonEventSubscribeInfo';
+import Base from '@ohos.base';
 import { registerSimStateChange, getMaxSimCount } from '../model/registerSimStateApi';
 import { getSimStateCardOne, getSimStateCardTwo } from '../common/model/getSimStateApi';
 import { getSimCardOnePhoneNumber, getSimCardTwoPhoneNumber } from '../common/model/getSimTelephoneNumberApi';
@@ -42,7 +47,6 @@ import LogUtils from '../common/utils/LogUtils';
 import router from '@ohos.router';
 
 const TAG = 'Index';
-
 @Entry
 @Component
 struct Index {
@@ -82,7 +86,11 @@ struct Index {
   @State cardOne: number = 0;
   @State cardTwo: number = 1;
   @State controllerMobileNetworkIsOn: boolean = false;
-  childComponentTitle:Resource=$r('app.string.mobile_data')
+  private subscriber: CommonEventSubscriber = undefined;
+  private subscribeInfo: CommonEventSubscribeInfo = {
+    events: [CommonEvent.Support.COMMON_EVENT_AIRPLANE_MODE_CHANGED]
+  };
+  childComponentTitle: Resource = $r('app.string.mobile_data')
 
   /**
    * Get network mode
@@ -207,9 +215,37 @@ struct Index {
         LogUtils.i(TAG, 'initAirPlaneMode callback');
         this.isAirPlaneMode = data == 1 ? true : false;
       });
+      let context = globalThis.settingsAbilityContext as Context;
+      LogUtils.i('CommonEvent', `globalThis.settingsAbilityContext:${context}`);
+      if (!context) {
+        return;
+      }
+      LogUtils.i('CommonEvent', 'settings.getValueSync ' + settings.getValueSync(context, 'settings.telephony.airplanemode', '0'));
+      if (settings.getValueSync(context, 'settings.telephony.airplanemode', '0') === '1') {
+        this.controllerMobileNetworkIsOn = true;
+      } else {
+        this.controllerMobileNetworkIsOn = false;
+      }
+      CommonEvent.createSubscriber(this.subscribeInfo).then((commonEventSubscriber) => {
+        this.subscriber = commonEventSubscriber;
+        //订阅公共事件
+        CommonEvent.subscribe(this.subscriber, (err, data) => {
+          LogUtils.i('CommonEvent', `subscribe data is  ` + JSON.stringify(data));
+          if (err && err.code !== 0) {
+            LogUtils.i('CommonEvent', `subscribe failed, code is ${err.code}, message is ${err.message}`);
+          } else {
+            if (data.code === 1) {
+              this.controllerMobileNetworkIsOn = true;
+            } else {
+              this.controllerMobileNetworkIsOn = false;
+            }
+          }
+        });
+      }).catch((err: Base.BusinessError) => {
+        console.error(`createSubscriber failed, code is ${err?.code}, message is ${err.message}`);
+      });
     } catch (err) {
-      LogUtils.e(TAG, `initAirPlaneMode err = ${JSON.stringify(err)}`);
-    }
+      LogUtils.e(TAG, `initAirPlaneMode err = ${JSON.stringify(err)}`); }
   }
 
   // query AirPlane Mode
@@ -219,6 +255,7 @@ struct Index {
       queryAirPlaneMode((data) => {
         LogUtils.i(TAG, 'getAirPlaneMode callback');
         this.isAirPlaneMode = data == 1 ? true : false;
+        LogUtils.i(TAG, `getAirPlaneMode callback:${data}`);
       });
     } catch (err) {
       LogUtils.e(TAG, `getAirPlaneMode err = ${JSON.stringify(err)}`);
@@ -307,7 +344,7 @@ struct Index {
 
   getCellularDataRoamingEnabled() {
     isCellularDataRoamingEnabledCardOne().then((res) => {
-      LogUtils.i(TAG, 'getCellularDataRoamingEnabled card one success then:' + JSON.stringify(res));
+      LogUtils.i(TAG, "getCellularDataRoamingEnabled card one success then:" + JSON.stringify(res));
       this.dataRoamSwitchCardOne = res;
     }).catch((err) => {
       this.dataRoamSwitchCardOne = false;
@@ -315,7 +352,7 @@ struct Index {
     });
     if (getMaxSimCount() === 2) {
       isCellularDataRoamingEnabledCardTwo().then((res) => {
-        LogUtils.i(TAG, 'getCellularDataRoamingEnabled card two success then:' + JSON.stringify(res));
+        LogUtils.i(TAG, "getCellularDataRoamingEnabled card two success then:" + JSON.stringify(res));
         this.dataRoamSwitchCardTwo = res;
       }).catch((err) => {
         this.dataRoamSwitchCardTwo = false;
@@ -324,7 +361,7 @@ struct Index {
     }
   }
 
-  clickHandle(click:number) {
+  clickHandle(click: number) {
     switch (click) {
       case 0:
         router.pushUrl({
@@ -333,7 +370,7 @@ struct Index {
         break
       case 1:
         router.pushUrl({
-          url: 'pages/apnSettings'
+          url: 'pages/apnList'
         })
         break
     }
@@ -345,7 +382,7 @@ struct Index {
         Column() {
           Column() {
 
-            HeadComponent({isTouch:true,title:this.childComponentTitle});
+            HeadComponent({ isTouch: true, title: this.childComponentTitle });
 
             Stack({ alignContent: Alignment.TopStart }) {
               Scroll(this.scroller) {
@@ -384,8 +421,7 @@ struct Index {
                     Toggle({ type: ToggleType.Switch, isOn: this.isDataEnable })
                       .width(36)
                       .height(20)
-                      .enabled((this.simStateStatusCardOne || this.simStateStatusCardTwo) && !this.isAirPlaneMode)
-                      .onChange((isOn: boolean) => {
+                      .enabled((this.simStateStatusCardOne || this.simStateStatusCardTwo) && !this.controllerMobileNetworkIsOn)                      .onChange((isOn: boolean) => {
                         this.isDataEnable = !this.isDataEnable;
                         LogUtils.i(TAG, 'mobile data switch changes enable:' + JSON.stringify(this.isDataEnable));
                         if (this.isDataEnable == false) {
@@ -413,8 +449,7 @@ struct Index {
                   .width('100%')
                   .borderRadius(16)
                   .backgroundColor($r('sys.color.ohos_id_color_foreground_contrary'))
-                  .opacity((this.simStateStatusCardOne || this.simStateStatusCardTwo) && !this.isAirPlaneMode ? 1 : 0.4)
-
+                  .opacity((this.simStateStatusCardOne || this.simStateStatusCardTwo) && !this.controllerMobileNetworkIsOn ? 1 : 0.4)
                   SubHeader({
                     titleContent: $r('app.string.mobile_data_card1'),
                     subTitleContent: this.mTelephoneNumber
@@ -427,7 +462,7 @@ struct Index {
                       controlSwitch: $dataRoamSwitchCardOne,
                       title: $r('app.string.mobile_data_dataRoaming'),
                       describe: $r('app.string.mobile_data_enableDataWhileRoaming'),
-                      isDisabled: this.simStateStatusCardOne && !this.isAirPlaneMode,
+                      isDisabled: this.simStateStatusCardOne && !this.controllerMobileNetworkIsOn,
                       isCard: true,
                       isSupport: false,
                       isCon: 0,
@@ -445,7 +480,7 @@ struct Index {
                       controlSwitch: $enableISM,
                       title: $r('app.string.mobile_data_volte'),
                       describe: $r('app.string.mobile_data_confirmation_function'),
-                      isDisabled: this.simStateStatusCardOne && !this.isAirPlaneMode,
+                      isDisabled: this.simStateStatusCardOne && !this.controllerMobileNetworkIsOn,
                       isSupport: false,
                       isCard: true,
                       isCon: 22,
@@ -492,6 +527,52 @@ struct Index {
                     .onClick(() => {
                       if ((this.simStateStatusCardOne && !this.controllerMobileNetworkIsOn)) {
                         this.clickHandle(0)
+                      }
+                    })
+                    Divider()
+                      .strokeWidth(0.5)
+                      .color("#E3E3E3")
+                      .lineCap(LineCapStyle.Round)
+                      .margin({ right: '2%' })
+
+                    Flex({ justifyContent: FlexAlign.SpaceBetween, alignItems: ItemAlign.Center }) {
+                      Column() {
+                        Text($r('app.string.access_point_name'))
+                          .fontFamily('HarmonyHeiTi')
+                          .fontSize($r('sys.float.ohos_id_text_size_body1'))
+                          .fontWeight(FontWeight.Medium)
+                          .fontColor($r('sys.color.ohos_id_color_text_primary'))
+                          .opacity((this.simStateStatusCardOne && !this.controllerMobileNetworkIsOn) ? 0.9 : 0.6)// .visibility(this.isSupport ? Visibility.None : Visibility.Visible)
+                          .letterSpacing(1)
+                          .lineHeight(22)
+                          .textAlign(TextAlign.Start)
+                        Text($r('app.string.apn_stttings'))
+                          .margin({ top: 2 })
+                          .fontFamily('HarmonyHeiTi')
+                          .fontWeight(FontWeight.Regular)
+                          .fontSize($r('sys.float.ohos_id_text_size_body2'))
+                          .fontColor($r('sys.color.ohos_id_color_text_secondary'))
+                          .opacity(0.6)
+                          .lineHeight(19)
+                          .letterSpacing(1)
+                        // .visibility(this.describe == $r("app.string.mobile_empty_string") ? Visibility.None : Visibility.Visible)
+                      }.justifyContent(FlexAlign.Center)
+                      .width('100%')
+                      .alignItems(HorizontalAlign.Start)
+                      .margin({ right: 26 })
+
+                      Image($r('app.media.next_icon'))
+                        .width(10)
+                        .height(15)
+                        .margin({ right: 10 })
+                        .enabled(this.simStateStatusCardOne && !this.controllerMobileNetworkIsOn)
+
+                    }.backgroundColor($r("sys.color.ohos_id_color_foreground_contrary"))
+                    .opacity((this.simStateStatusCardOne && !this.controllerMobileNetworkIsOn) ? 1 : 0.4)
+                    .margin({ top: 8, bottom: this.isSupport ? 5 : 11 })
+                    .onClick(() => {
+                      if ((this.simStateStatusCardOne && !this.controllerMobileNetworkIsOn)) {
+                        this.clickHandle(1)
                       }
                     })
                   }
