@@ -2,7 +2,7 @@
 @Component
 export default struct ApnInfoItem {
   @Link networkMode: number;
-  title: ResourceStr = "";
+  title: ResourceStr = '';
   thisNetworkMode: number = 5
 
   build() {

@@ -59,7 +59,7 @@ struct ApnList {
         this.apnList.push(info)
         let id = PreferenceUtil.get('select_apn_common_' + this.mccmnc, -1)
         if (id == -1) {
-          PreferenceUtil.put('select_apn_common_' + this.mccmnc, resultSet.getLong(resultSet.getColumnIndex("profile_id")))
+          PreferenceUtil.put('select_apn_common_' + this.mccmnc, resultSet.getLong(resultSet.getColumnIndex('profile_id')))
         }
         this.selectedApn = Number(PreferenceUtil.get('select_apn_common_' + this.mccmnc, -1))
       }
@@ -144,7 +144,7 @@ struct ApnList {
                 }
 
                 Navigator({ target: 'pages/apnDetail', type: NavigationType.Push }) {
-                  Image($r("app.media.ic_about_apn"))
+                  Image($r('app.media.ic_about_apn'))
                     .padding(10)
                     .width(40)
                     .height(40)
