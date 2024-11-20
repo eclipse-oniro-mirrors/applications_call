@@ -74,7 +74,7 @@ struct ApnList {
             Image($r('app.media.ic_back'))
               .width(24)
               .height(24)
-              .fillColor($r("sys.color.ohos_id_color_primary"))
+              .fillColor($r('sys.color.ohos_id_color_primary'))
           }
           .margin({ right: 16 })
           .backgroundColor($r('app.color.color_00000000_transparent'))
@@ -93,10 +93,10 @@ struct ApnList {
             .margin({ top: 15, bottom: 15 });
         }
 
-        Image($r("app.media.ic_add"))
+        Image($r('app.media.ic_add'))
           .width(24)
           .height(24)
-          .fillColor($r("sys.color.ohos_id_color_primary"))
+          .fillColor($r('sys.color.ohos_id_color_primary'))
           .onClick((event: ClickEvent) => {
             router.pushUrl({
               url: 'pages/apnDetail'
@@ -104,7 +104,7 @@ struct ApnList {
           })
       }
       .justifyContent(FlexAlign.SpaceBetween)
-      .width("100%")
+      .width('100%')
       .padding({ left: 12, right: 12 })
       .height(56)
       .alignItems(VerticalAlign.Center)
@@ -148,7 +148,7 @@ struct ApnList {
                     .padding(10)
                     .width(40)
                     .height(40)
-                    .backgroundColor($r("sys.color.ohos_id_color_sub_background"))
+                    .backgroundColor($r('sys.color.ohos_id_color_sub_background'))
                     .borderRadius(100)
                 }.params(item)
 
