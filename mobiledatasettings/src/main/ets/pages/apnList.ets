@@ -30,8 +30,9 @@ struct ApnList {
   queryApnList() {
     this.apnList = []
     this.storage.queryApnList(this.mccmnc).then((resultSet) => {
-      if (resultSet == null)
+      if (resultSet == null) {
         return
+	  }	
       while (resultSet.goToNextRow()) {
         let info: ApnInfo = new ApnInfo()
         info.profile_id = resultSet.getLong(resultSet.getColumnIndex(ApnDetailDataConst.PROFILE_ID));
