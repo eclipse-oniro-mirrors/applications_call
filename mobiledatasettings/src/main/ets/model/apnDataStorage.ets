@@ -10,8 +10,8 @@ import { ApnDetailDataConst } from '../common/constant/apnData'
 
 
 export class ApnDataStorage {
-  private xmlUri: string = "datashare:///com.ohos.pdprofileability/net/pdp_profile/preferapn"
-  private dbUri: string = "datashare:///com.ohos.pdpprofileability/net/pdp_profile"
+  private xmlUri: string = 'datashare:///com.ohos.pdprofileability/net/pdp_profile/preferapn'
+  private dbUri: string = 'datashare:///com.ohos.pdpprofileability/net/pdp_profile'
   private dataShareHelper: dataShare.DataShareHelper | undefined = undefined;
   private xmlShareHelper: dataShare.DataShareHelper | undefined = undefined;
   private content:Context=null

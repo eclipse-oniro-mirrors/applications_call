@@ -15,7 +15,7 @@ struct ApnList {
   // @State iccID: string = ''
   @State selectedApn: number = -1
   private cardTpye: number = 0
-  @StorageLink('ApnStatus') @Watch("queryApnList") apnStatus: boolean = false;
+  @StorageLink('ApnStatus') @Watch('queryApnList') apnStatus: boolean = false;
 
   async aboutToAppear() {
     this.storage.initData(getContext() as common.UIAbilityContext).then(() => {
@@ -73,7 +73,7 @@ struct ApnList {
             Image($r('app.media.ic_back'))
               .width(24)
               .height(24)
-              .fillColor($r("sys.color.ohos_id_color_primary"))
+              .fillColor($r('sys.color.ohos_id_color_primary'))
           }
           .margin({ right: 16 })
           .backgroundColor($r('app.color.color_00000000_transparent'))
@@ -92,10 +92,10 @@ struct ApnList {
             .margin({ top: 15, bottom: 15 });
         }
 
-        Image($r("app.media.ic_add"))
+        Image($r('app.media.ic_add'))
           .width(24)
           .height(24)
-          .fillColor($r("sys.color.ohos_id_color_primary"))
+          .fillColor($r('sys.color.ohos_id_color_primary'))
           .onClick((event: ClickEvent) => {
             router.pushUrl({
               url: 'pages/apnDetail'
@@ -147,7 +147,7 @@ struct ApnList {
                     .padding(10)
                     .width(40)
                     .height(40)
-                    .backgroundColor($r("sys.color.ohos_id_color_sub_background"))
+                    .backgroundColor($r('sys.color.ohos_id_color_sub_background'))
                     .borderRadius(100)
                 }.params(item)
 
@@ -184,7 +184,7 @@ struct ApnList {
       }.layoutWeight(1)
       .width('100%')
     }
-    .backgroundColor($r("sys.color.ohos_id_color_sub_background"))
+    .backgroundColor($r('sys.color.ohos_id_color_sub_background'))
     .width('100%')
     .height('100%')
   }
