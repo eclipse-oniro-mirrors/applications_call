@@ -2,7 +2,7 @@
 @Component
 export default struct ApnInfoItem {
   @Link networkMode: number;
-  title: ResourceStr = "";
+  title: ResourceStr = '';
   thisNetworkMode: number = 5
 
   build() {
@@ -32,7 +32,7 @@ export default struct ApnInfoItem {
     }
     .height(50)
     .justifyContent(FlexAlign.Center)
-    // .backgroundColor(this.networkMode == this.thisNetworkMode ? "#0099FF" : Color.White)
+    // .backgroundColor(this.networkMode == this.thisNetworkMode ? '#0099FF' : Color.White)
     .borderRadius(16)
     .margin({ top: 5, left: 10, right: 10, bottom: 5 })
     .padding({ left: 10, right: 10 })

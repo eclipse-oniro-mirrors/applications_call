@@ -432,19 +432,19 @@ struct ApnDetail {
     let apnType: ApnItemInfo = new ApnItemInfo()
     apnType.id = ApnDetailDataConst.APN_TYPES
     apnType.key = $r('app.string.apn_apn_types')
-    apnType.value = (this.apnInfo.apn_types === '' ? "default" : this.apnInfo.apn_types)
+    apnType.value = (this.apnInfo.apn_types === '' ? 'default' : this.apnInfo.apn_types)
     this.list.push(apnType)
     //APN协议
     let apnProtocol: ApnItemInfo = new ApnItemInfo()
     apnProtocol.id = ApnDetailDataConst.APN_PROTOCOL
     apnProtocol.key = $r('app.string.apn_apn_protocol')
-    apnProtocol.value = (this.apnInfo.apn_protocol === '' ? "IPv4" : this.apnInfo.apn_protocol)
+    apnProtocol.value = (this.apnInfo.apn_protocol === '' ? 'IPv4' : this.apnInfo.apn_protocol)
     this.list.push(apnProtocol)
     //APN漫游协议
     let apnRoamProtocol: ApnItemInfo = new ApnItemInfo()
     apnRoamProtocol.id = ApnDetailDataConst.APN_PROTOCOL
     apnRoamProtocol.key = $r('app.string.apn_apn_roam_protocol')
-    apnRoamProtocol.value = (this.apnInfo.apn_roam_protocol === '' ? "IPv4" : this.apnInfo.apn_roam_protocol)
+    apnRoamProtocol.value = (this.apnInfo.apn_roam_protocol === '' ? 'IPv4' : this.apnInfo.apn_roam_protocol)
     this.list.push(apnRoamProtocol)
     //APN承载系统
     let apnBearingSystemType: ApnItemInfo = new ApnItemInfo()

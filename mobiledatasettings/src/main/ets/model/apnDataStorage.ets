@@ -127,8 +127,8 @@ export class ApnDataStorage {
     }
     for (let i = 0; i < list.length; i++) {
       let apnItemInfo = list[i]
-      if (apnItemInfo.value.toString() === this.ResourceToString($r('app.string.apn_not_configured'))
-        || apnItemInfo.value.toString() == this.ResourceToString($r('app.string.apn_null'))) {
+      if (apnItemInfo.value.toString() === this.ResourceToString($r('app.string.apn_not_configured')) ||
+              apnItemInfo.value.toString() == this.ResourceToString($r('app.string.apn_null'))) {
         apnItemInfo.value = ''
       }
       switch (apnItemInfo.id) {

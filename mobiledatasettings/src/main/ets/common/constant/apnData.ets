@@ -1,6 +1,6 @@
 export const apnProtocoloption: string[] = ['IPv4', 'IPv6', 'IPv4/IPv6']
 
-export const bearingSystemType: string[] = ["无", 'LTE', 'HSPAP', 'HSPA', 'HSUPA', 'HSDPA', 'UMTS', 'EDGE', 'GPRS', 'eHRPD', 'EVDO_B', 'EVDO_A', 'EVDO_O', '1xRTT', 'IS95B', 'IS95A']
+export const bearingSystemType: string[] = ['无', 'LTE', 'HSPAP', 'HSPA', 'HSUPA', 'HSDPA', 'UMTS', 'EDGE', 'GPRS', 'eHRPD', 'EVDO_B', 'EVDO_A', 'EVDO_O', '1xRTT', 'IS95B', 'IS95A']
 
 export class ApnDetailDataConst {
   static readonly PROFILE_ID = 'profile_id'
