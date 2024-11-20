@@ -547,7 +547,7 @@ struct ApnDetail {
           })
       }
       .justifyContent(FlexAlign.SpaceBetween)
-      .width("100%")
+      .width('100%')
       .padding({ left: 12, right: 12 })
       .height(56)
       .alignItems(VerticalAlign.Center)

@@ -149,7 +149,7 @@ export class ApnDataStorage {
           if (apnItemInfo.value.toString() == '') {
             apnInfo.proxy_ip_address = apnInfo.proxy_ip_address
           } else {
-            apnInfo.proxy_ip_address = apnInfo.proxy_ip_address + ":" + apnItemInfo.value.toString()
+            apnInfo.proxy_ip_address = apnInfo.proxy_ip_address + ':' + apnItemInfo.value.toString()
           }
           break
         case ApnDetailDataConst.AUTH_USER:
@@ -175,7 +175,7 @@ export class ApnDataStorage {
           if (apnItemInfo.value.toString() == '') {
             apnInfo.mms_ip_address = apnInfo.mms_ip_address
           } else {
-            apnInfo.mms_ip_address = apnInfo.mms_ip_address + ":" + apnItemInfo.value.toString()
+            apnInfo.mms_ip_address = apnInfo.mms_ip_address + ':' + apnItemInfo.value.toString()
           }
           break
 
@@ -212,7 +212,7 @@ export class ApnDataStorage {
 
   public async queryApnList(mccmnc: string): Promise<DataShareResultSet> {
     let resultSet: DataShareResultSet = null
-    let columns = ["*"];
+    let columns = ['*'];
     let da = new dataSharePredicates.DataSharePredicates();
     da.equalTo('mccmnc', mccmnc)
       .and()
