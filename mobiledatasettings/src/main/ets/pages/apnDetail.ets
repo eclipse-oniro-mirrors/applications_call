@@ -281,7 +281,6 @@ struct ApnDetail {
   }
 
   onCancel() {
-    // console.info('Callback when the first button is clicked')
   }
 
   onAccept() {
@@ -487,7 +486,7 @@ struct ApnDetail {
             Image($r('app.media.ic_back'))
               .width(24)
               .height(24)
-              .fillColor($r("sys.color.ohos_id_color_primary"))
+              .fillColor($r('sys.color.ohos_id_color_primary'))
           }
           .margin({ right: 10 })
           .backgroundColor($r('app.color.color_00000000_transparent'))
@@ -506,11 +505,11 @@ struct ApnDetail {
             .margin({ top: 15, bottom: 15 });
         }
 
-        Image($r("app.media.ic_apn_save"))
+        Image($r('app.media.ic_apn_save'))
           .width(28)
           .height(28)
           .visibility(this.edited === 0 ? Visibility.None : Visibility.Visible)
-          .fillColor($r("sys.color.ohos_id_color_primary"))
+          .fillColor($r('sys.color.ohos_id_color_primary'))
           .onClick((event: ClickEvent) => {
             let name = this.list[0].value
             if (name === '' || name === this.ResourceToString($r('app.string.apn_not_configured'))) {
@@ -623,7 +622,7 @@ struct ApnDetail {
       .backgroundColor(Color.White)
       .justifyContent(FlexAlign.Center)
       .visibility(this.edited === 1 ? Visibility.Visible : Visibility.None)
-    }.backgroundColor($r("sys.color.ohos_id_color_sub_background"))
+    }.backgroundColor($r('sys.color.ohos_id_color_sub_background'))
     .height('100%')
     .width('100%')
 
