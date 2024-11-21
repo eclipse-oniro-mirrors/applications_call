@@ -422,8 +422,8 @@ struct Index {
                     Toggle({ type: ToggleType.Switch, isOn: this.isDataEnable })
                       .width(36)
                       .height(20)
-                      .enabled((this.simStateStatusCardOne
-                        || this.simStateStatusCardTwo) &&
+                      .enabled((this.simStateStatusCardOne || 
+                      this.simStateStatusCardTwo) &&
                         !this.controllerMobileNetworkIsOn)
                       .onChange((isOn: boolean) => {
                         this.isDataEnable = !this.isDataEnable;
