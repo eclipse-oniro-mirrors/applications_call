@@ -543,7 +543,7 @@ struct Index {
                           .fontSize($r('sys.float.ohos_id_text_size_body1'))
                           .fontWeight(FontWeight.Medium)
                           .fontColor($r('sys.color.ohos_id_color_text_primary'))
-                          .opacity((this.simStateStatusCardOne && !this.controllerMobileNetworkIsOn) ? 0.9 : 0.6)// .visibility(this.isSupport ? Visibility.None : Visibility.Visible)
+                          .opacity((this.simStateStatusCardOne && !this.controllerMobileNetworkIsOn) ? 0.9 : 0.6)
                           .letterSpacing(1)
                           .lineHeight(22)
                           .textAlign(TextAlign.Start)

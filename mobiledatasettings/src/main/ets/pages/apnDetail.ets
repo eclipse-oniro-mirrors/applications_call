@@ -432,13 +432,13 @@ struct ApnDetail {
     let apnType: ApnItemInfo = new ApnItemInfo()
     apnType.id = ApnDetailDataConst.APN_TYPES
     apnType.key = $r('app.string.apn_apn_types')
-    apnType.value = (this.apnInfo.apn_types === '' ? "default" : this.apnInfo.apn_types)
+    apnType.value = (this.apnInfo.apn_types === '' ? 'default' : this.apnInfo.apn_types)
     this.list.push(apnType)
     //APN协议
     let apnProtocol: ApnItemInfo = new ApnItemInfo()
     apnProtocol.id = ApnDetailDataConst.APN_PROTOCOL
     apnProtocol.key = $r('app.string.apn_apn_protocol')
-    apnProtocol.value = (this.apnInfo.apn_protocol === '' ? "IPv4" : this.apnInfo.apn_protocol)
+    apnProtocol.value = (this.apnInfo.apn_protocol === '' ? 'IPv4' : this.apnInfo.apn_protocol)
     this.list.push(apnProtocol)
     //APN漫游协议
     let apnRoamProtocol: ApnItemInfo = new ApnItemInfo()
@@ -486,7 +486,7 @@ struct ApnDetail {
             Image($r('app.media.ic_back'))
               .width(24)
               .height(24)
-              .fillColor($r("sys.color.ohos_id_color_primary"))
+              .fillColor($r('sys.color.ohos_id_color_primary'))
           }
           .margin({ right: 10 })
           .backgroundColor($r('app.color.color_00000000_transparent'))
@@ -505,11 +505,11 @@ struct ApnDetail {
             .margin({ top: 15, bottom: 15 });
         }
 
-        Image($r("app.media.ic_apn_save"))
+        Image($r('app.media.ic_apn_save'))
           .width(28)
           .height(28)
           .visibility(this.edited === 0 ? Visibility.None : Visibility.Visible)
-          .fillColor($r("sys.color.ohos_id_color_primary"))
+          .fillColor($r('sys.color.ohos_id_color_primary'))
           .onClick((event: ClickEvent) => {
             let name = this.list[0].value
             if (name === '' || name === this.ResourceToString($r('app.string.apn_not_configured'))) {
@@ -547,7 +547,7 @@ struct ApnDetail {
           })
       }
       .justifyContent(FlexAlign.SpaceBetween)
-      .width("100%")
+      .width('100%')
       .padding({ left: 12, right: 12 })
       .height(56)
       .alignItems(VerticalAlign.Center)
@@ -561,7 +561,7 @@ struct ApnDetail {
                 .fontFamily('HarmonyHeiTi')
                 .fontSize($r('sys.float.ohos_id_text_size_body1'))
                 .fontWeight(FontWeight.Medium)
-                .fontColor(this.edited == 0 ? "#666666" : $r('sys.color.ohos_id_color_text_primary'))
+                .fontColor(this.edited == 0 ? '#666666' : $r('sys.color.ohos_id_color_text_primary'))
                 .letterSpacing(1)
                 .lineHeight(22)
                 .textAlign(TextAlign.Start)
@@ -570,7 +570,7 @@ struct ApnDetail {
                 .fontFamily('HarmonyHeiTi')
                 .fontSize($r('sys.float.ohos_id_text_size_body1'))
                 .fontWeight(FontWeight.Medium)
-                .fontColor(this.edited == 0 ? "#666666" : $r('sys.color.ohos_id_color_text_primary'))
+                .fontColor(this.edited == 0 ? '#666666' : $r('sys.color.ohos_id_color_text_primary'))
                 .textAlign(TextAlign.Start)
             }
             .height(50)
@@ -586,16 +586,16 @@ struct ApnDetail {
           .onClick((event: ClickEvent) => {
             this.textValue = item.key
             this.inputValue = (item.value.toString() === this.ResourceToString($r('app.string.apn_not_configured'))) ? '' : item.value.toString()
-            if (item.id == "auth_type") {
+            if (item.id == 'auth_type') {
               this.selectList = [this.ResourceToString($r('app.string.apn_null')), 'PAP', 'CHAP', 'PAP/CHAP']
               this.singleSelectDialogController.open()
-            } else if (item.id == "apn_protocol" || item.id == "apn_roam_protocol") {
+            } else if (item.id == 'apn_protocol' || item.id == 'apn_roam_protocol') {
               this.selectList = ['IPv4', 'IPv6', 'IPv4/IPv6']
               this.singleSelectDialogController.open()
-            } else if (item.id == "bearing_system_type") {
+            } else if (item.id == 'bearing_system_type') {
               this.selectList = [this.ResourceToString($r('app.string.apn_null')), 'LTE', 'HSPAP', 'HSPA', 'HSUPA', 'HSDPA', 'UMTS', 'EDGE', 'GPRS', 'eHRPD', 'EVDO_B', 'EVDO_A', 'EVDO_O', '1xRTT', 'IS95B', 'IS95A']
               this.multipleSelectDialogController.open()
-            } else if (item.id == "mvno_type") {
+            } else if (item.id == 'mvno_type') {
               this.selectList = [this.ResourceToString($r('app.string.apn_null')), 'SPN', 'IMSI', 'GID']
               this.singleSelectDialogController.open()
             } else {
