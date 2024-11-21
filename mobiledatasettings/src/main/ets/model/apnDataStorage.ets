@@ -10,8 +10,8 @@ import { ApnDetailDataConst } from '../common/constant/apnData'
 
 
 export class ApnDataStorage {
-  private xmlUri: string = "datashare:///com.ohos.pdprofileability/net/pdp_profile/preferapn"
-  private dbUri: string = "datashare:///com.ohos.pdpprofileability/net/pdp_profile"
+  private xmlUri: string = 'datashare:///com.ohos.pdprofileability/net/pdp_profile/preferapn'
+  private dbUri: string = 'datashare:///com.ohos.pdpprofileability/net/pdp_profile'
   private dataShareHelper: dataShare.DataShareHelper | undefined = undefined;
   private xmlShareHelper: dataShare.DataShareHelper | undefined = undefined;
   private content:Context=null
@@ -127,8 +127,8 @@ export class ApnDataStorage {
     }
     for (let i = 0; i < list.length; i++) {
       let apnItemInfo = list[i]
-      if (apnItemInfo.value.toString() === this.ResourceToString($r('app.string.apn_not_configured'))
-        || apnItemInfo.value.toString() == this.ResourceToString($r('app.string.apn_null'))) {
+      if (apnItemInfo.value.toString() === this.ResourceToString($r('app.string.apn_not_configured')) ||
+        apnItemInfo.value.toString() == this.ResourceToString($r('app.string.apn_null'))) {
         apnItemInfo.value = ''
       }
       switch (apnItemInfo.id) {
@@ -175,7 +175,7 @@ export class ApnDataStorage {
           if (apnItemInfo.value.toString() == '') {
             apnInfo.mms_ip_address = apnInfo.mms_ip_address
           } else {
-            apnInfo.mms_ip_address = apnInfo.mms_ip_address + ":" + apnItemInfo.value.toString()
+            apnInfo.mms_ip_address = apnInfo.mms_ip_address + ':' + apnItemInfo.value.toString()
           }
           break
 
@@ -212,7 +212,7 @@ export class ApnDataStorage {
 
   public async queryApnList(mccmnc: string): Promise<DataShareResultSet> {
     let resultSet: DataShareResultSet = null
-    let columns = ["*"];
+    let columns = ['*'];
     let da = new dataSharePredicates.DataSharePredicates();
     da.equalTo('mccmnc', mccmnc)
       .and()

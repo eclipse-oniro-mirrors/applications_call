@@ -281,7 +281,6 @@ struct ApnDetail {
   }
 
   onCancel() {
-    // console.info('Callback when the first button is clicked')
   }
 
   onAccept() {
@@ -445,7 +444,7 @@ struct ApnDetail {
     let apnRoamProtocol: ApnItemInfo = new ApnItemInfo()
     apnRoamProtocol.id = ApnDetailDataConst.APN_PROTOCOL
     apnRoamProtocol.key = $r('app.string.apn_apn_roam_protocol')
-    apnRoamProtocol.value = (this.apnInfo.apn_roam_protocol === '' ? "IPv4" : this.apnInfo.apn_roam_protocol)
+    apnRoamProtocol.value = (this.apnInfo.apn_roam_protocol === '' ? 'IPv4' : this.apnInfo.apn_roam_protocol)
     this.list.push(apnRoamProtocol)
     //APN承载系统
     let apnBearingSystemType: ApnItemInfo = new ApnItemInfo()
@@ -623,7 +622,7 @@ struct ApnDetail {
       .backgroundColor(Color.White)
       .justifyContent(FlexAlign.Center)
       .visibility(this.edited === 1 ? Visibility.Visible : Visibility.None)
-    }.backgroundColor($r("sys.color.ohos_id_color_sub_background"))
+    }.backgroundColor($r('sys.color.ohos_id_color_sub_background'))
     .height('100%')
     .width('100%')
 

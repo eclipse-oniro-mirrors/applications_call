@@ -15,7 +15,7 @@ struct ApnList {
   // @State iccID: string = ''
   @State selectedApn: number = -1
   private cardTpye: number = 0
-  @StorageLink('ApnStatus') @Watch("queryApnList") apnStatus: boolean = false;
+  @StorageLink('ApnStatus') @Watch('queryApnList') apnStatus: boolean = false;
 
   async aboutToAppear() {
     this.storage.initData(getContext() as common.UIAbilityContext).then(() => {
@@ -30,8 +30,10 @@ struct ApnList {
   queryApnList() {
     this.apnList = []
     this.storage.queryApnList(this.mccmnc).then((resultSet) => {
-      if (resultSet == null)
+      if (resultSet == null){
         return
+      }
+
       while (resultSet.goToNextRow()) {
         let info: ApnInfo = new ApnInfo()
         info.profile_id = resultSet.getLong(resultSet.getColumnIndex(ApnDetailDataConst.PROFILE_ID));
@@ -58,7 +60,7 @@ struct ApnList {
         this.apnList.push(info)
         let id = PreferenceUtil.get('select_apn_common_' + this.mccmnc, -1)
         if (id == -1) {
-          PreferenceUtil.put('select_apn_common_' + this.mccmnc, resultSet.getLong(resultSet.getColumnIndex("profile_id")))
+          PreferenceUtil.put('select_apn_common_' + this.mccmnc, resultSet.getLong(resultSet.getColumnIndex('profile_id')))
         }
         this.selectedApn = Number(PreferenceUtil.get('select_apn_common_' + this.mccmnc, -1))
       }
@@ -184,7 +186,7 @@ struct ApnList {
       }.layoutWeight(1)
       .width('100%')
     }
-    .backgroundColor($r("sys.color.ohos_id_color_sub_background"))
+    .backgroundColor($r('sys.color.ohos_id_color_sub_background'))
     .width('100%')
     .height('100%')
   }

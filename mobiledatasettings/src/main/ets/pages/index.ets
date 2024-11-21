@@ -245,7 +245,8 @@ struct Index {
         console.error(`createSubscriber failed, code is ${err?.code}, message is ${err.message}`);
       });
     } catch (err) {
-      LogUtils.e(TAG, `initAirPlaneMode err = ${JSON.stringify(err)}`); }
+      LogUtils.e(TAG, `initAirPlaneMode err = ${JSON.stringify(err)}`);
+    }
   }
 
   // query AirPlane Mode
@@ -555,7 +556,6 @@ struct Index {
                           .opacity(0.6)
                           .lineHeight(19)
                           .letterSpacing(1)
-                        // .visibility(this.describe == $r("app.string.mobile_empty_string") ? Visibility.None : Visibility.Visible)
                       }.justifyContent(FlexAlign.Center)
                       .width('100%')
                       .alignItems(HorizontalAlign.Start)
