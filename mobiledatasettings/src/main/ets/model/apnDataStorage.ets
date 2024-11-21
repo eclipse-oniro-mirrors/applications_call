@@ -149,7 +149,7 @@ export class ApnDataStorage {
           if (apnItemInfo.value.toString() == '') {
             apnInfo.proxy_ip_address = apnInfo.proxy_ip_address
           } else {
-            apnInfo.proxy_ip_address = apnInfo.proxy_ip_address + ":" + apnItemInfo.value.toString()
+            apnInfo.proxy_ip_address = apnInfo.proxy_ip_address + ':' + apnItemInfo.value.toString()
           }
           break
         case ApnDetailDataConst.AUTH_USER:

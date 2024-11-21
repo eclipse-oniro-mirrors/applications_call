@@ -425,7 +425,8 @@ struct Index {
                     Toggle({ type: ToggleType.Switch, isOn: this.isDataEnable })
                       .width(36)
                       .height(20)
-                      .enabled((this.simStateStatusCardOne || this.simStateStatusCardTwo) && !this.controllerMobileNetworkIsOn)
+                      .enabled((this.simStateStatusCardOne || this.simStateStatusCardTwo) &&
+                        !this.controllerMobileNetworkIsOn)
                       .onChange((isOn: boolean) => {
                         this.isDataEnable = !this.isDataEnable;
                         LogUtils.i(TAG, "mobile data switch changes enable:" + JSON.stringify(this.isDataEnable));
@@ -454,7 +455,8 @@ struct Index {
                   .width("100%")
                   .borderRadius(16)
                   .backgroundColor($r("sys.color.ohos_id_color_foreground_contrary"))
-                  .opacity((this.simStateStatusCardOne || this.simStateStatusCardTwo) && !this.controllerMobileNetworkIsOn ? 1 : 0.4)
+                  .opacity((this.simStateStatusCardOne || this.simStateStatusCardTwo) &&
+                    !this.controllerMobileNetworkIsOn ? 1 : 0.4)
 
                   SubHeader({
                     titleContent: $r('app.string.mobile_data_card1'),
