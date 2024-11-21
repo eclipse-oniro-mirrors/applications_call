@@ -450,7 +450,9 @@ struct Index {
                   .width('100%')
                   .borderRadius(16)
                   .backgroundColor($r('sys.color.ohos_id_color_foreground_contrary'))
-                  .opacity((this.simStateStatusCardOne || this.simStateStatusCardTwo) && !this.controllerMobileNetworkIsOn ? 1 : 0.4)
+                  .opacity((this.simStateStatusCardOne
+                    || this.simStateStatusCardTwo)
+                    && !this.controllerMobileNetworkIsOn ? 1 : 0.4)
                   SubHeader({
                     titleContent: $r('app.string.mobile_data_card1'),
                     subTitleContent: this.mTelephoneNumber
