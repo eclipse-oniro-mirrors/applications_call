@@ -16,7 +16,6 @@
 import Ability from '@ohos.app.ability.UIAbility';
 import type Window from '@ohos.window';
 import LogUtils from '../common/utils/LogUtils';
-import { Context } from '@ohos.abilityAccessCtrl';
 
 const TAG = 'MainAbility';
 
@@ -24,8 +23,6 @@ export default class MainAbility extends Ability {
   onCreate(want, launchParam): void {
     LogUtils.i(TAG, 'onCreate');
     globalThis.settingsAbilityContext = this.context;
-	AppStorage.setOrCreate<Context>('abilityContext',this.context)
-    AppStorage.setOrCreate<boolean>('ApnStatus',false)
   }
 
   onDestroy(): void {
