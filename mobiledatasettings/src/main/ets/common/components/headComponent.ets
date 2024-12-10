@@ -24,7 +24,7 @@ const TAG = 'HeadComponent'
 @Component
 export default struct HeadComponent {
   @State isTouch?: boolean = false;
-  title: Resource | string = $r('app.string.mobile_data');
+  title: Resource = $r('app.string.mobile_data');
   isTerminateSelf: boolean = true
 
   build() {
