@@ -24,7 +24,7 @@ import Keyboard from '../common/components/Keyboard';
 import IncomingCom from '../common/components/IncomingCom';
 import CallStateConst from '../common/constant/CallStateConst';
 import LogUtils from '../common/utils/LogUtils';
-import byTrace from '@ohos.bytrace'
+import hiTraceMeter from '@ohos.hiTraceMeter';
 import NotificationManager from '../model/NotificationManager';
 import CallManager from '../model/CallManager';
 import backgroundTaskManager from '@ohos.backgroundTaskManager';
@@ -102,12 +102,12 @@ struct Index {
 
   aboutToAppear(): void {
     LogUtils.i(TAG, 'aboutToAppear')
-    byTrace.startTrace('aboutToAppear', 0);
+    hiTraceMeter.startTrace('aboutToAppear', 0);
     this.notificationManager = new NotificationManager();
     CallManager.getInstance()?.init(this);
     AppStorage.SetOrCreate<NotificationManager>('notificationManager', this.notificationManager);
     this.mCallDataManager = CallDataManager.getInstance();
-    byTrace.finishTrace('aboutToAppear', 0);
+    hiTraceMeter.finishTrace('aboutToAppear', 0);
     this.smListener = mediaQuery.matchMediaSync('(320vp<width<=520vp)');
     this.smListener?.on('change', this.isBreakpointSM);
     this.mdListener = mediaQuery.matchMediaSync('(520vp<width<=840vp)');
@@ -119,12 +119,12 @@ struct Index {
 
   onPageShow() {
     LogUtils.i(TAG, 'onPageShow');
-    byTrace.startTrace('onPageShow', 1);
+    hiTraceMeter.startTrace('onPageShow', 1);
     globalThis.appInactiveState = false;
     this.stopBackgroundRunning();
     this.notificationManager?.cancelNotification();
     this.notificationManager?.sendCapsuleNotification(this.incomingData ? this.callData : this.incomingData, false);
-    byTrace.finishTrace('onPageShow', 1);
+    hiTraceMeter.finishTrace('onPageShow', 1);
     LogUtils.i(TAG, 'onPageShow end');
   }
 
