@@ -62,15 +62,15 @@
     },
     {
       "name": "mobile_data_fiveAuto",
-      "value": "5G网络优先"
+      "value": "5G/4G/3G/2G 自动选择"
     },
     {
       "name": "mobile_data_fourAuto",
-      "value": "4G网络优先"
+      "value": "4G/3G/2G 自动选择"
     },
     {
       "name": "mobile_data_threeAuto",
-      "value": "3G网络优先"
+      "value": "3G/2G 自动选择"
     },
     {
       "name": "mobile_data_twoOnly",
@@ -129,20 +129,8 @@
       "value": "3G/2G 自动选择"
     },
     {
-      "name": "mobile_data_only_5g",
-      "value": "仅使用5G网络"
-    },
-    {
-      "name": "mobile_data_only_4g",
-      "value": "仅使用4G网络"
-    },
-    {
-      "name": "mobile_data_only_3g",
-      "value": "仅使用3G网络"
-    },
-    {
       "name": "mobile_data_2g",
-      "value": "仅使用2G网络"
+      "value": "仅 2G"
     },
     {
       "name": "mobile_data_tips",
@@ -179,14 +167,6 @@
     {
       "name": "MANAGE_SECURE_SETTINGS",
       "value": "管理安全设置"
-    },
-    {
-      "name": "network_standard",
-      "value": "网络制式"
-    },
-    {
-      "name": "network_standard_select",
-      "value": "网络类型选择"
     }
   ]
 }
