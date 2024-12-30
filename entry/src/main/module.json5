@@ -17,7 +17,7 @@
   "module": {
     "name": "callui",
     "type": "entry",
-    "srcEntrance": "./ets/Application/MyAbilityStage.ts",
+    "srcEntry": "./ets/Application/MyAbilityStage.ts",
     "description": "$string:callui_description",
     "mainElement": "com.ohos.callui.ServiceAbility",
     "deviceTypes": [
@@ -37,7 +37,7 @@
     "abilities": [
       {
         "name": "com.ohos.callui.MainAbility",
-        "srcEntrance": "./ets/MainAbility/MainAbility.ts",
+        "srcEntry": "./ets/MainAbility/MainAbility.ts",
         "description": "$string:callui_description",
         "icon": "$media:app_icon",
         "label": "$string:callui_description",
