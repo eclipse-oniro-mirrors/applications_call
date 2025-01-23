@@ -187,6 +187,123 @@
     {
       "name": "network_standard_select",
       "value": "Select The Network Type"
+    },
+    {
+      "name": "apn_title",
+      "value": "APN Settings"
+    },
+    {
+      "name": "apn_name",
+      "value": "Name"
+    },
+    {
+      "name": "apn_apn",
+      "value": "APN"
+    },
+    {
+      "name": "apn_proxy",
+      "value": "Proxy"
+    },
+    {
+      "name": "apn_port",
+      "value": "Port"
+    },
+    {
+      "name": "apn_auth_user",
+      "value": "User Name"
+    },
+    {
+      "name": "apn_auth_pwd",
+      "value": "Auth Password"
+    },
+    {
+      "name": "apn_server",
+      "value": "Server"
+    },
+    {
+      "name": "apn_mmsc",
+      "value": "MMSC"
+    },
+    {
+      "name": "apn_mms_proxy",
+      "value": "MMS Proxy"
+    },
+    {
+      "name": "apn_mms_port",
+      "value": "MMS Port"
+    },
+    {
+      "name": "apn_mcc",
+      "value": "MCC"
+    },
+    {
+      "name": "apn_mnc",
+      "value": "MNC"
+    },
+    {
+      "name": "apn_auth_type",
+      "value": "Auth Type"
+    },
+    {
+      "name": "apn_apn_types",
+      "value": "APN Typs"
+    },
+    {
+      "name": "apn_apn_protocol",
+      "value": "APN Protocol"
+    },
+    {
+      "name": "apn_apn_roam_protocol",
+      "value": "APN Roam Protocol"
+    },
+    {
+      "name": "apn_bearing_system_type",
+      "value": "Bearing System Type"
+    },
+    {
+      "name": "apn_mvno_type",
+      "value": "MVNO Type"
+    },
+    {
+      "name": "apn_mvno_match_data",
+      "value": "MVNO Data"
+    },
+    {
+      "name": "apn_add",
+      "value": "Add APN"
+    },
+    {
+      "name": "ok",
+      "value": "ok"
+    },
+    {
+      "name": "apn_cancel",
+      "value": "cancel"
+    },
+    {
+      "name": "apn_not_configured",
+      "value": "Not Configured"
+    },
+    {
+      "name": "apn_null",
+      "value": "null"
+    },
+    {
+      "name": "apn_tips_name_null",
+      "value": "name is not null"
+    },
+    {
+      "name": "apn_tips_apn_null",
+      "value": "APN is not null"
+    },
+    {
+      "name": "access_point_name",
+      "value": "Access Point Name"
+    },
+    {
+      "name": "apn_stttings",
+      "value": "APN Settings"
     }
+
   ]
 }
