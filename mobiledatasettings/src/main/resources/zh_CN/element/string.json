@@ -62,15 +62,15 @@
     },
     {
       "name": "mobile_data_fiveAuto",
-      "value": "5G/4G/3G/2G 自动选择"
+      "value": "5G网络优先"
     },
     {
       "name": "mobile_data_fourAuto",
-      "value": "4G/3G/2G 自动选择"
+      "value": "4G网络优先"
     },
     {
       "name": "mobile_data_threeAuto",
-      "value": "3G/2G 自动选择"
+      "value": "3G网络优先"
     },
     {
       "name": "mobile_data_twoOnly",
@@ -129,8 +129,20 @@
       "value": "3G/2G 自动选择"
     },
     {
+      "name": "mobile_data_only_5g",
+      "value": "仅使用5G网络"
+    },
+    {
+      "name": "mobile_data_only_4g",
+      "value": "仅使用4G网络"
+    },
+    {
+      "name": "mobile_data_only_3g",
+      "value": "仅使用3G网络"
+    },
+    {
       "name": "mobile_data_2g",
-      "value": "仅 2G"
+      "value": "仅使用2G网络"
     },
     {
       "name": "mobile_data_tips",
@@ -167,6 +179,130 @@
     {
       "name": "MANAGE_SECURE_SETTINGS",
       "value": "管理安全设置"
+    },
+    {
+      "name": "network_standard",
+      "value": "网络制式"
+    },
+    {
+      "name": "network_standard_select",
+      "value": "网络类型选择"
+    },
+    {
+      "name": "apn_title",
+      "value": "APN 设置"
+    },
+    {
+      "name": "apn_name",
+      "value": "名称"
+    },
+    {
+      "name": "apn_apn",
+      "value": "APN"
+    },
+    {
+      "name": "apn_proxy",
+      "value": "代理"
+    },
+    {
+      "name": "apn_port",
+      "value": "端口"
+    },
+    {
+      "name": "apn_auth_user",
+      "value": "用户名"
+    },
+    {
+      "name": "apn_auth_pwd",
+      "value": "密码"
+    },
+    {
+      "name": "apn_server",
+      "value": "服务器"
+    },
+    {
+      "name": "apn_mmsc",
+      "value": "MMSC"
+    },
+    {
+      "name": "apn_mms_proxy",
+      "value": "彩信代理"
+    },
+    {
+      "name": "apn_mms_port",
+      "value": "彩信端口"
+    },
+    {
+      "name": "apn_mcc",
+      "value": "MCC"
+    },
+    {
+      "name": "apn_mnc",
+      "value": "MNC"
+    },
+    {
+      "name": "apn_auth_type",
+      "value": "身份验证类型"
+    },
+    {
+      "name": "apn_apn_types",
+      "value": "APN类型"
+    },
+    {
+      "name": "apn_apn_protocol",
+      "value": "APN协议"
+    },
+    {
+      "name": "apn_apn_roam_protocol",
+      "value": "APN漫游协议"
+    },
+    {
+      "name": "apn_bearing_system_type",
+      "value": "承载系统"
+    },
+    {
+      "name": "apn_mvno_type",
+      "value": "MVNO类型"
+    },
+    {
+      "name": "apn_mvno_match_data",
+      "value": "MVNO值"
+    },
+    {
+      "name": "apn_add",
+      "value": "新增APN"
+    },
+    {
+      "name": "ok",
+      "value": "确定"
+    },
+    {
+      "name": "apn_cancel",
+      "value": "取消"
+    },
+    {
+      "name": "apn_not_configured",
+      "value": "未设置"
+    },
+    {
+      "name": "apn_null",
+      "value": "无"
+    },
+    {
+      "name": "apn_tips_name_null",
+      "value": "名称不能为空"
+    },
+    {
+      "name": "apn_tips_apn_null",
+      "value": "APN不能为空"
+    },
+    {
+      "name": "access_point_name",
+      "value": "接入点名称(APN)"
+    },
+    {
+      "name": "apn_stttings",
+      "value": "设置APN"
     }
   ]
 }

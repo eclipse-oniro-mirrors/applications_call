@@ -39,6 +39,7 @@ import {
 import HeadComponent from '../common/components/headComponent';
 import { SubHeader } from '../common/components/subHeader';
 import LogUtils from '../common/utils/LogUtils';
+import router from '@ohos.router';
 
 const TAG = 'Index';
 
@@ -80,6 +81,9 @@ struct Index {
   @State ceshi: boolean = false;
   @State cardOne: number = 0;
   @State cardTwo: number = 1;
+
+
+  childComponentTitle: Resource = $r('app.string.mobile_data')
 
   /**
    * Get network mode
@@ -321,13 +325,28 @@ struct Index {
     }
   }
 
+  clickHandle(click: number) {
+    switch (click) {
+      case 0:
+        router.pushUrl({
+          url: 'pages/networkStand'
+        })
+        break
+      case 1:
+        router.pushUrl({
+          url: 'pages/apnList'
+        })
+        break
+    }
+  }
+
   build() {
     GridRow({ columns: { sm: 4, md: 8, lg: 12 }, gutter: { x: 12 } }) {
       GridCol({ span: { sm: 4, md: 8, lg: 8 }, offset: { sm: 0, md: 1, lg: 2 } }) {
         Column() {
           Column() {
 
-            HeadComponent();
+            HeadComponent({ isTouch: true, title: this.childComponentTitle });
 
             Stack({ alignContent: Alignment.TopStart }) {
               Scroll(this.scroller) {
@@ -431,6 +450,98 @@ struct Index {
                       isSupport: false,
                       isCard: true,
                       isCon: 22,
+                    })
+
+
+                    Divider()
+                      .strokeWidth(0.5)
+                      .color('#E3E3E3')
+                      .lineCap(LineCapStyle.Round)
+                      .margin({ right: '2%' })
+
+                    Flex({ justifyContent: FlexAlign.SpaceBetween, alignItems: ItemAlign.Center }) {
+                      Column() {
+                        Text($r('app.string.network_standard'))
+                          .fontFamily('HarmonyHeiTi')
+                          .fontSize($r('sys.float.ohos_id_text_size_body1'))
+                          .fontWeight(FontWeight.Medium)
+                          .fontColor($r('sys.color.ohos_id_color_text_primary'))
+                          .opacity((this.simStateStatusCardOne && !this.isAirPlaneMode) ? 0.9 : 0.6)
+                          .letterSpacing(1)
+                          .lineHeight(22)
+                          .textAlign(TextAlign.Start)
+                        Text($r('app.string.network_standard_select'))
+                          .margin({ top: 2 })
+                          .fontFamily('HarmonyHeiTi')
+                          .fontWeight(FontWeight.Regular)
+                          .fontSize($r('sys.float.ohos_id_text_size_body2'))
+                          .fontColor($r('sys.color.ohos_id_color_text_secondary'))
+                          .opacity(0.6)
+                          .lineHeight(19)
+                          .letterSpacing(1)
+                      }
+                      .width('100%')
+                      .alignItems(HorizontalAlign.Start)
+                      .margin({ right: 26 })
+
+                      Image($r('app.media.next_icon'))
+                        .width(10)
+                        .height(15)
+                        .margin({ right: 10 })
+                        .enabled(this.simStateStatusCardOne && !this.isAirPlaneMode)
+
+                    }.backgroundColor($r('sys.color.ohos_id_color_foreground_contrary'))
+                    .opacity((this.simStateStatusCardOne && !this.isAirPlaneMode) ? 1 : 0.4)
+                    .margin({ top: 8, bottom: this.isSupport ? 5 : 11 })
+                    .onClick(() => {
+                      if (this.simStateStatusCardOne && !this.isAirPlaneMode) {
+                        this.clickHandle(0)
+                      }
+                    })
+                    Divider()
+                      .strokeWidth(0.5)
+                      .color('#E3E3E3')
+                      .lineCap(LineCapStyle.Round)
+                      .margin({ right: '2%' })
+
+                    Flex({ justifyContent: FlexAlign.SpaceBetween, alignItems: ItemAlign.Center }) {
+                      Column() {
+                        Text($r('app.string.access_point_name'))
+                          .fontFamily('HarmonyHeiTi')
+                          .fontSize($r('sys.float.ohos_id_text_size_body1'))
+                          .fontWeight(FontWeight.Medium)
+                          .fontColor($r('sys.color.ohos_id_color_text_primary'))
+                          .opacity((this.simStateStatusCardOne && !this.isAirPlaneMode) ? 0.9 : 0.6)
+                          .letterSpacing(1)
+                          .lineHeight(22)
+                          .textAlign(TextAlign.Start)
+                        Text($r('app.string.apn_stttings'))
+                          .margin({ top: 2 })
+                          .fontFamily('HarmonyHeiTi')
+                          .fontWeight(FontWeight.Regular)
+                          .fontSize($r('sys.float.ohos_id_text_size_body2'))
+                          .fontColor($r('sys.color.ohos_id_color_text_secondary'))
+                          .opacity(0.6)
+                          .lineHeight(19)
+                          .letterSpacing(1)
+                      }.justifyContent(FlexAlign.Center)
+                      .width('100%')
+                      .alignItems(HorizontalAlign.Start)
+                      .margin({ right: 26 })
+
+                      Image($r('app.media.next_icon'))
+                        .width(10)
+                        .height(15)
+                        .margin({ right: 10 })
+                        .enabled(this.simStateStatusCardOne && !this.isAirPlaneMode)
+
+                    }.backgroundColor($r('sys.color.ohos_id_color_foreground_contrary'))
+                    .opacity((this.simStateStatusCardOne && !this.isAirPlaneMode) ? 1 : 0.4)
+                    .margin({ top: 8, bottom: this.isSupport ? 5 : 11 })
+                    .onClick(() => {
+                      if ((this.simStateStatusCardOne && !this.isAirPlaneMode)) {
+                        this.clickHandle(1)
+                      }
                     })
                   }
                   .padding({
