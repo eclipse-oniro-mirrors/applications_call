@@ -50,7 +50,6 @@ export default class ContactManager {
       if (resSet.rowCount > 0) {
         resSet.goToFirstRow();
         callData.contactName = resSet.getString(resSet.getColumnIndex('display_name'));
-        res.close();
       } else {
         callData.contactName = '';
       }
