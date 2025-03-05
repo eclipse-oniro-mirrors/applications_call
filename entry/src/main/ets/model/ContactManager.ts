@@ -56,6 +56,13 @@ export default class ContactManager {
       CallManager.getInstance().update(callData);
     } catch (err) {
       LogUtils.i(TAG, 'getContactInfo catch err : ' + JSON.stringify(err));
+    } finally {
+      if (dataAbilityHelper != undefined) {
+        dataAbilityHelper.close();
+      }
+      if (resSet != undefined) {
+        resSet.close();
+      }
     }
   }
 }
