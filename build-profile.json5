@@ -32,7 +32,7 @@
       {
         "name": "default",
         "signingConfig": "release",
-        "compileSdkVersion": 14,
+        "compileSdkVersion": 18,
         "compatibleSdkVersion": 14
       }
     ]
