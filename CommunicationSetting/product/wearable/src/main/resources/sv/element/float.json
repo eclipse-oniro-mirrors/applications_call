@@ -1,0 +1,12 @@
+{
+  "float": [
+    {
+      "name": "traffic_text_font_size",
+      "value": "13vp"
+    },
+    {
+      "name": "traffic_title_width",
+      "value": "136vp"
+    }
+  ]
+}

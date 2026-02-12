@@ -1,0 +1,20 @@
+{
+    "string":[
+        {
+            "name":"permission_access_install_app_list",
+            "value":"[TW_949371]_access install app list"
+        },
+        {
+            "name":"watch_permission_history_no_record",
+            "value":"[TW_949370]_No records"
+        },
+        {
+            "name":"watch_traffic_ranking_the_month",
+            "value":"[TW_949369]_Mobile data usage (monthly)"
+        },
+        {
+            "name":"watch_loading",
+            "value":"[TW_999463]_Loading…"
+        }
+    ]
+}

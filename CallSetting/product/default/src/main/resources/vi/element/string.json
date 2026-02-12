@@ -1,0 +1,3060 @@
+{
+    "string":[
+        {
+            "name":"beidou_satellite_message_service_no_net",
+            "value":"Không có kết nối Internet. Hãy kết nối Internet và thử lại.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"go_use_beidou_message_tips",
+            "value":"Bạn đã bật dịch vụ Nhắn tin qua vệ tinh Bắc Đẩu. Hãy vào ứng dụng Nhắn tin để bắt đầu sử dụng dịch vụ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"hangUp",
+            "value":"Kết thúc",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"start_beidou_satellite_message",
+            "value":"Nhắn tin qua vệ tinh Bắc Đẩu",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"wearable_bluee_text",
+            "value":"Khi đồng hồ được kết nối với điện thoại, dữ liệu di động của đồng hồ sẽ tự động bị tắt để tiết kiệm pin. Dữ liệu di động sẽ được bật lại nếu đồng hồ bị ngắt kết nối với điện thoại.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"save",
+            "value":"Lưu",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Apn_enum_None",
+            "value":"Không",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"wearable_roaming_subtitle",
+            "value":"Bật dữ liệu khi chuyển vùng. Hãy liên hệ nhà mạng của bạn để biết chi tiết.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_data_networkProvider",
+            "value":"Nhà mạng",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"APN_MMS",
+            "value":"MMS",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"do_not_show_again",
+            "value":"Không hiện lại",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"APN_ADD_APN",
+            "value":"Tạo mới APN",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"APN_common",
+            "value":"Tổng quan",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_dataRoaming",
+            "value":"Chuyển vùng dữ liệu",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data",
+            "value":"Dữ liệu di động",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Apn_confirm",
+            "value":"OK",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"gotIt",
+            "value":"OK",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_charges",
+            "value":"Có thể phát sinh phí sử dụng dữ liệu",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"go_use_beidou_satellite_message",
+            "value":"Vào ứng dụng Nhắn tin?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"beidou_satellite_message_service_details_1",
+            "value":"%s. Tính năng này chỉ dành cho người dùng China Mobile đã kích hoạt các tính năng liên lạc qua vệ tinh cho tài khoản của họ. Hãy liên hệ với bộ phận dịch vụ khách hàng của China Mobile để biết thêm thông tin.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"beidou_satellite_message_no_sim_card_descriptions",
+            "value":"Để sử dụng dịch vụ này, hãy lắp Thẻ SIM China Mobile đã kích hoạt dịch vụ Nhắn tin qua vệ tinh Bắc Đẩu.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"APN_Not_set",
+            "value":"Chưa đặt",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"APN_NAME",
+            "value":"Tên điểm truy cập (APN)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"wearable_bluee_title",
+            "value":"Đã kết nối Bluetooth",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"go_to_use",
+            "value":"Vào",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Apn_The_name_cannot_be_empty",
+            "value":"Không được để trống tên.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"beidou_satellite_message",
+            "value":"Nhắn tin qua vệ tinh Bắc Đẩu",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Apn_The_APN_cannot_be_empty",
+            "value":"Không được để trống APN.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"APN_EDIT_APN",
+            "value":"Sửa điểm truy cập",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"im_smc_tips_starfinder_blocking",
+            "value":"%1$s\nHãy di chuyển đến khu vực thông thoáng",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"im_smc_tips_outdoor_blocking",
+            "value":"Đã phát hiện vật cản",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_best",
+            "value":"Đã kết nối với vệ tinh tốt nhất",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"go_setting",
+            "value":"Vào Cài đặt",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Apn_Deleting_an_APN",
+            "value":"Xóa APN",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_call_notice",
+            "value":"Lưu ý",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_setting",
+            "value":"Cài đặt",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"preference_settings",
+            "value":"Chế độ",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"message_status_sent",
+            "value":"Đã gửi",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Call_forward_user_unreachable",
+            "value":"Khi không liên lạc được",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_no_sim_card",
+            "value":"Không có thẻ SIM",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"fold_window_dialog_remind_title",
+            "value":"Mở điện thoại ra",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"voicemail",
+            "value":"Thư thoại",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"fusion_call_switch_short_notification",
+            "value":"Cho phép cải thiện chất lượng cuộc gọi bằng cách sử dụng WLAN hoặc dữ liệu di động khi khả năng thu sóng mạng kém. Hãy tham khảo %1$s để tìm hiểu cách dữ liệu cá nhân của bạn được xử lý.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"number_identity_permission_dialog_desc",
+            "value":"Dịch vụ này yêu cầu các quyền sau đây:",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"distributed_share_message_data",
+            "value":"Gửi và nhận tin nhắn trên các thiết bị ở gần bạn.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"distributed_call_settings_sms_sharing_title",
+            "value":"Tin nhắn",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_new_fold_un_support_toast",
+            "value":"Mở điện thoại ra để sử dụng dịch vụ giao tiếp qua vệ tinh.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"registration_failed",
+            "value":"Đăng ký mạng không thành công",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"distributed_call_settings_network_sharing_descriptions_pad",
+            "value":"Khi không có mạng, tự động sử dụng mạng di động của điện thoại nếu điện thoại ở gần.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"motion_quick_call_descrition",
+            "value":"Nhấc điện thoại lên tai để trả lời cuộc gọi đến. Nếu bạn đang ở chế độ loa ngoài hoặc sử dụng tai nghe Bluetooth, việc nhấc điện thoại lên sẽ chuyển âm thanh sang loa trong.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"motion_reduce_call_descrition",
+            "value":"Nhấc điện thoại lên để giảm âm lượng chuông cuộc gọi đến.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_no_region_card_descriptions",
+            "value":"Dịch vụ Liên lạc qua vệ tinh Tiantong không được hỗ trợ ở khu vực hiện tại. Để biết thêm thông tin về các khu vực được hỗ trợ, hãy tham khảo Câu hỏi thường gặp.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_signal_descriptions",
+            "value":"China Telecom\nVệ tinh Tiantong",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"speedDial",
+            "value":"Quay số nhanh",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"number_identity_permission_dialog_title",
+            "value":"Quyền Nhận dạng cuộc gọi & tin nhắn",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_notification_title",
+            "value":"Dịch vụ Giao tiếp qua vệ tinh đã tắt",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"start_skycom_satellite_communications",
+            "value":"Liên lạc qua vệ tinh Tiantong",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"distributed_call_settings_network_sharing_title_pad",
+            "value":"Internet",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"motion_quick_mute_descrition_pad",
+            "value":"Lật thiết bị để tắt tiếng khi có cuộc gọi đến.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"video_ring_tone",
+            "value":"Nhạc chờ video",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Notify_during_call",
+            "value":"Trong khi đang gọi điện, thông báo cho tôi khi có cuộc gọi khác gọi tới.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Change_the",
+            "value":"Sửa",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Apn_APN_enabled",
+            "value":"Đã bật APN",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"automatic_carrier_selection",
+            "value":"Tự động chọn nhà mạng?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"location_south_east",
+            "value":"%1$s Nam %2$s Đông",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"sim_card_num_no_space",
+            "value":"SIM %s",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_fail",
+            "value":"Không lấy được danh sách nhà mạng. Hãy thử lại sau.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"distributed_call_settings_phone_sharing_title",
+            "value":"Cuộc gọi điện thoại",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"beidou_satellite_message_select_sim_card",
+            "value":"Chọn một thẻ SIM để nhắn tin qua vệ tinh. Xác nhận với nhà mạng của bạn rằng dịch vụ này đã được kích hoạt.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"call_about",
+            "value":"Giới thiệu",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Call_forward_no_busy",
+            "value":"Khi máy đang bận",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"stop_dialog",
+            "value":"Tắt",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_message_just_now",
+            "value":"Vừa xong",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"cancel_space",
+            "value":"Hủy",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_cancel",
+            "value":"Hủy",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"more",
+            "value":"Thêm",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_enableDataWhileRoaming",
+            "value":"Kết nối với dịch vụ dữ liệu khi chuyển vùng dữ liệu.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"beidou_satellite_message_service_settings_airplane_mode",
+            "value":"Không sử dụng được dịch vụ Nhắn tin qua vệ tinh Bắc Đẩu khi ở chế độ Máy bay.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_revoke_authorization_message",
+            "value":"Dịch vụ này sẽ không còn hoạt động nếu bạn tắt. Vẫn tắt?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_network",
+            "value":"Mạng di động",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_register",
+            "value":"Đã đăng ký trên mạng.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"im_message_smc_no_new_message_to_receive",
+            "value":"Không có câu trả lời nào đang chờ nhận.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"upper_tilt_phone",
+            "value":"Nghiêng lên",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"cannnot_dial_satellite_call_tips",
+            "value":"Thiết bị quá nóng. Hãy đợi thiết bị nguội rồi thử lại.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"number_identity_permission_dialog_name_1",
+            "value":"Danh bạ",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"im_smc_tips_outdoor_use",
+            "value":"Sử dụng ngoài trời",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ring_tone_desc",
+            "value":"Phát nhạc chờ video khi có cuộc gọi đến và đi.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"number_identity_permission_dialog_name_3",
+            "value":"Nhật ký cuộc gọi",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"ERROR_CODE_NOT_OPENED_TIANDIWINGCARD",
+            "value":"Các dịch vụ vệ tinh hiện chưa được kích hoạt cho SIM này. Hãy liên hệ nhà mạng để được hỗ trợ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"number_identity_permission_dialog_name_2",
+            "value":"Nhắn tin",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"APN_Restoring_default_APN_settings",
+            "value":"Đang khôi phục cài đặt APN mặc định…",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_card2",
+            "value":"Mạng SIM 2",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_card1",
+            "value":"Mạng SIM 1",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Call_forward_deactivated",
+            "value":"Tắt",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"portrait_reminder",
+            "value":"Cầm điện thoại theo chiều ngang",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"confim_space",
+            "value":"OK",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_exited_for_system_error",
+            "value":"Lỗi hệ thống. Dịch vụ Liên lạc qua vệ tinh Tiantong đã tắt. Vui lòng bật lại rồi thử lại.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_exited_for_system_error",
+            "value":"Lỗi hệ thống. Đã tắt dịch vụ Liên lạc qua vệ tinh Dạ lan hương. Vui lòng bật lại rồi thử lại.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_settings_enable_tips",
+            "value":"Vì dung lượng vệ tinh có hạn, vui lòng chỉ sử dụng tính năng này khi bạn không có dịch vụ dữ liệu di động. Nếu bật dịch vụ Liên lạc qua vệ tinh Tiantong thì WLAN, dữ liệu di động, Dịch vụ vị trí cũng như các tính năng liên quan sẽ tắt.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"voice_control",
+            "value":"Điều khiển bằng giọng nói",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_location_permission_descriptions",
+            "value":"Quyền này được dùng để căn chỉnh với vệ tinh và để thêm thông tin vị trí vào tin nhắn bạn gửi.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"distributed_call_settings_network_sharing_title",
+            "value":"Internet",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"fold_window_dialog_remind_message",
+            "value":"Khi sử dụng chức năng giao tiếp qua vệ tinh, hãy mở điện thoại ra và cầm điện thoại theo chiều ngang.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"re_calibrate",
+            "value":"Thử lại",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Call_waiting",
+            "value":"Chờ cuộc gọi",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"motion_reduce_call_descrition_pad",
+            "value":"Nhấc thiết bị lên để giảm âm lượng chuông cuộc gọi đến.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"advertising_and_promotion",
+            "value":"Quảng cáo",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"shut_down",
+            "value":"Tắt",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"smc_right_rotate_device",
+            "value":"Xoay thiết bị sang bên phải",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"super_privacy_dialog_title",
+            "value":"Chế độ Siêu riêng tư",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_Automatic_selection",
+            "value":"Chọn tự động",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"copyright_new",
+            "value":"Điện thoại. Bảo lưu mọi quyền. ©%1$s – %2$s",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_network",
+            "value":"Mạng vệ tinh",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Call_forward_unconditional",
+            "value":"Luôn luôn chuyển tiếp cuộc gọi",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"risk_identity_engine",
+            "value":"Công cụ",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"im_message_smc_shake",
+            "value":"Nghiêng thiết bị để hoàn thành vòng tròn",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"open_mobile_data",
+            "value":"Bật dữ liệu di động",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"float_left_right_phone",
+            "value":"Tìm vệ tinh",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"call_history_merging",
+            "value":"Gộp nhật ký cuộc gọi",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"landscape_reminder",
+            "value":"Hãy giữ điện thoại thẳng đứng",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"APN_TITLE",
+            "value":"Tên Điểm Truy cập (APN)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_details_2_new",
+            "value":"%s. Dịch vụ này yêu cầu kích hoạt nhà mạng thì mới có thể sử dụng được. Để biết thêm thông tin về việc kích hoạt, tính khả dụng và phí, hãy liên hệ với nhà mạng cung cấp dịch vụ giao tiếp qua vệ tinh của bạn.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_tips",
+            "value":"Lưu ý",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"re_connecting_satellite",
+            "value":"Kết nối lại",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Apn_OK",
+            "value":"OK",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"call_version",
+            "value":"Phiên bản %s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_service_select_sim_card",
+            "value":"Chọn một SIM để gọi và nhắn tin qua vệ tinh. Xác nhận với nhà mạng của bạn rằng dịch vụ này đã được kích hoạt.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"motion_quick_call_title",
+            "value":"Trả lời cuộc gọi",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"by_time",
+            "value":"Theo thời gian",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_call_message_notice",
+            "value":"Có ai đó đã cố gọi điện hoặc nhắn tin cho bạn. Để xem chi tiết, hãy kết nối với vệ tinh và mở ứng dụng Điện thoại hoặc Nhắn tin.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"motion_pick_up_reduce_volume",
+            "value":"Nhấc lên để giảm âm lượng",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"To",
+            "value":"Chuyển tiếp đến",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_signal",
+            "value":"Tín hiệu",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"float_upper_down_phone",
+            "value":"Di chuyển quả bóng đến khu vực trung tâm",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"device_calibrating_fail_tips",
+            "value":"Giữ điện thoại thẳng đứng, xoay điện thoại theo vòng tròn",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_Registering_disable",
+            "value":"Đang đăng ký với %s (Bị cấm)…",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Network_response_abnormal",
+            "value":"Mạng không phản hồi.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"anti_fraud_text",
+            "value":"Nhận cảnh báo về các cuộc gọi có thể là lừa đảo trong các cuộc gọi.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"motion_pick_up_reduce_volume_pad",
+            "value":"Nhấc lên để giảm âm lượng",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"aim_satellite",
+            "value":"Tìm kiếm vệ tinh",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_not_enabled",
+            "value":"Chưa bật dịch vụ Liên lạc qua vệ tinh Tiantong.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"re_wait_loading",
+            "value":"Tìm kiếm lại",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_enhance_status",
+            "value":"Connect+",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"number_identity_permission_dialog_purpose_2",
+            "value":"Quyền này được sử dụng để xác định xem có nên chặn tin nhắn hay không.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"number_identity_permission_dialog_purpose_1",
+            "value":"Quyền này được sử dụng để kiểm tra xem một số điện thoại nằm trong danh bạ hay danh sách chặn/danh sách tin cậy.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_details_3",
+            "value":"%s. Dịch vụ này chỉ được hỗ trợ ở Trung Quốc đại lục.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"smc_keep_posture",
+            "value":"Giữ vị trí này",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_service_details_0",
+            "value":"%1$s. Vì dung lượng vệ tinh có hạn, bạn nên sử dụng mạng di động khi có dịch vụ. %2$s",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"number_identity_permission_dialog_purpose_3",
+            "value":"Quyền này được sử dụng để đánh dấu các số điện thoại theo danh mục và xác định xem có nên chặn tin nhắn hay không.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_data_enabled4G",
+            "value":"Bật 4G",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"number_identity_setting_title",
+            "value":"Nhận dạng cuộc gọi và tin nhắn",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"privacy_statement",
+            "value":"Tuyên bố về Điện thoại và Quyền riêng tư",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"new_satellite_signal_descriptions",
+            "value":"Vệ tinh Tiantong",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"open_mobile_data_detail",
+            "value":"Tính năng này yêu cầu kết nối dữ liệu di động. Hãy vào mục Cài đặt để bật dữ liệu di động.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_details_1_new",
+            "value":"",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"distributed_share_call_data",
+            "value":"Thực hiện và nhận cuộc gọi điện thoại trên các thiết bị ở gần bạn.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"distributed_network_never_connect",
+            "value":"Kết nối thủ công",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"wifi_calling_tips",
+            "value":"Khi bật Gọi điện qua WLAN, điện thoại có thể chuyển hướng các cuộc gọi qua mạng WLAN hoặc mạng của nhà mạng, phụ thuộc vào tùy chọn của bạn và tín hiệu mạng nào mạnh hơn. Trước khi bật tính năng này, hãy kiểm tra với nhà mạng về phí và các chi tiết khác.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_hunt_success",
+            "value":"Đã kết nối với vệ tinh",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Apn_cancel",
+            "value":"Hủy",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"float_window_keep_posture",
+            "value":"Giữ nguyên tư thế này",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"im_smc_tips_starfinder_loading",
+            "value":"%1$s\nđể thu được tín hiệu vệ tinh",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"beidou_satellite_short_notification",
+            "value":"<body><span style='normal'>Dịch vụ này yêu cầu kết nối </span><span style='bold'>Internet</span><span style='normal'> để xác thực tài khoản và kiểm tra số dư của bạn. Khi bật dịch vụ này, bạn sẽ có thể gửi tin nhắn qua vệ tinh Bắc Đẩu khi không có mạng di động hoặc kết nối WLAN. Trong quá trình sử dụng, dịch vụ này cần đọc và tải lên/truyền số điện thoại của thiết bị, nội dung tin nhắn qua vệ tinh Bắc Đẩu và thông tin vị trí. Quyền này nhằm cung cấp dịch vụ Nhắn tin qua vệ tinh Bắc Đẩu. Bằng việc bật khóa chuyển này, bạn đồng ý với các điều khoản trên và </span><span style='userAgreements'>Thỏa thuận Người dùng Nhắn tin qua vệ tinh Bắc Đẩu</span><span style='normal'>. Để biết thêm chi tiết về cách thông tin cá nhân của bạn được xử lý, hãy tham khảo </span><span style='privacyStatement'>Tuyên bố về Nhắn tin qua vệ tinh Bắc Đẩu và Quyền riêng tư</span><span style='normal'>.</span></body>",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_enabled5G",
+            "value":"Bật 5G",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"location_south_west",
+            "value":"%1$s Nam %2$s Tây",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_service_location",
+            "value":"Vị trí",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"not_link_satellite_auto_exit_notification_Text",
+            "value":"Dịch vụ Giao tiếp qua vệ tinh Tiantong đã tắt vì không có kết nối vệ tinh nào được thiết lập trong %d giây.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"left_rotate_phone",
+            "value":"Xoay sang trái",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"float_keep_current_posture",
+            "value":"Giữ nguyên tư thế này",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"APN_TITLE_MSG",
+            "value":"Tổng quan",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_hunt_failed",
+            "value":"Kết nối không thành công",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"advance_options_title",
+            "value":"Thêm",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"send_failed",
+            "value":"Gửi thất bại",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"device_calibrate_failed",
+            "value":"Hiệu chuẩn không thành công",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"incoming_notification_setting",
+            "value":"Thông báo cuộc gọi đến",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"enhance_statement_title",
+            "value":"Nhận dạng cuộc gọi & tin nhắn",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"ERROR_CODE_OTHERS",
+            "value":"Lỗi mạng. Hãy liên hệ nhà mạng để được hỗ trợ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"device_offset_reminder",
+            "value":"Hướng về phía vệ tinh",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_data_confirmation_function",
+            "value":"Xác nhận rằng dịch vụ này hoạt động trước khi kích hoạt. Nếu không, các cuộc gọi bình thường có thể bị ảnh hưởng.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_connecting",
+            "value":"Đang kết nối (%d)…",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"answer_voice_calls_by_flipping",
+            "value":"Bạn sẽ phải xác nhận theo cách thủ công nếu bạn tắt chuông trước khi mở điện thoại ra.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"im_smc_lift_device",
+            "value":"Nghiêng thiết bị về phía bạn",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"8300999",
+            "value":"Lỗi không xác định.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_closeAutoSelect",
+            "value":"Tắt tự động chọn",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"ERROR_CODE_NOT_SUPPORT_CARD",
+            "value":"SIM này không hỗ trợ các dịch vụ vệ tinh Tiantong. Hãy liên hệ với nhà mạng của bạn để được thay thế.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"motion_quick_call_descrition_fold_teton",
+            "value":"Nâng điện thoại lên tai để trả lời cuộc gọi đến. Nếu bạn đang ở chế độ loa ngoài hoặc sử dụng tai nghe Bluetooth, thì việc nâng điện thoại lên sẽ chuyển sang chế độ loa trong.\n\n*Chỉ khả dụng khi gập lại.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"incoming_call_rejection_sms",
+            "value":"Trả lời bằng văn bản",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"fusion_call_switch_short_notification_sub2",
+            "value":"Tuyên bố về Cải thiện chất lượng cuộc gọi và Quyền riêng tư",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Deactivation",
+            "value":"Tắt",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"new_satellite_descriptions",
+            "value":"Vệ tinh Tiantong",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_volte",
+            "value":"Cuộc gọi VoLTE HD",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"keep_current_posture",
+            "value":"Giữ nguyên tư thế này",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_service_showname",
+            "value":"SIM %1$s: %2$s",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_esim_showname",
+            "value":"eSIM %1$s: %2$s",
+            "attr":{
+                "priority":"code"
+            }
+        },
+        {
+            "name":"app_about_name",
+            "value":"Điện thoại",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"automatic_enrollment",
+            "value":"Đang tự động đăng ký\u2026",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Apn_The_MCC_must_be_a_3_digit_number",
+            "value":"Trường MCC phải có 3 chữ số.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"super_privacy_dialog_call_summary",
+            "value":"Chế độ Siêu riêng tư đang chặn quyền truy cập micrô. Tạm thời tắt chế độ này để gọi điện?",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"anti_fraud",
+            "value":"Bảo vệ bảo mật thông minh",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"enterprise_number_identity",
+            "value":"Bật cho các ứng dụng doanh nghiệp",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_select_sim",
+            "value":"Chọn SIM",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_chooseNetworkProvider",
+            "value":"Chọn nhà mạng.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"distributed_call_settings_descriptions_pad",
+            "value":"",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_message",
+            "value":"Nhắn tin",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"im_smc_calibrate_failed",
+            "value":"Hiệu chuẩn không thành công",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_phone",
+            "value":"Điện thoại",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"exit_beidou_satellite_message_service_tips",
+            "value":"Thoát dịch vụ Nhắn tin qua vệ tinh Bắc Đẩu?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_network_descriptions",
+            "value":"Gọi điện và nhắn tin qua hệ thống vệ tinh Tiantong.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"disable_super_privacy_and_call",
+            "value":"Tắt và gọi điện",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"APN_Reset_to_Default",
+            "value":"Đặt lại về mặc định",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"others",
+            "value":"Khác",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"im_smc_receive_auto_change_01",
+            "value":"Đã hết thời gian chờ kết nối. Đã chuyển sang vệ tinh khác.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"selectContacts",
+            "value":"Chọn số liên hệ",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"distributed_network_auto_connect",
+            "value":"Tự động kết nối",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"phone_ring_tone",
+            "value":"Nhạc chuông",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"not_link_satellite_dialog_positive",
+            "value":"Không thoát",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"disable_super_privacy_and_answer",
+            "value":"Tắt và trả lời",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_Registering",
+            "value":"Đang đăng ký với %s…",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"wifi_calling",
+            "value":"Gọi điện qua WLAN",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Apn_MNC_must_be_2_or_3_digits",
+            "value":"Trường MNC phải có 2 hoặc 3 chữ số.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"motion_call_setting_search_system",
+            "value":"Hệ thống",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"end_call_by_power",
+            "value":"Nút nguồn kết thúc cuộc gọi",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"WiFi_first",
+            "value":"Ưu tiên WLAN",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"motion_muting_reduce_call_title",
+            "value":"Tắt tiếng nhạc chuông/Giảm âm lượng",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"motion_flip_mute_volume",
+            "value":"Lật để tắt tiếng nhạc chuông",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"location_north_west",
+            "value":"%1$s Bắc %2$s Tây",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"number_identity_setting_text_1",
+            "value":"Khi bạn nhận được cuộc gọi hoặc tin nhắn từ một số điện thoại không xác định, dịch vụ này sẽ cho bạn biết nội dung cuộc gọi hoặc tin nhắn đó, giúp bạn quyết định cách phản hồi.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"distributed_call_settings_title",
+            "value":"Chia sẻ thông tin liên lạc",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_exit",
+            "value":"Tắt",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_settings_window_suggest",
+            "value":"Mở cửa sổ này ở chế độ toàn màn hình để bật dịch vụ Giao tiếp qua vệ tinh Tiantong.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"keep_current_posture_wait_patiently",
+            "value":"Quá trình này có thể mất một chút thời gian\nVui lòng chờ",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"enter_in_call",
+            "value":"Không bật được dịch vụ Giao tiếp qua vệ tinh Tiantong trong khi gọi điện.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"unlock_after_call_notification_descriptions",
+            "value":"Cuộc gọi đến luôn hiển thị dưới dạng biểu ngữ khi bạn đang chơi trò chơi, tìm đường trên bản đồ hoặc xem ảnh và video ở chế độ toàn màn hình.\n\nCuộc gọi đến luôn hiển thị ở chế độ toàn màn hình khi bạn đang sử dụng chế độ Người cao tuổi, hoặc Thám hiểm.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"unlock_after_call_notification",
+            "value":"Thông báo khi mở khóa",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"sim_select",
+            "value":"SIM",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"frequently_asked_questions",
+            "value":"Câu hỏi thường gặp",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"number_identity_short_notification",
+            "value":"<body><span style='normal'>Dịch vụ này yêu cầu kết nối </span><span style='bold'>Internet</span><span style='normal'> và quyền truy cập </span><span style='bold'>Danh bạ</span><span style='normal'>, đồng thời cần đọc danh bạ, đọc và sửa đổi nhật ký cuộc gọi, cũng như đọc và tải lên/truyền nội dung tin nhắn SMS. Bằng việc bật khóa chuyển này, bạn đồng ý với các điều khoản này. Để biết thêm chi tiết về cách thông tin cá nhân của bạn được xử lý, hãy tham khảo </span><span style='privacyStatement'>Tuyên bố về Nhận dạng cuộc gọi &amp; tin nhắn và Quyền riêng tư</span><span style='normal'> cũng như </span><span style='permissionStatement'>Thông báo Quyền hạn</span><span style='normal'>.</span></body>",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"hicall_user_info_skip",
+            "value":"Bỏ qua",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"automatic_recording_of_calls",
+            "value":"Tự động ghi âm cuộc gọi",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"device_calibrating",
+            "value":"Đang hiệu chuẩn…",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"im_smc_received_satellite_return",
+            "value":"Đã nhận được thông báo xác nhận từ vệ tinh",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"8300003",
+            "value":"Lỗi hệ thống nội bộ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_no_phone_number",
+            "value":"Số không xác định",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_call_not_support_earpiece",
+            "value":"Để duy trì kết nối ổn định, loa trong sẽ không sử dụng được trong các cuộc gọi qua vệ tinh.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"8300001",
+            "value":"Giá trị không hợp lệ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"8300002",
+            "value":"Không truy cập được dịch vụ này.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_not_serve",
+            "value":"Chưa có dịch vụ",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"exit_satellite_service_tips",
+            "value":"Tắt dịch vụ Giao tiếp qua vệ tinh Tiantong?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"full_screen",
+            "value":"Toàn màn hình",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"APN_Creating_an_APN",
+            "value":"Tạo mới APN",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"distributed_share_network_data",
+            "value":"Chia sẻ kết nối Internet của bạn với các thiết bị ở gần.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_turn_on_data_roaming",
+            "value":"Chuyển vùng dữ liệu có thể tốn thêm phí sử dụng dữ liệu. Vẫn bật?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"not_link_satellite_dialog_message",
+            "value":"Không có kết nối vệ tinh nào được thiết lập trong %d giây. Dịch vụ Liên lạc qua vệ tinh Tiantong sẽ tắt.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"motion_quick_mute_descrition",
+            "value":"Lật điện thoại để tắt tiếng khi có cuộc gọi đến.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_settings_skytone_mode",
+            "value":"Không hoạt động khi sử dụng SkyTone.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_revoke_authorization",
+            "value":"Tắt dịch vụ",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"meetime_network_descriptions",
+            "value":"Gửi và nhận tin nhắn qua vệ tinh Bắc Đẩu thông qua ứng dụng Nhắn tin hoặc MeeTime.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"im_smc_note_content",
+            "value":"Việc bỏ qua hiệu chuẩn có thể ảnh hưởng đến khả năng bạn sử dụng dịch vụ giao tiếp qua vệ tinh. Vẫn bỏ qua?",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"customer_service",
+            "value":"Đường dây nóng dịch vụ khách hàng",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"im_message_smc_receive_success",
+            "value":"Đã nhận thành công",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"lower_tilt_phone",
+            "value":"Nghiêng xuống",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"unknown",
+            "value":"Không xác định",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_settings_explain",
+            "value":"Lưu ý",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_settings_details_descriptions3",
+            "value":"Khi bạn kết nối với vệ tinh Tiantong, vị trí chính xác của bạn sẽ được tải lên nhà điều hành dịch vụ vệ tinh này.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"enabled",
+            "value":"Bật",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"text_paragraphs",
+            "value":"Nếu bạn tắt khóa chuyển này, điện thoại của bạn sẽ chỉ đăng ký với các mạng do bạn chọn thủ công. Thao tác này có thể tắt dịch vụ dữ liệu của bạn. Mạng hiện tại của bạn cũng có thể tạm thời không hoạt động trong quá trình chọn mạng thủ công. Vẫn tắt?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"opened",
+            "value":"Bật",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"location_north_east",
+            "value":"%1$s Bắc %2$s Đông",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_Search",
+            "value":"Đang tìm kiếm…",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"distributed_call_settings_sms_sharing_title_pad",
+            "value":"Tin nhắn",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"float_window_keep_posture_check_occlusion",
+            "value":"Hãy chắc chắn rằng không có vật cản trên đường.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"float_window_keep_posture_wait_patiently",
+            "value":"Vui lòng chờ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_able",
+            "value":"Mạng khả dụng",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Turn_on",
+            "value":"Bật",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"phone_ring_Card2",
+            "value":"SIM %1$s: %2$s",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"improve_call_quality",
+            "value":"Tăng cường chất lượng cuộc gọi",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"skycom_satellite_communications",
+            "value":"Liên lạc qua vệ tinh Tiantong",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"closed",
+            "value":"Tắt",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"im_smc_lower_device",
+            "value":"Nghiêng thiết bị ra xa bạn",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"text_paragraphs_no_data",
+            "value":"Nếu bạn tắt khóa chuyển này, điện thoại của bạn sẽ chỉ đăng ký với các mạng do bạn chọn thủ công. Thao tác này có thể tắt dịch vụ dữ liệu của bạn. Vẫn tắt?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"about_personal_info_list",
+            "value":"Thông tin cá nhân được thu thập",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"distributed_call_settings_descriptions",
+            "value":"",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Apn_give_up_the_modification",
+            "value":"Hủy bỏ thay đổi?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"401",
+            "value":"Lỗi thông số.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_permission_count",
+            "value":"Dịch vụ này yêu cầu quyền sau đây:",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_permission_usage_details",
+            "value":"Quyền của dịch vụ Liên lạc qua vệ tinh Tiantong",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_search_failed",
+            "value":"Không tìm thấy vệ tinh",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"device_calibrating_tips",
+            "value":"Nghiêng thiết bị để hoàn thành vòng tròn",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_service_no_sim_card_descriptions",
+            "value":"Vui lòng lắp thẻ SIM đã kích hoạt dịch vụ Liên lạc qua vệ tinh Tiantong rồi thử lại.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"motion_flip_mute_volume_pad",
+            "value":"Lật để tắt tiếng nhạc chuông",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"open_phone_to_answer_calls",
+            "value":"Mở điện thoại ra để trả lời cuộc gọi thoại",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"find_out_how_we_use_your_data",
+            "value":"Cách chúng tôi sử dụng dữ liệu của bạn",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"beidou_satellite_message_service_details_0",
+            "value":"%1$s. Trong quá trình sử dụng, WLAN và dữ liệu di động sẽ tạm thời bị tắt. Các dịch vụ sẽ được khôi phục khi thoát.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"ERROR_CODE_NOT_ACTIVATED_SIM",
+            "value":"IMEI của thiết bị này chưa được đăng ký với mạng vệ tinh Tiantong.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_preferredNetwork",
+            "value":"Mạng ưu tiên: %s",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"beidou_satellite_message_service_details_2",
+            "value":"%s. Tính năng này chỉ hoạt động ở Trung Quốc đại lục.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Call_forward_no_reply",
+            "value":"Chuyển tiếp khi không trả lời",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_general",
+            "value":"Thông dụng",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"phone_ring_Card1",
+            "value":"SIM %1$s: %2$s",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"motion_quick_call_descrition_fold",
+            "value":"Nhấc điện thoại lên tai để trả lời cuộc gọi đến. Nếu bạn đang ở chế độ loa ngoài hoặc sử dụng tai nghe Bluetooth, việc nhấc điện thoại lên sẽ chuyển âm thanh sang loa trong.\nChỉ khả dụng trên màn hình chính.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"super_privacy_dialog_video_call_summary",
+            "value":"Chế độ Siêu riêng tư đang chặn quyền truy cập micrô và máy ảnh. Tạm thời tắt chế độ này để gọi điện?",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"distributed_call_settings_phone_sharing_title_pad",
+            "value":"Cuộc gọi điện thoại",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"networkAnomaly",
+            "value":"Mạng không phản hồi. Không thiết lập được.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"enhance_statement_content",
+            "value":"Dịch vụ này yêu cầu kết nối Internet và quyền truy cập Danh bạ. Dịch vụ này cũng cần đọc danh bạ, đọc và sửa đổi nhật ký cuộc gọi, cũng như đọc và tải lên/truyền nội dung tin nhắn SMS. Quyền này nhằm nhận dạng các cuộc gọi và tin nhắn từ số không xác định. Bằng việc bật khóa chuyển này, bạn đồng ý với các điều khoản này. Để biết thêm chi tiết về cách thông tin cá nhân của bạn được xử lý, hãy tham khảo <a link=\"privacyStatement\">Tuyên bố về Nhận dạng cuộc gọi & tin nhắn và Quyền riêng tư</a> cũng như <a link=\"permissionStatement\">Thông báo Quyền hạn</a>.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"business_and_privacy_statement",
+            "value":"Tuyên bố Quyền riêng tư",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"right_rotate_phone",
+            "value":"Quay sang phải",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"keep_current_posture_check_occlusion",
+            "value":"Bây giờ hướng về phía vệ tinh.\nHãy chắc chắn rằng không có vật cản nào trên đường như cây cối hoặc tòa nhà.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"smc_left_rotate_device",
+            "value":"Xoay thiết bị sang bên trái",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_data_card1_or_card2",
+            "value":"Mạng SIM 1/SIM 2",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Call_forward",
+            "value":"Cài đặt chuyển tiếp cuộc gọi",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_short_notification_info",
+            "value":"<body><span style='normal'>Dịch vụ này yêu cầu quyền truy cập </span><span style='bold'>Vị trí</span><span style='normal'> và sử dụng Dịch vụ Vị trí để nhận vị trí của bạn. Bằng việc bật khóa chuyển này, bạn đồng ý với các điều khoản này và </span><span style='userAgreements'>Thỏa thuận Người dùng Giao tiếp qua vệ tinh Tiantong</span><span style='normal'>. Để biết thêm chi tiết, hãy tham khảo </span><span style='privacyStatement'>Tuyên bố về Giao tiếp qua vệ tinh Tiantong và Quyền riêng tư</span><span style='normal'> cũng như </span><span style='permissionStatement'>Thông báo Quyền hạn</span><span style='normal'>.</span></body>",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"answer_calls_list",
+            "value":"Nâng lên để trả lời",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"vowifi_mobile_network_preferred",
+            "value":"Ưu tiên mạng di động",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"ERROR_CODE_NOT_OPENED_ROAMING",
+            "value":"Lỗi trạng thái cổng ra vào. Hãy liên hệ nhà mạng để được hỗ trợ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_search",
+            "value":"Đang tải…",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_settings_airplane_mode",
+            "value":"Dịch vụ Liên lạc qua vệ tinh Tiantong không hoạt động ở Chế độ Máy bay.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_alignment",
+            "value":"Đang tìm vệ tinh…",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_disable",
+            "value":"%s (bị cấm)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"meetime_network_title",
+            "value":"Nhắn tin qua vệ tinh Bắc Đẩu thông qua MeeTime",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"beidou_satellite_message_enter_in_call",
+            "value":"Không sử dụng được dịch vụ Nhắn tin qua vệ tinh Bắc Đẩu khi đang gọi điện.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"by_contact",
+            "value":"Theo liên hệ",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"multi_device_collaboration",
+            "value":"Tùy chọn kết nối khác",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"start_skycom_satellite_communications_sub3",
+            "value":"Khi bạn kết nối với vệ tinh Tiantong, vị trí chính xác của bạn sẽ được tải lên nhà điều hành dịch vụ vệ tinh này.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"start_skycom_satellite_communications_sub1",
+            "value":"Khi nằm ngoài vùng phủ sóng WLAN và di động, bạn có thể tiếp tục sử dụng chức năng gọi điện và nhắn tin của điện thoại qua vệ tinh.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"201",
+            "value":"Xác minh quyền không thành công.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"call_setting_incoming",
+            "value":"Cuộc gọi đến",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_hunt_timeout",
+            "value":"Đã hết thời gian chờ kết nối vệ tinh",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"quick_gestures",
+            "value":"Lối tắt và cử chỉ",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"incoming_notification_setting_tips",
+            "value":"Bạn có thể chọn hiển thị thông báo cuộc gọi đến ở chế độ toàn màn hình hoặc dưới dạng biểu ngữ. Thay đổi các tùy chọn ưu tiên của bạn bất kỳ lúc nào trong Điện thoại > Cài đặt > Thông báo khi mở khóa.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"im_message_smc_receive_fail",
+            "value":"Nhận không thành công",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"banner",
+            "value":"Biểu ngữ",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"unlock_after_call_notification_description",
+            "value":"Cuộc gọi đến luôn hiển thị dưới dạng biểu ngữ khi bạn đang chơi trò chơi, tìm đường trên bản đồ hoặc xem ảnh và video ở chế độ toàn màn hình.\n\nCuộc gọi đến luôn hiển thị ở chế độ toàn màn hình khi bạn đang sử dụng chế độ Đơn giản, Người cao tuổi, hoặc Thám hiểm.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fold_remind_tips_message",
+            "value":"Kết nối vệ tinh không thành công. Hãy luôn mở điện thoại ra trong quá trình sử dụng.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"contact_str_copysim_notification",
+            "value":"Thông báo",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_search_tips",
+            "value":"Tính năng này hoạt động tốt nhất ở các khu vực ngoài trời thông thoáng, không có vật cản.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"edm_operate_prohibit_tip",
+            "value":"Thao tác này bị cấm bởi chính sách quản trị doanh nghiệp.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"cancel",
+            "value":"Hủy",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"car_satellite_tips",
+            "value":"Thực hiện và nhận cuộc gọi điện thoại bằng mạng vệ tinh của ô tô.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"using_beidou_toast",
+            "value":"Không có sẵn khi đang sử dụng các tính năng vệ tinh Bắc Đẩu.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"car_satellite_title",
+            "value":"Giao tiếp qua vệ tinh trong ô tô",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_service_settings_window_mode",
+            "value":"Dịch vụ Giao tiếp qua vệ tinh Tiantong không hỗ trợ chế độ Đa cửa sổ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"InfoEdit_back",
+            "value":"Quay lại",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone_delete_dialog_tip1",
+            "value":"Xóa các mục đã chọn?",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone_no_delete",
+            "value":"Không thể xóa các mục khi các mục đó đang được sử dụng.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"no_video_ringtone",
+            "value":"Không có nhạc chuông video nào",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone_from_photo_picker",
+            "value":"Chọn từ Bộ sưu tập",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"manage",
+            "value":"Quản lý",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone",
+            "value":"Nhạc chuông video",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone_small_no_show",
+            "value":"Không thể chỉnh sửa nhạc chuông video trong cửa sổ di động.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"my_video_ringtone",
+            "value":"Video nhạc chờ của tôi",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone_deselect_all",
+            "value":"Bỏ chọn tất",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"remind",
+            "value":"Nhắc gọi lại",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone_select_all",
+            "value":"Chọn tất cả",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"sms",
+            "value":"Nhắn tin",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone_size_limit",
+            "value":"Chọn một video nhỏ hơn %s.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"call_assistant_setting_title",
+            "value":"Tự động trả lời",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"delete",
+            "value":"Xóa",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"use",
+            "value":"Áp dụng",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone_dialog_system_error",
+            "value":"Lỗi hệ thống. Vui lòng thử lại.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone_dialog_no_space",
+            "value":"Không đủ dung lượng bộ nhớ. Hãy giải phóng bớt dung lượng rồi thử lại.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone_dialog_Exceeding_limit_title",
+            "value":"Đã đạt số lượng nhạc chuông video tối đa",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone_dialog_Exceeding_limit_content",
+            "value":"Xóa nhạc chuông video của một vài liên hệ để có thêm dung lượng.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone_dialog_type_error",
+            "value":"Chỉ hỗ trợ video MP4.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"InfoEdit_edits_info",
+            "value":"Chỉnh sửa",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"click_go_to_settings",
+            "value":"Chạm để thiết lập",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"penglai_mode_notice",
+            "value":"Không thực hiện được thao tác này ở chế độ Bồng Lai.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"smart_call_making",
+            "value":"Cuộc gọi thông minh",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"incoming_outgoing_calls_voice_control",
+            "value":"Trả lời và từ chối cuộc gọi",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"video_type",
+            "value":"Video %d",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Incoming_call_voice_announcement",
+            "value":"Thông báo cuộc gọi đến",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"talkback_not_selected",
+            "value":"Chưa chọn",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"talkback_selected",
+            "value":"Đã chọn",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_connect_failed",
+            "value":"Đã ngắt kết nối",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"new_hyacinth_satellite_signal_descriptions",
+            "value":"Vệ tinh Dạ lan hương",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_signal_descriptions",
+            "value":"China Telecom\nVệ tinh Dạ lan hương",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"keep_current_posture_hyacinth",
+            "value":"Giữ vị trí này",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_service_no_available_time",
+            "value":"Không có khoảng thời gian hoạt động",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"close_button",
+            "value":"Đóng",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"more_options",
+            "value":"Tùy chọn khác",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"New_CAll",
+            "value":"Gọi điện nâng cao",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"details",
+            "value":"Thông tin",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_connect_failed_not_time",
+            "value":"Hiện không có vệ tinh nào hoạt động. Hãy thử lại sau.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"switched_to_next_satellite",
+            "value":"Đã chuyển sang vệ tinh tiếp theo",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"switching_to_next_satellite",
+            "value":"Sắp chuyển sang vệ tinh tiếp theo\nKết nối có thể bị gián đoạn trong thời gian ngắn",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"cellular_network_notify_text",
+            "value":"Không cần dùng mạng vệ tinh nữa. Tắt mạng vệ tinh?",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"cellular_network_notify_ignore_button",
+            "value":"Bỏ qua",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"cellular_network_notify_close_button",
+            "value":"Tắt mạng vệ tinh",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"cellular_network_notify_title",
+            "value":"Hiện có mạng di động",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_data_esim_card",
+            "value":"Mạng eSIM %s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_device_calibrating_tips",
+            "value":"Hãy nghiêng thiết bị một góc lớn để hoàn tất hiệu chuẩn",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_short_notification_info",
+            "value":"<body><span style='normal'>Khi nằm ngoài vùng phủ sóng WLAN và di động, bạn có thể tiếp tục sử dụng các tính năng gọi điện và nhắn tin của điện thoại qua vệ tinh.\n\nTrong khi dùng, dịch vụ này cần truy cập </span><span style='bold'>vị trí</span><span style='normal'> của bạn để liên lạc với vệ tinh. Bằng việc bật khóa chuyển này, bạn đồng ý với </span><span style='userAgreements'>Thỏa thuận Người dùng Dạ lan hương</span><span style='normal'>. Để biết thêm chi tiết về cách thông tin cá nhân của bạn được xử lý, hãy tham khảo </span><span style='privacyStatement'>Tuyên bố về Dạ lan hương và Quyền riêng tư</span><span style='normal'> và </span><span style='permissionStatement'>Thông báo Quyền hạn</span><span style='normal'>.</span></body>",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_not_found_satellite",
+            "value":"Không tìm thấy vệ tinh có sẵn. Hãy thử lại sau.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_service_no_region_card",
+            "value":"Dịch vụ Liên lạc qua vệ tinh Dạ lan hương không được hỗ trợ ở khu vực hiện tại. Để biết thêm thông tin về các khu vực được hỗ trợ, hãy tham khảo Câu hỏi thường gặp.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_service_permission_usage_details",
+            "value":"Quyền của dịch vụ Liên lạc qua vệ tinh Dạ lan hương",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_connect_failed_guide",
+            "value":"Hiện không có vệ tinh nào hoạt động. Khoảng thời gian hoạt động tiếp theo: %1$s – %2$s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_service_network_description",
+            "value":"Gọi điện và nhắn tin qua vệ tinh.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_service_enter_in_call",
+            "value":"Không bật được dịch vụ Liên lạc qua vệ tinh Dạ lan hương trong khi gọi điện.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"start_hyacinth_satellite_communications",
+            "value":"Liên lạc qua vệ tinh Dạ lan hương",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_service_settings_window_mode",
+            "value":"Dịch vụ Liên lạc qua vệ tinh Dạ lan hương không hỗ trợ chế độ đa cửa sổ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_service_airplane_mode",
+            "value":"Dịch vụ Liên lạc qua vệ tinh Dạ lan hương không hoạt động ở Chế độ Máy bay.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_service_tiantong_mode",
+            "value":"Dịch vụ Liên lạc qua vệ tinh Dạ lan hương không hoạt động trong khi đang sử dụng dịch vụ Liên lạc qua vệ tinh Tiantong.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_service_not_enabled",
+            "value":"Dịch vụ Liên lạc qua vệ tinh Dạ lan hương chưa bật.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellites_not_available",
+            "value":"Không xác nhận được tình trạng hoạt động của vệ tinh tại thời điểm này. Vẫn tiếp tục?",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_service_settings_window_suggest",
+            "value":"Mở cửa sổ này ở chế độ toàn màn hình để bật dịch vụ Liên lạc qua vệ tinh Dạ lan hương.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"esim_card_num_no_space",
+            "value":"eSIM %s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_communications",
+            "value":"Liên lạc qua vệ tinh Dạ lan hương",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_service_no_sim_card",
+            "value":"Vui lòng lắp thẻ SIM đã kích hoạt dịch vụ Liên lạc qua vệ tinh Dạ lan hương rồi thử lại.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"exit_hyacinth_satellite_service_tips",
+            "value":"Tắt dịch vụ Liên lạc qua vệ tinh Dạ lan hương?",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"phone_ring_Card3",
+            "value":"eSIM %1$s: %2$s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_notification_title",
+            "value":"Liên lạc qua vệ tinh Dạ lan hương đã tắt",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"new_calling_can_only_use_in_full_screen",
+            "value":"Dịch vụ Gọi điện nâng cao chỉ có sẵn ở chế độ xem toàn màn hình.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"New_CAll_DESC",
+            "value":"Dịch vụ này do nhà mạng của bạn cung cấp.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_activate_text",
+            "value":"<body><span style='normal'>Với Dạ lan hương, bạn có thể thực hiện cuộc gọi và gửi tin nhắn ngay cả khi ở ngoài vùng phủ sóng mạng. Do vệ tinh Dạ lan hương vẫn đang được triển khai nên dịch vụ này hiện chỉ có sẵn vào một số thời điểm nhất định trong ngày. Trong quá trình sử dụng, dịch vụ này sẽ truy cập thông tin về </span><span style='bold'>vị trí và mạng</span><span style='normal'> của bạn để xác nhận tính khả dụng của vệ tinh.</span></body>",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_activate_immediatly",
+            "value":"Kích hoạt ngay",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_activate",
+            "value":"Kích hoạt Dạ lan hương",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"celia",
+            "value":"Cuộc gọi Celia",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"call_setting_call",
+            "value":"Đang gọi",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_service_settings_skytone_mode",
+            "value":"Không hoạt động khi sử dụng SkyTone.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"tiantong_satellite_service_hyacinth_mode",
+            "value":"Dịch vụ Liên lạc qua vệ tinh Tiantong không hoạt động trong khi đang sử dụng dịch vụ Liên lạc qua vệ tinh Dạ lan hương.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"send_success",
+            "value":"Đã gửi thành công",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"im_message_smc_satellite_no_receipt_tips",
+            "value":"Tin nhắn có thể chưa đến được vệ tinh. Hãy thử lại ở khu vực ngoài trời thông thoáng.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"callSetting_title",
+            "value":"Cài đặt cuộc gọi",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_available_time_tomorrow",
+            "value":"Ngày mai: %1$s – %2$s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_available_time_today",
+            "value":"%1$s – %2$s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_available_time_tomorrow_end",
+            "value":"%1$s – %2$s (ngày mai)",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_available_tips",
+            "value":"Có sẵn:\n%1$s\n%2$s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_request_location_permission",
+            "value":"Quyền truy cập vị trí chưa được cấp. Cấp ngay?",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_location_enable_permission",
+            "value":"Cấp quyền truy cập",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_available_tips_single",
+            "value":"Có sẵn: %s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"float_better_angle",
+            "value":"Tìm một góc tốt hơn",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"call_setting_celia_description",
+            "value":"Hãy để Celia trả lời và tóm tắt nội dung các cuộc gọi cho bạn.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"hyacinth_available_time_refresh",
+            "value":"Các khoảng thời gian có sẵn sẽ tự động được làm mới khi tắt dịch vụ Liên lạc qua vệ tinh Tiantong.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"unlock_after_call_notification_descriptions_normal",
+            "value":"Cuộc gọi đến luôn hiển thị dưới dạng biểu ngữ khi bạn đang chơi trò chơi, tìm đường trên bản đồ hoặc xem ảnh và video ở chế độ toàn màn hình.\n\nỞ Chế độ Người cao tuổi, cuộc gọi đến luôn được hiển thị ở chế độ toàn màn hình.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"call_setting_getting_hyacinth_available_time",
+            "value":"Đang kiểm tra khoảng thời gian hoạt động…",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_available_time_connection_use",
+            "value":"Quyền này được dùng để kiểm tra các khoảng thời gian hoạt động và kết nối với vệ tinh.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"need_system_location",
+            "value":"Bật Dịch vụ Vị trí trong Cài đặt",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"not_support_toast",
+            "value":"Thao tác này không được hỗ trợ trong chế độ này."
+        }
+    ]
+}

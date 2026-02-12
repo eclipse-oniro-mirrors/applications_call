@@ -1,0 +1,944 @@
+{
+    "plural":[
+        {
+            "name":"EarthquakeWarningTitle2",
+            "value":[
+                {
+                    "quantity":"one",
+                    "value":"مركز الزلزال على بُعد كيلومتر واحد",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"other",
+                    "value":"مركز الزلزال على بُعد %d كيلومتر",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"zero",
+                    "value":"مركز الزلزال على بُعد %d كيلومترات",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"few",
+                    "value":"مركز الزلزال على بُعد %d كيلومترات",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"many",
+                    "value":"مركز الزلزال على بُعد %d كيلومترًا",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"two",
+                    "value":"مركز الزلزال على بُعد كيلومترين",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"EarthquakeKilometer",
+            "value":[
+                {
+                    "quantity":"one",
+                    "value":"%d كم",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"other",
+                    "value":"%d كم",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"zero",
+                    "value":"%d كم",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"few",
+                    "value":"%d كم",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"many",
+                    "value":"%d كم",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"two",
+                    "value":"%d كم",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"Sos_emergency_notice_fiveTimes",
+            "value":[
+                {
+                    "quantity":"one",
+                    "value":"اضغط على زر التشغيل مرة واحدة لإجراء مكالمة طوارئ.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"other",
+                    "value":"اضغط على زر التشغيل %d مرة متتالية لإجراء مكالمة طوارئ.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"zero",
+                    "value":"اضغط على زر التشغيل %d مرات متتالية لإجراء مكالمة طوارئ.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"few",
+                    "value":"اضغط على زر التشغيل %d مرات متتالية لإجراء مكالمة طوارئ.",
+                    "attr":{
+                        "priority":"LT"
+                    }
+                },
+                {
+                    "quantity":"many",
+                    "value":"اضغط على زر التشغيل %d مرة متتالية لإجراء مكالمة طوارئ.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"two",
+                    "value":"اضغط على زر التشغيل مرتين متتاليتين لإجراء مكالمة طوارئ.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"PermissionDescriptionContent_1",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"تحتاج هذه الخدمة إلى منحها %d إذن. يمكنك إبطالها متى شئت من \"الإعدادات > التطبيقات والخدمات > المزيد من التطبيقات > النجدة > الموقع\".",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"تحتاج هذه الخدمة إلى منحها إذن واحد. يمكنك إبطاله متى شئت من \"الإعدادات > التطبيقات والخدمات > المزيد من التطبيقات > طلب النجدة > الموقع\".",
+                    "attr":{
+                        "priority":"LT"
+                    }
+                },
+                {
+                    "quantity":"zero",
+                    "value":"تحتاج هذه الخدمة إلى منحها %d أذونات. يمكنك إبطالها متى شئت من \"الإعدادات > التطبيقات والخدمات > المزيد من التطبيقات > النجدة > الموقع\".",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"few",
+                    "value":"تحتاج هذه الخدمة إلى منحها %d أذونات. يمكنك إبطالها متى شئت من \"الإعدادات > التطبيقات والخدمات > المزيد من التطبيقات > طلب النجدة > الموقع\".",
+                    "attr":{
+                        "priority":"LT"
+                    }
+                },
+                {
+                    "quantity":"many",
+                    "value":"تحتاج هذه الخدمة إلى منحها %d إذن. يمكنك إبطالها متى شئت من \"الإعدادات > التطبيقات والخدمات > المزيد من التطبيقات > النجدة > الموقع\".",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"two",
+                    "value":"تحتاج هذه الخدمة إلى منحها إذنين. يمكنك إبطالهما متى شئت من \"الإعدادات > التطبيقات والخدمات > المزيد من التطبيقات > طلب النجدة > الموقع\".",
+                    "attr":{
+                        "priority":"LT"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"Sos_Auto_Call_Detail",
+            "value":[
+                {
+                    "quantity":"one",
+                    "value":"إذا ضغطت على زر التشغيل مرة واحدة، فسيتصل جهازك بجهات اتصال الطوارئ الخاصة بك حتى ترد إحداها على المكالمة وسيشغّل رسالة طلب النجدة المسجلة مسبقًا.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"other",
+                    "value":"إذا ضغطت على زر التشغيل %d مرة، فسيتصل جهازك بجهات اتصال الطوارئ الخاصة بك حتى ترد إحداها على المكالمة وسيشغّل رسالة طلب النجدة المسجلة مسبقًا.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"zero",
+                    "value":"إذا ضغطت على زر التشغيل %d مرات، فسيتصل جهازك بجهات اتصال الطوارئ الخاصة بك حتى ترد إحداها على المكالمة وسيشغّل رسالة طلب النجدة المسجلة مسبقًا.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"few",
+                    "value":"إذا ضغطت على زر التشغيل %d مرات، فسيتصل جهازك بجهات اتصال الطوارئ الخاصة بك حتى ترد إحداها على المكالمة وسيشغّل رسالة طلب النجدة المسجلة مسبقًا.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"many",
+                    "value":"إذا ضغطت على زر التشغيل %d مرة، فسيتصل جهازك بجهات اتصال الطوارئ الخاصة بك حتى ترد إحداها على المكالمة وسيشغّل رسالة طلب النجدة المسجلة مسبقًا.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"two",
+                    "value":"إذا ضغطت على زر التشغيل مرتين، فسيتصل جهازك بجهات اتصال الطوارئ الخاصة بك حتى ترد إحداها على المكالمة وسيشغّل رسالة طلب النجدة المسجلة مسبقًا.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"Sos_Permission_Description_1",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"تحتاج هذه الخدمة إلى منحها %d إذن. يمكنك إبطالها متى شئت من \"الإعدادات > التطبيقات والخدمات > المزيد من التطبيقات > النجدة > الموقع\".",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"تحتاج هذه الخدمة إلى منحها إذن واحد. يمكنك إبطاله متى شئت من \"الإعدادات > التطبيقات والخدمات > المزيد من التطبيقات > النجدة > الموقع\".",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"zero",
+                    "value":"تحتاج هذه الخدمة إلى منحها %d أذونات. يمكنك إبطالها متى شئت من \"الإعدادات > التطبيقات والخدمات > المزيد من التطبيقات > النجدة > الموقع\".",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"few",
+                    "value":"تحتاج هذه الخدمة إلى منحها %d أذونات. يمكنك إبطالها متى شئت من \"الإعدادات > التطبيقات والخدمات > المزيد من التطبيقات > النجدة > الموقع\".",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"many",
+                    "value":"تحتاج هذه الخدمة إلى منحها %d إذنًا. يمكنك إبطالها متى شئت من \"الإعدادات > التطبيقات والخدمات > المزيد من التطبيقات > النجدة > الموقع\".",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"two",
+                    "value":"تحتاج هذه الخدمة إلى منحها إذنين. يمكنك إبطالهما متى شئت من \"الإعدادات > التطبيقات والخدمات > المزيد من التطبيقات > النجدة > الموقع\".",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"Earthquake_second",
+            "value":[
+                {
+                    "quantity":"one",
+                    "value":"ثانية واحدة",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"other",
+                    "value":"%d ثانية",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"zero",
+                    "value":"%d ثوانٍ",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"few",
+                    "value":"%d ثوانٍ",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"many",
+                    "value":"%d ثانية",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"two",
+                    "value":"ثانيتان",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"Sos_Auto_Send_info_Detail",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"إذا ضغطت على زر التشغيل %d مرة، فسيرسل جهازك رسالة نداء استغاثة تحتوي على موقعك إلى جهات اتصال الطوارئ.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"إذا ضغطت على زر التشغيل مرة واحدة، فسيرسل جهازك رسالة نداء استغاثة تحتوي على موقعك إلى جهات اتصال الطوارئ.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"zero",
+                    "value":"إذا ضغطت على زر التشغيل %d مرات، فسيرسل جهازك رسالة نداء استغاثة تحتوي على موقعك إلى جهات اتصال الطوارئ.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"few",
+                    "value":"إذا ضغطت على زر التشغيل %d مرات، فسيرسل جهازك رسالة نداء استغاثة تحتوي على موقعك إلى جهات اتصال الطوارئ.",
+                    "attr":{
+                        "priority":"LT"
+                    }
+                },
+                {
+                    "quantity":"many",
+                    "value":"إذا ضغطت على زر التشغيل %d مرة، فسيرسل جهازك رسالة نداء استغاثة تحتوي على موقعك إلى جهات اتصال الطوارئ.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"two",
+                    "value":"إذا ضغطت على زر التشغيل مرتين، فسيرسل جهازك رسالة نداء استغاثة تحتوي على موقعك إلى جهات اتصال الطوارئ.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"Sos_Fall_Down_Permission_Description",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"تتطلب هذه الخدمة %d إذن. ويمكنك إبطالها متى شئت بالانتقال إلى \"الإعدادات > التطبيقات والخدمات > المزيد من التطبيقات > النجدة > الموقع\".",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"تتطلب هذه الخدمة %d إذنًا واحدًا. ويمكنك إبطاله متى شئت بالانتقال إلى \"الإعدادات > التطبيقات والخدمات > المزيد من التطبيقات > النجدة > الموقع\".",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"zero",
+                    "value":"تتطلب هذه الخدمة %d أذونات. ويمكنك إبطالها متى شئت بالانتقال إلى \"الإعدادات > التطبيقات والخدمات > المزيد من التطبيقات > النجدة > الموقع\".",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"few",
+                    "value":"تتطلب هذه الخدمة %d أذونات. ويمكنك إبطالها متى شئت بالانتقال إلى \"الإعدادات > التطبيقات والخدمات > المزيد من التطبيقات > النجدة > الموقع\".",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"many",
+                    "value":"تتطلب هذه الخدمة %d إذنًا. ويمكنك إبطالها متى شئت بالانتقال إلى \"الإعدادات > التطبيقات والخدمات > المزيد من التطبيقات > النجدة > الموقع\".",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"two",
+                    "value":"تتطلب هذه الخدمة %d إذنين. ويمكنك إبطالهما متى شئت بالانتقال إلى \"الإعدادات > التطبيقات والخدمات > المزيد من التطبيقات > النجدة > الموقع\".",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"Sos_Car_Accident_Permission_Description",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"تتطلب هذه الخدمة %d إذن. ويمكنك إبطالها متى شئت بالانتقال إلى \"الإعدادات > التطبيقات والخدمات > المزيد من التطبيقات > النجدة > الموقع\".",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"تتطلب هذه الخدمة %d إذنًا واحدًا. ويمكنك إبطاله متى شئت بالانتقال إلى \"الإعدادات > التطبيقات والخدمات > المزيد من التطبيقات > النجدة > الموقع\".",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"zero",
+                    "value":"تتطلب هذه الخدمة %d أذونات. ويمكنك إبطالها متى شئت بالانتقال إلى \"الإعدادات > التطبيقات والخدمات > المزيد من التطبيقات > النجدة > الموقع\".",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"few",
+                    "value":"تتطلب هذه الخدمة %d أذونات. ويمكنك إبطالها متى شئت بالانتقال إلى \"الإعدادات > التطبيقات والخدمات > المزيد من التطبيقات > النجدة > الموقع\".",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"many",
+                    "value":"تتطلب هذه الخدمة %d إذنًا. ويمكنك إبطالها متى شئت بالانتقال إلى \"الإعدادات > التطبيقات والخدمات > المزيد من التطبيقات > النجدة > الموقع\".",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"two",
+                    "value":"تتطلب هذه الخدمة %d إذنين. ويمكنك إبطالهما متى شئت بالانتقال إلى \"الإعدادات > التطبيقات والخدمات > المزيد من التطبيقات > النجدة > الموقع\".",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"Sos_Fall_Down_Auto_Call_for_Help_Description",
+            "value":[
+                {
+                    "quantity":"one",
+                    "value":"بعد انتهاء عد تنازلي لمدة %d ثانية واحدة، سيستمر الاتصال بجهات اتصال الطوارئ لديك حتى يرد أحد منهم وسيتم تشغيل رسالة نجدة مُسجّلة مُسبقًا. وسيستلمون أيضًا رسالة نجدة تتضمن موقعك الحالي.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"other",
+                    "value":"بعد انتهاء عد تنازلي لمدة %d ثانية، سيستمر الاتصال بجهات اتصال الطوارئ لديك حتى يرد أحد منهم وسيتم تشغيل رسالة نجدة مُسجّلة مُسبقًا. وسيستلمون أيضًا رسالة نجدة تتضمن موقعك الحالي.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"zero",
+                    "value":"بعد انتهاء عد تنازلي لمدة %d ثوانٍ، سيستمر الاتصال بجهات اتصال الطوارئ لديك حتى يرد أحد منهم وسيتم تشغيل رسالة نجدة مُسجّلة مُسبقًا. وسيستلمون أيضًا رسالة نجدة تتضمن موقعك الحالي.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"few",
+                    "value":"بعد انتهاء عد تنازلي لمدة %d ثوانٍ، سيستمر الاتصال بجهات اتصال الطوارئ لديك حتى يرد أحد منهم وسيتم تشغيل رسالة نجدة مُسجّلة مُسبقًا. وسيستلمون أيضًا رسالة نجدة تتضمن موقعك الحالي.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"many",
+                    "value":"بعد انتهاء عد تنازلي لمدة %d ثانية، سيستمر الاتصال بجهات اتصال الطوارئ لديك حتى يرد أحد منهم وسيتم تشغيل رسالة نجدة مُسجّلة مُسبقًا. وسيستلمون أيضًا رسالة نجدة تتضمن موقعك الحالي.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"two",
+                    "value":"بعد انتهاء عد تنازلي لمدة %d ثانيتين، سيستمر الاتصال بجهات اتصال الطوارئ لديك حتى يرد أحد منهم وسيتم تشغيل رسالة نجدة مُسجّلة مُسبقًا. وسيستلمون أيضًا رسالة نجدة تتضمن موقعك الحالي.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"Sos_Car_Accident_Auto_Call_for_Help_Description",
+            "value":[
+                {
+                    "quantity":"one",
+                    "value":"بعد انتهاء عد تنازلي لمدة %d ثانية واحدة، سيستمر الاتصال بجهات اتصال الطوارئ لديك حتى يرد أحد منهم وسيتم تشغيل رسالة نجدة مُسجّلة مُسبقًا. وسيستلمون أيضًا رسالة نجدة تتضمن موقعك الحالي.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"other",
+                    "value":"بعد انتهاء عد تنازلي لمدة %d ثانية، سيستمر الاتصال بجهات اتصال الطوارئ لديك حتى يرد أحد منهم وسيتم تشغيل رسالة نجدة مُسجّلة مُسبقًا. وسيستلمون أيضًا رسالة نجدة تتضمن موقعك الحالي.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"zero",
+                    "value":"بعد انتهاء عد تنازلي لمدة %d ثوانٍ، سيستمر الاتصال بجهات اتصال الطوارئ لديك حتى يرد أحد منهم وسيتم تشغيل رسالة نجدة مُسجّلة مُسبقًا. وسيستلمون أيضًا رسالة نجدة تتضمن موقعك الحالي.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"few",
+                    "value":"بعد انتهاء عد تنازلي لمدة %d ثوانٍ، سيستمر الاتصال بجهات اتصال الطوارئ لديك حتى يرد أحد منهم وسيتم تشغيل رسالة نجدة مُسجّلة مُسبقًا. وسيستلمون أيضًا رسالة نجدة تتضمن موقعك الحالي.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"many",
+                    "value":"بعد انتهاء عد تنازلي لمدة %d ثانية، سيستمر الاتصال بجهات اتصال الطوارئ لديك حتى يرد أحد منهم وسيتم تشغيل رسالة نجدة مُسجّلة مُسبقًا. وسيستلمون أيضًا رسالة نجدة تتضمن موقعك الحالي.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"two",
+                    "value":"بعد انتهاء عد تنازلي لمدة %d ثانيتين، سيستمر الاتصال بجهات اتصال الطوارئ لديك حتى يرد أحد منهم وسيتم تشغيل رسالة نجدة مُسجّلة مُسبقًا. وسيستلمون أيضًا رسالة نجدة تتضمن موقعك الحالي.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"auto_answer_call_after_seconds",
+            "value":[
+                {
+                    "quantity":"one",
+                    "value":"سيتم الرد تلقائيًا بعد ثانية واحدة",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"other",
+                    "value":"سيتم الرد تلقائيًا بعد %d ثانية",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"zero",
+                    "value":"سيتم الرد تلقائيًا بعد %d ثوانٍ",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"few",
+                    "value":"سيتم الرد تلقائيًا بعد %d ثوانٍ",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"many",
+                    "value":"سيتم الرد تلقائيًا بعد %d ثانية",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"two",
+                    "value":"سيتم الرد تلقائيًا بعد ثانيتين",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"emergency_rescue_retry_tips",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"أُعيدَت المحاولة %d مرة",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"أُعيدَت المحاولة مرة واحدة",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"zero",
+                    "value":"أُعيدَت المحاولة %d مرات",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"few",
+                    "value":"أُعيدَت المحاولة %d مرات",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"many",
+                    "value":"أُعيدَت المحاولة %d مرة",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"two",
+                    "value":"أُعيدَت المحاولة مرتين",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"emergency_rescue_auto_send_rescue_message_all",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"تبقّت %d ثانية للانتقال لإرسال رسالة نجدة.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"تبقّت ثانية واحدة للانتقال لإرسال رسالة نجدة.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"zero",
+                    "value":"تبقّت %d ثوانٍ للانتقال لإرسال رسالة نجدة.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"few",
+                    "value":"تبقّت %d ثوانٍ للانتقال لإرسال رسالة نجدة.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"many",
+                    "value":"تبقّت %d ثانية للانتقال لإرسال رسالة نجدة.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"two",
+                    "value":"تبقّت ثانيتين للانتقال لإرسال رسالة نجدة.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"emergency_rescue_send_rescue_message",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"إرسال رسالة نجدة (%d)",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"إرسال رسالة نجدة (%d)",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"zero",
+                    "value":"إرسال رسالة نجدة (%d)",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"few",
+                    "value":"إرسال رسالة نجدة (%d)",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"many",
+                    "value":"إرسال رسالة نجدة (%d)",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"two",
+                    "value":"إرسال رسالة نجدة (%d)",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"emergency_rescue_exit_once_content",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"لن تتمكن من الاتصال بأفراد الإنقاذ لمدة %d دقيقة بعد الخروج. تأكد من أنك آمن قبل الخروج.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"لن تتمكن من الاتصال بأفراد الإنقاذ لمدة دقيقة واحدة بعد الخروج. تأكد من أنك آمن قبل الخروج.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"zero",
+                    "value":"لن تتمكن من الاتصال بأفراد الإنقاذ لمدة %d دقائق بعد الخروج. تأكد من أنك آمن قبل الخروج.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"few",
+                    "value":"لن تتمكن من الاتصال بأفراد الإنقاذ لمدة %d دقائق بعد الخروج. تأكد من أنك آمن قبل الخروج.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"many",
+                    "value":"لن تتمكن من الاتصال بأفراد الإنقاذ لمدة %d دقيقة بعد الخروج. تأكد من أنك آمن قبل الخروج.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"two",
+                    "value":"لن تتمكن من الاتصال بأفراد الإنقاذ لمدة دقيقتين بعد الخروج. تأكد من أنك آمن قبل الخروج.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"emergency_rescue_message_over_word_tips",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"أكثر من الحد بمقدار %d رمز",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"أكثر من الحد بمقدار رمز واحد",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"zero",
+                    "value":"أكثر من الحد بمقدار %d رموز",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"few",
+                    "value":"أكثر من الحد بمقدار %d رموز",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"many",
+                    "value":"أكثر من الحد بمقدار %d رمزًا",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"two",
+                    "value":"أكثر من الحد بمقدار رمزين",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"emergency_rescue_send_immediately",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"إرسال رسالة نجدة (%d)",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"إرسال رسالة نجدة (%d)",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"zero",
+                    "value":"إرسال رسالة نجدة (%d)",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"few",
+                    "value":"إرسال رسالة نجدة (%d)",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"many",
+                    "value":"إرسال رسالة نجدة (%d)",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"two",
+                    "value":"إرسال رسالة نجدة (%d)",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"emc_rescue_permission_notice_content_1",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"تتطلب هذه الخدمة %d إذن:",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"تتطلب هذه الخدمة إذنًا واحدًا:",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"zero",
+                    "value":"تتطلب هذه الخدمة %d أذونات:",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"few",
+                    "value":"تتطلب هذه الخدمة %d أذونات:",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"many",
+                    "value":"تتطلب هذه الخدمة %d إذنًا:",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"two",
+                    "value":"تتطلب هذه الخدمة إذنين:",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        }
+    ]
+}

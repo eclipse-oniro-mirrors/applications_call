@@ -1,0 +1,11 @@
+{
+  "app": {
+    "bundleName": "com.ohos.callrecorder",
+    "vendor": "huawei",
+    "versionCode": 60000318,
+    "versionName": "6.0.0.318",
+    "icon": "$media:app_icon",
+    "label": "$string:app_name",
+    "configuration": "$profile:configuration"
+  }
+}

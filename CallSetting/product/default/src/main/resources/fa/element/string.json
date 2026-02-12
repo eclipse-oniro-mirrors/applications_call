@@ -1,0 +1,207 @@
+{
+    "string":[
+        {
+            "name":"beidou_satellite_message_service_no_net",
+            "value":"اتصال به اینترنت برقرار نیست. به اینترنت متصل شوید و دوباره امتحان کنید.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"go_use_beidou_message_tips",
+            "value":"‏«پیام‌رسانی ماهواره‌ای BeiDou» را فعال کرده‌اید. برای شروع استفاده از آن، به «پیام‌رسانی» بروید.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hangUp",
+            "value":"پایان دادن",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"start_beidou_satellite_message",
+            "value":"پیام‌رسانی ماهواره‌ای BeiDou",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"wearable_bluee_text",
+            "value":"وقتی ساعت به تلفن متصل می‌شود، دادۀ همراه ساعت به‌طور خودکار برای کمک به ذخیرۀ نیرو غیرفعال می‌شود. در صورت قطع اتصال آنها، دادۀ همراه مجدداً فعال می‌شود.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"save",
+            "value":"ذخیره کردن",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Apn_enum_None",
+            "value":"هيچ‌کدام",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"wearable_roaming_subtitle",
+            "value":"داده هنگام رومینگ فعال می‌شود. برای اطلاع از جزئیات، با شرکت مخابراتی خود تماس بگیرید.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_data_networkProvider",
+            "value":"شرکت مخابراتی",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"APN_MMS",
+            "value":"‏MMS",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"do_not_show_again",
+            "value":"دیگر نشان داده نشود",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"APN_ADD_APN",
+            "value":"\u200fAPN جدید",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"APN_common",
+            "value":"عمومی",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_data_dataRoaming",
+            "value":"رومینگ داده",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_data",
+            "value":"دادۀ تلفن همراه",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Apn_confirm",
+            "value":"تأیید",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"gotIt",
+            "value":"تأیید",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_data_charges",
+            "value":"هزینه‌های مصرف داده ممکن است اعمال شوند.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"go_use_beidou_satellite_message",
+            "value":"به برنامه «پیام‌رسانی» می‌روید؟",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"beidou_satellite_message_service_details_1",
+            "value":"‏‏%s. این قابلیت فقط برای آن دسته از کاربران China Mobile که قابلیت‌های ارتباط ماهواره‌ای را برای حساب خود فعال کرده‌اند در دسترس است. برای کسب اطلاعات بیشتر، با خدمات مشتریان China Mobile تماس بگیرید.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"beidou_satellite_message_no_sim_card_descriptions",
+            "value":"برای استفاده از این سرویس، یک سیم‌کارت China Mobile را که «پیام‌رسانی ماهواره‌ای BeiDou» در آن فعال شده است در محل قرارگیری سیم‌کارت قرار دهید.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"APN_Not_set",
+            "value":"تنظیم نشده است",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"APN_NAME",
+            "value":"نام نقطه دسترسی (APN)",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"wearable_bluee_title",
+            "value":"بلوتوث متصل است",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"go_to_use",
+            "value":"ادامه",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Apn_The_name_cannot_be_empty",
+            "value":"نام نباید خالی باشد.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"beidou_satellite_message",
+            "value":"پیام‌رسانی ماهواره‌ای BeiDou",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Apn_The_APN_cannot_be_empty",
+            "value":"\u200fAPN نباید خالی باشد.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"APN_EDIT_APN",
+            "value":"ویرایش نقطه دسترسی",
+            "attr":{
+                "priority":"translate"
+            }
+        }
+    ]
+}

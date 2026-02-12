@@ -1,0 +1,25 @@
+{
+    "string":[
+        {
+            "name":"watch_permission_history_no_record",
+            "value":"Καμία εγγραφή",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"watch_traffic_ranking_the_month",
+            "value":"Χρήση δεδ. κιν. τηλ. (μηνιαία)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"watch_loading",
+            "value":"Φόρτωση…",
+            "attr":{
+                "priority":"LT"
+            }
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "string":[
+        {
+            "name":"mmiError",
+            "value":"ปัญหาการเชื่อมต่อหรือ\u200bรหัส MMI ไม่ถูกต้อง",
+            "attr":{
+                "priority":"LT"
+            }
+        }
+    ]
+}

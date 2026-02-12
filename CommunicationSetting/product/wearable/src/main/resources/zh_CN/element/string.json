@@ -1,0 +1,29 @@
+{
+    "string":[
+        {
+            "name":"permission_access_install_app_list",
+            "value":"访问已安装应用列表"
+        },
+        {
+            "name":"watch_traffic_ranking_the_month",
+            "value":"本月数据流量排行",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"watch_permission_history_no_record",
+            "value":"无记录",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"watch_loading",
+            "value":"正在加载应用…",
+            "attr":{
+                "priority":"translate"
+            }
+        }
+    ]
+}

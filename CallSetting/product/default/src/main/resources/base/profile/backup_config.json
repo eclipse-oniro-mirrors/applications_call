@@ -1,0 +1,9 @@
+{
+  "allowToBackupRestore": true,
+  "extraInfo": {
+    "supportScene": [
+      "hmos2next",
+      "next2next"
+    ]
+  }
+}

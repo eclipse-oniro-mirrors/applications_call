@@ -1,0 +1,384 @@
+{
+    "plural":[
+        {
+            "name":"EarthquakeWarningTitle2",
+            "value":[
+                {
+                    "quantity":"one",
+                    "value":"Épicentre à %d kilomètre",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"other",
+                    "value":"Épicentre à %d kilomètres",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"EarthquakeKilometer",
+            "value":[
+                {
+                    "quantity":"one",
+                    "value":"%d km",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"other",
+                    "value":"%d km",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"Sos_emergency_notice_fiveTimes",
+            "value":[
+                {
+                    "quantity":"one",
+                    "value":"Appuyer sur le bouton marche/arrêt %d fois pour passer un appel d'urgence.",
+                    "attr":{
+                        "priority":"LT"
+                    }
+                },
+                {
+                    "quantity":"other",
+                    "value":"Appuyer sur le bouton marche/arrêt %d fois en succession rapide pour passer un appel d'urgence.",
+                    "attr":{
+                        "priority":"LT"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"PermissionDescriptionContent_1",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"Ce service a besoin d'accéder à %d éléments. Vous pouvez les révoquer à tout moment sous Paramètres > Applications et services > Plus d'applications > Urgence > Localisation.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"Ce service a besoin d'accéder à %d élément. Vous pouvez le révoquer à tout moment sous Paramètres > Applications et services > Plus d'applications > Urgence > Localisation.",
+                    "attr":{
+                        "priority":"LT"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"Sos_Auto_Call_Detail",
+            "value":[
+                {
+                    "quantity":"one",
+                    "value":"Si vous appuyez sur le bouton marche/arrêt %d fois, votre appareil appelle vos contacts en cas d'urgence jusqu'à ce qu'un contact réponde et lit un message d'urgence préenregistré.",
+                    "attr":{
+                        "priority":"LT"
+                    }
+                },
+                {
+                    "quantity":"other",
+                    "value":"Si vous appuyez sur le bouton marche/arrêt %d fois, votre appareil appelle vos contacts en cas d'urgence jusqu'à ce qu'un contact réponde et lit un message d'urgence préenregistré.",
+                    "attr":{
+                        "priority":"LT"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"Sos_Permission_Description_1",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"Ce service a besoin d'accéder à %d éléments. Vous pouvez les révoquer à tout moment sous Paramètres > Applications et services > Plus d'applications > Urgence > Localisation.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"Ce service a besoin d'accéder à %d élément. Vous pouvez le révoquer à tout moment sous Paramètres > Applications et services > Plus d'applications > Urgence > Localisation.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"Earthquake_second",
+            "value":[
+                {
+                    "quantity":"one",
+                    "value":"%d seconde",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"other",
+                    "value":"%d secondes",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"Sos_Auto_Send_info_Detail",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"Si vous appuyez rapidement sur le bouton marche/arrêt %d fois, votre appareil envoie un message d'urgence contenant votre localisation à vos contacts en cas d'urgence.",
+                    "attr":{
+                        "priority":"LT"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"Si vous appuyez sur le bouton marche/arrêt %d fois, votre appareil envoie un message d'urgence contenant votre localisation à vos contacts en cas d'urgence.",
+                    "attr":{
+                        "priority":"LT"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"Sos_Fall_Down_Permission_Description",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"Ce service nécessite les autorisations %d. Vous pouvez les révoquer à tout moment sous Paramètres > Applications et services > Plus d'applications > Urgence > Localisation.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"Ce service nécessite l'autorisation %d. Vous pouvez la révoquer à tout moment sous Paramètres > Applications et services > Plus d'applications > Urgence > Localisation.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"Sos_Car_Accident_Permission_Description",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"Ce service nécessite les autorisations %d. Vous pouvez les révoquer à tout moment sous Paramètres > Applications et services > Plus d'applications > Urgence > Localisation.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"Ce service nécessite l'autorisation %d. Vous pouvez la révoquer à tout moment sous Paramètres > Applications et services > Plus d'applications > Urgence > Localisation.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"Sos_Fall_Down_Auto_Call_for_Help_Description",
+            "value":[
+                {
+                    "quantity":"one",
+                    "value":"Après un compte à rebours de %d seconde, vos contacts en cas d'urgence seront appelés jusqu'à obtenir une réponse, et un message d'urgence préenregistré sera diffusé. Ils recevront également un message d'urgence contenant votre localisation actuelle.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"other",
+                    "value":"Après un compte à rebours de %d secondes, vos contacts en cas d'urgence seront appelés jusqu'à obtenir une réponse, et un message d'urgence préenregistré sera diffusé. Ils recevront également un message d'urgence contenant votre localisation actuelle.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"Sos_Car_Accident_Auto_Call_for_Help_Description",
+            "value":[
+                {
+                    "quantity":"one",
+                    "value":"Après un compte à rebours de %d seconde, vos contacts en cas d'urgence seront appelés jusqu'à obtenir une réponse, et un message d'urgence préenregistré sera diffusé. Ils recevront également un message d'urgence contenant votre localisation actuelle.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"other",
+                    "value":"Après un compte à rebours de %d secondes, vos contacts en cas d'urgence seront appelés jusqu'à obtenir une réponse, et un message d'urgence préenregistré sera diffusé. Ils recevront également un message d'urgence contenant votre localisation actuelle.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"auto_answer_call_after_seconds",
+            "value":[
+                {
+                    "quantity":"one",
+                    "value":"Réponse automatique dans %d seconde",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"other",
+                    "value":"Réponse automatique dans %d secondes",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"emergency_rescue_retry_tips",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"Réessayé %d fois.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"Réessayé %d fois.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"emergency_rescue_auto_send_rescue_message_all",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"%d secondes jusqu'à ce que vous soyez redirigé pour envoyer un message d'urgence.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"%d seconde jusqu'à ce que vous soyez redirigé pour envoyer un message d'urgence.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"emergency_rescue_send_rescue_message",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"Envoyer un message d'urgence (%d)",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"Envoyer un message d'urgence (%d)",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"emergency_rescue_exit_once_content",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"Vous ne pouvez pas contacter le personnel de secours pendant %d minutes après avoir quitté. Veuillez vous assurer d'être en sécurité avant de quitter.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"Vous ne pouvez pas contacter le personnel de secours pendant %d minute après avoir quitté. Veuillez vous assurer d'être en sécurité avant de quitter.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"emergency_rescue_message_over_word_tips",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"%d caractères de plus que la limite",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"%d caractère de plus que la limite",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"emergency_rescue_send_immediately",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"Envoyer un message d'urgence (%d)",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"Envoyer un message d'urgence (%d)",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"emc_rescue_permission_notice_content_1",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"Ce service nécessite %d autorisations :",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"Ce service nécessite %d autorisation :",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        }
+    ]
+}

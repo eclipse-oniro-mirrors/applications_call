@@ -1,0 +1,12 @@
+{
+  "module": {
+    "name": "common",
+    "type": "har",
+    "description": "common",
+    "deviceTypes": [
+      "default",
+      "tablet"
+    ]
+    //    "deliveryWithInstall": true
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "module": {
+    "name": "entry",
+    "type": "entry",
+    "description": "$string:module_desc",
+    "mainElement": "com.ohos.callrecorder.CallRecorderAbility",
+    "deviceTypes": [
+      "default",
+      "tablet"
+    ],
+    "deliveryWithInstall": true,
+    "installationFree": false,
+    "pages": "$profile:main_pages",
+    "extensionAbilities": [
+      {
+        "description": "$string:backup_restore",
+        "name": "BackupExtensionAbility",
+        "srcEntry": "./ets/serviceextability/BackupExtension.ets",
+        "label": "$string:backup_restore",
+        "type": "backup",
+        "exported": false,
+        "metadata": [
+          {
+            "name": "ohos.extension.backup",
+            "resource": "$profile:backup_config"
+          }
+        ]
+      },
+      {
+        "name": "com.ohos.callrecorder.CallRecorderAbility",
+        "srcEntry": "./ets/callrecorderuiextability/CallRecorderAbility.ets",
+        "description": "$string:CallrecorderAbility_desc",
+        "icon": "$media:icon",
+        "label": "$string:CallrecorderAbility_label",
+        "exported": true,
+        "permissions": [
+          "ohos.permission.GET_TELEPHONY_STATE"
+        ],
+        "type": "sys/commonUI"
+      },
+      {
+        "name": "CallRecorderDataAbility",
+        "srcEntry": "./ets/datashareextability/CallRecorderDataAbility.ets",
+        "description": "CallRecorderDataAbility",
+        "icon": "$media:app_icon",
+        "type": "dataShare",
+        "permissions": [
+          "ohos.permission.GET_TELEPHONY_STATE"
+        ],
+        "uri": "datashare://com.ohos.callrecorder.datashareAbility",
+        "exported": true
+      },
+      {
+        "name": "com.ohos.callrecorder.CallRecorderServiceExtensionAbility",
+        "srcEntry": "./ets/serviceextability/ServiceExtAbility.ets",
+        "type": "service",
+        "icon": "$media:icon",
+        "label": "$string:app_name",
+        "exported": true,
+        "permissions": [
+          "ohos.permission.SET_TELEPHONY_STATE"
+        ],
+        "description": "service"
+      },
+      {
+        "name": "com.ohos.callrecorder.MigrationServiceExtensionAbility",
+        "srcEntry": "./ets/serviceextability/MigrationServiceAbility.ets",
+        "type": "service",
+        "icon": "$media:icon",
+        "label": "$string:app_name",
+        "exported": true,
+        "permissions": [
+          "ohos.permission.FILE_ACCESS_MANAGER"
+        ],
+        "description": "service"
+      },
+      {
+        "name": "com.ohos.callrecorder.FilePermissionAbility",
+        "srcEntry": "./ets/serviceextability/FilePermissionAbility.ets",
+        "type": "service",
+        "icon": "$media:icon",
+        "label": "$string:app_name",
+        "exported": true,
+        "description": "service"
+      }
+    ],
+    requestPermissions: [
+      {
+        "name": "ohos.permission.RECORD_VOICE_CALL",
+        "reason": "$string:RECORD_VOICE_CALL",
+        "usedScene": {
+          "abilities": [
+            "com.ohos.callrecorder.CallRecorderServiceExtensionAbility"
+          ]
+        }
+      },
+      {
+        "name": "ohos.permission.READ_CONTACTS",
+        "reason": "$string:READ_CONTACTS",
+        "usedScene": {
+          "abilities": [
+            "com.ohos.callrecorder.CallRecorderServiceExtensionAbility",
+            "CallRecorderDataAbility"
+          ]
+        }
+      },
+      {
+        "name": "ohos.permission.WRITE_AUDIO",
+        "reason": "$string:WRITE_AUDIO",
+        "usedScene": {
+          "abilities": [
+            "com.ohos.callrecorder.CallRecorderServiceExtensionAbility"
+          ]
+        }
+      },
+      {
+        "name": "ohos.permission.STORAGE_MANAGER",
+        "reason": "$string:STORAGE_MANAGER",
+        "usedScene": {
+          "abilities": [
+            "com.ohos.callrecorder.CallRecorderServiceExtensionAbility"
+          ]
+        }
+      },
+      {
+        "name": "ohos.permission.MANAGE_SECURE_SETTINGS",
+        "reason": "$string:backup_restore",
+        "usedScene": {
+          "abilities": [
+            "BackupExtensionAbility"
+          ]
+        }
+      },
+      {
+        "name": "ohos.permission.FILE_ACCESS_MANAGER",
+        "reason": "$string:STORAGE_MANAGER",
+        "usedScene": {
+          "abilities": [
+            "com.ohos.callrecorder.MigrationServiceExtensionAbility"
+          ]
+        }
+      },
+      {
+        "name": "ohos.permission.MICROPHONE",
+        "reason": "$string:WRITE_AUDIO",
+        "usedScene": {
+            "abilities": [
+              "EntryAbility",
+              "CallRecorderServiceExtensionAbility"
+            ],
+          "when": "always"
+        },
+      },
+      {
+        "name": "ohos.permission.CAPTURE_VOICE_DOWNLINK_AUDIO"
+      }
+    ]
+  }
+}

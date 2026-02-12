@@ -1,0 +1,11 @@
+{
+    "string":[
+        {
+            "name":"app_name",
+            "value":"تسجيلات المكالمات",
+            "attr":{
+                "priority":"LT"
+            }
+        }
+    ]
+}

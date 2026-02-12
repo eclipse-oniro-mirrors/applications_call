@@ -1,0 +1,555 @@
+{
+    "plural":[
+        {
+            "name":"satellite_call_duration_limit_disconnect_tips",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"[TS_928932]_Maximum call duration is %1$s minutes. This call will end in %2$s seconds."
+                },
+                {
+                    "quantity":"one",
+                    "value":"[TS_928933]_Maximum call duration is %1$s minutes. This call will end in %2$s second."
+                },
+                {
+                    "quantity":"zero",
+                    "value":"[TS_928934]_Maximum call duration is %1$s minutes. This call will end in %2$s seconds."
+                },
+                {
+                    "quantity":"few",
+                    "value":"[TS_928936]_Maximum call duration is %1$s minutes. This call will end in %2$s seconds."
+                },
+                {
+                    "quantity":"many",
+                    "value":"[TS_928929]_Maximum call duration is %1$s minutes. This call will end in %2$s seconds."
+                },
+                {
+                    "quantity":"two",
+                    "value":"[TS_928930]_Maximum call duration is %1$s minutes. This call will end in %2$s seconds."
+                }
+            ]
+        },
+        {
+            "name":"satellite_call_temp_limit_disconnect_tips",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"[TS_928935]_Device too hot. Call will end in %s seconds."
+                },
+                {
+                    "quantity":"one",
+                    "value":"[TS_928928]_Device too hot. Call will end in %s second."
+                },
+                {
+                    "quantity":"zero",
+                    "value":"[TS_928939]_Device too hot. Call will end in %s seconds."
+                },
+                {
+                    "quantity":"few",
+                    "value":"[TS_928931]_Device too hot. Call will end in %s seconds."
+                },
+                {
+                    "quantity":"many",
+                    "value":"[TS_928938]_Device too hot. Call will end in %s seconds."
+                },
+                {
+                    "quantity":"two",
+                    "value":"[TS_928937]_Device too hot. Call will end in %s seconds."
+                }
+            ]
+        },
+        {
+            "name":"not_link_satellite_dialog_negative",
+            "value":[
+                {
+                    "quantity":"one",
+                    "value":"[TS_932586]_Exit (%d)"
+                },
+                {
+                    "quantity":"other",
+                    "value":"[TS_932583]_Exit (%d)"
+                },
+                {
+                    "quantity":"zero",
+                    "value":"[TS_932587]_Exit (%d)"
+                },
+                {
+                    "quantity":"few",
+                    "value":"[TS_932584]_Exit (%d)"
+                },
+                {
+                    "quantity":"many",
+                    "value":"[TS_932582]_Exit (%d)"
+                },
+                {
+                    "quantity":"two",
+                    "value":"[TS_932585]_Exit (%d)"
+                }
+            ]
+        },
+        {
+            "name":"number_identity_permission_dialog_desc",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"[TS_941589]_The service requires %d permissions:"
+                },
+                {
+                    "quantity":"one",
+                    "value":"[TS_941587]_The service requires %d permission:"
+                },
+                {
+                    "quantity":"zero",
+                    "value":"[TS_941585]_The service requires %d permissions:"
+                },
+                {
+                    "quantity":"few",
+                    "value":"[TS_941586]_The service requires %d permissions:"
+                },
+                {
+                    "quantity":"many",
+                    "value":"[TS_941588]_The service requires %d permissions:"
+                },
+                {
+                    "quantity":"two",
+                    "value":"[TS_941590]_The service requires %d permissions:"
+                }
+            ]
+        },
+        {
+            "name":"satellite_service_details_01",
+            "value":[
+                {
+                    "quantity":"one",
+                    "value":"[TS_944755]_Tiantong satellite calls are limited to a maximum of %d minute."
+                },
+                {
+                    "quantity":"other",
+                    "value":"[TS_944756]_Tiantong satellite calls are limited to a maximum of %d minutes."
+                },
+                {
+                    "quantity":"zero",
+                    "value":"[TS_944758]_Tiantong satellite calls are limited to a maximum of %d minutes."
+                },
+                {
+                    "quantity":"few",
+                    "value":"[TS_944752]_Tiantong satellite calls are limited to a maximum of %d minutes."
+                },
+                {
+                    "quantity":"many",
+                    "value":"[TS_944754]_Tiantong satellite calls are limited to a maximum of %d minutes."
+                },
+                {
+                    "quantity":"two",
+                    "value":"[TS_944757]_Tiantong satellite calls are limited to a maximum of %d minutes."
+                }
+            ]
+        },
+        {
+            "name":"im_message_smc_connecting",
+            "value":[
+                {
+                    "quantity":"one",
+                    "value":"[TS_943881]_Connecting to satellite (%d)…"
+                },
+                {
+                    "quantity":"other",
+                    "value":"[TS_943886]_Connecting to satellite (%d)…"
+                },
+                {
+                    "quantity":"zero",
+                    "value":"[TS_943888]_Connecting to satellite (%d)…"
+                },
+                {
+                    "quantity":"few",
+                    "value":"[TS_943907]_Connecting to satellite (%d)…"
+                },
+                {
+                    "quantity":"many",
+                    "value":"[TS_943900]_Connecting to satellite (%d)…"
+                },
+                {
+                    "quantity":"two",
+                    "value":"[TS_943910]_Connecting to satellite (%d)…"
+                }
+            ]
+        },
+        {
+            "name":"im_message_status_sending",
+            "value":[
+                {
+                    "quantity":"zero",
+                    "value":"[TS_943909]_Sending (%d)…"
+                },
+                {
+                    "quantity":"other",
+                    "value":"[TS_943882]_Sending (%d)…"
+                },
+                {
+                    "quantity":"few",
+                    "value":"[TS_943894]_Sending (%d)…"
+                },
+                {
+                    "quantity":"many",
+                    "value":"[TS_943889]_Sending (%d)…"
+                },
+                {
+                    "quantity":"two",
+                    "value":"[TS_943903]_Sending (%d)…"
+                },
+                {
+                    "quantity":"one",
+                    "value":"[TS_943891]_Sending (%d)…"
+                }
+            ]
+        },
+        {
+            "name":"im_message_smc_to_receive",
+            "value":[
+                {
+                    "quantity":"one",
+                    "value":"[TS_943880]_%s more reply waiting to be received"
+                },
+                {
+                    "quantity":"other",
+                    "value":"[TS_943879]_%s more replies waiting to be received"
+                },
+                {
+                    "quantity":"zero",
+                    "value":"[TS_943898]_%s more replies waiting to be received"
+                },
+                {
+                    "quantity":"few",
+                    "value":"[TS_943887]_%s more replies waiting to be received"
+                },
+                {
+                    "quantity":"many",
+                    "value":"[TS_943902]_%s more replies waiting to be received"
+                },
+                {
+                    "quantity":"two",
+                    "value":"[TS_943904]_%s more replies waiting to be received"
+                }
+            ]
+        },
+        {
+            "name":"im_message_smc_receiving",
+            "value":[
+                {
+                    "quantity":"one",
+                    "value":"[TS_943895]_Receiving (%d)…"
+                },
+                {
+                    "quantity":"other",
+                    "value":"[TS_943890]_Receiving (%d)…"
+                },
+                {
+                    "quantity":"zero",
+                    "value":"[TS_943893]_Receiving (%d)…"
+                },
+                {
+                    "quantity":"few",
+                    "value":"[TS_943905]_Receiving (%d)…"
+                },
+                {
+                    "quantity":"many",
+                    "value":"[TS_943885]_Receiving (%d)…"
+                },
+                {
+                    "quantity":"two",
+                    "value":"[TS_943912]_Receiving (%d)…"
+                }
+            ]
+        },
+        {
+            "name":"satellite_message_fifteen_minute",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"[TS_980575]_%d min ago"
+                },
+                {
+                    "quantity":"one",
+                    "value":"[TS_980574]_%d min ago"
+                },
+                {
+                    "quantity":"zero",
+                    "value":"[TS_980576]_%d min ago"
+                },
+                {
+                    "quantity":"few",
+                    "value":"[TS_980577]_%d min ago"
+                },
+                {
+                    "quantity":"many",
+                    "value":"[TS_980570]_%d min ago"
+                },
+                {
+                    "quantity":"two",
+                    "value":"[TS_980572]_%d min ago"
+                }
+            ]
+        },
+        {
+            "name":"satellite_reconnecting",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"[TS_1017145]_Reconnecting (%ds)…"
+                },
+                {
+                    "quantity":"one",
+                    "value":"[TS_1017149]_Reconnecting (%ds)…"
+                },
+                {
+                    "quantity":"zero",
+                    "value":"[TS_1017148]_Reconnecting (%ds)…"
+                },
+                {
+                    "quantity":"few",
+                    "value":"[TS_1017144]_Reconnecting (%ds)…"
+                },
+                {
+                    "quantity":"many",
+                    "value":"[TS_1017147]_Reconnecting (%ds)…"
+                },
+                {
+                    "quantity":"two",
+                    "value":"[TS_1017146]_Reconnecting (%ds)…"
+                }
+            ]
+        },
+        {
+            "name":"video_ringtone_selected_tip",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"[TS_1080693]_%d selected"
+                },
+                {
+                    "quantity":"one",
+                    "value":"[TS_1080701]_%d selected"
+                },
+                {
+                    "quantity":"zero",
+                    "value":"[TS_1080686]_%d selected"
+                },
+                {
+                    "quantity":"few",
+                    "value":"[TS_1080690]_%d selected"
+                },
+                {
+                    "quantity":"many",
+                    "value":"[TS_1080703]_%d selected"
+                },
+                {
+                    "quantity":"two",
+                    "value":"[TS_1080684]_%d selected"
+                }
+            ]
+        },
+        {
+            "name":"call_time_sec",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"[TS_1091304]_%d seconds"
+                },
+                {
+                    "quantity":"one",
+                    "value":"[TS_1091307]_%d second"
+                },
+                {
+                    "quantity":"zero",
+                    "value":"[TS_1091317]_%d seconds"
+                },
+                {
+                    "quantity":"few",
+                    "value":"[TS_1091319]_%d seconds"
+                },
+                {
+                    "quantity":"many",
+                    "value":"[TS_1091308]_%d seconds"
+                },
+                {
+                    "quantity":"two",
+                    "value":"[TS_1091312]_%d seconds"
+                }
+            ]
+        },
+        {
+            "name":"call_time_min",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"[TS_1091315]_%d minutes"
+                },
+                {
+                    "quantity":"one",
+                    "value":"[TS_1091314]_%d minute"
+                },
+                {
+                    "quantity":"zero",
+                    "value":"[TS_1091303]_%d minutes"
+                },
+                {
+                    "quantity":"few",
+                    "value":"[TS_1091306]_%d minutes"
+                },
+                {
+                    "quantity":"many",
+                    "value":"[TS_1091313]_%d minutes"
+                },
+                {
+                    "quantity":"two",
+                    "value":"[TS_1091302]_%d minutes"
+                }
+            ]
+        },
+        {
+            "name":"call_time_hour",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"[TS_1091309]_%d hours"
+                },
+                {
+                    "quantity":"one",
+                    "value":"[TS_1091316]_%d hour"
+                },
+                {
+                    "quantity":"zero",
+                    "value":"[TS_1091310]_%d hours"
+                },
+                {
+                    "quantity":"few",
+                    "value":"[TS_1091311]_%d hours"
+                },
+                {
+                    "quantity":"many",
+                    "value":"[TS_1091318]_%d hours"
+                },
+                {
+                    "quantity":"two",
+                    "value":"[TS_1091301]_%d hours"
+                }
+            ]
+        },
+        {
+            "name":"satellite_countdown",
+            "value":[
+                {
+                    "quantity":"many",
+                    "value":"[TS_1099129]_Satellite availability is ending. Disconnecting in %d seconds."
+                },
+                {
+                    "quantity":"other",
+                    "value":"[TS_1099133]_Satellite availability is ending. Disconnecting in %d seconds."
+                },
+                {
+                    "quantity":"one",
+                    "value":"[TS_1099128]_Satellite availability is ending. Disconnecting in %d second."
+                },
+                {
+                    "quantity":"two",
+                    "value":"[TS_1099135]_Satellite availability is ending. Disconnecting in %d seconds."
+                },
+                {
+                    "quantity":"zero",
+                    "value":"[TS_1099131]_Satellite availability is ending. Disconnecting in %d seconds."
+                },
+                {
+                    "quantity":"few",
+                    "value":"[TS_1099132]_Satellite availability is ending. Disconnecting in %d seconds."
+                }
+            ]
+        },
+        {
+            "name":"hyacinth_available_time",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"[TS_1099136]_Available for the next %d hours"
+                },
+                {
+                    "quantity":"one",
+                    "value":"[TS_1099127]_Available for the next %d hour"
+                },
+                {
+                    "quantity":"many",
+                    "value":"[TS_1099137]_Available for the next %d hours"
+                },
+                {
+                    "quantity":"two",
+                    "value":"[TS_1099134]_Available for the next %d hours"
+                },
+                {
+                    "quantity":"zero",
+                    "value":"[TS_1099138]_Available for the next %d hours"
+                },
+                {
+                    "quantity":"few",
+                    "value":"[TS_1099130]_Available for the next %d hours"
+                }
+            ]
+        },
+        {
+            "name":"not_link_hyacinth_satellite_auto_exit_notification_Text",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"[TS_1108024]_Hyacinth Satellite Communications was disabled because no satellite connection was established for %d seconds."
+                },
+                {
+                    "quantity":"one",
+                    "value":"[TS_1108026]_Hyacinth Satellite Communications was disabled because no satellite connection was established for %d second."
+                },
+                {
+                    "quantity":"two",
+                    "value":"[TS_1108028]_Hyacinth Satellite Communications was disabled because no satellite connection was established for %d seconds."
+                },
+                {
+                    "quantity":"zero",
+                    "value":"[TS_1108031]_Hyacinth Satellite Communications was disabled because no satellite connection was established for %d seconds."
+                },
+                {
+                    "quantity":"many",
+                    "value":"[TS_1108025]_Hyacinth Satellite Communications was disabled because no satellite connection was established for %d seconds."
+                },
+                {
+                    "quantity":"few",
+                    "value":"[TS_1108033]_Hyacinth Satellite Communications was disabled because no satellite connection was established for %d seconds."
+                }
+            ]
+        },
+        {
+            "name":"hyacinth_not_link_satellite_dialog_message",
+            "value":[
+                {
+                    "quantity":"zero",
+                    "value":"[TS_1108021]_No satellite connection established for %d seconds. Hyacinth Satellite Communications will be disabled."
+                },
+                {
+                    "quantity":"few",
+                    "value":"[TS_1108022]_No satellite connection established for %d seconds. Hyacinth Satellite Communications will be disabled."
+                },
+                {
+                    "quantity":"other",
+                    "value":"[TS_1108027]_No satellite connection established for %d seconds. Hyacinth Satellite Communications will be disabled."
+                },
+                {
+                    "quantity":"many",
+                    "value":"[TS_1108023]_No satellite connection established for %d seconds. Hyacinth Satellite Communications will be disabled."
+                },
+                {
+                    "quantity":"one",
+                    "value":"[TS_1108029]_No satellite connection established for %d second. Hyacinth Satellite Communications will be disabled."
+                },
+                {
+                    "quantity":"two",
+                    "value":"[TS_1108030]_No satellite connection established for %d seconds. Hyacinth Satellite Communications will be disabled."
+                }
+            ]
+        }
+    ]
+}

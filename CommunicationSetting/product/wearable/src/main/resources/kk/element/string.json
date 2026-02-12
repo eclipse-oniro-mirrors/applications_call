@@ -1,0 +1,25 @@
+{
+    "string":[
+        {
+            "name":"watch_loading",
+            "value":"Жүктелуде…",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"watch_permission_history_no_record",
+            "value":"Жазбалар жоқ",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"watch_traffic_ranking_the_month",
+            "value":"Мобильді деректер қолданысы (ай сайын)",
+            "attr":{
+                "priority":"LT"
+            }
+        }
+    ]
+}

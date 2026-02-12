@@ -1,0 +1,25 @@
+{
+    "string":[
+        {
+            "name":"watch_loading",
+            "value":"Naglo-load…",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"watch_permission_history_no_record",
+            "value":"Walang record",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"watch_traffic_ranking_the_month",
+            "value":"Paggamit ng mobile data (buwanan)",
+            "attr":{
+                "priority":"LT"
+            }
+        }
+    ]
+}

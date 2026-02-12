@@ -1,0 +1,76 @@
+{
+  "driver": {
+    "type": "OHJSUnitTest",
+    "test-timeout": "300000",
+    "bundle-name": "com.ohos.emergencycommunication",
+    "module-name": "entry_test",
+    "shell-timeout": "600000",
+    "testcase-timeout": 80000,
+    "compile-mode": "esmodule",
+    "coverage": true,
+    "package-tool-path": "D:\\Local\\coverage\\node_modules\\@ohos\\coverage"
+  },
+  "kits": [
+    {
+      "type": "ShellKit",
+      "run-command": [
+        "mount -o remount,rw /",
+        "target mount",
+        "chmod 777 system/app/EmergencyCommunication/",
+        "rm -rf /system/app/EmergencyCommunication/*"
+      ]
+    },
+    {
+      "type": "PushKit",
+      "push": [
+        "EmergencyCommunication.hap->/system/app/EmergencyCommunication/EmergencyCommunication.hap"
+      ],
+      "post-push": [
+        "chmod 777 system/app/EmergencyCommunication/EmergencyCommunication.hap",
+        "param set persist.bms.test-upgrade true",
+        "rm /data/service/el1/public/bms/bundle_manager_service/bmsdb.db",
+        "rm /data/service/el1/public/bms/bundle_manager_service/bmsdb.db-shm",
+        "rm /data/service/el1/public/bms/bundle_manager_service/bmsdb.db-wal",
+        "sync",
+        "/system/bin/udevadm trigger",
+        "reboot"
+      ]
+    },
+    {
+      "push": [
+        "EmergencyCommunicationTest.hap->/data/local/tmp/EmergencyCommunicationTest.hap"
+      ],
+      "type": "PushKit",
+      "post-push": [
+        "bm install -p /data/local/tmp/EmergencyCommunicationTest.hap"
+      ]
+    },
+    {
+      "type": "ShellKit",
+      "run-command": [
+        "mount -o remount,rw /",
+        "target mount",
+        "power-shell setmode 602"
+      ],
+      "teardown-command":[
+        "power-shell setmode 600"
+      ]
+    },
+    {
+      "type": "ShellKit",
+      "run-command": [
+        "param set persist.usb.setting.gadget_conn_prompt false",
+        "reboot",
+        "wait 5",
+        "power-shell wakeup",
+        "uinput -T -m 540 1752 540 751 500",
+        "power-shell timeout -o 1800000",
+        "power-shell setmode 602",
+        "uinput -T -c 630 1700"
+      ],
+      "teardown-command": [
+        "power-shell setmode 600"
+      ]
+    }
+  ]
+}

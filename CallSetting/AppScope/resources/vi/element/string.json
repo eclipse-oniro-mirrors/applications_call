@@ -1,0 +1,12 @@
+{
+    "string":[
+        {
+            "name":"callSetting_title",
+            "value":"Cài đặt cuộc gọi",
+            "attr":{
+                "priority":"translate"
+            }
+        }
+    ]
+}
+

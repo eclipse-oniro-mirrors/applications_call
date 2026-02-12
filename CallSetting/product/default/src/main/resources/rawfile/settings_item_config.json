@@ -1,0 +1,20 @@
+[
+  {
+    "itemName": "mobile_data",
+    "itemType": "Switch",
+    "itemResourceId": "mobile_data",
+    "parentKey": "mobile_network_entry"
+  },
+  {
+    "itemName": "skycom_satellite_communications",
+    "itemType": "Switch",
+    "itemResourceId": "skycom_satellite_communications",
+    "parentKey": "mobile_network_entry"
+  },
+  {
+    "itemName": "changlian_beidou_satellite_news",
+    "itemType": "Switch",
+    "itemResourceId": "changlian_beidou_satellite_news",
+    "parentKey": "mobile_network_entry"
+  }
+]

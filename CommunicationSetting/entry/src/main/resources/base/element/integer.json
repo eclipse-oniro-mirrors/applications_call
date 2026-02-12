@@ -1,0 +1,184 @@
+{
+  "integer": [
+    {
+      "name": "1099",
+      "value": 0,
+      "comment": "netmanager, System"
+    },
+    {
+      "name": "1009",
+      "value": 1,
+      "comment": "dfs, General"
+    },
+    {
+      "name": "3011",
+      "value": 5,
+      "comment": "media, Media service"
+    },
+    {
+      "name": "3049",
+      "value": 1,
+      "comment": "device_attest, General"
+    },
+    {
+      "name": "1077",
+      "value": 5,
+      "comment": "drmserver, Media service"
+    },
+    {
+      "name": "3562",
+      "value": 4,
+      "comment": "device_cert_manager_server, Security service"
+    },
+    {
+      "name": "7996",
+      "value": 0,
+      "comment": "cloud_develop_proxy, System"
+    },
+    {
+      "name": "1013",
+      "value": 5,
+      "comment": "media_service, Media service"
+    },
+    {
+      "name": "7900",
+      "value": 0,
+      "comment": "api_policy, System"
+    },
+    {
+      "name": "3333",
+      "value": 4,
+      "comment": "device_auth, Security service"
+    },
+    {
+      "name": "3819",
+      "value": 1,
+      "comment": "time, General"
+    },
+    {
+      "name": "3553",
+      "value": 4,
+      "comment": "dlp_credential, Security service"
+    },
+    {
+      "name": "7878",
+      "value": 1,
+      "comment": "aam_connection_svc, General"
+    },
+    {
+      "name": "3111",
+      "value": 0,
+      "comment": "app_domain_verify, System"
+    },
+    {
+      "name": "66006",
+      "value": 0,
+      "comment": "gameservice_server, System"
+    },
+    {
+      "name": "6666",
+      "value": 6,
+      "comment": "update, Update"
+    },
+    {
+      "name": "7997",
+      "value": 0,
+      "comment": "client_cloud_accelerate, System"
+    },
+    {
+      "name": "65936",
+      "value": 4,
+      "comment": "trusted_ring_service, Security service"
+    },
+    {
+      "name": "66054",
+      "value": 0,
+      "comment": "client_cloud_cache_service, System"
+    },
+    {
+      "name": "7518",
+      "value": 0,
+      "comment": "findnetwork, System"
+    },
+    {
+      "name": "3815",
+      "value": 0,
+      "comment": "download, System"
+    },
+    {
+      "name": "5527",
+      "value": 7,
+      "comment": "caas_service, RTC service"
+    },
+    {
+      "name": "7004",
+      "value": 0,
+      "comment": "device_activate_service, System"
+    },
+    {
+      "name": "7999",
+      "value": 0,
+      "comment": "cloud_interface_auth, System"
+    },
+    {
+      "name": "7508",
+      "value": 0,
+      "comment": "hianalytics, System"
+    },
+    {
+      "name": "3012",
+      "value": 0,
+      "comment": "ddms, System"
+    },
+    {
+      "name": "3058",
+      "value": 0,
+      "comment": "account, System"
+    },
+    {
+      "name": "1024",
+      "value": 0,
+      "comment": "dsoftbus, System"
+    },
+    {
+      "name": "7008",
+      "value": 0,
+      "comment": "id, System"
+    },
+    {
+      "name": "1021",
+      "value": 3,
+      "comment": "gps, Location services"
+    },
+    {
+      "name": "1010",
+      "value": 8,
+      "comment": "wifi, WLAN service"
+    },
+    {
+      "name": "7998",
+      "value": 0,
+      "comment": "media_cloud_enhance_service, System"
+    },
+    {
+      "name": "7023",
+      "value": 1,
+      "comment": "push, General"
+    },
+    {
+      "name": "1001",
+      "value": 9,
+      "comment": "Call service"
+    },
+    {
+      "name": "1027",
+      "value": 10,
+      "comment": "NFC service"
+    },
+    {
+      "name": "1000",
+      "value": 2,
+      "comment": "hdcd, Debugging service"
+    }
+  ]
+}

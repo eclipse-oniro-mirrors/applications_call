@@ -1,0 +1,1450 @@
+{
+    "string":[
+        {
+            "name":"answering_call_prompt",
+            "value":"قُل \"%s\" للرد على المكالمة",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"incoming_call_rejection_sms",
+            "value":"الرفض برسالة نصية",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"waitingInvitation",
+            "value":"بانتظار قبول الطرف الآخر للمكالمة…",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"emergency",
+            "value":"مكالمة طوارئ",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hangUp",
+            "value":"إنهاء",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"anti_fraud_continue_call",
+            "value":"متابعة المكالمة",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"symbol_comma",
+            "value":"،\t",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"super_privacy_dialog_call_summary",
+            "value":"وضع الخصوصية الصارم يمنع الوصول إلى الميكروفون. هل تريد إيقاف تشغيله مؤقتًا لإجراء هذه المكالمة؟",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"telephone_Conference",
+            "value":"مكالمة جماعية",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"voicemail",
+            "value":"البريد الصوتي",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"open_phone_for_video_call",
+            "value":"افرد الهاتف لمكالمة الفيديو",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"switchToVoice",
+            "value":"مكالمة صوتية",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"hangUpReply",
+            "value":"الرد بـ",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"saveNumber",
+            "value":"حفظ الرقم",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"anti_fraud_hangup_black",
+            "value":"إنهاء المكالمة وحظر الرقم",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"close",
+            "value":"إغلاق",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"combine_conference_failed",
+            "value":"يتعذر إجراء مكالمات جماعية.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"hop_with_device_name",
+            "value":"متصل بجهاز «\u202a%s\u202c»",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"quickReply",
+            "value":"رد سريع",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"dialing_banner",
+            "value":"جارٍ الاتصال",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"silent_call_symbol",
+            "value":"مكالمة شديدة الخصوصية",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"keyBoard",
+            "value":"لوحة الأرقام",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"unlock_try_again",
+            "value":"افتح قفل الجهاز وأعد المحاولة",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"disable_super_privacy_and_answer",
+            "value":"الإيقاف والرد",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"voip_dialing_banner",
+            "value":"جارٍ الاتصال",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"maintain",
+            "value":"مكالمة معلقة",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"wiredHeadset",
+            "value":"سماعات رأس سلكية",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"switch_rear_camera",
+            "value":"التبديل إلى الكاميرا الخلفية",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"inTheConference",
+            "value":"مكالمة اجتماع جارية",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"voiceToVideoConfirmMsg",
+            "value":"لقد تلقيت دعوة مكالمة فيديو. هل تريد قبولها؟",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"LeatherUIExtAbility_switch_between_calls",
+            "value":"افتح الغلاف لتبديل المكالمات",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"call_assistant_voicefix",
+            "value":"تحسين الصوت",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Real_Estate_Agency",
+            "value":"عقارات",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"combine_conference_upper_limit",
+            "value":"بلغ عدد المشاركين الحد الأقصى. لذا، لا يمكن دمج المزيد من المكالمات.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"hold_calling",
+            "value":"مكالمة معلقة",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"DTMF_CONFIRM",
+            "value":"نعم",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"anti_fraud_deceived",
+            "value":"تنبيه احتيال",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_dialing",
+            "value":"جارٍ الاتصال باستخدام شبكة القمر الصناعي Tiantong",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"addToExistingContact",
+            "value":"إضافة إلى جهات اتصال موجودة",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"contactPerson",
+            "value":"جهات الاتصال",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"incoming_conflicts_video_call",
+            "value":"سيتم إنهاء المكالمة الحالية في حال الرد على المكالمة الواردة عبر الفيديو",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"anti_fraud_identifies",
+            "value":"جارٍ التحقق من وجود مخاطر",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"app_voip_dialing_banner",
+            "value":"تطبيق %s‏ | جارٍ الاتصال...",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"manageUsers",
+            "value":"إدارة المستخدمين",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"message_Failed",
+            "value":"تعذر إرسال الرسالة",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"speaker",
+            "value":"مكبر الصوت",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"incoming_conflicts_drop_existing_call",
+            "value":"الرد على هذه المكالمة سينهي المكالمة الحالية",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"DTMF_CANCEL",
+            "value":"لا",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"answeredTimeout",
+            "value":"جارٍ الاتصال…",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"audio_output",
+            "value":"مخرج الصوت",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"customSMS",
+            "value":"تخصيص",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"not_support_hold",
+            "value":"تعذر تعليق المكالمة.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"app_voip_incoming_voice",
+            "value":"تطبيق %s‏ | مكالمة صوتية",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"hangingUp",
+            "value":"جارٍ إنهاء المكالمة...",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"flip_phone_for_front_camera",
+            "value":"الكاميرا موجودة في الواجهة الخلفية للهاتف.\nلرؤية صورتك ضمن إطار تحديد المنظر، يُرجى طي الهاتف وقلبه لتواجه الكاميرا.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"hangUpCompleted",
+            "value":"انتهت المكالمة",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobileNetwork",
+            "value":"شبكة الجوال غير متوفرة.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"DTMF_DIALOG_INFO",
+            "value":"هل تريد إرسال النغمات التالية؟\n\n%s",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"videoCallToVoiceToast",
+            "value":"نظرًا لاختيار الطرف الآخر الرد كمكالمة صوتية، فقد تم التبديل إلى السماعة الداخلية",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"app_hold_conference",
+            "value":"تطبيق %s‏ | مكالمة جماعية معلقة",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"financial_management_insurance",
+            "value":"شركة تأمين/قروض",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"custom",
+            "value":"تخصيص",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"antifraud_center_phone_call",
+            "value":"مكالمة مشبوهة",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"callFailed_fdn_only",
+            "value":"المكالمات الصادرة مقيدة بواسطة أرقام الاتصال الثابت.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"callui_description",
+            "value":"الهاتف",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"answerThePhone",
+            "value":"معذرةً، أنا مشغولٌ الآن.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"switchCamera",
+            "value":"تبديل الكاميرا",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"disableChangedToEarpiece",
+            "value":"السماعة الداخلية غير مُتاحة أثناء إجراء المكالمات عبر الأقمار الصناعية",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"video_answer",
+            "value":"الرد على مكالمة فيديو",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"LeatherUIExtAbility_fraud_phone_calls",
+            "value":"مكالمة احتيالية",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"callBackReminder",
+            "value":"تذكير معاودة الاتصال",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"call_assistant_text",
+            "value":"تحويل النص إلى كلام",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"exchange",
+            "value":"تبديل",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"switch_front_camera",
+            "value":"التبديل إلى الكاميرا الأمامية",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"partyIsRinging",
+            "value":"يرن الآن…",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"sent",
+            "value":"إرسال",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"cancel",
+            "value":"إلغاء",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"keep",
+            "value":"تعليق",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"addCall",
+            "value":"إضافة مكالمة",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"select_device",
+            "value":"اختيار الجهاز",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"contactMeLater",
+            "value":"معذرةً، أنا الآن في اجتماع. سوف أتواصل معك لاحقًا.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"voiceCall",
+            "value":"مكالمة صوتية",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"advertising_and_promotion",
+            "value":"إعلان",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"anti_fraud_risk_reminder",
+            "value":"قد تكون هذه مكالمة احتيالية. رجاءً كن يقظًا.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"app_voip_incoming_video",
+            "value":"تطبيق %s‏ | مكالمة فيديو",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"super_privacy_dialog_title",
+            "value":"وضع الخصوصية الصارم",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"switchVideoCallFailed",
+            "value":"يتعذر التبديل إلى مكالمة فيديو",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"backLater",
+            "value":"سأتصل بك لاحقًا.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"incoming_conflicts_drop_current_call",
+            "value":"سيؤدي الرد على المكالمة الواردة إلى إنهاء المكالمة الحالية.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"rejectVideoMsg",
+            "value":"رفضَ الطرف الآخر طلب مكالمة الفيديو",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"connecting",
+            "value":"جارٍ الاتصال...",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"separate_conference_failed",
+            "value":"يتعذر فصل المكالمة.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"turn_off_camera",
+            "value":"إغلاق الكاميرا",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"establishVideoCallFailed",
+            "value":"يتعذر إجراء مكالمة فيديو",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"call_assistant_translate",
+            "value":"ترجمة فورية",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"LeatherUIExtAbility_in_super_privacy",
+            "value":"وضع الخصوصية الصارم يمنع الوصول إلى الميكروفون. افتح الغلاف للرد.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"beThereSoon",
+            "value":"أنا في الطريق.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"incoming_conflicts_drop_holding_call",
+            "value":"سيتم إنهاء المكالمة المعلقة في حال الرد على هذه المكالمة",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"marked",
+            "value":"\t(رقم مُعلَّم)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"app_hold_call",
+            "value":"تطبيق %s‏ | مكالمة معلقة",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"addToBlockListConfirm",
+            "value":"لن تتلقى مكالمات هاتفية أو رسائل من جهة الاتصال هذه بعد الآن.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"national_antifraud_center_tips",
+            "value":"تنبيه من المركز الوطني لمكافحة الاحتيال",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"shutDown",
+            "value":"إيقاف",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"markAs",
+            "value":"تعليم كـ",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"incomingCall",
+            "value":"مكالمة واردة",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"switchVoiceCallMsg",
+            "value":"قام الطرف الآخر بالتبديل إلى مكالمة صوتية",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"reject_call_prompt",
+            "value":"قُل \"%s\" لرفض المكالمة",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mergeCall",
+            "value":"دمج المكالمات",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"remind",
+            "value":"تذكير",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"gotIt",
+            "value":"حسنًا",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"SMS_Sent",
+            "value":"أُرسلت الرسالة إلى %s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"end_call_prompt",
+            "value":"قُل \"%s\" لإنهاء المكالمة",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"taxi",
+            "value":"سيارة أجرة",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mute",
+            "value":"كتم الصوت",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"phoneHandset",
+            "value":"السماعة الداخلية",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"callBack",
+            "value":"معاودة الاتصال:‏ \u202a%s\u202c",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"app_video_conference",
+            "value":"تطبيق %s‏ | مكالمة فيديو جماعية",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"turn_off_airplane_and_calls",
+            "value":"هل تريد إيقاف وضع الطائرة لكي تتمكن من إجراء المكالمة؟",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"CALENDAR_ACCESS_TOAST",
+            "value":"امنح أولًا إذن استخدام/الوصول إلى التقويم من الإعدادات",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"adding_contact",
+            "value":"إضافة جهات اتصال",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"blueetoothDevice",
+            "value":"جهاز بلوتوث",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"two_way_silent_call",
+            "value":"مكالمة هادئة بين الطرفين",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"super_privacy_dialog_video_call_summary",
+            "value":"وضع الخصوصية الصارم يمنع الوصول إلى الميكروفون والكاميرا. هل تريد إيقاف تشغيله مؤقتًا لإجراء هذه المكالمة؟",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"dialing",
+            "value":"جارٍ الاتصال",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"hanging_up_video_call",
+            "value":"إنهاء مكالمة فيديو",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"open_phone_to_use_handset",
+            "value":"افرد الهاتف لاستخدام السماعة الداخلية",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"recorder_toast_error_400",
+            "value":"خطأ غير معروف",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"no_cdma_volte_warn_text",
+            "value":"خدمة المكالمات غير متوفرة حاليًا على البطاقة %1$s ‏(شركة China Telecom) نظرًا لعدم تفعيل خدمات شبكة الجوال.\n\nيمكنك التواصل مع خدمة عملاء شركة China Telecom على الرقم \u202a%2$s\u202c لطلب المساعدة.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"videoCall",
+            "value":"مكالمة فيديو",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"createNewContact",
+            "value":"إنشاء جهة اتصال جديدة",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"slide_to_answer",
+            "value":"اسحب للرد",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"harassing_call",
+            "value":"مزعج",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"unknownNumber",
+            "value":"رقم غير معروف",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"ok",
+            "value":"موافق",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"closeCountDown",
+            "value":"إغلاق (%s)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"sms",
+            "value":"رسالة",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"callHold",
+            "value":"مكالمة معلقة",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"accept",
+            "value":"قبول",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"addToBlocklist",
+            "value":"إضافة إلى القائمة المحظورة",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"call_assistant_answer_setting_title",
+            "value":"الرد الآلي",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"confirmAdd",
+            "value":"إضافة",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"courier_and_food_delivery",
+            "value":"خدمة توصيل",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"call_assistant_setting_title",
+            "value":"مكالمة Celia",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_dialing_tips",
+            "value":"قد يستغرق هذا الإجراء بعض الوقت، يُرجى الانتظار.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"recording",
+            "value":"تسجيل",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"unmute",
+            "value":"إلغاء الكتم",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fraud_phone_call",
+            "value":"عالي الخطورة",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"joining",
+            "value":"جارٍ الانضمام...",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"call_assistant_brief",
+            "value":"تلخيص",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"rejectVideo",
+            "value":"رفض",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"app_voice_conference",
+            "value":"تطبيق %s‏ | مكالمة جماعية",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"ture_on_camera",
+            "value":"تشغيل الكاميرا",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone_no_delete",
+            "value":"يتعذر حذف العناصر أثناء استخدامها",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"no_video_ringtone",
+            "value":"لا توجد نغمات فيديو",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone_from_photo_picker",
+            "value":"اختيار من المعرض",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"manage",
+            "value":"إدارة",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone",
+            "value":"نغمات الفيديو",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"my_video_ringtone",
+            "value":"نغمة الفيديو الخاصة بي",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone_deselect_all",
+            "value":"إلغاء تحديد الكل",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone_select_all",
+            "value":"تحديد الكل",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone_size_limit",
+            "value":"يُرجى تحديد فيديو بحجم أصغر من %s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"delete",
+            "value":"حذف",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"use",
+            "value":"تطبيق",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone_delete_dialog_tip1",
+            "value":"هل تريد حذف العناصر المُحددة؟",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"anti_fraud_beware_being_deceived",
+            "value":"تنبيه احتيال",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"penglai_mode_notice",
+            "value":"يتعذر تنفيذ هذا الإجراء في وضع Penglai",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name": "not_support_toast",
+            "value": "هذه العملية غير مدعومة في هذا الوضع"
+        },
+        {
+            "name":"show_dialpad",
+            "value":"إظهار لوحة الاتصال",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hanging_up_voice_call",
+            "value":"إنهاء المكالمة الصوتية",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"call_turn_off_recording",
+            "value":"إنهاء التسجيل",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"InfoEdit_back",
+            "value":"رجوع",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"one_finger_double_click",
+            "value":"انقر مرتين للتفعيل",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"wired_headset_selected",
+            "value":"تم تحديد سماعات الرأس السلكية",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"answer",
+            "value":"رد، زر",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"sim_card_num_no_space",
+            "value":"بطاقة SIM %s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"recorded",
+            "value":"المدة المسجلة",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hanging_up_voice_call_button",
+            "value":"إنهاء المكالمة الصوتية، زر",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"switching_audio_channels",
+            "value":"تبديل القنوات الصوتية",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"cancel_waiting",
+            "value":"إنهاء الانتظار",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"my_video",
+            "value":"الأخبار",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hanging_up_video_call_button",
+            "value":"إنهاء مكالمة الفيديو، زر",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"call_mute_on",
+            "value":"كتم",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"call_hd_symbol",
+            "value":"دقة عالية",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"peer_video",
+            "value":"صورة الفيديو للطرف الآخر",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"blueetooth_device_selected",
+            "value":"تم تحديد جهاز البلوتوث",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hide_dialpad",
+            "value":"إخفاء لوحة الاتصال",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"notepad",
+            "value":"المفكرة",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"disableChangedToEarpiece_hyacinth",
+            "value":"السماعة الداخلية غير مُتاحة في أثناء إجراء مكالمات Hyacinth عبر القمر الصناعي",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_dialing",
+            "value":"جارٍ الاتصال عبر Hyacinth لشبكة القمر الصناعي",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"anti_fraud_best_mind_tips",
+            "value":"تنبيه من مركز مكافحة الاحتيال في بكين",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"new_calling_can_only_use_in_full_screen",
+            "value":"لا تتوفر خدمات الاتصال المتقدمة إلا في وضع العرض ملء الشاشة",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"new_calling",
+            "value":"المكالمات المحسَّنة",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"try_new_calling",
+            "value":"هل تريد تجربة المكالمات المحسَّنة؟",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"call_summarization_is_turned_off",
+            "value":"تم إيقاف ملخص المكالمة، الميزة غير متوفرة في المكالمات المتعددة الأشخاص",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"summarizeOn",
+            "value":"ملخص المكالمة",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"conference_different_cards",
+            "value":"لا يمكن إجراء مكالمات جماعية باستخدام بطاقات SIM مختلفة على الجهاز نفسه.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"please_expand_your_phone",
+            "value":"افرد الهاتف للعرض",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"summary_failed_turned_on",
+            "value":"يتعذر تشغيل ملخص المكالمة",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"summary_is_abnormal",
+            "value":"مشكلة في خدمة ملخص المكالمة، يُرجى إعادة المحاولة لاحقًا",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"conference_calls_are_not_available",
+            "value":"المكالمة الجماعية غير متاحة",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"wechat_multiCall",
+            "value":"%s | مكالمة جماعية",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"wechat_videoCall",
+            "value":"%s | مكالمة فيديو",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"wechat_voiceCall",
+            "value":"%s | مكالمة صوتية",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+	    {
+            "name":"selected_device",
+            "value":"تم تحديد‏ %s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hearing_aids_device_selected",
+            "value":"تم تحديد جهاز أداة السمع المساعدة",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"accessibility_change_speaker",
+            "value":"التبديل إلى مكبر الصوت",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"accessibility_change_phoneset",
+            "value":"التبديل إلى سماعة الهاتف",
+            "attr":{
+                "priority":"translate"
+            }
+        }
+    ]
+}

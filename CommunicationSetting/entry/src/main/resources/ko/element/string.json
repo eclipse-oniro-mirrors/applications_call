@@ -1,0 +1,662 @@
+{
+    "string":[
+        {
+            "name":"usage_reminders_index",
+            "value":"사용량 알림(SIM %d)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_manage_entry",
+            "value":"데이터 사용량",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"body_network_access_policy",
+            "value":"설정 > 모바일 데이터 > 데이터 사용량 > 네트워크 액세스에서 기본 설정을 변경할 수 있습니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"traffic_ranking",
+            "value":"앱별 데이터 사용량",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"monthly_data_reminder",
+            "value":"월별 데이터 알림",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"daily_limit_data_reminder",
+            "value":"데이터 트래픽이 %1$s(%2$s) 일일 한도에 도달하면 알림",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"category_nfc_service",
+            "value":"NFC 서비스",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"traffice_package_remain",
+            "value":"남음",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"data_limit",
+            "value":"데이터 제한",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"traffic_chart_view_net_used_day",
+            "value":"%1$s에 %2$s 사용됨",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"system_applications",
+            "value":"시스템",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"data_traffic_reached_the_limit",
+            "value":"데이터 사용 한도에 도달했습니다.\n모바일 데이터를 다시 실행하면 사용료가 부과될 수 있습니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"got_it",
+            "value":"확인",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"show_compatible_apps",
+            "value":"호환 앱 표시",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_and_WLAN",
+            "value":"모바일 데이터 및 WLAN",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"usage_reminders",
+            "value":"사용량 알림",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"loading",
+            "value":"로드 중…",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"allow_mobile_data",
+            "value":"모바일 데이터",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"unlimited_data",
+            "value":"무제한 데이터",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"reopen",
+            "value":"다시 활성화",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"wlan_ranking_of_this_month",
+            "value":"이번 달 WLAN에서의 사용량",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"allow_WLAN",
+            "value":"WLAN",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"traffic_ranking_of_this_month",
+            "value":"이번 달 데이터 사용량",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data",
+            "value":"모바일 데이터",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"data_plan_settings_index",
+            "value":"데이터 플랜 설정(SIM %d)",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"flow_used",
+            "value":"사용한 데이터",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"confirm",
+            "value":"확인",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"more_data_usage_settings_title",
+            "value":"데이터 설정 더 보기",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"not_set",
+            "value":"설정되지 않음",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"hide_compatible_apps",
+            "value":"호환 앱 숨기기",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"hide_system_processes",
+            "value":"시스템 프로세스 숨기기",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"disable_mobile_data",
+            "value":"모바일 데이터 사용 중지됨",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"no_networked_apps",
+            "value":"네트워크 미연결 앱",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"over_monthly_limit",
+            "value":"월별 한도를 넘을 때",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"current_sim_data_traffic_reached_the_limit",
+            "value":"이 SIM 카드의 데이터 제한에 도달하여 모바일 데이터를 사용할 수 없게 되었습니다. 모바일 데이터를 다시 사용하면 데이터 사용 요금이 부과될 수 있습니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"allow",
+            "value":"허용",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"switch_to_another_card",
+            "value":"다른 SIM으로 전환",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"forbid_operation",
+            "value":"소유자가 아니면 이 기능을 사용할 수 없습니다.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"category_location_service",
+            "value":"위치 서비스",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"data_calculation_different_from_shown",
+            "value":"이동통신사의 데이터 계산은 여기에 표시된 계산과 다를 수 있습니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"disconnect",
+            "value":"모바일 데이터 비활성화",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"daily_data_reminder",
+            "value":"일일 데이터 알림",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"category_general_service",
+            "value":"일반",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"category_rtc_service",
+            "value":"RTC 서비스",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"category_system",
+            "value":"시스템",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"today",
+            "value":"오늘",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"data_plan_settings",
+            "value":"패키지 설정",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"category_media_service",
+            "value":"미디어 서비스",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"only_wlan",
+            "value":"WLAN 전용",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"ranking_of_this_month",
+            "value":"이번 달 데이터 사용량",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"no_match_result",
+            "value":"결과 없음",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"traffic_chart_view_net_used_day_today",
+            "value":"오늘의 사용량: %1$s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"last_30_days",
+            "value":"지난 %s일",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"sim_card_2",
+            "value":"SIM 2 (%1$s)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"sim_card_1",
+            "value":"SIM 1 (%1$s)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"category_uninstalled_apps",
+            "value":"제거된 앱",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"reopen_the_current_card",
+            "value":"모바일 데이터 실행",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"not_allow",
+            "value":"거부",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"system_and_service",
+            "value":"시스템 및 서비스",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"reminder",
+            "value":"내게 알림",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"allow_mobile_data_and_WLAN",
+            "value":"모바일 데이터 및 WLAN",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"more",
+            "value":"더 보기",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"show_system_processes",
+            "value":"시스템 프로세스 표시",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"title_wifi_only_network_access_policy",
+            "value":"%s의 인터넷 액세스를 허용하시겠습니까?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_network",
+            "value":"모바일 네트워크",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"category_security_service",
+            "value":"보안 서비스",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"traffice_package_out",
+            "value":"제한 초과",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"network_no_service",
+            "value":"서비스 불가",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"wlan",
+            "value":"WLAN",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"network_title",
+            "value":"네트워크 액세스",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"monthly_limit_data_reminder",
+            "value":"데이터 트래픽이 %1$s(%2$s) 월별 한도에 도달하면 알림",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"searching",
+            "value":"검색",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"all",
+            "value":"전체",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"title_network_access_policy",
+            "value":"%s의 모바일 데이터 사용을 허용하시겠습니까?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"used_traffice",
+            "value":"데이터 사용량",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"last_24_hours",
+            "value":"지난 %s시간",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"category_update",
+            "value":"소프트웨어 업데이트",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"start_date",
+            "value":"시작일",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"category_call_service",
+            "value":"통화 서비스",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"category_WLAN_service",
+            "value":"WLAN 서비스",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"cancel",
+            "value":"취소",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"forbid",
+            "value":"허용되지 않음",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"category_debug_system",
+            "value":"디버깅 서비스",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"owner_of_device",
+            "value":"소유자",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hotspot_name",
+            "value":"테더링 및 휴대용 핫스팟",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"accessibility_unselected",
+            "value":"선택되지 않음",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"accessibility_more",
+            "value":"옵션 더 보기",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"accessibility_selected",
+            "value":"선택됨",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"accessibility_back",
+            "value":"뒤로 돌아가기",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"esim_card",
+            "value":"%1$s(%2$s)",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"esim_usage_reminders_index",
+            "value":"사용량 미리 알림(eSIM %d)",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"data_plan_esim_settings_index",
+            "value":"데이터 플랜 설정(eSIM %d)",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"flow_display_title",
+            "value":"데이터 표시",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"usage_display_summary",
+            "value":"알림 패널에 데이터 사용량을 표시합니다.",
+            "attr":{
+                "priority":"translate"
+            }
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+  "allowToBackupRestore": true,
+  "includes": ["data/storage/el2/base/"],
+  "fullBackupOnly": true,
+  "extraInfo": {
+    "supportScene": [
+      "hmos2next",
+      "next2next"
+    ]
+  }
+}

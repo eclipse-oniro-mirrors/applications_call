@@ -1,0 +1,25 @@
+{
+    "string":[
+        {
+            "name":"start_beidou_satellite_message",
+            "value":"الرسائل عبر القمر الصناعي BeiDou",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"beidou_satellite_message_service_settings_airplane_mode",
+            "value":"يتعذر استخدام خدمة الرسائل عبر القمر الصناعي BeiDou مع وضع الطائرة.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"number_identity_short_notification",
+            "value":"<body><span style='normal'>تحتاج هذه الخدمة إلى </span><span style='bold'>الاتصال بالإنترنت</span><span style='normal'> وإلى منحها الإذن باستخدام/الوصول إلى </span><span style='bold'>جهات الاتصال</span><span style='normal'>، كما تحتاج إلى قراءة جهات الاتصال الخاصة بك، وقراءة وتعديل سجل المكالمات، وقراءة ورفع/نقل محتوى الرسائل النصية. بتشغيل هذه الخدمة، فأنت تعني بذلك موافقتك على هذه البنود. يمكنك الاطلاع على </span><span style='privacyStatement'>البيان المتعلق بالتعرف على المكالمات والرسائل والخصوصية</span><span style='normal'> و</span><span style='permissionStatement'>إشعار الأذونات</span><span style='normal'> لمعرفة المزيد من التفاصيل حول كيفية معالجة معلوماتك الشخصية.</span></body>",
+            "attr":{
+                "priority":"LT"
+            }
+        }
+    ]
+}

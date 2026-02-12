@@ -1,0 +1,160 @@
+{
+    "string":[
+        {
+            "name":"auto_recording_object",
+            "value":"[TS_944046]_Apply to"
+        },
+        {
+            "name":"callrecorderUIExtensionAbility_label",
+            "value":"[TS_944036]_callrecorder"
+        },
+        {
+            "name":"CallrecorderAbility_desc",
+            "value":"[TS_944015]_description"
+        },
+        {
+            "name":"READ_CONTACTS",
+            "value":"[TS_944027]_Allow apps to read contact data"
+        },
+        {
+            "name":"deselect_all",
+            "value":"[TS_944013]_Deselect all"
+        },
+        {
+            "name":"call_meeting",
+            "value":"[TS_944010]_Conference call"
+        },
+        {
+            "name":"WRITE_AUDIO",
+            "value":"[TS_944011]_Allow applications to create public directory files"
+        },
+        {
+            "name":"select_all",
+            "value":"[TS_944048]_Select all"
+        },
+        {
+            "name":"no_number_specified",
+            "value":"[TS_944043]_No numbers"
+        },
+        {
+            "name":"mobile_data_commonly_used",
+            "value":"[TS_944025]_commonly_used"
+        },
+        {
+            "name":"closed",
+            "value":"[TS_944039]_Disabled"
+        },
+        {
+            "name":"call_auto_recorder",
+            "value":"[TS_944042]_Auto-record calls"
+        },
+        {
+            "name":"initialize_the_database",
+            "value":"[TS_944030]_initialize the database"
+        },
+        {
+            "name":"CallrecorderAbility_label",
+            "value":"[TS_944040]_label"
+        },
+        {
+            "name":"callrecorderUIExtensionAbility_desc",
+            "value":"[TS_944049]_callrecorder is system api"
+        },
+        {
+            "name":"auto_recording_object_saving",
+            "value":"[TS_944024]_auto recording object saving"
+        },
+        {
+            "name":"unknown",
+            "value":"[TS_944050]_Unknown"
+        },
+        {
+            "name":"delete",
+            "value":"[TS_944023]_Delete"
+        },
+        {
+            "name":"mobile_setting",
+            "value":"[TS_944038]_mobile setting"
+        },
+        {
+            "name":"specified_number",
+            "value":"[TS_944032]_Specified numbers"
+        },
+        {
+            "name":"automatic_recording_of_calls",
+            "value":"[TS_944014]_Automatically record calls"
+        },
+        {
+            "name":"backup_restore",
+            "value":"[TS_944035]_backup_restore"
+        },
+        {
+            "name":"automatically_record_call_viewed",
+            "value":"[TS_944028]_Call recordings can be found in the Recorder app."
+        },
+        {
+            "name":"unset_recorder",
+            "value":"[TS_944022]_Not set"
+        },
+        {
+            "name":"opened",
+            "value":"[TS_944016]_Enabled"
+        },
+        {
+            "name":"call_numbers_finish_des",
+            "value":"[TS_944031]_Saved to Phone > More > Call recordings. Tap to view."
+        },
+        {
+            "name":"STORAGE_MANAGER",
+            "value":"[TS_944017]_Allow applications to access the application space"
+        },
+        {
+            "name":"add_specified_number",
+            "value":"[TS_944026]_Add numbers"
+        },
+        {
+            "name":"call_recorder",
+            "value":"[TS_944041]_call recorder"
+        },
+        {
+            "name":"cancel",
+            "value":"[TS_944019]_Cancel"
+        },
+        {
+            "name":"is_delete_number",
+            "value":"[TS_944020]_Delete this number?"
+        },
+        {
+            "name":"RECORD_VOICE_CALL",
+            "value":"[TS_944021]_Allow application of call recording"
+        },
+        {
+            "name":"all_calls",
+            "value":"[TS_944029]_All calls"
+        },
+        {
+            "name":"module_desc",
+            "value":"[TS_944018]_module description"
+        },
+        {
+            "name":"is_delete_all_number",
+            "value":"[TS_944037]_Delete all numbers?"
+        },
+        {
+            "name":"auto_recording_object_selection",
+            "value":"[TS_944033]_auto recording object selection"
+        },
+        {
+            "name":"GET_STARTUP_INFO",
+            "value":"[TS_944034]_init call_record database"
+        },
+        {
+            "name":"add",
+            "value":"[TS_992609]_Add"
+        },
+        {
+            "name":"voice_long_press",
+            "value":"[TS_998187]_Double-tap and hold for more options"
+        }
+    ]
+}

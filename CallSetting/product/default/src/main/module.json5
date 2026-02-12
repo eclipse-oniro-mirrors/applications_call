@@ -1,0 +1,473 @@
+{
+  "module": {
+    "name": "default",
+    "type": "entry",
+    "description": "$string:module_desc",
+    "mainElement": "com.ohos.callsetting.CallSettingAbility",
+    "querySchemes": [
+      "newcallingdcsdkScheme"
+    ],
+    "deviceTypes": [
+      "default",
+      "tablet"
+    ],
+    "deliveryWithInstall": true,
+    "installationFree": false,
+    "pages": "$profile:main_pages",
+    "metadata": [
+      {
+        "name": "ArkTSPartialUpdate",
+        "value": "true"
+      },
+      {
+        "name": "com.ohos.systemui.notification_setting_ignore",
+        "value": "true"
+      },
+      {
+        "name": "action.settings.search.path",
+        "value": "searchConfig/searchPage.json"
+      },
+      {
+        "name": "number_identity_enhance_statement",
+        "value": "rawfile:number_identity_enhance_statement.json"
+      },
+      {
+        "name": "ohos.graphics2d.text.adapter_text_height"
+      }
+    ],
+    "abilities": [
+      {
+        "name": "com.ohos.callsetting.CallSettingAbility",
+        "srcEntry": "./ets/callsettingability/CallSettingAbility.ets",
+        "description": "$string:callSetting_title",
+        "icon": "$media:app_icon",
+        "label": "$string:callSetting_title",
+        "startWindowIcon": "$media:app_start_window_icon",
+        "startWindowBackground": "$color:start_window_background",
+        "exported": true,
+        "permissions": [
+          "ohos.permission.GET_TELEPHONY_STATE"
+        ],
+        "orientation": "follow_desktop"
+      },
+      {
+        "exported": true,
+        "name": "DefaultIntentBackgroundUiAbility",
+        "icon": "$media:app_icon",
+        "description": "$string:mainability_description",
+        "label": "$string:mainability_description",
+        "srcEntry": "./ets/insightintents/ability/DefaultIntentBackgroundUiAbility.ets",
+        "launchType": "singleton",
+        "orientation": "auto_rotation_restricted",
+        "startWindowIcon": "$media:app_start_window_icon",
+        "startWindowBackground": "$color:start_window_background",
+        "removeMissionAfterTerminate": true
+      },
+      {
+        "exported": true,
+        "name": "ExternalCallSettingDialogAbility",
+        "icon": "$media:app_icon",
+        "description": "$string:mainability_description",
+        "label": "$string:mainability_description",
+        "srcEntry": "./ets/CallSettingDialogAbility/ExternalCallSettingDialogAbility.ets",
+        "launchType": "singleton",
+        "orientation": "auto_rotation_restricted",
+        "startWindowIcon": "$media:app_start_window_icon",
+        "startWindowBackground": "$color:black",
+        "removeMissionAfterTerminate": true,
+        "supportWindowMode": [
+          "fullscreen"
+        ],
+        "unclearableMission": true
+      },
+      {
+        "name": "com.ohos.callsetting.SatelliteUIAbility",
+        "srcEntry": "./ets/satelliteuiability/SatelliteUIAbility.ets",
+        "description": "$string:satellite_network",
+        "label": "$string:satellite_network",
+        "icon": "$media:app_icon",
+        "startWindowIcon": "$media:app_start_window_icon",
+        "startWindowBackground": "$color:start_window_background",
+        "exported": true
+      }
+    ],
+    "extensionAbilities": [
+      {
+        "name": "com.ohos.callsetting.MainAbility",
+        "srcEntry": "./ets/MainAbility/MainAbility.ets",
+        "description": "$string:extesionability_description",
+        "icon": "$media:app_icon",
+        "label": "$string:extesionability_description",
+        "exported": true,
+        "type": "sys/commonUI",
+        "permissions": [
+          "ohos.permission.GET_TELEPHONY_STATE"
+        ],
+        "skills": [
+          {
+            "actions": [
+              "action.access.number_identity.privacy_statement"
+            ]
+          }
+        ],
+        "metadata": [
+          {
+            "name": "metadata.access.number_identity.privacy_statement",
+            "value": "privacy_statement.json"
+          }
+        ]
+      },
+      {
+        "name": "com.ohos.callsetting.CallBannerAbility",
+        "srcEntry": "./ets/CallBannerUiExtAbility/CallBannerAbility.ets",
+        "description": "service",
+        "icon": "$media:app_icon",
+        "label": "$string:mainability_description",
+        "exported": true,
+        "type": "sysDialog/common",
+        "permissions": [
+          "ohos.permission.START_SYSTEM_DIALOG"
+        ]
+      },
+      {
+        "name": "com.ohos.callsetting.SatelliteServiceNetworkAbility",
+        "srcEntry": "./ets/SatelliteServiceNetworkAbility/SatelliteServiceNetworkAbility.ets",
+        "description": "$string:extesionability_description",
+        "icon": "$media:app_icon",
+        "exported": true,
+        "label": "$string:mainability_description",
+        "type": "sys/commonUI",
+        "permissions": [
+          "ohos.permission.GET_TELEPHONY_STATE"
+        ],
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "com.ohos.callsetting.CallSettingDialogAbility",
+        "srcEntry": "./ets/CallSettingDialogAbility/CallSettingDialogAbility.ets",
+        "description": "CallSettingDialogAbility",
+        "exported": true,
+        "type": "sysDialog/common",
+        "permissions": [
+          "ohos.permission.GET_TELEPHONY_STATE"
+        ]
+      },
+      {
+        "name": "com.ohos.callsetting.SatelliteLocationDataShareAbility",
+        "srcEntry": "./ets/datashareability/SatelliteLocationDataShareAbility.ets",
+        "description": "SatelliteLocationDataShareAbility",
+        "icon": "$media:app_icon",
+        "type": "dataShare",
+        "uri": "datashare://com.ohos.callsetting.satellitedatashareAbility",
+        "exported": true,
+        "permissions": [
+          "ohos.permission.GET_TELEPHONY_STATE"
+        ]
+      },
+      {
+        "name": "com.ohos.callsetting.SatelliteService",
+        "icon": "$media:app_icon",
+        "description": "service",
+        "type": "service",
+        "srcEntry": "./ets/ServiceAbility/SatelliteService.ets",
+        "exported": true
+      },
+      {
+        "name": "NumberIdentityPrivacyStatementUIExtAbility",
+        "srcEntry": "./ets/NumberIdentityPrivacyStatementUIExtAbility/NumberIdentityPrivacyStatementUIExtAbility.ets",
+        "description": "$string:extesionability_description",
+        "icon": "$media:app_icon",
+        "label": "$string:mainability_description",
+        "type": "sys/commonUI",
+        "exported": true,
+        "permissions": [
+          "ohos.permission.GET_TELEPHONY_STATE"
+        ]
+      },
+      {
+        "name": "com.ohos.callsetting.NumberIdentityPrivacyCenterUIExtAbility",
+        "srcEntry": "./ets/NumberIdentityPrivacyStatementUIExtAbility/NumberIdentityPrivacyCenterUIExtAbility.ets",
+        "description": "$string:extesionability_description",
+        "icon": "$media:app_icon",
+        "label": "$string:mainability_description",
+        "type": "sys/commonUI",
+        "exported": true,
+        "permissions": [
+          "ohos.permission.ACCESS_SECURITY_PRIVACY_CENTER"
+        ],
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.access.business_and_privacy_statement"
+            ]
+          }
+        ],
+        "metadata": [
+          {
+            "name": "metadata.access.business_and_privacy_statement",
+            "value": 'number_identity_privacy_statement.json'
+          }
+        ]
+      },
+      {
+        "name": "DefaultIntentUiExtensionAbility",
+        "srcEntry": "./ets/insightintents/ability/DefaultIntentUiExtensionAbility.ets",
+        "type": "sys/commonUI",
+        "exported": true,
+        "permissions": [
+          "ohos.permission.ACCESS_SYSTEM_SETTINGS"
+        ]
+      },
+      {
+        "name": "com.ohos.callsetting.SatelliteUiExtentionAbility",
+        "srcEntry": "./ets/satelliteability/SatelliteUiExtentionAbility.ets",
+        "description": "SatelliteAbility",
+        "icon": "$media:app_icon",
+        "type": "sys/commonUI",
+        "exported": true
+      },
+      {
+        "name": "com.ohos.callsetting.ReportWorkSchedulerExtension",
+        "srcEntry": "./ets/WorkSchedulerExtension/ReportWorkSchedulerExtension.ets",
+        "label": "$string:mainability_description",
+        "description": "ReportWorkSchedulerExtension",
+        "type": "workScheduler",
+        "exported": true
+      },
+      {
+        "name": "com.ohos.callsetting.SatellitePrivacyStatementUIExtAbility",
+        "srcEntry": "./ets/SatelliteServiceNetworkAbility/SatellitePrivacyStatementUIExtAbility.ets",
+        "description": "$string:mainability_description",
+        "icon": "$media:app_icon",
+        "label": "$string:mainability_description",
+        "type": "sys/commonUI",
+        "exported": true,
+        "permissions": [
+          "ohos.permission.ACCESS_SECURITY_PRIVACY_CENTER"
+        ],
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.access.business_and_privacy_statement"
+            ]
+          }
+        ],
+        "metadata": [
+          {
+            "name": "metadata.access.business_and_privacy_statement",
+            "value": 'satellite_privacy_statement.json'
+          }
+        ]
+      },
+      {
+        "name": "com.ohos.callsetting.PhonePrivacyCenterUIExtAbility",
+        "srcEntry": "./ets/PhonePrivacyStatementUIExtAbility/PhonePrivacyCenterUIExtAbility.ets",
+        "description": "$string:extesionability_description",
+        "icon": "$media:app_icon",
+        "label": "$string:mainability_description",
+        "type": "sys/commonUI",
+        "exported": true,
+        "permissions": [
+          "ohos.permission.ACCESS_SECURITY_PRIVACY_CENTER"
+        ],
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.access.business_and_privacy_statement"
+            ]
+          }
+        ],
+        "metadata": [
+          {
+            "name": "metadata.access.business_and_privacy_statement",
+            "value": 'phone_privacy_statement.json'
+          }
+        ]
+      },
+      {
+        "name": "com.ohos.callsetting.CallSettingUIExtAbility",
+        "srcEntry": "./ets/callsettingextability/CallSettingExtAbility.ets",
+        "description": "CallSettingUIExtAbility",
+        "icon": "$media:app_icon",
+        "type": "sys/commonUI",
+        "exported": true,
+        "permissions": [
+          "ohos.permission.GET_TELEPHONY_STATE"
+        ]
+      },
+      {
+        "name": "VideoRingtoneSettingsAbility",
+        "srcEntry": "./ets/VideoRingtoneSetting/VideoRingtoneSettingsAbility.ets",
+        "description": "VideoRingtoneSettingsAbility",
+        "icon": "$media:app_icon",
+        "exported": true,
+        "label": "$string:video_ringtone",
+        "type": "sys/commonUI",
+        "permissions": [
+          "ohos.permission.GET_TELEPHONY_STATE"
+        ]
+      },
+      {
+        "name": "VideoRingtoneViewAbility",
+        "srcEntry": "./ets/VideoRingtoneSetting/VideoRingtoneViewAbility.ets",
+        "description": "VideoRingtoneViewAbility",
+        "icon": "$media:app_icon",
+        "exported": true,
+        "type": "sys/commonUI",
+        "permissions": [
+          "ohos.permission.GET_TELEPHONY_STATE"
+        ]
+      },
+      {
+        "name": "com.ohos.callsetting.SatelliteFormAbility",
+        "srcEntry": "./ets/callsetingformability/SatelliteFormAbility.ets",
+        "label": "$string:satellite_network",
+        "description": "$string:satellite_network",
+        "type": "form",
+        "metadata": [
+          {
+            "name": "ohos.extension.form",
+            "resource": "$profile:form_config"
+          }
+        ]
+      },
+      {
+        "name": "SatelliteServiceExtAbility",
+        "srcEntry": "./ets/satelliteserviceextability/SatelliteServiceExtAbility.ets",
+        "type": "service",
+        "exported": true,
+        "description": "service",
+        "permissions": [
+          "ohos.permission.GET_TELEPHONY_STATE"
+        ]
+      }
+    ],
+    "requestPermissions": [
+      {
+        "name": "ohos.permission.GET_NETWORK_INFO",
+        "reason": "$string:GET_NETWORK_INFO"
+      },
+      {
+        "name": "ohos.permission.SET_TELEPHONY_STATE",
+        "reason": "$string:SET_TELEPHONY_STATE"
+      },
+      {
+        "name": "ohos.permission.GET_TELEPHONY_STATE",
+        "reason": "$string:GET_TELEPHONY_STATE"
+      },
+      {
+        "name": "ohos.permission.INTERNET",
+        "reason": "$string:ACCESS_NETWORK"
+      },
+      {
+        "name": "ohos.permission.MANAGE_SECURE_SETTINGS",
+        "reason": "$string:MANAGE_SECURE_SETTINGS"
+      },
+      {
+        "name": "ohos.permission.MANAGE_SETTINGS",
+        "reason": "$string:MANAGE_SECURE_SETTINGS"
+      },
+      {
+        "name": "ohos.permission.GET_BUNDLE_INFO",
+        "reason": "$string:GET_BUNDLE_INFO"
+      },
+      {
+        "name": "ohos.permission.GET_BUNDLE_RESOURCES",
+        "reason": "$string:GET_BUNDLE_INFO"
+      },
+
+      {
+        "name": "ohos.permission.MANAGE_LOCAL_ACCOUNTS",
+        "reason": "$string:MANAGE_LOCAL_ACCOUNTS"
+      },
+      {
+        "name": "ohos.permission.CONTROL_LOCATION_SWITCH",
+        "reason": "$string:MANAGE_SECURE_SETTINGS"
+      },
+      {
+        "name": "ohos.permission.ACCELEROMETER",
+        "reason": "$string:MANAGE_SECURE_SETTINGS"
+      },
+      {
+        "name": "ohos.permission.LAUNCH_DATA_PRIVACY_CENTER",
+        "reason": "$string:MANAGE_SECURE_SETTINGS"
+      },
+      {
+        "name": "ohos.permission.VIBRATE",
+        "reason": "$string:ATTEST_KEY"
+      },
+      {
+        "name": "ohos.permission.securityguard.REPORT_SECURITY_INFO"
+      },
+      {
+        "name": "ohos.permission.CALLED_UIEXTENSION_ON_LOCK_SCREEN"
+      },
+      {
+        "name": "ohos.permission.LAUNCH_SPAMSHIELD_PAGE"
+      },
+      {
+        "name": "ohos.permission.WRITE_RINGTONE"
+      },
+      {
+        "name": "ohos.permission.LOCATION",
+        "reason": "$string:LOCATION",
+        "usedScene": {
+          "abilities": [
+            "EntryAbility"
+          ],
+          "when": "inuse"
+        }
+      },
+      {
+        "name": "ohos.permission.APPROXIMATELY_LOCATION",
+        "reason": "$string:LOCATION",
+        "usedScene": {
+          "abilities": [
+            "EntryAbility"
+          ],
+          "when": "inuse"
+        },
+
+      },
+      {
+        "name": "ohos.permission.READ_IMAGEVIDEO",
+        "reason": "$string:READ_IMAGEVIDEO",
+        "usedScene": {
+          "abilities": [
+            "EntryAbility"
+          ],
+          "when": "inuse"
+        }
+      },
+      {
+        "name": "ohos.permission.WRITE_IMAGEVIDEO",
+        "reason": "$string:WRITE_IMAGEVIDEO",
+        "usedScene": {
+          "abilities": [
+            "EntryAbility"
+          ],
+          "when": "inuse"
+        }
+      },
+      {
+        "name": "ohos.permission.PRIVACY_WINDOW",
+        "reason": "$string:PRIVACY_WINDOW"
+      }
+    ]
+  }
+}

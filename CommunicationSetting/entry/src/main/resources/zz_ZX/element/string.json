@@ -1,0 +1,431 @@
+{
+    "string":[
+        {
+            "name":"mobile_data_manage_entry",
+            "value":"[TS_928219]_Data usage"
+        },
+        {
+            "name":"wlan",
+            "value":"[TS_928217]_WLAN"
+        },
+        {
+            "name":"more",
+            "value":"[TS_928222]_More"
+        },
+        {
+            "name":"no_match_result",
+            "value":"[TS_928226]_No results"
+        },
+        {
+            "name":"network_title",
+            "value":"[TS_928213]_Network access"
+        },
+        {
+            "name":"searching",
+            "value":"[TS_928214]_Search"
+        },
+        {
+            "name":"all",
+            "value":"[TS_928208]_All"
+        },
+        {
+            "name":"CommunicationSettingAbility_label",
+            "value":"[TS_928224]_communication setting"
+        },
+        {
+            "name":"mobile_data",
+            "value":"[TS_928218]_Mobile data"
+        },
+        {
+            "name":"CommunicationSettingAbility_desc",
+            "value":"[TS_928212]_communication setting entry"
+        },
+        {
+            "name":"system_and_service",
+            "value":"[TS_928209]_System and services"
+        },
+        {
+            "name":"module_desc",
+            "value":"[TS_928211]_communication setting"
+        },
+        {
+            "name":"flow_used",
+            "value":"[TS_928206]_Data used"
+        },
+        {
+            "name":"traffic_ranking",
+            "value":"[TS_928533]_Data usage by app"
+        },
+        {
+            "name":"system_applications",
+            "value":"[TS_928537]_System"
+        },
+        {
+            "name":"mobile_data_and_WLAN",
+            "value":"[TS_928534]_Mobile data & WLAN"
+        },
+        {
+            "name":"traffic_ranking_of_this_month",
+            "value":"[TS_928536]_Data usage this month"
+        },
+        {
+            "name":"forbid",
+            "value":"[TS_928538]_Not allowed"
+        },
+        {
+            "name":"loading",
+            "value":"[TS_930672]_Loading…"
+        },
+        {
+            "name":"data_calculation_different_from_shown",
+            "value":"[TS_931104]_Your carrier's data calculation may be different from what is shown here."
+        },
+        {
+            "name":"sim_card_2",
+            "value":"[TS_931699]_SIM 2 (%1$s)"
+        },
+        {
+            "name":"sim_card_1",
+            "value":"[TS_931698]_SIM 1 (%1$s)"
+        },
+        {
+            "name":"body_network_access_policy",
+            "value":"[TS_936959]_You can change your preferences in Settings > Mobile data > Data usage > Network access."
+        },
+        {
+            "name":"only_wlan",
+            "value":"[TS_936960]_WLAN only"
+        },
+        {
+            "name":"title_network_access_policy",
+            "value":"[TS_936961]_Allow %s to use mobile data?"
+        },
+        {
+            "name":"not_allow",
+            "value":"[TS_936962]_Deny"
+        },
+        {
+            "name":"no_networked_apps",
+            "value":"[TS_939026]_No networked apps"
+        },
+        {
+            "name":"last_30_days",
+            "value":"[TS_928216]_Past %s days"
+        },
+        {
+            "name":"last_24_hours",
+            "value":"[TS_941105]_Past %s hours"
+        },
+        {
+            "name":"hide_system_processes",
+            "value":"[TS_954971]_Hide system processes"
+        },
+        {
+            "name":"show_system_processes",
+            "value":"[TS_954972]_Show system processes"
+        },
+        {
+            "name":"mobile_network",
+            "value":"[TS_954333]_Mobile network"
+        },
+        {
+            "name":"ranking_of_this_month",
+            "value":"[TS_955213]_Data usage this month"
+        },
+        {
+            "name":"reason_manage_net_strategy",
+            "value":"[TS_958156]_Used to get network access policy"
+        },
+        {
+            "name":"reason_get_network_stats",
+            "value":"[TS_958153]_Used to get traffic stats by network"
+        },
+        {
+            "name":"reason_get_installed_app_list",
+            "value":"[TS_958157]_Used to get installed app list"
+        },
+        {
+            "name":"reason_get_bundle_resources",
+            "value":"[TS_958152]_Used to obtain the app icon and name information"
+        },
+        {
+            "name":"reason_get_bundle_info",
+            "value":"[TS_958154]_Used to get application information"
+        },
+        {
+            "name":"reason_get_telephony_state",
+            "value":"[TS_958155]_Used to get sim card ID"
+        },
+        {
+            "name":"wlan_ranking_of_this_month",
+            "value":"[TS_958447]_Used over WLAN this month"
+        },
+        {
+            "name":"category_media_service",
+            "value":"[TS_960406]_Media service"
+        },
+        {
+            "name":"category_security_service",
+            "value":"[TS_960404]_Security service"
+        },
+        {
+            "name":"category_update",
+            "value":"[TS_960407]_Software update"
+        },
+        {
+            "name":"category_location_service",
+            "value":"[TS_960403]_Location services"
+        },
+        {
+            "name":"category_WLAN_service",
+            "value":"[TS_960410]_WLAN service"
+        },
+        {
+            "name":"category_general_service",
+            "value":"[TS_960409]_General"
+        },
+        {
+            "name":"category_rtc_service",
+            "value":"[TS_960405]_RTC service"
+        },
+        {
+            "name":"category_system",
+            "value":"[TS_960402]_System"
+        },
+        {
+            "name":"category_debug_system",
+            "value":"[TS_960408]_Debugging service"
+        },
+        {
+            "name":"category_nfc_service",
+            "value":"[TS_961221]_NFC service"
+        },
+        {
+            "name":"allow_mobile_data_and_WLAN",
+            "value":"[TS_961180]_Mobile data & WLAN"
+        },
+        {
+            "name":"allow_mobile_data",
+            "value":"[TS_961179]_Mobile data"
+        },
+        {
+            "name":"allow_WLAN",
+            "value":"[TS_961178]_WLAN"
+        },
+        {
+            "name":"network_no_service",
+            "value":"[TS_961894]_No service"
+        },
+        {
+            "name":"category_call_service",
+            "value":"[TS_961222]_Call service"
+        },
+        {
+            "name":"title_wifi_only_network_access_policy",
+            "value":"[TS_971055]_Allow %s to access the Internet?"
+        },
+        {
+            "name":"allow",
+            "value":"[TS_971054]_Allow"
+        },
+        {
+            "name":"category_uninstalled_apps",
+            "value":"[TS_976745]_Uninstalled apps"
+        },
+        {
+            "name":"reason_get_bundle_info_privileged",
+            "value":"[TS_981447]_Used to get all launcher abilities"
+        },
+        {
+            "name":"accessibility_more",
+            "value":"[TS_1008624]_More options"
+        },
+        {
+            "name":"accessibility_back",
+            "value":"[TS_1008625]_Go back"
+        },
+        {
+            "name":"usage_reminders_index",
+            "value":"[TS_1014261]_Usage reminders (SIM %d)"
+        },
+        {
+            "name":"data_plan_settings",
+            "value":"[TS_1014182]_Package settings"
+        },
+        {
+            "name":"monthly_data_reminder",
+            "value":"[TS_1014264]_Monthly data reminder"
+        },
+        {
+            "name":"daily_limit_data_reminder",
+            "value":"[TS_1014277]_Notify me when my data usage reaches %1$s (%2$s) of the daily limit."
+        },
+        {
+            "name":"traffice_package_remain",
+            "value":"[TS_1016637]_Remaining"
+        },
+        {
+            "name":"data_limit",
+            "value":"[TS_1014281]_Data limit"
+        },
+        {
+            "name":"reopen_the_current_card",
+            "value":"[TS_1015223]_Enable mobile data"
+        },
+        {
+            "name":"data_traffic_reached_the_limit",
+            "value":"[TS_1015226]_You've reached your data usage limit.\nIf you re-enable mobile data, usage fees may apply."
+        },
+        {
+            "name":"got_it",
+            "value":"[TS_1015225]_OK"
+        },
+        {
+            "name":"reminder",
+            "value":"[TS_1015227]_Notify me"
+        },
+        {
+            "name":"reason_set_telephony_state",
+            "value":"[TS_1017400]_Used to set telephony state"
+        },
+        {
+            "name":"usage_reminders",
+            "value":"[TS_1014183]_Usage reminders"
+        },
+        {
+            "name":"unlimited_data",
+            "value":"[TS_1014267]_Unlimited data"
+        },
+        {
+            "name":"reopen",
+            "value":"[TS_1015230]_Re-enable"
+        },
+        {
+            "name":"accessibility_selected",
+            "value":"[TS_1016775]_Selected"
+        },
+        {
+            "name":"data_plan_settings_index",
+            "value":"[TS_1014269]_Data plan settings (SIM %d)"
+        },
+        {
+            "name":"traffice_package_out",
+            "value":"[TS_1016638]_Over limit"
+        },
+        {
+            "name":"confirm",
+            "value":"[TS_1014280]_OK"
+        },
+        {
+            "name":"more_data_usage_settings_title",
+            "value":"[TS_1014184]_More data settings"
+        },
+        {
+            "name":"not_set",
+            "value":"[TS_1014278]_Not set"
+        },
+        {
+            "name":"monthly_limit_data_reminder",
+            "value":"[TS_1014265]_Notify me when my data usage reaches %1$s (%2$s) of the monthly limit."
+        },
+        {
+            "name":"used_traffice",
+            "value":"[TS_1016639]_Data usage"
+        },
+        {
+            "name":"disable_mobile_data",
+            "value":"[TS_1015224]_Mobile data disabled"
+        },
+        {
+            "name":"accessibility_unselected",
+            "value":"[TS_1016774]_Not selected"
+        },
+        {
+            "name":"over_monthly_limit",
+            "value":"[TS_1014283]_When over monthly limit"
+        },
+        {
+            "name":"start_date",
+            "value":"[TS_1014272]_Start date"
+        },
+        {
+            "name":"current_sim_data_traffic_reached_the_limit",
+            "value":"[TS_1016294]_You have reached your data limit for this SIM card and mobile data has been disabled. If you enable mobile data again, data usage fees may apply."
+        },
+        {
+            "name":"switch_to_another_card",
+            "value":"[TS_1015228]_Switch to other SIM"
+        },
+        {
+            "name":"forbid_operation",
+            "value":"[TS_1017183]_Non-owner users are not allowed to use this feature."
+        },
+        {
+            "name":"disconnect",
+            "value":"[TS_1014263]_Disable mobile data"
+        },
+        {
+            "name":"cancel",
+            "value":"[TS_1014275]_Cancel"
+        },
+        {
+            "name":"reason_manage_settings",
+            "value":"[TS_1017399]_Used to access settings data base"
+        },
+        {
+            "name":"daily_data_reminder",
+            "value":"[TS_1014270]_Daily data reminder"
+        },
+        {
+            "name":"GET_NETWORK_INFO",
+            "value":"[TS_1038910]_get network info"
+        },
+        {
+            "name":"today",
+            "value":"[TS_1039902]_Today"
+        },
+        {
+            "name":"show_compatible_apps",
+            "value":"[TS_1050508]_Show compatible apps"
+        },
+        {
+            "name":"hide_compatible_apps",
+            "value":"[TS_1050509]_Hide compatible apps"
+        },
+        {
+            "name":"traffic_chart_view_net_used_day",
+            "value":"[TS_1052558]_Used %2$s on %1$s"
+        },
+        {
+            "name":"traffic_chart_view_net_used_day_today",
+            "value":"[TS_1052559]_Used %1$s today"
+        },
+        {
+            "name":"owner_of_device",
+            "value":"[TS_1053475]_Owner"
+        },
+        {
+            "name":"hotspot_name",
+            "value":"[TS_1084915]_Tethering & portable hotspot"
+        },
+        {
+            "name":"esim_card",
+            "value":"[TS_1104056]_%1$s (%2$s)"
+        },
+        {
+            "name":"esim_usage_reminders_index",
+            "value":"[TS_1104055]_Usage reminders (eSIM %d)"
+        },
+        {
+            "name":"data_plan_esim_settings_index",
+            "value":"[TS_1104057]_Data plan settings (eSIM %d)"
+        },{
+            "name":"flow_display_title",
+            "value":"[TS_1119981]_Data display"
+        },
+        {
+            "name":"usage_display_summary",
+            "value":"[TS_1119982]_Display data usage in Notification Panel."
+        }
+    ]
+}

@@ -1,0 +1,897 @@
+{
+    "plural":[
+        {
+            "name":"satellite_service_details_01",
+            "value":[
+                {
+                    "quantity":"one",
+                    "value":"أقصى مدة للمكالمة عبر شبكة القمر الصناعي Tiantong هي دقيقة واحدة.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"other",
+                    "value":"أقصى مدة للمكالمة عبر شبكة القمر الصناعي Tiantong هي %d دقيقة.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"zero",
+                    "value":"أقصى مدة للمكالمة عبر شبكة القمر الصناعي Tiantong هي %d دقائق.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"few",
+                    "value":"أقصى مدة للمكالمة عبر شبكة القمر الصناعي Tiantong هي %d دقائق.",
+                    "attr":{
+                        "priority":"LT"
+                    }
+                },
+                {
+                    "quantity":"many",
+                    "value":"أقصى مدة للمكالمة عبر شبكة القمر الصناعي Tiantong هي %d دقيقةً.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"two",
+                    "value":"أقصى مدة للمكالمة عبر شبكة القمر الصناعي Tiantong هي دقيقتان.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"im_message_smc_connecting",
+            "value":[
+                {
+                    "quantity":"one",
+                    "value":"جارٍ الاتصال بالقمر الصناعي (%d)...",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"other",
+                    "value":"جارٍ الاتصال بالقمر الصناعي (%d)...",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"zero",
+                    "value":"جارٍ الاتصال بالقمر الصناعي (%d)...",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"few",
+                    "value":"جارٍ الاتصال بالقمر الصناعي (%d)...",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"many",
+                    "value":"جارٍ الاتصال بالقمر الصناعي (%d)...",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"two",
+                    "value":"جارٍ الاتصال بالقمر الصناعي (%d)...",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"satellite_call_duration_limit_disconnect_tips",
+            "value":[
+                {
+                    "quantity":"one",
+                    "value":"أقصى مدة للمكالمة هي %1$s دقائق. سيتم إنهاء هذه المكالمة خلال ثانية واحدة.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"other",
+                    "value":"أقصى مدة للمكالمة هي %1$s دقائق. سيتم إنهاء هذه المكالمة خلال %2$s ثانية.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"zero",
+                    "value":"أقصى مدة للمكالمة هي %1$s دقائق. سيتم إنهاء هذه المكالمة خلال %2$s ثوانٍ.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"few",
+                    "value":"أقصى مدة للمكالمة هي %1$s دقائق. سيتم إنهاء هذه المكالمة خلال %2$s ثوانٍ.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"many",
+                    "value":"أقصى مدة للمكالمة هي %1$s دقائق. سيتم إنهاء هذه المكالمة خلال %2$s ثانيةً.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"two",
+                    "value":"أقصى مدة للمكالمة هي %1$s دقائق. سيتم إنهاء هذه المكالمة خلال ثانيتين.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"im_message_status_sending",
+            "value":[
+                {
+                    "quantity":"few",
+                    "value":"جارٍ الإرسال (%d)...",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"جارٍ الإرسال (%d)...",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"zero",
+                    "value":"جارٍ الإرسال (%d)...",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"other",
+                    "value":"جارٍ الإرسال (%d)...",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"many",
+                    "value":"جارٍ الإرسال (%d)...",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"two",
+                    "value":"جارٍ الإرسال (%d)...",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"satellite_call_temp_limit_disconnect_tips",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"الجهاز ساخن جدًا. ستنتهي المكالمة خلال %s ثانية.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"الجهاز ساخن جدًا. ستنتهي المكالمة خلال ثانية واحدة.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"zero",
+                    "value":"الجهاز ساخن جدًا. ستنتهي المكالمة خلال %s ثوانٍ.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"few",
+                    "value":"الجهاز ساخن جدًا. ستنتهي المكالمة خلال %s ثوانٍ.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"many",
+                    "value":"الجهاز ساخن جدًا. ستنتهي المكالمة خلال %s ثانية.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"two",
+                    "value":"الجهاز ساخن جدًا. ستنتهي المكالمة خلال ثانيتين.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"satellite_message_fifteen_minute",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"منذ %d دقيقة",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"منذ دقيقة",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"zero",
+                    "value":"منذ %d دقائق",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"few",
+                    "value":"منذ %d دقائق",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"many",
+                    "value":"منذ %d دقيقة",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"two",
+                    "value":"منذ دقيقتين",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"im_message_smc_to_receive",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"‏%s رد إضافي في انتظار الاستلام",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"رد إضافي واحد في انتظار الاستلام",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"zero",
+                    "value":"‏%s ردود إضافية في انتظار الاستلام",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"few",
+                    "value":"‏%s ردود إضافية في انتظار الاستلام",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"many",
+                    "value":"‏%s ردًا إضافيًا في انتظار الاستلام",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"two",
+                    "value":"يوجد ردان إضافيان في انتظار الاستلام",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"number_identity_permission_dialog_desc",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"تحتاج هذه الخدمة إلى استخدام/الحصول على %d إذن:",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"تحتاج هذه الخدمة إلى استخدام/الحصول على إذن واحد:",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"zero",
+                    "value":"تحتاج هذه الخدمة إلى استخدام/الحصول على %d أذونات:",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"few",
+                    "value":"تحتاج هذه الخدمة إلى استخدام/الحصول على %d أذونات:",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"many",
+                    "value":"تحتاج هذه الخدمة إلى استخدام/الحصول على %d إذنًا:",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"two",
+                    "value":"تحتاج هذه الخدمة إلى استخدام/الحصول على إذنين:",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"satellite_reconnecting",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"جارٍ إعادة الاتصال (%d)…",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"جارٍ إعادة الاتصال (%d)…",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"zero",
+                    "value":"جارٍ إعادة الاتصال (%d)…",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"few",
+                    "value":"جارٍ إعادة الاتصال (%d)…",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"many",
+                    "value":"جارٍ إعادة الاتصال (%d)…",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"two",
+                    "value":"جارٍ إعادة الاتصال (%d)…",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"im_message_smc_receiving",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"جارٍ الاستلام (%d)...",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"جارٍ الاستلام (%d)...",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"zero",
+                    "value":"جارٍ الاستلام (%d)...",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"few",
+                    "value":"جارٍ الاستلام (%d)...",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"many",
+                    "value":"جارٍ الاستلام (%d)...",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"two",
+                    "value":"جارٍ الاستلام (%d)...",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"not_link_satellite_dialog_negative",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"خروج (%d)",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"خروج (%d)",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"zero",
+                    "value":"خروج (%d)",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"few",
+                    "value":"خروج (%d)",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"many",
+                    "value":"خروج (%d)",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"two",
+                    "value":"خروج (%d)",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"video_ringtone_selected_tip",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"تم تحديد %d عنصر",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"تم تحديد عنصر واحد",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"zero",
+                    "value":"تم تحديد %d عناصر",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"few",
+                    "value":"تم تحديد %d عناصر",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"many",
+                    "value":"تم تحديد %d عنصرًا",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"two",
+                    "value":"تم تحديد عنصرين",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"call_time_sec",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"%d ثانية",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"ثانية",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"zero",
+                    "value":"%d ثوانٍ",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"few",
+                    "value":"%d ثوانٍ",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"many",
+                    "value":"%d ثانية",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"two",
+                    "value":"ثانيتان",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"call_time_min",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"%d دقيقة",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"دقيقة",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"zero",
+                    "value":"%d دقائق",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"few",
+                    "value":"%d دقائق",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"many",
+                    "value":"%d دقيقة",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"two",
+                    "value":"دقيقتان",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"call_time_hour",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"%d ساعة",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"ساعة",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"zero",
+                    "value":"%d ساعات",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"few",
+                    "value":"%d ساعات",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"many",
+                    "value":"%d ساعة",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"two",
+                    "value":"ساعتان",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"satellite_countdown",
+            "value":[
+                {
+                    "quantity":"many",
+                    "value":"أوشكت فترة إتاحة القمر الصناعي على الانتهاء. سيتم قطع الاتصال بعد %d ثانية.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"other",
+                    "value":"أوشكت فترة إتاحة القمر الصناعي على الانتهاء. سيتم قطع الاتصال بعد %d ثانية.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"أوشكت فترة إتاحة القمر الصناعي على الانتهاء. سيتم قطع الاتصال بعد ثانية واحدة.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"two",
+                    "value":"أوشكت فترة إتاحة القمر الصناعي على الانتهاء. سيتم قطع الاتصال بعد ثانيتين.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"zero",
+                    "value":"أوشكت فترة إتاحة القمر الصناعي على الانتهاء. سيتم قطع الاتصال بعد %d ثوانٍ.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"few",
+                    "value":"أوشكت فترة إتاحة القمر الصناعي على الانتهاء. سيتم قطع الاتصال بعد %d ثوانٍ.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"not_link_hyacinth_satellite_auto_exit_notification_Text",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"تم إيقاف اتصالات Hyacinth عبر القمر الصناعي بسبب عدم الاتصال بالقمر الصناعي لمدة %d ثانية.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"تم إيقاف اتصالات Hyacinth عبر القمر الصناعي بسبب عدم الاتصال بالقمر الصناعي لمدة ثانية واحدة.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"two",
+                    "value":"تم إيقاف اتصالات Hyacinth عبر القمر الصناعي بسبب عدم الاتصال بالقمر الصناعي لمدة ثانيتين.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"zero",
+                    "value":"تم إيقاف اتصالات Hyacinth عبر القمر الصناعي بسبب عدم الاتصال بالقمر الصناعي لمدة %d ثوانٍ.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"many",
+                    "value":"تم إيقاف اتصالات Hyacinth عبر القمر الصناعي بسبب عدم الاتصال بالقمر الصناعي لمدة %d ثانية.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"few",
+                    "value":"تم إيقاف اتصالات Hyacinth عبر القمر الصناعي بسبب عدم الاتصال بالقمر الصناعي لمدة %d ثوانٍ.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"hyacinth_not_link_satellite_dialog_message",
+            "value":[
+                {
+                    "quantity":"zero",
+                    "value":"لم يتم إنشاء اتصال بالقمر الصناعي لمدة %d ثوانٍ. سيتم إيقاف اتصالات Hyacinth عبر القمر الصناعي.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"few",
+                    "value":"لم يتم إنشاء اتصال بالقمر الصناعي لمدة %d ثوانٍ. سيتم إيقاف اتصالات Hyacinth عبر القمر الصناعي.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"other",
+                    "value":"لم يتم إنشاء اتصال بالقمر الصناعي لمدة %d ثانية. سيتم إيقاف اتصالات Hyacinth عبر القمر الصناعي.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"many",
+                    "value":"لم يتم إنشاء اتصال بالقمر الصناعي لمدة %d ثانية. سيتم إيقاف اتصالات Hyacinth عبر القمر الصناعي.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"لم يتم إنشاء اتصال بالقمر الصناعي لمدة ثانية واحدة. سيتم إيقاف اتصالات Hyacinth عبر القمر الصناعي.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"two",
+                    "value":"لم يتم إنشاء اتصال بالقمر الصناعي لمدة ثانيتين. سيتم إيقاف اتصالات Hyacinth عبر القمر الصناعي.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"hyacinth_available_time",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"متوفرة لمدة %d ساعة تالية",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"متوفرة لمدة ساعة واحدة تالية",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"many",
+                    "value":"متوفرة لمدة %d ساعة تالية",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"two",
+                    "value":"متوفرة لمدة ساعتين تاليتين",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"zero",
+                    "value":"متوفرة لمدة %d ساعات تالية",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"few",
+                    "value":"متوفرة لمدة %d ساعات تالية",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        }
+    ]
+}

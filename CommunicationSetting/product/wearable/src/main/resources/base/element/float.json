@@ -1,0 +1,188 @@
+{
+  "float": [
+    {
+      "name": "layout_size",
+      "value": "233vp"
+    },
+    {
+      "name": "layout_padding",
+      "value": "13vp"
+    },
+    {
+      "name": "traffic_title_width",
+      "value": "129vp"
+    },
+    {
+      "name": "traffic_title_height",
+      "value": "66vp"
+    },
+    {
+      "name": "mobile_data_overflow",
+      "value": "0"
+    },
+    {
+      "name": "traffic_title_line_height",
+      "value": "25.5vp"
+    },
+    {
+      "name": "traffic_text_font_size",
+      "value": "16vp"
+    },
+    {
+      "name": "no_record_text_font_size",
+      "value": "18fp"
+    },
+    {
+      "name": "no_record_text_line_height",
+      "value": "21vp"
+    },
+    {
+      "name": "no_record_text_margin_top",
+      "value": "20vp"
+    },
+    {
+      "name": "traffic_title_margin_bottom",
+      "value": "12.5vp"
+    },
+    {
+      "name": "traffic_app_item_width",
+      "value": "207vp"
+    },
+    {
+      "name": "traffic_app_item_height",
+      "value": "70vp"
+    },
+    {
+      "name": "traffic_app_item_border_radius",
+      "value": "70vp"
+    },
+    {
+      "name": "traffic_app_item_image_size",
+      "value": "46vp"
+    },
+    {
+      "name": "traffic_app_item_image_border_radius",
+      "value": "46vp"
+    },
+    {
+      "name": "traffic_app_item_image_margin_left",
+      "value": "7vp"
+    },
+    {
+      "name": "traffic_app_item_image_margin_right",
+      "value": "6vp"
+    },
+    {
+      "name": "traffic_app_item_label_line_height",
+      "value": "22vp"
+    },
+    {
+      "name": "traffic_app_item_flow_font_size",
+      "value": "15vp"
+    },
+    {
+      "name": "traffic_app_item_flow_line_height",
+      "value": "17.5vp"
+    },
+    {
+      "name": "traffic_app_item_column_width",
+      "value": "97vp"
+    },
+    {
+      "name": "traffic_app_item_column_height",
+      "value": "41vp"
+    },
+    {
+      "name": "traffic_app_item_margin",
+      "value": "3vp"
+    },
+    {
+      "name": "item_border_Radius",
+      "value": "35vp"
+    },
+    {
+      "name": "item_view_width",
+      "value": "207vp"
+    },
+    {
+      "name": "item_view_min_height",
+      "value": "70vp"
+    },
+    {
+      "name": "item_view_margin_start_end",
+      "value": "13vp"
+    },
+    {
+      "name": "item_view_margin_top_bottom",
+      "value": "3vp"
+    },
+    {
+      "name": "item_icon_image_width_height",
+      "value": "46vp"
+    },
+    {
+      "name": "item_icon_image_margin_start",
+      "value": "7vp"
+    },
+    {
+      "name": "item_icon_image_margin_end",
+      "value": "6vp"
+    },
+    {
+      "name": "item_icon_image_margin_top_bottom",
+      "value": "12vp"
+    },
+    {
+      "name": "item_title_text_max_size",
+      "value": "19fp"
+    },
+    {
+      "name": "item_title_text_min_size",
+      "value": "16fp"
+    },
+    {
+      "name": "item_title_text_line_height",
+      "value": "22vp"
+    },
+    {
+      "name": "item_title_text_width",
+      "value": "97vp"
+    },
+    {
+      "name": "item_title_margin_start",
+      "value": "0vp"
+    },
+    {
+      "name": "item_title_margin_end",
+      "value": "51vp"
+    },
+    {
+      "name": "item_title_margin_top_bottom",
+      "value": "13.5vp"
+    },
+    {
+      "name": "item_summary_text_size",
+      "value": "15fp"
+    },
+    {
+      "name": "item_summary_text_line_height",
+      "value": "17.5fp"
+    },
+    {
+      "name": "loading_progress_size",
+      "value": "69vp"
+    },
+    {
+      "name": "loading_progress_text_size",
+      "value": "18fp"
+    },
+    {
+      "name": "loading_progress_text_line_height",
+      "value": "21vp"
+    },
+    {
+      "name": "loading_progress_text_width",
+      "value": "181vp"
+    }
+  ]
+}

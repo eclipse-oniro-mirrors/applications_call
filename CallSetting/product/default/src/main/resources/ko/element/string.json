@@ -1,0 +1,3060 @@
+{
+    "string":[
+        {
+            "name":"beidou_satellite_message_service_no_net",
+            "value":"인터넷 연결이 없습니다. 인터넷에 연결하고 다시 시도하십시오.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"go_use_beidou_message_tips",
+            "value":"BeiDou 위성 메시징을 실행했습니다. 사용을 시작하려면 메시징으로 이동하십시오.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"hangUp",
+            "value":"종료",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"start_beidou_satellite_message",
+            "value":"BeiDou 위성 메시징",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"wearable_bluee_text",
+            "value":"워치가 휴대폰에 연결되면 전원 절약을 위해 워치의 모바일 데이터가 자동으로 종료됩니다. 연결이 해제되면 다시 실행됩니다.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"save",
+            "value":"저장",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Apn_enum_None",
+            "value":"없음",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"wearable_roaming_subtitle",
+            "value":"로밍 중 데이터를 실행합니다. 상세정보는 이동통신사에 문의하세요.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_data_networkProvider",
+            "value":"이동통신사",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"APN_MMS",
+            "value":"MMS",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"do_not_show_again",
+            "value":"다시 표시하지 않음",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"APN_ADD_APN",
+            "value":"새 APN",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"APN_common",
+            "value":"일반",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_dataRoaming",
+            "value":"데이터 로밍",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data",
+            "value":"모바일 데이터",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Apn_confirm",
+            "value":"확인",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"gotIt",
+            "value":"확인",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_charges",
+            "value":"데이터 사용 요금이 부과될 수 있습니다",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"go_use_beidou_satellite_message",
+            "value":"메시징 앱으로 이동하시겠습니까?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"beidou_satellite_message_service_details_1",
+            "value":"%s. 이 기능은 해당 계정에 위성 통신 기능을 활성화한 China Mobile 사용자만 사용할 수 있습니다. 자세한 정보는 China Mobile 고객 서비스에 문의하십시오.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"beidou_satellite_message_no_sim_card_descriptions",
+            "value":"이 서비스를 사용하려면 BeiDou 위성 메시징이 활성화된 China Mobile SIM 카드를 삽입하십시오.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"APN_Not_set",
+            "value":"설정되지 않음",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"APN_NAME",
+            "value":"액세스 포인트 이름(APN)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"wearable_bluee_title",
+            "value":"블루투스가 연결됨",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"go_to_use",
+            "value":"이동",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Apn_The_name_cannot_be_empty",
+            "value":"이름은 비워 둘 수 없습니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"beidou_satellite_message",
+            "value":"BeiDou 위성 메시징",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Apn_The_APN_cannot_be_empty",
+            "value":"APN은 공란일 수 없습니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"APN_EDIT_APN",
+            "value":"액세스 포인트 편집",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"im_smc_tips_starfinder_blocking",
+            "value":"%1$s\n개방된 공간으로 이동합니다",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"im_smc_tips_outdoor_blocking",
+            "value":"장애물 감지됨",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_best",
+            "value":"최상의 위성에 연결됨",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"go_setting",
+            "value":"설정으로 이동",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Apn_Deleting_an_APN",
+            "value":"APN 삭제",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_call_notice",
+            "value":"참고",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_setting",
+            "value":"설정",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"preference_settings",
+            "value":"모드",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"message_status_sent",
+            "value":"전송됨",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Call_forward_user_unreachable",
+            "value":"받을 수 없는 경우",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_no_sim_card",
+            "value":"사용 가능한 SIM 없음",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"fold_window_dialog_remind_title",
+            "value":"휴대폰 펼치기",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"voicemail",
+            "value":"음성사서함",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"fusion_call_switch_short_notification",
+            "value":"사용하면 네트워크 수신 상태가 좋지 않을 때 WLAN 또는 모바일 데이터를 사용하여 통화 음질을 개선할 수 있습니다. 개인 데이터 처리 방법을 알아보려면 %1$s의 내용을 참조하십시오.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"number_identity_permission_dialog_desc",
+            "value":"서비스는 다음 권한이 필요합니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"distributed_share_message_data",
+            "value":"주변 장치에서 메시지를 전송하고 수신합니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"distributed_call_settings_sms_sharing_title",
+            "value":"메시지",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_new_fold_un_support_toast",
+            "value":"휴대폰을 펼쳐 위성 통신을 사용합니다.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"registration_failed",
+            "value":"네트워크 등록 실패",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"distributed_call_settings_network_sharing_descriptions_pad",
+            "value":"사용 가능한 네트워크가 없을 때 주변에 휴대폰이 있으면 자동으로 휴대폰의 모바일 네트워크를 사용합니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"motion_quick_call_descrition",
+            "value":"휴대폰을 귀로 올려 수신전화를 받습니다. 스피커 모드에 있거나 블루투스 헤드폰을 사용 중일 때 휴대폰을 들면 오디오가 수신기로 전환됩니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"motion_reduce_call_descrition",
+            "value":"휴대폰을 들어 올려 수신전화 벨소리 볼륨을 줄입니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_no_region_card_descriptions",
+            "value":"현재 지역에서는 Tiantong 위성 통신이 지원되지 않습니다. 지원되는 지역에 대한 자세한 정보는 FAQ를 참조하십시오.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_signal_descriptions",
+            "value":"China Telecom\nTiantong 위성",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"speedDial",
+            "value":"바로 전화 걸기",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"number_identity_permission_dialog_title",
+            "value":"통화 및 메시지 식별 권한",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_notification_title",
+            "value":"Tiantong 위성 통신 종료됨",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"start_skycom_satellite_communications",
+            "value":"Tiantong 위성 통신",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"distributed_call_settings_network_sharing_title_pad",
+            "value":"인터넷",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"motion_quick_mute_descrition_pad",
+            "value":"장치를 뒤집어 수신전화를 음소거합니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"video_ring_tone",
+            "value":"영상 통화 연결음",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Notify_during_call",
+            "value":"통화 중 수신전화 알림.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Change_the",
+            "value":"편집",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Apn_APN_enabled",
+            "value":"APN 사용",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"automatic_carrier_selection",
+            "value":"이동통신사를 자동으로 선택하시겠습니까?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"location_south_east",
+            "value":"%1$s 남 %2$s 동",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"sim_card_num_no_space",
+            "value":"SIM %s",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_fail",
+            "value":"이동통신사 목록을 조회할 수 없습니다. 나중에 다시 시도하십시오.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"distributed_call_settings_phone_sharing_title",
+            "value":"전화 통화",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"beidou_satellite_message_select_sim_card",
+            "value":"위성 메시징용 SIM을 선택합니다. 이 서비스가 활성화되었는지 이동통신사에 확인하십시오.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"call_about",
+            "value":"정보",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Call_forward_no_busy",
+            "value":"통화 중일 경우",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"stop_dialog",
+            "value":"종료",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_message_just_now",
+            "value":"방금",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"cancel_space",
+            "value":"취소",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_cancel",
+            "value":"취소",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"more",
+            "value":"더 보기",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_enableDataWhileRoaming",
+            "value":"로밍 중 데이터 서비스에 연결합니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"beidou_satellite_message_service_settings_airplane_mode",
+            "value":"비행기 모드에서는 BeiDou 위성 메시징을 사용할 수 없습니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_revoke_authorization_message",
+            "value":"종료하면 이 서비스를 더 이상 사용할 수 없게 됩니다. 그래도 종료하시겠습니까?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_network",
+            "value":"모바일 네트워크",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_register",
+            "value":"네트워크에 등록되었습니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"im_message_smc_no_new_message_to_receive",
+            "value":"수신 대기 중인 답변이 없습니다.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"upper_tilt_phone",
+            "value":"위로 기울이기",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"cannnot_dial_satellite_call_tips",
+            "value":"장치 온도가 너무 높습니다. 온도가 내려갈 때까지 기다린 다음 다시 시도하십시오.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"number_identity_permission_dialog_name_1",
+            "value":"주소록",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"im_smc_tips_outdoor_use",
+            "value":"실외에서 사용하여",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ring_tone_desc",
+            "value":"수신 및 발신 통화에 대해 영상 통화 연결음을 재생합니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"number_identity_permission_dialog_name_3",
+            "value":"통화기록",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"ERROR_CODE_NOT_OPENED_TIANDIWINGCARD",
+            "value":"현재 이 SIM의 위성 서비스가 활성화되지 않았습니다. 지원이 필요하면 이동통신사에 문의하십시오.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"number_identity_permission_dialog_name_2",
+            "value":"메시징",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"APN_Restoring_default_APN_settings",
+            "value":"기본 APN 설정 복원 중…",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_card2",
+            "value":"SIM 2 네트워크",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_card1",
+            "value":"SIM 1 네트워크",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Call_forward_deactivated",
+            "value":"꺼짐",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"portrait_reminder",
+            "value":"휴대폰 가로로 잡기",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"confim_space",
+            "value":"확인",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_exited_for_system_error",
+            "value":"시스템 오류입니다. Tiantong 위성 통신이 종료되었습니다. 다시 실행하고 다시 시도하십시오.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_exited_for_system_error",
+            "value":"시스템 오류입니다. 히아신스 위성 통신이 종료되어 있습니다. 다시 실행하고 다시 시도하십시오.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_settings_enable_tips",
+            "value":"위성 용량은 제한되어 있으므로 셀룰러 서비스가 없는 경우에만 이 기능을 사용하십시오. Tiantong 위성 통신을 실행하면 WLAN, 모바일 데이터, 위치 서비스 및 관련 기능이 종료됩니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"voice_control",
+            "value":"음성 제어",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_location_permission_descriptions",
+            "value":"위성과 정렬하고 전송하는 메시지에 위치 정보를 추가하는 데 사용됩니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"distributed_call_settings_network_sharing_title",
+            "value":"인터넷",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"fold_window_dialog_remind_message",
+            "value":"위성 통신을 사용 중일 때는 휴대폰을 펼친 상태에서 가로로 잡습니다.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"re_calibrate",
+            "value":"재시도",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Call_waiting",
+            "value":"통화 대기",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"motion_reduce_call_descrition_pad",
+            "value":"장치를 들어 올려 수신전화 벨소리 볼륨을 줄입니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"advertising_and_promotion",
+            "value":"광고",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"shut_down",
+            "value":"꺼짐",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"smc_right_rotate_device",
+            "value":"장치를 오른쪽으로 돌립니다",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"super_privacy_dialog_title",
+            "value":"슈퍼 프라이버시 모드",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_Automatic_selection",
+            "value":"자동으로 선택",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"copyright_new",
+            "value":"전화. All rights reserved. ©%1$s-%2$s",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_network",
+            "value":"위성 네트워크",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Call_forward_unconditional",
+            "value":"항상 전달",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"risk_identity_engine",
+            "value":"엔진",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"im_message_smc_shake",
+            "value":"장치를 기울여 원을 완성합니다",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"open_mobile_data",
+            "value":"모바일 데이터 실행",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"float_left_right_phone",
+            "value":"위성 찾기",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"call_history_merging",
+            "value":"통화기록 표시방법",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"landscape_reminder",
+            "value":"휴대폰을 똑바로 세웁니다",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"APN_TITLE",
+            "value":"APNs",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_details_2_new",
+            "value":"%s. 이 서비스는 사용하기 전에 이동통신사 활성화가 필요합니다. 활성화, 가용성 및 수수료에 대한 자세한 정보는 위성 이동통신사에 문의하십시오.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_tips",
+            "value":"참고",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"re_connecting_satellite",
+            "value":"다시 연결",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Apn_OK",
+            "value":"확인",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"call_version",
+            "value":"버전 %s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_service_select_sim_card",
+            "value":"위성 통화 및 메시지용 SIM을 선택합니다. 이 서비스가 활성화되었는지 이동통신사에 확인하십시오.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"motion_quick_call_title",
+            "value":"전화 받기",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"by_time",
+            "value":"시간별",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_call_message_notice",
+            "value":"누군가 통화 또는 메시지 전송을 시도했습니다. 상세정보를 보려면 위성에 연결한 다음 전화 또는 메시징 앱을 여십시오.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"motion_pick_up_reduce_volume",
+            "value":"들어 올려 볼륨 줄이기",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"To",
+            "value":"전달 대상",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_signal",
+            "value":"신호",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"float_upper_down_phone",
+            "value":"공을 가운데로 이동하기",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"device_calibrating_fail_tips",
+            "value":"휴대폰을 똑바로 잡고 원을 그리며 회전합니다",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_Registering_disable",
+            "value":"%s에 등록 중(금지됨)…",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Network_response_abnormal",
+            "value":"네트워크가 응답하지 않습니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"anti_fraud_text",
+            "value":"통화 중에 잠재적인 사기 관련 경고를 받습니다.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"motion_pick_up_reduce_volume_pad",
+            "value":"들어 올려 볼륨 줄이기",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"aim_satellite",
+            "value":"위성 검색",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_not_enabled",
+            "value":"Tiantong 위성 통신이 실행되지 않았습니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"re_wait_loading",
+            "value":"다시 검색",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_enhance_status",
+            "value":"Connect+",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"number_identity_permission_dialog_purpose_2",
+            "value":"이는 메시지 차단 여부를 결정하는 데 사용됩니다.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"number_identity_permission_dialog_purpose_1",
+            "value":"이는 번호가 연락처의 번호인지, 차단 목록/신뢰 목록에 있는 번호인지 확인하는 데 사용됩니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_details_3",
+            "value":"%s. 이 서비스는 중국 본토에서만 지원됩니다.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"smc_keep_posture",
+            "value":"이 위치를 유지하십시오",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_service_details_0",
+            "value":"%1$s. 위성 용량이 제한되어 있으므로 서비스가 제공되는 경우에는 셀룰러 네트워크를 사용하는 것이 좋습니다. %2$s",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"number_identity_permission_dialog_purpose_3",
+            "value":"전화번호를 카테고리별로 표시하고 메시지 차단 여부를 결정하는 데 사용됩니다.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_data_enabled4G",
+            "value":"4G 실행",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"number_identity_setting_title",
+            "value":"통화 및 메시지 식별",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"privacy_statement",
+            "value":"휴대폰 및 개인 정보 보호에 대한 방침",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"new_satellite_signal_descriptions",
+            "value":"Tiantong 위성",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"open_mobile_data_detail",
+            "value":"이 기능은 모바일 데이터 연결이 필요합니다. 모바일 데이터를 실행하려면 설정으로 이동하십시오.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_details_1_new",
+            "value":"",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"distributed_share_call_data",
+            "value":"주변 장치에서 전화 통화를 발신하고 수신합니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"distributed_network_never_connect",
+            "value":"수동 연결",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"wifi_calling_tips",
+            "value":"WLAN 통화가 켜져 있으면 기본 설정과 신호 강도에 따라 휴대폰에서 WLAN 네트워크 또는 이동통신사 네트워크를 통해 통화를 연결할 수 있습니다. 이 기능을 켜기 전에 이동통신사에 문의하여 요금과 기타 상세정보를 확인하십시오.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_hunt_success",
+            "value":"위성에 연결되었습니다",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Apn_cancel",
+            "value":"취소",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"float_window_keep_posture",
+            "value":"이 위치 유지",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"im_smc_tips_starfinder_loading",
+            "value":"%1$s\n위성 신호 받기",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"beidou_satellite_short_notification",
+            "value":"<body><span style='normal'>이 서비스는 계정을 인증하고 잔액을 확인하기 위한 목적으로 </span><span style='bold'>인터넷</span><span style='normal'> 연결이 필요합니다. 켜져 있으면 모바일 네트워크나 WLAN 연결이 없어도 BeiDou 위성을 통해 메시지를 보낼 수 있습니다. 이 서비스는 사용 중에 해당 장치의 전화번호, BeiDou 위성 메시지 콘텐츠, 위치 정보를 읽고 업로드/전송해야 합니다. 이는 BeiDou 위성 메시징을 제공하기 위한 목적입니다. 켜는 경우 위 약관과 </span><span style='userAgreements'>BeiDou 위성 메시징 사용자 계약</span><span style='normal'>에 동의함을 의미합니다. 개인정보 처리 방법에 대한 상세정보는 </span><span style='privacyStatement'>BeiDou 위성 메시징 및 개인 정보 보호에 대한 방침</span><span style='normal'>을 참조하십시오.</span></body>",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_enabled5G",
+            "value":"5G 실행",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"location_south_west",
+            "value":"%1$s 남 %2$s 서",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_service_location",
+            "value":"위치",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"not_link_satellite_auto_exit_notification_Text",
+            "value":"%d초 동안 위성 연결이 설정되지 않아 Tiantong 위성 통신이 종료되었습니다.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"left_rotate_phone",
+            "value":"왼쪽으로 돌기",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"float_keep_current_posture",
+            "value":"이 위치 유지",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"APN_TITLE_MSG",
+            "value":"일반",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_hunt_failed",
+            "value":"연결 실패",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"advance_options_title",
+            "value":"더 보기",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"send_failed",
+            "value":"전송 실패",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"device_calibrate_failed",
+            "value":"보정 실패",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"incoming_notification_setting",
+            "value":"수신전화 알림",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"enhance_statement_title",
+            "value":"통화 및 메시지 식별",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"ERROR_CODE_OTHERS",
+            "value":"네트워크 오류입니다. 지원이 필요하면 이동통신사에 문의하십시오.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"device_offset_reminder",
+            "value":"위성 가리키기",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_data_confirmation_function",
+            "value":"실행하기 전에 이 서비스를 사용할 수 있는지 확인하십시오. 그렇지 않으면 일반 통화에 영향을 미칠 수 있습니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_connecting",
+            "value":"연결 중(%d)…",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"answer_voice_calls_by_flipping",
+            "value":"펼치기 전에 벨소리를 음소거하면 수동 확인이 필요합니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"im_smc_lift_device",
+            "value":"장치를 내 방향으로 기울입니다",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"8300999",
+            "value":"알 수 없는 오류입니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_closeAutoSelect",
+            "value":"자동 선택 사용 안 함",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"ERROR_CODE_NOT_SUPPORT_CARD",
+            "value":"이 SIM은 Tiantong 위성 서비스를 지원하지 않습니다. 교체가 필요하면 이동통신사에 문의하십시오.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"motion_quick_call_descrition_fold_teton",
+            "value":"휴대폰을 귀로 올려 수신전화를 받습니다. 스피커 모드이거나 블루투스 이어폰을 사용 중인 경우 휴대폰을 올리면 수화기 모드로 전환됩니다.\n\n*접힌 상태에서만 사용할 수 있습니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"incoming_call_rejection_sms",
+            "value":"문자로 응답",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"fusion_call_switch_short_notification_sub2",
+            "value":"통화 품질 개선 및 개인 정보 보호에 대한 방침",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Deactivation",
+            "value":"해제",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"new_satellite_descriptions",
+            "value":"Tiantong 위성",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_volte",
+            "value":"VoLTE HD 통화",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"keep_current_posture",
+            "value":"이 위치 유지",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_service_showname",
+            "value":"SIM %1$s: %2$s",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_esim_showname",
+            "value":"eSIM %1$s: %2$s",
+            "attr":{
+                "priority":"code"
+            }
+        },
+        {
+            "name":"app_about_name",
+            "value":"전화",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"automatic_enrollment",
+            "value":"자동 등록\u2026",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Apn_The_MCC_must_be_a_3_digit_number",
+            "value":"MCC는 3자리 숫자여야 합니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"super_privacy_dialog_call_summary",
+            "value":"슈퍼 프라이버시 모드에서 마이크 액세스를 차단 중입니다. 이 통화를 위해 일시적으로 종료하시겠습니까?",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"anti_fraud",
+            "value":"스마트 보안 보호",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"enterprise_number_identity",
+            "value":"엔터프라이즈 앱에 대해 실행",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_select_sim",
+            "value":"SIM 선택",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_chooseNetworkProvider",
+            "value":"이동통신사를 선택합니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"distributed_call_settings_descriptions_pad",
+            "value":"",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_message",
+            "value":"메시징",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"im_smc_calibrate_failed",
+            "value":"보정 실패",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_phone",
+            "value":"전화",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"exit_beidou_satellite_message_service_tips",
+            "value":"BeiDou 위성 메시징을 끝내시겠습니까?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_network_descriptions",
+            "value":"Tiantong 위성 시스템을 통해 전화를 걸고 텍스트를 보냅니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"disable_super_privacy_and_call",
+            "value":"종료 및 통화",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"APN_Reset_to_Default",
+            "value":"기본 설정으로 재설정",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"others",
+            "value":"기타",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"im_smc_receive_auto_change_01",
+            "value":"연결 시간이 초과되었습니다. 다른 위성으로 전환되었습니다.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"selectContacts",
+            "value":"연락처 선택",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"distributed_network_auto_connect",
+            "value":"자동 연결",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"phone_ring_tone",
+            "value":"벨소리",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"not_link_satellite_dialog_positive",
+            "value":"끝내지 않음",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"disable_super_privacy_and_answer",
+            "value":"종료 및 응답",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_Registering",
+            "value":"%s에 등록 중…",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"wifi_calling",
+            "value":"WLAN 통화",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Apn_MNC_must_be_2_or_3_digits",
+            "value":"MNC는 2~ 3자리 숫자여야 합니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"motion_call_setting_search_system",
+            "value":"시스템",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"end_call_by_power",
+            "value":"전원 버튼으로 통화 종료",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"WiFi_first",
+            "value":"WLAN 선호",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"motion_muting_reduce_call_title",
+            "value":"벨소리 음소거/음량 줄이기",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"motion_flip_mute_volume",
+            "value":"뒤집어 벨소리 음소거하기",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"location_north_west",
+            "value":"%1$s 북 %2$s 서",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"number_identity_setting_text_1",
+            "value":"이 서비스를 사용하면 알 수 없는 번호에서 통화나 메시지가 수신되었을 때 무엇에 관한 것인지를 파악하고 응답 여부를 결정하는 데 도움이 됩니다.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"distributed_call_settings_title",
+            "value":"커뮤니케이션 공유",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_exit",
+            "value":"종료",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_settings_window_suggest",
+            "value":"Tiantong 위성 통신을 실행하려면 이 창을 전체 화면으로 여십시오.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"keep_current_posture_wait_patiently",
+            "value":"잠시 시간이 걸릴 수 있습니다\n기다리십시오",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"enter_in_call",
+            "value":"통화 중에는 Tiantong 위성 통신을 실행할 수 없습니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"unlock_after_call_notification_descriptions",
+            "value":"게임 플레이, 지도 탐색 또는 전체 화면에서 이미지 및 비디오 확인 중에는 수신전화가 항상 배너로 표시됩니다.\n\n시니어 또는 원정 모드 사용 중에는 항상 전체 화면으로 표시됩니다.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"unlock_after_call_notification",
+            "value":"잠금 해제 시 알림",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"sim_select",
+            "value":"SIM",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"frequently_asked_questions",
+            "value":"FAQ",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"number_identity_short_notification",
+            "value":"<body><span style='normal'>이 서비스는 </span><span style='bold'>인터넷</span><span style='normal'> 연결과 </span><span style='bold'>주소록</span><span style='normal'> 권한이 필요하고 연락처 읽기, 통화기록 읽기 및 수정, SMS 메시지 내용 읽기 및 업로드/전송을 수행해야 합니다. 켜는 경우 해당 약관에 동의함을 의미합니다. 개인정보 처리 방법에 대한 상세정보는 </span><span style='privacyStatement'>통화 및 메시지 식별 및 개인 정보 보호에 대한 방침</span><span style='normal'>과 </span><span style='permissionStatement'>권한 공지</span><span style='normal'>를 참조하십시오.</span></body>",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"hicall_user_info_skip",
+            "value":"건너뛰기",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"automatic_recording_of_calls",
+            "value":"통화 자동 녹음",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"device_calibrating",
+            "value":"보정 중…",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"im_smc_received_satellite_return",
+            "value":"위성 확인 수신됨",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"8300003",
+            "value":"내부 시스템 오류입니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_no_phone_number",
+            "value":"알 수 없는 번호",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_call_not_support_earpiece",
+            "value":"안정적인 연결을 유지하기 위해 위성 통화 중에는 수신기를 사용할 수 없습니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"8300001",
+            "value":"올바르지 않은 값입니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"8300002",
+            "value":"이 서비스에 액세스할 수 없습니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_not_serve",
+            "value":"서비스 불가",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"exit_satellite_service_tips",
+            "value":"Tiantong 위성 통신을 종료하시겠습니까?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"full_screen",
+            "value":"전체 화면",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"APN_Creating_an_APN",
+            "value":"새 APN",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"distributed_share_network_data",
+            "value":"주변 장치와 인터넷 연결을 공유합니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_turn_on_data_roaming",
+            "value":"데이터를 로밍하면 추가 데이터 사용료가 부과될 수 있습니다. 그래도 활성화하시겠습니까?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"not_link_satellite_dialog_message",
+            "value":"%d초 동안 위성 연결이 설정되지 않았습니다. Tiantong 위성 통신이 종료됩니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"motion_quick_mute_descrition",
+            "value":"휴대폰을 뒤집어 수신전화를 음소거합니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_settings_skytone_mode",
+            "value":"SkyTone의 사용 중에는 사용할 수 없습니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_revoke_authorization",
+            "value":"서비스 종료",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"meetime_network_descriptions",
+            "value":"메시징 또는 MeeTime 앱을 통해 BeiDou 위성 메시지를 전송하고 수신합니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"im_smc_note_content",
+            "value":"보정을 건너뛰면 위성 통신을 사용하는 데 영향을 미칠 수 있습니다. 그래도 건너뛰시겠습니까?",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"customer_service",
+            "value":"고객 서비스 핫라인",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"im_message_smc_receive_success",
+            "value":"수신 성공",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"lower_tilt_phone",
+            "value":"아래로 기울이기",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"unknown",
+            "value":"알 수 없음",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_settings_explain",
+            "value":"참고",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_settings_details_descriptions3",
+            "value":"Tiantong 위성에 연결하면 정확한 위치가 위성 운영업체에 업로드됩니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"enabled",
+            "value":"실행",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"text_paragraphs",
+            "value":"종료하면 휴대폰은 수동으로 선택한 네트워크에만 등록됩니다. 이로 인해 데이터 서비스가 종료될 수 있습니다. 수동 네트워크 선택 중에는 현재 네트워크를 일시적으로 사용하지 못할 수도 있습니다. 그래도 종료하시겠습니까?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"opened",
+            "value":"켜짐",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"location_north_east",
+            "value":"%1$s 북 %2$s 동",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_Search",
+            "value":"검색 중…",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"distributed_call_settings_sms_sharing_title_pad",
+            "value":"메시지",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"float_window_keep_posture_check_occlusion",
+            "value":"방향에 장애물이 없어야 합니다.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"float_window_keep_posture_wait_patiently",
+            "value":"기다리십시오.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_able",
+            "value":"사용 가능한 네트워크",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Turn_on",
+            "value":"실행",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"phone_ring_Card2",
+            "value":"SIM %1$s: %2$s",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"improve_call_quality",
+            "value":"통화 품질 강화",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"skycom_satellite_communications",
+            "value":"Tiantong 위성 통신",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"closed",
+            "value":"꺼짐",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"im_smc_lower_device",
+            "value":"장치를 내 방향에서 멀리 기울입니다",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"text_paragraphs_no_data",
+            "value":"종료하면 휴대폰은 수동으로 선택한 네트워크에만 등록됩니다. 이로 인해 데이터 서비스가 종료될 수 있습니다. 그래도 종료하시겠습니까?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"about_personal_info_list",
+            "value":"수집되는 개인정보",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"distributed_call_settings_descriptions",
+            "value":"",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Apn_give_up_the_modification",
+            "value":"변경 사항을 삭제하시겠습니까?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"401",
+            "value":"매개변수 오류입니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_permission_count",
+            "value":"이 서비스는 다음 권한이 필요합니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_permission_usage_details",
+            "value":"Tiantong 위성 통신 권한",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_search_failed",
+            "value":"위성을 찾을 수 없음",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"device_calibrating_tips",
+            "value":"장치를 기울여 원을 완성합니다",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_service_no_sim_card_descriptions",
+            "value":"Tiantong 위성 통신이 활성화된 SIM 카드를 삽입하고 다시 시도하십시오.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"motion_flip_mute_volume_pad",
+            "value":"뒤집어 벨소리 음소거하기",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"open_phone_to_answer_calls",
+            "value":"펼쳐서 음성 통화 응답",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"find_out_how_we_use_your_data",
+            "value":"데이터 사용 방법",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"beidou_satellite_message_service_details_0",
+            "value":"%1$s. 사용 중에는 WLAN 및 모바일 데이터가 일시적으로 종료됩니다. 끝내면 서비스가 복원됩니다.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"ERROR_CODE_NOT_ACTIVATED_SIM",
+            "value":"이 장치의 IMEI는 Tiantong 위성 네트워크에 등록되어 있지 않습니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_preferredNetwork",
+            "value":"기본 설정 네트워크: %s",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"beidou_satellite_message_service_details_2",
+            "value":"%s. 이 기능은 중국 본토에서만 사용할 수 있습니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Call_forward_no_reply",
+            "value":"받지 않은 경우",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_general",
+            "value":"일반",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"phone_ring_Card1",
+            "value":"SIM %1$s: %2$s",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"motion_quick_call_descrition_fold",
+            "value":"휴대폰을 귀로 올려 수신전화를 받습니다. 스피커 모드에 있거나 블루투스 헤드폰을 사용 중일 때 휴대폰을 들면 오디오가 수신기로 전환됩니다.\n기본 화면에서만 사용할 수 있습니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"super_privacy_dialog_video_call_summary",
+            "value":"슈퍼 프라이버시 모드에서 마이크 및 카메라 액세스를 차단 중입니다. 이 통화를 위해 일시적으로 종료하시겠습니까?",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"distributed_call_settings_phone_sharing_title_pad",
+            "value":"전화 통화",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"networkAnomaly",
+            "value":"네트워크 응답이 없습니다. 설정할 수 없습니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"enhance_statement_content",
+            "value":"이 서비스는 인터넷 연결과 주소록 권한이 필요합니다. 또한, 연락처 읽기, 통화기록 읽기 및 수정, SMS 메시지 내용 읽기 및 업로드/전송을 수행해야 합니다. 알 수 없는 번호의 통화 및 메시지를 식별하기 위한 목적입니다. 켜는 경우 해당 약관에 동의함을 의미합니다. 개인정보 처리 방법에 대한 상세정보는 <a link=\"privacyStatement\">통화 및 메시지 식별 및 개인 정보 보호에 대한 방침</a>과 <a link=\"permissionStatement\">권한 공지</a>를 참조하십시오.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"business_and_privacy_statement",
+            "value":"개인 정보 보호 방침",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"right_rotate_phone",
+            "value":"오른쪽으로 돌기",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"keep_current_posture_check_occlusion",
+            "value":"이제 위성을 가리키고 있습니다.\n방해가 되는 나무나 건물과 같은 장애물이 없는지 확인하십시오.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"smc_left_rotate_device",
+            "value":"장치를 왼쪽으로 돌립니다",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_data_card1_or_card2",
+            "value":"SIM 1/SIM 2 네트워크",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Call_forward",
+            "value":"착신 전환 설정",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_short_notification_info",
+            "value":"<body><span style='normal'>이 서비스는 귀하의 위치를 가져오기 위한 목적으로 </span><span style='bold'>위치</span><span style='normal'> 권한이 필요하며 위치 서비스를 사용합니다. 켜는 경우 위 약관과 </span><span style='userAgreements'>Tiantong 위성 통신 사용자 계약</span><span style='normal'>에 동의함을 의미합니다. 상세정보는 </span><span style='privacyStatement'>Tiantong 위성 통신 및 개인 정보 보호에 대한 방침</span><span style='normal'>과 </span><span style='permissionStatement'>권한 공지</span><span style='normal'>를 참조하십시오.</span></body>",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"answer_calls_list",
+            "value":"올려서 응답",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"vowifi_mobile_network_preferred",
+            "value":"모바일 네트워크 선호",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"ERROR_CODE_NOT_OPENED_ROAMING",
+            "value":"게이트웨이 상태 오류입니다. 지원이 필요하면 이동통신사에 문의하십시오.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_search",
+            "value":"로드 중…",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_settings_airplane_mode",
+            "value":"비행기 모드에서는 Tiantong 위성 통신을 사용할 수 없습니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_alignment",
+            "value":"위성 검색 중…",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_disable",
+            "value":"%s(금지됨)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"meetime_network_title",
+            "value":"MeeTime BeiDou 위성 메시징",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"beidou_satellite_message_enter_in_call",
+            "value":"통화 중에는 BeiDou 위성 메시징을 사용할 수 없습니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"by_contact",
+            "value":"연락처별",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"multi_device_collaboration",
+            "value":"연결성 옵션 더 보기",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"start_skycom_satellite_communications_sub3",
+            "value":"Tiantong 위성에 연결하면 정확한 위치가 위성 운영업체에 업로드됩니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"start_skycom_satellite_communications_sub1",
+            "value":"WLAN 및 셀룰러 서비스 범위를 벗어나도 위성을 통해 휴대폰의 통화 및 메시징 기능을 계속 사용할 수 있습니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"201",
+            "value":"권한 확인에 실패했습니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"call_setting_incoming",
+            "value":"수신전화",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_hunt_timeout",
+            "value":"위성 연결 시간 초과",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"quick_gestures",
+            "value":"바로가기 및 제스처",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"incoming_notification_setting_tips",
+            "value":"수신전화 알림의 전체 화면 표시 또는 배너 표시 여부를 선택할 수 있습니다. 언제든지 전화 > 설정 > 잠금 해제 시 알림에서 기본 설정을 변경할 수 있습니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"im_message_smc_receive_fail",
+            "value":"수신 실패",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"banner",
+            "value":"배너",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"unlock_after_call_notification_description",
+            "value":"게임 플레이, 지도 탐색 또는 전체 화면에서 이미지 및 비디오 확인 중에는 수신전화가 항상 배너로 표시됩니다.\n\n단순, 시니어 또는 원정 모드 사용 중에는 항상 전체 화면으로 표시됩니다.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fold_remind_tips_message",
+            "value":"위성 연결에 실패했습니다. 사용 중에는 휴대폰을 펼친 상태로 유지하십시오.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"contact_str_copysim_notification",
+            "value":"알림",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_search_tips",
+            "value":"개방되어 있고 장애물이 없는 실외 공간에서 가장 잘 작동합니다.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"edm_operate_prohibit_tip",
+            "value":"이 작업은 엔터프라이즈 관리에 의해 금지되어 있습니다.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"cancel",
+            "value":"취소",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"car_satellite_tips",
+            "value":"차량의 위성 네트워크를 사용하여 전화를 걸고 받습니다.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"using_beidou_toast",
+            "value":"BeiDou 위성 기능을 사용하는 중에는 사용할 수 없습니다.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"car_satellite_title",
+            "value":"차량 내 위성 통신",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_service_settings_window_mode",
+            "value":"Tiantong 위성 통신은 멀티 윈도우를 지원하지 않습니다.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"InfoEdit_back",
+            "value":"뒤로",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone_delete_dialog_tip1",
+            "value":"선택한 항목을 삭제하시겠습니까?",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone_no_delete",
+            "value":"사용 중인 항목은 삭제할 수 없습니다.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"no_video_ringtone",
+            "value":"비디오 벨소리 없음",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone_from_photo_picker",
+            "value":"갤러리에서 선택",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"manage",
+            "value":"관리",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone",
+            "value":"비디오 벨소리",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone_small_no_show",
+            "value":"플로팅 윈도우에서는 비디오 벨소리를 편집할 수 없습니다.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"my_video_ringtone",
+            "value":"내 링백 비디오",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone_deselect_all",
+            "value":"모두 선택 해제",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"remind",
+            "value":"다시 알림",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone_select_all",
+            "value":"모두 선택",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"sms",
+            "value":"메시지",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone_size_limit",
+            "value":"%s 미만의 비디오를 선택하십시오.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"call_assistant_setting_title",
+            "value":"자동 응답",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"delete",
+            "value":"삭제",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"use",
+            "value":"적용",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone_dialog_system_error",
+            "value":"시스템 오류입니다. 다시 시도하십시오.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone_dialog_no_space",
+            "value":"저장 공간이 부족합니다. 일부 공간을 확보하고 다시 시도하십시오.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone_dialog_Exceeding_limit_title",
+            "value":"최대 비디오 벨소리 수 도달",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone_dialog_Exceeding_limit_content",
+            "value":"더 많은 공간을 확보하려면 일부 주소록의 비디오 벨소리를 제거하십시오.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone_dialog_type_error",
+            "value":"MP4 비디오만 지원됩니다.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"InfoEdit_edits_info",
+            "value":"편집",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"click_go_to_settings",
+            "value":"탭하여 설정",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"penglai_mode_notice",
+            "value":"펭라이 모드에서는 수행할 수 없습니다.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"smart_call_making",
+            "value":"스마트 콜",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"incoming_outgoing_calls_voice_control",
+            "value":"전화 받기 또는 거부",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"video_type",
+            "value":"비디오 %d",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Incoming_call_voice_announcement",
+            "value":"수신전화 알림",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"talkback_not_selected",
+            "value":"선택되지 않음",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"talkback_selected",
+            "value":"선택됨",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_connect_failed",
+            "value":"연결 해제됨",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"new_hyacinth_satellite_signal_descriptions",
+            "value":"히아신스 위성",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_signal_descriptions",
+            "value":"China Telecom\n히아신스 위성",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"keep_current_posture_hyacinth",
+            "value":"이 위치 유지",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_service_no_available_time",
+            "value":"사용 가능한 시간대 없음",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"close_button",
+            "value":"닫기",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"more_options",
+            "value":"옵션 더 보기",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"New_CAll",
+            "value":"고급 통화",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"details",
+            "value":"정보",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_connect_failed_not_time",
+            "value":"현재 사용 가능한 위성이 없습니다. 나중에 다시 시도하십시오.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"switched_to_next_satellite",
+            "value":"다음 위성으로 전환됨",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"switching_to_next_satellite",
+            "value":"곧 다음 위성으로 전환\n연결이 잠시 중단될 수 있습니다",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"cellular_network_notify_text",
+            "value":"위성 네트워크가 더 이상 필요하지 않습니다. 종료하시겠습니까?",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"cellular_network_notify_ignore_button",
+            "value":"무시",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"cellular_network_notify_close_button",
+            "value":"위성 네트워크 종료",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"cellular_network_notify_title",
+            "value":"모바일 네트워크 사용 가능",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_data_esim_card",
+            "value":"eSIM %s 네트워크",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_device_calibrating_tips",
+            "value":"장치를 큰 각도로 기울여 보정 완료",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_short_notification_info",
+            "value":"<body><span style='normal'>WLAN 및 셀룰러 수신 범위를 벗어났을 때 위성을 통해 휴대폰의 통화 및 메시징 기능을 계속 사용할 수 있습니다.\n\n사용 중에 이 서비스는 위성과 통신하기 위해 사용자의 </span><span style='bold'>위치</span><span style='normal'>에 액세스해야 합니다. 이 기능을 켜면 </span><span style='userAgreements'>히아신스 사용자 계약</span><span style='normal'>에 동의하게 됩니다. 개인정보 처리 방법에 대한 상세정보는 </span><span style='privacyStatement'>히아신스 및 개인 정보 보호에 대한 방침</span><span style='normal'> 및 </span><span style='permissionStatement'>권한 공지</span><span style='normal'>의 내용을 참조하십시오.</span></body>",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_not_found_satellite",
+            "value":"사용 가능한 위성을 찾을 수 없습니다. 나중에 다시 시도하십시오.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_service_no_region_card",
+            "value":"현재 지역에서는 히아신스 위성 통신이 지원되지 않습니다. 지원되는 지역에 대한 자세한 정보는 FAQ를 참조하십시오.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_service_permission_usage_details",
+            "value":"히아신스 위성 통신 권한",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_connect_failed_guide",
+            "value":"현재 사용 가능한 위성이 없습니다. 다음 사용 가능한 기간: %1$s~%2$s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_service_network_description",
+            "value":"위성을 통해 전화를 걸고 텍스트를 보냅니다.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_service_enter_in_call",
+            "value":"통화 중에는 히아신스 위성 통신을 실행할 수 없습니다.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"start_hyacinth_satellite_communications",
+            "value":"히아신스 위성 통신",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_service_settings_window_mode",
+            "value":"히아신스 위성 통신은 멀티 윈도우 모드를 지원하지 않습니다.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_service_airplane_mode",
+            "value":"비행기 모드에서는 히아신스 위성 통신을 사용할 수 없습니다.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_service_tiantong_mode",
+            "value":"Tiantong 위성 통신을 사용 중일 때 히아신스 위성 통신은 사용할 수 없습니다.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_service_not_enabled",
+            "value":"히아신스 위성 통신이 실행되지 않았습니다.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellites_not_available",
+            "value":"현재는 위성 가용성을 확인할 수 없습니다. 그래도 계속하시겠습니까?",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_service_settings_window_suggest",
+            "value":"히아신스 위성 통신을 실행하려면 이 창을 전체 화면으로 여십시오.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"esim_card_num_no_space",
+            "value":"eSIM %s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_communications",
+            "value":"히아신스 위성 통신",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_service_no_sim_card",
+            "value":"히아신스 위성 통신이 활성화된 SIM 카드를 삽입하고 다시 시도하십시오.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"exit_hyacinth_satellite_service_tips",
+            "value":"히아신스 위성 통신을 종료하시겠습니까?",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"phone_ring_Card3",
+            "value":"eSIM %1$s: %2$s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_notification_title",
+            "value":"위성 통신 종료됨",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"new_calling_can_only_use_in_full_screen",
+            "value":"고급 통화 서비스는 전체 화면 보기에서만 사용할 수 있습니다.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"New_CAll_DESC",
+            "value":"서비스는 이동통신사에서 제공합니다.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_activate_text",
+            "value":"<body><span style='normal'>히아신스를 사용하면 네트워크 적용 범위를 벗어나도 전화를 걸고 문자 메시지를 보낼 수 있습니다. 히아신스 위성은 아직 배포 중이므로 이 서비스는 현재 하루 중 특정 시간에만 사용할 수 있습니다. 이 서비스는 사용 중 위성 가용성 여부를 확인하기 위해 </span><span style='bold'>위치 및 네트워크</span><span style='normal'> 정보에 액세스합니다.</span></body>",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_activate_immediatly",
+            "value":"지금 활성화",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_activate",
+            "value":"히아신스 활성화",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"celia",
+            "value":"Celia 통화",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"call_setting_call",
+            "value":"통화",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_service_settings_skytone_mode",
+            "value":"SkyTone의 사용 중에는 사용할 수 없습니다.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"callSetting_title",
+            "value":"통화 설정",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"tiantong_satellite_service_hyacinth_mode",
+            "value":"히아신스 위성 통신을 사용 중일 때 Tiantong 위성 통신은 사용할 수 없습니다.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"send_success",
+            "value":"전송 완료",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"im_message_smc_satellite_no_receipt_tips",
+            "value":"메시지가 위성에 도달하지 않았을 수 있습니다. 장애물이 없는 실외 공간에서 다시 시도하십시오.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_available_time_tomorrow",
+            "value":"내일: %1$s~%2$s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_available_time_today",
+            "value":"%1$s~%2$s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_available_time_tomorrow_end",
+            "value":"%1$s~%2$s(내일)",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_available_tips",
+            "value":"사용 가능 시간:\n%1$s\n%2$s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_request_location_permission",
+            "value":"위치 액세스가 허용되지 않았습니다. 지금 허용하시겠습니까?",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_location_enable_permission",
+            "value":"액세스 허용",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_available_tips_single",
+            "value":"사용 가능 시간: %s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"float_better_angle",
+            "value":"더 나은 각도 찾기",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"call_setting_celia_description",
+            "value":"Celia가 대신 전화에 응답하고 통화를 요약합니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"hyacinth_available_time_refresh",
+            "value":"Tiantong 위성 통신이 종료되면 사용 가능 시간대가 자동으로 새로 고침됩니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"unlock_after_call_notification_descriptions_normal",
+            "value":"게임 플레이, 지도 탐색 또는 전체 화면에서 이미지 및 비디오 확인 중에는 수신전화가 항상 배너로 표시됩니다.\n\n시니어 모드에서는 항상 전체 화면으로 표시됩니다.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"call_setting_getting_hyacinth_available_time",
+            "value":"사용 가능 시간대 확인 중…",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_available_time_connection_use",
+            "value":"사용 가능 시간대를 확인하고 위성에 연결하는 데 사용됩니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"need_system_location",
+            "value":"설정에서 위치 서비스 실행",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"not_support_toast",
+            "value":"이 작업은 이 모드에서 지원되지 않습니다."
+        }
+    ]
+}

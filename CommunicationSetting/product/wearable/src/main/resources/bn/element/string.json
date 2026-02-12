@@ -1,0 +1,25 @@
+{
+    "string":[
+        {
+            "name":"watch_permission_history_no_record",
+            "value":"কোনো রেকর্ড নেই",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"watch_traffic_ranking_the_month",
+            "value":"মোবাইল ডেটার ব্যবহার (মাসিক)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"watch_loading",
+            "value":"লোড হচ্ছে…",
+            "attr":{
+                "priority":"LT"
+            }
+        }
+    ]
+}

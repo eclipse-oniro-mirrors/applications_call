@@ -1,0 +1,217 @@
+{
+    "string":[
+        {
+            "name":"module_desc",
+            "value":"module description"
+        },
+        {
+            "name":"CallrecorderAbility_desc",
+            "value":"description"
+        },
+        {
+            "name":"CallrecorderAbility_label",
+            "value":"label"
+        },
+        {
+            "name":"GET_STARTUP_INFO",
+            "value":"init call_record database"
+        },
+        {
+            "name":"mobile_data_commonly_used",
+            "value":"commonly_used"
+        },
+        {
+            "name":"automatic_recording_of_calls",
+            "value":"Automatically record calls",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"emptyStr",
+            "value":" "
+        },
+        {
+            "name":"automatically_record_call_viewed",
+            "value":"Call recordings can be found in the Recorder app.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"auto_recording_object",
+            "value":"Apply to",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"auto_recording_object_selection",
+            "value":"auto recording object selection"
+        },
+        {
+            "name":"specified_number",
+            "value":"Specified numbers",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"initialize_the_database",
+            "value":"initialize the database"
+        },
+        {
+            "name":"no_number_specified",
+            "value":"No numbers",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"add_specified_number",
+            "value":"Add numbers",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"auto_recording_object_saving",
+            "value":"auto recording object saving"
+        },
+        {
+            "name":"all_calls",
+            "value":"All calls",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"call_recorder",
+            "value":"call recorder"
+        },
+        {
+            "name":"opened",
+            "value":"Enabled"
+        },
+        {
+            "name":"closed",
+            "value":"Disabled"
+        },
+        {
+            "name":"call_auto_recorder",
+            "value":"Auto-record calls"
+        },
+        {
+            "name":"unset_recorder",
+            "value":"Not set",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"delete",
+            "value":"Delete",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"select_all",
+            "value":"Select all",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"deselect_all",
+            "value":"Deselect all",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"cancel",
+            "value":"Cancel",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"is_delete_number",
+            "value":"Delete this number?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"is_delete_all_number",
+            "value":"Delete all numbers?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"unknown",
+            "value":"Unknown",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"call_meeting",
+            "value":"Conference call",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"call_numbers_finish_des",
+            "value":"Saved to Phone > More > Call recordings. Tap to view.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"callrecorderUIExtensionAbility_desc",
+            "value":"callrecorder is system api"
+        },
+        {
+            "name":"callrecorderUIExtensionAbility_label",
+            "value":"callrecorder"
+        },
+        {
+            "name":"RECORD_VOICE_CALL",
+            "value":"Allow application of call recording"
+        },
+        {
+            "name":"READ_CONTACTS",
+            "value":"Allow apps to read contact data"
+        },
+        {
+            "name":"WRITE_AUDIO",
+            "value":"Allow applications to create public directory files"
+        },
+        {
+            "name":"STORAGE_MANAGER",
+            "value":"Allow applications to access the application space"
+        },
+        {
+            "name":"backup_restore",
+            "value":"backup_restore"
+        },
+        {
+            "name":"add",
+            "value":"Add",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"voice_long_press",
+            "value":"Double-tap and hold for more options",
+            "attr":{
+                "priority":"translate"
+            }
+        }
+    ]
+}

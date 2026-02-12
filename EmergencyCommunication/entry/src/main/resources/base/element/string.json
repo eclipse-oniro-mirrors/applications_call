@@ -1,0 +1,2641 @@
+{
+    "string":[
+        {
+            "name":"module_desc",
+            "value":"emergency call"
+        },
+        {
+            "name":"EntryAbility_desc",
+            "value":"Emergency call main entry file"
+        },
+        {
+            "name":"EntryAbility_label",
+            "value":"Main entrance for emergency calls"
+        },
+        {
+            "name":"GET_APPROXIMATELY_LOCATION",
+            "value":"This is used to obtain your approximate location.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"GET_LOCATION",
+            "value":"obtains precise geographical locations"
+        },
+        {
+            "name":"SEND_MESSAGES",
+            "value":"obtains the permission to send SMS messages"
+        },
+        {
+            "name":"MANAGE_SECURE_SETTINGS",
+            "value":"allows apps to modify security system settings"
+        },
+        {
+            "name":"PLACE_CALL",
+            "value":"allows apps to directly make calls"
+        },
+        {
+            "name":"GET_TELEPHONY_STATE",
+            "value":"allows apps to read phone information"
+        },
+        {
+            "name":"CANCEL",
+            "value":"Cancel",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergencyContact",
+            "value":"Emergency contacts",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"editEmergencyContact",
+            "value":"Edit emergency contacts",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"editEmergencyInfo",
+            "value":"Edit emergency information",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"emergencyInfo",
+            "value":"Emergency information",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"getLocationService",
+            "value":"Enable auto location access?",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"closeLocationService",
+            "value":"Disable auto location access?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"closeLocationServiceMsg",
+            "value":"If this is disabled, your device won't automatically display your location when you make an emergency call.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"sendMsgNotice",
+            "value":"You can send this contact a text message telling them you've added them as an emergency contact.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"sendMsg",
+            "value":"I've added you as an emergency contact. In an emergency, you may receive an SOS message from me asking for help. [ Emergency SOS]",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"getLocationMsg1",
+            "value":"To help you report your location in an emergency, your device will automatically display your location when you make an emergency call. You can tap the location to view it in a map app.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"removeContact",
+            "value":"Remove %s from emergency contacts?",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"clearInfo",
+            "value":"Clear all information and contacts?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"warnContent",
+            "value":"This information can help first responders in an emergency.\n\nIt is stored locally and can be accessed by anyone without unlocking this device. You can also set this in Contacts > My card.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"contactsWarnContent",
+            "value":"Adding emergency contacts can help first responders in an emergency. Anyone can read this information without unlocking your device.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"warnInfo",
+            "value":"All set? Go back to %s",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"warnLink",
+            "value":"Emergency SOS"
+        },
+        {
+            "name":"sendSmsSuccess",
+            "value":"Message sent.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"sendSmsFail",
+            "value":"Unable to send SMS message (Reason unknown).",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"already_in_contacts",
+            "value":"%s is already an emergency contact.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"clear",
+            "value":"Clear",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"sendNow",
+            "value":"OK",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"addContact",
+            "value":"Add contact",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"addEmergencyContact",
+            "value":"Add emergency contacts",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"remove",
+            "value":"Remove",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"clearAll",
+            "value":"Clear all",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"determine",
+            "value":"OK",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"getLocation",
+            "value":"Tap to get location",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"gettingLocation",
+            "value":"Obtaining location…",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"getLocationFailed",
+            "value":"Unable to obtain location. Tap to try again.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"noLocationPermissionTitle",
+            "value":"Emergency SOS requires the Location permission",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"noLocationPermissionDesc",
+            "value":"This is used to access your location during an emergency call.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"GET_NETWORK_INFO",
+            "value":"get network info"
+        },
+        {
+            "name":"permissionConfirm",
+            "value":"OK",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"rightCall",
+            "value":"Swipe right to call %s",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"personalEmergencyInfo",
+            "value":"Emergency information",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"continue",
+            "value":"OK",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"peopleAdded",
+            "value":"%d",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"add",
+            "value":"Add",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"notAdded",
+            "value":"None",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"notifyContact",
+            "value":"Notify contact?",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"personalInfo",
+            "value":"Personal",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"removecontact",
+            "value":"Remove emergency contact?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"emergencyContacts",
+            "value":"Emergency numbers",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"fullName",
+            "value":"Full name",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"noStated",
+            "value":"None specified",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"address",
+            "value":"Address",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"medicalInfo",
+            "value":"Medical",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"bloodType",
+            "value":"Blood type",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"allergies",
+            "value":"Allergies",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"allergiesPlacement",
+            "value":"For example, peanuts or pollen",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"drug",
+            "value":"Medications",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"drugPlacement",
+            "value":"For example, lisinopril or aspirin",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"organDonor",
+            "value":"Organ donor",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"drugStatus",
+            "value":"Medical conditions and additional info",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"drugStatusPlacement",
+            "value":"For example, asthma",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"yes",
+            "value":"Yes",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"no",
+            "value":"No",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergencyCallsOnly",
+            "value":"Emergency calls only",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"POLICE",
+            "value":"Police",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"AMBULANCE",
+            "value":"Ambulance",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"FIRE",
+            "value":"Fire department",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"POLICE_FIRE",
+            "value":"Police&Fire"
+        },
+        {
+            "name":"POLICE_AMBULANCE_FIRE",
+            "value":"Police&Ambulance&Fire"
+        },
+        {
+            "name":"AMBULANCE_FIRE",
+            "value":"Ambulance&Fire"
+        },
+        {
+            "name":"POLICE_AMBULANCE",
+            "value":"Police&Ambulance"
+        },
+        {
+            "name":"UNKNOWN",
+            "value":"unknown"
+        },
+        {
+            "name":"emergencyCall",
+            "value":"Emergency call",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"notEmergencyNumberMsg",
+            "value":"Call could not be made. %s is not an emergency number.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emptyStr",
+            "value":" "
+        },
+        {
+            "name":"GET_WALLPAPER",
+            "value":"get wallpaper"
+        },
+        {
+            "name":"earthquake_alarm_notify",
+            "value":"Emergency alerts",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"auto_send_earthquake_alarm_message",
+            "value":"Earthquake alerts",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_warning_summary",
+            "value":"Receive early warnings in the event of an earthquake.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"important_state_title",
+            "value":"Important",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"button_agree",
+            "value":"Agree",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"define_disclaimer",
+            "value":"Disclaimer",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"button_agree_and_open",
+            "value":"Agree and enable",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"GET_LOCATION_IN_BACKGROUND",
+            "value":"This is used to obtain location information when running in the background.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"button_open",
+            "value":"Enable",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"ACCESS_NETWORK",
+            "value":"access_network"
+        },
+        {
+            "name":"ATTEST_KEY",
+            "value":"get attest key"
+        },
+        {
+            "name":"alarm_close_dialog_remind_title",
+            "value":"Note",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Historical_warning_information",
+            "value":"Previous alerts",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Historical_warning_information_explain",
+            "value":"View all alerts you've received.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"warning_area_and_function_text",
+            "value":"Feature coverage and description",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"emergency_alter_title",
+            "value":"Preview alert",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"function_settings_text",
+            "value":"Settings",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"list_learn_about_emergency_shelters",
+            "value":"Find emergency shelters nearby.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"earthquake_location_notice",
+            "value":"To manually grant location access, select \"Allow all the time\" and \"Precise location\" in Settings > Apps & services > More apps > Emergency SOS > Location.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"list_learn_about_emergency_shelters_title",
+            "value":"Find shelter",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"list_dial_emergency_contact_number",
+            "value":"Manage your emergency contacts.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"list_quickly_show_emergency_information",
+            "value":"Your personal emergency info can be shown on the screen in an emergency.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"EarthquakeCenter",
+            "value":"Epicenter",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeMagnitude",
+            "value":"Magnitude",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeIntensity",
+            "value":"Intensity (%s)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeLocation",
+            "value":"Epicenter",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"EarthquakeDistance",
+            "value":"Distance from epicenter",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeUpdate",
+            "value":"Time of earthquake",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeLocationLongitudeEast",
+            "value":"(%2$s°N, %1$s°W)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeLocationLongitudeWest",
+            "value":"(%2$s°S, %1$s°E)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeLocationLatitudeSouth",
+            "value":"(%2$s°S, %1$s°W)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeLocationLatitudeNorth",
+            "value":"(%2$s°N, %1$s°E)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeInfoTitle",
+            "value":"Alert details",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeInfofrom",
+            "value":"Source: %s",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeArrived",
+            "value":"After seismic waves arrive",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeArriving",
+            "value":"Before seismic waves arrive",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeAlarmTest",
+            "value":"Preview alert",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeAlarmTesting",
+            "value":"End preview (%s)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeNext",
+            "value":"See next tip",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeArrivingLongTips",
+            "value":"A countdown will begin and your device will vibrate. You should find nearby shelter or move to an open space outside as fast as possible.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeArrivedLongTips",
+            "value":"An alarm will sound when seismic waves hit. You'll see options to find shelter, contact help, and display personal emergency information.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeWarningTitle1",
+            "value":"Earthquake! Take cover!",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeWarningTitle1_2",
+            "value":"Earthquake! Take cover!",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeWarningTitle3",
+            "value":"Stay calm and find an open area or somewhere safe to take cover. Avoid elevators and hanging objects.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeFelling1",
+            "value":"Mild tremors",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeFelling2",
+            "value":"Strong shaking",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeFelling3",
+            "value":"Significant damage",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"The_position_switch_off",
+            "value":"Enable location",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"The_position_switch_off_text",
+            "value":"You won't receive warnings ahead of earthquakes if you disable this. Disable anyway?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Turn_on_Emergency_Information_and_Warning_text",
+            "value":"Your location information is required to provide earthquake alerts for your area.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Permission_Instructions",
+            "value":"Earthquake alerts permissions",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Disclaimer_Instructions",
+            "value":"Earthquake alerts are provided for your reference by government entities tasked with earthquake relief.  has no control over them.\n\nYou may only have a few seconds of warning to find an appropriate place to take shelter. In some cases, you may not receive any warning at all before seismic waves arrive. You are ultimately responsible for your own safety. Please exercise good judgment and stay safe.\n\n bears no responsibility for any losses caused by an earthquake alert not being received due to blind spots in the emergency alert service, poor network connection, third-party equipment faults, and other circumstances outside of 's control.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"PermissionDescriptionContent_2",
+            "value":"Location",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"PermissionDescriptionContent_3",
+            "value":"This is used to obtain your device's precise location in order to send earthquake alerts.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"importantDialogContent_2",
+            "value":"To provide earthquake alerts, this service requires an Internet connection and the Location permission. When an earthquake occurs,  earthquake alert servers will send alerts and provide access to emergency services to affected users based on their location and device information. For a detailed introduction to this feature and information about supported regions, tap %s.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"importantDialogContent_3",
+            "value":"here",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"importantDialogContent_4",
+            "value":"By tapping Agree, you agree to receive the \"Earthquake alerts\" service and accept the %1$s. For more details about how your personal information is processed, refer to the %2$s and %3$s. For more information, tap %4$s.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"importantDialogContent_8",
+            "value":"here",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EmergencyWarningSettings_2",
+            "value":"Internet",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EmergencyWarningSettings_4",
+            "value":"Location",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EmergencyWarningSettings_7",
+            "value":"Statement About Earthquake Alerts and Privacy",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EmergencyWarningSettings_8",
+            "value":"Permissions Notice",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"InfoEdit_edit",
+            "value":"More options",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"InfoEdit_dail",
+            "value":"Call",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"InfoEdit_delete",
+            "value":"Delete",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"NumberEdit_delete",
+            "value":"%s has been deleted",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"ContactsEdit_close",
+            "value":"Remove emergency contact",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"EarthquakeWarningServer",
+            "value":"Earthquake alerts",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"oobe_EarthquakeWarningServer_content",
+            "value":"This service can send an alert to you when an earthquake is detected. It requires an Internet connection and the Location permission. It also needs to obtain your device and location information. By turning this on, you agree to these terms as well as the <a link=\"disclaimStatement\">Disclaimer</a>, <a link=\"privacyStatement\">Statement About Earthquake Alerts and Privacy</a>, and <a link=\"permissionStatement\">Permissions Notice</a>.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"System",
+            "value":"System",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"InfoEdit_show_dialpad",
+            "value":"Show keypad",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"InfoEdit_edits_info",
+            "value":"Edit",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Permission_denied_to_send_sms",
+            "value":"This app doesn't have permission to send SMS messages.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Emergency_message",
+            "value":"[Emergency SOS]\nThere's an emergency and I need your help. You're being notified because you are one of my emergency contacts.\nMy current location is: %s. I might not be able to pick up right now.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Emergency_message_without_location",
+            "value":"[Emergency SOS]\nThere's an emergency and I need your help. You're being notified because you are one of my emergency contacts. I might not be able to pick up right now.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"notificationSwitchDialogContent",
+            "value":"To receive earthquake alerts, allow Emergency SOS to send you notifications in app settings.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"emergencyInfromation",
+            "value":"Emergency!",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"emergencyInfromationText",
+            "value":"Magnitude %2$s earthquake detected in %1$s. %4$s expected in %3$s.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EmergencyWarningSettings_all",
+            "value":"This service requires an %1$s connection and the %2$s permission. It also needs to read and upload/transfer location information to provide earthquake warnings. By turning this on, you agree to these terms as well as the %3$s. For more details about how your personal information is processed, refer to the %4$s and %5$s.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"closeLocationService_title",
+            "value":"Disable auto location",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_emergency_title",
+            "value":"Emergency SOS",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_emergency_personal_info",
+            "value":"Set personal and medical information.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_info",
+            "value":"Auto-SOS message",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_info_Detail_notice_all",
+            "value":"This service requires the %1$s and %2$s permissions and needs to read location information. By turning this on, you agree to these terms. For more details, refer to the %3$s and %4$s.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_info_Detail_notice_renew",
+            "value":"This service requires the %1$s permission and needs to read location information. By turning this on, you agree to these terms. For more details, refer to the %2$s and %3$s.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_info_Detail_notice_dark_one",
+            "value":"Messaging",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_info_Detail_notice_dark_Two",
+            "value":"Location",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_info_Detail_notice_active_one",
+            "value":"Statement About Auto-SOS Message and Privacy",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_info_Detail_notice_active_two",
+            "value":"Permissions Notice",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Call",
+            "value":"Auto-SOS call",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Call_Test",
+            "value":"Preview SOS message",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_Location",
+            "value":"Report location",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_Location_Info",
+            "value":"Send your encrypted location to the police when you make an emergency call (Chinese mainland only).",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_Location_Detail",
+            "value":"This service requires an %1$s connection and the %2$s permission. It also needs to read and upload/transfer your location information and phone number. This is to facilitate the provision of emergency rescue services. By turning it on, you agree to these terms. For more details about how your personal information is processed, refer to the %3$s and %4$s.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_Location_Detail_Dark_one",
+            "value":"Internet",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_Location_Detail_Active_one",
+            "value":"Statement About Emergency Location Reporting and Privacy",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_Location_Detail_Active_two",
+            "value":"Permissions Notice",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_Location_When_Call",
+            "value":"Automatically obtain location",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_Location_When_Call_Detail",
+            "value":"Allow the system to obtain your location when you start an emergency call.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Sos_Permission_Title_1",
+            "value":"Emergency location reporting permissions",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Permission_Title_2",
+            "value":"Auto-SOS message permissions",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Permission_Description_2",
+            "value":"This is used to access your device's precise location, which helps to provide more effective rescue services in an emergency.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Permission_Description_3",
+            "value":"This is used to obtain your device's precise location in order to send your location to your emergency contacts when Emergency SOS is activated.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Permission_Description_4",
+            "value":"Messaging",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Permission_Description_5",
+            "value":"This is used to automatically notify your contacts by SMS when Emergency SOS is activated.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"stop_share_location_prompt_content",
+            "value":"SOS messages will stop being sent to your emergency contacts if you exit now. Exit?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"exit",
+            "value":"Exit",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"sos_is_auto_calling",
+            "value":"Auto-calling…",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"emergency_number_alarm",
+            "value":"Personal alarm",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"share_location_background_tips",
+            "value":"Sending location to emergency contacts",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"unable_auto_dial_and_send_sms_dialog_title",
+            "value":"Unable to call or message",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"unable_send_help_info",
+            "value":"Unable to send message",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"unable_auto_dial_dialog_title",
+            "value":"Unable to call for help",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"unable_auto_dial_dialog_summary",
+            "value":"Add at least one emergency contact first.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"unable_auto_dial_dialog_add",
+            "value":"Add",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"send_sms_notify_emergency_contact",
+            "value":"A message will also be sent to your emergency contacts",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"sos_permissions_tips_of_auto_send_sms",
+            "value":"To manually grant location access, select \"Precise location\" in Settings > Apps & services > More apps > Emergency SOS > Location.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"no_sim_message_and_call_unavailable",
+            "value":"No SIM. SMS and phone services are unavailable.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"emergency_number_traffic",
+            "value":"Traffic accident",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"no_service_message_and_call_unavailable",
+            "value":"No service. SMS and phone services are unavailable.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"emergency_location_service_title",
+            "value":"Emergency location reporting",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"emergency_location_service_text",
+            "value":"Your location information will be used with Emergency SOS. This service requires an Internet connection and the Location permission. It also needs to read and upload/transfer location information and your phone number, which will be used to provide emergency rescue services. By turning this on, you agree to these terms. For more details about how your personal information is processed, refer to the <a link=\"privacyStatement\">Statement About Emergency Location Reporting and Privacy</a> and <a link=\"permissionStatement\">Permissions Notice</a>.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"sos_is_playing_recording",
+            "value":"Playing SOS message. Tap to enter call.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"sos_is_playing_recording_1",
+            "value":"Playing SOS message.\nTap to enter call.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"sos_calling_summary",
+            "value":"Call in progress. Tap to join.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"aml_short_notification",
+            "value":"<body><span style='subtitle'>This service requires an Internet connection and the Location permission. It needs to enable Location Services, and will read and upload/transfer this device's phone number, location information, and IMEI. By turning this on, you agree to these terms. For more details about how your personal information is processed, refer to the </span><span style='privacyStatement'>Statement About  Emergency Location Services and Privacy</span><span style='subtitle'> and </span><span style='permission'>Permissions Notice</span><span style='subtitle'>.</span></body>",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"aml_switch_summary",
+            "value":"Automatically send your location to emergency services when you make an emergency call or send an emergency message. Subject to availability.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"aml_switch_title",
+            "value":" Emergency Location Services",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"aml_permission_dialog_title",
+            "value":" Emergency Location Services permissions",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"aml_permission_info_title",
+            "value":"This service requires the following permission:",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"aml_permission_location_info",
+            "value":"This is used to obtain your precise location information, which helps to provide more effective rescue services in an emergency.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"aml_permission_message_info",
+            "value":"This is used to send Emergency SOS messages.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"remove_emergency_contact_text",
+            "value":"Remove emergency contact",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"remove_last_emergency_contact_prompt_content",
+            "value":"Remove %s from your emergency contacts? They will no longer be able to receive automatic SOS messages or calls.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_advanced",
+            "value":"Advanced settings",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"InfoEdit_back",
+            "value":"Back",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"earthquake_problem_feedback",
+            "value":"This is used for reporting issues related to earthquake alerts.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"permission_reason_contacts",
+            "value":"This is used to manage contacts.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"one_finger_double_click",
+            "value":"Double-tap to activate",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"not_available",
+            "value":"Can't be used",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"positioning",
+            "value":"Location",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"teaching_dialog_complete",
+            "value":"OK",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_not_support",
+            "value":"Emergency SOS is unavailable when Tiantong Satellite Communications is enabled.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"notification_switch_dialog_content",
+            "value":"This is to send you earthquake alerts. You can enable notifications in Settings.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"popup_button_gotosettings",
+            "value":"Go to Settings",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"notification_switch_dialog_title",
+            "value":"Emergency SOS would like to send you notifications",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"earthquake_warning_notification_text_without_device_address",
+            "value":"Magnitude %2$s earthquake detected in %1$s. %3$s expected in your area.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_shelter_setting_notice",
+            "value":"Install Maps to search for shelters.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"open_phone_to_emergency_calls",
+            "value":"Unfold for emergency calls",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_shelter_setting_dialog",
+            "value":"No supported map apps found. Find somewhere safe nearby.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"car_accident_sos_message",
+            "value":"[Emergency SOS – Car crash]\nMy phone detected that I've been in a car crash and need your help. You're being notified because you are one of my emergency contacts.\nMy current location is: %s.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"car_accident_sos_message_without_location",
+            "value":"[Emergency SOS – Car crash]\nMy phone detected that I've been in a crash and need your help. You're being notified because you are one of my emergency contacts.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"car_accident_auto_call_for_help_title",
+            "value":"Auto-SOS after crash",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"car_accident_auto_call_notice_all",
+            "value":"This service requires the %1$s permission to access your location information. By turning this on, you agree to these terms as well as the %2$s. For more details about how your personal information is processed, refer to the %3$s and %4$s.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"car_accident_detection_disclaimer_in_short_notice",
+            "value":"Car Crash Detection Disclaimer",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"car_accident_detection_disclaimer",
+            "value":"Car Crash Detection Disclaimer",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"car_accident_detection_disclaimer_content_one",
+            "value":"If your device detects a severe car crash, it will automatically call your emergency contacts and send an SMS message containing your location. Please make sure that your emergency contacts are aware of this feature, so as to ensure that these messages are not disregarded or misunderstood.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"car_accident_detection_disclaimer_content_two",
+            "value":"This feature works by interpreting data from your device's sensors. Sensor data patterns that resemble car crashes may unintentionally trigger this feature. In some cases, a crash may not produce sensor data capable of triggering this feature. Please also note that your device's connectivity and status may affect its ability to make phone calls and send messages.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"car_accident_detection_disclaimer_content_three",
+            "value":" is not liable for any damages that may occur due to sensor measurements, network connectivity, or device status, or due to messages being disregarded or misunderstood.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"car_accident_detection_disclaimer_content_four",
+            "value":"This feature is only available in the Chinese mainland.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"car_accident_detection_statement_on_service_and_privacy",
+            "value":"Statement About Auto-SOS After Crash and Privacy",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"car_accident_permission_title",
+            "value":"Auto-SOS after crash permissions",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"car_accident_trigger_prompt",
+            "value":"It looks like you were in a car crash at %1$s. Your phone will make an emergency call if you don't respond.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"cannot_enable_car_accident_sos",
+            "value":"Can't enable Auto-SOS after crash",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"fall_down_message",
+            "value":"[Emergency SOS – Fall detection]\nMy phone detected that I've fallen and need your help. You're being notified because you are one of my emergency contacts.\nMy current location is: %s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fall_down_message_without_location",
+            "value":"[Emergency SOS – Fall detection]\nMy phone detected that I've fallen and need your help. You're being notified because you are one of my emergency contacts.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fall_down_auto_call_for_help_title",
+            "value":"Auto-SOS after fall",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"fall_down_auto_call_notice_all",
+            "value":"This service requires the %1$s permission to access your location. By turning this on, you agree to these terms and the %2$s. For more details about how your personal information is processed, refer to the %3$s and %4$s.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fall_down_detection_disclaimer_in_short_notice",
+            "value":"Fall Detection Disclaimer",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fall_down_detection_disclaimer",
+            "value":"Fall detection disclaimer",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"fall_down_detection_disclaimer_content_one",
+            "value":"If your device detects a fall, it will automatically call your emergency contacts and send an SMS message containing your location. Please make sure that your emergency contacts are aware of this feature, so as to ensure that these messages are not disregarded or misunderstood.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"fall_down_detection_disclaimer_content_two",
+            "value":"This feature works by interpreting data from your device's sensors. Sensor data patterns that resemble falls may unintentionally trigger this feature. In some cases, a fall may not produce sensor data capable of triggering this feature. Please also note that your device's connectivity and status may affect its ability to make phone calls and send messages.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"fall_down_detection_disclaimer_content_three",
+            "value":" is not liable for any damages that may occur due to sensor measurements, network connectivity, or device status, or due to messages being disregarded or misunderstood.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"fall_down_detection_disclaimer_content_four",
+            "value":"This feature is only available in the Chinese mainland.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"fall_down_detection_statement_on_service_and_privacy",
+            "value":"Statement About Auto-SOS After Fall and Privacy",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fall_down_permission_title",
+            "value":"Auto-SOS after fall permissions",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"fall_down_trigger_prompt",
+            "value":"It looks like you fell at %1$s. Your phone will make an emergency call if you don't respond.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"cannot_enable_fall_down_sos",
+            "value":"Can't enable Auto-SOS after fall",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_Location_Detail_new",
+            "value":"This service requires an %1$s connection and the %2$s permission, and will read and upload/transfer your location information and phone number in order to send them to third-party emergency services. By turning this on, you agree to the above terms. For details about the permissions this service requires, refer to the %3$s.\nThis service is provided by the third parties named below. For details about personal information processing, refer to:\n%4$s. China Academy of Information and Communications Technology (CAICT). %5$s\n%6$s. Shenzhen LocationNet Technology Co., Ltd. %7$s",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Location_Net_Privacy",
+            "value":"LocationNet Privacy Policy",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Emergency_Position_Service_Privacy",
+            "value":"Statement About Emergency Location Services Platform and Privacy",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"emergency_location_service_text_new",
+            "value":"When you make an SOS call, this service sends your encrypted location to emergency services so they may better aid you. This service requires an Internet connection and the Location permission, and will read and upload/transfer your location information and phone number in order to send them to emergency services. By turning this on, you agree to the above terms. For details about the permissions this service requires, refer to the <a link=\"permissionStatement\">Permissions Notice</a>.\nThis service is provided by the third parties named below. For details about personal information processing, refer to:\n${param1}. Statement About Emergency Location Services Platform and Privacy () of China Academy of Information and Communications Technology (CAICT)\n${param2}. LocationNet Privacy Policy () of Shenzhen LocationNet Technology Co., Ltd.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"unsupport_satellite_card_content",
+            "value":"Unable to send messages during satellite calls.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite",
+            "value":"Tiantong satellite messaging",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"map_url",
+            "value":""
+        },
+        {
+            "name":"position",
+            "value":"Location: %s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"address_details",
+            "value":"Address: %s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"location_north_west",
+            "value":"%1$s N %2$s W",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"location_south_west",
+            "value":"%1$s S %2$s W",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"location_north_east",
+            "value":"%1$s N %2$s E",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"location_south_east",
+            "value":"%1$s S %2$s E",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_title",
+            "value":"Off-grid emergency communication",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_description",
+            "value":"When this is on, you can send SOS messages to and receive calls from nearby rescue personnel in areas without mobile network coverage.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_disclaimer_content_all",
+            "value":"This service requires the %1$s permission and needs to read your phone number(s), IMEI(s), and location information. By turning this on, you agree to these terms and the %2$s. For details about how your personal information is processed, refer to the %3$s and %4$s.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_second",
+            "value":"Seconds",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_auto_send_rescue_message",
+            "value":"Send",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_exit_current_rescue",
+            "value":"Exit",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_submit_message_title",
+            "value":"Send SOS message",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_submit_message_subtitle1",
+            "value":"You can report your location and situation to nearby rescue teams.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_receive_d2d_title",
+            "value":"Rescue team signal detected",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_receive_d2d_subtitle1",
+            "value":"You can report your location and situation to nearby rescue teams.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_location_title",
+            "value":"Location",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_disaster_situation_title",
+            "value":"Situation",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_sending",
+            "value":"Sending",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_send_already",
+            "value":"Sent",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_wait_for_send",
+            "value":"Waiting to send",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_submit_success_title",
+            "value":"Message delivered",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_submit_success_subtitle1",
+            "value":"Your SOS message was received by rescue personnel. Please wait for rescue.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_submit_success_subtitle2",
+            "value":"Remain at coordinates and await extraction team",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_my_rescue_info",
+            "value":"SOS details",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_save_power_tips",
+            "value":"To conserve battery, turn the screen off while you wait for help.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_slogan",
+            "value":"Rescue team",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_team",
+            "value":"Rescue team",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_view_details",
+            "value":"View details",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_sending_status",
+            "value":"Sending…",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_sended_status",
+            "value":"Delivered",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_get_location_failed",
+            "value":"Unable to obtain location",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_exit_once_title",
+            "value":"Exit Off-grid emergency communication?",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_exit_completely_title",
+            "value":"Remind",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_exit_completely_content",
+            "value":"If you turn this off, your device won't be able to search for nearby rescue teams when there is no network coverage. You are advised to keep this turned on.\n\nAre you sure you want to turn this off?",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_message_send_failed_tips",
+            "value":"Signal unstable. Message will resend when signal is restored.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"incomingCall",
+            "value":"Incoming call",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hanging_up_voice_call",
+            "value":"End call from rescue team",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"voiceCall",
+            "value":"Answer call from rescue team",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"switching_audio_channels",
+            "value":"Switch audio channels",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_service_title",
+            "value":"Off-grid emergency communication",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_service_content",
+            "value":"Off-grid emergency rescue provides you with emergency rescue services. This service requires the use of location permissions to read your local phone number, IMEI, and location information in order to offer offline emergency rescue services. By turning on the switch, you agree to the above content. For details on personal information processing, please refer to <a link=\"emergencyRescuePrivacyStatement\">Statement About Off-grid emergency rescue</a> and <a link=\"emcResourcePermissionStatement\">Permissions Notice</a>.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"rescue_message_sending_banner_title",
+            "value":"Sending message…",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"rescue_message_send_success_banner_title",
+            "value":"Delivered"
+        },
+        {
+            "name":"rescue_message_send_failed_banner_title",
+            "value":"Unable to send message",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"rescue_message_communication_banner_title",
+            "value":"Communicate with rescue team",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"rescue_message_send_success_banner_content",
+            "value":"Rescue devices have successfully acquired your distress signal. Please maintain position and await emergency response."
+        },
+        {
+            "name":"rescue_message_communication_banner_content",
+            "value":"Tap to report your situation.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"rescue_signal_level_strong",
+            "value":"Signal strength: Strong",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"rescue_signal_level_middle",
+            "value":"Signal strength: Medium",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"rescue_signal_level_low",
+            "value":"Signal strength: Weak",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"rescue_signal_level_none",
+            "value":"Signal strength: No signal",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"China_Broadnet",
+            "value":"China Broadnet",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"send_button",
+            "value":"Send",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"phrases_button",
+            "value":"Quick messages",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"keyboard_button",
+            "value":"Keyboard",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"message_textarea_placeholder",
+            "value":"Describe your situation",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"ANSWER_CALL",
+            "value":"answer call",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"rescue_signal_detected",
+            "value":"Waiting to send message…",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"disaster_situation_fire",
+            "value":"Fire",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_answer_call_failed",
+            "value":"Answer failed.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"send_position_btn_text",
+            "value":"Send location information",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_not_select_distress_situation",
+            "value":"Situation not selected",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_describe_distress",
+            "value":"Describe your situation",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_call_finish",
+            "value":"Call ended",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"detected_cellular_signal_dialog_content",
+            "value":"Mobile network available. After exiting, you will be able to make calls over your carrier's network.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hangUpCompleted",
+            "value":"Call ended"
+        },
+        {
+            "name":"personal_status",
+            "value":"Health status",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"head_injury",
+            "value":"Head injury",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fracture",
+            "value":"Fracture",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"lose_blood",
+            "value":"Blood loss",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"unable_to_walk",
+            "value":"Unable to walk",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hypothermia",
+            "value":"Hypothermia",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"food_shortage",
+            "value":"Food shortage",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"surrounding_environment",
+            "value":"Surroundings",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"building_collapse",
+            "value":"Building collapse",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"road_damage",
+            "value":"Road damage",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"flood",
+            "value":"Flooding",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"trapped",
+            "value":"People trapped",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"someone_injured",
+            "value":"People injured",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"in_good_status",
+            "value":"Doing okay",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"landslide",
+            "value":"Landslide",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"there_are_old_people",
+            "value":"There are elderly people",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"there_are_children",
+            "value":"There are children",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"there_are_women",
+            "value":"There are women",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_privacy_statement",
+            "value":"Statement About Off-Grid Emergency Communication and Privacy",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"select_disaster_situation",
+            "value":"Select your situation",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emc_rescue_permission_notice_title",
+            "value":"Off-grid emergency communication permissions",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emc_rescue_location_permission_subtitle",
+            "value":"Location",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emc_rescue_permission_notice_content_2",
+            "value":"This is used to obtain the device's location, so that it can be sent to emergency rescue teams when you are outside of network coverage.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"menu_title_additional_info",
+            "value":"Important",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"additional_info_list_content_1",
+            "value":"%d. Remain calm and composed. Conserve your strength.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"additional_info_list_content_2",
+            "value":"%d. Put your safety first. Don't move unless safe to do so.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"additional_info_list_content_3",
+            "value":"%d. To save power, turn the screen off while you wait for help.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emc_rescue_current_location",
+            "value":"Current location: %s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_source_trial_run",
+            "value":"(Trial run)",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_source_test",
+            "value":"(Test)",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_warning_canceled",
+            "value":"Earthquake warning lifted.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_info_source",
+            "value":"Warning issued by China Earthquake Early Warning Network %s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_feeling_reminder_1",
+            "value":"Shaking not expected, stay calm",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_feeling_1",
+            "value":"No shaking",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_feeling_reminder_2",
+            "value":"Shaking expected, stay calm",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_feeling_2",
+            "value":"Weak shaking",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_feeling_reminder_3",
+            "value":"Shaking expected, be prepared",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_feeling_3",
+            "value":"Strong shaking",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_feeling_reminder_4",
+            "value":"Shaking expected, protect yourself",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_feeling_4",
+            "value":"Destructive",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_feeling_reminder_5",
+            "value":"Danger, protect yourself",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_feeling_5",
+            "value":"Highly destructive",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_warning_info",
+            "value":"Stay calm. Drop, cover, and hold on. If outdoors, move to an open area. Protect your head. Avoid using elevators.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_about_to_arrive",
+            "value":"Seismic waves arriving imminently",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_arrived",
+            "value":"Seismic waves have arrived",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"exit_emc_rescue_mode_notification_title",
+            "value":"Exited emergency communication",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"exit_emc_rescue_mode_notification_content",
+            "value":"To search again for nearby rescue teams, tap \"Search now\".",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"search_now_button",
+            "value":"Search now"
+        },
+        {
+            "name":"epicenter_location",
+            "value":"Epicenter",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"estimated_intensity",
+            "value":"Est. intensity (%s)",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emc_rescue_disclaimer_content_part_1",
+            "value":"The emergency rescue signals that this feature searches for are transmitted by specialized rescue teams, such as fire departments, using specialized equipment.  has no control over these rescue signals, nor can it guarantee that rescue teams will travel to your location to provide rescue services.\n\n",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emc_rescue_disclaimer_content_part_2",
+            "value":"The off-grid emergency communication feature is intended solely as a reference to aid you in assessing safety risks and making safety decisions. This feature is only used to search for rescue signals, and does not actively send out distress signals. Enabling this feature does not guarantee that rescue teams will come to your aid. Rescue signals are transmitted by rescue teams using specialized equipment. If your device does not detect a rescue signal, it is your responsibility to take appropriate safety measures based on your situation. If your device detects a rescue signal, you should accurately report your situation to rescue personnel. You should take reasonable measures to stay safe based on your current environment, both before and after rescue teams contact you. You shall bear sole responsibility for any risks or consequences that may arise from any course of action you take based on the off-grid emergency communication feature.\n\n",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emc_rescue_disclaimer_content_part_3",
+            "value": "shall not assume liability for any losses that may be incurred if your device does not receive rescue signals, or you do not receive aid, owing to factors such as terrain, buildings, and weather, or due to other force majeure events.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_not_support",
+            "value":"Emergency SOS is unavailable when Hyacinth satellite network is enabled.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emc_rescue_china_broadnet_brand_tips",
+            "value":"Frequency band provided by China Broadnet.",
+            "attr":{
+                "priority":"translate"
+            }
+        }
+    ]
+}

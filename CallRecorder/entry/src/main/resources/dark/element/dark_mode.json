@@ -1,0 +1,8 @@
+{
+  "boolean": [
+    {
+      "name": "dark_mode",
+      "value": true
+    }
+  ]
+}

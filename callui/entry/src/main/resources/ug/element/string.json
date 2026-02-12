@@ -1,0 +1,1450 @@
+{
+    "string":[
+        {
+            "name":"select_device",
+            "value":"ئۈسكۈنە تاللاش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"contactMeLater",
+            "value":"يىغىندا، سەل تۇرۇپ ئالاقىلىشايلى.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"voiceCall",
+            "value":"ئاۋازلىق ئېلىش",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"waitingInvitation",
+            "value":"قارشى تەرەپنىڭ قوبۇللىشىنى كۈتۈۋاتىدۇ...",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"backLater",
+            "value":"سەل تۇرۇپ تېلېفون قايتۇراي.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"incoming_conflicts_drop_current_call",
+            "value":"يېڭى كەلگەن تېلېفوننى ئالسىڭىز، نۆۋەتتىكىسى ئۈزۈلىدۇ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"rejectVideoMsg",
+            "value":"قارشى تەرەپ سىنلىق چاقىرىق تەكلىپىڭىزنى رەت قىلدى.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"separate_conference_failed",
+            "value":"چاقىرىق ئايرىلمىدى.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"switchToVoice",
+            "value":"ئاۋاز",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"hangUpReply",
+            "value":"ئۈزۈپ ئۇچۇر قايتۇرۇش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"beThereSoon",
+            "value":"سەل كۈتۈڭ، ھازىرلا بارىمەن.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"incoming_conflicts_drop_holding_call",
+            "value":"كەلگەن تېلېفوننى ئالسىڭىز، تۇرغۇزغىنى ئۈزۈلىدۇ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"combine_conference_failed",
+            "value":"تېلېفون يىغىنى ئېچىلمىدى.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"shutDown",
+            "value":"ئېتىش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"switchVoiceCallMsg",
+            "value":"قارشى تەرەپ ئاۋازلىق چاقىرىققا ئالماشتۇردى.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mergeCall",
+            "value":"چاقىرىق بىرىكتۈرۈش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"quickReply",
+            "value":"تېز جاۋاب",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"dialing_banner",
+            "value":"چاقىرىۋاتىدۇ",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"keyBoard",
+            "value":"سانتاختا",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mute",
+            "value":"تىنچ",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"maintain",
+            "value":"تۇرغۇزغان",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"voiceToVideoConfirmMsg",
+            "value":"قارشى تەرەپنىڭ سىن تەكلىپىنى قوبۇللامسىز؟",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"turn_off_airplane_and_calls",
+            "value":"ئۇچۇش ھالىتىنى ئېتىپ چاقىرامسىز؟",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"combine_conference_upper_limit",
+            "value":"تېلېفون يىغىنىدىكىلەرنىڭ سانى چەككە يەتكەن.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"DTMF_CONFIRM",
+            "value":"شۇنداق",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"dialing",
+            "value":"چاقىرىۋاتىدۇ",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"contactPerson",
+            "value":"ئالاقىداش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"incoming_conflicts_video_call",
+            "value":"بۇ تېلېفوننى سىنلىق ئالسىڭىز، نۆۋەتتىكى چاقىرىق ئۈزۈلىدۇ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"videoCall",
+            "value":"سىن چاقىرىق",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"DTMF_CANCEL",
+            "value":"ياق",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"unknownNumber",
+            "value":"ئېنىقسىز نومۇر",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"sms",
+            "value":"ئۇچۇر",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"callHold",
+            "value":"تۇرغۇزغان",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"accept",
+            "value":"قوبۇللاش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"videoCallToVoiceToast",
+            "value":"قارشى تەرەپ ئاۋازلىق قوبۇللىدى. قۇلاق ھالەتكە ئالماشتى.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"answerThePhone",
+            "value":"كەچۈرۈڭ، تېلېفون ئېلىش قولايسىز.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"recording",
+            "value":"ئۈن ئېلىش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"exchange",
+            "value":"ئالماشتۇرۇش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"sent",
+            "value":"يوللاش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"cancel",
+            "value":"بىكار قىلىش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"keep",
+            "value":"تۇرغۇزۇش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"addCall",
+            "value":"چاقىرىق قوشۇش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"gotIt",
+            "value":"بىلدىم",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"callBack",
+            "value":"قايتۇرۇش: ‎%s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"CALENDAR_ACCESS_TOAST",
+            "value":"تەڭشەكتىن كالېندار ئىجازىتىنى ئېچىڭ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"symbol_comma",
+            "value":"،\t",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"incoming_conflicts_drop_existing_call",
+            "value":"يېڭى كەلگەن تېلېفوننى ئالسىڭىز، نۆۋەتتىكىسى ئۈزۈلىدۇ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"establishVideoCallFailed",
+            "value":"سىنلىق چاقىرىق قۇرۇلمىدى.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"hangUpCompleted",
+            "value":"سۆزلىشىش ئاخىرلاشتى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"switchCamera",
+            "value":"ئالدى/ئارقا",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"partyIsRinging",
+            "value":"سايراۋاتىدۇ...",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"rejectVideo",
+            "value":"رەت قىلىش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"recorder_toast_error_400",
+            "value":"ئېنىقسىز خاتالىق كۆرۈلدى.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"switchVideoCallFailed",
+            "value":"سىنلىق چاقىرىققا ئالماشمىدى.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"callFailed_fdn_only",
+            "value":"مۇقىم نومۇر چاقىرىلمايدۇ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"open_phone_for_video_call",
+            "value":"سىنلىق سۆزلىشىش ئۈچۈن قاتلاقنى ئېچىڭ",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"open_phone_to_use_handset",
+            "value":"قۇلاق ھالەت ئۈچۈن قاتلاقنى ئېچىڭ",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"slide_to_answer",
+            "value":"سىيرىپ ئېلىڭ",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"audio_output",
+            "value":"ئاۋاز چىقىمى",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"taxi",
+            "value":"تاكسى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"voip_dialing_banner",
+            "value":"چاقىرىۋاتىدۇ",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Real_Estate_Agency",
+            "value":"ئۆي-مۈلۈكچى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_dialing",
+            "value":"تيەنتۇڭ سۈنئىي ھەمراھ تورى ئارقىلىق چاقىرىلىۋاتىدۇ...",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"harassing_call",
+            "value":"دەخلى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"disableChangedToEarpiece",
+            "value":"سۈنئىي ھەمراھ بىلەن مۇقىم ئۇلىنىش ئۈچۈن تىڭشىغۇچ ئىشلىمەيدۇ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_dialing_tips",
+            "value":"ئون نەچچە سېكۇنت كېتىشى مۇمكىن، كۈتۈپ تۇرۇڭ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fraud_phone_call",
+            "value":"يۇقىرى خەۋپلىك تېلېفون",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"advertising_and_promotion",
+            "value":"ئېلان",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"telephone_Conference",
+            "value":"تېلېفون يىغىنى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"phoneHandset",
+            "value":"قۇلاق",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"speaker",
+            "value":"ياڭراتقۇ",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"customSMS",
+            "value":"ئۆزلەشتۈرمە ئۇچۇر",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobileNetwork",
+            "value":"كۆچمە تور ئۇلانمىدى.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"courier_and_food_delivery",
+            "value":"يوللانما",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"financial_management_insurance",
+            "value":"سۇغۇرتا",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"emergency",
+            "value":"جىددىي تېلېفون",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"remind",
+            "value":"ئەسكەرتمە",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"SMS_Sent",
+            "value":"ئۇچۇر ‎%s غا يوللاندى.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"manageUsers",
+            "value":"ئىشلەتكۈچى باشقۇرۇش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"message_Failed",
+            "value":"ئۇچۇر يوللانمىدى.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"not_support_hold",
+            "value":"چاقىرىق تۇرغۇزۇلمىدى.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"hangingUp",
+            "value":"ئۈزۈۋاتىدۇ...",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"callBackReminder",
+            "value":"تېلېفون قايتۇرۇش ئەسكەرتمىسى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"incoming_call_rejection_sms",
+            "value":"چاقىرىق رەت قىلىش ئۇچۇرى",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"marked",
+            "value":"\t(بەلگە سالغان)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"DTMF_DIALOG_INFO",
+            "value":"تۆۋەندىكى ئاۋازنى يوللامسىز؟\n\u200f%s",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"super_privacy_dialog_title",
+            "value":"يۇقىرى مەخپىيەتلىك ھالىتى",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"super_privacy_dialog_call_summary",
+            "value":"يۇقىرى مەخپىيەتلىك ھالىتىدە مىكروفون چەكلەنگەن. چاقىرىق داۋامىدا بۇ ھالەتنى ۋاقىتلىق ئېتەمسىز؟",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"disable_super_privacy_and_answer",
+            "value":"قوبۇللىغاندا ئېتىش",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"super_privacy_dialog_video_call_summary",
+            "value":"يۇقىرى مەخپىيەتلىك ھالىتىدە مىكروفون ۋە كامېرا چەكلەنگەن. چاقىرىق داۋامىدا بۇ ھالەتنى ۋاقىتلىق ئېتەمسىز؟",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hangUp",
+            "value":"ئۈزۈش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"no_cdma_volte_warn_text",
+            "value":"كارتا %1$s (تېلېگراف) ئۈچۈن كۆچمە تور مۇلازىمىتى تىزىملانمىغان، چاقىرىق ئىقتىدارى ئىشلىمەيدۇ. تەپسىلاتىنى %2$s ئارقىلىق تېلېگراف مۇلازىمەت مەركىزىدىن سۈرۈشتۈرۈڭ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"call_turn_off_recording",
+            "value":"ئۈن ئېلىشنى ئېتىش",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"call_mute_on",
+            "value":"ئۈنسىزلەش",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"switch_rear_camera",
+            "value":"ئارقا كامېراغا ئالماشتۇرۇش",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hanging_up_video_call",
+            "value":"سىنلىق چاقىرىقنى ئۈزۈش",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"custom",
+            "value":"ئۆزلەشتۈرمە",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"callui_description",
+            "value":"تېلېفون",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"unmute",
+            "value":"ئاۋاز ئېچىش",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"switch_front_camera",
+            "value":"ئالدى كامېراغا ئالماشتۇرۇش",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"ture_on_camera",
+            "value":"كامېرانى ئېچىش",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"show_dialpad",
+            "value":"نومۇرتاختا كۆرسىتىش",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hanging_up_voice_call",
+            "value":"ئاۋازلىق چاقىرىقنى ئۈزۈش",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"addToBlockListConfirm",
+            "value":"قارا تىزىملىككە قوشقان ئالاقىداشتىن تېلېفون ۋە ئۇچۇر كەلمەيدۇ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"wired_headset_selected",
+            "value":"سىملىق تىڭشىغۇچ تاللاندى",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"adding_contact",
+            "value":"ئالاقىداش قوشۇش",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"addToExistingContact",
+            "value":"بار ئالاقىداشقا ساقلاش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"recorded",
+            "value":"ئۈن ئېلىندى",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"createNewContact",
+            "value":"ئالاقىداش قۇرۇش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"blueetooth_device_selected",
+            "value":"كۆكچىشلىق ئۈسكۈنە تاللاندى",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"switching_audio_channels",
+            "value":"ئاۋاز يولىنى ئالماشتۇرۇش",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hide_dialpad",
+            "value":"نومۇرتاختا يوشۇرۇش",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"cancel_waiting",
+            "value":"تۇرغۇزۇشنى بىكار قىلىش",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_answer",
+            "value":"سىنلىق ئېلىش",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"answer",
+            "value":"ئېلىش كۇنۇپكىسى",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"close",
+            "value":"ئېتىش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"markAs",
+            "value":"بەلگە سېلىش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"ok",
+            "value":"جەزملەش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"addToBlocklist",
+            "value":"قارا تىزىملىككە قوشۇش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"confirmAdd",
+            "value":"قوشۇش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"saveNumber",
+            "value":"نومۇر ساقلاش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"closeCountDown",
+            "value":"ئېتىش (%s)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"incomingCall",
+            "value":"كەلگەن تېلېفون",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"wiredHeadset",
+            "value":"سىملىق تىڭشىغۇچ",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"blueetoothDevice",
+            "value":"كۆكچىشلىق ئۈسكۈنە",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"call_assistant_setting_title",
+            "value":"شياۋيى چاقىرىق",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"call_assistant_translate",
+            "value":"شۇئان تەرجىمە",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"call_assistant_voicefix",
+            "value":"ئاۋاز تۈزەش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"call_assistant_text",
+            "value":"خەتلىك چاقىرىق",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"call_assistant_brief",
+            "value":"خۇلاسىلەش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"voicemail",
+            "value":"ئۈنخەت",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"connecting",
+            "value":"ئۇلىنىۋاتىدۇ",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"answering_call_prompt",
+            "value":"ئېلىش ئۈچۈن «%s» دەڭ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"reject_call_prompt",
+            "value":"رەت قىلىش ئۈچۈن «%s» دەڭ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"end_call_prompt",
+            "value":"ئۈزۈش ئۈچۈن «%s» دەڭ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hop_with_device_name",
+            "value":"\u200f%s بىلەن ئۇلاق",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"silent_call_symbol",
+            "value":"مەخپىيەتلىك كۈچەيتىلگەن چاقىرىق",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"answeredTimeout",
+            "value":"تېلېفون ئۇلىنىۋاتىدۇ...",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"LeatherUIExtAbility_switch_between_calls",
+            "value":"قاپنى ئېچىپ چاقىرىق ئالماشتۇرىسىز.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"LeatherUIExtAbility_fraud_phone_calls",
+            "value":"ئالدامچى",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"LeatherUIExtAbility_in_super_privacy",
+            "value":"يۇقىرى مەخپىيەتلىك ھالىتىدە مىكروفون چەكلەنگەن. قېپىنى ئېچىپ تېلېفون ئېلىڭ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"one_finger_double_click",
+            "value":"قوش چەكسىڭىز يۈرگۈزۈلىدۇ",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"InfoEdit_back",
+            "value":"قايتىش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"sim_card_num_no_space",
+            "value":"كارتا %s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"call_hd_symbol",
+            "value":"سۈزۈك",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hanging_up_voice_call_button",
+            "value":"ئاۋازلىق چاقىرىقنى ئۈزۈش كۇنۇپكىسى",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hanging_up_video_call_button",
+            "value":"سىنلىق چاقىرىقنى ئۈزۈش كۇنۇپكىسى",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"my_video",
+            "value":"مېنىڭ كۆرۈنۈشۈم",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hold_calling",
+            "value":"تۇرغۇزۇش",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"app_voip_dialing_banner",
+            "value":"\u200f%s چاقىرىۋاتىدۇ",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"app_voip_incoming_voice",
+            "value":"\u200f%s ئاۋازلىق",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"app_hold_conference",
+            "value":"\u200f%s يىغىن تۇرغۇزۇلغان",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"app_voip_incoming_video",
+            "value":"\u200f%s سىنلىق",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"turn_off_camera",
+            "value":"كامېرا ئېتىش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"app_hold_call",
+            "value":"\u200f%s چاقىرىق تۇرغۇزۇلغان",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"app_video_conference",
+            "value":"\u200f%s سىن يىغىن",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"app_voice_conference",
+            "value":"\u200f%s ئۈنيىغىن",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"unlock_try_again",
+            "value":"قۇلۇپ ئېچىپ قايتا سىناڭ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"inTheConference",
+            "value":"يىغىندا",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"joining",
+            "value":"كىرىۋاتىدۇ...",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"anti_fraud_continue_call",
+            "value":"داۋاملاشتۇرۇش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"anti_fraud_hangup_black",
+            "value":"ئۈزۈش ۋە توسۇش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"antifraud_center_phone_call",
+            "value":"ئېھتىمال ئالدامچى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"national_antifraud_center_tips",
+            "value":"دۆلەتلىك ئالدامچىلىققا قارشى تۇرۇش مەركىزى ئەسكەرتمىسى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"anti_fraud_deceived",
+            "value":"ئالدامچىلىق خەۋپى",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"anti_fraud_identifies",
+            "value":"خەۋپ تەكشۈرۈلۈۋاتىدۇ...",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"anti_fraud_risk_reminder",
+            "value":"بۇ چاقىرىقتا خەۋپ بار، ئېھتىيات قىلىڭ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"call_assistant_answer_setting_title",
+            "value":"شياۋيى تېلېفونچى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"peer_video",
+            "value":"قارشى تەرەپنىڭ كۆرۈنۈشى",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"flip_phone_for_front_camera",
+            "value":"كامېرا يانفوننىڭ ئارقىدا\nئۆزىڭىزنى كۆرۈش ئۈچۈن قاتلاپ كامېرانى ئۆزىڭىزگە قارىتىڭ",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"two_way_silent_call",
+            "value":"قوش يۆنىلىشلىك مەخپىيەتلىك كۈچەيتىلگەن چاقىرىق",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"video_ringtone_delete_dialog_tip1",
+            "value":"تاللىغان مەزمۇننى ئۆچۈرەمسىز؟",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"video_ringtone_no_delete",
+            "value":"نۆۋەتتە ئىشلەتكەن مەنبە ئۆچۈرۈلمەيدۇ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"no_video_ringtone",
+            "value":"سىنلىق قوڭغۇراق يوق",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"video_ringtone_from_photo_picker",
+            "value":"ئامباردىن تاللاش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"manage",
+            "value":"باشقۇرۇش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"video_ringtone",
+            "value":"سىنلىق قوڭغۇراق",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"my_video_ringtone",
+            "value":"سىنلىق قوڭغۇراقلىرىم",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"video_ringtone_deselect_all",
+            "value":"قالدۇرۇش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"video_ringtone_select_all",
+            "value":"ھەممىنى تاللاش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"video_ringtone_size_limit",
+            "value":"سىغىمى ‎%s دىن كىچىك سىن تاللاڭ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"delete",
+            "value":"ئۆچۈرۈش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"penglai_mode_notice",
+            "value":"پېڭلەي ھالەت بۇ مەشغۇلاتنى قوللىمايدۇ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name": "not_support_toast",
+            "value": "نۆۋەتتىكى ھالەت بۇ مەشغۇلاتنى قوللىمايدۇ."
+        },
+        {
+            "name":"use",
+            "value":"قوللىنىش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"anti_fraud_beware_being_deceived",
+            "value":"خەۋپ ئەسكەرتمىسى",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"notepad",
+            "value":"ئەسلەتمە",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"disableChangedToEarpiece_hyacinth",
+            "value":"سۈنئىي ھەمراھ بىلەن مۇقىم ئۇلىنىش ئۈچۈن قۇلاق ھالەت ئىشلىمەيدۇ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_dialing",
+            "value":"ياقۇت سۈنئىي ھەمراھ تورى ئارقىلىق چاقىرىلىۋاتىدۇ",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"anti_fraud_best_mind_tips",
+            "value":"ئالدامچى توسۇش ئەسكەرتمىسى",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"new_calling",
+            "value":"كۈچەيمە چاقىرىق",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"try_new_calling",
+            "value":"كۈچەيمە چاقىرىقنى سىناپ باقامسىز؟",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"new_calling_can_only_use_in_full_screen",
+            "value":"كۈچەيمە چاقىرىق مۇلازىمىتى پەقەت تولۇق ئېكرانلىق ئىشلەيدۇ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"call_summarization_is_turned_off",
+            "value":"چاقىرىق ئۈزۈندىسى ئېتىلدى. كۆپ كىشىلىك چاقىرىق بۇ ئىقتىدارنى قوللىمايدۇ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"summarizeOn",
+            "value":"ئۈزۈندى ئوچۇق",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"conference_different_cards",
+            "value":"ئۈسكۈنىدىكى SIM كارتىلار ئارا تېلېفون يىغىنى ئېچىلمايدۇ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"please_expand_your_phone",
+            "value":"قاتلاقنى ئېچىپ كۆرۈڭ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"summary_failed_turned_on",
+            "value":"چاقىرىق ئۈزۈندىسى ئېچىلمىدى.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"summary_is_abnormal",
+            "value":"چاقىرىق ئۈزۈندىسىدە خاتالىق كۆرۈلدى، كېيىنرەك قايتا سىناڭ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"conference_calls_are_not_available",
+            "value":"تېلېفون يىغىنى ئىشلىمەيدۇ",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"wechat_multiCall",
+            "value":"\u200f%s كۆپ كىشىلىك چاقىرىق",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"wechat_videoCall",
+            "value":"\u200f%s سىنلىق چاقىرىق",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"wechat_voiceCall",
+            "value":"\u200f%s ئاۋازلىق چاقىرىق",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+	    {
+            "name":"selected_device",
+            "value":"‏%s تاللاندى",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hearing_aids_device_selected",
+            "value":"ئاڭلاتقۇچ ئۈسكۈنە تاللاندى",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"accessibility_change_speaker",
+            "value":"ياڭراتقۇغا ئالماشتۇرۇش",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"accessibility_change_phoneset",
+            "value":"قۇلاق ھالەتكە ئالماشتۇرۇش",
+            "attr":{
+                "priority":"translate"
+            }
+        }
+    ]
+}

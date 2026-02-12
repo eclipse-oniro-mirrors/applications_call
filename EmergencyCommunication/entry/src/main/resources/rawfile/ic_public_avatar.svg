@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <desc>
+        Created with Pixso.
+    </desc>
+    <defs>
+        <clipPath id="clip2_3">
+            <rect id="属性 1=24vp-沉浸浅色" width="24.000000" height="24.000000" fill="white" fill-opacity="0" />
+        </clipPath>
+    </defs>
+    <rect id="属性 1=24vp-沉浸浅色" width="24.000000" height="24.000000" fill="#FFFFFF" fill-opacity="0" />
+    <g clip-path="url(#clip2_3)">
+        <circle id="Oval 3" cx="12.000000" cy="12.000000" r="12.000000" fill="#FFFFFF" fill-opacity="0.200000" />
+        <circle id="Oval 3" cx="12.000000" cy="12.000000" r="12.000000" fill="#000000" fill-opacity="0.400000" />
+        <circle id="Oval 3" cx="12.000000" cy="12.000000" r="12.000000" fill="#FFFFFF" fill-opacity="0" />
+        <path id="形状结合"
+            d="M19.6786 20.0748C17.6799 21.976 14.9763 23.1429 11.9999 23.1429C8.99487 23.1429 6.26758 21.9532 4.26337 20.0193C4.27362 19.9965 4.28412 19.9742 4.29486 19.9524C4.85339 18.8174 6.30469 15.4286 11.9601 15.4286C17.6155 15.4286 19.0915 18.8174 19.6254 19.9524C19.6438 19.9916 19.6616 20.0325 19.6786 20.0748ZM11.9601 5.57147C9.71155 5.57147 7.88867 7.39432 7.88867 9.64291C7.88867 11.8915 9.71155 13.7143 11.9601 13.7143C14.2087 13.7143 16.0316 11.8915 16.0316 9.64291C16.0316 7.39432 14.2087 5.57147 11.9601 5.57147Z"
+            clip-rule="evenodd" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd" />
+    </g>
+</svg>

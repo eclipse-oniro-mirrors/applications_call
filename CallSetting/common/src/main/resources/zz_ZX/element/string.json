@@ -1,0 +1,312 @@
+{
+    "string":[
+        {
+            "name":"Apn_button_name",
+            "value":"[TS_910983]_Name"
+        },
+        {
+            "name":"Apn_button_APN",
+            "value":"[TS_911001]_APN"
+        },
+        {
+            "name":"Apn_button_proxy",
+            "value":"[TS_910985]_Proxy"
+        },
+        {
+            "name":"Apn_button_port",
+            "value":"[TS_910944]_Port"
+        },
+        {
+            "name":"Apn_button_userName",
+            "value":"[TS_910964]_Username"
+        },
+        {
+            "name":"Apn_button_passWord",
+            "value":"[TS_911124]_Password"
+        },
+        {
+            "name":"Apn_button_server",
+            "value":"[TS_911059]_Server"
+        },
+        {
+            "name":"Apn_button_MMSC",
+            "value":"[TS_910981]_MMSC"
+        },
+        {
+            "name":"Apn_button_MMS_Proxy",
+            "value":"[TS_911129]_MMS proxy"
+        },
+        {
+            "name":"Apn_button_MMS_Port",
+            "value":"[TS_911099]_MMS port"
+        },
+        {
+            "name":"Apn_button_MCC",
+            "value":"[TS_911096]_MCC"
+        },
+        {
+            "name":"Apn_button_MNC",
+            "value":"[TS_911013]_MNC"
+        },
+        {
+            "name":"Apn_button_authenticationType",
+            "value":"[TS_910991]_Authentication type"
+        },
+        {
+            "name":"Apn_button_APN_Type",
+            "value":"[TS_911074]_APN type"
+        },
+        {
+            "name":"Apn_button_APN_Protocol",
+            "value":"[TS_910996]_APN protocol"
+        },
+        {
+            "name":"Apn_button_APN_Roaming_Agreement",
+            "value":"[TS_911080]_APN roaming protocol"
+        },
+        {
+            "name":"Apn_button_APN_State",
+            "value":"[TS_911036]_APN enable/disable"
+        },
+        {
+            "name":"Apn_button_APN_bearerSystem",
+            "value":"[TS_911092]_Bearer"
+        },
+        {
+            "name":"Apn_button_MVNO_Type",
+            "value":"[TS_910976]_MVNO type"
+        },
+        {
+            "name":"Apn_button_MVNO_Value",
+            "value":"[TS_910952]_MVNO value"
+        },
+        {
+            "name":"Apn_enum_None",
+            "value":"[TS_911145]_None"
+        },
+        {
+            "name":"Apn_enum_PAP",
+            "value":"[TS_911032]_PAP"
+        },
+        {
+            "name":"Apn_enum_CHAP",
+            "value":"[TS_910994]_CHAP"
+        },
+        {
+            "name":"Apn_enum_PAP_CHAP",
+            "value":"[TS_910977]_PAP/CHAP"
+        },
+        {
+            "name":"Apn_enum_PAP_IPv4",
+            "value":"[TS_911015]_IPv4"
+        },
+        {
+            "name":"Apn_enum_PAP_IPv6",
+            "value":"[TS_911003]_IPv6"
+        },
+        {
+            "name":"Apn_enum_IPv4_IPv6",
+            "value":"[TS_911040]_IPv4/IPv6"
+        },
+        {
+            "name":"Apn_enum_Not_specified",
+            "value":"[TS_911108]_Unspecified"
+        },
+        {
+            "name":"Apn_enum_LTE",
+            "value":"[TS_911016]_LTE"
+        },
+        {
+            "name":"Apn_enum_HSPAP",
+            "value":"[TS_911116]_HSPAP"
+        },
+        {
+            "name":"Apn_enum_HSPA",
+            "value":"[TS_911007]_HSPA"
+        },
+        {
+            "name":"Apn_enum_HSUPA",
+            "value":"[TS_911012]_HSUPA"
+        },
+        {
+            "name":"Apn_enum_HSDPA",
+            "value":"[TS_911069]_HSDPA"
+        },
+        {
+            "name":"Apn_enum_UMTS",
+            "value":"[TS_910987]_UMTS"
+        },
+        {
+            "name":"Apn_enum_EDGE",
+            "value":"[TS_911043]_EDGE"
+        },
+        {
+            "name":"Apn_enum_GPRS",
+            "value":"[TS_910972]_GPRS"
+        },
+        {
+            "name":"Apn_enum_eHRPD",
+            "value":"[TS_911135]_eHRPD"
+        },
+        {
+            "name":"Apn_enum_EVDO_B",
+            "value":"[TS_910959]_EVDO_B"
+        },
+        {
+            "name":"Apn_enum_EVDO_A",
+            "value":"[TS_911084]_EVDO_A"
+        },
+        {
+            "name":"Apn_enum_EVDO_0",
+            "value":"[TS_910946]_EVDO_0"
+        },
+        {
+            "name":"Apn_enum_1xRTT",
+            "value":"[TS_911095]_1xRTT"
+        },
+        {
+            "name":"Apn_enum_IS95B",
+            "value":"[TS_910963]_IS95B"
+        },
+        {
+            "name":"Apn_enum_IS95A",
+            "value":"[TS_911000]_IS95A"
+        },
+        {
+            "name":"Apn_enum_SPN",
+            "value":"[TS_911009]_SPN"
+        },
+        {
+            "name":"Apn_enum_IMSI",
+            "value":"[TS_911039]_IMSI"
+        },
+        {
+            "name":"Apn_enum_GID",
+            "value":"[TS_911034]_GID"
+        },
+        {
+            "name":"serviceEnabled",
+            "value":"[TS_1043265]_Service is enabled."
+        },
+        {
+            "name":"CwMmi",
+            "value":"[TS_1043268]_Call waiting"
+        },
+        {
+            "name":"serviceDisabled",
+            "value":"[TS_1043272]_Service is disabled."
+        },
+        {
+            "name":"mmi_code_prompt_msg",
+            "value":"[TS_1043258]_%1$s: %2$s"
+        },
+        {
+            "name":"ussd_placeholder",
+            "value":"[TS_1043275]_Please input"
+        },
+        {
+            "name":"BaMmi",
+            "value":"[TS_1043274]_Call barring"
+        },
+        {
+            "name":"mmi_code_not_forwarded",
+            "value":"[TS_1043276]_Not forwarded"
+        },
+        {
+            "name":"ClirMmi",
+            "value":"[TS_1043279]_Outgoing caller ID"
+        },
+        {
+            "name":"async",
+            "value":"[TS_1043273]_Async"
+        },
+        {
+            "name":"ColpMmi",
+            "value":"[TS_1043271]_Connected line ID"
+        },
+        {
+            "name":"CfMmi",
+            "value":"[TS_1043278]_Call forwarding"
+        },
+        {
+            "name":"fax",
+            "value":"[TS_1043277]_FAX"
+        },
+        {
+            "name":"message",
+            "value":"[TS_1043267]_SMS"
+        },
+        {
+            "name":"mmiError",
+            "value":"[TS_1043266]_Connection problem or invalid MMI code."
+        },
+        {
+            "name":"serviceRegistered",
+            "value":"[TS_1043269]_Registration was successful."
+        },
+        {
+            "name":"voice",
+            "value":"[TS_1043262]_Voice"
+        },
+        {
+            "name":"ClipMmi",
+            "value":"[TS_1043260]_Incoming caller ID"
+        },
+        {
+            "name":"sync",
+            "value":"[TS_1043263]_Sync"
+        },
+        {
+            "name":"package",
+            "value":"[TS_1043261]_Packet"
+        },
+        {
+            "name":"serviceEnabledFor",
+            "value":"[TS_1043270]_Service was enabled for:"
+        },
+        {
+            "name":"ColrMmi",
+            "value":"[TS_1043257]_Connected line ID restriction"
+        },
+        {
+            "name":"pad",
+            "value":"[TS_1043264]_PAD"
+        },
+        {
+            "name":"send",
+            "value":"[TS_1043259]_Send"
+        },
+        {
+            "name":"mmi_gotIt",
+            "value":"[TS_1045054]_OK"
+        },
+        {
+            "name":"mmi_cancel",
+            "value":"[TS_1045053]_Cancel"
+        },
+        {
+            "name":"CLIRPermanent",
+            "value":"[TS_1129986]_You cannot change the caller ID setting."
+        },
+        {
+            "name":"CLIRDefaultOnNextCallOff",
+            "value":"[TS_1129987]_Caller ID defaults to restricted. Next call: Not restricted"
+        },
+        {
+            "name":"serviceNotProvisioned",
+            "value":"[TS_1129988]_Service not provisioned."
+        },
+        {
+            "name":"CLIRDefaultOffNextCallOff",
+            "value":"[TS_1129984]_Caller ID will be displayed"
+        },
+        {
+            "name":"CLIRDefaultOnNextCallOn",
+            "value":"[TS_1129983]_Caller ID defaults to restricted. Next call: Restricted"
+        },
+        {
+            "name":"CLIRDefaultOffNextCallOn",
+            "value":"[TS_1129985]_Caller ID will not be displayed"
+        }
+    ]
+}

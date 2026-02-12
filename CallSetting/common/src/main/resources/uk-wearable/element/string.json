@@ -1,0 +1,32 @@
+{
+    "string":[
+        {
+            "name":"ClirMmi",
+            "value":"Ідентифіка\u200bтор абонента, якому телефонують",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"ColpMmi",
+            "value":"Ідентифіка\u200bтор підключеної лінії",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"CfMmi",
+            "value":"Переадреса\u200bція викликів",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"ClipMmi",
+            "value":"Ідентифіка\u200bтор абонента, який телефонує",
+            "attr":{
+                "priority":"LT"
+            }
+        }
+    ]
+}

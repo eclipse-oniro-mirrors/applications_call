@@ -1,0 +1,12 @@
+{
+    "string":[
+        {
+            "name":"callSetting_title",
+            "value":"Настройки вызова",
+            "attr":{
+                "priority":"translate"
+            }
+        }
+    ]
+}
+

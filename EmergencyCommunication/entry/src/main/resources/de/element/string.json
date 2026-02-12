@@ -1,0 +1,11 @@
+{
+    "string":[
+        {
+            "name":"emc_rescue_china_broadnet_brand_tips",
+            "value":"Das Frequenzband wird von China Broadnet angeboten.",
+            "attr":{
+                "priority":"translate"
+            }
+        }
+    ]
+}

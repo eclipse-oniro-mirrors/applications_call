@@ -1,0 +1,8 @@
+{
+  "src": [
+    "pages/TrafficControlPage",
+    "pages/SingleAppPage",
+    "pages/NetAccessPolicyDiagPage",
+    "pages/DisableMobileDataDialogPage"
+  ]
+}

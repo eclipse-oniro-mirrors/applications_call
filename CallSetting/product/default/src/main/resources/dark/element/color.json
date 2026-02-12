@@ -1,0 +1,20 @@
+{
+  "color": [
+    {
+      "name": "MeeTime_green_light",
+      "value": "#349543"
+    },
+    {
+      "name": "start_window_background",
+      "value": "#ff000000"
+    },
+    {
+      "name": "MeeTime_orange_light",
+      "value": "#DB6B42"
+    },
+    {
+      "name": "color_bind_sheet_background",
+      "value": "#FF202224"
+    }
+  ]
+}

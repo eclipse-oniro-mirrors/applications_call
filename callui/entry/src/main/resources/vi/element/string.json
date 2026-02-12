@@ -1,0 +1,1450 @@
+{
+    "string":[
+        {
+            "name":"answering_call_prompt",
+            "value":"Nói \"%s\" để trả lời",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"incoming_call_rejection_sms",
+            "value":"Trả lời bằng văn bản",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"waitingInvitation",
+            "value":"Đang chờ bên kia chấp nhận…",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"emergency",
+            "value":"Khẩn cấp",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hangUp",
+            "value":"Kết thúc",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"anti_fraud_continue_call",
+            "value":"Tiếp tục cuộc gọi",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"symbol_comma",
+            "value":",\t",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"super_privacy_dialog_call_summary",
+            "value":"Chế độ Siêu riêng tư đang chặn quyền truy cập micrô. Tạm thời tắt chế độ này để gọi điện?",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"telephone_Conference",
+            "value":"Cuộc gọi hội nghị",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"voicemail",
+            "value":"Thư thoại",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"open_phone_for_video_call",
+            "value":"Mở điện thoại ra để gọi video",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"switchToVoice",
+            "value":"Thoại",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"hangUpReply",
+            "value":"Trả lời với",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"saveNumber",
+            "value":"Lưu số",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"anti_fraud_hangup_black",
+            "value":"Cúp máy và chặn",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"close",
+            "value":"Đóng",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"combine_conference_failed",
+            "value":"Không thể thực hiện cuộc gọi hội nghị.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"hop_with_device_name",
+            "value":"Đã kết nối với %s",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"quickReply",
+            "value":"Trả lời nhanh",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"dialing_banner",
+            "value":"Đang quay số",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"silent_call_symbol",
+            "value":"Cuộc gọi nâng cao quyền riêng tư",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"keyBoard",
+            "value":"Bàn phím",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"unlock_try_again",
+            "value":"Mở khóa thiết bị của bạn rồi thử lại.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"disable_super_privacy_and_answer",
+            "value":"Tắt và trả lời",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"voip_dialing_banner",
+            "value":"Đang gọi",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"maintain",
+            "value":"Đang chờ",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"wiredHeadset",
+            "value":"Tai nghe có dây",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"switch_rear_camera",
+            "value":"Chuyển sang camera sau",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"inTheConference",
+            "value":"Cuộc họp đang diễn ra",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"voiceToVideoConfirmMsg",
+            "value":"Bạn nhận được lời mời cuộc gọi video. Chấp nhận?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"LeatherUIExtAbility_switch_between_calls",
+            "value":"Mở nắp để chuyển đổi cuộc gọi",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"call_assistant_voicefix",
+            "value":"Tăng cường giọng nói",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Real_Estate_Agency",
+            "value":"Văn phòng nhà đất",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"combine_conference_upper_limit",
+            "value":"Đã đạt số người tham dự tối đa. Không hợp nhất được các cuộc gọi.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"hold_calling",
+            "value":"Cuộc gọi đang được giữ máy",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"DTMF_CONFIRM",
+            "value":"Có",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"anti_fraud_deceived",
+            "value":"Cảnh báo lừa đảo",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_dialing",
+            "value":"Gọi qua mạng vệ tinh Tiantong",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"addToExistingContact",
+            "value":"Lưu vào liên hệ hiện có",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"contactPerson",
+            "value":"Danh bạ",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"incoming_conflicts_video_call",
+            "value":"Nếu trả lời cuộc gọi video này thì cuộc gọi hiện tại sẽ kết thúc",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"anti_fraud_identifies",
+            "value":"Đang kiểm tra xem có nguy cơ không",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"app_voip_dialing_banner",
+            "value":"%s | Đang gọi…",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"manageUsers",
+            "value":"Quản lý người dùng",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"message_Failed",
+            "value":"Không gửi được tin nhắn.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"speaker",
+            "value":"Loa ngoài",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"incoming_conflicts_drop_existing_call",
+            "value":"Nếu trả lời cuộc gọi video này, cuộc gọi hiện tại sẽ kết thúc",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"DTMF_CANCEL",
+            "value":"Không",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"answeredTimeout",
+            "value":"Đang kết nối…",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"audio_output",
+            "value":"Đầu ra âm thanh",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"customSMS",
+            "value":"Tùy chỉnh",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"not_support_hold",
+            "value":"Không giữ được cuộc gọi.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"app_voip_incoming_voice",
+            "value":"%s | Cuộc gọi thoại",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"hangingUp",
+            "value":"Đang kết thúc cuộc gọi…",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"flip_phone_for_front_camera",
+            "value":"Máy ảnh nằm ở mặt sau điện thoại.\nĐể nhìn thấy chính bạn trong khung hình, hãy gập và xoay điện thoại để máy ảnh hướng về phía bạn.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"hangUpCompleted",
+            "value":"Cuộc gọi đã kết thúc",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobileNetwork",
+            "value":"Không có mạng di động.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"DTMF_DIALOG_INFO",
+            "value":"Gửi các âm sau?\n\n%s",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"videoCallToVoiceToast",
+            "value":"Bên kia đã chọn cuộc gọi thoại. Đã chuyển sang loa trong.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"app_hold_conference",
+            "value":"%s | Cuộc gọi hội nghị đang được giữ máy",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"financial_management_insurance",
+            "value":"Bảo hiểm và khoản vay",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"custom",
+            "value":"Tùy chỉnh",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"antifraud_center_phone_call",
+            "value":"Nghi ngờ lừa đảo",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"callFailed_fdn_only",
+            "value":"Cuộc gọi đi bị hạn chế bởi FDN.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"callui_description",
+            "value":"Điện thoại",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"answerThePhone",
+            "value":"Xin lỗi, hiện giờ tôi không thể trò chuyện.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"switchCamera",
+            "value":"Chuyển đổi camera",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"disableChangedToEarpiece",
+            "value":"Không sử dụng được loa trong khi đang thực hiện các cuộc gọi qua vệ tinh.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"video_answer",
+            "value":"Trả lời cuộc gọi video",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"LeatherUIExtAbility_fraud_phone_calls",
+            "value":"Cuộc gọi lừa đảo",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"callBackReminder",
+            "value":"Thông báo nhắc gọi lại",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"call_assistant_text",
+            "value":"Nhập để nói",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"exchange",
+            "value":"Hoán đổi",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"switch_front_camera",
+            "value":"Chuyển sang camera trước",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"partyIsRinging",
+            "value":"Đang đổ chuông…",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"sent",
+            "value":"Gửi",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"cancel",
+            "value":"Hủy",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"keep",
+            "value":"Giữ",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"addCall",
+            "value":"Thêm cuộc gọi",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"select_device",
+            "value":"Chọn thiết bị",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"contactMeLater",
+            "value":"Tôi đang họp. Tôi sẽ gọi lại trong thời gian sớm nhất.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"voiceCall",
+            "value":"Thoại",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"advertising_and_promotion",
+            "value":"Quảng cáo",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"anti_fraud_risk_reminder",
+            "value":"Đây có thể là cuộc gọi lừa đảo. Xin hãy cảnh giác.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"app_voip_incoming_video",
+            "value":"%s | Cuộc gọi video",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"super_privacy_dialog_title",
+            "value":"Chế độ Siêu riêng tư",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"switchVideoCallFailed",
+            "value":"Không chuyển được sang cuộc gọi video.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"backLater",
+            "value":"Tôi sẽ gọi lại cho bạn.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"incoming_conflicts_drop_current_call",
+            "value":"Nếu chấp nhận cuộc gọi đang gọi đến, cuộc gọi đang đàm thoại sẽ bị tắt.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"rejectVideoMsg",
+            "value":"Bên kia đã từ chối cuộc gọi video.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"connecting",
+            "value":"Đang kết nối…",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"separate_conference_failed",
+            "value":"Không tách được cuộc gọi.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"turn_off_camera",
+            "value":"Tắt máy ảnh",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"establishVideoCallFailed",
+            "value":"Không bắt đầu được cuộc gọi video.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"call_assistant_translate",
+            "value":"Dịch trực tiếp",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"LeatherUIExtAbility_in_super_privacy",
+            "value":"Chế độ Siêu riêng tư đang chặn truy cập micrô. Hãy mở bao điện thoại để trả lời.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"beThereSoon",
+            "value":"Tôi đang trên đường.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"incoming_conflicts_drop_holding_call",
+            "value":"Trả lời cuộc gọi này sẽ kết thúc cuộc gọi hiện đang giữ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"marked",
+            "value":"\t(Đã đánh dấu)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"app_hold_call",
+            "value":"%s | Cuộc gọi đang được giữ máy",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"addToBlockListConfirm",
+            "value":"Bạn sẽ không còn nhận được các cuộc gọi và tin nhắn điện thoại từ số liên hệ này nữa.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"national_antifraud_center_tips",
+            "value":"Cảnh báo của Trung tâm chống lừa đảo quốc gia",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"shutDown",
+            "value":"Tắt",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"markAs",
+            "value":"Đánh dấu là",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"incomingCall",
+            "value":"Cuộc gọi đến",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"switchVoiceCallMsg",
+            "value":"Bên kia đã chuyển sang cuộc gọi thoại.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"reject_call_prompt",
+            "value":"Nói \"%s\" để từ chối",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mergeCall",
+            "value":"Hợp nhất cuộc gọi",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"remind",
+            "value":"Thông báo nhắc",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"gotIt",
+            "value":"Đã hiểu",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"SMS_Sent",
+            "value":"Đã gửi tin nhắn tới %s.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"end_call_prompt",
+            "value":"Nói \"%s\" để kết thúc",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"taxi",
+            "value":"Taxi",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mute",
+            "value":"Tắt tiếng",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"phoneHandset",
+            "value":"Loa trong",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"callBack",
+            "value":"Gọi lại: %s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"app_video_conference",
+            "value":"%s | Cuộc gọi hội nghị video",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"turn_off_airplane_and_calls",
+            "value":"Tắt Chế độ Máy bay để thực hiện cuộc gọi?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"CALENDAR_ACCESS_TOAST",
+            "value":"Trước tiên, hãy cấp quyền truy cập Lịch trong mục Cài đặt.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"adding_contact",
+            "value":"Thêm liên hệ",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"blueetoothDevice",
+            "value":"Thiết bị Bluetooth",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"two_way_silent_call",
+            "value":"Cuộc gọi nâng cao quyền riêng tư hai chiều",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"super_privacy_dialog_video_call_summary",
+            "value":"Chế độ Siêu riêng tư đang chặn quyền truy cập micrô và máy ảnh. Tạm thời tắt chế độ này để gọi điện?",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"dialing",
+            "value":"Đang quay số",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"hanging_up_video_call",
+            "value":"Kết thúc cuộc gọi video",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"open_phone_to_use_handset",
+            "value":"Mở ra để sử dụng loa trong",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"recorder_toast_error_400",
+            "value":"Lỗi không xác định.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"no_cdma_volte_warn_text",
+            "value":"Chức năng Gọi điện hiện không hoạt động trên SIM %1$s (China Telecom) vì chưa kích hoạt dịch vụ mạng di động.\n\nHãy liên hệ với bộ phận dịch vụ khách hàng của China Telecom theo số %2$s để được trợ giúp.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"videoCall",
+            "value":"Cuộc gọi video",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"createNewContact",
+            "value":"Tạo liên hệ mới",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"slide_to_answer",
+            "value":"Trượt để trả lời",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"harassing_call",
+            "value":"Thư rác",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"unknownNumber",
+            "value":"Số không xác định",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"ok",
+            "value":"OK",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"closeCountDown",
+            "value":"Đóng (%s)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"sms",
+            "value":"Nhắn tin",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"callHold",
+            "value":"Đang chờ",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"accept",
+            "value":"Chấp nhận",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"addToBlocklist",
+            "value":"Thêm vào danh sách chặn",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"call_assistant_answer_setting_title",
+            "value":"Tự động trả lời",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"confirmAdd",
+            "value":"Thêm",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"courier_and_food_delivery",
+            "value":"Dịch vụ giao hàng",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"call_assistant_setting_title",
+            "value":"Cuộc gọi Celia",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_dialing_tips",
+            "value":"Quá trình này có thể mất một chút thời gian. Vui lòng chờ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"recording",
+            "value":"Ghi âm",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"unmute",
+            "value":"Bật tiếng",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fraud_phone_call",
+            "value":"Nguy cơ cao",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"joining",
+            "value":"Đang tham gia…",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"call_assistant_brief",
+            "value":"Tóm tắt",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"rejectVideo",
+            "value":"Từ chối",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"app_voice_conference",
+            "value":"%s | Cuộc gọi hội nghị",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"ture_on_camera",
+            "value":"Bật máy ảnh",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone_no_delete",
+            "value":"Không thể xóa các mục khi các mục đó đang được sử dụng.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"no_video_ringtone",
+            "value":"Không có nhạc chuông video nào",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone_from_photo_picker",
+            "value":"Chọn từ Bộ sưu tập",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"manage",
+            "value":"Quản lý",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone",
+            "value":"Nhạc chuông video",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"my_video_ringtone",
+            "value":"Video nhạc chờ của tôi",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone_deselect_all",
+            "value":"Bỏ chọn tất",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone_select_all",
+            "value":"Chọn tất cả",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone_size_limit",
+            "value":"Chọn một video nhỏ hơn %s.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"delete",
+            "value":"Xóa",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"use",
+            "value":"Áp dụng",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone_delete_dialog_tip1",
+            "value":"Xóa các mục đã chọn?",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"anti_fraud_beware_being_deceived",
+            "value":"Cảnh báo lừa đảo",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"penglai_mode_notice",
+            "value":"Không thực hiện được thao tác này ở chế độ Bồng Lai.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name": "not_support_toast",
+            "value": "Thao tác này không được hỗ trợ trong chế độ này."
+        },
+        {
+            "name":"show_dialpad",
+            "value":"Hiện bàn phím",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hanging_up_voice_call",
+            "value":"Kết thúc cuộc gọi thoại",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"call_turn_off_recording",
+            "value":"Kết thúc ghi âm",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"InfoEdit_back",
+            "value":"Trở lại",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"one_finger_double_click",
+            "value":"Chạm đúp để kích hoạt",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"wired_headset_selected",
+            "value":"Đã chọn Tai nghe có dây",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"answer",
+            "value":"Trả lời, nút",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"sim_card_num_no_space",
+            "value":"SIM %s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"recorded",
+            "value":"Ghi lại",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hanging_up_voice_call_button",
+            "value":"Kết thúc cuộc gọi thoại, nút",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"switching_audio_channels",
+            "value":"Chuyển đổi kênh âm thanh",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"cancel_waiting",
+            "value":"Kết thúc giữ máy",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"my_video",
+            "value":"Bảng tin video của tôi",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hanging_up_video_call_button",
+            "value":"Kết thúc cuộc gọi video, nút",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"call_mute_on",
+            "value":"Tắt tiếng",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"call_hd_symbol",
+            "value":"HD",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"peer_video",
+            "value":"Hình ảnh video của bên kia",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"blueetooth_device_selected",
+            "value":"Đã chọn Thiết bị Bluetooth",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hide_dialpad",
+            "value":"Ẩn bàn phím",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"notepad",
+            "value":"Sổ tay",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"disableChangedToEarpiece_hyacinth",
+            "value":"Loa trong không thể sử dụng khi đang thực hiện cuộc gọi qua vệ tinh Dạ lan hương.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_dialing",
+            "value":"Đang gọi qua mạng vệ tinh Dạ lan hương",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"anti_fraud_best_mind_tips",
+            "value":"Cảnh báo của Trung tâm chống lừa đảo Bắc Kinh",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"new_calling_can_only_use_in_full_screen",
+            "value":"Dịch vụ Gọi điện nâng cao chỉ có sẵn ở chế độ xem toàn màn hình.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"new_calling",
+            "value":"Gọi điện nâng cao",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"try_new_calling",
+            "value":"Thử Gọi điện nâng cao?",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"call_summarization_is_turned_off",
+            "value":"Tóm tắt cuộc gọi đã tắt. Tính năng này không có sẵn cho các cuộc gọi có nhiều người tham gia.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"summarizeOn",
+            "value":"Tóm tắt cuộc gọi",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"conference_different_cards",
+            "value":"Không thể thực hiện cuộc gọi hội nghị bằng các thẻ SIM khác nhau trên cùng một thiết bị.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"please_expand_your_phone",
+            "value":"Hãy mở điện thoại ra để xem.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"summary_failed_turned_on",
+            "value":"Không bật được tóm tắt cuộc gọi.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"summary_is_abnormal",
+            "value":"Dịch vụ tóm tắt cuộc gọi bị lỗi. Hãy thử lại sau.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"conference_calls_are_not_available",
+            "value":"Không thể thực hiện cuộc gọi hội nghị",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"wechat_multiCall",
+            "value":"%s | Cuộc gọi nhóm",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"wechat_videoCall",
+            "value":"%s | Cuộc gọi video",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"wechat_voiceCall",
+            "value":"%s | Cuộc gọi thoại",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+	    {
+            "name":"selected_device",
+            "value":"Đã chọn %s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hearing_aids_device_selected",
+            "value":"Đã chọn thiết bị máy trợ thính",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"accessibility_change_speaker",
+            "value":"Chuyển sang loa ngoài",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"accessibility_change_phoneset",
+            "value":"Chuyển sang loa trong",
+            "attr":{
+                "priority":"translate"
+            }
+        }
+    ]
+}
