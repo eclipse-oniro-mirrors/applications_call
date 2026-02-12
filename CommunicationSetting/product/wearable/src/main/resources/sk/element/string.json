@@ -1,0 +1,25 @@
+{
+    "string":[
+        {
+            "name":"watch_permission_history_no_record",
+            "value":"Žiadne záznamy",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"watch_traffic_ranking_the_month",
+            "value":"Používanie mobilných dát (mesačné)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"watch_loading",
+            "value":"Načítava sa…",
+            "attr":{
+                "priority":"LT"
+            }
+        }
+    ]
+}

@@ -1,0 +1,1450 @@
+{
+    "string":[
+        {
+            "name":"answering_call_prompt",
+            "value":"Скажите \"%s\", чтобы ответить",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"incoming_call_rejection_sms",
+            "value":"Ответ SMS-сообщением",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"waitingInvitation",
+            "value":"Ожидание ответа от вызываемого абонента...",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"emergency",
+            "value":"Экстренный вызов",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hangUp",
+            "value":"Завершить",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"anti_fraud_continue_call",
+            "value":"Продолжить разговор",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"symbol_comma",
+            "value":",\t",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"super_privacy_dialog_call_summary",
+            "value":"В режиме Суперконфиденциальность доступ к микрофону ограничен. Выключить режим для данного вызова?",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"telephone_Conference",
+            "value":"Конференц-вызов",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"voicemail",
+            "value":"Голосовая почта",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"open_phone_for_video_call",
+            "value":"Раскройте для видео",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"switchToVoice",
+            "value":"Голосовой вызов",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"hangUpReply",
+            "value":"Ответ",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"saveNumber",
+            "value":"Сохранить номер",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"anti_fraud_hangup_black",
+            "value":"Сбросить и заблокировать",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"close",
+            "value":"Закрыть",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"combine_conference_failed",
+            "value":"Не удается создать конференц-вызов.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"hop_with_device_name",
+            "value":"Подключено к %s",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"quickReply",
+            "value":"Быстрый ответ",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"dialing_banner",
+            "value":"Набор номера",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"silent_call_symbol",
+            "value":"Вызов с повышенной конфиденциальностью",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"keyBoard",
+            "value":"Клавиатура",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"unlock_try_again",
+            "value":"Разблокируйте ваше устройство и повторите попытку.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"disable_super_privacy_and_answer",
+            "value":"Выключить и ответить",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"voip_dialing_banner",
+            "value":"Вызов",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"maintain",
+            "value":"На удержании",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"wiredHeadset",
+            "value":"Проводные наушники",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"switch_rear_camera",
+            "value":"Переключить на основную камеру",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"inTheConference",
+            "value":"Идет конференция",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"voiceToVideoConfirmMsg",
+            "value":"Принять запрос на выполнение видеовызова?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"LeatherUIExtAbility_switch_between_calls",
+            "value":"Откройте чехол, чтобы переключиться между вызовами",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"call_assistant_voicefix",
+            "value":"Усилить голос",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Real_Estate_Agency",
+            "value":"Риелтор",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"combine_conference_upper_limit",
+            "value":"Достигнуто максимальное количество участников. Невозможно объединить вызовы.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"hold_calling",
+            "value":"Вызов на удержании",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"DTMF_CONFIRM",
+            "value":"Да",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"anti_fraud_deceived",
+            "value":"Предупреждение о мошенничестве",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_dialing",
+            "value":"Вызов по спутниковой связи Tiantong",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"addToExistingContact",
+            "value":"Обновить контакт",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"contactPerson",
+            "value":"Контакты",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"incoming_conflicts_video_call",
+            "value":"Если при ответе на этот вызов вы включите видео, текущий вызов будет завершен.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"anti_fraud_identifies",
+            "value":"Проверка рисков",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"app_voip_dialing_banner",
+            "value":"%s | Вызов…",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"manageUsers",
+            "value":"Управление участниками",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"message_Failed",
+            "value":"Сообщение невозможно отправить.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"speaker",
+            "value":"Громкая связь",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"incoming_conflicts_drop_existing_call",
+            "value":"Ответ на этот вызов завершит текущий вызов",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"DTMF_CANCEL",
+            "value":"Нет",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"answeredTimeout",
+            "value":"Подключение…",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"audio_output",
+            "value":"Вывод аудио",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"customSMS",
+            "value":"Настроить",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"not_support_hold",
+            "value":"Невозможно поставить на удержание.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"app_voip_incoming_voice",
+            "value":"%s | Голосовой вызов",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"hangingUp",
+            "value":"Завершение вызова…",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"flip_phone_for_front_camera",
+            "value":"Камера расположена на задней панели телефона.\nЧтобы увидеть себя в кадре, сложите телефон и поверните его, чтобы камера была направлена на вас.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"hangUpCompleted",
+            "value":"Вызов завершен",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobileNetwork",
+            "value":"Мобильная сеть недоступна.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"DTMF_DIALOG_INFO",
+            "value":"Отправить следующие тональные сигналы?\n\n%s",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"videoCallToVoiceToast",
+            "value":"Другой участник выбрал режим голосового вызова. Переключено на разговорный динамик.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"app_hold_conference",
+            "value":"%s | Конференция на удержании",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"financial_management_insurance",
+            "value":"Страховки и кредиты",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"custom",
+            "value":"Настроить",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"antifraud_center_phone_call",
+            "value":"Предполагаемое мошенничество",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"callFailed_fdn_only",
+            "value":"Вы можете позвонить только на телефоны из списка разрешенных номеров.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"callui_description",
+            "value":"Телефон",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"answerThePhone",
+            "value":"Извините, я не могу разговаривать.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"switchCamera",
+            "value":"Переключе\u200bние камер",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"disableChangedToEarpiece",
+            "value":"Разговорный динамик не будет работать во время выполнения вызовов по спутниковой связи.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"video_answer",
+            "value":"Ответить на видеовызов",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"LeatherUIExtAbility_fraud_phone_calls",
+            "value":"Мошеннический вызов",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"callBackReminder",
+            "value":"Напоминание об обратном вызове",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"call_assistant_text",
+            "value":"Напечатать и озвучить реплику",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"exchange",
+            "value":"Переключение",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"switch_front_camera",
+            "value":"Переключить на фронтальную камеру",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"partyIsRinging",
+            "value":"Вызов...",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"sent",
+            "value":"Отправить",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"cancel",
+            "value":"Отмена",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"keep",
+            "value":"Удержать",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"addCall",
+            "value":"+ Вызов",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"select_device",
+            "value":"Выбор устройства",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"contactMeLater",
+            "value":"Я на встрече. Я перезвоню как только смогу.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"voiceCall",
+            "value":"Голос",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"advertising_and_promotion",
+            "value":"Реклама",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"anti_fraud_risk_reminder",
+            "value":"Это может быть мошеннический вызов. Будьте осторожны.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"app_voip_incoming_video",
+            "value":"%s | Видеовызов",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"super_privacy_dialog_title",
+            "value":"Суперконфиденциальность",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"switchVideoCallFailed",
+            "value":"Не удается переключиться на видеовызов.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"backLater",
+            "value":"Я перезвоню вам.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"incoming_conflicts_drop_current_call",
+            "value":"Ответ на входящий вызов завершит текущий.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"rejectVideoMsg",
+            "value":"Вызываемый абонент отклонил запрос на видеовызов.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"connecting",
+            "value":"Подключение…",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"separate_conference_failed",
+            "value":"Не удается отделить вызов.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"turn_off_camera",
+            "value":"Выключить камеру",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"establishVideoCallFailed",
+            "value":"Не удается начать видеовызов.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"call_assistant_translate",
+            "value":"Перевести",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"LeatherUIExtAbility_in_super_privacy",
+            "value":"В режиме Суперконфиденциальность доступ к микрофону ограничен. Раскройте телефон для ответа.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"beThereSoon",
+            "value":"Я в пути.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"incoming_conflicts_drop_holding_call",
+            "value":"Ответ на этот вызов завершит вызов на удержании.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"marked",
+            "value":"\t(отмечено)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"app_hold_call",
+            "value":"%s | Вызов на удержании",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"addToBlockListConfirm",
+            "value":"Вам больше не будут поступать телефонные вызовы и сообщения от этого контакта.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"national_antifraud_center_tips",
+            "value":"Предупреждение Национального центра противодействия мошенничеству",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"shutDown",
+            "value":"Выключить",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"markAs",
+            "value":"Отметить как",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"incomingCall",
+            "value":"Входящий вызов",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"switchVoiceCallMsg",
+            "value":"Другой участник разговора переключился на голосовой вызов.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"reject_call_prompt",
+            "value":"Скажите \"%s\", чтобы отклонить",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mergeCall",
+            "value":"Конференция",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"remind",
+            "value":"Напоминание",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"gotIt",
+            "value":"OK",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"SMS_Sent",
+            "value":"Сообщение отправлено пользователю %s.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"end_call_prompt",
+            "value":"Скажите \"%s\", чтобы завершить",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"taxi",
+            "value":"Такси",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mute",
+            "value":"Откл. звук",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"phoneHandset",
+            "value":"Разговорный динамик",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"callBack",
+            "value":"Перезвонить: %s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"app_video_conference",
+            "value":"%s | Видеоконференция",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"turn_off_airplane_and_calls",
+            "value":"Выключить Режим полета для выполнения вызова?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"CALENDAR_ACCESS_TOAST",
+            "value":"Сначала предоставьте право доступа к приложению Календарь в разделе Настройки.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"adding_contact",
+            "value":"Добавить контакты",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"blueetoothDevice",
+            "value":"Bluetooth-устройство",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"two_way_silent_call",
+            "value":"Двусторонний вызов с повышенной конфиденциальностью",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"super_privacy_dialog_video_call_summary",
+            "value":"В режиме Суперконфиденциальность доступ к микрофону и камере ограничен. Выключить режим для данного вызова?",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"dialing",
+            "value":"Набор номера",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"hanging_up_video_call",
+            "value":"Завершить видеовызов",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"open_phone_to_use_handset",
+            "value":"Раскройте, чтобы использовать разговорный динамик",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"recorder_toast_error_400",
+            "value":"Неизвестная ошибка.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"no_cdma_volte_warn_text",
+            "value":"Вызовы на SIM-карте %1$s (China Telecom) на текущий момент недоступны, так как службы мобильной сети не активированы.\n\nОбратитесь в службу поддержки China Telecom по номеру %2$s.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"videoCall",
+            "value":"Видео",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"createNewContact",
+            "value":"Создать контакт",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"slide_to_answer",
+            "value":"Проведение для ответа",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"harassing_call",
+            "value":"Спам",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"unknownNumber",
+            "value":"Неизвестный номер",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"ok",
+            "value":"OK",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"closeCountDown",
+            "value":"Закрыть (%s)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"sms",
+            "value":"Сообщение",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"callHold",
+            "value":"Вызов на удержании",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"accept",
+            "value":"Принять",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"addToBlocklist",
+            "value":"Добавление в черный список",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"call_assistant_answer_setting_title",
+            "value":"Автоответчик",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"confirmAdd",
+            "value":"Добавить",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"courier_and_food_delivery",
+            "value":"Служба доставки",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"call_assistant_setting_title",
+            "value":"Вызовы с помощью Celia",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_dialing_tips",
+            "value":"Это может занять некоторое время. Подождите.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"recording",
+            "value":"Запись",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"unmute",
+            "value":"Включить звук",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fraud_phone_call",
+            "value":"Высокий риск",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"joining",
+            "value":"Подключение…",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"call_assistant_brief",
+            "value":"Резюмировать",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"rejectVideo",
+            "value":"Отклонить",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"app_voice_conference",
+            "value":"%s | Конференц-вызов",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"ture_on_camera",
+            "value":"Включить камеру",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone_no_delete",
+            "value":"Невозможно удалить используемые элементы.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"no_video_ringtone",
+            "value":"Нет видеорингтонов",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone_from_photo_picker",
+            "value":"Выбрать из Галереи",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"manage",
+            "value":"Управление",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone",
+            "value":"Видеорингтоны",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"my_video_ringtone",
+            "value":"Мой видеогудок",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone_deselect_all",
+            "value":"Отм. выбор",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone_select_all",
+            "value":"Выбрать все",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone_size_limit",
+            "value":"Выберите видео размером менее %s.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"delete",
+            "value":"Удалить",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"use",
+            "value":"Применить",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone_delete_dialog_tip1",
+            "value":"Удалить выбранные элементы?",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"anti_fraud_beware_being_deceived",
+            "value":"Предупреждение о мошенничестве",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"penglai_mode_notice",
+            "value":"Это действие невозможно выполнить в режиме Пэнлай.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name": "not_support_toast",
+            "value": "Эта операция не поддерживается в этом режиме."
+        },
+        {
+            "name":"show_dialpad",
+            "value":"Показать панель набора номера",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hanging_up_voice_call",
+            "value":"Завершить голосовой вызов",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"call_turn_off_recording",
+            "value":"Завершить запись",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"InfoEdit_back",
+            "value":"Назад",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"one_finger_double_click",
+            "value":"Нажмите дважды, чтобы активировать",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"wired_headset_selected",
+            "value":"Выбраны проводные наушники",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"answer",
+            "value":"Кнопка ответа",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"sim_card_num_no_space",
+            "value":"SIM-карта %s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"recorded",
+            "value":"Записано",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hanging_up_voice_call_button",
+            "value":"Кнопка завершения голосового вызова",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"switching_audio_channels",
+            "value":"Переключить аудиоканалы",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"cancel_waiting",
+            "value":"Снять с удержания",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"my_video",
+            "value":"Мое видеоизображение",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hanging_up_video_call_button",
+            "value":"Кнопка завершения видеовызова",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"call_mute_on",
+            "value":"Выключить звук",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"call_hd_symbol",
+            "value":"Высокое разрешение",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"peer_video",
+            "value":"Видеоизображение собеседника",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"blueetooth_device_selected",
+            "value":"Выбрано Bluetooth-устройство",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hide_dialpad",
+            "value":"Скрыть панель набора номера",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"notepad",
+            "value":"Заметки",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"disableChangedToEarpiece_hyacinth",
+            "value":"Разговорный динамик недоступен во время выполнения вызовов по спутниковой связи Гиацинт.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_dialing",
+            "value":"Вызов по спутниковой связи Гиацинт",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"anti_fraud_best_mind_tips",
+            "value":"Предупреждение Пекинского центра противодействия мошенничеству",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"new_calling_can_only_use_in_full_screen",
+            "value":"Расширенные вызовы доступны только в полноэкранном режиме.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"new_calling",
+            "value":"Расширенные вызовы",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"try_new_calling",
+            "value":"Включить Расширенные вызовы?",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"call_summarization_is_turned_off",
+            "value":"Резюме вызова выключено. Функция недоступна при выполнении конференц-вызовов.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"summarizeOn",
+            "value":"Резюме вызова",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"conference_different_cards",
+            "value":"Невозможно выполнять конференц-вызовы с разных SIM-карт на одном устройстве.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"please_expand_your_phone",
+            "value":"Раскройте устройство, чтобы посмотреть.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"summary_failed_turned_on",
+            "value":"Невозможно включить функцию Резюме вызова.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"summary_is_abnormal",
+            "value":"Сбой функции Резюме вызова. Повторите попытку позже.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"conference_calls_are_not_available",
+            "value":"Конференц-вызовы недоступны",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"wechat_multiCall",
+            "value":"%s | Групповой вызов",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"wechat_videoCall",
+            "value":"%s | Видеовызов",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"wechat_voiceCall",
+            "value":"%s | Голосовой вызов",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+	    {
+            "name":"selected_device",
+            "value":"Выбран %s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hearing_aids_device_selected",
+            "value":"Выбран слуховой аппарат",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"accessibility_change_speaker",
+            "value":"Переключиться на громкую связь",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"accessibility_change_phoneset",
+            "value":"Переключиться на разговорный динамик",
+            "attr":{
+                "priority":"translate"
+            }
+        }
+    ]
+}

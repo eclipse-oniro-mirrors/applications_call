@@ -1,0 +1,3060 @@
+{
+    "string":[
+        {
+            "name":"beidou_satellite_message_service_no_net",
+            "value":"Нет интернет-соединения. Подключитесь и повторите попытку.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"go_use_beidou_message_tips",
+            "value":"Функция Передача сообщений по BeiDou включена. Перейдите в приложение Сообщения, чтобы начать использовать ее.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"hangUp",
+            "value":"Завершить",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"start_beidou_satellite_message",
+            "value":"Передача сообщений по BeiDou",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"wearable_bluee_text",
+            "value":"Когда часы подключены к телефону, мобильная передача данных на часах будет выключена автоматически для энергосбережения. После отключения часов от телефона она будет включена повторно.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"save",
+            "value":"Сохранить",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Apn_enum_None",
+            "value":"Нет",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"wearable_roaming_subtitle",
+            "value":"Включите передачу данных в роуминге. Обратитесь к оператору, чтобы получить подробную информацию.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_data_networkProvider",
+            "value":"Оператор",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"APN_MMS",
+            "value":"MMS",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"do_not_show_again",
+            "value":"Больше не показывать",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"APN_ADD_APN",
+            "value":"Новая APN",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"APN_common",
+            "value":"Основное",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_dataRoaming",
+            "value":"Передача данных в роуминге",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data",
+            "value":"Мобильный Интернет",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Apn_confirm",
+            "value":"OK",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"gotIt",
+            "value":"OK",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_charges",
+            "value":"Может взиматься плата за передачу данных",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"go_use_beidou_satellite_message",
+            "value":"Перейти в приложение Сообщения?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"beidou_satellite_message_service_details_1",
+            "value":"%s. Эта служба доступна только пользователям China Mobile, которые активировали функции спутниковой связи для своего аккаунта. Для получения подробной информации обратитесь в службу поддержки клиентов China Mobile.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"beidou_satellite_message_no_sim_card_descriptions",
+            "value":"Чтобы использовать эту службу, установите SIM-карту China Mobile с активированной службой передачи сообщений по BeiDou.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"APN_Not_set",
+            "value":"Не задано",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"APN_NAME",
+            "value":"Точка доступа (APN)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"wearable_bluee_title",
+            "value":"Bluetooth подключен",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"go_to_use",
+            "value":"Перейти",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Apn_The_name_cannot_be_empty",
+            "value":"Введите имя.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"beidou_satellite_message",
+            "value":"Передача сообщений по BeiDou",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Apn_The_APN_cannot_be_empty",
+            "value":"Укажите APN.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"APN_EDIT_APN",
+            "value":"Изменить точку доступа",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"im_smc_tips_starfinder_blocking",
+            "value":"%1$s\nПерейдите в открытое место",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"im_smc_tips_outdoor_blocking",
+            "value":"Обнаружены препятствия",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_best",
+            "value":"Подключено к спутнику с наиболее сильным сигналом",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"go_setting",
+            "value":"Настройки",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Apn_Deleting_an_APN",
+            "value":"Удалить APN",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_call_notice",
+            "value":"Внимание",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_setting",
+            "value":"Настройки",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"preference_settings",
+            "value":"Режим",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"message_status_sent",
+            "value":"Отправлено",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Call_forward_user_unreachable",
+            "value":"Если недоступен",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_no_sim_card",
+            "value":"Нет SIM-карты",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"fold_window_dialog_remind_title",
+            "value":"Раскройте телефон",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"voicemail",
+            "value":"Голосовая почта",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"fusion_call_switch_short_notification",
+            "value":"Повышение качества вызовов с использованием сети WLAN или мобильной передачи данных при слабом сигнале сети. Подробную информацию об обработке ваших персональных данных см. в документе %1$s.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"number_identity_permission_dialog_desc",
+            "value":"Этой службе требуются следующие права:",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"distributed_share_message_data",
+            "value":"Отправка и получение сообщений на устройствах рядом.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"distributed_call_settings_sms_sharing_title",
+            "value":"Сообщения",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_new_fold_un_support_toast",
+            "value":"Раскройте телефон, чтобы использовать спутниковую связь.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"registration_failed",
+            "value":"Сбой регистрации сети",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"distributed_call_settings_network_sharing_descriptions_pad",
+            "value":"Когда сеть недоступна, если ваш телефон рядом, будет автоматически использоваться его мобильная сеть.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"motion_quick_call_descrition",
+            "value":"Поднесите телефон к уху, чтобы ответить на входящий вызов. Если используется режим громкой связи или Bluetooth-наушники, при поднятии телефона аудио будет переключено на режим разговорного динамика.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"motion_reduce_call_descrition",
+            "value":"Поднимите телефон, чтобы снизить громкость мелодии входящего вызова.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_no_region_card_descriptions",
+            "value":"Спутниковая связь Tiantong не поддерживается в текущем регионе. Дополнительные сведения о поддерживаемых регионах см. в разделе Вопросы и ответы.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_signal_descriptions",
+            "value":"China Telecom\nСпутниковая связь Tiantong",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"speedDial",
+            "value":"Быстрый набор",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"number_identity_permission_dialog_title",
+            "value":"Права функции Идентификация вызовов и сообщений",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_notification_title",
+            "value":"Спутниковая связь выключена",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"start_skycom_satellite_communications",
+            "value":"Спутниковая связь Tiantong",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"distributed_call_settings_network_sharing_title_pad",
+            "value":"Интернет",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"motion_quick_mute_descrition_pad",
+            "value":"Переверните устройство, чтобы выключить звук рингтона входящего вызова.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"video_ring_tone",
+            "value":"Видеогудки",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Notify_during_call",
+            "value":"Уведомления о входящих вызовах во время разговора.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Change_the",
+            "value":"Изменить",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Apn_APN_enabled",
+            "value":"APN вкл.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"automatic_carrier_selection",
+            "value":"Выбрать оператора автоматически?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"location_south_east",
+            "value":"%1$s ю.ш. %2$s в.д.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"sim_card_num_no_space",
+            "value":"SIM %s",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_fail",
+            "value":"Сбой получения списка операторов. Повторите попытку позже.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"distributed_call_settings_phone_sharing_title",
+            "value":"Телефонные вызовы",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"beidou_satellite_message_select_sim_card",
+            "value":"Выберите SIM-карту для передачи сообщений по спутниковой связи. Подтвердите у вашего оператора, что эта служба активирована.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"call_about",
+            "value":"Сведения",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Call_forward_no_busy",
+            "value":"Когда занято",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"stop_dialog",
+            "value":"Выключить",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_message_just_now",
+            "value":"Только что",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"cancel_space",
+            "value":"Отмена",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_cancel",
+            "value":"Отмена",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"more",
+            "value":"Еще",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_enableDataWhileRoaming",
+            "value":"Подключение к службам передачи данных в роуминге.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"beidou_satellite_message_service_settings_airplane_mode",
+            "value":"Невозможно использовать передачу сообщений по BeiDou в режиме полета.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_revoke_authorization_message",
+            "value":"Если вы выключите эту службу, она больше не будет доступна. Выключить?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_network",
+            "value":"Мобильная сеть",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_register",
+            "value":"Зарегистрировано в сети.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"im_message_smc_no_new_message_to_receive",
+            "value":"Нет ответов, ожидающих получения.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"upper_tilt_phone",
+            "value":"Наклоните устройство вверх",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"cannnot_dial_satellite_call_tips",
+            "value":"Устройство сильно нагрелось. Дождитесь, когда оно остынет, и повторите попытку.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"number_identity_permission_dialog_name_1",
+            "value":"Контакты",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"im_smc_tips_outdoor_use",
+            "value":"Используйте на улице",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ring_tone_desc",
+            "value":"Воспроизведение видеогудков при входящих и исходящих вызовах.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"number_identity_permission_dialog_name_3",
+            "value":"Списки вызовов",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"ERROR_CODE_NOT_OPENED_TIANDIWINGCARD",
+            "value":"В данный момент службы спутниковой связи не активированы для этой SIM-карты. Обратитесь к оператору.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"number_identity_permission_dialog_name_2",
+            "value":"Сообщения",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"APN_Restoring_default_APN_settings",
+            "value":"Восстановление настроек APN по умолчанию…",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_card2",
+            "value":"Сеть SIM2",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_card1",
+            "value":"Сеть SIM1",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Call_forward_deactivated",
+            "value":"Выклю\u200bчено",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"portrait_reminder",
+            "value":"Держите телефон горизонтально",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"confim_space",
+            "value":"OK",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_exited_for_system_error",
+            "value":"Ошибка системы. Спутниковая связь Tiantong выключена. Повторно включите ее и повторите попытку.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_exited_for_system_error",
+            "value":"Ошибка системы. Спутниковая связь Гиацинт выключена. Повторно включите ее и повторите попытку.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_settings_enable_tips",
+            "value":"По причине ограничения спутниковых ресурсов используйте эту функцию, только если не работает сотовая сеть. После включения спутниковой связи Tiantong будут выключены службы геолокации, сеть WLAN, мобильный Интернет и связанные функции.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"voice_control",
+            "value":"Голосовое управление",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_location_permission_descriptions",
+            "value":"Используется для регулировки положения устройства относительно спутника и добавления геоданных в сообщения, которые вы отправляете.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"distributed_call_settings_network_sharing_title",
+            "value":"Интернет",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"fold_window_dialog_remind_message",
+            "value":"При использовании спутниковой связи не складывайте телефон и держите его горизонтально.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"re_calibrate",
+            "value":"Повторить попытку",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Call_waiting",
+            "value":"Ожидание вызова",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"motion_reduce_call_descrition_pad",
+            "value":"Поднимите устройство, чтобы снизить громкость мелодии входящего вызова.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"advertising_and_promotion",
+            "value":"Реклама",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"shut_down",
+            "value":"Выкл.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"smc_right_rotate_device",
+            "value":"Поверните устройство вправо",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"super_privacy_dialog_title",
+            "value":"Суперконфиденциальность",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_Automatic_selection",
+            "value":"Автоматический выбор",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"copyright_new",
+            "value":"Телефон. Все права защищены. ©%1$s–%2$s",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_network",
+            "value":"Спутниковая сеть",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Call_forward_unconditional",
+            "value":"Всегда переадресовывать",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"risk_identity_engine",
+            "value":"Движок",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"im_message_smc_shake",
+            "value":"Наклоняйте устройство, чтобы нарисовать круг",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"open_mobile_data",
+            "value":"Включение мобильного Интернета",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"float_left_right_phone",
+            "value":"Найдите спутник",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"call_history_merging",
+            "value":"Объединение записей списка вызовов",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"landscape_reminder",
+            "value":"Держите телефон вертикально",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"APN_TITLE",
+            "value":"Точки доступа (APN)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_details_2_new",
+            "value":"%s. Для использования этой службы требуется ее активация у оператора. Обратитесь к оператору спутниковой связи, чтобы уточнить информацию о доступности, процедуре активации и тарифах.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_tips",
+            "value":"Внимание",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"re_connecting_satellite",
+            "value":"Подключить повторно",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Apn_OK",
+            "value":"OK",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"call_version",
+            "value":"Версия %s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_service_select_sim_card",
+            "value":"Выберите SIM-карту для выполнения вызовов и отправки сообщений по спутниковой связи. Подтвердите у вашего оператора, что эта служба активирована.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"motion_quick_call_title",
+            "value":"Ответ на вызовы",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"by_time",
+            "value":"По времени",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_call_message_notice",
+            "value":"У вас пропущенный звонок или непрочитанное сообщение. Для просмотра сведений подключитесь к спутнику и откройте приложение Телефон или Сообщения.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"motion_pick_up_reduce_volume",
+            "value":"Снижение громкости поднятием устройства",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"To",
+            "value":"Переадресация",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_signal",
+            "value":"Сигнал",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"float_upper_down_phone",
+            "value":"Переместите шар в центр",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"device_calibrating_fail_tips",
+            "value":"Держите телефон вертикально и поворачивайте его по кругу",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_Registering_disable",
+            "value":"Регистрация в сети %s (запрещено)…",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Network_response_abnormal",
+            "value":"Сеть не отвечает.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"anti_fraud_text",
+            "value":"Уведомления о возможном мошенничестве во время вызовов.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"motion_pick_up_reduce_volume_pad",
+            "value":"Снижение громкости поднятием устройства",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"aim_satellite",
+            "value":"Поиск спутника",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_not_enabled",
+            "value":"Спутниковая связь Tiantong не включена.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"re_wait_loading",
+            "value":"Повторить поиск",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_enhance_status",
+            "value":"Соединение+",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"number_identity_permission_dialog_purpose_2",
+            "value":"Используется для определения того, следует ли заблокировать сообщение.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"number_identity_permission_dialog_purpose_1",
+            "value":"Используется для проверки того, является ли номер контактом или добавлен ли он в черный либо белый список.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_details_3",
+            "value":"%s. Эта служба поддерживается только в КНР (кроме Гонконга, Макао и Тайваня).",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"smc_keep_posture",
+            "value":"Держите устройство в этом положении",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_service_details_0",
+            "value":"%1$s. По причине ограничения спутниковых ресурсов рекомендуется использовать сотовую сеть, если она работает. %2$s",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"number_identity_permission_dialog_purpose_3",
+            "value":"Используется для отметки номеров телефонов по категориям и определения того, следует ли заблокировать сообщение.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_data_enabled4G",
+            "value":"Стандарт 4G",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"number_identity_setting_title",
+            "value":"Идентификация вызовов и сообщений",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"privacy_statement",
+            "value":"Уведомление о приложении Телефон и конфиденциальности",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"new_satellite_signal_descriptions",
+            "value":"Спутниковая система Tiantong",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"open_mobile_data_detail",
+            "value":"Для работы этой функции требуется мобильный трафик. Перейдите в настройки и включите мобильный Интернет.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_details_1_new",
+            "value":"",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"distributed_share_call_data",
+            "value":"Выполнение телефонных вызовов и ответ на них на устройствах рядом.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"distributed_network_never_connect",
+            "value":"Подключение вручную",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"wifi_calling_tips",
+            "value":"Когда функция WLAN-вызовов включена, для исходящих вызовов может использоваться как WLAN, так и мобильная сеть (в зависимости от ваших предпочтений и уровня сигнала). Перед включением этой функции обратитесь к вашему оператору.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_hunt_success",
+            "value":"Подключено к спутнику",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Apn_cancel",
+            "value":"Отмена",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"float_window_keep_posture",
+            "value":"Держите устройство в этом положении",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"im_smc_tips_starfinder_loading",
+            "value":"%1$s\nдля получения сигнала спутника",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"beidou_satellite_short_notification",
+            "value":"<body><span style='normal'>Этой службе требуется доступ в </span><span style='bold'>Интернет</span><span style='normal'> для проверки вашего счета и баланса. Когда эта функция включена, вы сможете отправлять сообщения через спутники BeiDou, когда у вас нет подключения к мобильной сети или сети WLAN. Во время использования этой службе требуется читать и выгружать или передавать номер телефона устройства, содержимое сообщений, передаваемых по BeiDou, и геоданные. Это необходимо для передачи сообщений по спутниковой системе BeiDou. Включая эту функцию, вы принимаете вышеизложенные положения и </span><span style='userAgreements'>Соглашение с пользователем службы Передача сообщений по BeiDou</span><span style='normal'>. Дополнительные сведения об обработке ваших персональных данных см. в документе </span><span style='privacyStatement'>Уведомление о службе Передача сообщений по BeiDou и конфиденциальности</span><span style='normal'>.</span></body>",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_enabled5G",
+            "value":"Стандарт 5G",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"location_south_west",
+            "value":"%1$s ю.ш. %2$s з.д.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_service_location",
+            "value":"Геоданные",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"not_link_satellite_auto_exit_notification_Text",
+            "value":"Спутниковая связь Tiantong выключена, так как %d секунд нет связи со спутником.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"left_rotate_phone",
+            "value":"Поверните устройство влево",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"float_keep_current_posture",
+            "value":"Держите устройство в этом положении",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"APN_TITLE_MSG",
+            "value":"Основное",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_hunt_failed",
+            "value":"Сбой подключения",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"advance_options_title",
+            "value":"Еще",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"send_failed",
+            "value":"Ошибка отправки",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"device_calibrate_failed",
+            "value":"Сбой калибровки",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"incoming_notification_setting",
+            "value":"Уведомления о входящих вызовах",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"enhance_statement_title",
+            "value":"Идентификация вызовов и сообщений",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"ERROR_CODE_OTHERS",
+            "value":"Ошибка сети. Обратитесь к оператору.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"device_offset_reminder",
+            "value":"Наведите на спутник",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_data_confirmation_function",
+            "value":"Перед включением этой службы подтвердите, чтобы она доступна. В противном случае могут возникнуть проблемы с обычными вызовами.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_connecting",
+            "value":"Подключение (%d)…",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"answer_voice_calls_by_flipping",
+            "value":"При выключении звука сигнала перед раскрытием телефона требуется подтверждение вручную.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"im_smc_lift_device",
+            "value":"Наклоните устройство к себе",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"8300999",
+            "value":"Неизвестная ошибка.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_closeAutoSelect",
+            "value":"Отменить автоматический выбор",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"ERROR_CODE_NOT_SUPPORT_CARD",
+            "value":"Эта SIM-карта не поддерживает службы спутниковой связи Tiantong. Для замены обратитесь к оператору.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"motion_quick_call_descrition_fold_teton",
+            "value":"При поступлении входящего вызова поднесите телефон к уху, чтобы ответить. Если используется режим громкой связи или Bluetooth-наушники, при поднятии телефона выполняется переключение на режим разговорного динамика.\n\n*Доступно, только когда устройство в сложенном состоянии.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"incoming_call_rejection_sms",
+            "value":"Ответ SMS-сообщением",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"fusion_call_switch_short_notification_sub2",
+            "value":"Уведомление о функции Повышение качества вызовов и конфиденциальности",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Deactivation",
+            "value":"Выключить",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"new_satellite_descriptions",
+            "value":"Спутниковая система Tiantong",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_volte",
+            "value":"VoLTE HD-вызовы",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"keep_current_posture",
+            "value":"Держите устройство в этом положении",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_service_showname",
+            "value":"SIM %1$s: %2$s",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_esim_showname",
+            "value":"eSIM %1$s: %2$s",
+            "attr":{
+                "priority":"code"
+            }
+        },
+        {
+            "name":"app_about_name",
+            "value":"Телефон",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"automatic_enrollment",
+            "value":"Автоматическая регистрация\u2026",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Apn_The_MCC_must_be_a_3_digit_number",
+            "value":"Поле MCC должно содержать 3 цифры.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"super_privacy_dialog_call_summary",
+            "value":"В режиме Суперконфиденциальность доступ к микрофону ограничен. Выключить режим для данного вызова?",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"anti_fraud",
+            "value":"Умная защита",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"enterprise_number_identity",
+            "value":"Активация для корпоративных приложений",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_select_sim",
+            "value":"Выбор SIM-карты",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_chooseNetworkProvider",
+            "value":"Выберите оператора.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"distributed_call_settings_descriptions_pad",
+            "value":"",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_message",
+            "value":"Сообщения",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"im_smc_calibrate_failed",
+            "value":"Сбой калибровки",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_phone",
+            "value":"Телефон",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"exit_beidou_satellite_message_service_tips",
+            "value":"Закрыть функцию Передача сообщений по BeiDou?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_network_descriptions",
+            "value":"Вызовы и сообщения по спутниковой системе Tiantong.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"disable_super_privacy_and_call",
+            "value":"Выключить и позвонить",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"APN_Reset_to_Default",
+            "value":"Сброс настроек",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"others",
+            "value":"Прочее",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"im_smc_receive_auto_change_01",
+            "value":"Тайм-аут соединения. Переключено на другой спутник.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"selectContacts",
+            "value":"Выбрать контакт",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"distributed_network_auto_connect",
+            "value":"Автоподключение",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"phone_ring_tone",
+            "value":"Мелодия вызова",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"not_link_satellite_dialog_positive",
+            "value":"Продолжить",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"disable_super_privacy_and_answer",
+            "value":"Выключить и ответить",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_Registering",
+            "value":"Регистрация в сети %s…",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"wifi_calling",
+            "value":"WLAN-вызовы",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Apn_MNC_must_be_2_or_3_digits",
+            "value":"Поле MNC должно содержать 2 или 3 цифры.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"motion_call_setting_search_system",
+            "value":"Система",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"end_call_by_power",
+            "value":"Завершение вызова кнопкой питания",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"WiFi_first",
+            "value":"Приоритет WLAN",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"motion_muting_reduce_call_title",
+            "value":"Выключение звука или снижение громкости мелодии вызова",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"motion_flip_mute_volume",
+            "value":"Выключение рингтона переворотом устройства",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"location_north_west",
+            "value":"%1$s с.ш. %2$s з.д.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"number_identity_setting_text_1",
+            "value":"При поступлении вызова или сообщения от неизвестного номера эта служба поможет вам понять, от кого он, и решить, стоит ли отвечать.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"distributed_call_settings_title",
+            "value":"Доступ к функциям связи",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_exit",
+            "value":"Выключить",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_settings_window_suggest",
+            "value":"Откройте это окно в полноэкранном режиме, чтобы включить спутниковую связь Tiantong.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"keep_current_posture_wait_patiently",
+            "value":"Это может занять некоторое время\nПодождите",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"enter_in_call",
+            "value":"Невозможно включить спутниковую связь Tiantong во время разговора.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"unlock_after_call_notification_descriptions",
+            "value":"Входящие вызовы всегда отображаются в формате баннеров, когда вы играете в игры, используете навигационные функции на карте или смотрите изображения и видео в полноэкранном режиме.\n\nПри использовании Режима для пожилых и режима Экспедиция они всегда отображаются во весь экран.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"unlock_after_call_notification",
+            "value":"Уведомления на разблокированном экране",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"sim_select",
+            "value":"SIM-карта",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"frequently_asked_questions",
+            "value":"Вопросы и ответы",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"number_identity_short_notification",
+            "value":"<body><span style='normal'>Этой службе требуется доступ в </span><span style='bold'>Интернет</span><span style='normal'> и к приложению </span><span style='bold'>Контакты</span><span style='normal'>, а также читать ваши контакты, читать и изменять список вызовов, читать и выгружать или передавать содержимое SMS-сообщений. Включая эту функцию, вы принимаете эти положения. Подробную информацию об обработке ваших персональных данных см. в документах </span><span style='privacyStatement'>Уведомление о функции Идентификация вызовов и сообщений и конфиденциальности</span><span style='normal'> и </span><span style='permissionStatement'>Уведомление о правах</span><span style='normal'>.</span></body>",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"hicall_user_info_skip",
+            "value":"Пропустить",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"automatic_recording_of_calls",
+            "value":"Автоматическая запись разговоров",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"device_calibrating",
+            "value":"Калибровка…",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"im_smc_received_satellite_return",
+            "value":"Подтверждение от спутника получено",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"8300003",
+            "value":"Внутренняя ошибка системы.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_no_phone_number",
+            "value":"Неизвестный номер",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_call_not_support_earpiece",
+            "value":"Для стабильного соединения разговорный динамик недоступен во время спутниковых вызовов.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"8300001",
+            "value":"Недействительное значение.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"8300002",
+            "value":"Сбой доступа к этой службе.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_not_serve",
+            "value":"Сеть не найдена",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"exit_satellite_service_tips",
+            "value":"Выключить спутниковую связь Tiantong?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"cancel",
+            "value":"Отмена",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"full_screen",
+            "value":"На весь экран",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"APN_Creating_an_APN",
+            "value":"Новая точка доступа",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"distributed_share_network_data",
+            "value":"Использование вашего интернет-соединения на устройствах рядом.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_turn_on_data_roaming",
+            "value":"Передача данных в роуминге может привести к дополнительным расходам. Включить?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"not_link_satellite_dialog_message",
+            "value":"Нет связи со спутником %d секунд. Спутниковая связь Tiantong будет выключена.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"motion_quick_mute_descrition",
+            "value":"Переверните телефон, чтобы выключить звук рингтона входящего вызова.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_settings_skytone_mode",
+            "value":"Функция недоступна, когда используется SkyTone.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_revoke_authorization",
+            "value":"Выключить службу",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"meetime_network_descriptions",
+            "value":"Отправка и получение сообщений по спутниковой системе BeiDou через приложение Сообщения или MeeTime.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"im_smc_note_content",
+            "value":"Если пропустить калибровку, это может негативно сказаться на использовании спутниковой связи. Пропустить?",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"customer_service",
+            "value":"Горячая линия службы поддержки клиентов",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"im_message_smc_receive_success",
+            "value":"Получено",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"lower_tilt_phone",
+            "value":"Наклоните устройство вниз",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"unknown",
+            "value":"Неизвестно",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_settings_explain",
+            "value":"Примечание",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_settings_details_descriptions3",
+            "value":"Когда вы подключитесь к спутниковой сети Tiantong, ваши точные геоданные будут выгружены на сервер оператора спутниковой связи.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"enabled",
+            "value":"Включить",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"text_paragraphs",
+            "value":"Если выключить эту функцию, ваш телефон будет регистрироваться только в сетях, которые вы выберете вручную. Мобильный Интернет также может быть выключен. Ваша текущая сеть может стать временно недоступна во время выбора сети вручную. Выключить?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"opened",
+            "value":"Включено",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"location_north_east",
+            "value":"%1$s с.ш. %2$s в.д.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_Search",
+            "value":"Поиск…",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"distributed_call_settings_sms_sharing_title_pad",
+            "value":"Сообщения",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"float_window_keep_posture_check_occlusion",
+            "value":"Убедитесь, что нет препятствий в направлении спутника.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"float_window_keep_posture_wait_patiently",
+            "value":"Подождите.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_able",
+            "value":"Доступные сети",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Turn_on",
+            "value":"Включить",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"phone_ring_Card2",
+            "value":"SIM %1$s: %2$s",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"improve_call_quality",
+            "value":"Повышение качества вызовов",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"skycom_satellite_communications",
+            "value":"Спутниковая связь Tiantong",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"closed",
+            "value":"Выклю\u200bчено",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"im_smc_lower_device",
+            "value":"Наклоните устройство от себя",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"text_paragraphs_no_data",
+            "value":"Если выключить эту функцию, ваш телефон будет регистрироваться только в сетях, которые вы выберете вручную. Мобильный Интернет также может быть выключен. Выключить?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"about_personal_info_list",
+            "value":"Собираемые персональные данные",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"distributed_call_settings_descriptions",
+            "value":"",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Apn_give_up_the_modification",
+            "value":"Не сохранять изменения?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"401",
+            "value":"Ошибка параметра.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_permission_count",
+            "value":"Этой службе требуется следующее право:",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_permission_usage_details",
+            "value":"Права функции спутниковой связи Tiantong",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_search_failed",
+            "value":"Спутник не найден",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"device_calibrating_tips",
+            "value":"Наклоняйте устройство, чтобы нарисовать круг",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_service_no_sim_card_descriptions",
+            "value":"Установите SIM-карту с активированной функцией спутниковой связи Tiantong, затем повторите попытку.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"motion_flip_mute_volume_pad",
+            "value":"Выключение рингтона переворотом устройства",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"open_phone_to_answer_calls",
+            "value":"Раскрытие для ответа на голосовые вызовы",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"find_out_how_we_use_your_data",
+            "value":"Использование персональных данных",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"beidou_satellite_message_service_details_0",
+            "value":"%1$s. Во время использования этой службы сеть WLAN и мобильный Интернет будут временно выключены. При закрытии работа служб будет восстановлена автоматически.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"ERROR_CODE_NOT_ACTIVATED_SIM",
+            "value":"Номер IMEI этого устройства не зарегистрирован в спутниковой сети Tiantong.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_preferredNetwork",
+            "value":"Предпочтительная сеть: %s",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"beidou_satellite_message_service_details_2",
+            "value":"%s. Эта функция доступна только в КНР (кроме Гонконга, Макао и Тайваня).",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Call_forward_no_reply",
+            "value":"Если не отвечает",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_general",
+            "value":"Основное",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"phone_ring_Card1",
+            "value":"SIM %1$s: %2$s",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"motion_quick_call_descrition_fold",
+            "value":"При поступлении входящего вызова поднесите телефон к уху, чтобы ответить. Если используется режим громкой связи или Bluetooth-наушники, при поднятии телефона выполняется переключение на режим разговорного динамика.\nДоступно только на главном экране.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"super_privacy_dialog_video_call_summary",
+            "value":"В режиме Суперконфиденциальность доступ к микрофону и камере ограничен. Выключить режим для данного вызова?",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"distributed_call_settings_phone_sharing_title_pad",
+            "value":"Телефонные вызовы",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"networkAnomaly",
+            "value":"Нет ответа от сети. Сбой настройки.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"enhance_statement_content",
+            "value":"Этой службе требуется доступ в Интернет и к приложению Контакты. Ей также требуется читать ваши контакты, читать и изменять список вызовов, читать и выгружать или передавать содержимое SMS-сообщений. Это необходимо для идентификации вызовов и сообщений от незнакомых номеров. Включая эту опцию, вы принимаете эти положения. Дополнительные сведения об обработке ваших персональных данных см. в документах <a link=\"privacyStatement\">Уведомление о функции Идентификация вызовов и сообщений и конфиденциальности</a> и <a link=\"permissionStatement\">Уведомление о правах</a>.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"business_and_privacy_statement",
+            "value":"Уведомления о конфиденциальности",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"right_rotate_phone",
+            "value":"Поверните устройство вправо",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"keep_current_posture_check_occlusion",
+            "value":"Наведение на спутник.\nУбедитесь, что такие препятствия, деревья или здания, отсутствуют.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"smc_left_rotate_device",
+            "value":"Поверните устройство влево",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_data_card1_or_card2",
+            "value":"Сеть SIM 1/SIM 2",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Call_forward",
+            "value":"Настройки переадресации вызова",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_short_notification_info",
+            "value":"<body><span style='normal'>Этой службе требуется доступ к </span><span style='bold'>геоданным</span><span style='normal'> и право использования служб геолокации для определения вашего местоположения. Включая эту функцию, вы принимаете настоящие положения и </span><span style='userAgreements'>Соглашение с пользователем функции спутниковой связи Tiantong</span><span style='normal'>. Подробную информацию см. в документах </span><span style='privacyStatement'>Уведомление о функции спутниковой связи Tiantong и конфиденциальности</span><span style='normal'> и </span><span style='permissionStatement'>Уведомление о правах</span><span style='normal'>.</span></body>",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"answer_calls_list",
+            "value":"Поднятие телефона для ответа",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"vowifi_mobile_network_preferred",
+            "value":"Приоритет мобильной сети",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"ERROR_CODE_NOT_OPENED_ROAMING",
+            "value":"Ошибка статуса шлюза. Обратитесь к оператору.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_search",
+            "value":"Загрузка…",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_settings_airplane_mode",
+            "value":"Спутниковая связь Tiantong недоступна в режиме полета.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_alignment",
+            "value":"Поиск спутника...",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_disable",
+            "value":"%s (запрещено)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"meetime_network_title",
+            "value":"Передача сообщений по BeiDou через MeeTime",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"beidou_satellite_message_enter_in_call",
+            "value":"Невозможно использовать передачу сообщений по BeiDou во время разговора.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"by_contact",
+            "value":"По контактам",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"multi_device_collaboration",
+            "value":"Другие соединения",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"start_skycom_satellite_communications_sub3",
+            "value":"Когда вы подключитесь к спутниковой сети Tiantong, ваши точные геоданные будут выгружены на сервер оператора спутниковой связи.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"start_skycom_satellite_communications_sub1",
+            "value":"Когда вы находитесь вне зоны покрытия сети WLAN и сотовой сети, вы можете продолжить использовать функции вызовов и сообщений на телефоне через спутниковую сеть.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"201",
+            "value":"Сбой подтверждения права.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"call_setting_incoming",
+            "value":"Входящие вызовы",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_hunt_timeout",
+            "value":"Тайм-аут подключения спутника",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"quick_gestures",
+            "value":"Быстрый доступ и жесты",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"incoming_notification_setting_tips",
+            "value":"Вы можете настроить отображение уведомлений о входящих вызовах: во весь экран или в формате баннеров. Вы можете изменить этот параметр в любой момент в разделе Телефон > Настройки > Уведомления на разблокированном экране.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"im_message_smc_receive_fail",
+            "value":"Сбой получения",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"banner",
+            "value":"Баннер",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"unlock_after_call_notification_description",
+            "value":"Входящие вызовы всегда отображаются в формате баннеров, когда вы играете в игры, используете навигационные функции на карте или смотрите изображения и видео в полноэкранном режиме.\n\nПри использовании Простого режима, Режима для пожилых и режима Экспедиция они всегда отображаются во весь экран.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fold_remind_tips_message",
+            "value":"Сбой подключения к спутнику. Во время использования этой функции не складывайте телефон.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"contact_str_copysim_notification",
+            "value":"Уведомление",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_search_tips",
+            "value":"Вне помещений достигается наилучший результат.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"edm_operate_prohibit_tip",
+            "value":"Выполнение этой операции запрещено руководством компании.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"car_satellite_tips",
+            "value":"Совершайте и принимайте телефонные вызовы по спутниковой сети вашего автомобиля.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"using_beidou_toast",
+            "value":"Недоступно во время использования функций спутниковой связи BeiDou.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"car_satellite_title",
+            "value":"Связь по спутниковой сети автомобиля",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_service_settings_window_mode",
+            "value":"Функция спутниковой связи Tiantong не поддерживает режим нескольких окон.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"InfoEdit_back",
+            "value":"Назад",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone_delete_dialog_tip1",
+            "value":"Удалить выбранные элементы?",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone_no_delete",
+            "value":"Невозможно удалить используемые элементы.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"no_video_ringtone",
+            "value":"Нет видеорингтонов",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone_from_photo_picker",
+            "value":"Выбрать из Галереи",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"manage",
+            "value":"Управление",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone",
+            "value":"Видеорингтоны",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone_small_no_show",
+            "value":"Видеорингтоны невозможно редактировать в плавающем окне.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"my_video_ringtone",
+            "value":"Мой видеогудок",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone_deselect_all",
+            "value":"Отм. выбор",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"remind",
+            "value":"Напомнить",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone_select_all",
+            "value":"Выбрать все",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"sms",
+            "value":"Сообщение",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone_size_limit",
+            "value":"Выберите видео размером менее %s.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"call_assistant_setting_title",
+            "value":"Автоответчик",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"delete",
+            "value":"Удалить",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"use",
+            "value":"Применить",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone_dialog_system_error",
+            "value":"Ошибка системы. Повторите попытку.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone_dialog_no_space",
+            "value":"Недостаточно памяти. Освободите место и повторите попытку.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone_dialog_Exceeding_limit_title",
+            "value":"Достигнуто максимальное количество видеорингтонов",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone_dialog_Exceeding_limit_content",
+            "value":"Удалите ненужные видеорингтоны, чтобы освободить место.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone_dialog_type_error",
+            "value":"Поддерживаются только видео в формате MP4.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"InfoEdit_edits_info",
+            "value":"Изменить",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"click_go_to_settings",
+            "value":"Нажмите, чтобы настроить",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"penglai_mode_notice",
+            "value":"Это действие невозможно выполнить в режиме Пэнлай.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"smart_call_making",
+            "value":"Умный вызов",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"incoming_outgoing_calls_voice_control",
+            "value":"Ответ на вызов и отклонение вызова",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"video_type",
+            "value":"Видео %d",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Incoming_call_voice_announcement",
+            "value":"Объявление входящих вызовов",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"talkback_not_selected",
+            "value":"Не выбрано",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"talkback_selected",
+            "value":"Выбрано",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_connect_failed",
+            "value":"Отключено",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"new_hyacinth_satellite_signal_descriptions",
+            "value":"Спутниковая связь Гиацинт",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_signal_descriptions",
+            "value":"China Telecom\nСпутниковая связь Гиацинт",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"keep_current_posture_hyacinth",
+            "value":"Держите устройство в этом положении",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_service_no_available_time",
+            "value":"Нет доступных периодов времени",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"close_button",
+            "value":"Закрыть",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"more_options",
+            "value":"Другие опции",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"New_CAll",
+            "value":"Расширенные вызовы",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"details",
+            "value":"Сведения",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_connect_failed_not_time",
+            "value":"Нет доступных спутников. Повторите попытку позже.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"switched_to_next_satellite",
+            "value":"Переключено на следующий спутник",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"switching_to_next_satellite",
+            "value":"Скоро будет выполнено переключение на следующий спутник\nСоединение может ненадолго прерваться",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"cellular_network_notify_text",
+            "value":"Спутниковая сеть больше не нужна. Выключить ее?",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"cellular_network_notify_ignore_button",
+            "value":"Пропустить",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"cellular_network_notify_close_button",
+            "value":"Выключить спутниковую сеть",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"cellular_network_notify_title",
+            "value":"Мобильная сеть доступна",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_data_esim_card",
+            "value":"Сеть eSIM-карты %s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_device_calibrating_tips",
+            "value":"Сильно наклоните устройство, чтобы завершить калибровку",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_short_notification_info",
+            "value":"<body><span style='normal'>Когда вы находитесь вне зоны покрытия сети WLAN и мобильной сети, вы можете использовать функции вызовов и отправки сообщений вашего телефона через спутниковую связь.\n\nВо время использования этой службе требуется доступ к вашим </span><span style='bold'>геоданным</span><span style='normal'> для установления связи со спутником. Включая эту функцию, вы принимаете положения </span><span style='userAgreements'>Соглашение с пользователем функции Гиацинт</span><span style='normal'>. Подробную информацию об обработке ваших персональных данных см. в </span><span style='privacyStatement'>Уведомлении о функции Гиацинт и конфиденциальности</span><span style='normal'> и в </span><span style='permissionStatement'>Уведомлении о правах</span><span style='normal'>.</span></body>",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_not_found_satellite",
+            "value":"Нет доступных спутников. Повторите попытку позже.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_service_no_region_card",
+            "value":"Спутниковая связь Гиацинт не поддерживается в текущем регионе. Дополнительные сведения о поддерживаемых регионах см. в разделе Вопросы и ответы.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_service_permission_usage_details",
+            "value":"Права функции спутниковой связи Гиацинт",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_connect_failed_guide",
+            "value":"Нет доступных спутников. Следующее доступное окно: %1$s–%2$s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_service_network_description",
+            "value":"Выполнение вызовов и обмен сообщениями через спутник.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_service_enter_in_call",
+            "value":"Невозможно включить спутниковую связь Гиацинт во время разговора.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"start_hyacinth_satellite_communications",
+            "value":"Спутниковая связь Гиацинт",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_service_settings_window_mode",
+            "value":"Функция спутниковой связи Гиацинт не поддерживает режим нескольких окон.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_service_airplane_mode",
+            "value":"Спутниковая связь Гиацинт недоступна в режиме полета.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_service_tiantong_mode",
+            "value":"Спутниковая связь Гиацинт недоступна во время использования спутниковой связи Tiantong.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_service_not_enabled",
+            "value":"Спутниковая связь Гиацинт не включена.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellites_not_available",
+            "value":"Сейчас невозможно подтвердить доступность спутника. Продолжить?",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_service_settings_window_suggest",
+            "value":"Откройте это окно в полноэкранном режиме, чтобы включить спутниковую связь Гиацинт.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"esim_card_num_no_space",
+            "value":"eSIM-карта %s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_communications",
+            "value":"Спутниковая связь Гиацинт",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_service_no_sim_card",
+            "value":"Установите SIM-карту с активированной функцией спутниковой связи Гиацинт, затем повторите попытку.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"exit_hyacinth_satellite_service_tips",
+            "value":"Выключить спутниковую связь Гиацинт?",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"phone_ring_Card3",
+            "value":"eSIM %1$s: %2$s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_notification_title",
+            "value":"Спутниковая связь выключена",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"new_calling_can_only_use_in_full_screen",
+            "value":"Расширенные вызовы доступны только в полноэкранном режиме.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"New_CAll_DESC",
+            "value":"Сервис предоставляется оператором.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_activate_text",
+            "value":"<body><span style='normal'>С помощью функции Гиацинт вы можете выполнять вызовы и отправлять сообщения, даже когда находитесь вне зоны действия сети. В связи с тем, что сеть спутников Гиацинт находится в стадии развертывания, эта служба в настоящий момент доступна только в определенные периоды времени в течение дня. Во время использования эта служба будет осуществлять доступ к вашим </span><span style='bold'>геоданным и данным сети</span><span style='normal'>, чтобы подтвердить доступность спутников.</span></body>",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_activate_immediatly",
+            "value":"Активировать",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_activate",
+            "value":"Активация функции Гиацинт",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"celia",
+            "value":"Вызовы с помощью Celia",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"call_setting_call",
+            "value":"Во время вызова",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_service_settings_skytone_mode",
+            "value":"Функция недоступна, когда используется SkyTone.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"tiantong_satellite_service_hyacinth_mode",
+            "value":"Спутниковая связь Tiantong недоступна во время использования спутниковой связи Гиацинт.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"send_success",
+            "value":"Отправлено",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"im_message_smc_satellite_no_receipt_tips",
+            "value":"Возможно, сообщение не получено спутником. Повторите попытку на открытой местности.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"callSetting_title",
+            "value":"Настройки вызова",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_available_time_tomorrow",
+            "value":"Завтра: %1$s–%2$s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_available_time_today",
+            "value":"%1$s–%2$s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_available_time_tomorrow_end",
+            "value":"%1$s–%2$s (завтра)",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_available_tips",
+            "value":"Доступно:\n%1$s\n%2$s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_request_location_permission",
+            "value":"Доступ к службам геолокации не предоставлен. Предоставить?",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_location_enable_permission",
+            "value":"Предоставить доступ",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_available_tips_single",
+            "value":"Доступно: %s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"float_better_angle",
+            "value":"Найдите лучший угол",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"call_setting_celia_description",
+            "value":"Celia может отвечать на вызовы за вас и резюмировать их.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"hyacinth_available_time_refresh",
+            "value":"После выключения функции спутниковой связи Tiantong доступные периоды времени будут обновляться автоматически.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"unlock_after_call_notification_descriptions_normal",
+            "value":"Входящие вызовы всегда отображаются в формате баннеров, когда вы играете в игры, используете навигационные функции на карте или смотрите изображения и видео в полноэкранном режиме.\n\nПри использовании Режима для пожилых они всегда отображаются во весь экран.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"call_setting_getting_hyacinth_available_time",
+            "value":"Проверка доступных периодов времени...",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_available_time_connection_use",
+            "value":"Это необходимо для проверки доступных периодов времени и подключения к спутнику.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"need_system_location",
+            "value":"Включите Службы геолокации в разделе Настройки",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"not_support_toast",
+            "value":"Эта операция не поддерживается в этом режиме."
+        }
+    ]
+}

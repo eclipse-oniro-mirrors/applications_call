@@ -1,0 +1,23 @@
+{
+  "forms": [
+    {
+      "name": "SatelliteWidgetCard",
+      "displayName": "$string:satellite_network",
+      "description": "$string:satellite_network",
+      "src": "./ets/widget/pages/SatelliteWidgetCard.ets",
+      "uiSyntax": "arkts",
+      "window": {
+        "designWidth": 720,
+        "autoDesignWidth": true
+      },
+      "colorMode": "auto",
+      "isDynamic": false,
+      "isDefault": false,
+      "updateEnabled": false,
+      "defaultDimension": "2*2",
+      "supportDimensions": [
+        "2*2"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+    "plural":[
+        {
+            "name":"call_numbers_finish",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"%d 条通话录音已完成",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"is_delete_plural_number",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"是否删除 %d 个号码？",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"use_numbers",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"%d 个号码",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        }
+    ]
+}

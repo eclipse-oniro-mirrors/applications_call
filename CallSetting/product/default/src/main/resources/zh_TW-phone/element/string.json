@@ -1,0 +1,11 @@
+{
+    "string":[
+        {
+            "name":"sms",
+            "value":"簡訊",
+            "attr":{
+                "priority":"LT"
+            }
+        }
+    ]
+}

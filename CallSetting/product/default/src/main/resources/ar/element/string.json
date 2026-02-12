@@ -1,0 +1,3060 @@
+{
+    "string":[
+        {
+            "name":"beidou_satellite_message_service_no_net",
+            "value":"غير متصل بالإنترنت، اتصل بالإنترنت وأعد المحاولة.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"go_use_beidou_message_tips",
+            "value":"لقد شغّلت خدمة الرسائل عبر القمر الصناعي BeiDou. انتقل إلى الرسائل لبدء استخدامها.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"hangUp",
+            "value":"إنهاء",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"start_beidou_satellite_message",
+            "value":"الرسائل عبر القمر الصناعي BeiDou",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"wearable_bluee_text",
+            "value":"عند توصيل الساعة بالهاتف، سيتم إيقاف تشغيل بيانات الجوال الخاصة بالساعة تلقائيًا لتوفير الطاقة. وسيُعاد تشغيلها إذا انقطع الاتصال.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"save",
+            "value":"حفظ",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Apn_enum_None",
+            "value":"بدون تعيين",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"wearable_roaming_subtitle",
+            "value":"تشغيل البيانات أثناء التجوال. تواصل مع شركة الاتصالات لمعرفة التفاصيل.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_data_networkProvider",
+            "value":"شركة الاتصالات",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"APN_MMS",
+            "value":"رسائل الوسائط المتعددة",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"do_not_show_again",
+            "value":"عدم الإظهار مرةً أخرى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"APN_ADD_APN",
+            "value":"نقطة وصول جديدة",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"APN_common",
+            "value":"إعدادات عامة",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_dataRoaming",
+            "value":"تجوال البيانات",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data",
+            "value":"بيانات الجوال",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Apn_confirm",
+            "value":"موافق",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"gotIt",
+            "value":"حسنًا",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_charges",
+            "value":"ربما يتم احتساب رسوم استخدام بيانات الجوال",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"go_use_beidou_satellite_message",
+            "value":"هل تريد الانتقال إلى تطبيق الرسائل؟",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"beidou_satellite_message_service_details_1",
+            "value":"%s. هذه الميزة متاحة فقط لمستخدمي China Mobile الذين فعّلوا ميزات الاتصال عبر الأقمار الصناعية لحساباتهم. لمعرفة المزيد من المعلومات، يُرجى التواصل مع خدمة عملاء شركة China Mobile.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"beidou_satellite_message_no_sim_card_descriptions",
+            "value":"لاستخدام هذه الخدمة، أدخل بطاقة SIM الخاصة بشركة China Mobile التي تم تفعيل خدمة الرسائل عبر القمر الصناعي BeiDou عليها.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"APN_Not_set",
+            "value":"بدون تعيين",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"APN_NAME",
+            "value":"اسم نقطة الوصول (APN)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"wearable_bluee_title",
+            "value":"متصل بالبلوتوث",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"go_to_use",
+            "value":"انتقال",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Apn_The_name_cannot_be_empty",
+            "value":"مطلوب إدخال الاسم.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"im_smc_tips_starfinder_blocking",
+            "value":"%1$s\nانتقل إلى منطقة مفتوحة",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"im_smc_tips_outdoor_blocking",
+            "value":"هناك عوائق",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_best",
+            "value":"متصل بأفضل قمر صناعي",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"beidou_satellite_message",
+            "value":"الرسائل عبر القمر الصناعي BeiDou",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Apn_The_APN_cannot_be_empty",
+            "value":"مطلوب إدخال اسم نقطة الوصول.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"APN_EDIT_APN",
+            "value":"إضافة نقطة وصول",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"go_setting",
+            "value":"الإعدادات",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Apn_Deleting_an_APN",
+            "value":"حذف اسم نقطة الوصول",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_call_notice",
+            "value":"تنويه",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_setting",
+            "value":"الإعدادات",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"preference_settings",
+            "value":"وضع الاتصال المفضل",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"message_status_sent",
+            "value":"تم الإرسال",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Call_forward_user_unreachable",
+            "value":"التحويل عند تعذر تلقي المكالمات",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_no_sim_card",
+            "value":"بطاقة SIM غير متاحة",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"fold_window_dialog_remind_title",
+            "value":"افرد الهاتف",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"voicemail",
+            "value":"البريد الصوتي",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"fusion_call_switch_short_notification",
+            "value":"استخدام الشبكة اللاسلكية أو بيانات الجوال لتحسين جودة المكالمة عند ضعف الإشارة. يمكنك الاطلاع على %1$s لمعرفة كيفية معالجة بياناتك الشخصية.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"number_identity_permission_dialog_desc",
+            "value":"استخدام هذه الخدمة يتطلب الحصول على الأذونات التالية:",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"distributed_share_message_data",
+            "value":"إرسال الرسائل وتلقيها على أجهزتك القريبة.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"distributed_call_settings_sms_sharing_title",
+            "value":"الرسائل",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_new_fold_un_support_toast",
+            "value":"افرد هاتفك لاستخدام الاتصالات عبر الأقمار الصناعية",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"registration_failed",
+            "value":"تعذر تسجيل الشبكة",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"distributed_call_settings_network_sharing_descriptions_pad",
+            "value":"استخدام شبكة جوال هاتفك تلقائيًا عند عدم توفر شبكة إذا كان الهاتف بالجوار.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"motion_quick_call_descrition",
+            "value":"ارفع الهاتف إلى مستوى الأذن للرد على مكالمة واردة. وإذا كنت تستخدم السماعة الخارجية أو سماعات بلوتوث، فإن رفع الهاتف سيحول الصوت إلى السماعة الداخلية.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"motion_reduce_call_descrition",
+            "value":"ارفع الهاتف للأعلى لخفض مستوى صوت الرنين مع المكالمات الواردة.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_no_region_card_descriptions",
+            "value":"خدمة الاتصالات عبر القمر الصناعي Tiantong غير مدعومة في المنطقة الحالية. يمكنك الاطلاع على الأسئلة الشائعة لمعرفة المزيد من المعلومات عن المناطق المدعومة.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_signal_descriptions",
+            "value":"القمر الصناعي Tiantong الخاص\nبشركة China Telecom",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"speedDial",
+            "value":"الاتصال السريع",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"number_identity_permission_dialog_title",
+            "value":"أذونات التعرف على المكالمات والرسائل",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_notification_title",
+            "value":"تم إيقاف خدمة الاتصالات عبر القمر الصناعي",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"start_skycom_satellite_communications",
+            "value":"الاتصالات عبر القمر الصناعي Tiantong",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"distributed_call_settings_network_sharing_title_pad",
+            "value":"الاتصال بالإنترنت",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"motion_quick_mute_descrition_pad",
+            "value":"اقلب الجهاز لكتم الرنين عند تلقي مكالمة واردة.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"video_ring_tone",
+            "value":"نغمات رنين الفيديو",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Notify_during_call",
+            "value":"تنبيهي بالمكالمات الواردة أثناء الانشغال بمكالمة أخرى.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Change_the",
+            "value":"تعديل",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Apn_APN_enabled",
+            "value":"تم تشغيل نقطة الوصول",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"automatic_carrier_selection",
+            "value":"هل تريد اختيار شركة الاتصالات آليًا؟",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"location_south_east",
+            "value":"خط عرض %1$s جنوبًا وخط طول %2$s شرقًا",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"sim_card_num_no_space",
+            "value":"البطاقة %s",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_fail",
+            "value":"تعذر جلب قائمة شركات الاتصالات، يُرجى إعادة المحاولة لاحقًا",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"distributed_call_settings_phone_sharing_title",
+            "value":"المكالمات الهاتفية",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"beidou_satellite_message_select_sim_card",
+            "value":"حدد بطاقة SIM للمراسلة عبر القمر الصناعي. تأكد من تفعيل هذه الخدمة مع شركة الاتصالات الخاصة بك.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"call_about",
+            "value":"حول",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Call_forward_no_busy",
+            "value":"التحويل عند انشغال الخط",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"stop_dialog",
+            "value":"إيقاف",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_message_just_now",
+            "value":"منذ لحظات",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"cancel_space",
+            "value":"إلغاء",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_cancel",
+            "value":"إلغاء",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"more",
+            "value":"المزيد من الإعدادات",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_enableDataWhileRoaming",
+            "value":"استخدام بيانات شبكة الجوال أثناء التجوال.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"beidou_satellite_message_service_settings_airplane_mode",
+            "value":"يتعذر استخدام خدمة الرسائل عبر القمر الصناعي BeiDou مع وضع الطائرة.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_revoke_authorization_message",
+            "value":"لن تكون هذه الخدمة متوفرة بعد الآن في حال إيقاف تشغيلها. هل حقًا تريد إيقافها؟",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_network",
+            "value":"شبكة الجوال",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_register",
+            "value":"تم التسجيل على الشبكة",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"im_message_smc_no_new_message_to_receive",
+            "value":"لا توجد ردود بانتظار استلامها.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"upper_tilt_phone",
+            "value":"أمِل الهاتف للأعلى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"cannnot_dial_satellite_call_tips",
+            "value":"الجهاز ساخن جدًا، انتظر حتى يبرد ثم أعد المحاولة.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"number_identity_permission_dialog_name_1",
+            "value":"جهات الاتصال",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"im_smc_tips_outdoor_use",
+            "value":"يُرجى الاستخدام في الهواء الطلق",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ring_tone_desc",
+            "value":"تشغيل نغمات رنين الفيديو للمكالمات الواردة والصادرة.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"number_identity_permission_dialog_name_3",
+            "value":"سجلات المكالمات",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"ERROR_CODE_NOT_OPENED_TIANDIWINGCARD",
+            "value":"لم يتم تفعيل خدمات القمر الصناعي لبطاقة SIM هذه حاليًا. يُرجى التواصل مع شركة الاتصالات الخاصة بك للحصول على المساعدة.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"number_identity_permission_dialog_name_2",
+            "value":"الرسائل",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"APN_Restoring_default_APN_settings",
+            "value":"جارٍ استعادة إعدادات نقطة الوصول الافتراضية…",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_card2",
+            "value":"شبكة بطاقة SIM الثانية",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_card1",
+            "value":"شبكة بطاقة SIM الأولى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Call_forward_deactivated",
+            "value":"مغلق",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"portrait_reminder",
+            "value":"امسك الهاتف بشكلٍ أفقي",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"confim_space",
+            "value":"موافق",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_exited_for_system_error",
+            "value":"مشكلة في النظام. تم إيقاف خدمة الاتصالات عبر القمر الصناعي Tiantong. يُرجى إعادة تشغيلها والمحاولة مجددًا.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_exited_for_system_error",
+            "value":"توجد مشكلة في النظام. تم إيقاف تشغيل اتصالات Hyacinth عبر القمر الصناعي. يُرجى إعادة تشغيلها وإعادة المحاولة.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_settings_enable_tips",
+            "value":"نظرًا لأن إمكانيات القمر الصناعي محدودة، يُرجى عدم استخدام هذه الميزة إلا في حال عدم توفر خدمة خلوية. سيؤدي تشغيل ميزة الاتصالات عبر القمر الصناعي Tiantong إلى إغلاق WLAN وبيانات الجوال وخدمات الموقع، بالإضافة إلى الميزات ذات الصلة.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"voice_control",
+            "value":"التحكم الصوتي",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_location_permission_descriptions",
+            "value":"يُستخدم هذا الإذن للحصول على موقع جهازك لغرض المحاذاة مع القمر الصناعي ولإضافة معلومات الموقع إلى الرسائل التي ترسلها.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"distributed_call_settings_network_sharing_title",
+            "value":"الاتصال بالإنترنت",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"fold_window_dialog_remind_message",
+            "value":"يُرجى إمساك الهاتف بشكلٍ أفقي وفرد الشاشة عند استخدام خدمة الاتصالات عبر القمر الصناعي.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"re_calibrate",
+            "value":"إعادة المحاولة",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Call_waiting",
+            "value":"وضع المكالمات في الانتظار",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"motion_reduce_call_descrition_pad",
+            "value":"ارفع الجهاز للأعلى لخفض مستوى صوت الرنين مع المكالمات الواردة.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"advertising_and_promotion",
+            "value":"إعلان",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"shut_down",
+            "value":"مغلق",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"smc_right_rotate_device",
+            "value":"أدر الجهاز نحو اليمين",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"super_privacy_dialog_title",
+            "value":"وضع الخصوصية الصارم",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_Automatic_selection",
+            "value":"الاختيار التلقائي",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"copyright_new",
+            "value":"الهاتف. جميع الحقوق محفوظة. ©‏ %1$s‏ - ‏%2$s",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_network",
+            "value":"شبكة القمر الصناعي",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Call_forward_unconditional",
+            "value":"التحويل دائمًا",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"risk_identity_engine",
+            "value":"محرّك التعرف على المكالمات والرسائل",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"im_message_smc_shake",
+            "value":"يُرجى إمالة الجهاز لإكمال دائرة المعايرة",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"open_mobile_data",
+            "value":"تشغيل بيانات الجوال",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"float_left_right_phone",
+            "value":"العثور على القمر الصناعي",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"call_history_merging",
+            "value":"دمج سجل المكالمات",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"landscape_reminder",
+            "value":"امسك هاتفك بشكلٍ رأسي",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"APN_TITLE",
+            "value":"أسماء نقاط الوصول (APN)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_details_2_new",
+            "value":"%s. هذه الخدمة تتطلب التفعيل من قِبل شركة الاتصالات قبل استخدامها. لمزيدٍ من المعلومات حول تفعيل الخدمة وتوافرها ورسومها، اتصل بشركة الاتصالات الموفرة لخدمة الاتصالات عبر القمر الصناعي لديك.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_tips",
+            "value":"تنويه",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"re_connecting_satellite",
+            "value":"إعادة الاتصال",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Apn_OK",
+            "value":"موافق",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"call_version",
+            "value":"الإصدار \u202a%s\u202c",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_service_select_sim_card",
+            "value":"حدد بطاقة SIM لإجراء المكالمات والمراسلات عبر القمر الصناعي. تأكد من تفعيل هذه الخدمة مع شركة الاتصالات الخاصة بك.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"motion_quick_call_title",
+            "value":"الرد على المكالمات",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"by_time",
+            "value":"حسب الوقت",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_call_message_notice",
+            "value":"حاول شخصٌ ما الاتصال بك أو مراسلتك. يُرجى الاتصال بالقمر الصناعي وفتح تطبيق الهاتف أو الرسائل لعرض التفاصيل.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"motion_pick_up_reduce_volume",
+            "value":"رفع الجهاز للأعلى لخفض مستوى الصوت",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"To",
+            "value":"التحويل إلى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_signal",
+            "value":"الإشارة",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"float_upper_down_phone",
+            "value":"حرِّك أيقونة الكرة إلى مركز الدائرة",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"device_calibrating_fail_tips",
+            "value":"أمسك هاتفك بشكلٍ رأسي، وقم بتدويره بشكلٍ دائري لإكمال دائرة المعايرة",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_Registering_disable",
+            "value":"جارٍ التسجيل مع الشبكة \u202a%s\u202c‏ (محظورة)…",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Network_response_abnormal",
+            "value":"الشبكة لا تستجيب.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"anti_fraud_text",
+            "value":"الحصول على تنبيهات بالاحتيال المُحتمل في أثناء المكالمات.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"motion_pick_up_reduce_volume_pad",
+            "value":"رفع الجهاز للأعلى لخفض مستوى الصوت",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"aim_satellite",
+            "value":"البحث عن قمر صناعي",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_not_enabled",
+            "value":"لم يتم تشغيل خدمة الاتصالات عبر القمر الصناعي Tiantong",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"re_wait_loading",
+            "value":"إعادة البحث",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_enhance_status",
+            "value":"الاتصال المعزز",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"number_identity_permission_dialog_purpose_2",
+            "value":"يُستخدم هذا الإذن لتحديد ما إذا كان يجب حظر الرسالة أم لا.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"number_identity_permission_dialog_purpose_1",
+            "value":"يُستخدم هذا الإذن لمعرفة ما إذا كان الرقم موجودًا ضمن جهات الاتصال لديك أو في القائمة المحظورة/الموثوقة.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_details_3",
+            "value":"%s. هذه الخدمة مدعومة فقط في بر الصين الرئيسي.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"smc_keep_posture",
+            "value":"يُرجى البقاء في الوضعية الحالية",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_service_details_0",
+            "value":"%1$s. نظرًا لأن إمكانيات القمر الصناعي محدودة، يُرجى عدم استخدام هذه الخدمة إلا في حال عدم توفر شبكة خلوية. %2$s",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"number_identity_permission_dialog_purpose_3",
+            "value":"يُستخدم هذا الإذن لتعليم أرقام الهواتف حسب الفئة وتحديد ما إذا كان يجب حظر الرسالة أم لا.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_data_enabled4G",
+            "value":"تشغيل شبكة الجيل الرابع",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"number_identity_setting_title",
+            "value":"التعرف على المكالمات والرسائل",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"privacy_statement",
+            "value":"بيان حول تطبيق الهاتف والخصوصية",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"new_satellite_signal_descriptions",
+            "value":"القمر الصناعي Tiantong",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"open_mobile_data_detail",
+            "value":"تحتاج هذه الميزة إلى الاتصال ببيانات الجوال. يُرجى الانتقال إلى \"الإعدادات\" لتشغيل بيانات الجوال.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_details_1_new",
+            "value":"",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"distributed_share_call_data",
+            "value":"إجراء واستقبال المكالمات الهاتفية على الأجهزة القريبة.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"distributed_network_never_connect",
+            "value":"الاتصال يدويًا",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"wifi_calling_tips",
+            "value":"عند تشغيل خدمة مكالمات الشبكة اللاسلكية، يمكن لهاتفك إجراء المكالمات عبر الشبكات اللاسلكية أو عبر شبكة شركة الاتصالات الخاصة بك، وذلك بمنح الأفضلية للشبكات ذات الإشارة الأقوى. قبل تشغيل هذه الخدمة، يُرجى التواصل مع شركة الاتصالات لمعرفة الرسوم والتفاصيل الأخرى.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_hunt_success",
+            "value":"متصل بالقمر الصناعي",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Apn_cancel",
+            "value":"إلغاء",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"float_window_keep_posture",
+            "value":"يُرجى البقاء في الوضعية الحالية",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"im_smc_tips_starfinder_loading",
+            "value":"%1$s\nلاستقبال إشارة الأقمار الصناعية",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"beidou_satellite_short_notification",
+            "value":"<body><span style='normal'> تحتاج هذه الخدمة إلى </span><span style='bold'>الاتصال بالإنترنت</span><span style='normal'> لمصادقة حسابك والتحقق من رصيدك. عند تشغيل هذا الخيار، ستتمكن من إرسال الرسائل عبر القمر الصناعي BeiDou عند عدم اتصالك بشبكة الجوال أو الشبكة اللاسلكية. وتحتاج هذه الخدمة أثناء استخدامها إلى قراءة ورفع/نقل رقم هاتف الجهاز ومحتوى رسائل القمر الصناعي BeiDou ومعلومات الموقع. كل هذا لتوفير خدمة الرسائل عبر القمر الصناعي BeiDou. بتشغيل هذا الخيار، فأنت تعني بذلك موافقتك على البنود الواردة أعلاه وعلى </span><span style='userAgreements'>اتفاقية المستخدم لخدمة الرسائل عبر القمر الصناعي BeiDou‏</span><span style='normal'>. يمكنك الاطلاع على </span><span style='privacyStatement'>البيان المتعلق بخدمة الرسائل عبر القمر الصناعي BeiDou والخصوصية</span><span style='normal'> لمعرفة المزيد من التفاصيل حول كيفية معالجة معلوماتك الشخصية.</span></body>",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_enabled5G",
+            "value":"تشغيل شبكة الجيل الخامس",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"location_south_west",
+            "value":"خط عرض %1$s جنوبًا وخط طول %2$s غربًا",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_service_location",
+            "value":"الموقع",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"not_link_satellite_auto_exit_notification_Text",
+            "value":"تم إيقاف ميزة الاتصالات عبر القمر الصناعي Tiantong لانقطاع الاتصال بالقمر الصناعي لمدة %d ثانية.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"left_rotate_phone",
+            "value":"أدِر الهاتف لليسار",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"float_keep_current_posture",
+            "value":"يُرجى البقاء في الوضعية الحالية",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"APN_TITLE_MSG",
+            "value":"إعدادات عامة",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_hunt_failed",
+            "value":"تعذر الاتصال",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"advance_options_title",
+            "value":"المزيد من الإعدادات",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"send_failed",
+            "value":"فشل الإرسال",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"device_calibrate_failed",
+            "value":"تعذرت المعايرة",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"incoming_notification_setting",
+            "value":"إشعارات المكالمات الواردة",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"enhance_statement_title",
+            "value":"التعرف على المكالمات والرسائل",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"ERROR_CODE_OTHERS",
+            "value":"مشكلة في الشبكة. يُرجى التواصل مع شركة الاتصالات الخاصة بك للحصول على المساعدة.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"device_offset_reminder",
+            "value":"وجّه الجهاز نحو القمر الصناعي",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_data_confirmation_function",
+            "value":"تأكد من توفر هذه الخدمة قبل تشغيلها. وإلا فقد يؤثر تشغيلها على المكالمات العادية.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_connecting",
+            "value":"جارٍ الاتصال (%d)…",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"answer_voice_calls_by_flipping",
+            "value":"مطلوب التأكيد يدويًا إذا كنت قد كتمت صوت الرنين قبل فرد الهاتف.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"im_smc_lift_device",
+            "value":"يُرجى إمالة الجهاز نحوك",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"8300999",
+            "value":"حدثت مشكلة غير معروفة",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_closeAutoSelect",
+            "value":"إيقاف الاختيار التلقائي",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"ERROR_CODE_NOT_SUPPORT_CARD",
+            "value":"بطاقة SIM هذه لا تدعم خدمات القمر الصناعي Tiantong. يُرجى التواصل مع شركة الاتصالات الخاصة بك لاستبدالها.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"motion_quick_call_descrition_fold_teton",
+            "value":"ارفع الهاتف إلى مستوى الأذن للرد على مكالمة واردة. وإذا كنت تستخدم سماعة خارجية أو سماعات بلوتوث، فسيتم التبديل إلى السماعة الداخلية عند رفع الهاتف.\n\n* تتوفر هذه الميزة فقط عند طي الهاتف.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"incoming_call_rejection_sms",
+            "value":"الرفض برسالة نصية",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"fusion_call_switch_short_notification_sub2",
+            "value":"البيان المتعلق بتحسين جودة المكالمات والخصوصية",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Deactivation",
+            "value":"تعطيل",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"new_satellite_descriptions",
+            "value":"القمر الصناعي Tiantong",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_volte",
+            "value":"مكالمات شبكة الجيل الرابع الصوتية عالية الدقة",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"keep_current_posture",
+            "value":"يُرجى البقاء في الوضعية الحالية",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_service_showname",
+            "value":"البطاقة %1$s:‏ \u202a%2$s\u202c",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_esim_showname",
+            "value":"بطاقة eSIM %1$s: \u202a%2$s\u202c",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"app_about_name",
+            "value":"الهاتف",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"automatic_enrollment",
+            "value":"التسجيل التلقائي\u2026",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Apn_The_MCC_must_be_a_3_digit_number",
+            "value":"يجب أن تتكون قيمة حقل MCC من ثلاثة أرقام.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"super_privacy_dialog_call_summary",
+            "value":"وضع الخصوصية الصارم يمنع الوصول إلى الميكروفون. هل تريد إيقاف تشغيله مؤقتًا لإجراء هذه المكالمة؟",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"anti_fraud",
+            "value":"الحماية الأمنية الذكية",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"enterprise_number_identity",
+            "value":"تفعيل الميزة مع تطبيقات المؤسسات",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_select_sim",
+            "value":"تحديد بطاقة SIM",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_chooseNetworkProvider",
+            "value":"اختيار شركة الاتصالات.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"distributed_call_settings_descriptions_pad",
+            "value":"<body><span style='normal'>عند وجود هاتفك بالجوار، يمكنك استخدام شبكة الجوال الخاصة به لإجراء واستقبال المكالمات الهاتفية، وإرسال واستلام الرسائل، بالإضافة إلى الاتصال بالإنترنت على هذا الجهاز. يجب تسجيل الدخول على كلا الجهازين بنفس حساب هواوي مع تشغيل البلوتوث وWLAN عليهما، بالإضافة إلى تشغيل هذه الميزة.\n\nتحتاج ميزة مشاركة المكالمات إلى استخدام/الوصول إلى معلومات الموقع التقريبي. </span><span style='moreDetail'>معرفة المزيد</span></body>",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_message",
+            "value":"الرسائل",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"im_smc_calibrate_failed",
+            "value":"تعذرت المعايرة",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_phone",
+            "value":"الهاتف",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"exit_beidou_satellite_message_service_tips",
+            "value":"هل تريد إيقاف خدمة الرسائل عبر القمر الصناعي BeiDou؟",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_network_descriptions",
+            "value":"إجراء المكالمات والمراسلات عبر نظام القمر الصناعي Tiantong.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"disable_super_privacy_and_call",
+            "value":"الإيقاف والاتصال",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"APN_Reset_to_Default",
+            "value":"استعادة الإعدادات الافتراضية",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"others",
+            "value":"إعدادات أخرى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"im_smc_receive_auto_change_01",
+            "value":"انتهت مهلة الاتصال. تم التبديل إلى قمر صناعي آخر.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"selectContacts",
+            "value":"تحديد جهة اتصال",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"distributed_network_auto_connect",
+            "value":"الاتصال تلقائيًا",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"phone_ring_tone",
+            "value":"نغمة الرنين",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"not_link_satellite_dialog_positive",
+            "value":"عدم الخروج",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"disable_super_privacy_and_answer",
+            "value":"الإيقاف والرد",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_Registering",
+            "value":"جارٍ التسجيل مع الشبكة \u202a%s\u202c...",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"wifi_calling",
+            "value":"مكالمات الشبكة اللاسلكية",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Apn_MNC_must_be_2_or_3_digits",
+            "value":"يجب أن تتكون قيمة حقل MNC من رقمين أو ثلاثة أرقام.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"motion_call_setting_search_system",
+            "value":"النظام",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"end_call_by_power",
+            "value":"إنهاء المكالمة باستخدام زر التشغيل",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"WiFi_first",
+            "value":"تفضيل الشبكة اللاسلكية",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"motion_muting_reduce_call_title",
+            "value":"كتم الرنين/خفض مستوى الصوت",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"motion_flip_mute_volume",
+            "value":"قلب الجهاز لكتم الرنين",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"location_north_west",
+            "value":"خط عرض %1$s شمالًا وخط طول %2$s غربًا",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"number_identity_setting_text_1",
+            "value":"عند تلقيك مكالمة أو رسالة من رقم غير معروف، تتيح لك هذه الخدمة معرفة محتواها المحتمل، مما يساعدك على تحديد كيفية الرد.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"distributed_call_settings_title",
+            "value":"مشاركة الاتصالات",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_exit",
+            "value":"إيقاف",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_settings_window_suggest",
+            "value":"افتح هذه النافذة في وضع ملء الشاشة لتشغيل الاتصالات عبر القمر الصناعي Tiantong",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"keep_current_posture_wait_patiently",
+            "value":"قد يستغرق هذا الإجراء بعض الوقت\nيُرجى الانتظار",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"enter_in_call",
+            "value":"يتعذر تشغيل خدمة الاتصالات عبر القمر الصناعي Tiantong أثناء المكالمات.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"unlock_after_call_notification_descriptions",
+            "value":"تظهر المكالمات الواردة دائمًا على شكل أشرطة إشعارات أثناء تشغيل الألعاب، أو التنقل على خريطة، أو مشاهدة الصور والفيديوهات في وضع ملء الشاشة.\n\nوهي تظهر دائمًا في وضع ملء الشاشة عندما تستخدم وضع كبار السن أو وضع المغامرة.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"unlock_after_call_notification",
+            "value":"إشعارات المكالمات الواردة عند فتح القفل",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"sim_select",
+            "value":"بطاقة SIM",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"frequently_asked_questions",
+            "value":"الأسئلة الشائعة",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"number_identity_short_notification",
+            "value":"<body><span style='normal'>تحتاج هذه الخدمة إلى </span><span style='bold'>الاتصال بالإنترنت</span><span style='normal'> وإلى منحها الإذن باستخدام/الوصول إلى </span><span style='bold'>جهات الاتصال</span><span style='normal'>، كما تحتاج إلى قراءة جهات الاتصال الخاصة بك، وقراءة وتعديل سجل المكالمات، وقراءة ورفع/نقل محتوى الرسائل النصية. بتشغيل هذه الخدمة، فأنت تعني بذلك موافقتك على هذه البنود. يمكنك الاطلاع على </span><span style='privacyStatement'>البيان المتعلق بالتعرف على المكالمات والرسائل والخصوصية</span><span style='normal'> و</span><span style='permissionStatement'>إشعار الأذونات</span><span style='normal'> لمعرفة المزيد من التفاصيل حول كيفية معالجة معلوماتك الشخصية.</span></body>",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hicall_user_info_skip",
+            "value":"تخطي",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"automatic_recording_of_calls",
+            "value":"التسجيل التلقائي للمكالمات",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"device_calibrating",
+            "value":"جارٍ المعايرة...",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"im_smc_received_satellite_return",
+            "value":"تم استلام التأكيد من القمر الصناعي",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"8300003",
+            "value":"مشكلة في النظام الداخلي",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_no_phone_number",
+            "value":"رقم غير معروف",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_call_not_support_earpiece",
+            "value":"السماعة الداخلية غير متاحة أثناء مكالمات القمر الصناعي للإبقاء على الاتصال مستقرًا.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"8300001",
+            "value":"قيمة غير مقبولة",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"8300002",
+            "value":"يتعذر الوصول إلى هذه الخدمة",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_not_serve",
+            "value":"لا توجد خدمة",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"exit_satellite_service_tips",
+            "value":"هل تريد إيقاف خدمة الاتصالات عبر القمر الصناعي Tiantong؟",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"cancel",
+            "value":"إلغاء",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"full_screen",
+            "value":"ملء الشاشة",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"APN_Creating_an_APN",
+            "value":"اسم نقطة وصول جديدة",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"distributed_share_network_data",
+            "value":"مشاركة اتصال الإنترنت مع الأجهزة القريبة.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_turn_on_data_roaming",
+            "value":"قد يؤدي استخدام تجوال البيانات إلى تكبد رسوم استخدام بيانات الجوال. هل حقًا تريد تشغيل هذا الخيار؟",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"not_link_satellite_dialog_message",
+            "value":"لم يتم إنشاء اتصال بالقمر الصناعي لمدة %d ثانية. سيتم إيقاف تشغيل ميزة الاتصالات عبر القمر الصناعي Tiantong.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"motion_quick_mute_descrition",
+            "value":"اقلب الهاتف لكتم الرنين عند تلقي مكالمة واردة.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_settings_skytone_mode",
+            "value":"هذه الميزة غير متاحة أثناء استخدام خدمة SkyTone.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_revoke_authorization",
+            "value":"إيقاف الخدمة",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"meetime_network_descriptions",
+            "value":"إرسال واستقبال الرسائل عبر القمر الصناعي BeiDou عن طريق تطبيق الرسائل أو MeeTime.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"im_smc_note_content",
+            "value":"قد يؤثر تخطي المعايرة على إمكانية استخدامك لاتصالات القمر الصناعي. هل حقًا تريد التخطي؟",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"customer_service",
+            "value":"الخط المباشر لخدمة العملاء",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"im_message_smc_receive_success",
+            "value":"تم الاستلام بنجاح",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"lower_tilt_phone",
+            "value":"أمِل الهاتف للأسفل",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"unknown",
+            "value":"غير معروف",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_settings_explain",
+            "value":"تنويه",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_settings_details_descriptions3",
+            "value":"عند الاتصال بالقمر الصناعي Tiantong، سيتم رفع موقعك الدقيق إلى مشغّل القمر الصناعي.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"enabled",
+            "value":"تشغيل",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"text_paragraphs",
+            "value":"إذا قمت بإيقاف تشغيل هذا الخيار، سيحاول هاتفك الاتصال بالشبكات التي اخترتها يدويًا فقط. قد يؤدي هذا إلى إيقاف خدمة البيانات. كما أن الشبكة الحالية قد لا تكون متاحة مؤقتًا عند الاختيار اليدوي للشبكة. هل حقًا تريد الإيقاف؟",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"opened",
+            "value":"مشغّل",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"location_north_east",
+            "value":"خط عرض %1$s شمالًا وخط طول %2$s شرقًا",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_Search",
+            "value":"جارٍ البحث\u2026",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"distributed_call_settings_sms_sharing_title_pad",
+            "value":"الرسائل",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"float_window_keep_posture_check_occlusion",
+            "value":"تأكد من عدم وجود عوائق في الطريق.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"float_window_keep_posture_wait_patiently",
+            "value":"يُرجى الانتظار.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_able",
+            "value":"الشبكات المتاحة",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Turn_on",
+            "value":"تشغيل",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"phone_ring_Card2",
+            "value":"البطاقة %1$s:‏ %2$s",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"improve_call_quality",
+            "value":"تعزيز جودة المكالمات",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"skycom_satellite_communications",
+            "value":"الاتصالات عبر القمر الصناعي Tiantong",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"closed",
+            "value":"مغلق",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"im_smc_lower_device",
+            "value":"يُرجى إمالة الجهاز بعيدًا عنك",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"text_paragraphs_no_data",
+            "value":"إذا قمت بإيقاف تشغيل هذا الخيار، سيحاول هاتفك الاتصال بالشبكات التي اخترتها يدويًا فقط. قد يؤدي هذا إلى إيقاف خدمة البيانات. هل حقًا تريد الإيقاف؟",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"about_personal_info_list",
+            "value":"المعلومات الشخصية المُجمَّعة",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"distributed_call_settings_descriptions",
+            "value":"<body><span style='normal'>استخدم شبكة جوال هاتفك لإجراء واستقبال المكالمات الهاتفية، وإرسال واستلام الرسائل، بالإضافة إلى الاتصال بالإنترنت على الأجهزة القريبة التي تم تسجيل الدخول عليها بنفس حساب هواوي.\n\nتستخدم هذه الخدمة البلوتوث والشبكة اللاسلكية، وستتمكن من الوصول إلى معلومات الجهاز والشبكة والاتصالات. كما تحتاج ميزة مشاركة المكالمات إلى استخدام/الوصول إلى معلومات الموقع التقريبي. </span><span style='moreDetail'>معرفة المزيد</span></body>",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Apn_give_up_the_modification",
+            "value":"هل تريد تجاهل التغييرات؟",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"401",
+            "value":"قيمة خاطئة",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_permission_count",
+            "value":"استخدام هذه الخدمة يتطلب الحصول على الإذن التالي:",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_permission_usage_details",
+            "value":"أذونات خدمة الاتصالات عبر القمر الصناعي Tiantong",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_search_failed",
+            "value":"لم يتم العثور على القمر الصناعي",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"device_calibrating_tips",
+            "value":"يُرجى إمالة الجهاز لإكمال دائرة المعايرة",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_service_no_sim_card_descriptions",
+            "value":"يُرجى إدخال بطاقة SIM تم تفعيل ميزة الاتصالات عبر القمر الصناعي Tiantong عليها وإعادة المحاولة.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"motion_flip_mute_volume_pad",
+            "value":"قلب الجهاز لكتم الرنين",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"open_phone_to_answer_calls",
+            "value":"فرد الهاتف للرد على المكالمات الصوتية",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"find_out_how_we_use_your_data",
+            "value":"كيفية استخدامنا لبياناتك",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"beidou_satellite_message_service_details_0",
+            "value":"%1$s. ستتوقف خدمات الشبكة اللاسلكية وبيانات الجوال مؤقتًا أثناء الاستخدام هذه الميزة. وستتم استعادة الخدمات بعد الخروج.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"ERROR_CODE_NOT_ACTIVATED_SIM",
+            "value":"لم يتم تسجيل رقم IMEI الخاص بهذا الجهاز في شبكة القمر الصناعي Tiantong.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_preferredNetwork",
+            "value":"الشبكة المفضلة: \u202a%s\u202c",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"beidou_satellite_message_service_details_2",
+            "value":"%s. هذه الميزة متوفرة في بر الصين الرئيسي فقط.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Call_forward_no_reply",
+            "value":"التحويل حال عدم الرد",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_general",
+            "value":"إعدادات عامة",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"phone_ring_Card1",
+            "value":"البطاقة %1$s:‏ %2$s",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"motion_quick_call_descrition_fold",
+            "value":"ارفع الهاتف إلى مستوى الأذن للرد على مكالمة واردة. وإذا كنت تستخدم السماعة الخارجية أو سماعات بلوتوث، فإن رفع الهاتف سيحول الصوت إلى السماعة الداخلية.\nهذه الميزة متوفرة فقط على الشاشة الأساسية.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"super_privacy_dialog_video_call_summary",
+            "value":"وضع الخصوصية الصارم يمنع الوصول إلى الميكروفون والكاميرا. هل تريد إيقاف تشغيله مؤقتًا لإجراء هذه المكالمة؟",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"distributed_call_settings_phone_sharing_title_pad",
+            "value":"المكالمات الهاتفية",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"networkAnomaly",
+            "value":"الشبكة لا تستجيب، تعذر الضبط",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"enhance_statement_content",
+            "value":"تحتاج هذه الخدمة إلى الاتصال بالإنترنت، وإلى منحها الإذن باستخدام/الوصول إلى جهات الاتصال، كما تحتاج إلى قراءة جهات الاتصال الخاصة بك، وقراءة وتعديل سجل المكالمات، وقراءة ورفع/نقل محتوى الرسائل النصية. كل هذا من أجل التعرف على المكالمات والرسائل الواردة من أرقام مجهولة. بتشغيل هذه الخدمة، فأنت تعني بذلك موافقتك على هذه البنود. يمكنك الاطلاع على <a link=\"privacyStatement\">البيان المتعلق بالتعرف على المكالمات والرسائل والخصوصية</a> و<a link=\"permissionStatement\">الإشعار المتعلق بالأذونات</a> لمعرفة المزيد من التفاصيل حول كيفية معالجة معلوماتك الشخصية.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"business_and_privacy_statement",
+            "value":"بيانات الخصوصية",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"right_rotate_phone",
+            "value":"أدِر الهاتف لليمين",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"keep_current_posture_check_occlusion",
+            "value":"جارٍ التوجيه الآن إلى القمر الصناعي.\nتأكد من عدم وجود عوائق في الطريق مثل الأشجار أو المباني.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"smc_left_rotate_device",
+            "value":"أدر الجهاز نحو اليسار",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_data_card1_or_card2",
+            "value":"شبكة بطاقة SIM الأولى/الثانية",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Call_forward",
+            "value":"إعدادات تحويل المكالمة",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_short_notification_info",
+            "value":"<body><span style='normal'>تحتاج هذه الخدمة إلى منحها الإذن باستخدام/الوصول إلى </span><span style='bold'>الموقع</span><span style='normal'> وإلى استخدام خدمات الموقع للحصول على موقعك. بتشغيل هذه الخدمة، فأنت تعني بذلك موافقتك على هذه البنود وعلى </span><span style='userAgreements'>اتفاقية المستخدم لخدمة الاتصالات عبر القمر الصناعي Tiantong‏</span><span style='normal'>. يمكنك الاطلاع على </span><span style='privacyStatement'>البيان المتعلق بخدمة الاتصالات عبر القمر الصناعي Tiantong والخصوصية</span><span style='normal'> و</span><span style='permissionStatement'>الإشعار المتعلق بالأذونات</span><span style='normal'> لمعرفة المزيد من التفاصيل.</span></body>",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"answer_calls_list",
+            "value":"رفع الجهاز للإجابة",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"vowifi_mobile_network_preferred",
+            "value":"تفضيل شبكة الجوال",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"ERROR_CODE_NOT_OPENED_ROAMING",
+            "value":"مشكلة في حالة بوابة الإنترنت. يُرجى التواصل مع شركة الاتصالات الخاصة بك للحصول على المساعدة.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_search",
+            "value":"جارٍ التحميل…",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_settings_airplane_mode",
+            "value":"خدمة الاتصالات عبر القمر الصناعي Tiantong غير متوفرة في وضع الطائرة",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_alignment",
+            "value":"جارٍ البحث عن القمر الصناعي...",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_disable",
+            "value":"\u202a%s\u202c‏ (محظورة)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"meetime_network_title",
+            "value":"الرسائل عبر القمر الصناعي BeiDou لخدمة MeeTime",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"beidou_satellite_message_enter_in_call",
+            "value":"يتعذر استخدام خدمة الرسائل عبر القمر الصناعي BeiDou عند وجود مكالمة جارية.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"by_contact",
+            "value":"بحسب جهة الاتصال",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"multi_device_collaboration",
+            "value":"طرق توصيل أخرى",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"start_skycom_satellite_communications_sub3",
+            "value":"عند الاتصال بالقمر الصناعي Tiantong، سيتم رفع موقعك الدقيق إلى مشغّل القمر الصناعي.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"start_skycom_satellite_communications_sub1",
+            "value":"يمكنك الاستمرار في استخدام وظائف الاتصال والمراسلة بهاتفك عبر الأقمار الصناعية حتى عند عدم وجود تغطية للشبكة اللاسلكية أو الخلوية.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"201",
+            "value":"تعذر التحقق من الأذونات",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"call_setting_incoming",
+            "value":"المكالمات الواردة",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_hunt_timeout",
+            "value":"انتهت مهلة الاتصال بالقمر الصناعي",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"quick_gestures",
+            "value":"الاختصارات والإيماءات",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"incoming_notification_setting_tips",
+            "value":"يمكنك اختيار عرض إشعارات المكالمات الواردة في وضع ملء الشاشة أو كإشعار في شريط الحالة. ويمكنك تغيير تفضيلاتك في أي وقت من \"الهاتف > الإعدادات > إشعارات المكالمات الواردة عند فتح القفل\".",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"im_message_smc_receive_fail",
+            "value":"تعذر الاستلام",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"banner",
+            "value":"شريط",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"unlock_after_call_notification_description",
+            "value":"تظهر المكالمات الواردة دائمًا على شكل أشرطة إشعارات أثناء تشغيل الألعاب، أو التنقل على خريطة، أو مشاهدة الصور والفيديوهات في وضع ملء الشاشة.\n\nوهي تظهر دائمًا في وضع ملء الشاشة عندما تستخدم الوضع البسيط أو وضع كبار السن أو وضع المغامرة.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fold_remind_tips_message",
+            "value":"تعذر الاتصال بالقمر الصناعي. يُرجى فرد الهاتف أثناء الاستخدام.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"contact_str_copysim_notification",
+            "value":"تنبيه",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_search_tips",
+            "value":"يعمل هذا بشكلٍ أفضل في المناطق الخارجية المفتوحة الخالية من العوائق.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"edm_operate_prohibit_tip",
+            "value":"تحظر إدارة المؤسسة هذه العملية.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"car_satellite_tips",
+            "value":"أجرِ المكالمات الهاتفية واستقبلها باستخدام شبكة الأقمار الصناعية في سيارتك.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"using_beidou_toast",
+            "value":"غير مُتاحة في أثناء استخدام ميزات القمر الصناعي BeiDou.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"car_satellite_title",
+            "value":"الاتصالات عبر الأقمار الصناعية في السيارة",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_service_settings_window_mode",
+            "value":"الاتصالات عبر القمر الصناعي Tiantong لا تدعم النوافذ المتعددة.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"InfoEdit_back",
+            "value":"رجوع",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone_delete_dialog_tip1",
+            "value":"هل تريد حذف العناصر المُحددة؟",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone_no_delete",
+            "value":"يتعذر حذف العناصر أثناء استخدامها",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"no_video_ringtone",
+            "value":"لا توجد نغمات فيديو",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone_from_photo_picker",
+            "value":"اختيار من المعرض",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"manage",
+            "value":"إدارة",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone",
+            "value":"نغمة فيديو",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone_small_no_show",
+            "value":"لا يمكن تعديل نغمات الفيديو في النوافذ العائمة",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"my_video_ringtone",
+            "value":"نغمة الفيديو الخاصة بي",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone_deselect_all",
+            "value":"إلغاء تحديد الكل",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"remind",
+            "value":"تذكير",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone_select_all",
+            "value":"تحديد الكل",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"sms",
+            "value":"رسالة",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone_size_limit",
+            "value":"يُرجى تحديد فيديو بحجم أصغر من %s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"call_assistant_setting_title",
+            "value":"الرد آليًا",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"delete",
+            "value":"حذف",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"use",
+            "value":"تطبيق",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone_dialog_system_error",
+            "value":"مشكلة في النظام، تُرجى إعادة المحاولة",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone_dialog_no_space",
+            "value":"مساحة التخزين غير كافية، يُرجى تفريغ بعض المساحة وإعادة المحاولة",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone_dialog_Exceeding_limit_title",
+            "value":"بلغ عدد نغمات الفيديو الحد الأقصى",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone_dialog_Exceeding_limit_content",
+            "value":"يمكنك إزالة نغمات الفيديو لبعض جهات الاتصال لتوفير مساحة لغيرها.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone_dialog_type_error",
+            "value":"متوفر دعم لفيديوهات MP4 فقط",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"InfoEdit_edits_info",
+            "value":"تحرير",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"click_go_to_settings",
+            "value":"انقر هنا للإعداد",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"penglai_mode_notice",
+            "value":"يتعذر تنفيذ هذا الإجراء في وضع Penglai",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"smart_call_making",
+            "value":"مكالمة ذكية",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"incoming_outgoing_calls_voice_control",
+            "value":"الرد على المكالمات ورفضها",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"video_type",
+            "value":"الفيديو %d",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Incoming_call_voice_announcement",
+            "value":"الإعلان عن المكالمات الواردة",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"talkback_not_selected",
+            "value":"غير مُحدد",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"talkback_selected",
+            "value":"مُحدد",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_connect_failed",
+            "value":"غير متصل",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"new_hyacinth_satellite_signal_descriptions",
+            "value":"ميزة Hyacinth للقمر الصناعي",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_signal_descriptions",
+            "value":"شركة China Telecom\nميزة Hyacinth للقمر الصناعي",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"keep_current_posture_hyacinth",
+            "value":"يُرجى البقاء في الموقع الحالي",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_service_no_available_time",
+            "value":"لا توجد فترات زمنية متاحة",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"close_button",
+            "value":"إغلاق",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"more_options",
+            "value":"المزيد من الخيارات",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"New_CAll",
+            "value":"المكالمات المحسَّنة",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"details",
+            "value":"معلومات",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_connect_failed_not_time",
+            "value":"لا توجد أقمار صناعية متاحة حاليًا. يُرجى إعادة المحاولة لاحقًا.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"switched_to_next_satellite",
+            "value":"تم التبديل إلى القمر الصناعي التالي",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"switching_to_next_satellite",
+            "value":"جارٍ التبديل إلى القمر الصناعي التالي قريبًا\nقد ينقطع الاتصال لفترة وجيزة",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"cellular_network_notify_text",
+            "value":"لم تعد هناك حاجة إلى شبكة الأقمار الصناعية. هل تريد إيقاف تشغيلها؟",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"cellular_network_notify_ignore_button",
+            "value":"تجاهل",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"cellular_network_notify_close_button",
+            "value":"إيقاف تشغيل شبكة الأقمار الصناعية",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"cellular_network_notify_title",
+            "value":"شبكة جوال متاحة",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_data_esim_card",
+            "value":"شبكة بطاقة eSIM %s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_device_calibrating_tips",
+            "value":"أمِل الجهاز بزاوية كبيرة لإكمال المعايرة",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_short_notification_info",
+            "value":"<body><span style='normal'>عندما تكون خارج تغطية الشبكة اللاسلكية وشبكة الجوال، يمكنك متابعة استخدام ميزات الاتصال والرسائل في هاتفك عبر القمر الصناعي.\n\nتتطلب هذه الخدمة في أثناء الاستخدام الوصول إلى </span><span style='bold'>موقعك</span><span style='normal'> من أجل الاتصال بالقمر الصناعي. بتشغيل هذا الخيار، فأنت تعني بذلك موافقتك على </span><span style='userAgreements'>اتفاقية مستخدم Hyacinth</span><span style='normal'>. لمعرفة المزيد من التفاصيل حول كيفية معالجة معلوماتك الشخصية، يمكنك الاطلاع على </span><span style='privacyStatement'>البيان حول Hyacinth والخصوصية</span><span style='normal'> و</span><span style='permissionStatement'>إشعار الأذونات</span><span style='normal'>.</span></body>",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_not_found_satellite",
+            "value":"لا توجد أقمار صناعية متاحة. يُرجى إعادة المحاولة لاحقًا.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_service_no_region_card",
+            "value":"اتصالات Hyacinth عبر القمر الصناعي غير مدعومة في المنطقة الحالية. يمكنك الاطلاع على الأسئلة الشائعة لمزيد من المعلومات حول المناطق المدعومة.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_service_permission_usage_details",
+            "value":"أذونات اتصالات Hyacinth عبر القمر الصناعي",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_connect_failed_guide",
+            "value":"لا توجد أقمار صناعية متاحة حاليًا. الفترة التالية المتاحة: %1$s-%2$s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_service_network_description",
+            "value":"المكالمات والرسائل النصية عبر القمر الصناعي.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_service_enter_in_call",
+            "value":"يتعذّر تشغيل اتصالات Hyacinth عبر القمر الصناعي في أثناء المكالمات.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"start_hyacinth_satellite_communications",
+            "value":"اتصالات Hyacinth عبر القمر الصناعي",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_service_settings_window_mode",
+            "value":"لا تدعم اتصالات Hyacinth عبر القمر الصناعي وضع النوافذ المتعددة",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_service_airplane_mode",
+            "value":"اتصالات Hyacinth عبر القمر الصناعي غير متوفرة في وضع الطائرة.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_service_tiantong_mode",
+            "value":"لا تتوفر اتصالات Hyacinth عبر القمر الصناعي في أثناء استخدام الاتصالات عبر القمر الصناعي Tiantong.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_service_not_enabled",
+            "value":"اتصالات Hyacinth عبر القمر الصناعي غير مُشغّلة",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellites_not_available",
+            "value":"يتعذّر تأكيد توفر القمر الصناعي في هذا الوقت. هل تريد المتابعة على أي حال؟",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_service_settings_window_suggest",
+            "value":"افتح هذه النافذة في وضع ملء الشاشة لتشغيل اتصالات Hyacinth عبر القمر الصناعي",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"esim_card_num_no_space",
+            "value":"بطاقة eSIM %s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_communications",
+            "value":"اتصالات Hyacinth عبر القمر الصناعي",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_service_no_sim_card",
+            "value":"يُرجى إدخال بطاقة SIM مع تنشيط اتصالات Hyacinth عبر القمر الصناعي وإعادة المحاولة.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"exit_hyacinth_satellite_service_tips",
+            "value":"هل تريد إيقاف اتصالات Hyacinth عبر القمر الصناعي؟",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"phone_ring_Card3",
+            "value":"بطاقة eSIM %1$s: %2$s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_notification_title",
+            "value":"الاتصالات عبر القمر الصناعي موقوفة",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"new_calling_can_only_use_in_full_screen",
+            "value":"لا تتوفر خدمات الاتصال المتقدمة إلا في وضع العرض ملء الشاشة",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"New_CAll_DESC",
+            "value":"يتم توفير الخدمة من قبل شركة الاتصالات.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_activate_text",
+            "value":"<body><span style='normal'>يمكنك إجراء المكالمات وإرسال الرسائل النصية حتى لو كنت خارج تغطية الشبكة بفضل Hyacinth. نظرًا لأن أقمار Hyacinth الصناعية ما تزال قيد النشر، فإن هذه الخدمة غير متاحة حاليًا إلا في أوقات معينة من اليوم. ستصل هذه الخدمة أثناء الاستخدام إلى معلومات حول </span><span style='bold'>الموقع والشبكة</span><span style='normal'> من أجل التأكد من توفر القمر الصناعي.</span></body>",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_activate_immediatly",
+            "value":"التنشيط الآن",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_activate",
+            "value":"تنشيط Hyacinth",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"celia",
+            "value":"مكالمات Celia",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"call_setting_call",
+            "value":"المكالمات",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_service_settings_skytone_mode",
+            "value":"هذه الميزة غير متاحة أثناء استخدام SkyTone.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"tiantong_satellite_service_hyacinth_mode",
+            "value":"لا تتوفر الاتصالات عبر القمر الصناعي Tiantong أثناء استخدام الاتصالات عبر القمر الصناعي Hyacinth.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"send_success",
+            "value":"تم الإرسال بنجاح",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"im_message_smc_satellite_no_receipt_tips",
+            "value":"ربما لم تصل الرسالة إلى قمر صناعي. حاول مرة أخرى في الهواء الطلق دون وجود أيّة عوائق.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"callSetting_title",
+            "value":"إعدادات المكالمات",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_available_time_tomorrow",
+            "value":"غدًا: %1$s–%2$s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_available_time_today",
+            "value":"‏%1$s–%2$s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_available_time_tomorrow_end",
+            "value":"‏%1$s–%2$s (غدًا)",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_available_tips",
+            "value":"التوفر:\n%1$s\n%2$s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_request_location_permission",
+            "value":"لم يتم منح إذن الوصول إلى الموقع. هل تريد منح الإذن الآن؟",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_location_enable_permission",
+            "value":"منح إذن الوصول",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_available_tips_single",
+            "value":"المتوفر: %s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"float_better_angle",
+            "value":"العثور على زاوية افضل",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"call_setting_celia_description",
+            "value":"دع Celia ترد على المكالمات وتلخصها لك.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"hyacinth_available_time_refresh",
+            "value":"سيتم تجديد الفترات الزمنية المتاحة تلقائيًا عند إيقاف تشغيل الاتصالات عبر القمر الصناعي Tiantong.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"unlock_after_call_notification_descriptions_normal",
+            "value":"تظهر المكالمات الواردة دائمًا كشريط إشعارات في أثناء تشغيل الألعاب، أو التنقل على خريطة، أو مشاهدة الصور والفيديوهات في وضع ملء الشاشة.\n\nوتظهر دائمًا بملء الشاشة في وضع كبار السن.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"call_setting_getting_hyacinth_available_time",
+            "value":"جارٍ التحقق من الفترات الزمنية المتاحة…",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_available_time_connection_use",
+            "value":"يُستخدم هذا الإذن للتحقق من الفترات الزمنية المتاحة والاتصال عبر القمر الصناعي.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"need_system_location",
+            "value":"يُرجى تشغيل خدمات الموقع من \"الإعدادات\"",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"not_support_toast",
+            "value":"هذه العملية غير مدعومة في هذا الوضع"
+        }
+    ]
+}

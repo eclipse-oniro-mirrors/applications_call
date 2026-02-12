@@ -1,0 +1,12 @@
+{
+  "app": {
+    "bundleName": "com.ohos.emergencycommunication",
+    "vendor": "huawei",
+    "versionCode": 60000368,
+    "versionName": "6.0.0.368",
+    "icon": "$media:ic_warning",
+    "label": "$string:app_name",
+    "generateBuildHash": true,
+    "configuration": "$profile:configuration"
+  }
+}

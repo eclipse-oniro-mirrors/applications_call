@@ -1,0 +1,302 @@
+{
+  "version": {
+    "curVersion": "1.0.2"
+  },
+  "searchPages": [
+    {
+      "pageTitle": "$string:earthquake_alarm_notify",
+      "pageDescription": "",
+      "entryKey": "emergency_alerts_entry",
+      "path": [
+        "$string:System",
+        "$string:earthquake_alarm_notify"
+      ],
+      "params": "",
+      "searchItems": [
+        {
+          "itemName": "earthquake_alarm_notify",
+          "itemTitle": "$string:earthquake_alarm_notify",
+          "itemDescription": "",
+          "icon": "",
+          "enable": "true",
+          "childItems": "",
+          "alias": "应急预警|预警通知|Emergency"
+        },
+        {
+          "itemName": "auto_send_earthquake_alarm_message",
+          "itemTitle": "$string:auto_send_earthquake_alarm_message",
+          "itemDescription": "",
+          "icon": "",
+          "enable": "true",
+          "childItems": "",
+          "alias": "地震预警|地震|dizhenyujing|Earthquake alerts"
+        }
+      ]
+    },
+    {
+      "pageTitle": "$string:earthquake_alarm_notify",
+      "pageDescription": "",
+      "entryKey": "emergency_alerts_entry",
+      "path": [
+        "$string:System",
+        "$string:earthquake_alarm_notify",
+        "$string:warning_area_and_function_text"
+      ],
+      "params": "",
+      "searchItems": [
+        {
+          "itemName": "warning_area_and_function_text",
+          "itemTitle": "$string:warning_area_and_function_text",
+          "itemDescription": "",
+          "icon": "",
+          "enable": "true",
+          "childItems": "",
+          "alias": "预警区域及功能说明"
+        }
+      ]
+    },
+    {
+      "pageTitle": "$string:earthquake_alarm_notify",
+      "pageDescription": "",
+      "entryKey": "emergency_alerts_entry",
+      "path": [
+        "$string:System",
+        "$string:earthquake_alarm_notify",
+        "$string:Historical_warning_information"
+      ],
+      "params": "",
+      "searchItems": [
+        {
+          "itemName": "Historical_warning_information",
+          "itemTitle": "$string:Historical_warning_information",
+          "itemDescription": "",
+          "icon": "",
+          "enable": "true",
+          "childItems": "",
+          "alias": "历史预警信息"
+        }
+      ]
+    },
+    {
+      "pageTitle": "$string:earthquake_alarm_notify",
+      "pageDescription": "",
+      "entryKey": "emergency_alerts_entry",
+      "path": [
+        "$string:System",
+        "$string:earthquake_alarm_notify",
+        "$string:Historical_warning_information",
+        "$string:EarthquakeInfoTitle"
+      ],
+      "params": "",
+      "searchItems": [
+        {
+          "itemName": "EarthquakeInfoTitle",
+          "itemTitle": "$string:EarthquakeInfoTitle",
+          "itemDescription": "",
+          "icon": "",
+          "enable": "true",
+          "childItems": "",
+          "alias": "预警信息详情"
+        }
+      ]
+    },
+    {
+      "pageTitle": "$string:earthquake_alarm_notify",
+      "pageDescription": "",
+      "entryKey": "emergency_alerts_entry",
+      "path": [
+        "$string:System",
+        "$string:earthquake_alarm_notify",
+        "$string:emergency_alter_title"
+      ],
+      "params": "",
+      "searchItems": [
+        {
+          "itemName": "emergency_alter_title",
+          "itemTitle": "$string:emergency_alter_title",
+          "itemDescription": "",
+          "icon": "",
+          "enable": "true",
+          "childItems": "",
+          "alias": "查看预警演示教程"
+        }
+      ]
+    },
+    {
+      "pageTitle": "$string:earthquake_alarm_notify",
+      "pageDescription": "",
+      "entryKey": "emergency_alerts_entry",
+      "path": [
+        "$string:System",
+        "$string:earthquake_alarm_notify",
+        "$string:list_learn_about_emergency_shelters_title"
+      ],
+      "params": "",
+      "searchItems": [
+        {
+          "itemName": "list_learn_about_emergency_shelters_title",
+          "itemTitle": "$string:list_learn_about_emergency_shelters_title",
+          "itemDescription": "",
+          "icon": "",
+          "enable": "true",
+          "childItems": "",
+          "alias": "紧急避难所"
+        }
+      ]
+    },
+    {
+      "pageTitle": "$string:earthquake_alarm_notify",
+      "pageDescription": "",
+      "entryKey": "emergency_alerts_entry",
+      "path": [
+        "$string:System",
+        "$string:earthquake_alarm_notify",
+        "$string:emergencyContact"
+      ],
+      "params": "",
+      "searchItems": [
+        {
+          "itemName": "emergencyContact",
+          "itemTitle": "$string:emergencyContact",
+          "itemDescription": "",
+          "icon": "",
+          "enable": "true",
+          "childItems": "",
+          "alias": "紧急联系人"
+        }
+      ]
+    },
+    {
+      "pageTitle": "$string:earthquake_alarm_notify",
+      "pageDescription": "",
+      "entryKey": "emergency_alerts_entry",
+      "path": [
+        "$string:System",
+        "$string:earthquake_alarm_notify",
+        "$string:personalEmergencyInfo"
+      ],
+      "params": "",
+      "searchItems": [
+        {
+          "itemName": "personalEmergencyInfo",
+          "itemTitle": "$string:personalEmergencyInfo",
+          "itemDescription": "",
+          "icon": "",
+          "enable": "true",
+          "childItems": "",
+          "alias": "个人紧急信息"
+        }
+      ]
+    },
+    {
+      "pageTitle": "$string:Sos_emergency_title",
+      "pageDescription": "",
+      "entryKey": "sos_emergency_help_entry",
+      "path": [
+        "$string:System",
+        "$string:Sos_emergency_title"
+      ],
+      "params": "",
+      "searchItems": [
+        {
+          "itemName": "sos_emergency_help_entry",
+          "itemTitle": "$string:Sos_emergency_title",
+          "itemDescription": "",
+          "icon": "",
+          "enable": "true",
+          "childItems": "",
+          "alias": "SOS紧急求助|SOS|紧急|求助|help|Emergency",
+          "checkItem": {
+            "type": "function",
+            "checkKey": "isSupportSOS",
+            "value": "true"
+          }
+        },
+        {
+          "itemName": "SosPersonalEmergencyInfo",
+          "itemTitle": "$string:personalEmergencyInfo",
+          "itemDescription": "",
+          "icon": "",
+          "enable": "true",
+          "childItems": "",
+          "alias": "个人紧急信息|gerenjinjixinxi|Emergency information",
+          "checkItem": {
+            "type": "function",
+            "checkKey": "isSupportSOS",
+            "value": "true"
+          }
+        },
+        {
+          "itemName": "SosEmergencyContact",
+          "itemTitle": "$string:emergencyContact",
+          "itemDescription": "",
+          "icon": "",
+          "enable": "true",
+          "childItems": "",
+          "alias": "紧急联系人|jinjilianxiren|Emergency contacts",
+          "checkItem": {
+            "type": "function",
+            "checkKey": "isSupportSOS",
+            "value": "true"
+          }
+        },
+        {
+          "itemName": "Sos_Auto_Send_info",
+          "itemTitle": "$string:Sos_Auto_Send_info",
+          "itemDescription": "",
+          "icon": "",
+          "enable": "true",
+          "childItems": "",
+          "alias": "自动发送求助信息|zidongfasongqiuzhuxinxi|Auto-SOS message",
+          "checkItem": {
+            "type": "function",
+            "checkKey": "isSupportSOS",
+            "value": "true"
+          }
+        },
+        {
+          "itemName": "Sos_Auto_Call",
+          "itemTitle": "$string:Sos_Auto_Call",
+          "itemDescription": "",
+          "icon": "",
+          "enable": "true",
+          "childItems": "",
+          "alias": "自动拨打求助电话|zidongbodaqiuzhudianhua|Auto-SOS call",
+          "checkItem": {
+            "type": "function",
+            "checkKey": "isSupportSOS",
+            "value": "true"
+          }
+        },
+        {
+          "itemName": "Sos_Auto_Call_Test",
+          "itemTitle": "$string:Sos_Auto_Call_Test",
+          "itemDescription": "",
+          "icon": "",
+          "enable": "true",
+          "childItems": "",
+          "alias": "试听求助录音|shitingqiuzhuluyin|Preview SOS message",
+          "checkItem": {
+            "type": "function",
+            "checkKey": "isSupportSOS",
+            "value": "true"
+          }
+        },
+        {
+          "itemName": "Sos_Auto_Send_Location",
+          "itemTitle": "$string:Sos_Auto_Send_Location",
+          "itemDescription": "",
+          "icon": "",
+          "enable": "true",
+          "childItems": "",
+          "alias": "紧急上报位置信息|jinjishangbaoweizhixinxi|Report location",
+          "checkItem": {
+            "type": "function",
+            "checkKey": "isSupportSOS",
+            "value": "true"
+          }
+        }
+      ]
+    }
+  ]
+}

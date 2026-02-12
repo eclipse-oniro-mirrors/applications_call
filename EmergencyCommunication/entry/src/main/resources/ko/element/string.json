@@ -1,0 +1,2510 @@
+{
+    "string":[
+        {
+            "name":"contactsWarnContent",
+            "value":"긴급 연락처를 추가하면 긴급 상황에서 최초 대응자에게 도움이 될 수 있습니다. 누구나 장치를 잠금 해제하지 않고도 이 정보를 읽을 수 있습니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"auto_send_earthquake_alarm_message",
+            "value":"지진 경보",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"list_learn_about_emergency_shelters",
+            "value":"가까운 대피소를 찾습니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Historical_warning_information",
+            "value":"이전 경보",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeLocationLongitudeEast",
+            "value":"(%2$s°북, %1$s°서)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"address",
+            "value":"주소",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"sos_permissions_tips_of_auto_send_sms",
+            "value":"위치 액세스를 수동으로 허용하려면 설정 > 앱 및 서비스 > 앱 더 보기 > 긴급 SOS > 위치에서 \"정확한 위치\"를 선택하십시오.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeNext",
+            "value":"다음 도움말 보기",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"alarm_close_dialog_remind_title",
+            "value":"참고",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"drugStatus",
+            "value":"의학적 상태 및 추가 정보",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"emergencyCallsOnly",
+            "value":"긴급 통화 전용",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"GET_APPROXIMATELY_LOCATION",
+            "value":"이는 귀하의 대략적인 위치를 가져오는 데 사용됩니다.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"EarthquakeMagnitude",
+            "value":"지진 규모",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"aml_permission_location_info",
+            "value":"긴급 상황에서 더욱 효과적인 구조 서비스를 제공하기 위해 귀하의 정확한 위치 정보를 가져오는 데 사용됩니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_Location_Detail",
+            "value":"이 서비스는 %1$s 연결과 %2$s 권한이 필요합니다. 또한, 위치 정보 및 전화번호를 읽고 업로드/전송해야 합니다. 이는 긴급 구조 서비스 제공을 용이하게 하기 위한 목적입니다. 켜는 경우, 해당 약관에 동의함을 의미합니다. 개인정보 처리 방법에 대한 상세정보는 %3$s, %4$s의 내용을 참조하십시오.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"clearInfo",
+            "value":"모든 정보와 연락처를 삭제할까요?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"list_dial_emergency_contact_number",
+            "value":"긴급 연락처를 관리합니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"button_agree",
+            "value":"동의",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Emergency_message_without_location",
+            "value":"[긴급 SOS]\n긴급 상황이 발생해서 도움이 필요합니다. 귀하는 저의 긴급 연락처 중 한 명이므로 이 알림이 전송되었습니다. 지금은 전화를 받지 못할 수 있습니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"notAdded",
+            "value":"없음",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"drugPlacement",
+            "value":"예: 리시노프릴 또는 아스피린",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"AMBULANCE",
+            "value":"구급차",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"no",
+            "value":"아니요",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"sendSmsSuccess",
+            "value":"메시지가 전송되었습니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_info",
+            "value":"자동 SOS 메시지",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"bloodType",
+            "value":"혈액형",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"editEmergencyContact",
+            "value":"긴급 연락처 편집",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Disclaimer_Instructions",
+            "value":"",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"removecontact",
+            "value":"긴급 연락처를 제거하시겠습니까?",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"EmergencyWarningSettings_7",
+            "value":"지진 경보 및 개인 정보 보호에 대한 방침",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"EmergencyWarningSettings_8",
+            "value":"권한 공지",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"stop_share_location_prompt_content",
+            "value":"지금 끝내면 SOS 메시지의 긴급 연락처 전송이 중단됩니다. 끝내시겠습니까?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EmergencyWarningSettings_4",
+            "value":"위치",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"EmergencyWarningSettings_2",
+            "value":"인터넷",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"aml_switch_title",
+            "value":"",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"exit",
+            "value":"끝내기",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"car_accident_auto_call_for_help_title",
+            "value":"사고 후 자동 SOS",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"button_agree_and_open",
+            "value":"동의하고 실행",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"emergencyInfromation",
+            "value":"긴급 상황입니다!",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"EarthquakeWarningTitle1",
+            "value":"지진입니다! 대피하시기 바랍니다!",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"earthquake_shelter_setting_dialog",
+            "value":"지원되는 지도 앱을 찾을 수 없습니다. 근처에서 안전한 장소를 찾으십시오.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"earthquake_problem_feedback",
+            "value":"이는 지진 경보에 관련된 문제 신고에 사용됩니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeWarningTitle3",
+            "value":"침착하게 대피할 수 있는 개방된 공간이나 안전한 장소를 찾으십시오. 엘리베이터와 매달린 물체는 피해야 합니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeArrivingLongTips",
+            "value":"카운트다운이 시작되고 장치가 진동합니다. 가까운 대피소를 찾거나 가능한 한 빨리 실외 개방된 공간으로 이동해야 합니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"fullName",
+            "value":"성명",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeDistance",
+            "value":"진원지로부터의 거리",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Permission_Title_1",
+            "value":"긴급 위치 신고 권한",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Permission_Title_2",
+            "value":"자동 SOS 메시지 권한",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Permission_Description_4",
+            "value":"메시지",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Sos_Permission_Description_3",
+            "value":"긴급 SOS가 활성화되었을 때 긴급 연락처로 위치를 전송하기 위해 장치의 정확한 위치를 가져오는 데 사용됩니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"emergency_number_alarm",
+            "value":"개인 경고음",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Permission_Description_5",
+            "value":"긴급 SOS가 활성화되었을 때 자동으로 연락처에 SMS를 통해 알리는 데 사용됩니다.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"clear",
+            "value":"삭제",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Permission_Description_2",
+            "value":"긴급 상황에서 더욱 효과적인 구조 서비스를 제공하는 데 도움이 되는 장치의 정확한 위치에 액세스하는 데 사용됩니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"list_quickly_show_emergency_information",
+            "value":"개인 긴급 정보를 설정합니다. 이 정보는 긴급 상황에서 화면에 표시될 수 있습니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"getLocationService",
+            "value":"자동 위치 액세스를 실행하시겠습니까?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"car_accident_detection_disclaimer_content_one",
+            "value":"장치에서 심각한 교통사고가 감지되면 자동으로 긴급 연락처에 전화를 걸고 내 위치가 포함된 SMS 메시지를 전송합니다. 해당 메시지가 무시되거나 오해되지 않도록 긴급 연락처에게 이 기능을 알려야 합니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"button_open",
+            "value":"실행",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"aml_permission_message_info",
+            "value":"이는 긴급 SOS 메시지를 전송하는 데 사용됩니다.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"continue",
+            "value":"확인",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"allergiesPlacement",
+            "value":"예: 땅콩, 꽃가루",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"getLocation",
+            "value":"탭하여 위치 받기",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"notificationSwitchDialogContent",
+            "value":"지진 경보를 수신하려면 앱 설정에서 긴급 SOS가 알림을 전송할 수 있도록 허용하십시오.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"EarthquakeCenter",
+            "value":"진원지",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"aml_short_notification",
+            "value":"",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"addEmergencyContact",
+            "value":"긴급 연락처 추가",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"permissionConfirm",
+            "value":"확인",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"emergency_location_service_text",
+            "value":"위치 정보는 긴급 SOS에 사용됩니다. 이 서비스는 인터넷 연결과 위치 권한이 필요합니다. 또한, 긴급 구조 서비스를 제공하는 데 사용될 위치 정보 및 전화번호를 읽고 업로드/전송해야 합니다. 켜는 경우, 해당 약관에 동의함을 의미합니다. 개인정보 처리 방법에 대한 상세정보는 <a link=\"privacyStatement\">긴급 위치 신고 서비스 및 개인 정보 보호에 대한 방침</a>과 <a link=\"permissionStatement\">권한 공지</a>를 참조하십시오.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"aml_permission_info_title",
+            "value":"이 서비스는 다음 권한이 필요합니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"System",
+            "value":"시스템",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"add",
+            "value":"추가",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"already_in_contacts",
+            "value":"%s 님은 이미 긴급 연락처입니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"notEmergencyNumberMsg",
+            "value":"전화를 걸지 못했습니다. %s 번호는 긴급 번호가 아닙니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"peopleAdded",
+            "value":"%d명",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"no_service_message_and_call_unavailable",
+            "value":"서비스를 사용할 수 없습니다. SMS 및 전화 서비스를 사용할 수 없습니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"remove",
+            "value":"제거",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"sos_calling_summary",
+            "value":"통화 중입니다. 참여하려면 탭합니다.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"EarthquakeInfoTitle",
+            "value":"경보 상세정보",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"earthquake_warning_summary",
+            "value":"지진이 발생하면 조기 경고를 수신하게 됩니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"permission_reason_contacts",
+            "value":"이 권한은 연락처를 관리하는 데 사용됩니다.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"medicalInfo",
+            "value":"진료",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"emergency_number_traffic",
+            "value":"교통 사고",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"drugStatusPlacement",
+            "value":"예: 천식",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"earthquake_warning_notification_text_without_device_address",
+            "value":"규모 %2$s의 지진이 %1$s에서 감지되었습니다. 해당 지역에서 %3$s이(가) 예상됩니다.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"gettingLocation",
+            "value":"위치를 가져오는 중…",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeLocationLatitudeSouth",
+            "value":"(%2$s°남, %1$s°서)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"sendNow",
+            "value":"확인",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"drug",
+            "value":"약물",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"teaching_dialog_complete",
+            "value":"확인",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"closeLocationService",
+            "value":"자동 위치 액세스를 종료하시겠습니까?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"share_location_background_tips",
+            "value":"긴급 연락처에 위치 전송",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeArriving",
+            "value":"지진파가 도착하기 전",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"unable_auto_dial_dialog_title",
+            "value":"도움을 요청할 수 없음",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"addContact",
+            "value":"연락처 추가",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"determine",
+            "value":"확인",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"car_accident_detection_disclaimer_content_four",
+            "value":"이 기능은 중국 본토에서만 사용할 수 있습니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeUpdate",
+            "value":"지진 발생 시각",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"yes",
+            "value":"예",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"list_learn_about_emergency_shelters_title",
+            "value":"대피소 찾기",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"oobe_EarthquakeWarningServer_content",
+            "value":"이 서비스는 지진이 감지되면 경보를 전송합니다. 이는 인터넷 연결과 위치 권한이 필요합니다. 또한, 장치 및 위치 정보를 가져와야 합니다. 켜는 경우, 해당 약관과 <a link=\"disclaimStatement\">면책 조항</a>, <a link=\"privacyStatement\">지진 경보 및 개인 정보 보호에 대한 방침</a>, <a link=\"permissionStatement\">권한 공지</a>에 동의함을 의미합니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"send_sms_notify_emergency_contact",
+            "value":"메시지는 긴급 연락처로도 전송됩니다",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeWarningTitle1_2",
+            "value":"지진입니다! 대피하시기 바랍니다!",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"earthquake_advanced",
+            "value":"고급 설정",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Turn_on_Emergency_Information_and_Warning_text",
+            "value":"해당 위치에 대한 지진 경보를 제공하기 위한 목적으로 귀하의 위치 정보가 필요합니다.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"warning_area_and_function_text",
+            "value":"기능 범위 및 설명",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"important_state_title",
+            "value":"중요",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"car_accident_detection_disclaimer",
+            "value":"차량 충돌 감지 면책 조항",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Permission_denied_to_send_sms",
+            "value":"이 앱은 SMS 메시지를 전송할 수 있는 권한이 없습니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_emergency_title",
+            "value":"긴급 SOS",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Historical_warning_information_explain",
+            "value":"수신된 모든 경보를 봅니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_Location_Detail_Active_two",
+            "value":"권한 공지",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeWarningServer",
+            "value":"지진 경보",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"EarthquakeLocation",
+            "value":"진원지",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"noLocationPermissionTitle",
+            "value":"긴급 SOS에 위치 권한 필요",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_Location_Info",
+            "value":"긴급 전화를 걸 때 암호화된 위치를 경찰에 전송합니다(중국 본토 전용).",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"removeContact",
+            "value":"긴급 연락처에서 %s님을 제거하시겠습니까?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Call",
+            "value":"자동 SOS 통화",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_not_support",
+            "value":"Tiantong 위성 통신이 실행된 경우 긴급 SOS를 사용할 수 없습니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_Location_Detail_Active_one",
+            "value":"긴급 위치 신고 및 개인 정보 보호에 대한 방침",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"no_sim_message_and_call_unavailable",
+            "value":"SIM을 사용할 수 없습니다. SMS 및 전화 서비스를 사용할 수 없습니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"closeLocationService_title",
+            "value":"자동 위치 종료",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"sos_is_auto_calling",
+            "value":"자동 발신 중…",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Call_Test",
+            "value":"SOS 메시지 미리 보기",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"InfoEdit_edits_info",
+            "value":"편집",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"warnInfo",
+            "value":"모두 설정했습니까? %s(으)로 돌아가십시오",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"sendSmsFail",
+            "value":"SMS 메시지를 전송할 수 없습니다(알 수 없는 이유).",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_Location_Detail_Dark_one",
+            "value":"인터넷",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_Location_When_Call_Detail",
+            "value":"긴급 전화를 걸 때 시스템에서 내 위치를 가져오도록 허용합니다.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"FIRE",
+            "value":"소방서",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeFelling1",
+            "value":"약한 진동",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"warnContent",
+            "value":"이 정보는 긴급 상황에서 최초 대응자에게 도움이 될 수 있습니다.\n\n로컬로 저장되며 누구나 이 장치를 잠금 해제하지 않고도 액세스할 수 있습니다. 주소록 > 내 카드에서도 설정할 수 있습니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeFelling3",
+            "value":"상당한 피해",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeFelling2",
+            "value":"강한 진동",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Permission_Instructions",
+            "value":"지진 경보 권한",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeArrived",
+            "value":"지진파가 도착한 후",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeAlarmTest",
+            "value":"경고 미리보기",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"define_disclaimer",
+            "value":"면책 조항",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"unable_auto_dial_dialog_summary",
+            "value":"먼저 하나 이상의 긴급 연락처를 추가하십시오.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"clearAll",
+            "value":"모두 삭제",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"remove_last_emergency_contact_prompt_content",
+            "value":"긴급 연락처에서 %s님을 제거하시겠습니까? 해당 연락처는 더 이상 자동 SOS 메시지 또는 전화를 수신하지 못합니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"closeLocationServiceMsg",
+            "value":"종료하면 긴급 전화를 걸 때 장치가 내 위치를 자동으로 표시하지 않습니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"CANCEL",
+            "value":"취소",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"sos_is_playing_recording",
+            "value":"SOS 메시지를 재생 중입니다. 통화에 입장하려면 탭합니다.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"personalInfo",
+            "value":"개인",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_emergency_personal_info",
+            "value":"개인 및 의료 정보를 설정합니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"sendMsgNotice",
+            "value":"이 연락처에 문자 메시지를 보내 상대방을 긴급 연락처로 추가했음을 알릴 수 있습니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"emergencyInfromationText",
+            "value":"규모 %2$s의 지진이 %1$s에서 감지되었습니다. %3$s에서 %4$s이(가) 예상됩니다.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"noLocationPermissionDesc",
+            "value":"이는 긴급 전화 중 귀하의 위치에 액세스하는 데 사용됩니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"sendMsg",
+            "value":"",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"emergencyContact",
+            "value":"긴급 연락처",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeInfofrom",
+            "value":"출처: %s",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"popup_button_gotosettings",
+            "value":"설정으로 이동",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"POLICE",
+            "value":"경찰",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"importantDialogContent_8",
+            "value":"여기",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"earthquake_location_notice",
+            "value":"위치 액세스를 수동으로 허용하려면 설정 > 앱 및 서비스 > 앱 더 보기 > 긴급 SOS > 위치에서 \"항상 허용\" 및 \"정확한 위치\"를 선택하십시오.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeAlarmTesting",
+            "value":"미리보기 끝내기(%s)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"importantDialogContent_4",
+            "value":"동의를 탭하면 \"지진 경보\" 서비스를 받고 %1$s을 수락하는데 동의함을 의미합니다. 개인정보 처리 방법에 대한 상세정보는 %2$s, %3$s의 내용을 참조하십시오. 자세한 정보를 보려면 %4$s을(를) 탭하십시오.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"emergency_location_service_title",
+            "value":"긴급 위치 신고",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"editEmergencyInfo",
+            "value":"긴급 정보 편집",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"The_position_switch_off_text",
+            "value":"이 기능을 종료하면 사전에 지진 경고를 수신할 수 없습니다. 그래도 종료하시겠습니까?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"earthquake_shelter_setting_notice",
+            "value":"대피소를 검색하려면 지도를 설치하십시오.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"getLocationMsg1",
+            "value":"긴급 상황 발생 시 내 위치를 보고할 수 있도록 긴급 전화를 걸면 장치는 자동으로 내 위치를 표시합니다. 위치를 탭하면 지도 앱에서 볼 수 있습니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeLocationLongitudeWest",
+            "value":"(%2$s°남, %1$s°동)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"remove_emergency_contact_text",
+            "value":"긴급 연락처 제거",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"noStated",
+            "value":"지정되지 않음",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"personalEmergencyInfo",
+            "value":"긴급 정보",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_info_Detail_notice_dark_one",
+            "value":"메시징",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_info_Detail_notice_dark_Two",
+            "value":"위치",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"earthquake_alarm_notify",
+            "value":"긴급 경고",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Emergency_message",
+            "value":"[긴급 SOS]\n긴급 상황이 발생해서 도움이 필요합니다. 귀하는 저의 긴급 연락처 중 한 명이므로 이 알림이 전송되었습니다.\n나의 현재 위치: %s. 지금은 전화를 받지 못할 수 있습니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"PermissionDescriptionContent_3",
+            "value":"이는 지진 경보를 전송하기 위해 장치의 정확한 위치를 가져오는 데 사용됩니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"emergencyContacts",
+            "value":"긴급전화 리스트",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"The_position_switch_off",
+            "value":"위치 실행",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"organDonor",
+            "value":"장기 기증자",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_alter_title",
+            "value":"경고 미리보기",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"PermissionDescriptionContent_2",
+            "value":"위치",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_info_Detail_notice_all",
+            "value":"이 서비스는 %1$s 및 %2$s 권한이 필요하며 위치 정보를 읽어야 합니다. 켜는 경우, 해당 약관에 동의함을 의미합니다. 상세정보는 %3$s 및 %4$s의 내용을 참조하십시오.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_Location_When_Call",
+            "value":"자동으로 위치 가져오기",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_info_Detail_notice_active_two",
+            "value":"권한 공지",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"unable_auto_dial_dialog_add",
+            "value":"추가",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeLocationLatitudeNorth",
+            "value":"(%2$s°북, %1$s°동)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"unable_send_help_info",
+            "value":"메시지를 전송할 수 없습니다",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"GET_LOCATION_IN_BACKGROUND",
+            "value":"이는 백그라운드에서 실행될 때 위치 정보를 가져오는 데 사용됩니다.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"aml_permission_dialog_title",
+            "value":"",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"getLocationFailed",
+            "value":"위치를 가져올 수 없습니다. 다시 시도하려면 탭합니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"importantDialogContent_2",
+            "value":"",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"importantDialogContent_3",
+            "value":"여기",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"notifyContact",
+            "value":"주소록에 적용하시겠습니까?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"emergencyInfo",
+            "value":"긴급 정보",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_info_Detail_notice_active_one",
+            "value":"자동 SOS 메시지 및 개인 정보 보호에 대한 방침",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EmergencyWarningSettings_all",
+            "value":"이 서비스는 %1$s 연결과 %2$s 권한이 필요합니다. 또한, 지진 경고를 제공하기 위해 위치 정보를 읽고 업로드/전송해야 합니다. 켜는 경우, 이러한 약관 및 %3$s에 동의함을 의미합니다. 개인정보 처리 방법에 대한 상세정보는 %4$s, %5$s의 내용을 참조하십시오.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"notification_switch_dialog_content",
+            "value":"이는 지진 경보를 전송하기 위한 목적입니다. 설정에서 알림을 실행할 수 있습니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"aml_switch_summary",
+            "value":"긴급 전화를 걸거나 긴급 메시지를 보낼 때 자동으로 내 위치를 긴급 서비스에 전송합니다. 이용 가능 여부에 따라 달라질 수 있습니다.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"allergies",
+            "value":"알레르기",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"function_settings_text",
+            "value":"설정",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_Location",
+            "value":"위치 신고",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"rightCall",
+            "value":"오른쪽 스와이프로 %s에 전화 걸기",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"unable_auto_dial_and_send_sms_dialog_title",
+            "value":"통화 또는 메시지 전송 불가",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"EarthquakeIntensity",
+            "value":"강도(%s)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"notification_switch_dialog_title",
+            "value":"긴급 SOS에서 알림 전송 요청",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeArrivedLongTips",
+            "value":"지진파가 발생하면 알람이 울립니다. 대피소 찾기, 도움 요청, 개인 긴급 정보 표시 옵션이 표시됩니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"car_accident_detection_statement_on_service_and_privacy",
+            "value":"사고 후 자동 SOS 및 개인 정보 보호에 대한 방침",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fall_down_detection_disclaimer",
+            "value":"낙상 감지 면책 조항",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"cannot_enable_fall_down_sos",
+            "value":"낙상 후 자동 SOS를 실행할 수 없습니다",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"car_accident_detection_disclaimer_in_short_notice",
+            "value":"차량 충돌 감지 면책 조항",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fall_down_message",
+            "value":"[긴급 SOS– 낙상 감지]\n휴대폰에서 내게 낙상이 발생한 것으로 감지되었습니다. 도움이 필요합니다. 내 긴급 연락처 중 한 명이므로 알림이 전송되었습니다.\n내 현재 위치: %s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_info_Detail_notice_renew",
+            "value":"이 서비스는 %1$s 권한이 필요하며 위치 정보를 읽어야 합니다. 켜는 경우 해당 약관에 동의함을 의미합니다. 상세정보는 %2$s 및 %3$s의 내용을 참조하십시오.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"cannot_enable_car_accident_sos",
+            "value":"사고 후 자동 SOS를 실행할 수 없습니다",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"car_accident_sos_message_without_location",
+            "value":"[긴급 SOS – 차량 충돌]\n내 휴대폰에서 내게 충돌이 발생한 것으로 감지되었습니다. 도움이 필요합니다. 내 긴급 연락처 중 한 명이므로 알림이 전송되었습니다.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fall_down_detection_disclaimer_content_one",
+            "value":"장치에서 낙상이 감지되면 자동으로 긴급 연락처에 전화를 걸고 내 위치가 포함된 SMS 메시지를 전송합니다. 해당 메시지가 무시되거나 오해되지 않도록 긴급 연락처에게 이 기능을 알려야 합니다.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fall_down_message_without_location",
+            "value":"[긴급 SOS– 낙상 감지]\n휴대폰에서 내게 낙상이 발생한 것으로 감지되었습니다. 도움이 필요합니다. 내 긴급 연락처 중 한 명이므로 알림이 전송되었습니다.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"car_accident_permission_title",
+            "value":"사고 후 자동 SOS 권한",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"car_accident_sos_message",
+            "value":"[긴급 SOS – 차량 충돌]\n내 휴대폰에서 내게 차량 충돌이 발생한 것으로 감지되었습니다. 도움이 필요합니다. 내 긴급 연락처 중 한 명이므로 알림이 전송되었습니다.\n내 현재 위치: %s.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fall_down_auto_call_for_help_title",
+            "value":"낙상 후 자동 SOS",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fall_down_detection_disclaimer_content_two",
+            "value":"이 기능은 장치 센서의 데이터를 해석하여 작동합니다. 이 기능은 낙상과 유사한 센서 데이터 패턴으로 인해 의도하지 않게 트리거될 수 있습니다. 경우에 따라서는 낙상하더라도 이 기능을 트리거할 수 있는 센서 데이터가 생성되지 않을 수도 있습니다. 또한, 장치의 연결 및 상태가 전화를 걸고 메시지를 전송하는 기능에 영향을 미칠 수 있습니다.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fall_down_trigger_prompt",
+            "value":"%1$s에 낙상이 발생한 것 같습니다. 응답하지 않으면 휴대폰에서 긴급 전화가 걸립니다.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fall_down_auto_call_notice_all",
+            "value":"이 서비스는 귀하의 위치에 액세스할 수 있는 %1$s 권한이 필요합니다. 켜는 경우 해당 약관과 %2$s에 동의함을 의미합니다. 개인정보 처리 방법에 대한 상세정보는 %3$s 및 %4$s의 내용을 참조하십시오.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fall_down_detection_disclaimer_in_short_notice",
+            "value":"낙상 감지 면책 조항",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"sos_is_playing_recording_1",
+            "value":"SOS 메시지를 재생 중입니다.\n탭하여 전화를 겁니다.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"car_accident_trigger_prompt",
+            "value":"%1$s에 차량 충돌이 발생한 것 같습니다. 응답하지 않으면 휴대폰에서 긴급 전화가 걸립니다.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fall_down_detection_statement_on_service_and_privacy",
+            "value":"낙상 후 자동 SOS 및 개인 정보 보호에 대한 방침",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"car_accident_auto_call_notice_all",
+            "value":"이 서비스는 귀하의 위치 정보에 액세스할 수 있는 %1$s 권한이 필요합니다. 켜는 경우 이러한 약관 및 %2$s에 동의함을 의미합니다. 개인정보 처리 방법에 대한 상세정보는 %3$s 및 %4$s의 내용을 참조하십시오.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fall_down_permission_title",
+            "value":"낙상 후 자동 SOS 권한",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_location_service_text_new",
+            "value":"SOS 전화를 걸면 이 서비스는 암호화된 위치를 긴급 서비스로 전송하므로 더 나은 도움을 받을 수 있습니다. 이 서비스는 인터넷 연결과 위치 권한이 필요하며, 위치 정보 및 전화번호를 읽고 업로드/전송하여 긴급 서비스로 보냅니다. 이것을 켜면 위 약관에 동의하게 됩니다. 이 서비스에 필요한 권한에 대한 상세정보는 <a link=\"permissionStatement\">권한 공지</a>를 참조하십시오.\n이 서비스는 아래 이름이 지정된 타사에서 제공합니다. 개인정보 처리 방법에 대한 상세정보는 다음 내용을 참조하십시오:\n${param1}. China Academy of Information and Communications Technology(CAICT)의 긴급 위치 서비스 플랫폼 및 개인 정보 보호에 대한 방침()\n${param2}. Shenzhen LocationNet Technology Co., Ltd.의 LocationNet 개인정보 보호정책().",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Location_Net_Privacy",
+            "value":"LocationNet 개인정보 보호정책",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_Location_Detail_new",
+            "value":"이 서비스는 %1$s 연결과 %2$s 권한이 필요하며, 위치 정보 및 전화번호를 읽고 업로드/전송하여 타사 긴급 서비스로 전송합니다. 이것을 켜면 위 약관에 동의하게 됩니다. 이 서비스에 필요한 권한에 대한 상세정보는 %3$s 내용을 참조하십시오.\n이 서비스는 아래 이름이 지정된 타사에서 제공합니다. 개인정보 처리 방법에 대한 상세정보는 다음 내용을 참조하십시오:\n%4$s. China Academy of Information and Communications Technology(CAICT). %5$s\n%6$s. Shenzhen LocationNet Technology Co., Ltd. %7$s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Emergency_Position_Service_Privacy",
+            "value":"긴급 위치 서비스 플랫폼 및 개인 정보 보호에 대한 방침",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"open_phone_to_emergency_calls",
+            "value":"펼쳐서 긴급 전화 걸기",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"location_south_east",
+            "value":"%1$s 남 %2$s 동",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"location_north_west",
+            "value":"%1$s 북 %2$s 서",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"car_accident_detection_disclaimer_content_two",
+            "value":"이 기능은 장치 센서의 데이터를 해석하여 작동합니다. 이 기능은 차량 충돌과 유사한 센서 데이터 패턴으로 의도하지 않게 트리거될 수 있습니다. 경우에 따라서는 충돌로 인해 이 기능을 트리거할 수 있는 센서 데이터가 생성되지 않을 수도 있습니다. 또한, 장치의 연결 및 상태가 전화를 걸고 메시지를 전송하는 기능에 영향을 미칠 수 있으니 이점 유의하시기 바랍니다.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"unsupport_satellite_card_content",
+            "value":"위성 통화 중에는 메시지를 전송할 수 없습니다.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fall_down_detection_disclaimer_content_four",
+            "value":"이 기능은 중국 본토에서만 사용할 수 있습니다.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"car_accident_detection_disclaimer_content_three",
+            "value":"",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"location_north_east",
+            "value":"%1$s 북 %2$s 동",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"address_details",
+            "value":"주소: %s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fall_down_detection_disclaimer_content_three",
+            "value":"",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"location_south_west",
+            "value":"%1$s 남 %2$s 서",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"position",
+            "value":"위치: %s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite",
+            "value":"Tiantong 위성 메시징",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"NumberEdit_delete",
+            "value":"%s 삭제됨",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"InfoEdit_back",
+            "value":"뒤로",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"one_finger_double_click",
+            "value":"두 번 탭하여 활성화",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"positioning",
+            "value":"위치",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"InfoEdit_show_dialpad",
+            "value":"키패드 표시",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"InfoEdit_delete",
+            "value":"삭제",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"not_available",
+            "value":"사용할 수 없음",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"InfoEdit_edit",
+            "value":"옵션 더 보기",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"ContactsEdit_close",
+            "value":"긴급 연락처 제거",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"InfoEdit_dail",
+            "value":"통화",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_slogan",
+            "value":"구조대",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"phrases_button",
+            "value":"빠른 메시지",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_submit_message_subtitle1",
+            "value":"주변 구조대의 장치에 내 위치와 상황을 신고할 수 있습니다.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"rescue_signal_level_middle",
+            "value":"신호 강도: 보통",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_save_power_tips",
+            "value":"배터리를 절약할 수 있도록 지원을 기다리는 동안에는 화면을 끄십시오.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"rescue_message_communication_banner_content",
+            "value":"상황을 신고하려면 탭합니다.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"rescue_signal_level_strong",
+            "value":"신호 강도: 강함",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"rescue_message_sending_banner_title",
+            "value":"메시지 전송 중…",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"rescue_message_communication_banner_title",
+            "value":"구조대와 통신",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"rescue_signal_level_low",
+            "value":"신호 강도: 약함",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_exit_once_title",
+            "value":"긴급 구조를 끝내시겠습니까?",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_service_title",
+            "value":"오프 그리드 SOS",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_disaster_situation_title",
+            "value":"상황",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_message_send_failed_tips",
+            "value":"신호가 불안정합니다. 메시지는 신호가 복원되면 다시 전송됩니다.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_receive_d2d_subtitle1",
+            "value":"주변 구조대의 장치에 내 위치와 상황을 신고할 수 있습니다.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"send_button",
+            "value":"전송",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_submit_success_title",
+            "value":"메시지 전달됨",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_team",
+            "value":"구조대",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"keyboard_button",
+            "value":"키보드",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_location_title",
+            "value":"위치",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_sending",
+            "value":"전송 중",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_exit_completely_content",
+            "value":"끄는 경우, 범위에 적용되는 네트워크가 없을 때 주변 구조대를 장치를 검색할 수 없게 됩니다. 이 기능은 켜는 것이 좋습니다.\n\n끄시겠습니까?",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"disaster_situation_fire",
+            "value":"화재",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_sended_status",
+            "value":"전달됨",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"message_textarea_placeholder",
+            "value":"내 상황을 설명합니다",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_view_details",
+            "value":"상세정보 보기",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_my_rescue_info",
+            "value":"SOS 상세정보",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_get_location_failed",
+            "value":"위치 가져오기 불가",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_sending_status",
+            "value":"전송 중…",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_exit_current_rescue",
+            "value":"끝내기",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"rescue_signal_detected",
+            "value":"메시지 전송 대기 중…",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_submit_message_title",
+            "value":"SOS 메시지 전송",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"rescue_message_send_failed_banner_title",
+            "value":"메시지 전송 불가",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"rescue_signal_level_none",
+            "value":"신호 강도: 신호 없음",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_receive_d2d_title",
+            "value":"구조대 신호 감지됨",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"China_Broadnet",
+            "value":"China Broadnet",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"send_position_btn_text",
+            "value":"위치 정보 전송",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_wait_for_send",
+            "value":"전송 대기 중",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"switching_audio_channels",
+            "value":"오디오 채널 전환",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"incomingCall",
+            "value":"수신 전화",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_call_finish",
+            "value":"통화 종료됨",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_disclaimer_content_all",
+            "value":"이 서비스는 %1$s 권한이 필요하고 전화번호, IMEI 위치 정보를 읽어야 합니다. 켜는 경우, 해당 약관과 %2$s에 동의함을 의미합니다. 개인정보 처리 방법에 대한 상세정보는 %3$s, %4$s의 내용을 참조하십시오.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_privacy_statement",
+            "value":"오프그리드 긴급 통신 및 개인 정보 보호에 대한 방침",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fracture",
+            "value":"골절",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"building_collapse",
+            "value":"건물 붕괴",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"in_good_status",
+            "value":"상태가 괜찮음",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"road_damage",
+            "value":"도로 손상",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"surrounding_environment",
+            "value":"주변 환경",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_not_select_distress_situation",
+            "value":"상황을 선택하지 않음",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"flood",
+            "value":"홍수",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"personal_status",
+            "value":"건강 상태",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"there_are_children",
+            "value":"아이가 있음",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"landslide",
+            "value":"산사태",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"there_are_old_people",
+            "value":"노인 있음",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"detected_cellular_signal_dialog_content",
+            "value":"모바일 네트워크를 사용할 수 있습니다. 종료 후에는 이동통신사 네트워크를 통해 전화를 걸 수 있습니다.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_describe_distress",
+            "value":"상황을 설명하십시오",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_answer_call_failed",
+            "value":"응답에 실패했습니다.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"unable_to_walk",
+            "value":"걸을 수 없음",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"someone_injured",
+            "value":"부상자 발생",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_description",
+            "value":"이 기능을 켜면 모바일 네트워크가 제공되진 않는 지역에서 주변 구조대원에게 SOS 메시지를 전송하고 전화를 수신할 수 있습니다.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"food_shortage",
+            "value":"식량 부족",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hypothermia",
+            "value":"저체온증",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"head_injury",
+            "value":"머리 부상",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_submit_success_subtitle1",
+            "value":"구조대원이 귀하의 SOS 메시지를 수신했습니다. 구조를 기다려 주십시오.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"there_are_women",
+            "value":"여성 있음",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"select_disaster_situation",
+            "value":"상황을 선택하십시오",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"lose_blood",
+            "value":"출혈",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"trapped",
+            "value":"사람 갇힘",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_feeling_5",
+            "value":"매우 파괴적",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_feeling_1",
+            "value":"진동 없음",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_feeling_2",
+            "value":"약한 진동",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_feeling_3",
+            "value":"강한 진동",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_feeling_4",
+            "value":"파괴적",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_info_source",
+            "value":"중국 지진 조기 경고망에서 경고 발령 %s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_warning_info",
+            "value":"평정심을 유지하시기 바랍니다. 엎드려 몸을 가리고 지탱할 수 있는 물체를 꽉 붙잡으십시오. 실외라면 개방된 공간으로 이동합니다. 머리를 보호하십시오. 엘리베이터는 가급적 이용하지 마십시오.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_feeling_reminder_1",
+            "value":"예상되는 진동이 없으니 침착하세요",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_feeling_reminder_2",
+            "value":"진동이 예상되니 침착하세요",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_feeling_reminder_3",
+            "value":"진동이 예상되니 대비하세요",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_about_to_arrive",
+            "value":"지진파가 곧 도달할 예정",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_feeling_reminder_4",
+            "value":"진동이 예상되니 보호하세요",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_feeling_reminder_5",
+            "value":"위험하니 스스로를 보호하세요",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_warning_canceled",
+            "value":"지진 경고가 해제되었습니다.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_source_test",
+            "value":"(테스트)",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_source_trial_run",
+            "value":"(시험 운영)",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_arrived",
+            "value":"지진파 도달",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_title",
+            "value":"오프그리드 긴급 통신",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"voiceCall",
+            "value":"구조대 통화 응답",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_service_content",
+            "value":"오프그리드 긴급 통신은 긴급 상황에서의 구조 서비스 제공에 도움이 됩니다. 이 서비스는 위치 권한이 필요하고 네트워크 적용 범위 외부에 있을 때 관련 서비스를 제공하기 위한 목적으로 전화번호, IMEI, 위치 정보를 읽어야 합니다. 켜는 경우, 해당 약관에 동의함을 의미합니다. 개인정보 처리 방법에 대한 상세정보는 <a link=\"emergencyRescuePrivacyStatement\">오프그리드 긴급 통신 및 개인 정보 보호에 대한 방침</a>과 <a link=\"emcResourcePermissionStatement\">권한 공지</a>를 참조하십시오.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"additional_info_list_content_1",
+            "value":"%d. 침착하고 평정심을 유지합니다. 힘을 아껴두시기 바랍니다.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hanging_up_voice_call",
+            "value":"구조대와 통화 종료",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emc_rescue_current_location",
+            "value":"현재 위치: %s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"additional_info_list_content_2",
+            "value":"%d. 안전을 최우선으로 생각하시기 바랍니다. 안전하지 않다면 움직이지 마십시오.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"additional_info_list_content_3",
+            "value":"%d. 전력을 절약하려면 도움을 기다리는 동안 화면을 끄십시오.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"menu_title_additional_info",
+            "value":"중요",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"exit_emc_rescue_mode_notification_title",
+            "value":"긴급 통신 종료됨",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"search_now_button",
+            "value":"지금 검색",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"exit_emc_rescue_mode_notification_content",
+            "value":"주변 구조대를 다시 검색하려면 \"지금 검색\"을 탭합니다.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emc_rescue_permission_notice_content_2",
+            "value":"네트워크 적용 범위를 벗어났을 때 긴급 구조대에게 보낼 수 있도록 장치 위치를 가져오는 데 사용됩니다.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emc_rescue_location_permission_subtitle",
+            "value":"위치",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emc_rescue_permission_notice_title",
+            "value":"오프그리드 긴급 통신 권한",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"epicenter_location",
+            "value":"진원지",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"estimated_intensity",
+            "value":"예측 강도(%s)",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emc_rescue_disclaimer_content_part_1",
+            "value":"",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emc_rescue_disclaimer_content_part_2",
+            "value":"오프그리드 긴급 통신 기능은 안전 위험을 평가하고 안전에 대한 결정을 내리는 데 도움이 되는 단순 참조 목적으로만 제공됩니다. 이 기능은 구조 신호를 검색하는 데만 사용되며, 실제로 구조 신호를 전송하지 않습니다. 이 기능을 실행해도 구조대가 반드시 지원을 제공한다는 보장은 없습니다. 구조 신호는 특수 장비를 사용하는 구조대를 통해 전송됩니다. 해당 장치가 구조 신호를 감지하지 못하는 경우, 상황에 따라 적절한 안전 조치를 취할 책임은 귀하에게 있습니다. 장치에서 구조 신호를 감지되면 구조 대원에게 상황을 정확하게 보고해야 합니다. 귀하는 구조대가 연락하기 전과 연락한 후에 현재 환경에 따라 안전을 유지할 수 있는 합리적인 조치를 취해야 합니다. 오프그리드 긴급 통신 기능에 따라 취한 조치로 인해 발생할 수 있는 모든 위험이나 결과에 대한 책임은 전적으로 귀하에게 귀속됩니다.\n\n",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emc_rescue_disclaimer_content_part_3",
+            "value":"",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergencyCall",
+            "value":"긴급 전화",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_not_support",
+            "value":"히아신스 위성 네트워크가 실행되어 있으면 긴급 SOS를 사용할 수 없습니다.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emc_rescue_china_broadnet_brand_tips",
+            "value":"China Broadnet에서 제공하는 주파수 대역입니다.",
+            "attr":{
+                "priority":"translate"
+            }
+        }
+    ]
+}

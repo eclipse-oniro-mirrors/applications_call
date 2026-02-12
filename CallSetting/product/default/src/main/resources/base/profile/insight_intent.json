@@ -1,0 +1,136 @@
+{
+  "insightIntents": [
+    {
+      "domain": "CallSettingDomain",
+      "intentName": "CheckSettingPage",
+      "intentVersion": "1.0.1",
+      "srcEntry": "./ets/insightintents/IntentExecutorImpl.ets",
+      "uiAbility": {
+        "ability": "DefaultIntentBackgroundUiAbility",
+        "executeMode": [
+          "background"
+        ]
+      }
+    },
+    {
+      "domain": "CallSettingDomain",
+      "intentName": "CheckSettingItem",
+      "intentVersion": "1.0.1",
+      "srcEntry": "./ets/insightintents/IntentExecutorImpl.ets",
+      "uiAbility": {
+        "ability": "DefaultIntentBackgroundUiAbility",
+        "executeMode": [
+          "background"
+        ]
+      }
+    },
+    {
+      "domain": "CallSettingDomain",
+      "intentName": "GetSettingSwitch",
+      "intentVersion": "1.0.1",
+      "srcEntry": "./ets/insightintents/IntentExecutorImpl.ets",
+      "uiAbility": {
+        "ability": "DefaultIntentBackgroundUiAbility",
+        "executeMode": [
+          "background"
+        ]
+      }
+    },
+    {
+      "domain": "CallSettingDomain",
+      "intentName": "SetSettingSwitch",
+      "intentVersion": "1.0.1",
+      "srcEntry": "./ets/insightintents/IntentExecutorImpl.ets",
+      "uiAbility": {
+        "ability": "DefaultIntentBackgroundUiAbility",
+        "executeMode": [
+          "background"
+        ]
+      }
+    },
+    {
+      "domain": "CallSettingDomain",
+      "intentName": "LoadSettingCard",
+      "intentVersion": "1.0.1",
+      "srcEntry": "./ets/insightintents/IntentExecutorImpl.ets",
+      "uiAbility": {
+        "ability": "DefaultIntentBackgroundUiAbility",
+        "executeMode": [
+          "background"
+        ]
+      }
+    },
+    {
+      "domain": "CallSettingDomain",
+      "intentName": "CheckDataRoamingSwitch",
+      "intentVersion": "1.0.1",
+      "srcEntry": "./ets/insightintents/IntentExecutorImpl.ets",
+      "uiAbility": {
+        "ability": "DefaultIntentBackgroundUiAbility",
+        "executeMode": [
+          "background"
+        ]
+      }
+    },
+    {
+      "domain": "CallSettingDomain",
+      "intentName": "GetDataRoamingSwitch",
+      "intentVersion": "1.0.1",
+      "srcEntry": "./ets/insightintents/IntentExecutorImpl.ets",
+      "uiAbility": {
+        "ability": "DefaultIntentBackgroundUiAbility",
+        "executeMode": [
+          "background"
+        ]
+      }
+    },
+    {
+      "domain": "CallSettingDomain",
+      "intentName": "SetDataRoamingSwitch",
+      "intentVersion": "1.0.1",
+      "srcEntry": "./ets/insightintents/IntentExecutorImpl.ets",
+      "uiAbility": {
+        "ability": "DefaultIntentBackgroundUiAbility",
+        "executeMode": [
+          "background"
+        ]
+      }
+    },
+    {
+      "domain": "CallSettingDomain",
+      "intentName": "CheckImsSwitch",
+      "intentVersion": "1.0.1",
+      "srcEntry": "./ets/insightintents/IntentExecutorImpl.ets",
+      "uiAbility": {
+        "ability": "DefaultIntentBackgroundUiAbility",
+        "executeMode": [
+          "background"
+        ]
+      }
+    },
+    {
+      "domain": "CallSettingDomain",
+      "intentName": "GetImsSwitch",
+      "intentVersion": "1.0.1",
+      "srcEntry": "./ets/insightintents/IntentExecutorImpl.ets",
+      "uiAbility": {
+        "ability": "DefaultIntentBackgroundUiAbility",
+        "executeMode": [
+          "background"
+        ]
+      }
+    },
+    {
+      "domain": "CallSettingDomain",
+      "intentName": "SetImsSwitch",
+      "intentVersion": "1.0.1",
+      "srcEntry": "./ets/insightintents/IntentExecutorImpl.ets",
+      "uiAbility": {
+        "ability": "DefaultIntentBackgroundUiAbility",
+        "executeMode": [
+          "background"
+        ]
+      }
+    }
+  ]
+}

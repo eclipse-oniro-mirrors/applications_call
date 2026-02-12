@@ -1,0 +1,137 @@
+{
+    "string":[
+        {
+            "name":"auto_recording_object",
+            "value":"Активно для",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"deselect_all",
+            "value":"Отменить выбор",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"call_meeting",
+            "value":"Конференц-вызов",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"select_all",
+            "value":"Выбрать все",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"no_number_specified",
+            "value":"Нет номеров",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"add",
+            "value":"Добавить",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"unknown",
+            "value":"Неизвестно",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"delete",
+            "value":"Удалить",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"specified_number",
+            "value":"Определенные номера",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"automatic_recording_of_calls",
+            "value":"Автоматическая запись разговоров",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"automatically_record_call_viewed",
+            "value":"Записи разговоров можно найти в приложении Диктофон",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"unset_recorder",
+            "value":"Не задано",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"call_numbers_finish_des",
+            "value":"Сохранено: Телефон > Еще > Записи вызовов. Нажмите, чтобы посмотреть.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"add_specified_number",
+            "value":"Добавить номера",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"cancel",
+            "value":"Отмена",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"is_delete_number",
+            "value":"Удалить этот номер?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"all_calls",
+            "value":"Все вызовы",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"is_delete_all_number",
+            "value":"Удалить все номера?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"voice_long_press",
+            "value":"Коснитесь дважды и удерживайте для других опций",
+            "attr":{
+                "priority":"translate"
+            }
+        }
+    ]
+}

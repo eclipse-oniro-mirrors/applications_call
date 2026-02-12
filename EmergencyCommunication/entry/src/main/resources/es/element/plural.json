@@ -1,0 +1,384 @@
+{
+    "plural":[
+        {
+            "name":"EarthquakeWarningTitle2",
+            "value":[
+                {
+                    "quantity":"one",
+                    "value":"Distancia del epicentro %d kilómetro",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"other",
+                    "value":"Distancia del epicentro %d kilómetros",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"EarthquakeKilometer",
+            "value":[
+                {
+                    "quantity":"one",
+                    "value":"%d km",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"other",
+                    "value":"%d km",
+                    "attr":{
+                        "priority":"LT"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"Sos_emergency_notice_fiveTimes",
+            "value":[
+                {
+                    "quantity":"one",
+                    "value":"Pulsa el botón de encendido/apagado %d vez para hacer una llamada de emergencia.",
+                    "attr":{
+                        "priority":"LT"
+                    }
+                },
+                {
+                    "quantity":"other",
+                    "value":"Pulsa el botón de encendido/apagado %d veces seguidas para hacer una llamada de emergencia.",
+                    "attr":{
+                        "priority":"LT"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"PermissionDescriptionContent_1",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"Este servicio requiere %d permisos. Puedes revocarlos en cualquier momento desde Ajustes > Aplicaciones y servicios > Más aplicaciones > Emergencia SOS > Ubicación.",
+                    "attr":{
+                        "priority":"LT"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"Este servicio requiere %d permiso. Puedes revocarlo en cualquier momento desde Ajustes > Aplicaciones y servicios > Más aplicaciones > Emergencia SOS > Ubicación.",
+                    "attr":{
+                        "priority":"LT"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"Sos_Auto_Call_Detail",
+            "value":[
+                {
+                    "quantity":"one",
+                    "value":"Si pulsas el botón de encendido/apagado %d vez, tu dispositivo llamará a tus contactos de emergencia hasta que uno de ellos responda y reproducirá un mensaje SOS pregrabado.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"other",
+                    "value":"Si pulsas el botón de encendido/apagado %d veces, tu dispositivo llamará a tus contactos de emergencia hasta que uno de ellos responda y reproducirá un mensaje SOS pregrabado.",
+                    "attr":{
+                        "priority":"LT"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"Sos_Permission_Description_1",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"Este servicio requiere %d permisos. Puedes revocarlos en cualquier momento desde Ajustes > Aplicaciones y servicios > Más aplicaciones > Emergencia SOS > Ubicación.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"Este servicio requiere %d permiso. Puedes revocarlo en cualquier momento desde Ajustes > Aplicaciones y servicios > Más aplicaciones > Emergencia SOS > Ubicación.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"Earthquake_second",
+            "value":[
+                {
+                    "quantity":"one",
+                    "value":"%d segundo",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"other",
+                    "value":"%d segundos",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"Sos_Auto_Send_info_Detail",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"Si pulsas rápidamente el botón de encendido/apagado %d veces, tu dispositivo enviará a tus contactos de emergencia un mensaje SOS con tu ubicación.",
+                    "attr":{
+                        "priority":"LT"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"Si pulsas el botón de encendido/apagado %d vez, tu dispositivo enviará un mensaje SOS con tu ubicación a tus contactos de emergencia.",
+                    "attr":{
+                        "priority":"LT"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"Sos_Fall_Down_Permission_Description",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"Este servicio requiere %d permisos. Puedes revocarlos en cualquier momento desde Ajustes > Aplicaciones y servicios > Más aplicaciones > Emergencia SOS > Ubicación.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"Este servicio requiere %d permiso. Puedes revocarlo en cualquier momento desde Ajustes > Aplicaciones y servicios > Más aplicaciones > Emergencia SOS > Ubicación.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"Sos_Car_Accident_Permission_Description",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"Este servicio requiere %d permisos. Puedes revocarlos en cualquier momento desde Ajustes > Aplicaciones y servicios > Más aplicaciones > Emergencia SOS > Ubicación.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"Este servicio requiere %d permiso. Puedes revocarlo en cualquier momento desde Ajustes > Aplicaciones y servicios > Más aplicaciones > Emergencia SOS > Ubicación.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"Sos_Fall_Down_Auto_Call_for_Help_Description",
+            "value":[
+                {
+                    "quantity":"one",
+                    "value":"Después de una cuenta atrás de %d segundo, se llamará a tus contactos de emergencia hasta que uno de ellos responda y se reproducirá un mensaje SOS grabado previamente. También recibirán un mensaje SOS con tu ubicación actual.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"other",
+                    "value":"Después de una cuenta atrás de %d segundos, se llamará a tus contactos de emergencia hasta que uno de ellos responda y se reproducirá un mensaje SOS grabado previamente. También recibirán un mensaje SOS con tu ubicación actual.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"Sos_Car_Accident_Auto_Call_for_Help_Description",
+            "value":[
+                {
+                    "quantity":"one",
+                    "value":"Después de una cuenta atrás de %d segundo, se llamará a tus contactos de emergencia hasta que uno de ellos responda y se reproducirá un mensaje SOS grabado previamente. También recibirán un mensaje SOS con tu ubicación actual.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"other",
+                    "value":"Después de una cuenta atrás de %d segundos, se llamará a tus contactos de emergencia hasta que uno de ellos responda y se reproducirá un mensaje SOS grabado previamente. También recibirán un mensaje SOS con tu ubicación actual.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"auto_answer_call_after_seconds",
+            "value":[
+                {
+                    "quantity":"one",
+                    "value":"Respuesta automática en %d segundo",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"other",
+                    "value":"Respuesta automática en %d segundos",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"emergency_rescue_retry_tips",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"Hubo %d reintentos.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"Hubo %d reintento.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"emergency_rescue_auto_send_rescue_message_all",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"Faltan %d segundos para que se te redirija y puedas enviar un mensaje SOS.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"Falta %d segundo para que se te redirija y puedas enviar un mensaje SOS.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"emergency_rescue_send_rescue_message",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"Ir a enviar mensaje SOS (%d)",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"Ir a enviar mensaje SOS (%d)",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"emergency_rescue_exit_once_content",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"Después de salir, no podrás contactar con el personal de rescate durante %d minutos. Asegúrate de estar a salvo antes de salir.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"Después de salir, no podrás contactar con el personal de rescate durante %d minuto. Asegúrate de estar a salvo antes de salir.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"emergency_rescue_message_over_word_tips",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"%d caracteres por encima del límite",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"%d carácter por encima del límite",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"emergency_rescue_send_immediately",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"Enviar mensaje SOS (%d)",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"Enviar mensaje SOS (%d)",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"emc_rescue_permission_notice_content_1",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"Este servicio requiere %d permisos:",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"Este servicio requiere %d permiso:",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        }
+    ]
+}

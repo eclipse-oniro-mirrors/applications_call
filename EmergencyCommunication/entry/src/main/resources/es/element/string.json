@@ -1,0 +1,2510 @@
+{
+    "string":[
+        {
+            "name":"contactsWarnContent",
+            "value":"Añadir contactos de emergencia puede ayudar a los socorristas en caso de emergencia. Cualquiera puede leer esta información sin desbloquear tu dispositivo.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"auto_send_earthquake_alarm_message",
+            "value":"Alertas de terremotos",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"list_learn_about_emergency_shelters",
+            "value":"Busca refugios de emergencia cercanos.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Historical_warning_information",
+            "value":"Alertas anteriores",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeLocationLongitudeEast",
+            "value":"(%2$s° N, %1$s° O)",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"address",
+            "value":"Dirección",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"sos_permissions_tips_of_auto_send_sms",
+            "value":"Para otorgar acceso a la ubicación manualmente, selecciona “Ubicación precisa” en Ajustes > Aplicaciones y servicios > Más aplicaciones > Emergencia SOS > Ubicación.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeNext",
+            "value":"Ver siguiente sugerencia",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"alarm_close_dialog_remind_title",
+            "value":"Nota",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"drugStatus",
+            "value":"Condiciones médicas e información adicional",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"emergencyCallsOnly",
+            "value":"Solo llamadas de emergencia",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"GET_APPROXIMATELY_LOCATION",
+            "value":"Se utiliza para obtener tu ubicación aproximada.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"EarthquakeMagnitude",
+            "value":"Magnitud",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"aml_permission_location_info",
+            "value":"Se utiliza para obtener información precisa de tu ubicación y facilitar servicios de rescate más eficaces en caso de emergencia.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_Location_Detail",
+            "value":"Este servicio requiere conexión a %1$s y el permiso de %2$s. También necesita leer y cargar/transferir la información de tu ubicación y número de teléfono. La finalidad es facilitar la prestación de servicios de rescate de emergencia. Si activas esta opción, aceptas estos términos. Para conocer más detalles acerca de cómo se procesa tu información personal, consulta la %3$s y el %4$s.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"clearInfo",
+            "value":"¿Eliminar toda la información y los contactos?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"list_dial_emergency_contact_number",
+            "value":"Gestiona tus contactos de emergencia.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"button_agree",
+            "value":"Acepto",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Emergency_message_without_location",
+            "value":"[Emergencia SOS]\nHay una emergencia y necesito tu ayuda. Has recibido esta notificación porque estás en mi lista de contactos de emergencia. Es posible que no pueda responder en este momento.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"notAdded",
+            "value":"Ninguno",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"drugPlacement",
+            "value":"Por ejemplo, lisinopril o aspirina",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"AMBULANCE",
+            "value":"Ambulancia",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"no",
+            "value":"No",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"sendSmsSuccess",
+            "value":"Mensaje enviado.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_info",
+            "value":"Mensaje SOS automático",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"bloodType",
+            "value":"Grupo sanguíneo",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"editEmergencyContact",
+            "value":"Editar contactos de emergencia",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Disclaimer_Instructions",
+            "value":"",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"removecontact",
+            "value":"¿Eliminar contacto de emergencia?",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"EmergencyWarningSettings_7",
+            "value":"Declaración acerca de Alertas de terremotos y la privacidad",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"EmergencyWarningSettings_8",
+            "value":"Aviso de permisos",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"stop_share_location_prompt_content",
+            "value":"Si cierras la aplicación ahora, se dejarán de enviar mensajes SOS a tus contactos de emergencia. ¿Quieres cerrar?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EmergencyWarningSettings_4",
+            "value":"Localización",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EmergencyWarningSettings_2",
+            "value":"Internet",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"aml_switch_title",
+            "value":"",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"exit",
+            "value":"Cerrar",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"car_accident_auto_call_for_help_title",
+            "value":"SOS automático por accidente",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"button_agree_and_open",
+            "value":"Aceptar y habilitar",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"emergencyInfromation",
+            "value":"¡Emergencia!",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"EarthquakeWarningTitle1",
+            "value":"¡Terremoto! ¡Busca refugio!",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"earthquake_shelter_setting_dialog",
+            "value":"No se han encontrado aplicaciones de mapas compatibles. Busca un lugar seguro cerca.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"earthquake_problem_feedback",
+            "value":"Se utiliza para informar de problemas relacionados con las alertas de terremotos.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeWarningTitle3",
+            "value":"Mantén la calma y busca un espacio abierto o un lugar seguro para refugiarte. Evita los ascensores y los objetos colgantes.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeArrivingLongTips",
+            "value":"Se iniciará una cuenta atrás y tu dispositivo vibrará. Debes buscar un refugio cercano o trasladarte a un espacio abierto lo antes posible.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"fullName",
+            "value":"Nombre completo",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeDistance",
+            "value":"Distancia del epicentro",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Permission_Title_1",
+            "value":"Permisos de Notificación de ubicación de emergencia",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Permission_Title_2",
+            "value":"Permisos de Mensaje SOS automático",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Permission_Description_4",
+            "value":"Mensajes",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Sos_Permission_Description_3",
+            "value":"Se utiliza para obtener la ubicación precisa de tu dispositivo y enviarla a tus contactos de emergencia cuando se activa Emergencia SOS.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"emergency_number_alarm",
+            "value":"Alarma personal",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Permission_Description_5",
+            "value":"Se utiliza para notificar automáticamente a tus contactos por SMS cuando Emergencia SOS se activa.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"clear",
+            "value":"Eliminar",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Permission_Description_2",
+            "value":"Este permiso se utiliza para acceder a la ubicación precisa del dispositivo, lo que permite proporcionar servicios de rescate más efectivos en casos de emergencia.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"list_quickly_show_emergency_information",
+            "value":"Tu información personal de emergencia se puede ver en la pantalla en el caso de una emergencia.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"getLocationService",
+            "value":"¿Habilitar el acceso a la ubicación automática?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"car_accident_detection_disclaimer_content_one",
+            "value":"Si el dispositivo detecta un accidente de coche grave, llamará automáticamente a tus contactos de emergencia y enviará un mensaje SMS con tu ubicación. Asegúrate de que tus contactos de emergencia conozcan esta función, de modo de asegurarte de que estos mensajes no se ignoren ni malinterpreten.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"button_open",
+            "value":"Habilitar",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"aml_permission_message_info",
+            "value":"Se utiliza para enviar mensajes de Emergencia SOS.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"continue",
+            "value":"Aceptar",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"allergiesPlacement",
+            "value":"Por ejemplo, cacahuetes o polen",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"getLocation",
+            "value":"Pulsa para obtener ubicación",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"notificationSwitchDialogContent",
+            "value":"Para recibir alertas de terremotos, permite que Emergencia SOS te envíe notificaciones en los ajustes de la aplicación.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"EarthquakeCenter",
+            "value":"Epicentro",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"aml_short_notification",
+            "value":"<body><span style='subtitle'>Este servicio requiere conexión a Internet y el permiso de Localización. Además, debe habilitar los Servicios de localización, y leerá y cargará/transferirá el número de teléfono, la información de ubicación y el IMEI de este dispositivo. Si activas este selector, aceptas estos términos. Para conocer más detalles sobre cómo se procesa tu información personal, consulta la </span><span style='privacyStatement'>Declaración acerca de Servicios de localización de emergencia de  y la privacidad</span><span style='subtitle'> y el </span><span style='permission'>Aviso de permisos</span><span style='subtitle'>.</span></body>",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"addEmergencyContact",
+            "value":"Añadir contactos de emergencia",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"permissionConfirm",
+            "value":"Aceptar",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"emergency_location_service_text",
+            "value":"La información de tu ubicación se utilizará con Emergencia SOS. Este servicio requiere conexión a Internet y el permiso de Localización. También necesita leer y cargar/transferir información de ubicación y tu número de teléfono, que se utilizarán para proporcionar servicios de rescate de emergencia. Si activas este selector, aceptas estos términos. Para conocer más detalles sobre cómo se procesa tu información personal, consulta la <a link=\"privacyStatement\">Declaración acerca de Notificación de ubicación de emergencia y la privacidad</a> y el <a link=\"permissionStatement\">Aviso de permisos</a>.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"aml_permission_info_title",
+            "value":"Este servicio requiere el siguiente permiso:",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"System",
+            "value":"Sistema",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"add",
+            "value":"Añadir",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"already_in_contacts",
+            "value":"%s ya es un contacto de emergencia.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"notEmergencyNumberMsg",
+            "value":"No se ha podido realizar la llamada. %s no es un número de emergencia.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"peopleAdded",
+            "value":"%d",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"no_service_message_and_call_unavailable",
+            "value":"No hay servicio. Los servicios de SMS y teléfono no están disponibles.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"remove",
+            "value":"Eliminar",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"sos_calling_summary",
+            "value":"Llamada en curso. Pulsa para unirte.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"EarthquakeInfoTitle",
+            "value":"Detalles de la alerta",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"earthquake_warning_summary",
+            "value":"Recibir alertas tempranas en caso de terremoto.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"permission_reason_contacts",
+            "value":"Se utiliza para gestionar contactos.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"medicalInfo",
+            "value":"Médica",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"emergency_number_traffic",
+            "value":"Accidente de tráfico",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"drugStatusPlacement",
+            "value":"Por ejemplo, asma",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"earthquake_warning_notification_text_without_device_address",
+            "value":"Se ha detectado un terremoto de magnitud %2$s en %1$s. Se prevé %3$s en tu área.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"gettingLocation",
+            "value":"Obteniendo ubicación...",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeLocationLatitudeSouth",
+            "value":"(%2$s° S, %1$s° O)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"sendNow",
+            "value":"Aceptar",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"drug",
+            "value":"Medicación",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"teaching_dialog_complete",
+            "value":"Aceptar",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"closeLocationService",
+            "value":"¿Deshabilitar acceso a la ubicación automática?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"share_location_background_tips",
+            "value":"Enviando ubicación a contactos de emergencia",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeArriving",
+            "value":"Antes de la llegada de ondas sísmicas",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"unable_auto_dial_dialog_title",
+            "value":"No se puede llamar para pedir ayuda",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"addContact",
+            "value":"Añadir contacto",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"determine",
+            "value":"Aceptar",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"car_accident_detection_disclaimer_content_four",
+            "value":"Esta función solo está disponible en China continental.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeUpdate",
+            "value":"Fecha y hora del terremoto",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"yes",
+            "value":"Sí",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"list_learn_about_emergency_shelters_title",
+            "value":"Encontrar refugio",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"oobe_EarthquakeWarningServer_content",
+            "value":"Este servicio puede enviarte una alerta cuando se detecta un terremoto. Requiere conexión a Internet y el permiso de Localización. También necesita acceder a información de tu dispositivo y ubicación. Si activas este selector, acepta estos términos, así como la <a link=\"disclaimStatement\">Exención de responsabilidad</a>, la <a link=\"privacyStatement\">Declaración acerca de Alertas de terremotos y la privacidad</a> y el <a link=\"permissionStatement\">Aviso de permisos</a>.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"send_sms_notify_emergency_contact",
+            "value":"También se enviará un mensaje a tus contactos de emergencia",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeWarningTitle1_2",
+            "value":"¡Terremoto! ¡Busca refugio!",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"earthquake_advanced",
+            "value":"Ajustes avanzados",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Turn_on_Emergency_Information_and_Warning_text",
+            "value":"Se requiere la información de tu ubicación para proporcionar alertas de terremotos en tu área.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"warning_area_and_function_text",
+            "value":"Cobertura y descripción de la función",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"important_state_title",
+            "value":"Importante",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"car_accident_detection_disclaimer",
+            "value":"Exención de responsabilidad de Detección de accidente de coche",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Permission_denied_to_send_sms",
+            "value":"Esta aplicación no tiene permiso para enviar mensajes SMS.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_emergency_title",
+            "value":"Emergencia SOS",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Historical_warning_information_explain",
+            "value":"Ve todas las alertas que has recibido.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_Location_Detail_Active_two",
+            "value":"Aviso de permisos",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeWarningServer",
+            "value":"Alertas de terremotos",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeLocation",
+            "value":"Epicentro",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"noLocationPermissionTitle",
+            "value":"Emergencia SOS requiere el permiso de Localización",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_Location_Info",
+            "value":"Envía tu ubicación cifrada a la policía cuando realizas una llamada de emergencia (solo para China continental).",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"removeContact",
+            "value":"¿Eliminar a %s de los contactos de emergencia?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Call",
+            "value":"Llamada SOS automática",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_not_support",
+            "value":"Emergencia SOS no está disponible cuando las Comunicaciones por satélite Tiantong están habilitadas.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_Location_Detail_Active_one",
+            "value":"Declaración acerca de Notificación de ubicación de emergencia y la privacidad",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"no_sim_message_and_call_unavailable",
+            "value":"No hay SIM. Los servicios de SMS y teléfono no están disponibles.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"closeLocationService_title",
+            "value":"Deshabilitar localización automática",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"sos_is_auto_calling",
+            "value":"Llamando de forma automática...",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Call_Test",
+            "value":"Vista previa de mensaje SOS",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"InfoEdit_edits_info",
+            "value":"Editar",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"warnInfo",
+            "value":"¿Todo listo? Volver a %s.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"sendSmsFail",
+            "value":"No se puede enviar el mensaje SMS (motivo desconocido).",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_Location_Detail_Dark_one",
+            "value":"Internet",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_Location_When_Call_Detail",
+            "value":"Permitir que el sistema obtenga tu ubicación cuando inicies una llamada de emergencia.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"FIRE",
+            "value":"Bomberos",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeFelling1",
+            "value":"Temblores leves",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"warnContent",
+            "value":"Esta información puede ayudar a los socorristas en caso de emergencia.\n\nSe almacena localmente y cualquier persona puede acceder a ella sin desbloquear este dispositivo. También puedes configurar esta opción en Contactos > Mi tarjeta.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeFelling3",
+            "value":"Daño significativo",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeFelling2",
+            "value":"Temblor fuerte",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Permission_Instructions",
+            "value":"Permisos de Alertas de terremotos",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeArrived",
+            "value":"Después de la llegada de ondas sísmicas",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeAlarmTest",
+            "value":"Obtener vista previa de alerta",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"define_disclaimer",
+            "value":"Exención de responsabilidad",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"unable_auto_dial_dialog_summary",
+            "value":"Añade al menos un contacto de emergencia primero.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"clearAll",
+            "value":"Eliminar todo",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"remove_last_emergency_contact_prompt_content",
+            "value":"¿Quieres eliminar a %s de tus contactos de emergencia? Ya no podrán recibir llamadas ni mensajes SOS automáticos.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"closeLocationServiceMsg",
+            "value":"Si se deshabilita, el dispositivo no mostrará automáticamente tu ubicación cuando realices una llamada de emergencia.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"CANCEL",
+            "value":"Cancelar",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"sos_is_playing_recording",
+            "value":"Reproduciendo mensaje SOS. Pulsa para acceder a la llamada.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"personalInfo",
+            "value":"Personal",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_emergency_personal_info",
+            "value":"Configura tu información personal y médica.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"sendMsgNotice",
+            "value":"Puedes enviar un mensaje de texto a este contacto para hacerle saber que le has añadido como un contacto de emergencia.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"emergencyInfromationText",
+            "value":"Se ha detectado un terremoto de magnitud %2$s en %1$s. Se prevé/n %4$s en %3$s.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"noLocationPermissionDesc",
+            "value":"Se utiliza para acceder a tu ubicación durante una llamada de emergencia.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"sendMsg",
+            "value":"Te he añadido como contacto de emergencia. En caso de emergencia, es posible que recibas un mensaje SOS mío pidiendo ayuda. [Emergencia SOS de ]",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"emergencyContact",
+            "value":"Contactos de emergencia",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeInfofrom",
+            "value":"Fuente: %s",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"popup_button_gotosettings",
+            "value":"Ir a Ajustes",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"POLICE",
+            "value":"Policía",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"importantDialogContent_8",
+            "value":"aquí",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"earthquake_location_notice",
+            "value":"Para otorgar acceso a la ubicación manualmente, selecciona “Permitir todo el tiempo” y “Ubicación precisa” en Ajustes > Aplicaciones y servicios > Más aplicaciones > Emergencia SOS > Ubicación.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeAlarmTesting",
+            "value":"Finalizar vista previa (%s)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"importantDialogContent_4",
+            "value":"Si pulsas Acepto, indicas que aceptas el servicio de “Alertas de terremotos” y aceptas la %1$s. Para conocer más detalles acerca de cómo se procesa tu información personal, consulta la %2$s y el %3$s. Para más información, pulsa %4$s.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"emergency_location_service_title",
+            "value":"Notificación de ubicación de emergencia",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"editEmergencyInfo",
+            "value":"Editar información de emergencia",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"The_position_switch_off_text",
+            "value":"No recibirás alertas antes de los terremotos si deshabilitas esta opción. ¿Deshabilitar de todos modos?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"earthquake_shelter_setting_notice",
+            "value":"Instala Mapas para buscar refugios.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"getLocationMsg1",
+            "value":"Para ayudarte a informar de tu ubicación en caso de emergencia, tu dispositivo mostrará automáticamente tu ubicación cuando realices una llamada de emergencia. Puedes pulsar la ubicación para verla en una aplicación de mapas.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeLocationLongitudeWest",
+            "value":"(%2$s° S, %1$s° E)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"remove_emergency_contact_text",
+            "value":"Eliminar contacto de emergencia",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"noStated",
+            "value":"Sin especificar",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"personalEmergencyInfo",
+            "value":"Información de emergencia",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_info_Detail_notice_dark_one",
+            "value":"Mensajes",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_info_Detail_notice_dark_Two",
+            "value":"Localización",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"earthquake_alarm_notify",
+            "value":"Alertas de emergencia",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Emergency_message",
+            "value":"[Emergencia SOS]\nHay una emergencia y necesito tu ayuda. Has recibido esta notificación porque estás en mi lista de contactos de emergencia.\nMi ubicación actual es: %s. Es posible que no pueda responder en este momento.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"PermissionDescriptionContent_3",
+            "value":"Se utiliza para obtener la ubicación precisa de tu dispositivo para que te puedan enviar alertas de terremotos.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"emergencyContacts",
+            "value":"Números de emergencia",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"The_position_switch_off",
+            "value":"Habilitar ubicación",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"organDonor",
+            "value":"Donante de órganos",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_alter_title",
+            "value":"Vista previa de alerta",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"PermissionDescriptionContent_2",
+            "value":"Localización",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_info_Detail_notice_all",
+            "value":"Este servicio requiere los permisos de %1$s y %2$s y necesita leer la información de ubicación. Si activas este selector, aceptas estos términos. Para obtener más detalles, consulta el %3$s y el %4$s.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_Location_When_Call",
+            "value":"Obtener ubicación automáticamente",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_info_Detail_notice_active_two",
+            "value":"Aviso de permisos",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"unable_auto_dial_dialog_add",
+            "value":"Añadir",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeLocationLatitudeNorth",
+            "value":"(%2$s° N, %1$s° E)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"unable_send_help_info",
+            "value":"No se puede enviar el mensaje",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"GET_LOCATION_IN_BACKGROUND",
+            "value":"Se utiliza para obtener información de ubicación cuando se ejecuta en segundo plano.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"aml_permission_dialog_title",
+            "value":"",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"getLocationFailed",
+            "value":"No se puede obtener la ubicación. Pulsa para volver a intentarlo.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"importantDialogContent_2",
+            "value":"",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"importantDialogContent_3",
+            "value":"aquí",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"notifyContact",
+            "value":"¿Notificar al contacto?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"emergencyInfo",
+            "value":"Información de emergencia",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_info_Detail_notice_active_one",
+            "value":"Declaración acerca de Mensaje SOS automático y la privacidad",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EmergencyWarningSettings_all",
+            "value":"Este servicio requiere conexión a %1$s y el permiso de %2$s. También necesita leer y cargar/transferir información de ubicación para proporcionar alertas de terremotos. Si activas este selector, aceptas estos términos, así como la %3$s. Para conocer más detalles acerca de cómo se procesa tu información personal, consulta la %4$s y el %5$s.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"notification_switch_dialog_content",
+            "value":"La finalidad es enviarte alertas de terremoto. Puedes habilitar las notificaciones en Ajustes.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"aml_switch_summary",
+            "value":"Envía automáticamente tu ubicación a los servicios de emergencia cuando realices una llamada de emergencia o envíes un mensaje de emergencia. Sujeto a disponibilidad.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"allergies",
+            "value":"Alergias",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"function_settings_text",
+            "value":"Ajustes",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_Location",
+            "value":"Notificar ubicación",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"rightCall",
+            "value":"Desliza el dedo hacia la derecha para llamar al %s",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"unable_auto_dial_and_send_sms_dialog_title",
+            "value":"No se puede llamar ni enviar mensajes",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"EarthquakeIntensity",
+            "value":"Intensidad (%s)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"notification_switch_dialog_title",
+            "value":"Emergencia SOS desea enviarte notificaciones",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeArrivedLongTips",
+            "value":"Sonará una alarma cuando se detecten ondas sísmicas. Verás opciones para buscar refugio, contactar con ayuda y mostrar información personal de emergencia.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"car_accident_detection_statement_on_service_and_privacy",
+            "value":"Declaración acerca de SOS automático por accidente y la privacidad",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fall_down_detection_disclaimer",
+            "value":"Exención de responsabilidad por detección de caídas",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"cannot_enable_fall_down_sos",
+            "value":"No se ha podido habilitar SOS automático por caída",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"car_accident_detection_disclaimer_in_short_notice",
+            "value":"Exención de responsabilidad de Detección de accidente de coche",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fall_down_message",
+            "value":"[Emergencia SOS – Detección de caídas]\nMi teléfono ha detectado que me he caído y necesito tu ayuda. Se te notifica porque eres uno de mis contactos de emergencia.\nMi ubicación actual es: %s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_info_Detail_notice_renew",
+            "value":"Este servicio requiere el permiso de %1$s y necesita leer la información de ubicación. Al activar esta opción, aceptas estos términos. Para obtener más información, consulta el %2$s y el %3$s.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"cannot_enable_car_accident_sos",
+            "value":"No se ha podido habilitar SOS automático por accidente",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"car_accident_sos_message_without_location",
+            "value":"[Emergencia SOS – Accidente de coche]\nMi teléfono ha detectado que he sufrido un accidente y necesito tu ayuda. Se te notifica porque eres uno de mis contactos de emergencia.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fall_down_detection_disclaimer_content_one",
+            "value":"Si el dispositivo detecta una caída, llamará automáticamente a tus contactos de emergencia y enviará un mensaje SMS con tu ubicación. Asegúrate de que tus contactos de emergencia conozcan esta función para garantizar que estos mensajes no se ignoren ni se malinterpreten.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fall_down_message_without_location",
+            "value":"[Emergencia SOS – Detección de caídas]\nMi teléfono ha detectado que me he caído y necesito tu ayuda. Se te notifica porque eres uno de mis contactos de emergencia.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"car_accident_permission_title",
+            "value":"Permisos de SOS automático por accidente",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"car_accident_sos_message",
+            "value":"[Emergencia SOS – Accidente de coche]\nMi teléfono ha detectado que he sufrido un accidente de coche y necesito tu ayuda. Se te notifica porque eres uno de mis contactos de emergencia.\nMi ubicación actual es: %s.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fall_down_auto_call_for_help_title",
+            "value":"SOS automático por caída",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fall_down_detection_disclaimer_content_two",
+            "value":"Esta función interpreta los datos de los sensores de tu dispositivo. Los patrones de datos del sensor que parecen caídas pueden activar esta función involuntariamente. En algunos casos, es posible que una caída no genere datos del sensor capaces de activar esta función. Ten en cuenta también que la conectividad y el estado del dispositivo pueden afectar a su capacidad para hacer llamadas telefónicas y enviar mensajes.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fall_down_trigger_prompt",
+            "value":"Parece que te has caído a la/s %1$s. El teléfono realizará una llamada de emergencia si no respondes.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fall_down_auto_call_notice_all",
+            "value":"Este servicio requiere el permiso de %1$s para acceder a tu ubicación. Al activar esta opción, aceptas estos términos, así como la %2$s. Para obtener más detalles sobre cómo se procesa tu información personal, consulta la %3$s y el %4$s.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fall_down_detection_disclaimer_in_short_notice",
+            "value":"Exención de responsabilidad por detección de caídas",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"sos_is_playing_recording_1",
+            "value":"Reproduciendo mensaje SOS.\nPulsa para acceder a la llamada.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"car_accident_trigger_prompt",
+            "value":"Parece que has tenido un accidente de coche a la/s %1$s. El teléfono realizará una llamada de emergencia si no respondes.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fall_down_detection_statement_on_service_and_privacy",
+            "value":"Declaración acerca de SOS automático por caída y la privacidad",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"car_accident_auto_call_notice_all",
+            "value":"Este servicio requiere el permiso de %1$s para acceder a tu información de ubicación. Al activar esta opción, aceptas estos términos, así como la %2$s. Para obtener más detalles sobre cómo se procesa tu información personal, consulta la %3$s y el %4$s.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fall_down_permission_title",
+            "value":"Permisos de SOS automático por caída",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_location_service_text_new",
+            "value":"Cuando realizas una llamada SOS, este servicio envía tu ubicación cifrada a los servicios de emergencia para que puedan ayudarte mejor. Este servicio requiere conexión a Internet y el permiso de Localización, y leerá y cargará/transferirá tu información de ubicación y número de teléfono para enviarlos a los servicios de emergencia. Si activas este selector, indicas que aceptas los términos mencionados. Para obtener detalles sobre los permisos que requiere este servicio, consulta el <a link=\"permissionStatement\">Aviso de permisos</a>.\nEste servicio lo proporcionan los terceros que se mencionan a continuación. Para obtener detalles sobre el procesamiento de información personal, consulta:\n${param1}. Declaración acerca de Servicios de localización de emergencia y la privacidad () de la Academia China de Tecnología de la Información y las Comunicaciones (CAICT)\n${param2}. Política de privacidad de LocationNet () de Shenzhen LocationNet Technology Co., Ltd.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Location_Net_Privacy",
+            "value":"Política de privacidad de LocationNet",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_Location_Detail_new",
+            "value":"Este servicio requiere conexión a %1$s y el permiso de %2$s, y leerá y cargará/transferirá tu información de ubicación y tu número de teléfono para enviarlos a servicios de emergencia de terceros. Al activar esta opción, aceptas estos términos. Para obtener más información sobre los permisos que requiere este servicio, consulta el %3$s.\nEste servicio lo proporcionan los terceros que se indican a continuación. Para más información sobre el procesamiento de datos personales, consulta la:\n%4$s. Academia China de Tecnologías de la Información y las Comunicaciones (CAICT). %5$s\n%6$s. %7$s de Shenzhen LocationNet Technology Co., Ltd.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Emergency_Position_Service_Privacy",
+            "value":"Declaración acerca de Servicios de localización de emergencia y la privacidad",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"open_phone_to_emergency_calls",
+            "value":"Abre para llamadas de emergencia",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"location_south_east",
+            "value":"%1$s S %2$s E",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"location_north_west",
+            "value":"%1$s N %2$s O",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"car_accident_detection_disclaimer_content_two",
+            "value":"Esta función interpreta los datos de los sensores de tu dispositivo. Los patrones de datos de los sensores que se asemejan a accidentes de tráfico pueden activar esta función de forma involuntaria. En algunos casos, es posible que un accidente no genere datos del sensor capaces de activar esta función. Ten en cuenta también que la conectividad y el estado del dispositivo pueden afectar a su capacidad para hacer llamadas telefónicas y enviar mensajes.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"unsupport_satellite_card_content",
+            "value":"No es posible enviar los mensajes durante llamadas por satélite.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fall_down_detection_disclaimer_content_four",
+            "value":"Esta función solo está disponible en China continental.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"car_accident_detection_disclaimer_content_three",
+            "value":" no se hace responsable de los daños que puedan producirse debido a las mediciones de los sensores, la conectividad de la red o el estado del dispositivo, o debido a que se ignoren o malinterpreten los mensajes.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"location_north_east",
+            "value":"%1$s N %2$s E",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"address_details",
+            "value":"Dirección: %s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fall_down_detection_disclaimer_content_three",
+            "value":"",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"location_south_west",
+            "value":"%1$s S %2$s O",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"position",
+            "value":"Ubicación: %s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite",
+            "value":"Mensajes por satélite Tiantong",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"NumberEdit_delete",
+            "value":"Se ha eliminado %s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"InfoEdit_back",
+            "value":"Volver",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"one_finger_double_click",
+            "value":"Pulsar dos veces para activar",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"positioning",
+            "value":"Localización",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"InfoEdit_show_dialpad",
+            "value":"Mostrar teclado",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"InfoEdit_delete",
+            "value":"Eliminar",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"not_available",
+            "value":"No se puede usar",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"InfoEdit_edit",
+            "value":"Más opciones",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"ContactsEdit_close",
+            "value":"Eliminar contacto de emergencia",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"InfoEdit_dail",
+            "value":"Llamar",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_slogan",
+            "value":"Equipo de rescate",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"phrases_button",
+            "value":"Mensajes rápidos",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_submit_message_subtitle1",
+            "value":"Puedes informar de tu ubicación y situación a los dispositivos de los equipos de rescate cercanos.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"rescue_signal_level_middle",
+            "value":"Intensidad de señal: media",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_save_power_tips",
+            "value":"Para ahorrar batería, apaga la pantalla mientras esperas recibir ayuda.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"rescue_message_communication_banner_content",
+            "value":"Pulsa para informar de tu situación.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"rescue_signal_level_strong",
+            "value":"Intensidad de señal: fuerte",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"rescue_message_sending_banner_title",
+            "value":"Enviando mensaje…",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"rescue_message_communication_banner_title",
+            "value":"Comunicación con el equipo de rescate",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"rescue_signal_level_low",
+            "value":"Intensidad de señal: débil",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_exit_once_title",
+            "value":"¿Salir de rescate de emergencia?",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_service_title",
+            "value":"SOS fuera de red",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_disaster_situation_title",
+            "value":"Situación",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_message_send_failed_tips",
+            "value":"Señal inestable. El mensaje se reenviará cuando se restablezca la señal.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_receive_d2d_subtitle1",
+            "value":"Puedes informar de tu ubicación y situación a los dispositivos de los equipos de rescate cercanos.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"send_button",
+            "value":"Enviar",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_submit_success_title",
+            "value":"Mensaje entregado",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_team",
+            "value":"Equipo de rescate",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"keyboard_button",
+            "value":"Teclado",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_location_title",
+            "value":"Ubicación",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_sending",
+            "value":"Enviando",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_exit_completely_content",
+            "value":"Si desactivas esta función, el dispositivo no podrá buscar equipos de rescate cercanos cuando no haya cobertura de red. Se recomienda mantenerla activada.\n\n¿Confirmas desactivarla?",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"disaster_situation_fire",
+            "value":"Incendio",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_sended_status",
+            "value":"Entregado",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"message_textarea_placeholder",
+            "value":"Describe tu situación",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_view_details",
+            "value":"Ver detalles",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_my_rescue_info",
+            "value":"Detalles de SOS",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_get_location_failed",
+            "value":"Error al obtener la ubicación",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_sending_status",
+            "value":"Enviando…",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_exit_current_rescue",
+            "value":"Salir",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"rescue_signal_detected",
+            "value":"Esperando para enviar mensaje…",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_submit_message_title",
+            "value":"Enviar mensaje SOS",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"rescue_message_send_failed_banner_title",
+            "value":"Error al enviar el mensaje",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"rescue_signal_level_none",
+            "value":"Intensidad de señal: sin señal",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_receive_d2d_title",
+            "value":"Señal del equipo de rescate detectada",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"China_Broadnet",
+            "value":"China Broadnet",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"send_position_btn_text",
+            "value":"Enviar información de ubicación",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_wait_for_send",
+            "value":"Pendiente de envío",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"switching_audio_channels",
+            "value":"Cambiar de canal de audio",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"incomingCall",
+            "value":"Llamada entrante",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_call_finish",
+            "value":"Llamada finalizada",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_disclaimer_content_all",
+            "value":"Este servicio requiere el permiso de %1$s y necesita leer tu/s número/s de teléfono, IMEI e información de ubicación. Al activar esta opción, aceptas estos términos, así como la %2$s. Para obtener detalles sobre cómo se procesa tu información personal, consulta la %3$s y el %4$s.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_privacy_statement",
+            "value":"Declaración acerca de Comunicación de emergencia independiente de la red y la privacidad",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fracture",
+            "value":"Fractura",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"building_collapse",
+            "value":"Derrumbe de edificio",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"in_good_status",
+            "value":"En buen estado",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"road_damage",
+            "value":"Deterioro de la carretera",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"surrounding_environment",
+            "value":"Entorno",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_not_select_distress_situation",
+            "value":"No se ha seleccionado la situación",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"flood",
+            "value":"Inundación",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"personal_status",
+            "value":"Estado de salud",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"there_are_children",
+            "value":"Hay niños",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"landslide",
+            "value":"Derrumbe",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"there_are_old_people",
+            "value":"Hay ancianos",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"detected_cellular_signal_dialog_content",
+            "value":"Red móvil disponible. Después de salir, podrás hacer llamadas a través de la red de tu operador.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_describe_distress",
+            "value":"Describe tu situación",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_answer_call_failed",
+            "value":"Error de respuesta.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"unable_to_walk",
+            "value":"No puedo caminar",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"someone_injured",
+            "value":"Personas heridas",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_description",
+            "value":"Cuando esta opción está habilitada, puedes enviar un mensaje SOS al personal de rescate cercano y recibir llamadas de este en áreas sin cobertura de red móvil.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"food_shortage",
+            "value":"Escasez de alimentos",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hypothermia",
+            "value":"Hipotermia",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"head_injury",
+            "value":"Herida en la cabeza",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_submit_success_subtitle1",
+            "value":"El personal de rescate ha recibido tu mensaje SOS. Espera el rescate.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"there_are_women",
+            "value":"Hay mujeres",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"select_disaster_situation",
+            "value":"Selecciona tu situación",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"lose_blood",
+            "value":"Pérdida de sangre",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"trapped",
+            "value":"Personas atrapadas",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_feeling_5",
+            "value":"Altamente destructivo",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_feeling_1",
+            "value":"Sin temblores",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_feeling_2",
+            "value":"Temblor débil",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_feeling_3",
+            "value":"Temblor fuerte",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_feeling_4",
+            "value":"Destructivo",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_info_source",
+            "value":"Alerta emitida por la red de alerta temprana de terremotos de China %s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_warning_info",
+            "value":"Mantén la calma. Tírate al suelo, cúbrete y agárrate fuerte. Si estás al aire libre, dirígete a un espacio abierto. Protege tu cabeza. Evita el uso de ascensores.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_feeling_reminder_1",
+            "value":"No se esperan temblores, mantén la calma",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_feeling_reminder_2",
+            "value":"Se esperan temblores, mantén la calma",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_feeling_reminder_3",
+            "value":"Se esperan temblores, prepárate",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_about_to_arrive",
+            "value":"Inminente llegada de ondas sísmicas",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_feeling_reminder_4",
+            "value":"Se esperan temblores, protégete",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_feeling_reminder_5",
+            "value":"Peligro, protégete",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_warning_canceled",
+            "value":"Se ha levantado la alerta de terremoto.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_source_test",
+            "value":"(Prueba)",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_source_trial_run",
+            "value":"(Ejecución de prueba)",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_arrived",
+            "value":"Han llegado las ondas sísmicas",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_title",
+            "value":"Comunicación de emergencia independiente de la red",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"voiceCall",
+            "value":"Responder llamada del equipo de rescate",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_service_content",
+            "value":"La comunicación de emergencia independiente de la red facilita el suministro de servicios de rescate en caso de emergencia. Este servicio requiere el permiso de Localización y necesita leer tu/s número/s de teléfono, IMEI e información de ubicación para proporcionar servicios relacionados cuando te encuentras fuera del área de cobertura de la red. Al activar esta opción, aceptas estos términos. Para obtener más detalles sobre cómo se procesa tu información personal, consulta la <a link=\"emergencyRescuePrivacyStatement\">Declaración acerca de Comunicación de emergencia independiente de la red y la privacidad</a> y el <a link=\"emcResourcePermissionStatement\">Aviso de permisos</a>.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"additional_info_list_content_1",
+            "value":"%d. Mantén la calma y la compostura. Conserva tus fuerzas.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hanging_up_voice_call",
+            "value":"Finalizar llamada del equipo de rescate",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emc_rescue_current_location",
+            "value":"Ubicación actual: %s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"additional_info_list_content_2",
+            "value":"%d. Prioriza tu seguridad. No te muevas a menos que sea seguro hacerlo.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"additional_info_list_content_3",
+            "value":"%d. Para ahorrar batería, apaga la pantalla mientras esperas recibir ayuda.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"menu_title_additional_info",
+            "value":"Importante",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"exit_emc_rescue_mode_notification_title",
+            "value":"Se ha salido de la comunicación de emergencia",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"search_now_button",
+            "value":"Buscar ahora",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"exit_emc_rescue_mode_notification_content",
+            "value":"Para volver a buscar equipos de rescate cercanos, pulsa “Buscar ahora”.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emc_rescue_permission_notice_content_2",
+            "value":"Se utiliza para obtener la ubicación del dispositivo, de modo tal que pueda enviarse a los equipos de rescate de emergencia cuando estés fuera del área de cobertura de la red.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emc_rescue_location_permission_subtitle",
+            "value":"Localización",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emc_rescue_permission_notice_title",
+            "value":"Permisos de comunicación de emergencia independiente de la red",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"epicenter_location",
+            "value":"Epicentro",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"estimated_intensity",
+            "value":"Intensidad estimada (%s)",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emc_rescue_disclaimer_content_part_1",
+            "value":"Los equipos de rescate especializados, como los departamentos de bomberos, transmiten las señales de rescate de emergencia que busca esta función, con equipamiento especializado.  no tiene control sobre estas señales de rescate ni puede garantizar que los equipos de rescate se trasladen a tu ubicación para proporcionar los servicios correspondientes.\n\n",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emc_rescue_disclaimer_content_part_2",
+            "value":"La función de comunicación de emergencia independiente de la red tiene como único objetivo servir de referencia para ayudarte a evaluar los riesgos de seguridad y tomar decisiones en este aspecto. Esta función solo se utiliza para buscar señales de rescate y no envía señales de socorro de forma activa. La habilitación de esta función no garantiza que los equipos de rescate acudan en tu ayuda. Los equipos de rescate transmiten las señales de rescate con equipamiento especializado. Si tu dispositivo no detecta ninguna señal de rescate, es tu responsabilidad tomar las medidas de seguridad adecuadas en función de tu situación. Si tu dispositivo detecta una señal de rescate, debes informar, con exactitud, de tu situación al personal de rescate. Debes tomar medidas razonables para mantenerte seguro en función del entorno en que te encuentres, tanto antes como después de que los equipos de rescate contacten contigo. Serás el único responsable de todo riesgo o consecuencia que puedan surgir de toda acción que realices sobre la base de la función de comunicación de emergencia independiente de la red.\n\n",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emc_rescue_disclaimer_content_part_3",
+            "value":" no se responsabilizará de ninguna pérdida que pueda producirse si tu dispositivo no recibe señales de rescate ni si tú no recibes ayuda, debido a factores tales como el terreno, los edificios y el tiempo, u otros eventos de fuerza mayor.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergencyCall",
+            "value":"Llamada de emergencia",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_not_support",
+            "value":"Emergencia SOS no está disponible cuando la red satelital Hyacinth está habilitada.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emc_rescue_china_broadnet_brand_tips",
+            "value":"Banda de frecuencias proporcionada por China Broadnet.",
+            "attr":{
+                "priority":"translate"
+            }
+        }
+    ]
+}

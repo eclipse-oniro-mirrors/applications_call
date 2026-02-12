@@ -1,0 +1,42 @@
+{
+  "app": {
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "release",
+        "compileSdkVersion": 23,
+        "compatibleSdkVersion": 20,
+        "targetSdkVersion": 20,
+        "runtimeOS": "OpenHarmony",
+      }
+    ],
+    "signingConfigs": [
+      {
+        "name": "release",
+        "material": {
+          "storeFile": "signature/OpenHarmony.p12",
+          "storePassword": "00000016E5C5260E59096C1279D1CA653642B66F9A38A8E5CBB83E86A870FE646AA3489F7C8B",
+          "keyAlias": "OpenHarmony Application Release",
+          "keyPassword": "000000169AC5B21BADFF2044B67A5895A36058A1D2661BE86B6990EFCF2587703E6805CD2CEF",
+          "signAlg": "SHA256withECDSA",
+          "profile": "signature/callui.p7b",
+          "certpath": "signature/OpenHarmony.cer"
+        }
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}

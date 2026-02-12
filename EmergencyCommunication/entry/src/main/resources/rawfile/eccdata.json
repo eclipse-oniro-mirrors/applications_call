@@ -1,0 +1,30 @@
+{
+  "countries": [
+    {
+      "iso_code": "CN",
+      "eccs": [
+        {
+          "phone_number": "110",
+          "types": "POLICE"
+        },
+        {
+          "phone_number": "120",
+          "types": "AMBULANCE"
+        },
+        {
+          "phone_number": "119",
+          "types": "FIRE"
+        }
+      ]
+    },
+    {
+      "iso_code": "US",
+      "eccs": [
+        {
+          "phone_number": "911",
+          "types": "POLICE"
+        }
+      ]
+    }
+  ]
+}

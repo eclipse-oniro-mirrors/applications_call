@@ -1,0 +1,25 @@
+{
+    "string":[
+        {
+            "name":"watch_permission_history_no_record",
+            "value":"Nincsenek bejegyzések",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"watch_traffic_ranking_the_month",
+            "value":"Mobiladat-forgalom (havi)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"watch_loading",
+            "value":"Betöltés…",
+            "attr":{
+                "priority":"LT"
+            }
+        }
+    ]
+}

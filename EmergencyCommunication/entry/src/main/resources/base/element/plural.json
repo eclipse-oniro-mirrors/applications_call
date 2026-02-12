@@ -1,0 +1,384 @@
+{
+    "plural":[
+        {
+            "name":"PermissionDescriptionContent_1",
+            "value":[
+                {
+                    "quantity":"one",
+                    "value":"This service requires %d permission. You can revoke it at any time by going to Settings > Apps & services > More apps > Emergency SOS > Location.",
+                    "attr":{
+                        "priority":"LT"
+                    }
+                },
+                {
+                    "quantity":"other",
+                    "value":"This service requires %d permissions. You can revoke them at any time by going to Settings > Apps & services > More apps > Emergency SOS > Location.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"EarthquakeKilometer",
+            "value":[
+                {
+                    "quantity":"one",
+                    "value":"%d km",
+                    "attr":{
+                        "priority":"LT"
+                    }
+                },
+                {
+                    "quantity":"other",
+                    "value":"%d km",
+                    "attr":{
+                        "priority":"LT"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"EarthquakeWarningTitle2",
+            "value":[
+                {
+                    "quantity":"one",
+                    "value":"Epicenter %d kilometer away",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"other",
+                    "value":"Epicenter %d kilometers away",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"Earthquake_second",
+            "value":[
+                {
+                    "quantity":"one",
+                    "value":"%d second",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"other",
+                    "value":"%d seconds",
+                    "attr":{
+                        "priority":"LT"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"Sos_emergency_notice_fiveTimes",
+            "value":[
+                {
+                    "quantity":"one",
+                    "value":"Press the Power button %d time to make an emergency call.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"other",
+                    "value":"Press the Power button %d times in rapid succession to make an emergency call.",
+                    "attr":{
+                        "priority":"LT"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"Sos_Auto_Send_info_Detail",
+            "value":[
+                {
+                    "quantity":"one",
+                    "value":"If you press the Power button %d time, your device will send your emergency contacts an SOS message containing your location.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"other",
+                    "value":"If you press the Power button %d times, your device will send your emergency contacts an SOS message containing your location.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"Sos_Auto_Call_Detail",
+            "value":[
+                {
+                    "quantity":"one",
+                    "value":"If you press the Power button %d time, your device will call your emergency contacts until a contact answers and play a pre-recorded SOS message.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"other",
+                    "value":"If you press the Power button %d times, your device will call your emergency contacts until a contact answers and play a pre-recorded SOS message.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"Sos_Permission_Description_1",
+            "value":[
+                {
+                    "quantity":"one",
+                    "value":"This service requires %d permission. You can revoke it at any time by going to Settings > Apps & services > More apps > Emergency SOS > Location.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"other",
+                    "value":"This service requires %d permissions. You can revoke them at any time by going to Settings > Apps & services > More apps > Emergency SOS > Location.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"Sos_Car_Accident_Auto_Call_for_Help_Description",
+            "value":[
+                {
+                    "quantity":"one",
+                    "value":"After a %d-second countdown, your emergency contacts will be called until a contact answers and a pre-recorded SOS message will be played. They will also receive an SOS message with your current location.",
+                    "attr":{
+                        "priority":"LT"
+                    }
+                },
+                {
+                    "quantity":"other",
+                    "value":"After a %d-second countdown, your emergency contacts will be called until a contact answers and a pre-recorded SOS message will be played. They will also receive an SOS message with your current location.",
+                    "attr":{
+                        "priority":"LT"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"Sos_Car_Accident_Permission_Description",
+            "value":[
+                {
+                    "quantity":"one",
+                    "value":"This service requires %d permission. You can revoke it at any time by going to Settings > Apps & services > More apps > Emergency SOS > Location.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"other",
+                    "value":"This service requires %d permissions. You can revoke them at any time by going to Settings > Apps & services > More apps > Emergency SOS > Location.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"Sos_Fall_Down_Auto_Call_for_Help_Description",
+            "value":[
+                {
+                    "quantity":"one",
+                    "value":"After a %d-second countdown, your emergency contacts will be called until a contact answers and a pre-recorded SOS message will be played. They will also receive an SOS message with your current location.",
+                    "attr":{
+                        "priority":"LT"
+                    }
+                },
+                {
+                    "quantity":"other",
+                    "value":"After a %d-second countdown, your emergency contacts will be called until a contact answers and a pre-recorded SOS message will be played. They will also receive an SOS message with your current location.",
+                    "attr":{
+                        "priority":"LT"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"Sos_Fall_Down_Permission_Description",
+            "value":[
+                {
+                    "quantity":"one",
+                    "value":"This service requires %d permission. You can revoke it at any time by going to Settings > Apps & services > More apps > Emergency SOS > Location.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"other",
+                    "value":"This service requires %d permissions. You can revoke them at any time by going to Settings > Apps & services > More apps > Emergency SOS > Location.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"auto_answer_call_after_seconds",
+            "value":[
+                {
+                    "quantity":"one",
+                    "value":"Auto-answering in %d second",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"other",
+                    "value":"Auto-answering in %d seconds",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"emc_rescue_permission_notice_content_1",
+            "value":[
+                {
+                    "quantity":"one",
+                    "value":"This service requires %d permission:",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"other",
+                    "value":"This service requires %d permissions:",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"emergency_rescue_send_rescue_message",
+            "value":[
+                {
+                    "quantity":"one",
+                    "value":"Go send SOS message (%d)",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"other",
+                    "value":"Go send SOS message (%d)",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"emergency_rescue_send_immediately",
+            "value":[
+                {
+                    "quantity":"one",
+                    "value":"Send SOS message (%d)",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"other",
+                    "value":"Send SOS message (%d)",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"emergency_rescue_message_over_word_tips",
+            "value":[
+                {
+                    "quantity":"one",
+                    "value":"%d character over limit",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"other",
+                    "value":"%d characters over limit",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"emergency_rescue_retry_tips",
+            "value":[
+                {
+                    "quantity":"one",
+                    "value":"Reattempted %d time.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"other",
+                    "value":"Reattempted %d times.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"emergency_rescue_exit_once_content",
+            "value":[
+                {
+                    "quantity":"one",
+                    "value":"You won't be able to contact rescue personnel for %d minute after exiting. Make sure you are safe before exiting.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"other",
+                    "value":"You won't be able to contact rescue personnel for %d minutes after exiting. Make sure you are safe before exiting.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"emergency_rescue_auto_send_rescue_message_all",
+            "value":[
+                {
+                    "quantity":"one",
+                    "value":"%d second until you are redirected to send an SOS message.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"other",
+                    "value":"%d seconds until you are redirected to send an SOS message.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        }
+    ]
+}

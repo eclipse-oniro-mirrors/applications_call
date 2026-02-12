@@ -1,0 +1,218 @@
+{
+    "string":[
+        {
+            "name":"beidou_satellite_message_service_no_net",
+            "value":"No Internet connection. Connect to the Internet and try again.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"go_use_beidou_message_tips",
+            "value":"You've enabled BeiDou Satellite Messaging. Go to Messaging to start using it.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hangUp",
+            "value":"End",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"start_beidou_satellite_message",
+            "value":"BeiDou Satellite Messaging",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"wearable_bluee_text",
+            "value":"When the watch is connected to the phone, the watch's mobile data will be automatically disabled to save power. It will be re-enabled if they become disconnected.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"save",
+            "value":"Save",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Apn_enum_None",
+            "value":"None",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"wearable_roaming_subtitle",
+            "value":"Enable data while roaming. Contact your network provider for details.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_data_networkProvider",
+            "value":"Carrier",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"APN_MMS",
+            "value":"MMS",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"do_not_show_again",
+            "value":"Don't show again",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"APN_ADD_APN",
+            "value":"New APN",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"APN_common",
+            "value":"General",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_data_dataRoaming",
+            "value":"Data roaming",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_data",
+            "value":"Mobile data",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Apn_confirm",
+            "value":"OK",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"gotIt",
+            "value":"OK",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_data_charges",
+            "value":"Data usage fees may apply.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"go_use_beidou_satellite_message",
+            "value":"Go to Messaging app?",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"beidou_satellite_message_service_details_1",
+            "value":"%s. This feature is only available to China Mobile users who have activated satellite communication features for their account. For more information, contact China Mobile customer service.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"beidou_satellite_message_no_sim_card_descriptions",
+            "value":"To use this service, insert a China Mobile SIM card with BeiDou Satellite Messaging activated.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"APN_Not_set",
+            "value":"Not set",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"APN_NAME",
+            "value":"Access Point Name (APN)",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"wearable_bluee_title",
+            "value":"Bluetooth connected",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"go_to_use",
+            "value":"Go",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Apn_The_name_cannot_be_empty",
+            "value":"Name cannot be blank.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"beidou_satellite_message",
+            "value":"BeiDou Satellite Messaging",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Apn_The_APN_cannot_be_empty",
+            "value":"APN can't be empty.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_available_time_refresh",
+            "value":"Available time periods will refresh automatically when Tiantong Satellite Communications is disabled.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"APN_EDIT_APN",
+            "value":"Edit access point",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name": "not_support_toast",
+            "value": "This operation is not supported in this mode."
+        }
+    ]
+}

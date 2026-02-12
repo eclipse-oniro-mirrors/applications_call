@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>星号</title>
+    <g id="星号" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polygon id="*" fill="#000000" fill-rule="nonzero" points="16.08 20.43 18.54 18.57 14.58 13.11 21.12 10.83 19.92 7.95 13.5 10.35 13.5 3.57 10.32 3.57 10.32 10.35 3.96 7.95 2.88 10.83 9.24 13.11 5.34 18.57 8.04 20.43 11.94 14.67"></polygon>
+    </g>
+</svg>

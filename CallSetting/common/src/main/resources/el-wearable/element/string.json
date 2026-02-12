@@ -1,0 +1,11 @@
+{
+    "string":[
+        {
+            "name":"Apn_button_APN_State",
+            "value":"Ενεργοποίηση/απενεργοποί\u200bηση APN",
+            "attr":{
+                "priority":"LT"
+            }
+        }
+    ]
+}

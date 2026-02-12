@@ -1,0 +1,25 @@
+{
+    "string":[
+        {
+            "name":"watch_permission_history_no_record",
+            "value":"Ei tietoja",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"watch_traffic_ranking_the_month",
+            "value":"Mobiilidatan käyttö (kuukausittainen)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"watch_loading",
+            "value":"Ladataan…",
+            "attr":{
+                "priority":"LT"
+            }
+        }
+    ]
+}

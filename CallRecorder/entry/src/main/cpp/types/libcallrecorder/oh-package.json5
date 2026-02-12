@@ -1,0 +1,6 @@
+{
+  "types": "./index.d.ts",
+  "name": "libcallrecorder.so",
+  "description": "Processes the interaction between call recorder and the underlying layer.",
+  "version": "1.0.0"
+}

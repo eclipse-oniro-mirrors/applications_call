@@ -1,0 +1,11 @@
+{
+    "string":[
+        {
+            "name":"emc_rescue_china_broadnet_brand_tips",
+            "value":"Banda di frequenza fornita da China Broadnet.",
+            "attr":{
+                "priority":"translate"
+            }
+        }
+    ]
+}

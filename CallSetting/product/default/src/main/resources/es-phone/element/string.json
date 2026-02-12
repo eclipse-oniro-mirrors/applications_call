@@ -1,0 +1,18 @@
+{
+    "string":[
+        {
+            "name":"go_use_beidou_satellite_message",
+            "value":"¿Quieres ir a la aplicación Mensajes?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"open_mobile_data_detail",
+            "value":"Esta función requiere una conexión de datos móviles. Ve a Ajustes para habilitar los datos móviles.",
+            "attr":{
+                "priority":"LT"
+            }
+        }
+    ]
+}

@@ -1,0 +1,207 @@
+{
+    "string":[
+        {
+            "name":"beidou_satellite_message_service_no_net",
+            "value":"इंटरनेट कनेक्शन नहीं है। इंटरनेट से कनेक्ट करें और पुनः प्रयास करें।",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"go_use_beidou_message_tips",
+            "value":"आपने BeiDou सैटेलाइट संदेश सेवा को सक्षम किया है। इसका उपयोग शुरू करने के लिए संदेश सेवा पर जाएँ।",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hangUp",
+            "value":"समाप्त करें",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"start_beidou_satellite_message",
+            "value":"BeiDou सैटेलाइट संदेश सेवा",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"wearable_bluee_text",
+            "value":"जब घड़ी फ़ोन से कनेक्ट होती है, तो पॉवर की बचत करने के लिए घड़ी का मोबाइल डेटा स्वचालित रूप से अक्षम किया जाएगा। यदि वे डिस्कनेक्ट हो जाते हैं तो इसे फिर से सक्षम किया जाएगा।",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"save",
+            "value":"सहेजें",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Apn_enum_None",
+            "value":"कोई नहीं",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"wearable_roaming_subtitle",
+            "value":"रोमिंग के दौरान डेटा सक्षम करें। विवरण के लिए अपने कैरियर से संपर्क करें।",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_data_networkProvider",
+            "value":"कैरियर",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"APN_MMS",
+            "value":"MMS",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"do_not_show_again",
+            "value":"पुनः न दिखाएँ",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"APN_ADD_APN",
+            "value":"नया APN",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"APN_common",
+            "value":"सामान्य",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_data_dataRoaming",
+            "value":"डेटा रोमिंग",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_data",
+            "value":"मोबाइल डेटा",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Apn_confirm",
+            "value":"ठीक",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"gotIt",
+            "value":"ठीक",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_data_charges",
+            "value":"डेटा उपयोग शुल्क लागू हो सकते हैं।",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"go_use_beidou_satellite_message",
+            "value":"संदेश सेवा ऐप पर जाएँ?",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"beidou_satellite_message_service_details_1",
+            "value":"%s. यह सुविधा केवल चाइना मोबाइल के उन उपयोगकर्ताओं के लिए उपलब्ध है जिन्होंने अपने खाते के लिए सैटेलाइट संचार सुविधाओं को सक्रिय किया है। अधिक जानकारी के लिए, चाइना मोबाइल की ग्राहक सेवा से संपर्क करें।",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"beidou_satellite_message_no_sim_card_descriptions",
+            "value":"इस सेवा का उपयोग करने के लिए, BeiDou सैटेलाइट संदेश सेवा सक्रिय करके चाइना मोबाइल SIM कार्ड डालें।",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"APN_Not_set",
+            "value":"सेट नहीं है",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"APN_NAME",
+            "value":"पहुँच बिंदु नाम (APN)",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"wearable_bluee_title",
+            "value":"ब्लूटूथ कनेक्ट किया गया",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"go_to_use",
+            "value":"जाएँ",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Apn_The_name_cannot_be_empty",
+            "value":"नाम को रिक्त नहीं छोड़ा जा सकता।",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"beidou_satellite_message",
+            "value":"BeiDou सैटेलाइट संदेश सेवा",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Apn_The_APN_cannot_be_empty",
+            "value":"APN को रिक्त नहीं छोड़ा जा सकता।",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"APN_EDIT_APN",
+            "value":"पहुँच बिंदु संपादित करें",
+            "attr":{
+                "priority":"translate"
+            }
+        }
+    ]
+}

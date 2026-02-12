@@ -1,0 +1,25 @@
+{
+    "string":[
+        {
+            "name":"watch_permission_history_no_record",
+            "value":"سابقه‌ای موجود نیست",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"watch_traffic_ranking_the_month",
+            "value":"مصرف دادۀ همراه (ماهانه)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"watch_loading",
+            "value":"در حال بارگیری…",
+            "attr":{
+                "priority":"LT"
+            }
+        }
+    ]
+}

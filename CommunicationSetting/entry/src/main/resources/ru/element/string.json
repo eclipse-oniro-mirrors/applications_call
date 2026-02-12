@@ -1,0 +1,662 @@
+{
+    "string":[
+        {
+            "name":"usage_reminders_index",
+            "value":"Уведомления о трафике (SIM%d)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_manage_entry",
+            "value":"Расход трафика",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"body_network_access_policy",
+            "value":"Вы можете изменить эти параметры в разделе Настройки > Мобильный Интернет > Расход трафика > Доступ в сеть.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"traffic_ranking",
+            "value":"Расход трафика приложением",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"monthly_data_reminder",
+            "value":"Уведомление ежемесячного трафика",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"daily_limit_data_reminder",
+            "value":"Уведомлять при достижении %1$s (%2$s) ежедневного лимита трафика данных",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"category_nfc_service",
+            "value":"Служба NFC",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"traffice_package_remain",
+            "value":"Осталось",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"data_limit",
+            "value":"Лимит трафика",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"traffic_chart_view_net_used_day",
+            "value":"Использовано %2$s %1$s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"system_applications",
+            "value":"Система",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"data_traffic_reached_the_limit",
+            "value":"Достигнут лимит трафика.\nПри повторном включении мобильной передачи данных оператором может взиматься дополнительная плата.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"got_it",
+            "value":"OK",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"show_compatible_apps",
+            "value":"Показать совместимые приложения",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_and_WLAN",
+            "value":"Мобильный Интернет и WLAN",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"usage_reminders",
+            "value":"Уведомления о трафике",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"loading",
+            "value":"Загрузка…",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"allow_mobile_data",
+            "value":"Мобильный Интернет",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"unlimited_data",
+            "value":"Без лимита",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"reopen",
+            "value":"Включить повторно",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"wlan_ranking_of_this_month",
+            "value":"Расход по WLAN в этом месяце",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"allow_WLAN",
+            "value":"WLAN",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"traffic_ranking_of_this_month",
+            "value":"Трафик в этом месяце",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data",
+            "value":"Передача данных",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"data_plan_settings_index",
+            "value":"Настройки тарифного плана (SIM %d)",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"flow_used",
+            "value":"Расход трафика",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"confirm",
+            "value":"OK",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"more_data_usage_settings_title",
+            "value":"Другие настройки",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"not_set",
+            "value":"Не задано",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"hide_compatible_apps",
+            "value":"Скрыть совместимые приложения",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"hide_system_processes",
+            "value":"Скрыть системные процессы",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"disable_mobile_data",
+            "value":"Моб. Интернет отключен",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"no_networked_apps",
+            "value":"Нет сетевых приложений",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"over_monthly_limit",
+            "value":"Сверх месячного лимита",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"current_sim_data_traffic_reached_the_limit",
+            "value":"Достигнут лимит передачи данных, установленный для этой SIM-карты. Моб. передача данных выключена. После повторного включения функции моб. передачи данных будет взиматься плата за передачу данных.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"allow",
+            "value":"Разрешить",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"switch_to_another_card",
+            "value":"Переключиться на другую SIM-карту",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"forbid_operation",
+            "value":"Пользователи, не являющиеся владельцами устройства, не могут использовать эту функцию.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"category_location_service",
+            "value":"Службы определения местоположения",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"data_calculation_different_from_shown",
+            "value":"Тарификация, выполняемая оператором, может отличаться от отображаемой здесь.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"disconnect",
+            "value":"Отключить моб. передачу данных",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"daily_data_reminder",
+            "value":"Уведомление ежедневного трафика",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"category_general_service",
+            "value":"Основное",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"category_rtc_service",
+            "value":"Служба RTC",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"category_system",
+            "value":"Система",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"today",
+            "value":"Сегодня",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"data_plan_settings",
+            "value":"Настройки пакета",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"category_media_service",
+            "value":"Мультимедийная служба",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"only_wlan",
+            "value":"Только WLAN",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"ranking_of_this_month",
+            "value":"Трафик в этом месяце",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"no_match_result",
+            "value":"Нет результатов",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"traffic_chart_view_net_used_day_today",
+            "value":"Сегодня использовано %1$s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"last_30_days",
+            "value":"Последние %s дней",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"sim_card_2",
+            "value":"SIM 2 (%1$s)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"sim_card_1",
+            "value":"SIM 1 (%1$s)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"category_uninstalled_apps",
+            "value":"Удаленные приложения",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"reopen_the_current_card",
+            "value":"Включить моб. передачу данных",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"not_allow",
+            "value":"Запретить",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"system_and_service",
+            "value":"Система и службы",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"reminder",
+            "value":"Уведомление",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"allow_mobile_data_and_WLAN",
+            "value":"Мобильный Интернет и WLAN",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"more",
+            "value":"Еще",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"show_system_processes",
+            "value":"Показать системные процессы",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"title_wifi_only_network_access_policy",
+            "value":"Разрешить приложению %s доступ в Интернет?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_network",
+            "value":"Мобильная сеть",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"category_security_service",
+            "value":"Служба защиты",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"traffice_package_out",
+            "value":"Сверх лимита",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"network_no_service",
+            "value":"Нет сети",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"wlan",
+            "value":"WLAN",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"network_title",
+            "value":"Доступ в сеть",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"monthly_limit_data_reminder",
+            "value":"Уведомлять при достижении %1$s (%2$s) ежемесячного лимита трафика данных",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"searching",
+            "value":"Поиск",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"all",
+            "value":"Все",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"title_network_access_policy",
+            "value":"Разрешить приложению %s использовать мобильный трафик?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"used_traffice",
+            "value":"Расход трафика",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"last_24_hours",
+            "value":"Последние %s часа",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"category_update",
+            "value":"Обновление ПО",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"start_date",
+            "value":"Дата начала",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"category_call_service",
+            "value":"Служба вызовов",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"category_WLAN_service",
+            "value":"Служба WLAN",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"cancel",
+            "value":"Отмена",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"forbid",
+            "value":"Запрещено",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"category_debug_system",
+            "value":"Служба отладки",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"owner_of_device",
+            "value":"Владелец",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hotspot_name",
+            "value":"Режим модема",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"accessibility_unselected",
+            "value":"Не выбрано",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"accessibility_more",
+            "value":"Другие опции",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"accessibility_selected",
+            "value":"Выбрано",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"accessibility_back",
+            "value":"Назад",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"esim_card",
+            "value":"%1$s (%2$s)",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"esim_usage_reminders_index",
+            "value":"Напоминания о расходе (eSIM %d)",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"data_plan_esim_settings_index",
+            "value":"Настройки тарифного плана (eSIM %d)",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"flow_display_title",
+            "value":"Статистика трафика",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"usage_display_summary",
+            "value":"Показывать трафик данных на панели уведомлений",
+            "attr":{
+                "priority":"translate"
+            }
+        }
+    ]
+}

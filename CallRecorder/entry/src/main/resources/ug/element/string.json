@@ -1,0 +1,137 @@
+{
+    "string":[
+        {
+            "name":"call_meeting",
+            "value":"تېلېفون يىغىنى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"specified_number",
+            "value":"بەلگىلەنگەن نومۇر",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"cancel",
+            "value":"بىكار قىلىش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"is_delete_number",
+            "value":"بۇ نومۇرنى ئۆچۈرەمسىز؟",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"is_delete_all_number",
+            "value":"بارلىق نومۇرنى ئۆچۈرەمسىز؟",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"deselect_all",
+            "value":"قالدۇرۇش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"select_all",
+            "value":"ﮬﻪﻣﻤﯩﻨﻰ ﺗﺎﻟﻼﺵ",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"unknown",
+            "value":"ئېنىقسىز",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"delete",
+            "value":"ئۆچۈرۈش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"automatic_recording_of_calls",
+            "value":"ئۆزلۈكىدىن چاقىرىق خاتىرىلەش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"unset_recorder",
+            "value":"بېكىتمىگەن",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"auto_recording_object",
+            "value":"ئۆزلۈكىدىن ئۈنگە ئېلىش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"no_number_specified",
+            "value":"بەلگىلەنگەن نومۇر يوق",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"automatically_record_call_viewed",
+            "value":"سۆزلەشكەندە ئۆزلۈكىدىن ئۈنگە ئالىدۇ، ئالغان ئۈننى ئۈنئالغۇ ئەپىدىن كۆرەلەيسىز.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"call_numbers_finish_des",
+            "value":"تېلېفون > باشقىلار > چاقىرىقتىن ئالغان ئۈن دېگەن ئورۇندىن كۆرەلەيسىز.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"add_specified_number",
+            "value":"نومۇر قوشۇش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"all_calls",
+            "value":"بارلىق چاقىرىق",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"add",
+            "value":"قوشۇش",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"voice_long_press",
+            "value":"قوش بېسىپ تۇرسىڭىز باشقا تاللانمىلار چىقىدۇ",
+            "attr":{
+                "priority":"translate"
+            }
+        }
+    ]
+}

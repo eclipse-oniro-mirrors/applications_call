@@ -1,0 +1,40 @@
+{
+    "plural":[
+        {
+            "name":"call_numbers_finish",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"%d개 통화 녹음됨",
+                    "attr":{
+                        "priority":"LT"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"use_numbers",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"%d",
+                    "attr":{
+                        "priority":"LT"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"is_delete_plural_number",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"%d개 번호를 삭제하시겠습니까?",
+                    "attr":{
+                        "priority":"LT"
+                    }
+                }
+            ]
+        }
+    ]
+}

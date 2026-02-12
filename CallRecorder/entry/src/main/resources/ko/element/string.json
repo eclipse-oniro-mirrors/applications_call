@@ -1,0 +1,137 @@
+{
+    "string":[
+        {
+            "name":"auto_recording_object",
+            "value":"적용 대상",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"deselect_all",
+            "value":"모두 선택 취소",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"call_meeting",
+            "value":"화상 회의",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"select_all",
+            "value":"모두 선택",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"no_number_specified",
+            "value":"번호 없음",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"unknown",
+            "value":"알 수 없음",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"delete",
+            "value":"삭제",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"specified_number",
+            "value":"지정된 번호",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"automatic_recording_of_calls",
+            "value":"통화 자동 녹음",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"automatically_record_call_viewed",
+            "value":"통화 녹음 파일은 녹음기 앱에서 찾을 수 있습니다",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"unset_recorder",
+            "value":"설정되지 않음",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"call_numbers_finish_des",
+            "value":"전화 > 더 보기 > 통화 녹음에 저장되었습니다. 탭하여 확인합니다.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"add_specified_number",
+            "value":"번호 추가",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"cancel",
+            "value":"취소",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"is_delete_number",
+            "value":"이 번호를 삭제하시겠습니까?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"all_calls",
+            "value":"모든 통화",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"is_delete_all_number",
+            "value":"모든 번호를 삭제하시겠습니까?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"voice_long_press",
+            "value":"두 번 탭하고 길게 눌러 옵션 더 보기",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"add",
+            "value":"추가",
+            "attr":{
+                "priority":"translate"
+            }
+        }
+    ]
+}

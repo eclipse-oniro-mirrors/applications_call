@@ -1,0 +1,25 @@
+{
+    "string":[
+        {
+            "name":"watch_permission_history_no_record",
+            "value":"기록 없음",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"watch_traffic_ranking_the_month",
+            "value":"모바일 데이터 사용량(월간)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"watch_loading",
+            "value":"로드 중…",
+            "attr":{
+                "priority":"LT"
+            }
+        }
+    ]
+}

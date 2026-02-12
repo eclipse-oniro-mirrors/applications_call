@@ -1,0 +1,15 @@
+{
+  "src": [
+    "pages/Index",
+    "pages/EmergencyInfoView",
+    "pages/permissionPage",
+    "pages/privacyPage",
+    "pages/disclaimPage",
+    "pages/SosEmergencyHelpSettings",
+    "pages/SosEmergencyCall",
+    "pages/EmergencyPrivacyPage",
+    "pages/EmergencyPermissionPageOobe",
+    "pages/SosExternalPage",
+    "pages/WrappedEmergencyContactsInfo"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "devices": {
+    "general": [
+      "default",
+      "tablet"
+    ]
+  },
+  "development": {
+    "addedSysCaps": [
+      "SystemCapability.Communication.NFC.Core",
+      "SystemCapability.Communication.NFC.CardEmulation",
+      "SystemCapability.Communication.NFC.Tag",
+      "SystemCapability.Window.SessionManager",
+      "SystemCapability.Telephony.CallManager"
+    ]
+  }
+}

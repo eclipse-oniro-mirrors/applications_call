@@ -1,0 +1,296 @@
+{
+  "float": [
+    {
+      "name": "ConfirmDialogEx_height",
+      "value": "109vp"
+    },
+    {
+      "name": "wh_value_24",
+      "value": "24vp"
+    },
+    {
+      "name": "wh_value_48",
+      "value": "48vp"
+    },
+    {
+      "name": "line_height_22",
+      "value": "22vp"
+    },
+    {
+      "name": "wh_value_12",
+      "value": "12vp"
+    },
+    {
+      "name": "padding_12",
+      "value": "12vp"
+    },
+    {
+      "name": "radius_16",
+      "value": "16vp"
+    },
+    {
+      "name": "height_answer_btn_30",
+      "value": "30vp"
+    },
+    {
+      "name": "wh_answer_btn_56",
+      "value": "56vp"
+    },
+    {
+      "name": "wh_answer_btn_32",
+      "value": "32vp"
+    },
+    {
+      "name": "wh_answer_btn_row_70",
+      "value": "70vp"
+    },
+    {
+      "name": "call_button_width",
+      "value": "64vp"
+    },
+    {
+      "name": "answer_button_image_width",
+      "value": "36vp"
+    },
+    {
+      "name": "call_list_top",
+      "value": "64vp"
+    },
+    {
+      "name": "calling_name_top",
+      "value": "88vp"
+    },
+    {
+      "name": "calling_photo_top",
+      "value": "56vp"
+    },
+    {
+      "name": "call_avatar_width",
+      "value": "110vp"
+    },
+    {
+      "name": "call_avatar_radius",
+      "value": "55vp"
+    },
+    {
+      "name": "funbtn_image_width",
+      "value": "28vp"
+    },
+    {
+      "name": "conference_detail_colom_width",
+      "value": "40vp"
+    },
+    {
+      "name": "conference_detail_top_space",
+      "value": "80vp"
+    },
+    {
+      "name": "call_calllist_name_font",
+      "value": "16vp"
+    },
+    {
+      "name": "call_calllist_time_or_status_font",
+      "value": "14vp"
+    },
+    {
+      "name": "call_calllist_text_height",
+      "value": "19vp"
+    },
+    {
+      "name": "call_calllist_height",
+      "value": "63vp"
+    },
+    {
+      "name": "call_callList_conference_text_height",
+      "value": "21vp"
+    },
+    {
+      "name": "call_conference_detail_titel_font",
+      "value": "20vp"
+    },
+    {
+      "name": "call_conference_detail_titel_text_height",
+      "value": "26vp"
+    },
+    {
+      "name": "call_conference_detail_list_titel_text_font",
+      "value": "16vp"
+    },
+    {
+      "name": "call_conference_text_font",
+      "value": "48vp"
+    },
+    {
+      "name": "call_card_textinput_text_font",
+      "value": "38vp"
+    },
+    {
+      "name": "call_card_textunput_text_height",
+      "value": "40vp"
+    },
+    {
+      "name": "call_card_body_m_font",
+      "value": "14vp"
+    },
+    {
+      "name": "call_card_body_m_height",
+      "value": "19vp"
+    },
+    {
+      "name": "call_card_body_m_line_height",
+      "value": "16vp"
+    },
+    {
+      "name": "call_dtmf_no_video_text_font",
+      "value": "24vp"
+    },
+    {
+      "name": "call_dtmf_video_text_font",
+      "value": "25vp"
+    },
+    {
+      "name": "call_dtmf_no_video_text_heigth",
+      "value": "32vp"
+    },
+    {
+      "name": "call_dtmf_video_text_height",
+      "value": "33vp"
+    },
+    {
+      "name": "call_dtmf_add_text_font",
+      "value": "17.5vp"
+    },
+    {
+      "name": "call_dtmf_add_text_height",
+      "value": "25vp"
+    },
+    {
+      "name": "call_dtmf_add_text_line_height",
+      "value": "24vp"
+    },
+    {
+      "name": "call_dtmf_text_font",
+      "value": "10vp"
+    },
+    {
+      "name": "call_dtmf_text_no_video_height",
+      "value": "15vp"
+    },
+    {
+      "name": "call_dtmf_text_video_height",
+      "value": "14vp"
+    },
+    {
+      "name": "call_dtmf_text_video_line_height",
+      "value": "13vp"
+    },
+    {
+      "name": "call_incoming_body_l_font",
+      "value": "16vp"
+    },
+    {
+      "name": "call_incoming_body_m_font",
+      "value": "14vp"
+    },
+    {
+      "name": "call_incoming_body_m_height",
+      "value": "19vp"
+    },
+    {
+      "name": "call_video_card_title_m_font",
+      "value": "24vp"
+    },
+    {
+      "name": "call_video_card_title_m_height",
+      "value": "56vp"
+    },
+    {
+      "name": "call_video_card_title_m_line_height",
+      "value": "32vp"
+    },
+    {
+      "name": "call_video_card_body_s_font",
+      "value": "12vp"
+    },
+    {
+      "name": "call_video_card_body_s_height",
+      "value": "16vp"
+    },
+    {
+      "name": "call_video_card_body_m_font",
+      "value": "14vp"
+    },
+    {
+      "name": "call_video_card_body_m_height",
+      "value": "19vp"
+    },
+    {
+      "name": "margin_bottom_smart_window",
+      "value": "-35vp"
+    },
+    {
+      "name": "margin_bottom_window",
+      "value": "2vp"
+    },
+    {
+      "name": "new_form_fold_phone_particle_layout_hangup_btn_width",
+      "value": "56vp"
+    },
+    {
+      "name": "new_form_fold_phone_particle_layout_hangup_symbol_width",
+      "value": "32vp"
+    },
+    {
+      "name": "new_form_fold_phone_func_btn_width",
+      "value": "56vp"
+    },
+    {
+      "name": "new_form_fold_phone_Dtmf_btn_height",
+      "value": "44vp"
+    },
+    {
+      "name": "new_form_fold_phone_Dtmf_btn_text_height",
+      "value": "20vp"
+    },
+    {
+      "name": "new_form_fold_phone_Dtmf_btn_text_line_height",
+      "value": "27vp"
+    },
+    {
+      "name": "leather_image_height",
+      "value": "24vp"
+    },
+    {
+      "name": "leather_text_font",
+      "value": "16vp"
+    },
+    {
+      "name": "leather_answer_button_image_width",
+      "value": "30vp"
+    },
+    {
+      "name": "leather_answer_button_image_bgGiew_width",
+      "value": "42vp"
+    },
+    {
+      "name": "leather_circle_wide_width",
+      "value": "80vp"
+    },
+    {
+      "name": "leather_circle_width",
+      "value": "42vp"
+    },
+    {
+      "name": "new_form_foldphone_func_btn_columns_gap",
+      "value": "20vp"
+    },
+    {
+      "name": "new_form_foldphone_func_btn_margin_space",
+      "value": "62vp"
+    },
+    {
+      "name": "new_form_foldphone_func_btn_rows_gap",
+      "value": "17vp"
+    }
+  ]
+}

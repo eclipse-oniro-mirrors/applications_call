@@ -1,0 +1,12 @@
+{
+  "float": [
+    {
+      "name": "no_record_text_font_size",
+      "value": "17vp"
+    },
+    {
+      "name": "mobile_data_overflow",
+      "value": "1"
+    }
+  ]
+}

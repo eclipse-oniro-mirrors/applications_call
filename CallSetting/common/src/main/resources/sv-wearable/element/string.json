@@ -1,0 +1,32 @@
+{
+    "string":[
+        {
+            "name":"BaMmi",
+            "value":"Samtals\u200bblockering",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"ClirMmi",
+            "value":"Nummer\u200bpresentatör för utgående samtal",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"CfMmi",
+            "value":"Vidare\u200bbefordran av samtal",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"ClipMmi",
+            "value":"Nummer\u200bpresentatör för inkommande samtal",
+            "attr":{
+                "priority":"LT"
+            }
+        }
+    ]
+}

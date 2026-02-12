@@ -1,0 +1,5 @@
+{
+  "mainTitleResource": "$string:app_about_name",
+  "dstBundleName": "com.ohos.callsetting",
+  "dstAbilityName": "com.ohos.callsetting.PhonePrivacyCenterUIExtAbility"
+}

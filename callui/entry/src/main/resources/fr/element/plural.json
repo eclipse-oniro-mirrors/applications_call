@@ -1,0 +1,175 @@
+{
+    "plural":[
+        {
+            "name":"hoursLater",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"Dans %d heures",
+                    "attr":{
+                        "priority":"LT"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"Dans %d heure",
+                    "attr":{
+                        "priority":"LT"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"video_ringtone_selected_tip",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"%d pièces sélectionnées",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"%d pièce sélectionnée",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"minutes",
+            "value":[
+                {
+                    "quantity":"one",
+                    "value":"Dans %d minute",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"other",
+                    "value":"Dans %d minutes",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"conference_member_number",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"\t| %d personnes",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"\t| %d personne",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"conference_member_str",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"\t| %s personnes",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"\t| %s personne",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"number_marked",
+            "value":[
+                {
+                    "quantity":"one",
+                    "value":"\t| Marqué par %d personne",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"other",
+                    "value":"\t| Marqué par %d personnes",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"call_time_hour",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"%d heures",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"%d heure",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"call_time_sec",
+            "value":[
+                {
+                    "quantity":"one",
+                    "value":"%d seconde",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"other",
+                    "value":"%d secondes",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"call_time_min",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"%d minutes",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"%d minute",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        }
+    ]
+}

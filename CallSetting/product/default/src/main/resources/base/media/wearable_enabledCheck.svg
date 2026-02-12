@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="92px" height="92px" viewBox="0 0 92 92" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Checkbox/Selected/Enabled</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="92" height="92"></rect>
+    </defs>
+    <g id="Checkbox/Selected/Enabled" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <g id="矩形"></g>
+        <g id="编组" mask="url(#mask-2)">
+            <g transform="translate(24.000000, 24.000000)">
+                <path d="M0,22 C0,9.8497355 9.84706399,0 22,0 L22,0 C34.1502645,0 44,9.84706399 44,22 L44,22 C44,34.1502645 34.152936,44 22,44 L22,44 C9.8497355,44 0,34.152936 0,22 L0,22 Z" id="Rectangle-2375-Copy" stroke="none" fill="#1F71FF" fill-rule="evenodd"></path>
+                <polyline id="路径" stroke="#FFFFFF" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round" points="10.4916142 21.7683475 18.5327866 29.8095198 33.1917033 15.1506031"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,207 @@
+{
+    "string":[
+        {
+            "name":"beidou_satellite_message_service_no_net",
+            "value":"Nav interneta savienojuma. Izveidojiet savienojumu ar internetu un mēģiniet vēlreiz.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"go_use_beidou_message_tips",
+            "value":"Jūs iespējojāt lietotni BeiDou satelīta ziņapmaiņa. Lai sāktu to lietot, atveriet sadaļu Ziņapmaiņa.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hangUp",
+            "value":"Pabeigt",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"start_beidou_satellite_message",
+            "value":"BeiDou satelīta ziņapmaiņa",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"wearable_bluee_text",
+            "value":"Ja viedpulkstenī ir izveidots savienojums ar tālruni, tiek automātiski atspējota viedpulksteņa mobilo datu pārraide, lai taupītu enerģiju. Ja savienojums tiek pārtraukts, mobilo datu pārraide atkal tiek iespējota.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"save",
+            "value":"Saglabāt",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Apn_enum_None",
+            "value":"Nav",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"wearable_roaming_subtitle",
+            "value":"Iespējot datus viesabonēšanā. Lai saņemtu detalizētu informāciju, sazinieties ar operatoru.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_data_networkProvider",
+            "value":"Operators",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"APN_MMS",
+            "value":"MMS",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"do_not_show_again",
+            "value":"Vairs nerādīt",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"APN_ADD_APN",
+            "value":"Jauns APN",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"APN_common",
+            "value":"Vispārīgi",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_data_dataRoaming",
+            "value":"Datu viesabonēšana",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_data",
+            "value":"Mobilie dati",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Apn_confirm",
+            "value":"Labi",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"gotIt",
+            "value":"Labi",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_data_charges",
+            "value":"Var tikt piemērota maksa par datu lietojumu.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"go_use_beidou_satellite_message",
+            "value":"Vai doties uz lietotni Ziņapmaiņa?",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"beidou_satellite_message_service_details_1",
+            "value":"%s. Šī funkcija ir pieejama tikai tiem China Mobile lietotājiem, kuri savā kontā ir aktivizējuši satelīta sakaru funkcijas. Lai iegūtu plašāku informāciju, sazinieties ar China Mobile klientu apkalpošanas dienestu.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"beidou_satellite_message_no_sim_card_descriptions",
+            "value":"Lai izmantotu šo pakalpojumu, ievietojiet China Mobile SIM karti ar aktivizētu funkciju BeiDou satelīta ziņapmaiņa.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"APN_Not_set",
+            "value":"Nav iestatīts",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"APN_NAME",
+            "value":"Piekļuves punkta nosaukums (APN)",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"wearable_bluee_title",
+            "value":"Bluetooth savienojums izveidots",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"go_to_use",
+            "value":"Aiziet",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Apn_The_name_cannot_be_empty",
+            "value":"Nosaukuma lauks nedrīkst būt tukšs.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"beidou_satellite_message",
+            "value":"BeiDou satelīta ziņapmaiņa",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Apn_The_APN_cannot_be_empty",
+            "value":"APN nedrīkst būt tukšs.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"APN_EDIT_APN",
+            "value":"Rediģēt piekļuves punktu",
+            "attr":{
+                "priority":"translate"
+            }
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>ic_public_pause_高亮</title>
+<defs>
+    <path d="M10,4.66666667 C11.1045695,4.66666667 12,5.56209717 12,6.66666667 L12,25.3333333 C12,26.4379028 11.1045695,27.3333333 10,27.3333333 C8.8954305,27.3333333 8,26.4379028 8,25.3333333 L8,6.66666667 C8,5.56209717 8.8954305,4.66666667 10,4.66666667 Z M22,4.66666667 C23.1045695,4.66666667 24,5.56209717 24,6.66666667 L24,25.3333333 C24,26.4379028 23.1045695,27.3333333 22,27.3333333 C20.8954305,27.3333333 20,26.4379028 20,25.3333333 L20,6.66666667 C20,5.56209717 20.8954305,4.66666667 22,4.66666667 Z" id="path-1"></path>
+</defs>
+<g id="等待" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <rect id="ic_public_pause_enabled" fill-opacity="0" fill="#000000" x="0" y="0" width="32" height="32"></rect>
+    <mask id="mask-2" fill="white">
+        <use xlink:href="#path-1"></use>
+    </mask>
+    <use id="ic_public_pause_enabled" fill="#E84026" xlink:href="#path-1"></use>
+</g>
+</svg>

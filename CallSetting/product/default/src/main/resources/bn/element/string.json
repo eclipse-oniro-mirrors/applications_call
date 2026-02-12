@@ -1,0 +1,207 @@
+{
+    "string":[
+        {
+            "name":"beidou_satellite_message_service_no_net",
+            "value":"ইন্টারনেট সংযোগ নেই। ইন্টারনেটে সংযুক্ত হয়ে আবার চেষ্টা করুন।",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"go_use_beidou_message_tips",
+            "value":"আপনি BeiDou স্যাটেলাইট মেসেজিং সক্রিয় করেছেন। ব্যবহার শুরু করতে বার্তা আদান-প্রদানে যান।",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hangUp",
+            "value":"শেষ করুন",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"start_beidou_satellite_message",
+            "value":"BeiDou স্যাটেলাইট মেসেজিং",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"wearable_bluee_text",
+            "value":"ঘড়িটি ফোনের সাথে সংযুক্ত থাকলে পাওয়ার সাশ্রয় করতে ঘড়ির মোবাইল ডেটা স্বয়ংক্রিয়ভাবে নিষ্ক্রিয় হয়ে যাবে। সেগুলির সংযোগ বিচ্ছিন্ন হয়ে গেলে এটি পুনরায় সক্রিয় হবে।",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"save",
+            "value":"সংরক্ষণ করুন",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Apn_enum_None",
+            "value":"কোনোটিই নয়",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"wearable_roaming_subtitle",
+            "value":"রোমিং চলাকালীন ডেটা সক্রিয় করুন। বিস্তারিত তথ্যের জন্য আপনার ক্যারিয়ারের সাথে যোগাযোগ করুন।",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_data_networkProvider",
+            "value":"ক্যারিয়ার",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"APN_MMS",
+            "value":"MMS",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"do_not_show_again",
+            "value":"আর দেখতে চাই না",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"APN_ADD_APN",
+            "value":"নতুন APN",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"APN_common",
+            "value":"সাধারণ",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_data_dataRoaming",
+            "value":"ডেটা রোমিং",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_data",
+            "value":"মোবাইল ডেটা",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Apn_confirm",
+            "value":"ঠিক আছে",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"gotIt",
+            "value":"ঠিক আছে",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_data_charges",
+            "value":"ডেটা ব্যবহারের ফি প্রযোজ্য হতে পারে।",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"go_use_beidou_satellite_message",
+            "value":"বার্তা আদান-প্রদান অ্যাপে যাবেন?",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"beidou_satellite_message_service_details_1",
+            "value":"%s. যে সকল China Mobile ব্যবহারকারী তাদের অ্যাকাউন্টে স্যাটেলাইট যোগাযোগ ফিচার সক্রিয় করেছেন কেবল তাদের জন্য এই ফিচারটি উপলভ্য। আরও তথ্যের জন্য China Mobile গ্রাহক সেবায় যোগাযোগ করুন।",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"beidou_satellite_message_no_sim_card_descriptions",
+            "value":"এই সেবা ব্যবহার করতে চাইলে BeiDou স্যাটেলাইট মেসেজিং সক্রিয় থাকা একটি China Mobile SIM কার্ড ইনসার্ট করুন।",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"APN_Not_set",
+            "value":"সেট করা হয়নি",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"APN_NAME",
+            "value":"অ্যাক্সেস পয়েন্টের নাম (APN)",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"wearable_bluee_title",
+            "value":"ব্লুটুথ সংযুক্ত হয়েছে",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"go_to_use",
+            "value":"যাওয়া যাক",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Apn_The_name_cannot_be_empty",
+            "value":"নাম ফাঁকা রাখা যাবে না।",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"beidou_satellite_message",
+            "value":"BeiDou স্যাটেলাইট মেসেজিং",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Apn_The_APN_cannot_be_empty",
+            "value":"APN ফাঁকা রাখা যাবে না।",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"APN_EDIT_APN",
+            "value":"অ্যাক্সেস পয়েন্ট সম্পাদনা করুন",
+            "attr":{
+                "priority":"translate"
+            }
+        }
+    ]
+}

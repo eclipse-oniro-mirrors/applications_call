@@ -1,0 +1,43 @@
+{
+  'app': {
+    'products': [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "compatibleSdkVersion": 20,
+        "compileSdkVersion": 23,
+        "runtimeOS": "OpenHarmony",
+        "targetSdkVersion": 20
+      }
+    ],
+    'signingConfigs': [
+      {
+        "name": "default",
+        "type": "OpenHarmony",
+        "material": {
+          "storeFile": "signature/OpenHarmony.p12",
+          "storePassword": "00000016FD815D63026D495C94371B9DE579779E6A15D84638071A50F6B47483CD2CA654F246",
+          "keyAlias": "openharmony application release",
+          "keyPassword": "00000016BF252565E110A1C3B3301A2C5AE0E13531635B674DA2B5F030157ADD0ABD4937FAC9",
+          "signAlg": "SHA256withECDSA",
+          "profile": "signature/emergencycommunication.p7b",
+          "certpath": "signature/OpenHarmony.cer"
+        }
+      }
+    ]
+  },
+  'modules': [
+    {
+      'name': 'entry',
+      'srcPath': './entry',
+      'targets': [
+        {
+          'name': 'default',
+          'applyToProducts': [
+            'default'
+          ]
+        }
+      ]
+    }
+  ]
+}

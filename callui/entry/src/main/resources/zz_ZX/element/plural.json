@@ -1,0 +1,265 @@
+{
+    "plural":[
+        {
+            "name":"conference_member_str",
+            "value":[
+                {
+                    "quantity":"one",
+                    "value":"[TS_894815]_\t| %s person"
+                },
+                {
+                    "quantity":"other",
+                    "value":"[TS_894813]_\t| %s people"
+                },
+                {
+                    "quantity":"zero",
+                    "value":"[TS_894814]_\t| %s people"
+                },
+                {
+                    "quantity":"few",
+                    "value":"[TS_894810]_\t| %s people"
+                },
+                {
+                    "quantity":"many",
+                    "value":"[TS_894811]_\t| %s people"
+                },
+                {
+                    "quantity":"two",
+                    "value":"[TS_894812]_\t| %s people"
+                }
+            ]
+        },
+        {
+            "name":"number_marked",
+            "value":[
+                {
+                    "quantity":"one",
+                    "value":"[TS_927147]_\t| Marked by %d person"
+                },
+                {
+                    "quantity":"other",
+                    "value":"[TS_927142]_\t| Marked by %d people"
+                },
+                {
+                    "quantity":"zero",
+                    "value":"[TS_927143]_\t| Marked by %d people"
+                },
+                {
+                    "quantity":"few",
+                    "value":"[TS_927146]_\t| Marked by %d people"
+                },
+                {
+                    "quantity":"many",
+                    "value":"[TS_927144]_\t| Marked by %d people"
+                },
+                {
+                    "quantity":"two",
+                    "value":"[TS_927145]_\t| Marked by %d people"
+                }
+            ]
+        },
+        {
+            "name":"hoursLater",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"[TS_930618]_In %d hours"
+                },
+                {
+                    "quantity":"one",
+                    "value":"[TS_930611]_In %d hour"
+                },
+                {
+                    "quantity":"zero",
+                    "value":"[TS_930621]_In %d hours"
+                },
+                {
+                    "quantity":"few",
+                    "value":"[TS_930613]_In %d hours"
+                },
+                {
+                    "quantity":"many",
+                    "value":"[TS_930619]_In %d hours"
+                },
+                {
+                    "quantity":"two",
+                    "value":"[TS_930615]_In %d hours"
+                }
+            ]
+        },
+        {
+            "name":"minutes",
+            "value":[
+                {
+                    "quantity":"one",
+                    "value":"[TS_930622]_In %d minute"
+                },
+                {
+                    "quantity":"other",
+                    "value":"[TS_930620]_In %d minutes"
+                },
+                {
+                    "quantity":"zero",
+                    "value":"[TS_930617]_In %d minutes"
+                },
+                {
+                    "quantity":"few",
+                    "value":"[TS_930612]_In %d minutes"
+                },
+                {
+                    "quantity":"many",
+                    "value":"[TS_930616]_In %d minutes"
+                },
+                {
+                    "quantity":"two",
+                    "value":"[TS_930614]_In %d minutes"
+                }
+            ]
+        },
+        {
+            "name":"conference_member_number",
+            "value":[
+                {
+                    "quantity":"one",
+                    "value":"[TS_941696]_\t| %d person"
+                },
+                {
+                    "quantity":"other",
+                    "value":"[TS_941695]_\t| %d people"
+                },
+                {
+                    "quantity":"zero",
+                    "value":"[TS_941694]_\t| %d people"
+                },
+                {
+                    "quantity":"few",
+                    "value":"[TS_941693]_\t| %d people"
+                },
+                {
+                    "quantity":"many",
+                    "value":"[TS_941692]_\t| %d people"
+                },
+                {
+                    "quantity":"two",
+                    "value":"[TS_941691]_\t| %d people"
+                }
+            ]
+        },
+        {
+            "name":"call_time_hour",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"[TS_992992]_%d hours"
+                },
+                {
+                    "quantity":"one",
+                    "value":"[TS_992977]_%d hour"
+                },
+                {
+                    "quantity":"zero",
+                    "value":"[TS_992978]_%d hours"
+                },
+                {
+                    "quantity":"few",
+                    "value":"[TS_992987]_%d hours"
+                },
+                {
+                    "quantity":"many",
+                    "value":"[TS_992980]_%d hours"
+                },
+                {
+                    "quantity":"two",
+                    "value":"[TS_992975]_%d hours"
+                }
+            ]
+        },
+        {
+            "name":"call_time_sec",
+            "value":[
+                {
+                    "quantity":"one",
+                    "value":"[TS_992989]_%d second"
+                },
+                {
+                    "quantity":"other",
+                    "value":"[TS_992985]_%d seconds"
+                },
+                {
+                    "quantity":"zero",
+                    "value":"[TS_992979]_%d seconds"
+                },
+                {
+                    "quantity":"few",
+                    "value":"[TS_992981]_%d seconds"
+                },
+                {
+                    "quantity":"many",
+                    "value":"[TS_992976]_%d seconds"
+                },
+                {
+                    "quantity":"two",
+                    "value":"[TS_992986]_%d seconds"
+                }
+            ]
+        },
+        {
+            "name":"call_time_min",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"[TS_992983]_%d minutes"
+                },
+                {
+                    "quantity":"one",
+                    "value":"[TS_992990]_%d minute"
+                },
+                {
+                    "quantity":"zero",
+                    "value":"[TS_992984]_%d minutes"
+                },
+                {
+                    "quantity":"few",
+                    "value":"[TS_992982]_%d minutes"
+                },
+                {
+                    "quantity":"many",
+                    "value":"[TS_992988]_%d minutes"
+                },
+                {
+                    "quantity":"two",
+                    "value":"[TS_992991]_%d minutes"
+                }
+            ]
+        },
+        {
+            "name":"video_ringtone_selected_tip",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"[TS_1071092]_%d selected"
+                },
+                {
+                    "quantity":"one",
+                    "value":"[TS_1071087]_%d selected"
+                },
+                {
+                    "quantity":"zero",
+                    "value":"[TS_1071081]_%d selected"
+                },
+                {
+                    "quantity":"few",
+                    "value":"[TS_1071085]_%d selected"
+                },
+                {
+                    "quantity":"many",
+                    "value":"[TS_1071080]_%d selected"
+                },
+                {
+                    "quantity":"two",
+                    "value":"[TS_1071093]_%d selected"
+                }
+            ]
+        }
+    ]
+}

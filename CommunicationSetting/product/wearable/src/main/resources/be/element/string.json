@@ -1,0 +1,25 @@
+{
+    "string":[
+        {
+            "name":"watch_loading",
+            "value":"Загрузка…",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"watch_permission_history_no_record",
+            "value":"Запісаў няма",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"watch_traffic_ranking_the_month",
+            "value":"Спажыванне маб. даных (месяц)",
+            "attr":{
+                "priority":"translate"
+            }
+        }
+    ]
+}

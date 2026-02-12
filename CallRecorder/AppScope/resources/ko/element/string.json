@@ -1,0 +1,11 @@
+{
+    "string":[
+        {
+            "name":"app_name",
+            "value":"통화 녹음",
+            "attr":{
+                "priority":"LT"
+            }
+        }
+    ]
+}

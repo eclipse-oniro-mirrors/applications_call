@@ -1,0 +1,11 @@
+{
+  "commonEvents": [
+    {
+      "name": "StaticSubscriber",
+      "permission": "",
+      "events": [
+        "usual.event.OPERATOR_CONFIG_CHANGED"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,384 @@
+{
+    "plural":[
+        {
+            "name":"EarthquakeWarningTitle2",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"سىزدىن %d كىلومېتىر",
+                    "attr":{
+                        "priority":"LT"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"سىزدىن %d كىلومېتىر",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"EarthquakeKilometer",
+            "value":[
+                {
+                    "quantity":"one",
+                    "value":"%d كىلومېتىر",
+                    "attr":{
+                        "priority":"LT"
+                    }
+                },
+                {
+                    "quantity":"other",
+                    "value":"%d كىلومېتىر",
+                    "attr":{
+                        "priority":"LT"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"PermissionDescriptionContent_1",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"بۇ مۇلازىمەت ئۈچۈن تۆۋەندىكى %d ئىجازەت كېرەك (بەرگەن ئىجازەتنى تەڭشەك > ئەپ ۋە تۈپئەپ > باشقا ئەپلەر > جىددىي ئالاقە > ئورۇن دېگەن بەتتىن قايتۇرۇۋېلىشقا بولىدۇ):",
+                    "attr":{
+                        "priority":"LT"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"بۇ مۇلازىمەت ئۈچۈن تۆۋەندىكى %d ئىجازەت كېرەك (بەرگەن ئىجازەتنى تەڭشەك > ئەپ ۋە تۈپئەپ > باشقا ئەپلەر > جىددىي ئالاقە > ئورۇن دېگەن بەتتىن قايتۇرۇۋېلىشقا بولىدۇ):",
+                    "attr":{
+                        "priority":"LT"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"Earthquake_second",
+            "value":[
+                {
+                    "quantity":"one",
+                    "value":"%d سېكۇنت",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"other",
+                    "value":"%d سېكۇنت",
+                    "attr":{
+                        "priority":"LT"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"Sos_emergency_notice_fiveTimes",
+            "value":[
+                {
+                    "quantity":"one",
+                    "value":"توك مەنبە كۇنۇپكىسىنى ئۇدا %d قېتىم باسسىڭىز، جىددىي قۇتقۇزۇش (SOS) تېلېفونى قىلىنىدۇ.",
+                    "attr":{
+                        "priority":"LT"
+                    }
+                },
+                {
+                    "quantity":"other",
+                    "value":"توك مەنبە كۇنۇپكىسىنى ئۇدا %d قېتىم باسسىڭىز، جىددىي قۇتقۇزۇش (SOS) تېلېفونى قىلىنىدۇ.",
+                    "attr":{
+                        "priority":"LT"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"Sos_Auto_Call_Detail",
+            "value":[
+                {
+                    "quantity":"one",
+                    "value":"توك مەنبە كۇنۇپكىسىنى ئۇدا %d قېتىم باسسىڭىز، جىددىي ئالاقىداشلارغا تەرتىپ بويىچە تېلېفون قىلىپ، خاتىرىلىگەن جىددىي قۇتقۇزۇش ئۇچۇرىنى ئاڭلىتىدۇ.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"other",
+                    "value":"توك مەنبە كۇنۇپكىسىنى ئۇدا %d قېتىم باسسىڭىز، جىددىي ئالاقىداشلارغا تەرتىپ بويىچە تېلېفون قىلىپ، خاتىرىلىگەن جىددىي قۇتقۇزۇش ئۇچۇرىنى ئاڭلىتىدۇ.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"Sos_Permission_Description_1",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"بۇ مۇلازىمەت ئۈچۈن تۆۋەندىكى %d ئىجازەت كېرەك (بەرگەن ئىجازەتنى تەڭشەك > ئەپ ۋە تۈپئەپ > باشقا ئەپلەر > جىددىي ئالاقە > ئورۇن دېگەن بەتتىن قايتۇرۇۋېلىشقا بولىدۇ):",
+                    "attr":{
+                        "priority":"LT"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"بۇ مۇلازىمەت ئۈچۈن تۆۋەندىكى %d ئىجازەت كېرەك (بەرگەن ئىجازەتنى تەڭشەك > ئەپ ۋە تۈپئەپ > باشقا ئەپلەر > جىددىي ئالاقە > ئورۇن دېگەن بەتتىن قايتۇرۇۋېلىشقا بولىدۇ):",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"Sos_Auto_Send_info_Detail",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"توك مەنبە كۇنۇپكىسىنى ئۇدا %d قېتىم باسسىڭىز، جىددىي ئالاقىداشقا ياردەم سوراش ئۇچۇرى ۋە ئورنىڭىز يوللىنىدۇ.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"توك مەنبە كۇنۇپكىسىنى ئۇدا %d قېتىم باسسىڭىز، جىددىي ئالاقىداشقا ياردەم سوراش ئۇچۇرى ۋە ئورنىڭىز يوللىنىدۇ.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"Sos_Fall_Down_Permission_Description",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"بۇ مۇلازىمەت ئۈچۈن تۆۋەندىكى %d ئىجازەت كېرەك (بەرگەن ئىجازەتنى تەڭشەك > ئەپ ۋە تۈپئەپ > باشقا ئەپلەر > جىددىي ئالاقە > ئورۇن دېگەن بەتتىن قايتۇرۇۋېلىشقا بولىدۇ):",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"بۇ مۇلازىمەت ئۈچۈن تۆۋەندىكى %d ئىجازەت كېرەك (بەرگەن ئىجازەتنى تەڭشەك > ئەپ ۋە تۈپئەپ > باشقا ئەپلەر > جىددىي ئالاقە > ئورۇن دېگەن بەتتىن قايتۇرۇۋېلىشقا بولىدۇ):",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"Sos_Car_Accident_Permission_Description",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"بۇ مۇلازىمەت ئۈچۈن تۆۋەندىكى %d ئىجازەت كېرەك (بەرگەن ئىجازەتنى تەڭشەك > ئەپ ۋە تۈپئەپ > باشقا ئەپلەر > جىددىي ئالاقە > ئورۇن دېگەن بەتتىن قايتۇرۇۋېلىشقا بولىدۇ):",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"بۇ مۇلازىمەت ئۈچۈن تۆۋەندىكى %d ئىجازەت كېرەك (بەرگەن ئىجازەتنى تەڭشەك > ئەپ ۋە تۈپئەپ > باشقا ئەپلەر > جىددىي ئالاقە > ئورۇن دېگەن بەتتىن قايتۇرۇۋېلىشقا بولىدۇ):",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"Sos_Fall_Down_Auto_Call_for_Help_Description",
+            "value":[
+                {
+                    "quantity":"one",
+                    "value":"تەتۈر ساناپ %d سېكۇنت توشقاندا، جىددىي ئالاقىداشلارغا تەرتىپ بويىچە تېلېفون قىلىپ، خاتىرىلىگەن جىددىي قۇتقۇزۇش ئۇچۇرىنى ئاڭلىتىدۇ ۋە ئورۇن ئۇچۇرى قوشۇلغان ياردەم سوراش ئۇچۇرى يوللايدۇ.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"other",
+                    "value":"تەتۈر ساناپ %d سېكۇنت توشقاندا، جىددىي ئالاقىداشلارغا تەرتىپ بويىچە تېلېفون قىلىپ، خاتىرىلىگەن جىددىي قۇتقۇزۇش ئۇچۇرىنى ئاڭلىتىدۇ ۋە ئورۇن ئۇچۇرى قوشۇلغان ياردەم سوراش ئۇچۇرى يوللايدۇ.",
+                    "attr":{
+                        "priority":"LT"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"Sos_Car_Accident_Auto_Call_for_Help_Description",
+            "value":[
+                {
+                    "quantity":"one",
+                    "value":"تەتۈر ساناپ %d سېكۇنت توشقاندا، جىددىي ئالاقىداشلارغا تەرتىپ بويىچە تېلېفون قىلىپ، خاتىرىلىگەن جىددىي قۇتقۇزۇش ئۇچۇرىنى ئاڭلىتىدۇ ۋە ئورۇن ئۇچۇرى قوشۇلغان ياردەم سوراش ئۇچۇرى يوللايدۇ.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"other",
+                    "value":"تەتۈر ساناپ %d سېكۇنت توشقاندا، جىددىي ئالاقىداشلارغا تەرتىپ بويىچە تېلېفون قىلىپ، خاتىرىلىگەن جىددىي قۇتقۇزۇش ئۇچۇرىنى ئاڭلىتىدۇ ۋە ئورۇن ئۇچۇرى قوشۇلغان ياردەم سوراش ئۇچۇرى يوللايدۇ.",
+                    "attr":{
+                        "priority":"LT"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"auto_answer_call_after_seconds",
+            "value":[
+                {
+                    "quantity":"one",
+                    "value":"ئۆزلۈكىدىن ئالماقچى (%d)",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"other",
+                    "value":"ئۆزلۈكىدىن ئالماقچى (%d)",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"emergency_rescue_retry_tips",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"%d قېتىم قايتا يوللاندى.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"%d قېتىم قايتا يوللاندى.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"emergency_rescue_auto_send_rescue_message_all",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"%d سېكۇنتتىن كېيىن ياردەم سوراش ئۇچۇرى يوللىنىدۇ.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"%d سېكۇنتتىن كېيىن ياردەم سوراش ئۇچۇرى يوللىنىدۇ.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"emergency_rescue_send_rescue_message",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"ياردەم سوراپ ئۇچۇر يوللاش (%d)",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"ياردەم سوراپ ئۇچۇر يوللاش (%d)",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"emergency_rescue_exit_once_content",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"چېكىنسىڭىز، %d مىنۇت ئىچىدە قۇتقۇزۇش ئەترىتى بىلەن ئالاقە قىلالمايسىز، بىخەتەر مۇھىتقا بېرىۋېلىپ ئاندىن چېكىنىڭ.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"چېكىنسىڭىز، %d مىنۇت ئىچىدە قۇتقۇزۇش ئەترىتى بىلەن ئالاقە قىلالمايسىز، بىخەتەر مۇھىتقا بېرىۋېلىپ ئاندىن چېكىنىڭ.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"emergency_rescue_message_over_word_tips",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"%d خەت ئارتۇق",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"%d خەت ئارتۇق",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"emergency_rescue_send_immediately",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"ياردەم سوراش (%d)",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"ياردەم سوراش (%d)",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"emc_rescue_permission_notice_content_1",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"بۇ مۇلازىمەتكە تۆۋەندىكى %d ئىجازەت كېرەك:",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"بۇ مۇلازىمەتكە تۆۋەندىكى %d ئىجازەت كېرەك:",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        }
+    ]
+}
