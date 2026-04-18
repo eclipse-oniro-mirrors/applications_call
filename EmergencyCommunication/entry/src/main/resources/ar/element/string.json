@@ -1,0 +1,2510 @@
+{
+    "string":[
+        {
+            "name":"contactsWarnContent",
+            "value":"إضافة جهات اتصال الطوارئ قد تساعد المنقذين الأوائل في حالات الطوارئ. حيث يمكن لأي شخص قراءة هذه المعلومات دون الحاجة لفتح قفل جهازك.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"auto_send_earthquake_alarm_message",
+            "value":"تحذيرات الزلازل",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"list_learn_about_emergency_shelters",
+            "value":"البحث عن ملاجئ طوارئ قريبة.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Historical_warning_information",
+            "value":"التحذيرات السابقة",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeLocationLongitudeEast",
+            "value":"(%2$s ‏° شمالًا، %1$s ‏° غربًا)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"address",
+            "value":"العنوان",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"sos_permissions_tips_of_auto_send_sms",
+            "value":"لمنح صلاحية الوصول إلى الموقع يدويًا، اختر \"الموقع الدقيق\" من \"الإعدادات > التطبيقات والخدمات > المزيد من التطبيقات > طلب النجدة > الموقع\"",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeNext",
+            "value":"النصيحة التالية",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"alarm_close_dialog_remind_title",
+            "value":"تنويه",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"drugStatus",
+            "value":"الحالة المرضية ومعلومات إضافية",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"emergencyCallsOnly",
+            "value":"مكالمات الطوارئ فقط",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"GET_APPROXIMATELY_LOCATION",
+            "value":"يُستخدم هذا الإذن للحصول على موقعك التقريبي.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"EarthquakeMagnitude",
+            "value":"قوة الزلزال",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"aml_permission_location_info",
+            "value":"يُستخدم هذا الإذن للحصول على معلومات موقعك الدقيق، للمساعدة في توفير خدمات إغاثة أكثر فعالية في حالات الطوارئ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_Location_Detail",
+            "value":"تحتاج هذه الخدمة إلى %1$s وإلى منحها الإذن باستخدام/الوصول إلى %2$s. كما تحتاج إلى قراءة ورفع/نقل معلومات الموقع ورقم الهاتف. وذلك لتسهيل توفير خدمات الإنقاذ في حالات الطوارئ. بتشغيل هذا الخيار، فأنت تعني بذلك موافقتك على هذه البنود. يمكنك الاطلاع على %3$s و%4$s لمعرفة المزيد من التفاصيل حول كيفية معالجة معلوماتك الشخصية.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"clearInfo",
+            "value":"هل تريد مسح كافة المعلومات وجهات الاتصال؟",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"list_dial_emergency_contact_number",
+            "value":"إدارة جهات اتصال الطوارئ الخاصة بك.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"button_agree",
+            "value":"أوافق",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Emergency_message_without_location",
+            "value":"[النجدة]\nهناك حالة طارئة وأحتاج إلى مساعدتك، تم إشعارك لأنك أحد جهات الاتصال الخاصة بي في حالات الطوارئ. ربما لا أستطيع الرد على المكالمة الآن.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"notAdded",
+            "value":"بدون تعيين",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"drugPlacement",
+            "value":"على سبيل المثال، ليزينوبريل أو الأسبرين",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"AMBULANCE",
+            "value":"الإسعاف",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"no",
+            "value":"لا",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"sendSmsSuccess",
+            "value":"أُرسلت الرسالة",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_info",
+            "value":"الرسائل الآلية لطلب النجدة",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"bloodType",
+            "value":"فصيلة الدم",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"editEmergencyContact",
+            "value":"تعديل جهات اتصال الطوارئ",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Disclaimer_Instructions",
+            "value":"يتم توفير خدمة تحذيرات الزلازل كمرجع لك من قبل الجهات الحكومية المكلفة بالإغاثة في حالات الزلازل. علمًا بأن هواوي ليس لديها أي تحكم بالخدمة.\n\nقد لا يكون لديك سوى بضع ثوانٍ عند تلقي التحذير للبحث عن مكان مناسب للاحتماء. وفي بعض الحالات، قد لا تتلقى أي تحذير على الإطلاق قبل وصول موجات الزلزال. أنت المسؤول في النهاية عن سلامتك. لذا يُرجى توخي الحذر واتخاذ التدابير المناسبة لتجنب المخاطر.\n\nلا تتحمل هواوي أيّة مسؤولية عن أيّة خسائر قد تتعرض لها نتيجةً لعدم تلقي تحذيرات الزلازل بسبب وجود مناطق غير مغطاة في خدمة إنذار الطوارئ، أو عدم استقرار الاتصال بالشبكة، أو أعطال معدات الطرف الخارجي، أو أيّة ظروف أخرى خارجة عن سيطرة هواوي.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"removecontact",
+            "value":"هل تريد إزالة جهة اتصال الطوارئ؟",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EmergencyWarningSettings_7",
+            "value":"البيان المتعلق بتحذيرات الزلازل والخصوصية",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"EmergencyWarningSettings_8",
+            "value":"إشعار الأذونات",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"stop_share_location_prompt_content",
+            "value":"في حال خروجك الآن، ستتوقف عملية إرسال رسائل النجدة إلى جهات التواصل في حالات الطوارئ الخاصة بك. هل حقًا تريد الخروج؟",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EmergencyWarningSettings_4",
+            "value":"الموقع",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"EmergencyWarningSettings_2",
+            "value":"الاتصال بالإنترنت",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"aml_switch_title",
+            "value":"خدمات الطوارئ المستندة إلى الموقع من هواوي",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"exit",
+            "value":"خروج",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"car_accident_auto_call_for_help_title",
+            "value":"طلب النجدة الآلي بعد الحادث",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"button_agree_and_open",
+            "value":"الموافقة وتشغيل الخدمة",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"emergencyInfromation",
+            "value":"الطوارئ!",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"EarthquakeWarningTitle1",
+            "value":"تم رصد زلزال، يُرجى توخي الحذر وحماية نفسك!",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"earthquake_shelter_setting_dialog",
+            "value":"لا توجد تطبيقات خرائط تدعم هذه الميزة، حاول البحث عن مكانٍ آمن بالقرب منك",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"earthquake_problem_feedback",
+            "value":"يُستخدم هذا الإذن للإبلاغ عن المشكلات المتعلقة بتحذيرات الزلازل.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeWarningTitle3",
+            "value":"حاول أن تبقى هادئًا وابحث عن مكان مفتوح أو آمن للاختباء فيه. تجنب استخدام المصعد والأشياء المعلقة.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeArrivingLongTips",
+            "value":"سيبدأ العد التنازلي ويهتز جهازك. يجب أن تبحث عن ملجأ قريب أو تنتقل إلى مكان مفتوح في الخارج بأسرع ما يمكن.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"fullName",
+            "value":"الاسم الكامل",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeDistance",
+            "value":"المسافة من مركز الزلزال",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Permission_Title_1",
+            "value":"أذونات خدمة الإبلاغ عن معلومات موقعك في حالات الطوارئ",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Permission_Title_2",
+            "value":"أذونات الرسائل الآلية لطلب النجدة",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Permission_Description_4",
+            "value":"الرسائل",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Sos_Permission_Description_3",
+            "value":"يُستخدم هذا الإذن للحصول على الموقع الجغرافي الدقيق لجهازك من أجل إرسال موقعك إلى جهات الاتصال في حالات الطوارئ الخاصة بك عند تفعيل خدمة طلب النجدة في حالات الطوارئ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"emergency_number_alarm",
+            "value":"المنبه الشخصي",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Permission_Description_5",
+            "value":"يُستخدم هذا الإذن لإشعار جهات الاتصال الخاصة بك تلقائيًا عن طريق الرسائل النصية عند تفعيل خدمة نداء الاستغاثة في حالات الطوارئ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"clear",
+            "value":"مسح",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Permission_Description_2",
+            "value":"يُستخدم هذا الإذن للوصول إلى الموقع الدقيق لجهازك، مما يساعد على توفير خدمات إغاثة أكثر فعالية في حالات الطوارئ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"list_quickly_show_emergency_information",
+            "value":"تعيين معلومات الطوارئ الشخصية الخاصة بك، حيث ستُعرض هذه المعلومات على الشاشة أثناء الطوارئ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"getLocationService",
+            "value":"هل تريد تشغيل ميزة الوصول إلى الموقع تلقائيًا؟",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"car_accident_detection_disclaimer_content_one",
+            "value":"إذا اكتشف جهازك حادث سير خطير، فسيتصل تلقائيًا بجهات الاتصال في حالات الطوارئ ويرسل رسالة نصية تحتوي على موقعك. يُرجى التأكد من أن جهات الاتصال الخاصة بك في حالات الطوارئ على علم بهذه الميزة، وذلك لضمان عدم تجاهل هذه الرسائل أو إساءة فهمها.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"button_open",
+            "value":"تشغيل",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"aml_permission_message_info",
+            "value":"يُستخدم هذا الإذن لإرسال رسائل طلب النجدة تلقائيًا.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"continue",
+            "value":"موافق",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"allergiesPlacement",
+            "value":"على سبيل المثال، الفول السوداني أو حبوب اللقاح",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"getLocation",
+            "value":"انقر هنا للحصول على الموقع",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"notificationSwitchDialogContent",
+            "value":"لتلقي تحذيرات الزلازل، انتقل إلى إعدادات التطبيق واسمح لخدمة النجدة بإرسال إشعارات إليك.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"EarthquakeCenter",
+            "value":"مركز الزلزال",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"aml_short_notification",
+            "value":"<body><span style='subtitle'>تحتاج هذه الخدمة إلى الاتصال بالإنترنت وإلى منحها إذن استخدام/الوصول إلى الموقع. كما تحتاج إلى تشغيل خدمات الموقع، وقراءة ورفع/نقل رقم هاتف هذا الجهاز ومعلومات الموقع ورقم IMEI. بتشغيل هذا الخيار، فأنت تعني بذلك موافقتك على هذه البنود. يمكنك الاطلاع على </span><span style='privacyStatement'>البيان المتعلق بخدمات الطوارئ المستندة إلى الموقع من هواوي والخصوصية</span><span style='subtitle'> و</span><span style='permission'>الإشعار المتعلق بالأذونات</span><span style='subtitle'> لمعرفة المزيد من التفاصيل حول كيفية معالجة معلوماتك الشخصية.</span></body>",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"addEmergencyContact",
+            "value":"إضافة جهات اتصال الطوارئ",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"permissionConfirm",
+            "value":"حسنًا",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"emergency_location_service_text",
+            "value":"ستُستخدم معلومات موقعك عند طلب النجدة. تحتاج هذه الخدمة إلى الاتصال بالإنترنت وإلى منحها إذن استخدام/الوصول إلى الموقع. كما تحتاج إلى قراءة ورفع/نقل معلومات الموقع ورقم الهاتف، والتي ستُستخدم لتوفير خدمات الإنقاذ في حالات الطوارئ. بتشغيل هذا الخيار، فأنت تعني بذلك موافقتك على هذه البنود. يمكنك الاطلاع على <a link=\"privacyStatement\">البيان المتعلق بخدمة الإبلاغ عن معلومات موقعك في حالات الطوارئ والخصوصية</a> و<a link=\"permissionStatement\">إشعار الأذونات</a> لمعرفة المزيد من التفاصيل حول كيفية معالجة معلوماتك الشخصية.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"aml_permission_info_title",
+            "value":"استخدام هذه الخدمة يتطلب الحصول على الإذن التالي:",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"System",
+            "value":"النظام",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"add",
+            "value":"إضافة",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"already_in_contacts",
+            "value":"جهة الاتصال %s موجودة بالفعل ضمن جهات اتصال الطوارئ",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"notEmergencyNumberMsg",
+            "value":"يتعذر إتمام المكالمة. \u202a%s\u202c ليس من أرقام الطوارئ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"peopleAdded",
+            "value":"%d",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"no_service_message_and_call_unavailable",
+            "value":"لا توجد خدمة. خدمات الهاتف والرسائل النصية غير متوفرة.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"remove",
+            "value":"إزالة",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"sos_calling_summary",
+            "value":"المكالمة جارية. انقر هنا للانضمام.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"EarthquakeInfoTitle",
+            "value":"تفاصيل التحذير",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"earthquake_warning_summary",
+            "value":"تلقي إنذارات مبكرة في حالة حدوث زلازل.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"permission_reason_contacts",
+            "value":"يُستخدم هذا الإذن لإدارة جهات الاتصال.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"medicalInfo",
+            "value":"البيانات الطبية",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"emergency_number_traffic",
+            "value":"الحوادث المرورية",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"drugStatusPlacement",
+            "value":"على سبيل المثال، الربو",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"earthquake_warning_notification_text_without_device_address",
+            "value":"تم رصد زلزال بقوة %2$s في %1$s. من المتوقع حدوث %3$s في منطقتك.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"gettingLocation",
+            "value":"جارٍ معرفة موقعك…",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeLocationLatitudeSouth",
+            "value":"(%2$s ‏° جنوبًا، %1$s ‏° غربًا)",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"sendNow",
+            "value":"موافق",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"drug",
+            "value":"الأدوية",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"teaching_dialog_complete",
+            "value":"حسنًا",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"closeLocationService",
+            "value":"هل تريد إيقاف تشغيل ميزة الوصول إلى الموقع تلقائيًا؟",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"share_location_background_tips",
+            "value":"جارٍ إرسال معلومات الموقع إلى جهات التواصل في حالات الطوارئ",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeArriving",
+            "value":"قبل وصول موجات الزلزال",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"unable_auto_dial_dialog_title",
+            "value":"تعذر إجراء مكالمة لطلب النجدة",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"addContact",
+            "value":"إضافة جهة اتصال",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"determine",
+            "value":"موافق",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"car_accident_detection_disclaimer_content_four",
+            "value":"هذه الميزة متوفرة في بر الصين الرئيسي فقط.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeUpdate",
+            "value":"وقت الزلزال",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"yes",
+            "value":"نعم",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"list_learn_about_emergency_shelters_title",
+            "value":"ملاجئ آمنة",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"oobe_EarthquakeWarningServer_content",
+            "value":"يمكن لهذه الخدمة إرسال تحذير إليك عند اكتشاف زلزال. وتحتاج إلى الاتصال بالإنترنت ومنحها إذن استخدام/الوصول إلى الموقع. كما تحتاج إلى معرفة معلومات جهازك وموقعك. بتشغيل هذا الخيار، فأنت تعني بذلك موافقتك على هذه البنود بالإضافة إلى بيان <a link=\"disclaimStatement\">إخلاء المسؤولية القانونية</a> و<a link=\"privacyStatement\">البيان المتعلق بتحذيرات الزلازل والخصوصية</a> و<a link=\"permissionStatement\">الإشعار المتعلق بالأذونات</a>.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"send_sms_notify_emergency_contact",
+            "value":"سترسل رسالة إلى جهات التواصل في حالات الطوارئ",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeWarningTitle1_2",
+            "value":"تم رصد زلزال، يُرجى توخي الحذر وحماية نفسك!",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"earthquake_advanced",
+            "value":"إعدادات متقدمة",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Turn_on_Emergency_Information_and_Warning_text",
+            "value":"معلومات موقعك مطلوبة لتوفير خدمة تحذيرات الزلازل لمنطقتك.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"warning_area_and_function_text",
+            "value":"مناطق التغطية والوصف لهذه الميزة",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"important_state_title",
+            "value":"تنويه هام",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"car_accident_detection_disclaimer",
+            "value":"إخلاء المسؤولية القانونية لخدمة اكتشاف حوادث السير",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Permission_denied_to_send_sms",
+            "value":"لا يمتلك هذا التطبيق الإذن لإرسال الرسائل",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_emergency_title",
+            "value":"نداء استغاثة",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Historical_warning_information_explain",
+            "value":"عرض جميع التحذيرات التي تلقيتها.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_Location_Detail_Active_two",
+            "value":"إشعار الأذونات",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeWarningServer",
+            "value":"تحذيرات الزلازل",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeLocation",
+            "value":"مركز الزلزال",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"noLocationPermissionTitle",
+            "value":"استخدام خدمة النجدة يتطلب الحصول على إذن الموقع",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_Location_Info",
+            "value":"إرسال معلومات موقعك الجغرافي بعد تشفيرها إلى الشرطة عند إجراء مكالمة طوارئ (متاحة في بر الصين الرئيسي فقط).",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"removeContact",
+            "value":"هل تريد إزالة %s من جهات اتصال الطوارئ؟",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Call",
+            "value":"المكالمات الآلية لطلب النجدة",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_not_support",
+            "value":"خدمة النجدة غير متاحة عند تشغيل ميزة الاتصالات عبر القمر الصناعي Tiantong.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_Location_Detail_Active_one",
+            "value":"البيان المتعلق بخدمة الإبلاغ عن معلومات موقعك في حالات الطوارئ والخصوصية",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"no_sim_message_and_call_unavailable",
+            "value":"لا توجد بطاقة SIM. خدمات الهاتف والرسائل النصية غير متوفرة.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"closeLocationService_title",
+            "value":"إيقاف الوصول التلقائي للموقع",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"sos_is_auto_calling",
+            "value":"جارٍ الاتصال تلقائيًا…",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Call_Test",
+            "value":"معاينة الرسالة الآلية لطلب النجدة",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"InfoEdit_edits_info",
+            "value":"تحرير",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"warnInfo",
+            "value":"هل انتهيت من تعيين جميع الإعدادات؟ انتقل إلى %s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"sendSmsFail",
+            "value":"يتعذر إرسال رسالة نصية (السبب غير معروف)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_Location_Detail_Dark_one",
+            "value":"الاتصال بالإنترنت",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_Location_When_Call_Detail",
+            "value":"السماح للنظام بالحصول على موقعك عند بدء مكالمة طوارئ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"FIRE",
+            "value":"مكافحة الحرائق",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeFelling1",
+            "value":"هزة خفيفة",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"warnContent",
+            "value":"هذه المعلومات يمكن أن تساعد المنقذين الأوائل في حالات الطوارئ.\n\nحيث يتم تخزينها على جهازك ويمكن لأي شخص الاطلاع عليها دون الحاجة إلى فتح قفل هذا الجهاز. يمكنك أيضًا تعيين هذه المعلومات من \"جهات الاتصال > بطاقتي\".",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeFelling3",
+            "value":"دمار ملحوظ",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeFelling2",
+            "value":"هزة قوية",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Permission_Instructions",
+            "value":"أذونات تحذيرات الزلازل",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeArrived",
+            "value":"بعد وصول موجات الزلزال",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeAlarmTest",
+            "value":"معاينة نغمة التحذير",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"define_disclaimer",
+            "value":"إخلاء المسؤولية القانونية",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"unable_auto_dial_dialog_summary",
+            "value":"يتعين عليك أولًا إضافة جهة اتصال طوارئ واحدة على الأقل.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"clearAll",
+            "value":"مسح الكل",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"remove_last_emergency_contact_prompt_content",
+            "value":"هل تريد حذف \"%s\" من قائمة جهات اتصال الطوارئ لديك؟ في حال إتمام الإجراء، فإن هذا الشخص لن يتمكن من تلقي مكالمات أو رسائل طلب النجدة تلقائيًا بعد الآن.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"closeLocationServiceMsg",
+            "value":"عند إيقاف هذه الميزة، لن يعرض جهازك موقعك الحالي تلقائيًا أثناء إجراء مكالمة طوارئ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"CANCEL",
+            "value":"إلغاء",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"sos_is_playing_recording",
+            "value":"جارٍ تشغيل رسالة طلب النجدة. انقر هنا للدخول إلى المكالمة.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"personalInfo",
+            "value":"البيانات الشخصية",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_emergency_personal_info",
+            "value":"تعيين المعلومات الشخصية والطبية",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"sendMsgNotice",
+            "value":"يمكنك إرسال رسالة نصية لجهة الاتصال هذه لإبلاغها بأنك قد أضفتها كجهة اتصال للطوارئ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"emergencyInfromationText",
+            "value":"حدث زلزال بقوة %2$s في %1$s. من المتوقع حدوث %4$s في %3$s.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"noLocationPermissionDesc",
+            "value":"يُستخدم هذا الإذن للوصول إلى موقعك أثناء إجراء مكالمة طوارئ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"sendMsg",
+            "value":"لقد قمت بإضافتك كجهة اتصال للطوارئ. في حالة الطوارئ قد تتلقى رسالة طلب النجدة مني بطلب المساعدة في حالة حدوث طارئ ما. [خدمة النجدة من هواوي]",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergencyContact",
+            "value":"جهات اتصال الطوارئ",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeInfofrom",
+            "value":"المصدر: %s",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"popup_button_gotosettings",
+            "value":"الإعدادات",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"POLICE",
+            "value":"الشرطة",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"importantDialogContent_8",
+            "value":"هنا",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"earthquake_location_notice",
+            "value":"لمنح صلاحية الوصول إلى الموقع يدويًا، حدد \"السماح طوال الوقت\" و\"الموقع الدقيق\" من \"الإعدادات > التطبيقات والخدمات > المزيد من التطبيقات > النجدة > الموقع\".",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"EarthquakeAlarmTesting",
+            "value":"إنهاء المعاينة (%s)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"importantDialogContent_4",
+            "value":"بالنقر على \"أوافق\"، فأنت تعني بذلك موافقتك على تلقي خدمة \"تحذيرات الزلازل\" وقبول بيان %1$s. يمكنك الاطلاع على %2$s و%3$s لمعرفة المزيد من التفاصيل حول كيفية معالجة معلوماتك الشخصية. كما يمكنك النقر %4$s لمعرفة المزيد من المعلومات.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"emergency_location_service_title",
+            "value":"الإبلاغ عن موقعك في حالات الطوارئ",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"editEmergencyInfo",
+            "value":"تحرير معلومات الطوارئ",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"The_position_switch_off_text",
+            "value":"لن تتلقى تحذيرات قبل حدوث الزلازل إذا أغلقت هذا الخيار. هل حقًا تريد إغلاقه؟",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"earthquake_shelter_setting_notice",
+            "value":"يُرجى تثبيت الخرائط للبحث عن الملاجئ الآمنة",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"getLocationMsg1",
+            "value":"لمساعدتك في الإبلاغ عن موقعك في حالات الطوارئ، سيعرض جهازك موقعك تلقائيًا عند إجراء مكالمة طوارئ. يمكنك النقر على الموقع لعرضه في أحد تطبيقات الخرائط.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeLocationLongitudeWest",
+            "value":"(%2$s ‏° جنوبًا، %1$s ‏° شرقًا)",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"remove_emergency_contact_text",
+            "value":"إزالة جهة اتصال الطوارئ",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"noStated",
+            "value":"غير محدد",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"personalEmergencyInfo",
+            "value":"معلومات الطوارئ",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_info_Detail_notice_dark_one",
+            "value":"الرسائل",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_info_Detail_notice_dark_Two",
+            "value":"الموقع",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"earthquake_alarm_notify",
+            "value":"تحذيرات الطوارئ",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Emergency_message",
+            "value":"[النجدة]\nهناك حالة طارئة وأحتاج إلى مساعدتك، تم إشعارك لأنك أحد جهات الاتصال الخاصة بي في حالات الطوارئ.\nموقعي الحالي هو: %s. ربما لا أستطيع الرد على المكالمة الآن.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"PermissionDescriptionContent_3",
+            "value":"يُستخدم هذا الإذن للحصول على الموقع الدقيق لجهازك من أجل إرسال تحذيرات الزلازل.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"emergencyContacts",
+            "value":"أرقام الطوارئ",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"The_position_switch_off",
+            "value":"تشغيل الموقع",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"organDonor",
+            "value":"التبرع بالأعضاء",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_alter_title",
+            "value":"معاينة معلومات التحذير",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"PermissionDescriptionContent_2",
+            "value":"الموقع",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_info_Detail_notice_all",
+            "value":"تحتاج هذه الخدمة إلى منحها الإذن باستخدام/الوصول إلى %1$s و%2$s، وتحتاج إلى قراءة معلومات الموقع. بتشغيل هذا الخيار، فأنت تعني بذلك موافقتك على هذه البنود. يمكنك الاطلاع على %3$s و%4$s لمعرفة المزيد من التفاصيل.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_Location_When_Call",
+            "value":"الحصول على معلومات الموقع آليًا",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_info_Detail_notice_active_two",
+            "value":"إشعار الأذونات",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"unable_auto_dial_dialog_add",
+            "value":"إضافة",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeLocationLatitudeNorth",
+            "value":"(%2$s ‏° شمالًا، %1$s ‏° شرقًا)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"unable_send_help_info",
+            "value":"تعذر إرسال الرسالة",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"GET_LOCATION_IN_BACKGROUND",
+            "value":"يُستخدم هذا الإذن للحصول على معلومات الموقع عند التشغيل في الخلفية.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"aml_permission_dialog_title",
+            "value":"أذونات خدمات الطوارئ المستندة إلى الموقع من هواوي",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"getLocationFailed",
+            "value":"يتعذر الحصول على الموقع. يُرجى إعادة المحاولة.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"importantDialogContent_2",
+            "value":"لتوفير ميزة تحذيرات الزلازل، تحتاج هذه الخدمة إلى الاتصال بالإنترنت ومنحها الإذن باستخدام/الوصول إلى الموقع. عند حدوث زلزال، سترسل خوادم هواوي الخاصة بالتحذيرات من الزلازل تحذيرات وتتيح الوصول إلى خدمات الطوارئ للمستخدمين المتضررين بناءً على موقعهم ومعلومات أجهزتهم. انقر %s للحصول على تفاصيل شاملة حول هذه الميزة والمناطق المدعومة.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"importantDialogContent_3",
+            "value":"هنا",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"notifyContact",
+            "value":"هل تريد إبلاغ جهة الاتصال؟",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"emergencyInfo",
+            "value":"معلومات الطوارئ",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_info_Detail_notice_active_one",
+            "value":"البيان المتعلق بالرسائل الآلية لطلب النجدة والخصوصية",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EmergencyWarningSettings_all",
+            "value":"تحتاج هذه الخدمة إلى %1$s وإلى منحها الإذن باستخدام/الوصول إلى %2$s، كما تحتاج إلى قراءة ورفع/نقل معلومات الموقع لتوفير تحذيرات الزلازل. بتشغيل هذا الخيار، فأنت تعني بذلك موافقتك على هذه البنود إضافةً إلى بيان %3$s. يمكنك الاطلاع على %4$s و%5$s لمعرفة المزيد من التفاصيل حول كيفية معالجة معلوماتك الشخصية.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"notification_switch_dialog_content",
+            "value":"هذا من أجل إرسال تنبيهات الزلازل إليك. يمكنك تشغيل الإشعارات من \"الإعدادات\".",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"aml_switch_summary",
+            "value":"إرسال موقعك تلقائيًا إلى خدمات الطوارئ عند إجراء مكالمة طوارئ أو إرسال رسالة طوارئ. يخضع ذلك لتوافر الخدمة.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"allergies",
+            "value":"الحساسية",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"function_settings_text",
+            "value":"الإعدادات",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_Location",
+            "value":"الإبلاغ عن الموقع الجغرافي",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"rightCall",
+            "value":"اسحب لليسار للاتصال بالرقم \u202a%s\u202c",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"unable_auto_dial_and_send_sms_dialog_title",
+            "value":"تعذر إجراء مكالمة أو إرسال رسالة",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"EarthquakeIntensity",
+            "value":"الشدة (%s)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"notification_switch_dialog_title",
+            "value":"تريد خدمة النجدة إرسال إشعارات إليك",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeArrivedLongTips",
+            "value":"سيُصدر إنذار عند وصول موجات الزلزال. وستظهر خيارات للبحث عن ملجأ، والاتصال بالمساعدة، وعرض معلومات الطوارئ الشخصية.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"car_accident_detection_statement_on_service_and_privacy",
+            "value":"البيان المتعلق بنداء الاستغاثة الآلي بعد الحادث والخصوصية",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fall_down_detection_disclaimer",
+            "value":"إخلاء المسؤولية القانونية لخدمة اكتشاف السقوط",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"cannot_enable_fall_down_sos",
+            "value":"يتعذّر تشغيل طلب النجدة الآلي بعد السقوط",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"car_accident_detection_disclaimer_in_short_notice",
+            "value":"إخلاء المسؤولية القانونية لخدمة اكتشاف حوادث السير",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fall_down_message",
+            "value":"[النجدة – اكتشاف سقوط]\nاكتشف هاتفي أنني سقطت وأحتاج إلى مساعدتك. يتم إبلاغك لأنك إحدى جهات اتصال الطوارئ لدي.\nموقعي الحالي هو: %s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_info_Detail_notice_renew",
+            "value":"تتطلب هذه الخدمة إذن %1$s وتحتاج إلى قراءة معلومات الموقع. بتشغيل هذا الخيار، فأنت تعني بذلك موافقتك على هذه البنود. يمكنك الاطلاع على %2$s و%3$s لمعرفة المزيد من التفاصيل.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"cannot_enable_car_accident_sos",
+            "value":"يتعذّر تشغيل طلب النجدة الآلي بعد الحادث",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"car_accident_sos_message_without_location",
+            "value":"[النجدة - حادث سيارة]\nاكتشف هاتفي أنني تعرضت لحادث وأحتاج إلى مساعدتك. يتم إبلاغك لأنك إحدى جهات اتصال الطوارئ لدي.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fall_down_detection_disclaimer_content_one",
+            "value":"إذا اكتشف جهازك حادثة سقوط، فسيتصل تلقائيًا بجهات اتصال الطوارئ ويرسل رسالة نصية تتضمن موقعك. يُرجى التأكُّد من معرفة جهات اتصال الطوارئ لديك بهذه الميزة، وذلك لضمان عدم تجاهل هذه الرسائل أو إساءة تفسيرها.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fall_down_message_without_location",
+            "value":"[النجدة – اكتشاف سقوط]\nاكتشف هاتفي أنني سقطت وأحتاج إلى مساعدتك. يتم إبلاغك لأنك إحدى جهات اتصال الطوارئ لدي.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"car_accident_permission_title",
+            "value":"أذونات طلب النجدة الآلي بعد الحادث",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"car_accident_sos_message",
+            "value":"[النجدة - حادث سيارة]\nاكتشف هاتفي أنني تعرضت لحادث سيارة وأحتاج إلى مساعدتك. يتم إبلاغك لأنك إحدى جهات اتصال الطوارئ لدي.\nموقعي الحالي هو: %s.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fall_down_auto_call_for_help_title",
+            "value":"طلب النجدة الآلي بعد السقوط",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fall_down_detection_disclaimer_content_two",
+            "value":"تعمل هذه الميزة عن طريق تفسير البيانات من مستشعرات جهازك. وقد تؤدي أنماط بيانات المستشعر التي تشبه السقوط إلى تشغيل هذه الميزة دون قصد. وفي بعض الحالات، قد لا ينتج السقوط بيانات مستشعر قادرة على تحفيز هذه الميزة. يُرجى أيضًا ملاحظة أن اتصال جهازك وحالته قد يؤثران في قدرته على إجراء المكالمات الهاتفية وإرسال الرسائل.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fall_down_trigger_prompt",
+            "value":"يبدو أنك سقطت في الساعة %1$s. وسيجري هاتفك مكالمة طوارئ إذا لم تستجب.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fall_down_auto_call_notice_all",
+            "value":"تتطلب هذه الخدمة إذن %1$s للوصول إلى موقعك. بتشغيل هذا الخيار، فأنت تعني بذلك موافقتك على هذه البنود وعلى %2$s. يمكنك الاطلاع على %3$s و%4$s لمعرفة المزيد من التفاصيل عن كيفية معالجة معلوماتك الشخصية.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fall_down_detection_disclaimer_in_short_notice",
+            "value":"إخلاء المسؤولية القانونية لخدمة اكتشاف السقوط",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"sos_is_playing_recording_1",
+            "value":"جارٍ تشغيل رسالة النجدة.\nانقر للانتقال إلى المكالمة.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"car_accident_trigger_prompt",
+            "value":"يبدو أنك تعرضت لحادث سيارة في الساعة %1$s. وسيجري هاتفك مكالمة طوارئ إذا لم تستجب.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fall_down_detection_statement_on_service_and_privacy",
+            "value":"البيان المتعلق بطلب النجدة الآلي بعد السقوط والخصوصية",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"car_accident_auto_call_notice_all",
+            "value":"تتطلب هذه الخدمة إذن %1$s للوصول إلى معلومات موقعك. بتشغيل هذا الخيار، فأنت تعني بذلك موافقتك على هذه البنود وعلى %2$s أيضًا. يمكنك الاطلاع على %3$s و%4$s لمعرفة المزيد من التفاصيل عن كيفية معالجة معلوماتك الشخصية.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fall_down_permission_title",
+            "value":"أذونات طلب النجدة الآلي بعد السقوط",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_location_service_text_new",
+            "value":"عند طلب النجدة، ترسل هذه الخدمة موقعك المشفر إلى خدمات الطوارئ حتى تحصل على المساعدة على النحو المنشود. تحتاج هذه الخدمة إلى الاتصال بالإنترنت وإلى منحها إذن استخدام/الوصول إلى الموقع، كما تحتاج إلى قراءة ورفع/نقل معلومات موقعك ورقم هاتفك من أجل إرسالها إلى خدمات الطوارئ. بتشغيل هذا الخيار، فأنت تعني بذلك موافقتك على البنود الواردة أعلاه. يمكنك الاطلاع على <a link=\"permissionStatement\">إشعار الأذونات</a> لمعرفة التفاصيل التي تتطلبها هذه الخدمة.\nهذه الخدمة مُقدمة بواسطة الأطراف الخارجية الواردة أدناه. يمكنك الاطلاع على:\n${param1}. البيان المتعلق بمنصة خدمات الموقع في حالات الطوارئ والخصوصية () للأكاديمية الصينية لتكنولوجيا المعلومات والاتصالات (CAICT)\n${param2}. سياسة الخصوصية لشركة LocationNet‏ () لشركة Shenzhen LocationNet Technology Co., Ltd.‎",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Location_Net_Privacy",
+            "value":"سياسة خصوصية LocationNet",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_Location_Detail_new",
+            "value":"تتطلب هذه الخدمة اتصالاً بشبكة الإنترنت %1$s وإذن %2$s، وستقرأ معلومات موقعك رقم هاتفك وترفعهما/تنقلهما من أجل إرسالهما إلى خدمات طوارئ تابعة لطرف ثالت. بتشغيل هذا الخيار، فأنت تعني بذلك موافقتك على الشروط الواردة أعلاه. لمعرفة التفاصيل المتعلقة بالأذونات التي تتطلبها هذه الخدمة، يُرجى الرجوع إلى %3$s.\nهذه الخدمة مُقدمة من الأطراف الثالثة المذكورة أدناه. لمعرفة التفاصيل المتعلقة بمعالجة المعلومات الشخصية، يُرجى الرجوع إلى:\n%4$s. الأكاديمية الصينية لتكنولوجيا المعلومات والاتصالات (CAICT). %5$s\n%6$s. Shenzhen LocationNet Technology Co., Ltd.‎ %7$s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Emergency_Position_Service_Privacy",
+            "value":"بيان حول منصة خدمات الموقع في حالات الطوارئ والخصوصية",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"open_phone_to_emergency_calls",
+            "value":"افرد الهاتف لمكالمات الطوارئ",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"location_south_east",
+            "value":"‏%1$s جنوبًا و%2$s شرقًا",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"location_north_west",
+            "value":"‏%1$s شمالًا و%2$s غربًا",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"car_accident_detection_disclaimer_content_two",
+            "value":"تعمل هذه الميزة عن طريق تفسير البيانات الواردة من مستشعرات جهازك. قد تؤدي أنماط بيانات المستشعر التي تشبه حوادث السيارة إلى تشغيل هذه الميزة من دون قصد. في بعض الحالات، قد لا يؤدي وقوع حادث إلى إنشاء بيانات مستشعر قادرة على تحفيز هذه الميزة. يُرجى أيضًا ملاحظة أن اتصال جهازك وحالته قد يؤثران في قدرته على إجراء المكالمات الهاتفية وإرسال الرسائل.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"unsupport_satellite_card_content",
+            "value":"يتعذر إرسال الرسائل أثناء إجراء المكالمات عبر القمر الصناعي",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fall_down_detection_disclaimer_content_four",
+            "value":"هذه الميزة متوفرة في بر الصين الرئيسي فقط.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"car_accident_detection_disclaimer_content_three",
+            "value":"لا تتحمل شركة هواوي المسؤولية عن أي أضرار قد تحدث بسبب القياسات الواردة من المستشعر أو اتصال الشبكة أو حالة الجهاز أو بسبب تجاهل الرسائل أو إساءة فهمها.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"location_north_east",
+            "value":"‏%1$s شمالًا و%2$s شرقًا",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"address_details",
+            "value":"العنوان: %s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fall_down_detection_disclaimer_content_three",
+            "value":"لا تتحمل شركة هواوي المسؤولية عن أي أضرار قد تحدث بسبب القياسات الواردة من المستشعر أو اتصال الشبكة أو حالة الجهاز أو بسبب تجاهل الرسائل أو إساءة فهمها.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"location_south_west",
+            "value":"‏%1$s جنوبًا و%2$s غربًا",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"position",
+            "value":"الموقع: %s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite",
+            "value":"الرسائل عبر القمر الصناعي Tiantong",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"NumberEdit_delete",
+            "value":"تم حذف %s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"InfoEdit_back",
+            "value":"رجوع",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"one_finger_double_click",
+            "value":"انقر مرتين للتفعيل",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"positioning",
+            "value":"الموقع",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"InfoEdit_show_dialpad",
+            "value":"إظهار لوحة الاتصال",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"InfoEdit_delete",
+            "value":"حذف",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"not_available",
+            "value":"يتعذّر الاستخدام",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"InfoEdit_edit",
+            "value":"المزيد من الخيارات",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"ContactsEdit_close",
+            "value":"إزالة جهة اتصال الطوارئ",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"InfoEdit_dail",
+            "value":"اتصال",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_slogan",
+            "value":"فريق الإنقاذ",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"phrases_button",
+            "value":"الرسائل السريعة",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_submit_message_subtitle1",
+            "value":"يمكنك إبلاغ أجهزة فرق الإنقاذ القريبة بموقعك ووضعك.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"rescue_signal_level_middle",
+            "value":"قوة الإشارة: متوسطة",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_save_power_tips",
+            "value":"للحفاظ على طاقة البطارية، أوقف تشغيل الشاشة أثناء انتظار المساعدة.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"rescue_message_communication_banner_content",
+            "value":"انقر للإبلاغ بوضعك.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"rescue_signal_level_strong",
+            "value":"قوة الإشارة: قوية",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"rescue_message_sending_banner_title",
+            "value":"جارٍ إرسال الرسالة…",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"rescue_message_communication_banner_title",
+            "value":"التواصل مع فريق الإنقاذ",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"rescue_signal_level_low",
+            "value":"قوة الإشارة: ضعيفة",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_exit_once_title",
+            "value":"هل تريد الخروج من الإنقاذ الطارئ؟",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_service_title",
+            "value":"النجدة خارج التغطية",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_disaster_situation_title",
+            "value":"الوضع",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_message_send_failed_tips",
+            "value":"الإشارة غير مستقرة، سُعاد إرسال الرسالة عند استعادة الإشارة",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_receive_d2d_subtitle1",
+            "value":"يمكنك إبلاغ أجهزة فرق الإنقاذ القريبة بموقعك ووضعك.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"send_button",
+            "value":"إرسال",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_submit_success_title",
+            "value":"تم تسليم الرسالة",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_team",
+            "value":"فريق الإنقاذ",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"keyboard_button",
+            "value":"لوحة المفاتيح",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_location_title",
+            "value":"الموقع",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_sending",
+            "value":"قيد الإرسال",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_exit_completely_content",
+            "value":"إذا أوقفت تشغيل هذا الخيار، فلن يتمكن جهازك من البحث عن فرق الإنقاذ القريبة عندما لا تكون هناك تغطية شبكة. لذا ننصحك بإبقاء هذا الخيار مشغلاً.\n\nهل تريد بالتأكيد إيقاف تشغيله؟",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"disaster_situation_fire",
+            "value":"حريق",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_sended_status",
+            "value":"تم التسليم",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"message_textarea_placeholder",
+            "value":"وصف وضعك",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_view_details",
+            "value":"عرض التفاصيل",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_my_rescue_info",
+            "value":"تفاصيل النجدة",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_get_location_failed",
+            "value":"يتعذر الحصول على الموقع",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_sending_status",
+            "value":"جارٍ الإرسال…",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_exit_current_rescue",
+            "value":"خروج",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"rescue_signal_detected",
+            "value":"في انتظار إرسال الرسالة…",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_submit_message_title",
+            "value":"إرسال رسالة نجدة",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"rescue_message_send_failed_banner_title",
+            "value":"تعذر إرسال الرسالة",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"rescue_signal_level_none",
+            "value":"قوة الإشارة: لا توجد إشارة",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_receive_d2d_title",
+            "value":"تم اكتشاف إشارة من فريق إنقاذ",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"China_Broadnet",
+            "value":"‏China Broadnet",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"send_position_btn_text",
+            "value":"إرسال معلومات الموقع",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_wait_for_send",
+            "value":"بانتظار الإرسال",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"switching_audio_channels",
+            "value":"تبديل القنوات الصوتية",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"incomingCall",
+            "value":"مكالمة واردة",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_call_finish",
+            "value":"انتهت المكالمة",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_disclaimer_content_all",
+            "value":"تحتاج هذه الخدمة إلى إذن %1$s وقراءة رقم (أرقام) هاتفك ورقم (أرقام) IMEI ومعلومات الموقع. يعني تشغيل هذه الميزة موافقتك على هذه البنود وعلى %2$s. يمكنك الاطلاع على %3$s و%4$s لمعرفة تفاصيل عن كيفية معالجة معلوماتك الشخصية.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_privacy_statement",
+            "value":"البيان المتعلق باتصالات الطوارئ خارج الشبكة والخصوصية",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fracture",
+            "value":"كسر",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"building_collapse",
+            "value":"انهيار مبنى",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"in_good_status",
+            "value":"بخير",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"road_damage",
+            "value":"تضرر الطرق",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"surrounding_environment",
+            "value":"البيئة المحيطة",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_not_select_distress_situation",
+            "value":"لم يتم تحديد الوضع",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"flood",
+            "value":"فيضان",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"personal_status",
+            "value":"الحالة الصحية",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"there_are_children",
+            "value":"يوجد أطفال",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"landslide",
+            "value":"انهيار أرضي",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"there_are_old_people",
+            "value":"يوجد كبار سن",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"detected_cellular_signal_dialog_content",
+            "value":"شبكة الجوال متاحة. ستتمكن من إجراء المكالمات عبر شبكة شركة الاتصالات بعد الخروج.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_describe_distress",
+            "value":"صِف وضعك",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_answer_call_failed",
+            "value":"تعذّر الرد",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"unable_to_walk",
+            "value":"عاجز عن المشي",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"someone_injured",
+            "value":"يوجد جرحى",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_description",
+            "value":"عند تشغيل هذا الخيار، يمكنك إرسال طلب النجدة واستقبال المكالمات من أفراد الإنقاذ القريبين في المناطق التي لا تغطيها شبكة الجوال.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"food_shortage",
+            "value":"نقص الغذاء",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hypothermia",
+            "value":"انخفاض حرارة الجسم",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"head_injury",
+            "value":"إصابة في الرأس",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_submit_success_subtitle1",
+            "value":"استلم أفراد الإنقاذ رسالة النجدة التي أرسلتها. يُرجى انتظار وصول فريق الإنقاذ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"there_are_women",
+            "value":"يوجد نساء",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"select_disaster_situation",
+            "value":"حدد وضعك",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"lose_blood",
+            "value":"نزيف دم",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"trapped",
+            "value":"يوجد أشخاص عالقون",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_feeling_5",
+            "value":"شديد التدمير",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_feeling_1",
+            "value":"هزة غير محسوسة",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_feeling_2",
+            "value":"هزة خفيفة",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_feeling_3",
+            "value":"هزة قوية",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_feeling_4",
+            "value":"مُدمّر",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_info_source",
+            "value":"تحذير صادر عن شبكة الإنذار المبكر بالزلازل في الصين %s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_warning_info",
+            "value":"إرشادات السلامة عند الزلازل: ابقَ هادئًا، انزل إلى الأرض، احتمِ وتشبث جيدًا. إذا كنت في الخارج، انتقل إلى مكان مفتوح. احمِ رأسك. تجنّب استخدام المصاعد.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_feeling_reminder_1",
+            "value":"لا يُتوقع حدوث هزة، لذا، لا داعي للقلق",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_feeling_reminder_2",
+            "value":"هناك هزة متوقعة، ابقَ هادئًا",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_feeling_reminder_3",
+            "value":"هناك هزة متوقعة، استعد وتوخَّ الحذر",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_about_to_arrive",
+            "value":"موجات الزلزال على وشك الوصول",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_feeling_reminder_4",
+            "value":"هناك هزة متوقعة، احمِ نفسك",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_feeling_reminder_5",
+            "value":"هناك خطر، احمِ نفسك فورًا",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_warning_canceled",
+            "value":"تم رفع التحذير من الزلزال.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_source_test",
+            "value":"(تجريبي)",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_source_trial_run",
+            "value":"(تشغيل تجريبي)",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_arrived",
+            "value":"وصلت موجات الزلزال",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_title",
+            "value":"الاتصال في حالات الطوارئ خارج الشبكة",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"voiceCall",
+            "value":"الرد على المكالمة من فريق الإنقاذ",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_service_content",
+            "value":"تسهل اتصالات الطوارئ خارج الشبكة توفير خدمات الإنقاذ في حالات الطوارئ. تحتاج هذه الخدمة إلى إذن الوصول إلى الموقع وقراءة رقم (أرقام) هاتفك ورقم (أرقام) IMEI ومعلومات الموقع من أجل توفير الخدمات ذات الصلة عندما تكون خارج تغطية الشبكة. يعني تشغيل هذا الخيار موافقتك على هذه البنود. للاطلاع على تفاصيل حول كيفية معالجة معلوماتك الشخصية، يمكنك الاطلاع على <a link=\"emergencyRescuePrivacyStatement\">البيان المتعلق بالاتصالات الطارئة خارج الشبكة والخصوصية</a> و<a link=\"emcResourcePermissionStatement\">إشعار الأذونات</a>.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"additional_info_list_content_1",
+            "value":"%d. التزم بالهدوء وضبط النفس. حافظ على قوتك.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hanging_up_voice_call",
+            "value":"إنهاء المكالمة من فريق الإنقاذ",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emc_rescue_current_location",
+            "value":"الموقع الحالي: %s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"additional_info_list_content_2",
+            "value":"%d. ضع سلامتك في المقام الأول. لا تتحرك ما لم يكن ذلك آمنًا.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"additional_info_list_content_3",
+            "value":"%d. لتوفير الطاقة، أوقف تشغيل الشاشة أثناء انتظار المساعدة.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"menu_title_additional_info",
+            "value":"مهم",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"exit_emc_rescue_mode_notification_title",
+            "value":"تم الخروج من اتصالات الطوارئ",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"search_now_button",
+            "value":"البحث الآن",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"exit_emc_rescue_mode_notification_content",
+            "value":"للبحث مرة أخرى عن فرق الإنقاذ القريبة، انقر على \"البحث الآن\".",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emc_rescue_permission_notice_content_2",
+            "value":"يُستخدم هذا للحصول على موقع الجهاز، بحيث يمكن إرساله إلى فرق الإنقاذ في حالات الطوارئ عندما تكون خارج نطاق تغطية الشبكة.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emc_rescue_location_permission_subtitle",
+            "value":"الموقع",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emc_rescue_permission_notice_title",
+            "value":"أذونات الاتصال في حالات الطوارئ خارج الشبكة",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"epicenter_location",
+            "value":"مركز الزلزال",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"estimated_intensity",
+            "value":"الشدة المتوقعة (%s)",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emc_rescue_disclaimer_content_part_1",
+            "value":"تبحث هذه الميزة عن إشارات إنقاذ حالات الطوارئ ترسلها فرق إنقاذ متخصصة، مثل إدارات إطفاء الحريق، باستخدام معدات متخصصة. لا تتحكم هواوي في إشارات الإنقاذ المذكورة، ولا يمكنها أن تضمن وصول فرق الإنقاذ إلى موقعك لتقديم خدمات الإنقاذ.\n\n",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emc_rescue_disclaimer_content_part_2",
+            "value":"ميزة اتصال الطوارئ خارج تغطية الشبكة مُصممة بحيث تكون مرجعًا فقط لمساعدتك في تقييم مخاطر السلامة واتخاذ قرارات متعلقة بالسلامة. لا تُستخدم هذه الميزة إلا للبحث عن إشارات الإنقاذ، ولا ترسل إشارات الاستغاثة بنشاط. لا يضمن تشغيل هذه الميزة وصول فرق الإنقاذ لمساعدتك. ترسل فرق الإنقاذ إشارات الإنقاذ باستخدام معدات متخصصة. إذا لم يكتشف جهازك إشارة إنقاذ، فتتحمل مسؤولية اتخاذ تدابير السلامة المناسبة وفقًا لوضعك. إذا اكتشف جهازك إشارة إنقاذ، فينبغي إبلاغ أفراد الإنقاذ بوضعك بدقة. ينبغي اتخاذ تدابير معقولة للحفاظ على سلامتك وفقًا لبيئتك الحالية، قبل وبعد اتصال فرق الإنقاذ بك. تتحمل وحدك المسؤولية عن أي مخاطر أو عواقب قد تنشأ عن أي إجراء تتخذه بناءً على ميزة اتصال الطوارئ خارج تغطية الشبكة.\n\n",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emc_rescue_disclaimer_content_part_3",
+            "value":"لا تتحمل شركة هواوي المسؤولية عن أي خسائر قد تتكبدها إذا لم يستقبل جهازك إشارات الإنقاذ، أو إذا لم تتلق المساعدة، بسبب عوامل مثل التضاريس، والمباني، والطقس، أو بسبب أحداث قوة قاهرة أخرى.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergencyCall",
+            "value":"مكالمة طوارئ",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_not_support",
+            "value":"طلب النجدة غير متاح في حالات الطوارئ عند تشغيل شبكة القمر الصناعي Hyacinth.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emc_rescue_china_broadnet_brand_tips",
+            "value":"نطاق التردد في حالات الطوارئ توفره شركة China Broadnet.",
+            "attr":{
+                "priority":"translate"
+            }
+        }
+    ]
+}

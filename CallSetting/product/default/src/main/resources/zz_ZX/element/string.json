@@ -1,0 +1,1844 @@
+{
+    "string":[
+        {
+            "name":"mobile_data_card2",
+            "value":"[TS_911030]_SIM 2 network"
+        },
+        {
+            "name":"mobile_data_card1",
+            "value":"[TS_911068]_SIM 1 network"
+        },
+        {
+            "name":"mobile_setting",
+            "value":"[TS_911093]_Settings"
+        },
+        {
+            "name":"Call_forward",
+            "value":"[TS_911022]_Call forwarding settings"
+        },
+        {
+            "name":"more",
+            "value":"[TS_910953]_More"
+        },
+        {
+            "name":"answerThePhone",
+            "value":"[TS_849139]_Sorry, I can't talk right now."
+        },
+        {
+            "name":"cancel",
+            "value":"[TS_910948]_Cancel"
+        },
+        {
+            "name":"contactMeLater",
+            "value":"[TS_849096]_I'm in a meeting. I'll get back to you ASAP."
+        },
+        {
+            "name":"backLater",
+            "value":"[TS_849017]_I'll call you back."
+        },
+        {
+            "name":"beThereSoon",
+            "value":"[TS_849145]_I'm on my way."
+        },
+        {
+            "name":"confim_space",
+            "value":"[TS_911061]_OK"
+        },
+        {
+            "name":"by_contact",
+            "value":"[TS_910999]_By contact"
+        },
+        {
+            "name":"call_history_merging",
+            "value":"[TS_910966]_Merge call log"
+        },
+        {
+            "name":"speedDial",
+            "value":"[TS_911085]_Speed dial"
+        },
+        {
+            "name":"go_setting",
+            "value":"[TS_911090]_Go to Settings"
+        },
+        {
+            "name":"save",
+            "value":"[TS_910967]_Save"
+        },
+        {
+            "name":"SET_TELEPHONY_STATE",
+            "value":"[TS_910984]_set telephony state"
+        },
+        {
+            "name":"networkAnomaly",
+            "value":"[TS_911076]_Network unresponsive. Unable to set."
+        },
+        {
+            "name":"Call_waiting",
+            "value":"[TS_911002]_Call waiting"
+        },
+        {
+            "name":"incoming_call_rejection_sms",
+            "value":"[TS_910956]_Respond with text"
+        },
+        {
+            "name":"call_about",
+            "value":"[TS_910986]_About"
+        },
+        {
+            "name":"Deactivation",
+            "value":"[TS_911010]_Disable"
+        },
+        {
+            "name":"Call_forward_no_busy",
+            "value":"[TS_911041]_When busy"
+        },
+        {
+            "name":"customer_service",
+            "value":"[TS_910979]_Customer service hotline"
+        },
+        {
+            "name":"unknown",
+            "value":"[TS_911057]_Unknown"
+        },
+        {
+            "name":"ACCESS_NETWORK",
+            "value":"[TS_911014]_access_network"
+        },
+        {
+            "name":"cancel_space",
+            "value":"[TS_911146]_Cancel"
+        },
+        {
+            "name":"GET_TELEPHONY_STATE",
+            "value":"[TS_911054]_get telephony state"
+        },
+        {
+            "name":"Call_forward_user_unreachable",
+            "value":"[TS_911104]_When unreachable"
+        },
+        {
+            "name":"Call_forward_unconditional",
+            "value":"[TS_911110]_Always forward"
+        },
+        {
+            "name":"app_about_name",
+            "value":"[TS_910965]_Phone"
+        },
+        {
+            "name":"privacy_statement",
+            "value":"[TS_911097]_Statement About Phone and Privacy"
+        },
+        {
+            "name":"voicemail",
+            "value":"[TS_911052]_Voicemail"
+        },
+        {
+            "name":"open_mobile_data",
+            "value":"[TS_911114]_Enable mobile data"
+        },
+        {
+            "name":"opened",
+            "value":"[TS_911083]_On"
+        },
+        {
+            "name":"GET_NETWORK_INFO",
+            "value":"[TS_911107]_get network info"
+        },
+        {
+            "name":"open_mobile_data_detail",
+            "value":"[TS_911117]_This feature requires a mobile data connection. Go to Settings to enable mobile data."
+        },
+        {
+            "name":"unlock_after_call_notification",
+            "value":"[TS_911143]_Notifications when unlocked"
+        },
+        {
+            "name":"module_desc",
+            "value":"[TS_911111]_module description"
+        },
+        {
+            "name":"mainability_description",
+            "value":"[TS_910954]_call settings"
+        },
+        {
+            "name":"extesionability_description",
+            "value":"[TS_911132]_Mobile data settings"
+        },
+        {
+            "name":"Turn_on",
+            "value":"[TS_910995]_Enable"
+        },
+        {
+            "name":"phone_ring_Card2",
+            "value":"[TS_911062]_SIM %1$s: %2$s"
+        },
+        {
+            "name":"closed",
+            "value":"[TS_910969]_Off"
+        },
+        {
+            "name":"about_personal_info_list",
+            "value":"[TS_910975]_Personal information collected"
+        },
+        {
+            "name":"call_version",
+            "value":"[TS_911053]_Version %s"
+        },
+        {
+            "name":"sim_card_num_no_space",
+            "value":"[TS_954177]_SIM %s"
+        },
+        {
+            "name":"401",
+            "value":"[TS_911148]_Parameter error."
+        },
+        {
+            "name":"others",
+            "value":"[TS_911086]_Other"
+        },
+        {
+            "name":"by_time",
+            "value":"[TS_911115]_By time"
+        },
+        {
+            "name":"gotIt",
+            "value":"[TS_911113]_OK"
+        },
+        {
+            "name":"automatic_recording_of_calls",
+            "value":"[TS_911070]_Automatically record calls"
+        },
+        {
+            "name":"201",
+            "value":"[TS_911020]_Permission verification failed."
+        },
+        {
+            "name":"Call_forward_deactivated",
+            "value":"[TS_911049]_Off"
+        },
+        {
+            "name":"To",
+            "value":"[TS_911060]_Forward to"
+        },
+        {
+            "name":"Notify_during_call",
+            "value":"[TS_911094]_Notify me of incoming calls during a call."
+        },
+        {
+            "name":"phone_ring_tone",
+            "value":"[TS_911101]_Ringtone"
+        },
+        {
+            "name":"8300003",
+            "value":"[TS_910951]_Internal system error."
+        },
+        {
+            "name":"Change_the",
+            "value":"[TS_910997]_Edit"
+        },
+        {
+            "name":"8300001",
+            "value":"[TS_911088]_Invalid value."
+        },
+        {
+            "name":"8300002",
+            "value":"[TS_911105]_Unable to access this service."
+        },
+        {
+            "name":"MANAGE_SECURE_SETTINGS",
+            "value":"[TS_911050]_manage secure settings"
+        },
+        {
+            "name":"8300999",
+            "value":"[TS_910947]_Unknown error."
+        },
+        {
+            "name":"full_screen",
+            "value":"[TS_910988]_Full screen"
+        },
+        {
+            "name":"Call_forward_no_reply",
+            "value":"[TS_911067]_Forward when unanswered"
+        },
+        {
+            "name":"Network_response_abnormal",
+            "value":"[TS_911133]_The network is unresponsive."
+        },
+        {
+            "name":"banner",
+            "value":"[TS_910945]_Banner"
+        },
+        {
+            "name":"unlock_after_call_notification_description",
+            "value":"[TS_911047]_Incoming calls are always shown as banners when you're playing games, navigating on a map, or viewing images and videos in full screen.\n\nThey are always shown in full screen when you're using Simple, Senior, or Expedition mode."
+        },
+        {
+            "name":"phone_ring_Card1",
+            "value":"[TS_911082]_SIM %1$s: %2$s"
+        },
+        {
+            "name":"mobile_data_volte",
+            "value":"[TS_911023]_VoLTE HD calls"
+        },
+        {
+            "name":"mobile_data_confirmation_function",
+            "value":"[TS_911071]_Confirm that this service is available before enabling. Otherwise calling may be affected."
+        },
+        {
+            "name":"mobile_data_enableDataWhileRoaming",
+            "value":"[TS_910990]_Connect to data services while roaming."
+        },
+        {
+            "name":"mobile_data_dataRoaming",
+            "value":"[TS_911134]_Data roaming"
+        },
+        {
+            "name":"mobile_data",
+            "value":"[TS_911126]_Mobile data"
+        },
+        {
+            "name":"mobile_data_tips",
+            "value":"[TS_910970]_Note"
+        },
+        {
+            "name":"mobile_data_charges",
+            "value":"[TS_911042]_Data usage fees may apply."
+        },
+        {
+            "name":"mobile_data_general",
+            "value":"[TS_911121]_General"
+        },
+        {
+            "name":"mobile_data_turn_on_data_roaming",
+            "value":"[TS_911098]_Data roaming may result in additional data usage fees. Enable anyway?"
+        },
+        {
+            "name":"APN_NAME",
+            "value":"[TS_911128]_Access Point Name (APN)"
+        },
+        {
+            "name":"APN_TITLE",
+            "value":"[TS_911078]_APNs"
+        },
+        {
+            "name":"APN_TITLE_MSG",
+            "value":"[TS_911137]_General"
+        },
+        {
+            "name":"APN_ADD_APN",
+            "value":"[TS_911006]_New APN"
+        },
+        {
+            "name":"APN_EDIT_APN",
+            "value":"[TS_911103]_Edit access point"
+        },
+        {
+            "name":"APN_Creating_an_APN",
+            "value":"[TS_910949]_New APN"
+        },
+        {
+            "name":"APN_Reset_to_Default",
+            "value":"[TS_911125]_Reset to default"
+        },
+        {
+            "name":"APN_common",
+            "value":"[TS_911065]_General"
+        },
+        {
+            "name":"APN_MMS",
+            "value":"[TS_911033]_MMS"
+        },
+        {
+            "name":"APN_Restoring_default_APN_settings",
+            "value":"[TS_910962]_Restoring default APN settings…"
+        },
+        {
+            "name":"APN_Not_set",
+            "value":"[TS_911140]_Not set"
+        },
+        {
+            "name":"Apn_APN_enabled",
+            "value":"[TS_911064]_APN enabled"
+        },
+        {
+            "name":"Apn_Deleting_an_APN",
+            "value":"[TS_910998]_Delete APN"
+        },
+        {
+            "name":"Apn_The_name_cannot_be_empty",
+            "value":"[TS_911142]_Name cannot be blank."
+        },
+        {
+            "name":"Apn_The_APN_cannot_be_empty",
+            "value":"[TS_911139]_APN can't be empty."
+        },
+        {
+            "name":"Apn_The_MCC_must_be_a_3_digit_number",
+            "value":"[TS_910978]_MCC field must be 3 digits."
+        },
+        {
+            "name":"Apn_MNC_must_be_2_or_3_digits",
+            "value":"[TS_911008]_MNC field must be 2 or 3 digits."
+        },
+        {
+            "name":"Apn_confirm",
+            "value":"[TS_911051]_OK"
+        },
+        {
+            "name":"Apn_OK",
+            "value":"[TS_911063]_OK"
+        },
+        {
+            "name":"Apn_cancel",
+            "value":"[TS_911027]_Cancel"
+        },
+        {
+            "name":"Apn_give_up_the_modification",
+            "value":"[TS_911004]_Discard changes?"
+        },
+        {
+            "name":"video_ring_tone",
+            "value":"[TS_966539]_Video ringback tones"
+        },
+        {
+            "name":"video_ring_tone_desc",
+            "value":"[TS_966538]_Play video ringback tones for incoming and outgoing calls."
+        },
+        {
+            "name":"shut_down",
+            "value":"[TS_911021]_Off"
+        },
+        {
+            "name":"mobile_Automatic_selection",
+            "value":"[TS_910968]_Select automatically"
+        },
+        {
+            "name":"automatic_enrollment",
+            "value":"[TS_911058]_Automatic registration\u2026"
+        },
+        {
+            "name":"text_paragraphs",
+            "value":"[TS_911091]_If you disable this, your phone will only register with networks you manually select. This may disable your data service. Your current network may also be temporarily unavailable during manual network selection. Disable anyway?"
+        },
+        {
+            "name":"mobile_data_chooseNetworkProvider",
+            "value":"[TS_911073]_Choose a carrier."
+        },
+        {
+            "name":"mobile_Search",
+            "value":"[TS_911072]_Searching\u2026"
+        },
+        {
+            "name":"mobile_able",
+            "value":"[TS_911089]_Available networks"
+        },
+        {
+            "name":"registration_failed",
+            "value":"[TS_910961]_Network registration failed"
+        },
+        {
+            "name":"mobile_Registering_disable",
+            "value":"[TS_911144]_Registering with %s (Forbidden)…"
+        },
+        {
+            "name":"mobile_data_preferredNetwork",
+            "value":"[TS_911044]_Preferred network: %s"
+        },
+        {
+            "name":"mobile_Registering",
+            "value":"[TS_911077]_Registering with %s…"
+        },
+        {
+            "name":"automatic_carrier_selection",
+            "value":"[TS_910940]_Choose a carrier automatically?"
+        },
+        {
+            "name":"mobile_fail",
+            "value":"[TS_911024]_Unable to retrieve carrier list. Try again later."
+        },
+        {
+            "name":"mobile_data_cancel",
+            "value":"[TS_911127]_Cancel"
+        },
+        {
+            "name":"mobile_data_networkProvider",
+            "value":"[TS_911122]_Carrier"
+        },
+        {
+            "name":"mobile_disable",
+            "value":"[TS_911141]_%s (forbidden)"
+        },
+        {
+            "name":"mobile_register",
+            "value":"[TS_911056]_Registered on network."
+        },
+        {
+            "name":"mobile_not_serve",
+            "value":"[TS_911109]_No service"
+        },
+        {
+            "name":"mobile_data_closeAutoSelect",
+            "value":"[TS_911045]_Disable auto-select"
+        },
+        {
+            "name":"text_paragraphs_no_data",
+            "value":"[TS_911017]_If you disable this, your phone will only register with networks you manually select. This may disable your data service. Disable anyway?"
+        },
+        {
+            "name":"START_SYSTEM_DIALOG",
+            "value":"[TS_911081]_start system dialog"
+        },
+        {
+            "name":"incoming_notification_setting",
+            "value":"[TS_911031]_Incoming call notifications"
+        },
+        {
+            "name":"incoming_notification_setting_tips",
+            "value":"[TS_911048]_You can choose to have incoming call notifications shown in full screen or as banners. Change your preferences at any time in Phone > Settings > Notifications when unlocked."
+        },
+        {
+            "name":"short_notification_hyperlink",
+            "value":"[TS_910974]_Statement About Online Number Identification, Harassment Blocking and Privacy"
+        },
+        {
+            "name":"GET_BUNDLE_INFO",
+            "value":"[TS_919675]_get bundle info"
+        },
+        {
+            "name":"satellite_service_showname",
+            "value":"[TS_914316]_SIM %1$s: %2$s"
+        },
+        {
+            "name":"satellite_service_esim_showname",
+            "value":"[TS_1123879]_eSIM %1$s: %2$s"
+        },
+        {
+            "name":"satellite_service_no_sim_card",
+            "value":"[TS_914343]_No SIM available"
+        },
+        {
+            "name":"satellite_service_select_sim",
+            "value":"[TS_914360]_Select SIM"
+        },
+        {
+            "name":"satellite_service_network_descriptions",
+            "value":"[TS_914335]_Call and text via the Tiantong satellite system."
+        },
+        {
+            "name":"start_skycom_satellite_communications",
+            "value":"[TS_914349]_Tiantong Satellite Communications"
+        },
+        {
+            "name":"satellite_exit",
+            "value":"[TS_914317]_Disable"
+        },
+        {
+            "name":"stop_dialog",
+            "value":"[TS_914342]_Disable"
+        },
+        {
+            "name":"enter_in_call",
+            "value":"[TS_914326]_Unable to enable Tiantong Satellite Communications during a call."
+        },
+        {
+            "name":"satellite_revoke_authorization_message",
+            "value":"[TS_914352]_This service will no longer be available if you disable it. Disable anyway?"
+        },
+        {
+            "name":"sim_select",
+            "value":"[TS_914329]_SIM"
+        },
+        {
+            "name":"frequently_asked_questions",
+            "value":"[TS_914337]_FAQs"
+        },
+        {
+            "name":"satellite_service_no_phone_number",
+            "value":"[TS_914336]_Unknown number"
+        },
+        {
+            "name":"exit_satellite_service_tips",
+            "value":"[TS_914331]_Disable Tiantong Satellite Communications?"
+        },
+        {
+            "name":"satellite_service_settings_enable_tips",
+            "value":"[TS_914328]_As satellite capacity is limited, please only use this feature when you don't have cellular service. Enabling Tiantong Satellite Communications disables WLAN, mobile data, Location Services, as well as related features."
+        },
+        {
+            "name":"satellite_service_location_permission_descriptions",
+            "value":"[TS_914339]_This is used for alignment with the satellite and for adding location information to messages you send."
+        },
+        {
+            "name":"satellite_revoke_authorization",
+            "value":"[TS_914348]_Disable service"
+        },
+        {
+            "name":"satellite_service_settings_explain",
+            "value":"[TS_914353]_Note"
+        },
+        {
+            "name":"satellite_network",
+            "value":"[TS_914350]_Satellite network"
+        },
+        {
+            "name":"satellite_service_settings_details_descriptions3",
+            "value":"[TS_914322]_When you connect to the Tiantong satellite, your precise location will be uploaded to the satellite operator."
+        },
+        {
+            "name":"enabled",
+            "value":"[TS_914357]_Enable"
+        },
+        {
+            "name":"satellite_service_details_2_new",
+            "value":"[TS_914356]_%s. This service requires carrier activation before it can be used. For more information about activation, availability, and fees, contact your satellite communications carrier."
+        },
+        {
+            "name":"skycom_satellite_communications",
+            "value":"[TS_914333]_Tiantong Satellite Communications"
+        },
+        {
+            "name":"satellite_service_select_sim_card",
+            "value":"[TS_914312]_Select a SIM for satellite calling and messaging. Confirm with your carrier that this service is activated."
+        },
+        {
+            "name":"satellite_service_permission_count",
+            "value":"[TS_914324]_This service requires the following permission:"
+        },
+        {
+            "name":"satellite_service_permission_usage_details",
+            "value":"[TS_914345]_Tiantong Satellite Communications permissions"
+        },
+        {
+            "name":"satellite_service_no_sim_card_descriptions",
+            "value":"[TS_914347]_Please insert a SIM card with Tiantong Satellite Communications activated and try again."
+        },
+        {
+            "name":"satellite_service_details_3",
+            "value":"[TS_914354]_%s. This service is only supported in the Chinese mainland."
+        },
+        {
+            "name":"satellite_service_details_0",
+            "value":"[TS_914314]_%1$s. As satellite capacity is limited, you are advised to use your cellular network when you have service. %2$s"
+        },
+        {
+            "name":"satellite_service_details_1_new",
+            "value":"[TS_914318]_%s. During use, WLAN, mobile data, and Location Services will be disabled. Related features such as  Share, ScreenCast, and SkyTone will be temporarily unavailable."
+        },
+        {
+            "name":"start_skycom_satellite_communications_sub3",
+            "value":"[TS_914355]_When you connect to the Tiantong satellite, your precise location will be uploaded to the satellite operator."
+        },
+        {
+            "name":"start_skycom_satellite_communications_sub1",
+            "value":"[TS_914341]_When you're outside of WLAN and cellular coverage, you can continue using your phone's calling and messaging functions via satellite."
+        },
+        {
+            "name":"satellite_call_notice",
+            "value":"[TS_917506]_Note"
+        },
+        {
+            "name":"keep_current_posture",
+            "value":"[TS_919673]_Hold this position"
+        },
+        {
+            "name":"satellite_message",
+            "value":"[TS_919703]_Messaging"
+        },
+        {
+            "name":"satellite_phone",
+            "value":"[TS_919684]_Phone"
+        },
+        {
+            "name":"satellite_signal_descriptions",
+            "value":"[TS_919704]_China Telecom\nTiantong Satellite"
+        },
+        {
+            "name":"satellite_notification_title",
+            "value":"[TS_924496]_Satellite communications disabled"
+        },
+        {
+            "name":"not_link_satellite_dialog_positive",
+            "value":"[TS_919688]_Don't exit"
+        },
+        {
+            "name":"location_south_east",
+            "value":"[TS_919711]_%1$s S %2$s E"
+        },
+        {
+            "name":"location_north_west",
+            "value":"[TS_919695]_%1$s N %2$s W"
+        },
+        {
+            "name":"keep_current_posture_wait_patiently",
+            "value":"[TS_919706]_This may take a moment\nPlease wait"
+        },
+        {
+            "name":"upper_tilt_phone",
+            "value":"[TS_919681]_Tilt up"
+        },
+        {
+            "name":"cannnot_dial_satellite_call_tips",
+            "value":"[TS_917507]_Device too hot. Wait for it to cool down, then try again."
+        },
+        {
+            "name":"device_calibrating",
+            "value":"[TS_919678]_Calibrating…"
+        },
+        {
+            "name":"satellite_call_not_support_earpiece",
+            "value":"[TS_917512]_To maintain a stable connection, the receiver isn't available during satellite calls."
+        },
+        {
+            "name":"satellite_exited_for_system_error",
+            "value":"[TS_929239]_System error. Tiantong Satellite Communications has been disabled. Please re-enable and try again."
+        },
+        {
+            "name":"not_link_satellite_dialog_message",
+            "value":"[TS_919691]_No satellite connection established for %d seconds. Tiantong Satellite Communications will be disabled."
+        },
+        {
+            "name":"re_calibrate",
+            "value":"[TS_919713]_Retry"
+        },
+        {
+            "name":"lower_tilt_phone",
+            "value":"[TS_919679]_Tilt down"
+        },
+        {
+            "name":"location_north_east",
+            "value":"[TS_919689]_%1$s N %2$s E"
+        },
+        {
+            "name":"float_left_right_phone",
+            "value":"[TS_919707]_Find the satellite"
+        },
+        {
+            "name":"float_window_keep_posture_check_occlusion",
+            "value":"[TS_919682]_Make sure there are no obstructions in the way."
+        },
+        {
+            "name":"float_window_keep_posture_wait_patiently",
+            "value":"[TS_919710]_Please wait."
+        },
+        {
+            "name":"portrait_reminder",
+            "value":"[TS_973510]_Hold your phone horizontally"
+        },
+        {
+            "name":"landscape_reminder",
+            "value":"[TS_919676]_Hold your phone upright"
+        },
+        {
+            "name":"re_connecting_satellite",
+            "value":"[TS_919683]_Reconnect"
+        },
+        {
+            "name":"satellite_search_failed",
+            "value":"[TS_919709]_Satellite not found"
+        },
+        {
+            "name":"device_calibrating_tips",
+            "value":"[TS_919716]_Tilt your device to complete the circle"
+        },
+        {
+            "name":"satellite_signal",
+            "value":"[TS_919708]_Signal"
+        },
+        {
+            "name":"float_upper_down_phone",
+            "value":"[TS_919714]_Move the ball to the center"
+        },
+        {
+            "name":"device_calibrating_fail_tips",
+            "value":"[TS_919677]_Holding the phone upright, rotate it in a circle"
+        },
+        {
+            "name":"right_rotate_phone",
+            "value":"[TS_919692]_Turn right"
+        },
+        {
+            "name":"satellite_service_not_enabled",
+            "value":"[TS_919686]_Tiantong Satellite Communications not enabled."
+        },
+        {
+            "name":"keep_current_posture_check_occlusion",
+            "value":"[TS_919685]_Now pointing toward the satellite.\nMake sure there are no obstructions in the way such as trees or buildings."
+        },
+        {
+            "name":"re_wait_loading",
+            "value":"[TS_919680]_Search again"
+        },
+        {
+            "name":"satellite_search",
+            "value":"[TS_919698]_Loading…"
+        },
+        {
+            "name":"satellite_service_settings_airplane_mode",
+            "value":"[TS_925931]_Tiantong Satellite Communications is unavailable in Airplane mode."
+        },
+        {
+            "name":"satellite_alignment",
+            "value":"[TS_919702]_Searching for satellite…"
+        },
+        {
+            "name":"satellite_hunt_success",
+            "value":"[TS_919718]_Connected to satellite"
+        },
+        {
+            "name":"float_window_keep_posture",
+            "value":"[TS_919699]_Hold this position"
+        },
+        {
+            "name":"location_south_west",
+            "value":"[TS_919693]_%1$s S %2$s W"
+        },
+        {
+            "name":"not_link_satellite_auto_exit_notification_Text",
+            "value":"[TS_919701]_Tiantong Satellite Communications was disabled because no satellite connection was established for %d seconds."
+        },
+        {
+            "name":"left_rotate_phone",
+            "value":"[TS_919694]_Turn left"
+        },
+        {
+            "name":"float_keep_current_posture",
+            "value":"[TS_919687]_Hold this position"
+        },
+        {
+            "name":"satellite_hunt_failed",
+            "value":"[TS_919696]_Connection failed"
+        },
+        {
+            "name":"device_calibrate_failed",
+            "value":"[TS_919674]_Calibration failed"
+        },
+        {
+            "name":"device_offset_reminder",
+            "value":"[TS_919697]_Point at the satellite"
+        },
+        {
+            "name":"satellite_hunt_timeout",
+            "value":"[TS_919715]_Satellite connection timed out"
+        },
+        {
+            "name":"satellite_connecting",
+            "value":"[TS_919712]_Connecting (%d)…"
+        },
+        {
+            "name":"satellite_search_tips",
+            "value":"[TS_919690]_This works best in open, unobstructed outdoor areas."
+        },
+        {
+            "name":"number_identity_setting_text_1",
+            "value":"[TS_917511]_This service identifies calls and messages from unknown numbers based on their type, helping you decide how to respond."
+        },
+        {
+            "name":"enhance_statement_content",
+            "value":"[TS_917509]_This service requires an Internet connection and the Contacts permission. It also needs to read your contacts, read and modify the call log, and read and upload/transfer SMS message content. This is to identify calls and messages from unknown numbers. By turning this on, you agree to these terms. For more details about how your personal information is processed, refer to the <a link=\"privacyStatement\">Statement About Call & Message Identification and Privacy</a> and <a link=\"permissionStatement\">Permissions Notice</a>."
+        },
+        {
+            "name":"number_identity_setting_title",
+            "value":"[TS_917514]_Call & message identification"
+        },
+        {
+            "name":"enhance_statement_title",
+            "value":"[TS_917510]_Call & message identification"
+        },
+        {
+            "name":"privacy_state_url",
+            "value":"[TS_938050]_"
+        },
+        {
+            "name":"super_privacy_dialog_title",
+            "value":"[TS_931693]_Super Privacy mode"
+        },
+        {
+            "name":"disable_super_privacy_and_call",
+            "value":"[TS_931694]_Disable & call"
+        },
+        {
+            "name":"super_privacy_dialog_call_summary",
+            "value":"[TS_931696]_Super Privacy mode is blocking microphone access. Temporarily disable it for this call?"
+        },
+        {
+            "name":"super_privacy_dialog_video_call_summary",
+            "value":"[TS_931695]_Super Privacy mode is blocking microphone and camera access. Temporarily disable it for this call?"
+        },
+        {
+            "name":"disable_super_privacy_and_answer",
+            "value":"[TS_931697]_Disable & answer"
+        },
+        {
+            "name":"ERROR_CODE_NOT_SUPPORT_CARD",
+            "value":"[TS_934885]_This SIM does not support Tiantong satellite services. Contact your carrier for a replacement."
+        },
+        {
+            "name":"number_identity_permission_dialog_title",
+            "value":"[TS_940680]_Call & message identification permissions"
+        },
+        {
+            "name":"number_identity_permission_dialog_name_1",
+            "value":"[TS_940679]_Contacts"
+        },
+        {
+            "name":"number_identity_short_notification",
+            "value":"[TS_941104]_<body><span style='normal'>This service requires an </span><span style='bold'>Internet</span><span style='normal'> connection and the </span><span style='bold'>Contacts</span><span style='normal'> permission, and needs to read your contacts, read and modify the call log, and read and upload/transfer SMS message content. By turning this on, you agree to these terms. For more details about how your personal information is processed, refer to the </span><span style='privacyStatement'>Statement About Call &amp; Message Identification and Privacy</span><span style='normal'> and </span><span style='permissionStatement'>Permissions Notice</span><span style='normal'>.</span></body>"
+        },
+        {
+            "name":"number_identity_permission_dialog_name_3",
+            "value":"[TS_940676]_Call logs"
+        },
+        {
+            "name":"ERROR_CODE_NOT_OPENED_TIANDIWINGCARD",
+            "value":"[TS_934888]_Satellite services are not currently activated for this SIM. Contact your carrier for assistance."
+        },
+        {
+            "name":"number_identity_permission_dialog_name_2",
+            "value":"[TS_940677]_Messaging"
+        },
+        {
+            "name":"satellite_service_settings_window_mode",
+            "value":"[TS_941669]_Tiantong Satellite Communications does not support multi-window mode."
+        },
+        {
+            "name":"ERROR_CODE_NOT_ACTIVATED_SIM",
+            "value":"[TS_934884]_This device's IMEI isn't registered with the Tiantong satellite network."
+        },
+        {
+            "name":"number_identity_permission_dialog_purpose_2",
+            "value":"[TS_940675]_This is used to determine whether a message should be blocked."
+        },
+        {
+            "name":"number_identity_permission_dialog_purpose_1",
+            "value":"[TS_940674]_This is used to check whether a number is a contact or on the blocklist/trustlist."
+        },
+        {
+            "name":"number_identity_permission_dialog_purpose_3",
+            "value":"[TS_940678]_This is used to mark phone numbers by category and determine whether a message should be blocked."
+        },
+        {
+            "name":"ERROR_CODE_NOT_OPENED_ROAMING",
+            "value":"[TS_934886]_Gateway status error. Contact your carrier for assistance."
+        },
+        {
+            "name":"ERROR_CODE_OTHERS",
+            "value":"[TS_934887]_Network error. Contact your carrier for assistance."
+        },
+        {
+            "name":"satellite_service_settings_skytone_mode",
+            "value":"[TS_939317]_Unavailable when SkyTone is in use."
+        },
+        {
+            "name":"mobile_data_enabled4G",
+            "value":"[TS_939318]_Enable 4G"
+        },
+        {
+            "name":"mobile_data_enabled5G",
+            "value":"[TS_939319]_Enable 5G"
+        },
+        {
+            "name":"mobile_network",
+            "value":"[TS_941668]_Mobile network"
+        },
+        {
+            "name":"open_phone_to_answer_calls",
+            "value":"[TS_944293]_Unfold to answer voice calls"
+        },
+        {
+            "name":"mobile_data_card1_or_card2",
+            "value":"[TS_941666]_SIM 1/SIM 2 network"
+        },
+        {
+            "name":"answer_voice_calls_by_flipping",
+            "value":"[TS_944292]_Manual confirmation is required if you mute the ringer before unfolding."
+        },
+        {
+            "name":"advertising_and_promotion",
+            "value":"[TS_949902]_Advertisement"
+        },
+        {
+            "name":"MANAGE_LOCAL_ACCOUNTS",
+            "value":"[TS_953495]_manage local accounts"
+        },
+        {
+            "name":"message_status_sent",
+            "value":"[TS_943913]_Sent"
+        },
+        {
+            "name":"im_smc_calibrate_failed",
+            "value":"[TS_943899]_Calibration failed"
+        },
+        {
+            "name":"im_smc_receive_auto_change_01",
+            "value":"[TS_943906]_Connection timed out. Switched to another satellite."
+        },
+        {
+            "name":"im_message_smc_no_new_message_to_receive",
+            "value":"[TS_943896]_No replies waiting to be received."
+        },
+        {
+            "name":"im_smc_tips_outdoor_use",
+            "value":"[TS_943901]_Use outdoors"
+        },
+        {
+            "name":"im_smc_received_satellite_return",
+            "value":"[TS_943911]_Satellite confirmation received"
+        },
+        {
+            "name":"im_message_smc_receive_success",
+            "value":"[TS_943908]_Received successfully"
+        },
+        {
+            "name":"im_message_smc_shake",
+            "value":"[TS_943914]_Tilt your device to complete the circle"
+        },
+        {
+            "name":"smc_keep_posture",
+            "value":"[TS_943884]_Hold this position"
+        },
+        {
+            "name":"im_smc_tips_starfinder_loading",
+            "value":"[TS_943883]_%1$s\nto acquire a satellite signal"
+        },
+        {
+            "name":"send_failed",
+            "value":"[TS_943897]_Send failed"
+        },
+        {
+            "name":"im_message_smc_receive_fail",
+            "value":"[TS_943892]_Receipt failed"
+        },
+        {
+            "name":"fusion_call_switch_short_notification_sub2",
+            "value":"[TS_952910]_Statement About Call Quality Improvement and Privacy"
+        },
+        {
+            "name":"improve_call_quality",
+            "value":"[TS_952911]_Boost call quality"
+        },
+        {
+            "name":"advance_options_title",
+            "value":"[TS_952907]_More"
+        },
+        {
+            "name":"fusion_call_switch_short_notification",
+            "value":"[TS_953631]_Allow call quality to be improved using WLAN or mobile data when network reception is poor. To learn how your personal data is processed, refer to the %1$s."
+        },
+        {
+            "name":"unlock_after_call_notification_descriptions",
+            "value":"[TS_957165]_Incoming calls are always shown as banners when you're playing games, navigating on a map, or viewing images and videos in full screen.\n\nThey are always shown in full screen when you're using Senior or Expedition mode."
+        },
+        {
+            "name":"meetime_network_descriptions",
+            "value":"[TS_959489]_Send and receive BeiDou satellite messages via the Messaging or MeeTime app."
+        },
+        {
+            "name":"meetime_network_title",
+            "value":"[TS_959490]_MeeTime BeiDou Satellite Messaging"
+        },
+        {
+            "name":"call_setting_incoming",
+            "value":"[TS_944004]_Incoming calls"
+        },
+        {
+            "name":"filings_address",
+            "value":"[TS_960900]_"
+        },
+        {
+            "name":"icp_filing",
+            "value":"[TS_960901]_粤A2-20044005号-280A"
+        },
+        {
+            "name":"number_identity_permission_dialog_desc",
+            "value":"[TS_940681]_The service requires the following permissions:"
+        },
+        {
+            "name":"wearable_bluee_text",
+            "value":"[TS_966062]_When the watch is connected to the phone, the watch's mobile data will be automatically disabled to save power. It will be re-enabled if they become disconnected."
+        },
+        {
+            "name":"wearable_roaming_subtitle",
+            "value":"[TS_966063]_Enable data while roaming. Contact your carrier for details."
+        },
+        {
+            "name":"wearable_bluee_title",
+            "value":"[TS_966065]_Bluetooth connected"
+        },
+        {
+            "name":"selectContacts",
+            "value":"[TS_959410]_Select contact"
+        },
+        {
+            "name":"voice_control",
+            "value":"[TS_960009]_Voice control"
+        },
+        {
+            "name":"copyright_new",
+            "value":"[TS_967915]_Phone. All rights reserved. ©%1$s-%2$s"
+        },
+        {
+            "name":"hicall_user_info_skip",
+            "value":"[TS_974381]_Skip"
+        },
+        {
+            "name":"im_smc_note_content",
+            "value":"[TS_974380]_Skipping calibration may affect your ability to use satellite communications. Skip anyway?"
+        },
+        {
+            "name":"contact_str_copysim_notification",
+            "value":"[TS_974382]_Notification"
+        },
+        {
+            "name":"distributed_call_settings_title",
+            "value":"[TS_971581]_Communication sharing"
+        },
+        {
+            "name":"distributed_call_settings_descriptions",
+            "value":"[TS_971578]_<body><span style='normal'>Use your phone's mobile network to make and receive phone calls, send and receive messages, and access the Internet on nearby devices logged in to the same  ID.\n\nThis service uses Bluetooth and WLAN, and will access device, network, and communication information. Call sharing needs to access approximate location information. </span><span style='moreDetail'>Learn more</span></body>"
+        },
+        {
+            "name":"distributed_call_settings_descriptions_pad",
+            "value":"[TS_971573]_<body><span style='normal'>When your phone is nearby, you can use its mobile network to make and receive phone calls, send and receive messages, and access the Internet on this device. Both devices must be logged in to the same  ID and have Bluetooth, WLAN, and this feature enabled.\n\nThis service needs to access device, network, and communication information. The call sharing feature needs to access approximate location information. </span><span style='moreDetail'>Learn more</span></body>"
+        },
+        {
+            "name":"distributed_call_settings_network_sharing_title_pad",
+            "value":"[TS_971576]_Internet"
+        },
+        {
+            "name":"distributed_call_settings_network_sharing_descriptions_pad",
+            "value":"[TS_971577]_When no network is available, automatically use your phone's mobile network if it's nearby."
+        },
+        {
+            "name":"distributed_call_settings_phone_sharing_title_pad",
+            "value":"[TS_971579]_Phone calls"
+        },
+        {
+            "name":"distributed_call_settings_sms_sharing_title_pad",
+            "value":"[TS_971571]_Messages"
+        },
+        {
+            "name":"distributed_call_settings_network_sharing_title",
+            "value":"[TS_971572]_Internet"
+        },
+        {
+            "name":"distributed_call_settings_phone_sharing_title",
+            "value":"[TS_971570]_Phone calls"
+        },
+        {
+            "name":"distributed_call_settings_sms_sharing_title",
+            "value":"[TS_971575]_Messages"
+        },
+        {
+            "name":"distributed_share_call_data",
+            "value":"[TS_971582]_Make and receive phone calls on your nearby devices."
+        },
+        {
+            "name":"distributed_share_message_data",
+            "value":"[TS_971574]_Send and receive messages on your nearby devices."
+        },
+        {
+            "name":"distributed_share_network_data",
+            "value":"[TS_971583]_Share your Internet connection with your nearby devices."
+        },
+        {
+            "name":"distributed_network_auto_connect",
+            "value":"[TS_971584]_Auto-connect"
+        },
+        {
+            "name":"distributed_network_never_connect",
+            "value":"[TS_971580]_Connect manually"
+        },
+        {
+            "name":"smc_left_rotate_device",
+            "value":"[TS_975440]_Turn device to the left"
+        },
+        {
+            "name":"smc_right_rotate_device",
+            "value":"[TS_975437]_Turn device to the right"
+        },
+        {
+            "name":"im_smc_lift_device",
+            "value":"[TS_975438]_Tilt device toward you"
+        },
+        {
+            "name":"im_smc_lower_device",
+            "value":"[TS_975439]_Tilt device away from you"
+        },
+        {
+            "name":"find_out_how_we_use_your_data",
+            "value":"[TS_975290]_How we use your data"
+        },
+        {
+            "name":"hangUp",
+            "value":"[TS_976268]_End"
+        },
+        {
+            "name":"business_and_privacy_statement",
+            "value":"[TS_975291]_Privacy statements"
+        },
+        {
+            "name":"new_satellite_descriptions",
+            "value":"[TS_980578]_Tiantong Satellite"
+        },
+        {
+            "name":"satellite_message_just_now",
+            "value":"[TS_980571]_Just now"
+        },
+        {
+            "name":"satellite_call_message_notice",
+            "value":"[TS_980573]_Someone tried to call or message you. To view details, connect to the satellite and open the Phone or Messaging app."
+        },
+        {
+            "name":"aim_satellite",
+            "value":"[TS_980579]_Search for satellite"
+        },
+        {
+            "name":"satellite_enhance_status",
+            "value":"[TS_980580]_Connect+"
+        },
+        {
+            "name":"new_satellite_signal_descriptions",
+            "value":"[TS_982085]_Tiantong Satellite"
+        },
+        {
+            "name":"end_call_by_power",
+            "value":"[TS_966639]_Power button ends call"
+        },
+        {
+            "name":"ATTEST_KEY",
+            "value":"[TS_988514]_get attest key"
+        },
+        {
+            "name":"details",
+            "value":"[TS_988310]_Information"
+        },
+        {
+            "name":"satellite_service_settings_window_suggest",
+            "value":"[TS_998778]_Open this window in full screen to enable Tiantong Satellite Communications."
+        },
+        {
+            "name":"enterprise_number_identity",
+            "value":"[TS_982086]_Enable for enterprise apps"
+        },
+        {
+            "name":"more_options",
+            "value":"[TS_988309]_More options"
+        },
+        {
+            "name":"multi_device_collaboration",
+            "value":"[TS_1008486]_More connectivity options"
+        },
+        {
+            "name":"satellite_new_fold_un_support_toast",
+            "value":"[TS_1007435]_Unfold your phone to use satellite communications."
+        },
+        {
+            "name":"beidou_satellite_message_service_no_net",
+            "value":"[TS_1010645]_No Internet connection. Connect to the Internet and try again."
+        },
+        {
+            "name":"go_use_beidou_message_tips",
+            "value":"[TS_1010644]_You've enabled BeiDou Satellite Messaging. Go to Messaging to start using it."
+        },
+        {
+            "name":"exit_beidou_satellite_message_service_tips",
+            "value":"[TS_1010654]_Exit BeiDou Satellite Messaging?"
+        },
+        {
+            "name":"start_beidou_satellite_message",
+            "value":"[TS_1010657]_BeiDou Satellite Messaging"
+        },
+        {
+            "name":"beidou_satellite_message_select_sim_card",
+            "value":"[TS_1010651]_Select a SIM for satellite messaging. Confirm with your carrier that this service is activated."
+        },
+        {
+            "name":"beidou_satellite_message_service_settings_airplane_mode",
+            "value":"[TS_1010655]_Unable to use BeiDou Satellite Messaging while in Airplane mode."
+        },
+        {
+            "name":"do_not_show_again",
+            "value":"[TS_1010656]_Don't show again"
+        },
+        {
+            "name":"go_use_beidou_satellite_message",
+            "value":"[TS_1010650]_Go to Messaging app?"
+        },
+        {
+            "name":"beidou_satellite_message_service_details_1",
+            "value":"[TS_1010647]_%s. This feature is only available to China Mobile users who have activated satellite communication features for their account. For more information, contact China Mobile customer service."
+        },
+        {
+            "name":"beidou_satellite_message_service_details_0",
+            "value":"[TS_1010653]_%1$s. During use, WLAN and mobile data will be temporarily disabled. Services will be restored upon exit."
+        },
+        {
+            "name":"beidou_satellite_message_service_details_2",
+            "value":"[TS_1010642]_%s. This feature is only available in the Chinese mainland."
+        },
+        {
+            "name":"beidou_satellite_message_no_sim_card_descriptions",
+            "value":"[TS_1010649]_To use this service, insert a China Mobile SIM card with BeiDou Satellite Messaging activated."
+        },
+        {
+            "name":"go_to_use",
+            "value":"[TS_1010646]_Go"
+        },
+        {
+            "name":"beidou_satellite_message_enter_in_call",
+            "value":"[TS_1010648]_Unable to use BeiDou Satellite Messaging when a call is in progress."
+        },
+        {
+            "name":"beidou_satellite_short_notification",
+            "value":"[TS_1010643]_<body><span style='normal'>This service requires an </span><span style='bold'>Internet</span><span style='normal'> connection to authenticate your access privileges and check your remaining message balance. When this is turned on, you'll be able to send messages via BeiDou satellite when you don't have a mobile network or WLAN connection. During use, this service needs to read and upload/transfer your device's phone number, message content, and location information. By turning this on, you agree to these terms and the </span><span style='userAgreements'>BeiDou Satellite Messaging User Agreement</span><span style='normal'>. For more details about how your personal information is processed, refer to the </span><span style='privacyStatement'>Statement About BeiDou Satellite Messaging and Privacy</span><span style='normal'>.</span></body>"
+        },
+        {
+            "name":"beidou_satellite_message",
+            "value":"[TS_1010652]_BeiDou Satellite Messaging"
+        },
+        {
+            "name":"risk_identity_engine",
+            "value":"[TS_1020927]_Engine"
+        },
+        {
+            "name":"anti_fraud",
+            "value":"[TS_1024189]_Smart security protection"
+        },
+        {
+            "name":"motion_quick_call_descrition",
+            "value":"[TS_1024762]_Raise the phone to your ear to answer an incoming call. If you're in speaker mode or using Bluetooth headphones, raising the phone will switch audio to the receiver."
+        },
+        {
+            "name":"motion_reduce_call_descrition",
+            "value":"[TS_1024770]_Raise your phone to reduce the ringing volume of incoming calls."
+        },
+        {
+            "name":"motion_quick_mute_descrition_pad",
+            "value":"[TS_1024766]_Flip your device to mute it when there's an incoming call."
+        },
+        {
+            "name":"motion_call_setting_search_system",
+            "value":"[TS_1024915]_System"
+        },
+        {
+            "name":"motion_muting_reduce_call_title",
+            "value":"[TS_1025418]_Mute ringtone/Reduce volume"
+        },
+        {
+            "name":"motion_flip_mute_volume",
+            "value":"[TS_1024771]_Flip to mute ringtone"
+        },
+        {
+            "name":"motion_quick_mute_descrition",
+            "value":"[TS_1024767]_Flip your phone to mute it when there's an incoming call."
+        },
+        {
+            "name":"motion_reduce_call_descrition_pad",
+            "value":"[TS_1024764]_Raise your device to reduce the ringing volume of incoming calls."
+        },
+        {
+            "name":"motion_quick_call_title",
+            "value":"[TS_1024768]_Answer calls"
+        },
+        {
+            "name":"motion_pick_up_reduce_volume",
+            "value":"[TS_1024761]_Raise to reduce volume"
+        },
+        {
+            "name":"motion_flip_mute_volume_pad",
+            "value":"[TS_1024769]_Flip to mute ringtone"
+        },
+        {
+            "name":"motion_quick_call_descrition_fold",
+            "value":"[TS_1024765]_Raise the phone to your ear to answer an incoming call. If you're in speaker mode or using Bluetooth headphones, raising the phone will switch audio to the receiver.\nOnly available on the primary screen."
+        },
+        {
+            "name":"anti_fraud_text",
+            "value":"[TS_1024188]_Get alerted to possible scams during calls."
+        },
+        {
+            "name":"motion_pick_up_reduce_volume_pad",
+            "value":"[TS_1024763]_Raise to reduce volume"
+        },
+        {
+            "name":"quick_gestures",
+            "value":"[TS_1024916]_Shortcuts & gestures"
+        },
+        {
+            "name":"motion_quick_call_descrition_fold_teton",
+            "value":"[TS_1026222]_Raise the phone to your ear to answer an incoming call. If you're in speaker mode or using Bluetooth earphones, raising the phone will switch to earpiece mode.\n\n*Only available when folded."
+        },
+        {
+            "name":"answer_calls_list",
+            "value":"[TS_1026009]_Raise to answer"
+        },
+        {
+            "name":"satellite_short_notification_info",
+            "value":"[TS_1031974]_<body><span style='normal'>This service requires the </span><span style='bold'>Location</span><span style='normal'> permission and uses Location Services to get your location. By turning this on, you agree to these terms and the </span><span style='userAgreements'>Tiantong Satellite Communications User Agreement</span><span style='normal'>. For more details, refer to the </span><span style='privacyStatement'>Statement About Tiantong Satellite Communications and Privacy</span><span style='normal'> and </span><span style='permissionStatement'>Permissions Notice</span><span style='normal'>.</span></body>"
+        },
+        {
+            "name":"satellite_service_location",
+            "value":"[TS_1031975]_Location"
+        },
+        {
+            "name":"Apn_enum_None",
+            "value":"[TS_911145]_None"
+        },
+        {
+            "name":"close_button",
+            "value":"[TS_1042174]_Close"
+        },
+        {
+            "name":"fold_window_dialog_remind_title",
+            "value":"[TS_1040571]_Unfold your phone"
+        },
+        {
+            "name":"fold_window_dialog_remind_message",
+            "value":"[TS_1040570]_When using satellite communications, keep your phone unfolded and hold it horizontally."
+        },
+        {
+            "name":"fold_remind_tips_message",
+            "value":"[TS_1040569]_Satellite connection failed. Keep your phone unfolded during use."
+        },
+        {
+            "name":"satellite_service_no_region_card_descriptions",
+            "value":"[TS_1042280]_Tiantong Satellite Communications is not supported in the current region. For more information about supported regions, refer to the FAQs."
+        },
+        {
+            "name":"play_skills_uri_formatter",
+            "value":"[TS_1049392]_"
+        },
+        {
+            "name":"play_skills_uri_appgallery",
+            "value":"[TS_1049391]_"
+        },
+        {
+            "name":"preference_settings",
+            "value":"[TS_1054844]_Mode"
+        },
+        {
+            "name":"wifi_calling",
+            "value":"[TS_1054843]_WLAN Calling"
+        },
+        {
+            "name":"WiFi_first",
+            "value":"[TS_1054842]_WLAN preferred"
+        },
+        {
+            "name":"satellite_best",
+            "value":"[TS_1056213]_Connected to the optimal satellite"
+        },
+        {
+            "name":"im_smc_tips_starfinder_blocking",
+            "value":"[TS_1059812]_%1$s\nMove to an open area"
+        },
+        {
+            "name":"im_smc_tips_outdoor_blocking",
+            "value":"[TS_1059813]_Obstructions detected"
+        },
+        {
+            "name":"wifi_calling_tips",
+            "value":"[TS_1054845]_When WLAN Calling is on, your phone can route calls via WLAN networks or your carrier\u2019s network, depending on your preference and which signal is stronger. Before turning on this feature, check with your carrier regarding fees and other details."
+        },
+        {
+            "name":"car_satellite_tips",
+            "value":"[TS_1057331]_Make and receive phone calls using your car's satellite network."
+        },
+        {
+            "name":"car_satellite_title",
+            "value":"[TS_1057330]_In-Car Satellite Communications"
+        },
+        {
+            "name":"vowifi_mobile_network_preferred",
+            "value":"[TS_1063385]_Mobile network preferred"
+        },
+        {
+            "name":"edm_operate_prohibit_tip",
+            "value":"[TS_1073021]_This operation is prohibited by enterprise management."
+        },
+        {
+            "name":"using_beidou_toast",
+            "value":"[TS_1061213]_Unavailable while BeiDou satellite features are in use."
+        },
+        {
+            "name":"video_ringtone_delete_dialog_tip1",
+            "value":"[TS_1080683]_Delete selected items?"
+        },
+        {
+            "name":"video_ringtone_no_delete",
+            "value":"[TS_1080694]_Unable to delete items while they are in use."
+        },
+        {
+            "name":"manage",
+            "value":"[TS_1080700]_Manage"
+        },
+        {
+            "name":"video_ringtone_small_no_show",
+            "value":"[TS_1080696]_Video ringtones can't be edited in floating windows."
+        },
+        {
+            "name":"video_ringtone",
+            "value":"[TS_1080682]_Video ringtones"
+        },
+        {
+            "name":"video_ringtone_deselect_all",
+            "value":"[TS_1080695]_Deselect all"
+        },
+        {
+            "name":"remind",
+            "value":"[TS_1080691]_Reminder"
+        },
+        {
+            "name":"video_ringtone_select_all",
+            "value":"[TS_1080702]_Select all"
+        },
+        {
+            "name":"call_assistant_setting_title",
+            "value":"[TS_1080697]_Auto-answer"
+        },
+        {
+            "name":"delete",
+            "value":"[TS_1080681]_Delete"
+        },
+        {
+            "name":"InfoEdit_back",
+            "value":"[TS_1080685]_Back"
+        },
+        {
+            "name":"no_video_ringtone",
+            "value":"[TS_1080687]_No video ringtones"
+        },
+        {
+            "name":"video_ringtone_from_photo_picker",
+            "value":"[TS_1080688]_Select from Gallery"
+        },
+        {
+            "name":"my_video_ringtone",
+            "value":"[TS_1080692]_My ringback video"
+        },
+        {
+            "name":"sms",
+            "value":"[TS_1080689]_Message"
+        },
+        {
+            "name":"video_ringtone_size_limit",
+            "value":"[TS_1080698]_Select a video smaller than %s."
+        },
+        {
+            "name":"use",
+            "value":"[TS_1080699]_Apply"
+        },
+        {
+            "name":"video_ringtone_dialog_system_error",
+            "value":"[TS_1088497]_System error. Please try again."
+        },
+        {
+            "name":"video_ringtone_dialog_no_space",
+            "value":"[TS_1088500]_Insufficient storage. Free up some space and try again."
+        },
+        {
+            "name":"video_ringtone_dialog_Exceeding_limit_title",
+            "value":"[TS_1088499]_Max number of video ringtones reached"
+        },
+        {
+            "name":"video_ringtone_dialog_Exceeding_limit_content",
+            "value":"[TS_1088496]_Remove video ringtones for some contacts to make space for more."
+        },
+        {
+            "name":"video_ringtone_dialog_type_error",
+            "value":"[TS_1088498]_Only MP4 videos are supported."
+        },
+        {
+            "name":"InfoEdit_edits_info",
+            "value":"[TS_1091300]_Edit"
+        },
+        {
+            "name":"click_go_to_settings",
+            "value":"[TS_1085170]_Tap to set up"
+        },
+        {
+            "name":"incoming_outgoing_calls_voice_control",
+            "value":"[TS_1091758]_Answer and reject calls"
+        },
+        {
+            "name":"smart_call_making",
+            "value":"[TS_1091757]_Smart call"
+        },
+        {
+            "name":"Incoming_call_voice_announcement",
+            "value":"[TS_1091756]_Announce incoming calls"
+        },
+        {
+            "name":"penglai_mode_notice",
+            "value":"[TS_1083673]_Unable to do this in Penglai mode."
+        },
+        {
+            "name":"hyacinth_not_found_satellite",
+            "value":"[TS_1097783]_No available satellites found. Try again later."
+        },
+        {
+            "name":"hyacinth_satellite_service_no_region_card",
+            "value":"[TS_1097780]_Hyacinth Satellite Communications is not supported in the current region. For more information about supported regions, refer to the FAQs."
+        },
+        {
+            "name":"hyacinth_satellite_service_permission_usage_details",
+            "value":"[TS_1097764]_Hyacinth Satellite Communications permissions"
+        },
+        {
+            "name":"satellite_service_network_description",
+            "value":"[TS_1097774]_Call and text via satellite."
+        },
+        {
+            "name":"hyacinth_satellite_service_enter_in_call",
+            "value":"[TS_1097762]_Unable to enable Hyacinth Satellite Communications during a call."
+        },
+        {
+            "name":"hyacinth_satellite_signal_descriptions",
+            "value":"[TS_1097769]_China Telecom\nHyacinth Satellite"
+        },
+        {
+            "name":"video_type",
+            "value":"[TS_1091305]_Video %d"
+        },
+        {
+            "name":"start_hyacinth_satellite_communications",
+            "value":"[TS_1097778]_Hyacinth Satellite Communications"
+        },
+        {
+            "name":"hyacinth_satellite_service_settings_window_mode",
+            "value":"[TS_1097775]_Hyacinth Satellite Communications does not support multi-window mode."
+        },
+        {
+            "name":"hyacinth_satellite_service_airplane_mode",
+            "value":"[TS_1097770]_Hyacinth Satellite Communications is unavailable in Airplane mode."
+        },
+        {
+            "name":"hyacinth_satellite_service_tiantong_mode",
+            "value":"[TS_1097773]_Hyacinth Satellite Communications is unavailable while Tiantong Satellite Communications is in use."
+        },
+        {
+            "name":"hyacinth_satellite_service_not_enabled",
+            "value":"[TS_1097779]_Hyacinth Satellite Communications not enabled."
+        },
+        {
+            "name":"keep_current_posture_hyacinth",
+            "value":"[TS_1097772]_Hold this position"
+        },
+        {
+            "name":"hyacinth_satellites_not_available",
+            "value":"[TS_1097784]_Unable to confirm satellite availability at this time. Continue anyway?"
+        },
+        {
+            "name":"hyacinth_satellite_service_settings_window_suggest",
+            "value":"[TS_1097765]_Open this window in full screen to enable Hyacinth Satellite Communications."
+        },
+        {
+            "name":"hyacinth_satellite_service_no_sim_card",
+            "value":"[TS_1097781]_Please insert a SIM card with Hyacinth Satellite Communications activated and try again."
+        },
+        {
+            "name":"exit_hyacinth_satellite_service_tips",
+            "value":"[TS_1097785]_Disable Hyacinth Satellite Communications?"
+        },
+        {
+            "name":"satellite_connect_failed_not_time",
+            "value":"[TS_1098167]_No satellites currently available. Try again later."
+        },
+        {
+            "name":"New_CAll",
+            "value":"[TS_1074786]_Advanced Calling"
+        },
+        {
+            "name":"talkback_not_selected",
+            "value":"[TS_1102072]_Not selected"
+        },
+        {
+            "name":"talkback_selected",
+            "value":"[TS_1102071]_Selected"
+        },
+        {
+            "name":"hyacinth_satellite_service_no_available_time",
+            "value":"[TS_1097777]_No available time periods"
+        },
+        {
+            "name":"satellite_connect_failed",
+            "value":"[TS_1097768]_Disconnected"
+        },
+        {
+            "name":"new_hyacinth_satellite_signal_descriptions",
+            "value":"[TS_1097786]_Hyacinth Satellite"
+        },
+        {
+            "name":"hyacinth_device_calibrating_tips",
+            "value":"[TS_1097776]_Tilt the device by a large angle to complete calibration"
+        },
+        {
+            "name":"hyacinth_satellite_short_notification_info",
+            "value":"[TS_1097763]_<body><span style='normal'>When you're outside of WLAN and cellular coverage, you can continue using your phone's calling and messaging features via satellite.\n\nDuring use, this service needs to access your </span><span style='bold'>location</span><span style='normal'> in order to communicate with the satellite. By turning this on, you agree to the </span><span style='userAgreements'>Hyacinth User Agreement</span><span style='normal'>. For more details about how your personal information is processed, refer to the </span><span style='privacyStatement'>Statement About Hyacinth and Privacy</span><span style='normal'> and </span><span style='permissionStatement'>Permissions Notice</span><span style='normal'>.</span></body>"
+        },
+        {
+            "name":"new_calling_can_only_use_in_full_screen",
+            "value":"[TS_1103589]_Advanced Calling services only available in full-screen view."
+        },
+        {
+            "name":"satellite_connect_failed_guide",
+            "value":"[TS_1097782]_No satellites currently available. Next available window: %1$s–%2$s"
+        },
+        {
+            "name":"satellite_countdown",
+            "value":"[TS_1097766]_satellite is about to disconnect，time left %d"
+        },
+        {
+            "name":"hyacinth_satellite_communications",
+            "value":"[TS_1097771]_Hyacinth Satellite Communications"
+        },
+        {
+            "name":"hyacinth_available_time_tomorrow",
+            "value":"[TS_1098152]_Tomorrow: %1$s–%2$s"
+        },
+        {
+            "name":"cellular_network_notify_text",
+            "value":"[TS_1105022]_Satellite network no longer required. Disable it?"
+        },
+        {
+            "name":"LOCATION",
+            "value":"[TS_1102498]_get location permissions"
+        },
+        {
+            "name":"cellular_network_notify_ignore_button",
+            "value":"[TS_1105025]_Ignore"
+        },
+        {
+            "name":"switched_to_next_satellite",
+            "value":"[TS_1098148]_Switched to next satellite"
+        },
+        {
+            "name":"hyacinth_available_time_today",
+            "value":"[TS_1108475]_%1$s–%2$s"
+        },
+        {
+            "name":"cellular_network_notify_close_button",
+            "value":"[TS_1105023]_Disable satellite network"
+        },
+        {
+            "name":"esim_card_num_no_space",
+            "value":"[TS_1103853]_eSIM %s"
+        },
+        {
+            "name":"hyacinth_available_time_tomorrow_end",
+            "value":"[TS_1108032]_%1$s–%2$s (tomorrow)"
+        },
+        {
+            "name":"cellular_network_notify_title",
+            "value":"[TS_1105024]_Mobile network available"
+        },
+        {
+            "name":"switching_to_next_satellite",
+            "value":"[TS_1098151]_Switching to the next satellite soon\nThe connection may be briefly interrupted"
+        },
+        {
+            "name":"hyacinth_satellite_notification_title",
+            "value":"[TS_1102499]_Satellite communications disabled"
+        },
+        {
+            "name":"hyacinth_satellite_activate_text",
+            "value":"[TS_1103781]_<body><span style='normal'>With Hyacinth, you can make calls and send texts even when you're outside of network coverage. As Hyacinth satellites are still being deployed, this service is currently only available at certain times of the day. During use, this service will access information about your </span><span style='bold'>location and network</span><span style='normal'> in order to confirm satellite availability.</span></body>"
+        },
+        {
+            "name":"hyacinth_satellite_activate_immediatly",
+            "value":"[TS_1103782]_Activate now"
+        },
+        {
+            "name":"phone_ring_Card3",
+            "value":"[TS_1103852]_eSIM %1$s: %2$s"
+        },
+        {
+            "name":"hyacinth_satellite_activate",
+            "value":"[TS_1103780]_Activate Hyacinth"
+        },
+        {
+            "name":"tiantong_satellite_service_hyacinth_mode",
+            "value":"[TS_1103006]_Tiantong Satellite Communications is unavailable while Hyacinth Satellite Communications is in use."
+        },
+        {
+            "name":"hyacinth_service_settings_skytone_mode",
+            "value":"[TS_1102213]_Unavailable when SkyTone is in use."
+        },
+        {
+            "name":"mobile_data_esim_card",
+            "value":"[TS_1106472]_eSIM %s network"
+        },
+        {
+            "name":"unlock_after_call_notification_descriptions_normal",
+            "value":"[TS_1113221]_Incoming calls are always shown as banners when you're playing games, navigating on a map, or viewing images and videos in full screen.\n\nThey are always shown in full screen in Senior mode."
+        },
+        {
+            "name":"New_CAll_DESC",
+            "value":"[TS_1113285]_Service is provided by your carrier."
+        },
+        {
+            "name":"celia",
+            "value":"[TS_1109848]_Celia Call"
+        },
+        {
+            "name":"call_setting_call",
+            "value":"[TS_1109847]_Calling"
+        },
+        {
+            "name":"callSetting_title",
+            "value":"[TS_1111480]_Call settings"
+        },
+        {
+            "name":"send_success",
+            "value":"[TS_1116461]_Sent successfully"
+        },
+        {
+            "name":"im_message_smc_satellite_no_receipt_tips",
+            "value":"[TS_1116460]_Message may not have reached a satellite. Try again in an unobstructed outdoor area."
+        },
+        {
+            "name":"float_better_angle",
+            "value":"[TS_1113286]_Find a better angle"
+        },
+        {
+            "name":"hyacinth_request_location_permission",
+            "value":"[TS_1111115]_Location access has not been granted. Grant now?"
+        },
+        {
+            "name":"hyacinth_available_tips",
+            "value":"[TS_1098149]_Available:\n%1$s\n%2$s"
+        },
+        {
+            "name":"hyacinth_location_enable_permission",
+            "value":"[TS_1111116]_Grant access"
+        },
+        {
+            "name":"hyacinth_available_tips_single",
+            "value":"[TS_1114524]_Available: %s"
+        },
+        {
+            "name":"call_setting_celia_description",
+            "value":"[TS_1114323]_Let Celia answer and summarize calls for you."
+        },
+        {
+            "name":"hyacinth_available_time_refresh",
+            "value":"[TS_1123577]_Available time periods will refresh automatically when Tiantong Satellite Communications is disabled."
+        },
+        {
+            "name":"call_setting_getting_hyacinth_available_time",
+            "value":"[TS_1122155]_Checking available time periods…"
+        },
+        {
+            "name":"satellite_available_time_connection_use",
+            "value":"[TS_1122283]_This is used for checking available time periods and connecting to the satellite."
+        },
+        {
+            "name":"need_system_location",
+            "value":"[TS_1122284]_Enable Location Services in Settings"
+        },
+        {
+            "name":"not_support_toast",
+            "value":"[TS_1139102]_This operation is not supported in this mode."
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "string":[
+        {
+            "name":"watch_loading",
+            "value":"Memuatkan…",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"watch_permission_history_no_record",
+            "value":"Tidak ada rekaman data",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"watch_traffic_ranking_the_month",
+            "value":"Penggunaan data seluler (bulanan)",
+            "attr":{
+                "priority":"LT"
+            }
+        }
+    ]
+}

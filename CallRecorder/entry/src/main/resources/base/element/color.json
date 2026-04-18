@@ -1,0 +1,28 @@
+{
+  "color": [
+    {
+      "name": "start_window_background",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "font_color_182431",
+      "value": "#182431"
+    },
+    {
+      "name": "color_E3E3E3_grey",
+      "value": "#E3E3E3"
+    },
+    {
+      "name": "color_00000000_transparent",
+      "value": "#00000000"
+    },
+    {
+      "name": "detail_main_background",
+      "value": "#F1F3F5"
+    },
+    {
+      "name": "color_bind_sheet_background",
+      "value": "#FFF1F3F5"
+    }
+  ]
+}

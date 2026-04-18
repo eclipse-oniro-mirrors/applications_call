@@ -1,0 +1,12 @@
+{
+  "src": [
+    "pages/index",
+    "pages/indexInHiCar",
+    "pages/voipPage",
+    "pages/IncomingCallRejectionSms",
+    "pages/CallFailedDialog",
+    "pages/externalPages/ExternalCallPage",
+    "pages/LeatherPage",
+    "pages/PageForDialog"
+  ]
+}

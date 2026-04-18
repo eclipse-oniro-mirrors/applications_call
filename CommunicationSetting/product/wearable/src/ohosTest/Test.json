@@ -1,0 +1,39 @@
+{
+  "description": "Configuration for demo Tests",
+  "driver": {
+    "type": "OHJSUnitTest",
+    "test-timeout": "300000",
+    "bundle-name": "com.ohos.communicationsetting",
+    "module-name": "wearable_communication_test",
+    "shell-timeout": "600000",
+    "testcase-timeout": "30000",
+    "compile-mode": "esmodule",
+    "coverage": true,
+    "package-tool-path": "D:\\Local\\coverage2.0\\node_modules\\@ohos\\coverage"
+  },
+  "kits": [
+    {
+      "type": "ShellKit",
+      "run-command": [
+        "mount -o remount,rw /"
+      ]
+    },
+    {
+      "push": [
+        "WatchCommunicationSetting.hap->/system/app/CommunicationSetting/CommunicationSetting.hap"
+      ],
+      "type": "PushKit",
+      "post-push": [
+        "bm install -p /system/app/CommunicationSetting/CommunicationSetting.hap",
+        "reboot"
+      ]
+    },
+    {
+      "test-file-name": [
+        "WatchCommunicationSettingTest.hap"
+      ],
+      "type": "AppInstallKit",
+      "cleanup-apps": true
+    }
+  ]
+}

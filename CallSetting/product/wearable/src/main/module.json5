@@ -1,0 +1,49 @@
+{
+  "module": {
+    "name": "wearable",
+    "type": "entry",
+    "description": "$string:module_desc",
+    "mainElement": "MainAbility",
+    "deviceTypes": [
+      "default"
+    ],
+    "deliveryWithInstall": true,
+    "installationFree": false,
+    "pages": "$profile:main_pages",
+    "abilities": [
+    ],
+    "extensionAbilities": [
+      {
+        "name": "com.ohos.callsetting.WearableAbility",
+        "srcEntry": "./ets/mainability/CallSettingInWearableAbility.ets",
+        "icon": "$media:app_icon",
+        "description": "123",
+        "type": "sys/commonUI",
+        "exported": true,
+        "permissions": [
+          "ohos.permission.GET_TELEPHONY_STATE"
+        ]
+      }
+    ],
+    "requestPermissions": [
+      {
+        "name": "ohos.permission.GET_TELEPHONY_STATE"
+      },
+      {
+        "name": "ohos.permission.SET_TELEPHONY_STATE"
+      },
+      {
+        "name": "ohos.permission.GET_NETWORK_INFO"
+      },
+      {
+        "name": "ohos.permission.SET_NETWORK_INFO"
+      },
+      {
+        "name": "ohos.permission.MANAGE_SETTINGS"
+      },
+      {
+        "name": "ohos.permission.START_ABILITIES_FROM_BACKGROUND"
+      }
+    ]
+  }
+}

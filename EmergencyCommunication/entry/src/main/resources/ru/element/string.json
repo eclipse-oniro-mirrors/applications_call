@@ -1,0 +1,2510 @@
+{
+    "string":[
+        {
+            "name":"contactsWarnContent",
+            "value":"Добавленные экстренные контакты помогут первым откликнувшимся в экстренной ситуации. Любой человек может прочесть эту информацию, не разблокируя ваше устройство.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"auto_send_earthquake_alarm_message",
+            "value":"Оповещения о землетрясении",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"list_learn_about_emergency_shelters",
+            "value":"Поиск укрытий поблизости.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Historical_warning_information",
+            "value":"Предыдущие оповещения",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeLocationLongitudeEast",
+            "value":"(%2$s°с.ш., %1$s°з.д.)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"address",
+            "value":"Адрес",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"sos_permissions_tips_of_auto_send_sms",
+            "value":"Чтобы вручную предоставить доступ к геоданным, выберите Точные геоданные в разделе Настройки > Приложения и службы > Другие приложения > SOS > Геоданные.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeNext",
+            "value":"Следующий совет",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"alarm_close_dialog_remind_title",
+            "value":"Внимание",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"drugStatus",
+            "value":"Заболевания",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"emergencyCallsOnly",
+            "value":"Только экстр. вызовы",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"GET_APPROXIMATELY_LOCATION",
+            "value":"Используется для получения ваших приблизительных геоданных.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"EarthquakeMagnitude",
+            "value":"Магнитуда",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"aml_permission_location_info",
+            "value":"Используется для получения ваших точных геоданных, что способствует эффективному проведению аварийно-спасательных работ в чрезвычайных ситуациях.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_Location_Detail",
+            "value":"Этой службе требуется доступ в %1$s, а также следующее право доступа: %2$s. Ей также требуется читать и выгружать или передавать ваши геоданные и номер телефона. Это необходимо для содействия проведению аварийно-спасательных работ. Включая эту функцию, вы принимаете эти положения. Подробную информацию об обработке ваших персональных данных см. в документах %3$s и %4$s.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"clearInfo",
+            "value":"Удалить все данные и контакты?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"list_dial_emergency_contact_number",
+            "value":"Управление экстренными контактами.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"button_agree",
+            "value":"Принимаю",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Emergency_message_without_location",
+            "value":"[SOS]\nЧрезвычайная ситуация. Мне нужна помощь. Вы один из моих контактов в случае экстренной ситуации. Возможно, я не смогу ответить сейчас.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"notAdded",
+            "value":"Нет",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"drugPlacement",
+            "value":"Например, лизиноприл или аспирин",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"AMBULANCE",
+            "value":"Скорая помощь",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"no",
+            "value":"Нет",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"sendSmsSuccess",
+            "value":"Сообщение отправлено.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_info",
+            "value":"Автоматическое сообщение SOS",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"bloodType",
+            "value":"Группа крови",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"editEmergencyContact",
+            "value":"Изменить экстренные контакты",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Disclaimer_Instructions",
+            "value":"",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"removecontact",
+            "value":"Удалить экстренный контакт?",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"EmergencyWarningSettings_7",
+            "value":"Уведомление о функции Оповещения о землетрясении и конфиденциальности",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"EmergencyWarningSettings_8",
+            "value":"Уведомление о правах",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"stop_share_location_prompt_content",
+            "value":"Если выйти, сообщения SOS больше не будут отправляться вашим экстренным контактам. Выйти?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EmergencyWarningSettings_4",
+            "value":"Геолокация",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"EmergencyWarningSettings_2",
+            "value":"Интернет",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"aml_switch_title",
+            "value":"",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"exit",
+            "value":"Выход",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"car_accident_auto_call_for_help_title",
+            "value":"Автовключение SOS после аварии",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"button_agree_and_open",
+            "value":"Принять и включить",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"emergencyInfromation",
+            "value":"Чрезвычайная ситуация!",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"EarthquakeWarningTitle1",
+            "value":"Землетрясение! Следуйте в укрытие!",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"earthquake_shelter_setting_dialog",
+            "value":"Нет поддерживаемых приложений карт. Найдите безопасное укрытие поблизости.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"earthquake_problem_feedback",
+            "value":"Используется для отправки отчетов о проблемах, связанных с оповещениями о землетрясении.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeWarningTitle3",
+            "value":"Сохраняйте спокойствие и найдите открытое или безопасное место для укрытия. Не пользуйтесь лифтами, избегайте подвесных конструкций.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeArrivingLongTips",
+            "value":"Начнется обратный отсчет, устройство будет вибрировать. Вам потребуется найти укрытие поблизости или перейти в открытое место на улице как можно быстрее.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"fullName",
+            "value":"Полное имя",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeDistance",
+            "value":"Расстояние от эпицентра",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Permission_Title_1",
+            "value":"Права отправки геоданных в экстренной ситуации",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Permission_Title_2",
+            "value":"Права функции автоматической отправки сообщений SOS",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Permission_Description_4",
+            "value":"Сообщения",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Sos_Permission_Description_3",
+            "value":"Используется для получения точных геоданных вашего устройства, чтобы отправлять ваши геоданные экстренным контактам при активации функции SOS.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"emergency_number_alarm",
+            "value":"Сигнал SOS",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Permission_Description_5",
+            "value":"Используется для автоматического уведомления ваших контактов с помощью SMS-сообщений при активации функции SOS.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"clear",
+            "value":"Удалить",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Permission_Description_2",
+            "value":"Используется для доступа к точным геоданным устройства, что способствует эффективному проведению аварийно-спасательных работ в чрезвычайных ситуациях.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"list_quickly_show_emergency_information",
+            "value":"Настройте личную экстренную информацию. Она может отображаться на экране в случае чрезвычайной ситуации.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"getLocationService",
+            "value":"Разрешить доступ к автоопределению местоположения?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"car_accident_detection_disclaimer_content_one",
+            "value":"Когда ваше устройство определяет, что вы попали в серьезную аварию, оно автоматически обзванивает ваши экстренные контакты и отправляет им SMS-сообщения с вашими геоданными. Убедитесь, что ваши экстренные контакты хорошо знакомы с этой функцией, что они не проигнорируют эти сообщения и поймут их правильно.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"button_open",
+            "value":"Включить",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"aml_permission_message_info",
+            "value":"Используется для отправки сообщений SOS.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"continue",
+            "value":"OK",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"allergiesPlacement",
+            "value":"Например, орехи или пыльца",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"getLocation",
+            "value":"Нажмите, чтобы определить местоположение",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"notificationSwitchDialogContent",
+            "value":"Чтобы получать оповещения о землетрясении, разрешите приложению SOS в его настройках отправлять вам уведомления.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"EarthquakeCenter",
+            "value":"Эпицентр",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"aml_short_notification",
+            "value":"",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"addEmergencyContact",
+            "value":"Добавить экстренные контакты",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"permissionConfirm",
+            "value":"OK",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"emergency_location_service_text",
+            "value":"Ваши геоданные будут использоваться приложением SOS. Этой службе требуется доступ в Интернет и к службам геолокации. Ей также требуется читать и выгружать или передавать геоданные и ваш номер телефона, которые будут предоставлены экстренным службам. Включая эту опцию, вы принимаете эти положения. Дополнительные сведения об обработке ваших персональных данных см. в документах <a link=\"privacyStatement\">Уведомление о функции отправки геоданных в экстренной ситуации и конфиденциальности</a> и <a link=\"permissionStatement\">Уведомление о правах</a>.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"aml_permission_info_title",
+            "value":"Этой службе требуется следующее право:",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"System",
+            "value":"Система",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"add",
+            "value":"Добавить",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"already_in_contacts",
+            "value":"%s уже является экстренным контактом.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"notEmergencyNumberMsg",
+            "value":"Невозможно выполнить вызов. %s не является номером экстренной службы.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"peopleAdded",
+            "value":"%d",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"no_service_message_and_call_unavailable",
+            "value":"Нет сети. Услуги телефонной связи и SMS-услуги недоступны.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"remove",
+            "value":"Удалить",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"sos_calling_summary",
+            "value":"Выполняется вызов. Нажмите, чтобы присоединиться.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"EarthquakeInfoTitle",
+            "value":"Сведения оповещения",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"earthquake_warning_summary",
+            "value":"Получение ранних предупреждений в случае землетрясения.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"permission_reason_contacts",
+            "value":"Используется для управления контактами.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"medicalInfo",
+            "value":"Медицинские данные",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"emergency_number_traffic",
+            "value":"ДТП",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"drugStatusPlacement",
+            "value":"Например, астма",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"earthquake_warning_notification_text_without_device_address",
+            "value":"Землетрясение магнитудой %2$s произошло в: %1$s. %3$s ожидаются рядом с вами.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"gettingLocation",
+            "value":"Определение местоположения…",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeLocationLatitudeSouth",
+            "value":"(%2$s°ю.ш., %1$s°з.д.)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"sendNow",
+            "value":"OK",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"drug",
+            "value":"Медицинские препараты",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"teaching_dialog_complete",
+            "value":"OK",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"closeLocationService",
+            "value":"Запретить доступ к автоопределению местоположения?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"share_location_background_tips",
+            "value":"Отправка геоданных экстренным контактам",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeArriving",
+            "value":"До прихода сейсмических волн",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"unable_auto_dial_dialog_title",
+            "value":"Невозможно позвонить, чтобы получить помощь",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"addContact",
+            "value":"Добавить контакт",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"determine",
+            "value":"OK",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"car_accident_detection_disclaimer_content_four",
+            "value":"Эта функция доступна только в КНР (кроме Гонконга, Макао и Тайваня).",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeUpdate",
+            "value":"Время землетрясения",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"yes",
+            "value":"Да",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"list_learn_about_emergency_shelters_title",
+            "value":"Поиск укрытия",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"oobe_EarthquakeWarningServer_content",
+            "value":"Эта служба может отправлять вам оповещения при определении землетрясения. Ей требуется доступ в Интернет и к службам геолокации. Также ей требуется получить данные вашего устройства и геоданные. Включая эту функцию, вы принимаете настоящие положения, а также положения документов <a link=\"disclaimStatement\">Отказ от ответственности</a>, <a link=\"privacyStatement\">Уведомление о функции Оповещения о землетрясении и конфиденциальности</a>и <a link=\"permissionStatement\">Уведомление о правах</a>.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"send_sms_notify_emergency_contact",
+            "value":"Сообщение будет отправлено вашим контактам в экстренной ситуации",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeWarningTitle1_2",
+            "value":"Землетрясение! Следуйте в укрытие!",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"earthquake_advanced",
+            "value":"Дополнительные настройки",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Turn_on_Emergency_Information_and_Warning_text",
+            "value":"Для предоставления оповещений о землетрясении в месте, где вы находитесь, требуется доступ к вашим геоданным.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"warning_area_and_function_text",
+            "value":"Зона действия и описание",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"important_state_title",
+            "value":"Важная информация",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"car_accident_detection_disclaimer",
+            "value":"Отказ от гарантий функции обнаружения ДТП",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Permission_denied_to_send_sms",
+            "value":"У этого приложения нет права отправки SMS-сообщений.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_emergency_title",
+            "value":"SOS",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Historical_warning_information_explain",
+            "value":"Полученные ранее оповещения.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_Location_Detail_Active_two",
+            "value":"Уведомление о правах",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeWarningServer",
+            "value":"Оповещения о землетрясении",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeLocation",
+            "value":"Эпицентр",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"noLocationPermissionTitle",
+            "value":"Приложению SOS требуется право доступа к службам геолокации",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_Location_Info",
+            "value":"Отправка зашифрованных геоданных полиции во время экстренного вызова (только в КНР (кроме Гонконга, Макао и Тайваня)).",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"removeContact",
+            "value":"Удалить контакт %s из экстренных контактов?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Call",
+            "value":"Автоматический экстренный вызов",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_not_support",
+            "value":"Приложение SOS недоступно при включении спутниковой связи Tiantong.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_Location_Detail_Active_one",
+            "value":"Уведомление об отправке геоданных в экстренной ситуации и конфиденциальности",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"no_sim_message_and_call_unavailable",
+            "value":"SIM-карта отсутствует. Услуги телефонной связи и SMS-услуги недоступны.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"closeLocationService_title",
+            "value":"Выключить автополучение геоданных",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"sos_is_auto_calling",
+            "value":"Автодозвон…",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Call_Test",
+            "value":"Предпросмотр сообщения SOS",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"InfoEdit_edits_info",
+            "value":"Изменить",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"warnInfo",
+            "value":"Все настроено? Вернитесь в раздел %s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"sendSmsFail",
+            "value":"Сбой отправки SMS-сообщения (неизвестная причина).",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_Location_Detail_Dark_one",
+            "value":"Интернет",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_Location_When_Call_Detail",
+            "value":"Система сможет получить ваши геоданные, когда вы инициируете экстренный вызов.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"FIRE",
+            "value":"Пожарная охрана",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeFelling1",
+            "value":"Средние толчки",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"warnContent",
+            "value":"Эта информация поможет тем, кто первыми придет вам на помощь в чрезвычайной ситуации.\n\nОна хранится локально, доступ к ней может получить любой, и для этого не нужно разблокировать устройство. Вы также можете настроить ее в разделе Контакты > Моя карточка.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeFelling3",
+            "value":"Сильные повреждения",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeFelling2",
+            "value":"Сильные толчки",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Permission_Instructions",
+            "value":"Права функции Оповещения о землетрясении",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeArrived",
+            "value":"После прихода сейсмических волн",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeAlarmTest",
+            "value":"Предпросмотр оповещения",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"define_disclaimer",
+            "value":"Отказ от гарантий",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"unable_auto_dial_dialog_summary",
+            "value":"Сначала добавьте минимум один экстренный контакт.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"clearAll",
+            "value":"Удалить все",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"remove_last_emergency_contact_prompt_content",
+            "value":"Удалить контакт %s из экстренных контактов? Этот контакт больше не будет получать автоматические сообщения или вызовы SOS.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"closeLocationServiceMsg",
+            "value":"Если выключить, ваше устройство не сможет автоматически отображать ваши геоданные при выполнении экстренного вызова.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"CANCEL",
+            "value":"Отмена",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"sos_is_playing_recording",
+            "value":"Воспроизводится сообщение SOS. Нажмите, чтобы перейти к вызову.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"personalInfo",
+            "value":"Персональные данные",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_emergency_personal_info",
+            "value":"Настройте персональные и медицинские данные.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"sendMsgNotice",
+            "value":"Вы можете отправить этому контакту сообщение, чтобы сообщить ему, что вы добавили его как экстренный контакт.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"emergencyInfromationText",
+            "value":"Землетрясение магнитудой %2$s произошло в: %1$s. %4$s ожидаются в: %3$s.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"noLocationPermissionDesc",
+            "value":"Используется для доступа к вашим геоданным при выполнении экстренных вызовов.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"sendMsg",
+            "value":"",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"emergencyContact",
+            "value":"Экстренные контакты",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeInfofrom",
+            "value":"Источник: %s",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"popup_button_gotosettings",
+            "value":"Настройки",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"POLICE",
+            "value":"Полиция",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"importantDialogContent_8",
+            "value":"здесь",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"earthquake_location_notice",
+            "value":"Чтобы вручную предоставить доступ к геоданным, выберите Разрешать всегда и Точные геоданные в разделе Настройки > Приложения и службы > Другие приложения > SOS > Геоданные.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeAlarmTesting",
+            "value":"Остановить предпросмотр (%s)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"importantDialogContent_4",
+            "value":"Нажимая Принимаю, вы соглашаетесь получать Оповещения о землетрясении и принимаете положения документа %1$s. Дополнительные сведения об обработке ваших персональных данных см. в документах %2$s и %3$s. Для получения подробной информации нажмите %4$s.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"emergency_location_service_title",
+            "value":"Отправка геоданных в экстренной ситуации",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"editEmergencyInfo",
+            "value":"Изменить медицинскую карту",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"The_position_switch_off_text",
+            "value":"Вы не будете получать предупреждения о землетрясениях, если выключите эту функцию. Выключить?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"earthquake_shelter_setting_notice",
+            "value":"Для поиска укрытия установите приложение Карты.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"getLocationMsg1",
+            "value":"Чтобы помочь вам сообщить ваши геоданные в чрезвычайной ситуации, ваше устройство будет автоматически отображать ваши геоданные при выполнении экстренного вызова. Вы можете нажать на них для просмотра вашего местоположения в приложении карт.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeLocationLongitudeWest",
+            "value":"(%2$s°ю.ш., %1$s°в.д.)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"remove_emergency_contact_text",
+            "value":"Удалить экстренный контакт",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"noStated",
+            "value":"Не указано",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"personalEmergencyInfo",
+            "value":"Медицинская карта",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_info_Detail_notice_dark_one",
+            "value":"Сообщения",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_info_Detail_notice_dark_Two",
+            "value":"Службы геолокации",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"earthquake_alarm_notify",
+            "value":"Экстренные предупреждения",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Emergency_message",
+            "value":"[SOS]\nЧрезвычайная ситуация. Мне нужна помощь. Вы один из моих контактов в случае экстренной ситуации.\nМои геоданные: %s. Возможно, я не смогу ответить сейчас.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"PermissionDescriptionContent_3",
+            "value":"Используется для получения точных геоданных вашего устройства с целью отправки оповещений о землетрясении.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"emergencyContacts",
+            "value":"Экстренные номера",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"The_position_switch_off",
+            "value":"Доступ к геоданным",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"organDonor",
+            "value":"Донор органов",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_alter_title",
+            "value":"Предпросмотр предупреждений",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"PermissionDescriptionContent_2",
+            "value":"Геоданные",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_info_Detail_notice_all",
+            "value":"Этой службе требуются следующие права доступа: %1$s и %2$s. Также ей требуется право чтения геоданных. Включая эту опцию, вы принимаете эти положения. Подробную информацию см. в документах %3$s и %4$s.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_Location_When_Call",
+            "value":"Автополучение геоданных",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_info_Detail_notice_active_two",
+            "value":"Уведомление о правах",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"unable_auto_dial_dialog_add",
+            "value":"Добавить",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeLocationLatitudeNorth",
+            "value":"(%2$s°с.ш., %1$s°в.д.)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"unable_send_help_info",
+            "value":"Сбой отправки сообщения",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"GET_LOCATION_IN_BACKGROUND",
+            "value":"Используется для получения геоданных во время работы в фоновом режиме.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"aml_permission_dialog_title",
+            "value":"",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"getLocationFailed",
+            "value":"Сбой получения геоданных. Нажмите, чтобы повторить.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"importantDialogContent_2",
+            "value":"",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"importantDialogContent_3",
+            "value":"здесь",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"notifyContact",
+            "value":"Уведомить контакт?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"emergencyInfo",
+            "value":"Информация в случае ЧС",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_info_Detail_notice_active_one",
+            "value":"Уведомление о функции Автоматическое сообщение SOS и конфиденциальности",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EmergencyWarningSettings_all",
+            "value":"Этой службе требуется доступ в %1$s, а также следующее право доступа: %2$s. Ей также требуется читать и выгружать или передавать геоданные для предоставления предупреждений о землетрясении. Включая эту функцию, вы принимаете данные положения и положения документа %3$s. Подробную информацию об обработке ваших персональных данных см. в документах %4$s и %5$s.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"notification_switch_dialog_content",
+            "value":"Это необходимо для отправки оповещений о землетрясении. Вы можете включить уведомления в разделе Настройки.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"aml_switch_summary",
+            "value":"Автоматическая отправка ваших геоданных экстренным службам при выполнении вами вызова SOS или отправке сообщения SOS (если функция доступна).",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"allergies",
+            "value":"Аллергические реакции",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"function_settings_text",
+            "value":"Настройки",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_Location",
+            "value":"Отправка геоданных",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"rightCall",
+            "value":"Проведите вправо, чтобы позвонить по номеру %s",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"unable_auto_dial_and_send_sms_dialog_title",
+            "value":"Невозможно позвонить или отправить сообщение",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"EarthquakeIntensity",
+            "value":"Интенсивность (%s)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"notification_switch_dialog_title",
+            "value":"Приложение SOS хочет отправлять вам уведомления",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeArrivedLongTips",
+            "value":"При сейсмической волне будет звучать сигнал тревоги. Вам будет предоставлена информация об укрытиях, телефонах горячей линии. Также отобразится личная информация в случае ЧС.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"car_accident_detection_statement_on_service_and_privacy",
+            "value":"Уведомление о функции Автовключение SOS после аварии и конфиденциальности",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fall_down_detection_disclaimer",
+            "value":"Отказ от гарантий функции обнаружения падения",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"cannot_enable_fall_down_sos",
+            "value":"Невозможно включить функцию Автовключение SOS после падения",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"car_accident_detection_disclaimer_in_short_notice",
+            "value":"Отказ от гарантий функции обнаружения ДТП",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fall_down_message",
+            "value":"[SOS – Падение]\nМой телефон обнаружил падение. Мне нужна помощь. Вы находитесь в списке моих экстренных контактов, поэтому вам поступило уведомление.\nМои геоданные: %s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_info_Detail_notice_renew",
+            "value":"Этой службе требуется читать ваши геоданные, а также следующее право доступа: %1$s. Включая службу, вы принимаете эти положения. Подробную информацию см. в документах %2$s и %3$s.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"cannot_enable_car_accident_sos",
+            "value":"Невозможно включить функцию Автовключение SOS после аварии",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"car_accident_sos_message_without_location",
+            "value":"[SOS – ДТП]\nМой телефон обнаружил, что произошла авария с моим участием. Мне нужна помощь. Вы находитесь в списке моих экстренных контактов, поэтому вам поступило уведомление.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fall_down_detection_disclaimer_content_one",
+            "value":"Когда ваше устройство определяет, что вы упали, оно автоматически обзванивает ваши экстренные контакты и отправляет им SMS-сообщения с вашими геоданными. Убедитесь, что ваши экстренные контакты знают об этой функции, что они не проигнорируют эти сообщения и правильно поймут их.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fall_down_message_without_location",
+            "value":"[SOS – Падение]\nМой телефон обнаружил падение. Мне нужна помощь. Вы находитесь в списке моих экстренных контактов, поэтому вам поступило уведомление.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"car_accident_permission_title",
+            "value":"Права функции Автовключение SOS после аварии",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"car_accident_sos_message",
+            "value":"[SOS – ДТП]\nМой телефон обнаружил, что произошла автомобильная авария с моим участием. Мне нужна помощь. Вы находитесь в списке моих экстренных контактов, поэтому вам поступило уведомление.\nМои геоданные: %s.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fall_down_auto_call_for_help_title",
+            "value":"Автовключение SOS после падения",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fall_down_detection_disclaimer_content_two",
+            "value":"Эта функция работает путем анализа данных датчиков на вашем устройстве. Сигналы датчиков, схожие с сигналами при падении, могут непреднамеренно активировать эту функцию. В некоторых случаях функция может не сработать, поскольку данных датчиков, получаемых в результате падения, может быть недостаточно. Также обратите внимание, что возможность совершения телефонных вызовов и отправки сообщений зависит от уровня сигнала и статуса устройства.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fall_down_trigger_prompt",
+            "value":"Возможно, вы упали в %1$s. Если вы не отреагируете, телефон выполнит экстренный вызов.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fall_down_auto_call_notice_all",
+            "value":"Для доступа к вашим геоданным этой службе требуется следующее право доступа: %1$s. Включая службу, вы принимаете данные положения и положения документа %2$s. Подробную информацию об обработке ваших персональных данных см. в документах %3$s и %4$s.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fall_down_detection_disclaimer_in_short_notice",
+            "value":"Отказ от гарантий функции обнаружения падения",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"sos_is_playing_recording_1",
+            "value":"Воспроизводится сообщение с просьбой о помощи.\nНажмите, чтобы перейти к вызову.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"car_accident_trigger_prompt",
+            "value":"Возможно, вы попали в аварию в %1$s. Если вы не отреагируете, телефон выполнит экстренный вызов.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fall_down_detection_statement_on_service_and_privacy",
+            "value":"Уведомление о функции Автовключение SOS после падения и конфиденциальности",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"car_accident_auto_call_notice_all",
+            "value":"Для доступа к вашим геоданным этой службе требуется следующее право доступа: %1$s. Включая службу, вы принимаете данные положения и положения документа %2$s. Подробную информацию об обработке ваших персональных данных см. в документах %3$s и %4$s.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fall_down_permission_title",
+            "value":"Права функции Автовключение SOS после падения",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_location_service_text_new",
+            "value":"Когда вы выполняете вызов SOS, эта служба отправляет ваши геоданные в зашифрованном виде экстренным службам для повышения качества предоставляемой помощи. Этой службе требуется доступ в Интернет и право доступа к Службам геолокации, а также читать и выгружать или передавать ваши геоданные и номер телефона для отправки этих данных экстренным службам. Включая эту функцию, вы принимаете вышеизложенные положения. Подробную информацию о правах, необходимых для работы этой службы, см. в документе <a link=\"permissionStatement\">Уведомление о правах</a>.\nЭта служба предоставляется сторонними компаниями, перечисленными ниже. Дополнительную информацию об обработке персональных данных см. в соответствующих документах компаний:\n${param1}. Уведомление о Платформе экстренных служб геолокации и конфиденциальности (), Китайская академия информационно-коммуникационных технологий (CAICT)\n${param2}. Политика конфиденциальности службы LocationNet (), Shenzhen LocationNet Technology Co., Ltd.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Location_Net_Privacy",
+            "value":"Политика конфиденциальности службы LocationNet",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_Location_Detail_new",
+            "value":"Этой службе требуется доступ в %1$s, а также следующее право доступа: %2$s. Помимо этого, она будет читать и выгружать или передавать ваши геоданные и номер телефона для отправки этих данных сторонним экстренным службам. Включая эту функцию, вы принимаете вышеизложенные положения. Подробную информацию о правах, необходимых для работы этой службы, см. в документе %3$s.\nЭта служба предоставляется нижеуказанными сторонними компаниями. Подробную информацию об обработке персональных данных см. в соответствующих документах компаний:\n%4$s. Китайская академия информационно-коммуникационных технологий (CAICT), %5$s\n%6$s. Shenzhen LocationNet Technology Co., Ltd., %7$s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Emergency_Position_Service_Privacy",
+            "value":"Уведомление о Платформе экстренных служб геолокации и конфиденциальности",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"open_phone_to_emergency_calls",
+            "value":"Раскройте телефон для экстренного вызова",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"location_south_east",
+            "value":"%1$s ю.ш. %2$s в.д.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"location_north_west",
+            "value":"%1$s с.ш. %2$s з.д.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"car_accident_detection_disclaimer_content_two",
+            "value":"Эта функция работает путем анализа данных датчиков на вашем устройстве. Сигналы датчиков, которые похожи на сигналы при автомобильных авариях, могут непреднамеренно активировать эту функцию. В некоторых случаях данных датчиков, получаемых в результате аварии, может быть недостаточно для включения этой функции. Также обратите внимание, что качество связи и статус устройства могут повлиять на возможность совершать телефонные вызовы и отправлять сообщения.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"unsupport_satellite_card_content",
+            "value":"Невозможно отправить сообщения во время выполнения вызовов по спутниковой связи.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fall_down_detection_disclaimer_content_four",
+            "value":"Эта функция доступна только в КНР (кроме Гонконга, Макао и Тайваня).",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"car_accident_detection_disclaimer_content_three",
+            "value":"",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"location_north_east",
+            "value":"%1$s с.ш. %2$s в.д.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"address_details",
+            "value":"Адрес: %s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fall_down_detection_disclaimer_content_three",
+            "value":"",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"location_south_west",
+            "value":"%1$s ю.ш. %2$s з.д.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"position",
+            "value":"Геоданные: %s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite",
+            "value":"Сообщения по спутниковой системе Tiantong",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"NumberEdit_delete",
+            "value":"Город %s удален",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"InfoEdit_back",
+            "value":"Назад",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"one_finger_double_click",
+            "value":"Нажмите дважды, чтобы активировать",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"positioning",
+            "value":"Местоположение",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"InfoEdit_show_dialpad",
+            "value":"Показать панель набора номера",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"InfoEdit_delete",
+            "value":"Удалить",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"not_available",
+            "value":"Невозможно использовать",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"InfoEdit_edit",
+            "value":"Другие опции",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"ContactsEdit_close",
+            "value":"Удалить экстренный контакт",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"InfoEdit_dail",
+            "value":"Позвонить",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_slogan",
+            "value":"Служба спасения",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"phrases_button",
+            "value":"Быстрые сообщения",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_submit_message_subtitle1",
+            "value":"Вы можете отправить ваши геоданные и информацию о происшествии на устройства служб спасения поблизости.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"rescue_signal_level_middle",
+            "value":"Уровень сигнала сети: средний",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_save_power_tips",
+            "value":"Для экономии заряда батареи выключите экран, пока ждете помощь.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"rescue_message_communication_banner_content",
+            "value":"Нажмите, чтобы сообщить о происшествии.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"rescue_signal_level_strong",
+            "value":"Уровень сигнала сети: сильный",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"rescue_message_sending_banner_title",
+            "value":"Отправка сообщения...",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"rescue_message_communication_banner_title",
+            "value":"Связь с службой спасения",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"rescue_signal_level_low",
+            "value":"Уровень сигнала сети: слабый",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_exit_once_title",
+            "value":"Выйти из режима поиска служб спасения?",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_service_title",
+            "value":"SOS, когда нет сети",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_disaster_situation_title",
+            "value":"Происшествие",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_message_send_failed_tips",
+            "value":"Сигнал прерывается. Сообщение будет отправлено после восстановления сигнала.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_receive_d2d_subtitle1",
+            "value":"Вы можете отправить ваши геоданные и информацию о происшествии на устройства служб спасения поблизости.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"send_button",
+            "value":"Отправить",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_submit_success_title",
+            "value":"Сообщение доставлено",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_team",
+            "value":"Служба спасения",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"keyboard_button",
+            "value":"Клавиатура",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_location_title",
+            "value":"Координаты",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_sending",
+            "value":"Отправка",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_exit_completely_content",
+            "value":"Если вы выключите эту функцию, ваше устройство не сможет осуществлять поиск служб спасения поблизости, когда вы находитесь вне зоны действия сети. Рекомендуется не выключать эту функцию.\n\nВыключить?",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"disaster_situation_fire",
+            "value":"Пожар",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_sended_status",
+            "value":"Доставлено",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"message_textarea_placeholder",
+            "value":"Опишите ситуацию",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_view_details",
+            "value":"Посмотреть сведения",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_my_rescue_info",
+            "value":"Сведения SOS",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_get_location_failed",
+            "value":"Сбой получения геоданных",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_sending_status",
+            "value":"Отправка…",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_exit_current_rescue",
+            "value":"Выйти",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"rescue_signal_detected",
+            "value":"Ожидание отправки сообщения…",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_submit_message_title",
+            "value":"Отправка сообщения SOS",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"rescue_message_send_failed_banner_title",
+            "value":"Сбой отправки сообщения",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"rescue_signal_level_none",
+            "value":"Уровень сигнала сети: нет сигнала",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_receive_d2d_title",
+            "value":"Обнаружен сигнал службы спасения",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"China_Broadnet",
+            "value":"China Broadnet",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"send_position_btn_text",
+            "value":"Отправка геоданных",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_wait_for_send",
+            "value":"Ожидание отправки",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"switching_audio_channels",
+            "value":"Переключить аудиоканалы",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"incomingCall",
+            "value":"Входящий вызов",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_call_finish",
+            "value":"Вызов завершен",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_disclaimer_content_all",
+            "value":"Этой службе требуется следующее право доступа: %1$s. Также ей требуется читать номера телефонов, идентификаторы IMEI и геоданные. Включая эту службу, вы принимаете данные положения и положения документа %2$s. Подробную информацию об обработке ваших персональных данных см. в документах %3$s и %4$s.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_privacy_statement",
+            "value":"Уведомление о службе связи в экстренных ситуациях без подключения к сети и конфиденциальности",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fracture",
+            "value":"Перелом",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"building_collapse",
+            "value":"Обрушение здания",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"in_good_status",
+            "value":"Все нормально",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"road_damage",
+            "value":"Повреждение дороги",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"surrounding_environment",
+            "value":"Вокруг",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_not_select_distress_situation",
+            "value":"Вы не выбрали ситуацию",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"flood",
+            "value":"Наводнение",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"personal_status",
+            "value":"Состояние здоровья",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"there_are_children",
+            "value":"Есть дети",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"landslide",
+            "value":"Оползень",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"there_are_old_people",
+            "value":"Есть пожилые",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"detected_cellular_signal_dialog_content",
+            "value":"Мобильная сеть доступна. После закрытия этого режима вы сможете выполнять вызовы по сети оператора.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_describe_distress",
+            "value":"Опишите ситуацию",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_answer_call_failed",
+            "value":"Не удалось ответить.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"unable_to_walk",
+            "value":"Не могу ходить",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"someone_injured",
+            "value":"Есть пострадавшие",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_description",
+            "value":"Когда эта функция включена, вы можете отправить сообщения SOS в ближайшую службу спасения и принимать звонки от нее в зоне, где нет покрытия сотовой сети.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"food_shortage",
+            "value":"Нехватка продовольствия",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hypothermia",
+            "value":"Переохлаждение",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"head_injury",
+            "value":"Травма головы",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_submit_success_subtitle1",
+            "value":"Ваше сообщение SOS получено службой спасения. Ждите спасателей.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"there_are_women",
+            "value":"Есть женщины",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"select_disaster_situation",
+            "value":"Выберите ситуацию",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"lose_blood",
+            "value":"Потеря крови",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"trapped",
+            "value":"Люди в ловушке",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_feeling_5",
+            "value":"Очень разрушительное",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_feeling_1",
+            "value":"Нет толчков",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_feeling_2",
+            "value":"Слабые толчки",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_feeling_3",
+            "value":"Сильные толчки",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_feeling_4",
+            "value":"Разрушительное",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_info_source",
+            "value":"Предупреждения отправляются Китайской сетью заблаговременных предупреждений о землетрясениях %s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_warning_info",
+            "value":"Сохраняйте спокойствие. Опуститесь на пол, укройтесь за неподвижным предметом и держитесь за него. Если вы на улице, перейдите в открытое место. Берегите голову. Не пользуйтесь лифтами.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_feeling_reminder_1",
+            "value":"Толчки не ожидаются, сохраняйте спокойствие",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_feeling_reminder_2",
+            "value":"Ожидаются толчки, сохраняйте спокойствие",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_feeling_reminder_3",
+            "value":"Ожидаются толчки, будьте наготове",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_about_to_arrive",
+            "value":"Сейсмические волны скоро дойдут",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_feeling_reminder_4",
+            "value":"Ожидаются толчки, примите меры защиты",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_feeling_reminder_5",
+            "value":"Опасность, примите меры защиты",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_warning_canceled",
+            "value":"Предупреждение о землетрясении отменено.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_source_test",
+            "value":"(тест)",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_source_trial_run",
+            "value":"(пробный запуск)",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_arrived",
+            "value":"Сейсмические волны дошли",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_title",
+            "value":"Служба связи в экстренных ситуациях без подключения к сети",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"voiceCall",
+            "value":"Ответ на вызов от службы спасения",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_service_content",
+            "value":"Служба связи в экстренных ситуациях без подключения к сети позволяет связываться со службами спасения при возникновении чрезвычайной ситуации. Этой службе требуется право доступа к службам геолокации, а также читать ваши номера телефонов, идентификаторы IMEI и геоданные для предоставления связанных услуг, когда вы находитесь вне зоны действия сети. Включая эту опцию, вы принимаете эти положения. Дополнительные сведения об обработке ваших персональных данных см. в документах <a link=\"emergencyRescuePrivacyStatement\">Уведомление о службе связи в экстренных ситуациях без подключения к сети и конфиденциальности</a> и <a link=\"emcResourcePermissionStatement\">Уведомление о правах</a>.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"additional_info_list_content_1",
+            "value":"%d. Будьте собраны и спокойны. Не растрачивайте силы.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hanging_up_voice_call",
+            "value":"Завершение разговора со службой спасения",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emc_rescue_current_location",
+            "value":"Текущие геоданные: %s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"additional_info_list_content_2",
+            "value":"%d. Ваша безопасность – главный приоритет. Не двигайтесь, если это может быть небезопасно.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"additional_info_list_content_3",
+            "value":"%d. Для экономии энергии выключите экран, пока ждете помощь.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"menu_title_additional_info",
+            "value":"Важная информация",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"exit_emc_rescue_mode_notification_title",
+            "value":"Вы закрыли службу связи в экстренных ситуациях без подключения к сети",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"search_now_button",
+            "value":"Начать поиск",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"exit_emc_rescue_mode_notification_content",
+            "value":"Для повторного поиска служб спасения поблизости нажмите на опцию Начать поиск.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emc_rescue_permission_notice_content_2",
+            "value":"Используется для получения данных о местоположении устройства и отправки таких данных службам спасения, когда вы находитесь вне зоны действия сети.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emc_rescue_location_permission_subtitle",
+            "value":"Геоданные",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emc_rescue_permission_notice_title",
+            "value":"Права службы связи в экстренных ситуациях без подключения к сети",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"epicenter_location",
+            "value":"Эпицентр",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"estimated_intensity",
+            "value":"Примерная интенсивность (%s)",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emc_rescue_disclaimer_content_part_1",
+            "value":"",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emc_rescue_disclaimer_content_part_2",
+            "value":"Служба связи в экстренных ситуациях без подключения к сети разработана исключительно в информационных целях, чтобы помочь вам оценить риски возникновения угроз безопасности и принять меры по обеспечению собственной безопасности. Эта функция предназначена только для поиска сигналов служб спасения, с ее помощью невозможно отправлять сигналы бедствия. Включение этой функции не может гарантировать прибытие служб спасения в место, в котором вы находитесь, для проведения спасательной операции. Сигналы служб спасения передаются профессиональными службами спасения с помощью специального оборудования. Если ваше устройство не может обнаружить такой сигнал, ответственность за принятие надлежащих мер по обеспечению собственной безопасности в зависимости от конкретных обстоятельств ложится на вас. Если ваше устройство обнаружило сигнал службы спасения, вам необходимо четко и подробно описать сотрудникам службы ситуацию, которая произошла с вами. Вам необходимо соблюдать меры безопасности в зависимости от конкретной ситуации как до, так и после общения со службой спасения. Вы самостоятельно несете ответственность за все риски или последствия, возникающие в результате действий, которые вы выполнили, руководствуясь данными, предоставленными службой связи в экстренных ситуациях без подключения к сети.\n\n",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emc_rescue_disclaimer_content_part_3",
+            "value":"",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergencyCall",
+            "value":"Экстренный вызов",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_not_support",
+            "value":"Функция SOS недоступна при включении спутниковой связи Гиацинт.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emc_rescue_china_broadnet_brand_tips",
+            "value":"Диапазон частот предоставлен компанией China Broadnet.",
+            "attr":{
+                "priority":"translate"
+            }
+        }
+    ]
+}

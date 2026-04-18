@@ -1,0 +1,29 @@
+{
+  "src": [
+    "pages/Index",
+    "pages/MobileDataIndex",
+    "pages/BannerGuidePage",
+    "pages/SatelliteNetworkBlankPage",
+    "pages/SatelliteCallDialog",
+    "pages/NumberIdentityPrivacyStatement",
+    "pages/CommonPrivacyStatementOOBE",
+    "pages/NumberIdentityPermissionStatement",
+    "pages/FloatWindow",
+    "pages/SatelliteDialog",
+    "pages/SatelliteStrongNotify",
+    "pages/AlertDialogPage",
+    "pages/SuperPrivacyCallDialog",
+    "pages/DefaultIntentComponent",
+    "pages/BindSheetBackground",
+    "pages/SatelliteServicePrivacyStatement",
+    "pages/PhonePrivacyStatement",
+    "pages/EntryPage",
+    "pages/AlertDialogPageNewFold",
+    "pages/MmiCodeDialog",
+    "pages/videoRingtone/VideoRingtonePage",
+    "pages/videoRingtone/VideoRingtoneSettings",
+    "pages/videoRingtone/VideoFullScreenPreview",
+    "pages/hyacinth/HyacinthDialog",
+    "pages/hyacinth/HyacinthFloatWindow"
+  ]
+}

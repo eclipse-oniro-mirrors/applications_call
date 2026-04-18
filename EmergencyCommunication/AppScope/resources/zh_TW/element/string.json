@@ -1,0 +1,11 @@
+{
+    "string":[
+        {
+            "name":"app_name",
+            "value":"緊急通訊",
+            "attr":{
+                "priority":"LT"
+            }
+        }
+    ]
+}

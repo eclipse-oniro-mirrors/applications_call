@@ -1,0 +1,218 @@
+{
+    "string":[
+        {
+            "name":"beidou_satellite_message_service_no_net",
+            "value":"အင်တာနက် ချိတ်ဆက်မှု မရှိပါ။ အင်တာနက် ချိတ်ဆက်ပြီး ထပ်ကြိုးစားကြည့်ပါ။",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"go_use_beidou_message_tips",
+            "value":"BeiDou ဂြိုဟ်တု မက်ဆေ့ခ်ျကို ဖွင့်ထားသည်။ ၎င်းကို စသုံးရန် မက်ဆေ့ခ်ျသို့ သွားပါ။",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hangUp",
+            "value":"အဆုံးသတ်ရန်",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"start_beidou_satellite_message",
+            "value":"BeiDou ဂြိုဟ်တု မက်ဆေ့ခ်ျ",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"wearable_bluee_text",
+            "value":"နာရီကို ဖုန်းနှင့်ချိတ်ဆက်ထားသောအခါ ပါဝါချွေတာရန် နာရီ၏ မိုဘိုင်း ဒေတာကို အလိုအလျောက် ပိတ်လိုက်ပါမည်။ ၎င်းတို့ ချိတ်ဆက်မှုပြုတ်သွားပါက ၎င်းကို ပြန်ဖွင့်ပါမည်။",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"save",
+            "value":"သိမ်းရန်",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Apn_enum_None",
+            "value":"မရှိ",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"wearable_roaming_subtitle",
+            "value":"နိုင်ငံပြင်ပ ဖုန်းဒေတာ သုံးစွဲမှုကို သုံးနေစဉ် ဒေတာကို ဖွင့်ပါ။ အသေးစိတ်အတွက် သင့်ဆက်သွယ်ရေး ကယ်ရီယာထံ ဆက်သွယ်ပါ။",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_data_networkProvider",
+            "value":"ဆက်သွယ်ရေး ကယ်ရီယာ",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"APN_MMS",
+            "value":"MMS",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"do_not_show_again",
+            "value":"ထပ်မပြပါနှင့်",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"APN_ADD_APN",
+            "value":"APN အသစ်",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"APN_common",
+            "value":"ပုံမှန်",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_data_dataRoaming",
+            "value":"နိုင်ငံပြင်ပ ဖုန်းဒေတာ သုံးစွဲမှု",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_data",
+            "value":"မိုဘိုင်းဒေတာ",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Apn_confirm",
+            "value":"အိုကေ",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"gotIt",
+            "value":"အိုကေ",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_data_charges",
+            "value":"ဒေတာကုန်ကျစရိတ် ရှိနိုင်ပါသည်။",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"go_use_beidou_satellite_message",
+            "value":"မက်ဆေ့ခ်ျအက်ပ်သို့ သွားမည်လား။",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"beidou_satellite_message_service_details_1",
+            "value":"%s. အကောင့်အတွက် ဂြိုဟ်တု ဆက်သွယ်ရေး လုပ်ဆောင်ချက်များကို သက်ဝင်လုပ်ဆောင်ထားသော China Mobile သုံးစွဲသူများသာ ဤလုပ်ဆောင်ချက်ကို ရရှိနိုင်ပါသည်။ နောက်ထပ်အချက်အလက်များအတွက် China Mobile သုံးစွဲသူ ဝန်ဆောင်မှုထံ ဆက်သွယ်ပါ။",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"beidou_satellite_message_no_sim_card_descriptions",
+            "value":"ဤဝန်ဆောင်မှုကို သုံးရန် BeiDou ဂြိုဟ်တု မက်ဆေ့ခ်ျ သက်ဝင်လုပ်ဆောင်ထားသော China Mobile SIM ကတ်တစ်ခုကို ထည့်သွင်းပါ။",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"APN_Not_set",
+            "value":"မသတ်မှတ်ထားပါ",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"APN_NAME",
+            "value":"အင်တာနက် ဝင်ရောက်သုံးစွဲနိုင်သည့် ပွိုင့်အမည် (APN)",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"wearable_bluee_title",
+            "value":"ဘလူးတုသ် ချိတ်ဆက်ထားသည်",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"go_to_use",
+            "value":"သွားမည်",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Apn_The_name_cannot_be_empty",
+            "value":"အမည်နေရာတွင် အလွတ်မဖြစ်ရပါ။",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"beidou_satellite_message",
+            "value":"BeiDou ဂြိုဟ်တု မက်ဆေ့ခ်ျ",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Apn_The_APN_cannot_be_empty",
+            "value":"APN အလွတ်မဖြစ်ရပါ။",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_available_time_refresh",
+            "value":"Tiantong ဂြိုဟ်တု ဆက်သွယ်မှုကို ပိတ်ထားသည့်အခါ ရရှိနိုင်သော အချိန်ကာလများသည် အော်တို ပြန်လုပ်ဆောင်ပါမည်။",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"APN_EDIT_APN",
+            "value":"သုံးစွဲခွင့် ပွိုင့် တည်းဖြတ်မည်",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name": "not_support_toast",
+            "value": "ဤလုပ်ဆောင်ချက်ကို ဤစနစ်တွင် မပံ့ပိုးပေးပါ။"
+        }
+    ]
+}

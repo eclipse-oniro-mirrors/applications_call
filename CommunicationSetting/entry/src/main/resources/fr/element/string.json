@@ -1,0 +1,662 @@
+{
+    "string":[
+        {
+            "name":"usage_reminders_index",
+            "value":"Rappels de consommation (Carte SIM %d)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_manage_entry",
+            "value":"Consommation de données",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"monthly_data_reminder",
+            "value":"Rappel pour les données consommées mensuellement",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"daily_limit_data_reminder",
+            "value":"Me signaler lorsque les données consommées atteignent %1$s (%2$s) de la limite quotidienne.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"category_nfc_service",
+            "value":"Service NFC",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"traffice_package_remain",
+            "value":"Données restantes",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"data_limit",
+            "value":"Limite de consommation de données",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"traffic_chart_view_net_used_day",
+            "value":"Consommation le %1$s : %2$s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"system_applications",
+            "value":"Système",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"data_traffic_reached_the_limit",
+            "value":"Vous avez atteint la limite de consommation de données.\nRéactiver les données mobiles implique que des frais puissent s'appliquer.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"got_it",
+            "value":"OK",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"usage_reminders",
+            "value":"Rappels de consommation",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"loading",
+            "value":"Chargement en cours.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"allow_mobile_data",
+            "value":"Données mobiles",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"unlimited_data",
+            "value":"Données illimitées",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"reopen",
+            "value":"Réactiver",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"allow_WLAN",
+            "value":"WLAN",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"traffic_ranking_of_this_month",
+            "value":"Consommation de données ce mois",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data",
+            "value":"Données mobiles",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"data_plan_settings_index",
+            "value":"Paramètres du forfait données (SIM %d)",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"confirm",
+            "value":"OK",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"more_data_usage_settings_title",
+            "value":"Plus de paramètres données",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"not_set",
+            "value":"Non définie",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"hide_system_processes",
+            "value":"Cacher les processus système",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"disable_mobile_data",
+            "value":"Données mobiles désactivées",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"no_networked_apps",
+            "value":"Aucune application connectée à Internet",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"over_monthly_limit",
+            "value":"Si au-delà de la limite mensuelle",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"current_sim_data_traffic_reached_the_limit",
+            "value":"La limite de consommation de données pour cette carte SIM a été atteinte. Les données mobiles ont ainsi été désactivées. Les réactiver pourrait provoquer des frais de consommation de données.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"allow",
+            "value":"Autoriser",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"switch_to_another_card",
+            "value":"Basculer sur l'autre carte SIM",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"forbid_operation",
+            "value":"Les utilisateurs non-propriétaires ne sont pas autorisés à utiliser cette fonction.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"category_location_service",
+            "value":"Services de localisation",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"data_calculation_different_from_shown",
+            "value":"Le calcul par votre opérateur des données consommées pourrait être différent de ce qui est indiqué ici.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"disconnect",
+            "value":"Désactiver les données mobiles",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"daily_data_reminder",
+            "value":"Rappel pour les données consommées quotidiennement",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"category_general_service",
+            "value":"Général",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"category_system",
+            "value":"Système",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"today",
+            "value":"Aujourd'hui",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"data_plan_settings",
+            "value":"Paramètres de forfait",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"category_media_service",
+            "value":"Service média",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"only_wlan",
+            "value":"WLAN uniquement",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"ranking_of_this_month",
+            "value":"Consommation de données ce mois-ci",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"no_match_result",
+            "value":"Aucun résultat correspondant",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"traffic_chart_view_net_used_day_today",
+            "value":"Consommation aujourd'hui : %1$s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"sim_card_2",
+            "value":"SIM 2 (%1$s)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"sim_card_1",
+            "value":"SIM 1 (%1$s)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"category_uninstalled_apps",
+            "value":"Applications désinstallées",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"reopen_the_current_card",
+            "value":"Activer les données mobiles",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"not_allow",
+            "value":"Refuser",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"system_and_service",
+            "value":"Système et services",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"reminder",
+            "value":"Me notifier",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"more",
+            "value":"Plus",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"show_system_processes",
+            "value":"Montrer les processus système",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_network",
+            "value":"Réseau de données mobiles",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"category_security_service",
+            "value":"Service de sécurité",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"traffice_package_out",
+            "value":"Au-dessus de la limite",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"network_no_service",
+            "value":"Aucun service",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"wlan",
+            "value":"WLAN",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"network_title",
+            "value":"Accès réseau",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"monthly_limit_data_reminder",
+            "value":"Me signaler lorsque les données consommées atteignent %1$s (%2$s) de la limite mensuelle",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"searching",
+            "value":"Rechercher",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"all",
+            "value":"Tout",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"used_traffice",
+            "value":"Consommation de données",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"category_update",
+            "value":"Mise à jour logicielle",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"start_date",
+            "value":"Date de début",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"category_call_service",
+            "value":"Service d'appel",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"category_WLAN_service",
+            "value":"Service WLAN",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"cancel",
+            "value":"Annuler",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"forbid",
+            "value":"Consommation interdite",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"category_debug_system",
+            "value":"Service de débogage",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"body_network_access_policy",
+            "value":"Vos préférences peuvent être modifiées sous Paramètres > Données mobiles > Consommation de données > Accès réseau.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"traffic_ranking",
+            "value":"Consommation de données par application",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"show_compatible_apps",
+            "value":"Afficher les applications compatibles",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_data_and_WLAN",
+            "value":"Données mobiles et WLAN",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"wlan_ranking_of_this_month",
+            "value":"Consommation via WLAN ce mois-ci",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"flow_used",
+            "value":"Données consommées",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"hide_compatible_apps",
+            "value":"Masquer les applications compatibles",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"category_rtc_service",
+            "value":"Service RTC",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"last_30_days",
+            "value":"%s derniers jours",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"allow_mobile_data_and_WLAN",
+            "value":"Données mobiles et WLAN",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"title_wifi_only_network_access_policy",
+            "value":"Autoriser %s à accéder à Internet ?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"title_network_access_policy",
+            "value":"Autoriser %s à utiliser les données mobiles ?",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"last_24_hours",
+            "value":"%s dernières heures",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"owner_of_device",
+            "value":"Propriétaire",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hotspot_name",
+            "value":"Partage de connexion et point d'accès Internet",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"accessibility_unselected",
+            "value":"Non sélectionné",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"accessibility_more",
+            "value":"Plus d'options",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"accessibility_selected",
+            "value":"Sélectionné",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"accessibility_back",
+            "value":"Retour",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"esim_card",
+            "value":"%1$s (%2$s)",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"esim_usage_reminders_index",
+            "value":"Rappels de consommation (eSIM %d)",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"data_plan_esim_settings_index",
+            "value":"Paramètres de forfait données (eSIM %d)",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"flow_display_title",
+            "value":"Affichage des données",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"usage_display_summary",
+            "value":"Affiche la consommation de données dans le panneau de notifications.",
+            "attr":{
+                "priority":"translate"
+            }
+        }
+    ]
+}

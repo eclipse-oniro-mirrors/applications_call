@@ -1,0 +1,15 @@
+{
+  "string": [
+    {
+      "name": "app_name",
+      "value": "callsetting"
+    },
+    {
+      "name":"callSetting_title",
+      "value":"Call settings",
+      "attr":{
+        "priority":"translate"
+      }
+    }
+  ]
+}

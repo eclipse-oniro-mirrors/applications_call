@@ -1,0 +1,63 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "release",
+        "type":"OpenHarmony",
+        "material": {
+          "storeFile": "signature/OpenHarmony.p12",
+          "storePassword": "00000016279AC68AA52A520D5DCF42D3E1CDF2FF13CB8CDC70218C2BF71B186C0C3308C570E0",
+          "keyAlias": "OpenHarmony Application Release",
+          "keyPassword": "00000016666551D5379998742624B8B28653CE4D38C088D251096ECAA8941E89BDD8E814DE42",
+          "signAlg": "SHA256withECDSA",
+          "profile": "signature/CommunicationSetting.p7b",
+          "certpath": "signature/OpenHarmony.cer"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "release",
+        "compileSdkVersion": 23,
+        "compatibleSdkVersion": 20,
+        "runtimeOS": "OpenHarmony",
+        "targetSdkVersion": 20
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug"
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "wearable_communicationsetting",
+      "srcPath": "./product/wearable",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}

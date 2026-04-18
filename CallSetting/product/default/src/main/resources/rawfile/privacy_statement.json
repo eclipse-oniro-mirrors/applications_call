@@ -1,0 +1,5 @@
+{
+  "short_notification": "$string:number_identity_short_notification",
+  "bundleName": "com.ohos.callsetting",
+  "abilityName": "NumberIdentityPrivacyStatementUIExtAbility"
+}

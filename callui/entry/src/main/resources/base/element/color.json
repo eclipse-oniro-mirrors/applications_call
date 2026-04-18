@@ -1,0 +1,64 @@
+{
+  "color": [
+    {
+      "name": "white",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "black",
+      "value": "#000000"
+    },
+    {
+      "name": "divider_gray",
+      "value": "#1A000000"
+    },
+    {
+      "name": "divider_calllist",
+      "value": "#14FFFFFF"
+    },
+    {
+      "name": "button_active",
+      "value": "#007DFF"
+    },
+    {
+      "name": "normal_call_bg_color",
+      "value": "#99000000"
+    },
+    {
+      "name": "start_window_background",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "color_E3E3E3_grey",
+      "value": "#E3E3E3"
+    },
+    {
+      "name": "color_00000000_transparent",
+      "value": "#00000000"
+    },
+    {
+      "name": "active_true_color",
+      "value": "#E5FFFFFF"
+    },
+    {
+      "name": "active_false_color",
+      "value": "#0CFFFFFF"
+    },
+    {
+      "name": "background_color",
+      "value": "#808080"
+    },
+    {
+      "name": "color_bind_sheet_background",
+      "value": "#FFF1F3F5"
+    },
+    {
+      "name": "gallery_button_border_color",
+      "value": "#33808080"
+    },
+    {
+      "name": "video_ring_call_bg_color",
+      "value": "#66000000"
+    }
+  ]
+}
