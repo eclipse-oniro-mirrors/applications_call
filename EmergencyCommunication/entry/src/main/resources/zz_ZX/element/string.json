@@ -1,0 +1,1584 @@
+{
+    "string":[
+        {
+            "name":"yes",
+            "value":"[TS_910865]_Yes"
+        },
+        {
+            "name":"POLICE_AMBULANCE",
+            "value":"[TS_910903]_Police&Ambulance"
+        },
+        {
+            "name":"sendMsg",
+            "value":"[TS_910851]_I've added you as an emergency contact. In an emergency, you may receive an SOS message from me asking for help. [ Emergency SOS]"
+        },
+        {
+            "name":"emergencyContact",
+            "value":"[TS_910915]_Emergency contacts"
+        },
+        {
+            "name":"fullName",
+            "value":"[TS_910921]_Full name"
+        },
+        {
+            "name":"UNKNOWN",
+            "value":"[TS_910913]_unknown"
+        },
+        {
+            "name":"POLICE_AMBULANCE_FIRE",
+            "value":"[TS_910925]_Police&Ambulance&Fire"
+        },
+        {
+            "name":"POLICE",
+            "value":"[TS_910876]_Police"
+        },
+        {
+            "name":"address",
+            "value":"[TS_910853]_Address"
+        },
+        {
+            "name":"clear",
+            "value":"[TS_910938]_Clear"
+        },
+        {
+            "name":"emergencyCall",
+            "value":"[TS_910884]_Emergency call"
+        },
+        {
+            "name":"drugStatus",
+            "value":"[TS_910897]_Medical conditions and additional info"
+        },
+        {
+            "name":"emergencyCallsOnly",
+            "value":"[TS_910878]_Emergency calls only"
+        },
+        {
+            "name":"GET_APPROXIMATELY_LOCATION",
+            "value":"[TS_910918]_This is used to obtain your approximate location."
+        },
+        {
+            "name":"GET_TELEPHONY_STATE",
+            "value":"[TS_910879]_allows apps to read phone information"
+        },
+        {
+            "name":"warnLink",
+            "value":"[TS_910912]_Emergency SOS"
+        },
+        {
+            "name":"GET_WALLPAPER",
+            "value":"[TS_910892]_get wallpaper"
+        },
+        {
+            "name":"editEmergencyInfo",
+            "value":"[TS_910880]_Edit emergency information"
+        },
+        {
+            "name":"getLocationService",
+            "value":"[TS_910931]_Enable auto location access?"
+        },
+        {
+            "name":"getLocationMsg1",
+            "value":"[TS_910861]_To help you report your location in an emergency, your device will automatically display your location when you make an emergency call. You can tap the location to view it in a map app."
+        },
+        {
+            "name":"PLACE_CALL",
+            "value":"[TS_910863]_allows apps to directly make calls"
+        },
+        {
+            "name":"continue",
+            "value":"[TS_910922]_OK"
+        },
+        {
+            "name":"noLocationPermissionTitle",
+            "value":"[TS_910936]_Emergency SOS requires the Location permission"
+        },
+        {
+            "name":"clearInfo",
+            "value":"[TS_910935]_Clear all information and contacts?"
+        },
+        {
+            "name":"allergiesPlacement",
+            "value":"[TS_910932]_For example, peanuts or pollen"
+        },
+        {
+            "name":"getLocation",
+            "value":"[TS_910887]_Tap to get location"
+        },
+        {
+            "name":"removeContact",
+            "value":"[TS_910908]_Remove %s from emergency contacts?"
+        },
+        {
+            "name":"noStated",
+            "value":"[TS_910889]_None specified"
+        },
+        {
+            "name":"personalEmergencyInfo",
+            "value":"[TS_910890]_Emergency information"
+        },
+        {
+            "name":"module_desc",
+            "value":"[TS_910894]_emergency call"
+        },
+        {
+            "name":"addEmergencyContact",
+            "value":"[TS_910883]_Add emergency contacts"
+        },
+        {
+            "name":"notAdded",
+            "value":"[TS_910864]_None"
+        },
+        {
+            "name":"drugPlacement",
+            "value":"[TS_910926]_For example, lisinopril or aspirin"
+        },
+        {
+            "name":"EntryAbility_desc",
+            "value":"[TS_910849]_Emergency call main entry file"
+        },
+        {
+            "name":"permissionConfirm",
+            "value":"[TS_910854]_OK"
+        },
+        {
+            "name":"AMBULANCE",
+            "value":"[TS_910899]_Ambulance"
+        },
+        {
+            "name":"emergencyContacts",
+            "value":"[TS_910901]_Emergency numbers"
+        },
+        {
+            "name":"no",
+            "value":"[TS_910859]_No"
+        },
+        {
+            "name":"sendSmsSuccess",
+            "value":"[TS_910893]_Message sent."
+        },
+        {
+            "name":"organDonor",
+            "value":"[TS_910911]_Organ donor"
+        },
+        {
+            "name":"POLICE_FIRE",
+            "value":"[TS_910856]_Police&Fire"
+        },
+        {
+            "name":"add",
+            "value":"[TS_910905]_Add"
+        },
+        {
+            "name":"AMBULANCE_FIRE",
+            "value":"[TS_910909]_Ambulance&Fire"
+        },
+        {
+            "name":"warnInfo",
+            "value":"[TS_910933]_All set? Go back to %s"
+        },
+        {
+            "name":"already_in_contacts",
+            "value":"[TS_910920]_%s is already an emergency contact."
+        },
+        {
+            "name":"notEmergencyNumberMsg",
+            "value":"[TS_910916]_Call could not be made. %s is not an emergency number."
+        },
+        {
+            "name":"sendSmsFail",
+            "value":"[TS_910902]_Unable to send SMS message (Reason unknown)."
+        },
+        {
+            "name":"peopleAdded",
+            "value":"[TS_910891]_%d"
+        },
+        {
+            "name":"remove",
+            "value":"[TS_910873]_Remove"
+        },
+        {
+            "name":"bloodType",
+            "value":"[TS_910862]_Blood type"
+        },
+        {
+            "name":"FIRE",
+            "value":"[TS_910867]_Fire department"
+        },
+        {
+            "name":"warnContent",
+            "value":"[TS_910917]_This information can help first responders in an emergency.\n\nIt is stored locally and can be accessed by anyone without unlocking this device. You can also set this in Contacts > My card."
+        },
+        {
+            "name":"contactsWarnContent",
+            "value":"[TS_995616]_Adding emergency contacts can help first responders in an emergency. Anyone can read this information without unlocking your device."
+        },
+        {
+            "name":"editEmergencyContact",
+            "value":"[TS_910869]_Edit emergency contacts"
+        },
+        {
+            "name":"GET_LOCATION",
+            "value":"[TS_910937]_obtains precise geographical locations"
+        },
+        {
+            "name":"removecontact",
+            "value":"[TS_910874]_Remove emergency contact?"
+        },
+        {
+            "name":"EntryAbility_label",
+            "value":"[TS_910868]_Main entrance for emergency calls"
+        },
+        {
+            "name":"medicalInfo",
+            "value":"[TS_910939]_Medical"
+        },
+        {
+            "name":"drugStatusPlacement",
+            "value":"[TS_910929]_For example, asthma"
+        },
+        {
+            "name":"getLocationFailed",
+            "value":"[TS_910858]_Unable to obtain location. Tap to try again."
+        },
+        {
+            "name":"gettingLocation",
+            "value":"[TS_910896]_Obtaining location…"
+        },
+        {
+            "name":"clearAll",
+            "value":"[TS_910914]_Clear all"
+        },
+        {
+            "name":"sendNow",
+            "value":"[TS_910923]_OK"
+        },
+        {
+            "name":"notifyContact",
+            "value":"[TS_910860]_Notify contact?"
+        },
+        {
+            "name":"emergencyInfo",
+            "value":"[TS_910882]_Emergency information"
+        },
+        {
+            "name":"closeLocationServiceMsg",
+            "value":"[TS_910895]_If this is disabled, your device won't automatically display your location when you make an emergency call."
+        },
+        {
+            "name":"SEND_MESSAGES",
+            "value":"[TS_910934]_obtains the permission to send SMS messages"
+        },
+        {
+            "name":"CANCEL",
+            "value":"[TS_910906]_Cancel"
+        },
+        {
+            "name":"drug",
+            "value":"[TS_910907]_Medications"
+        },
+        {
+            "name":"MANAGE_SECURE_SETTINGS",
+            "value":"[TS_910850]_allows apps to modify security system settings"
+        },
+        {
+            "name":"personalInfo",
+            "value":"[TS_910930]_Personal"
+        },
+        {
+            "name":"closeLocationService",
+            "value":"[TS_910852]_Disable auto location access?"
+        },
+        {
+            "name":"allergies",
+            "value":"[TS_910866]_Allergies"
+        },
+        {
+            "name":"sendMsgNotice",
+            "value":"[TS_910857]_You can send this contact a text message telling them you've added them as an emergency contact."
+        },
+        {
+            "name":"addContact",
+            "value":"[TS_910927]_Add contact"
+        },
+        {
+            "name":"determine",
+            "value":"[TS_910919]_OK"
+        },
+        {
+            "name":"rightCall",
+            "value":"[TS_910872]_Swipe right to call %s"
+        },
+        {
+            "name":"noLocationPermissionDesc",
+            "value":"[TS_910885]_This is used to access your location during an emergency call."
+        },
+        {
+            "name":"list_learn_about_emergency_shelters_title",
+            "value":"[TS_918793]_Find shelter"
+        },
+        {
+            "name":"auto_send_earthquake_alarm_message",
+            "value":"[TS_918820]_Earthquake alerts"
+        },
+        {
+            "name":"list_learn_about_emergency_shelters",
+            "value":"[TS_918747]_Find emergency shelters nearby."
+        },
+        {
+            "name":"ATTEST_KEY",
+            "value":"[TS_919808]_get attest key"
+        },
+        {
+            "name":"Historical_warning_information",
+            "value":"[TS_918753]_Previous alerts"
+        },
+        {
+            "name":"EarthquakeWarningTitle1_2",
+            "value":"[TS_918807]_Earthquake! Take cover!"
+        },
+        {
+            "name":"Turn_on_Emergency_Information_and_Warning_text",
+            "value":"[TS_918757]_Your location information is required to provide earthquake alerts for your area."
+        },
+        {
+            "name":"warning_area_and_function_text",
+            "value":"[TS_918778]_Feature coverage and description"
+        },
+        {
+            "name":"EarthquakeLocationLongitudeEast",
+            "value":"[TS_918780]_(%2$s°N, %1$s°W)"
+        },
+        {
+            "name":"important_state_title",
+            "value":"[TS_918802]_Important"
+        },
+        {
+            "name":"EarthquakeNext",
+            "value":"[TS_918785]_See next tip"
+        },
+        {
+            "name":"alarm_close_dialog_remind_title",
+            "value":"[TS_918809]_Note"
+        },
+        {
+            "name":"EarthquakeMagnitude",
+            "value":"[TS_918754]_Magnitude"
+        },
+        {
+            "name":"Historical_warning_information_explain",
+            "value":"[TS_918766]_View all alerts you've received."
+        },
+        {
+            "name":"Eartuquake_second",
+            "value":"[TS_918805]_second"
+        },
+        {
+            "name":"EarthquakeLocation",
+            "value":"[TS_918763]_Epicenter"
+        },
+        {
+            "name":"GET_NETWORK_INFO",
+            "value":"[TS_919810]_get network info"
+        },
+        {
+            "name":"list_dial_emergency_contact_number",
+            "value":"[TS_918767]_Manage your emergency contacts."
+        },
+        {
+            "name":"button_agree",
+            "value":"[TS_918797]_Agree"
+        },
+        {
+            "name":"Earthquakeability_desc",
+            "value":"[TS_918806]_description"
+        },
+        {
+            "name":"EarthquakeKilometer",
+            "value":"[TS_918762]_%sKilometer"
+        },
+        {
+            "name":"confirm",
+            "value":"[TS_918768]_OK"
+        },
+        {
+            "name":"EarthquakeFelling1",
+            "value":"[TS_918764]_Mild tremors"
+        },
+        {
+            "name":"EarthquakeFelling3",
+            "value":"[TS_918752]_Significant damage"
+        },
+        {
+            "name":"EarthquakeFelling2",
+            "value":"[TS_918792]_Strong shaking"
+        },
+        {
+            "name":"Disclaimer_Instructions",
+            "value":"[TS_918777]_Earthquake alerts are provided for your reference by government entities tasked with earthquake relief.  has no control over them.\n\nYou may only have a few seconds of warning to find an appropriate place to take shelter. In some cases, you may not receive any warning at all before seismic waves arrive. You are ultimately responsible for your own safety. Please exercise good judgment and stay safe.\n\n bears no responsibility for any losses caused by an earthquake alert not being received due to blind spots in the emergency alert service, poor network connection, third-party equipment faults, and other circumstances outside of 's control."
+        },
+        {
+            "name":"Permission_Instructions",
+            "value":"[TS_918787]_Earthquake alerts permissions"
+        },
+        {
+            "name":"EmergencyWarningSettings_7",
+            "value":"[TS_918771]_Statement About Earthquake Alerts and Privacy"
+        },
+        {
+            "name":"EarthquakeArrived",
+            "value":"[TS_918810]_After seismic waves arrive"
+        },
+        {
+            "name":"EarthquakeAlarmTest",
+            "value":"[TS_918758]_Preview alert"
+        },
+        {
+            "name":"EmergencyWarningSettings_8",
+            "value":"[TS_918748]_Permissions Notice"
+        },
+        {
+            "name":"EmergencyWarningSettings_4",
+            "value":"[TS_918790]_Location"
+        },
+        {
+            "name":"EmergencyWarningSettings_2",
+            "value":"[TS_918755]_Internet"
+        },
+        {
+            "name":"define_disclaimer",
+            "value":"[TS_918770]_Disclaimer"
+        },
+        {
+            "name":"button_agree_and_open",
+            "value":"[TS_918772]_Agree and enable"
+        },
+        {
+            "name":"Turn_on_Emergency_Information_and_Warning",
+            "value":"[TS_918823]_Turn on \"Emergency Information and Warning\""
+        },
+        {
+            "name":"EarthquakeWarningTitle2",
+            "value":"[TS_918803]_The epicenter is %skm away from you"
+        },
+        {
+            "name":"EarthquakeWarningTitle1",
+            "value":"[TS_918791]_Earthquake! Take cover!"
+        },
+        {
+            "name":"EarthquakeWarningTitle3",
+            "value":"[TS_918812]_Stay calm and find an open area or somewhere safe to take cover. Avoid elevators and hanging objects."
+        },
+        {
+            "name":"EarthquakeArrivingLongTips",
+            "value":"[TS_918774]_A countdown will begin and your device will vibrate. You should find nearby shelter or move to an open space outside as fast as possible."
+        },
+        {
+            "name":"EarthquakeInfofrom",
+            "value":"[TS_918776]_Source: %s"
+        },
+        {
+            "name":"EarthquakeDistance",
+            "value":"[TS_918749]_Distance from epicenter"
+        },
+        {
+            "name":"importantDialogContent_8",
+            "value":"[TS_918804]_here"
+        },
+        {
+            "name":"EarthquakeAlarmTesting",
+            "value":"[TS_918759]_End preview (%s)"
+        },
+        {
+            "name":"ACCESS_NETWORK",
+            "value":"[TS_919807]_access_network"
+        },
+        {
+            "name":"importantDialogContent_4",
+            "value":"[TS_918796]_By tapping Agree, you agree to receive the \"Earthquake alerts\" service and accept the %1$s. For more details about how your personal information is processed, refer to the %2$s and %3$s. For more information, tap %4$s."
+        },
+        {
+            "name":"list_quickly_show_emergency_information",
+            "value":"[TS_918761]_Your personal emergency info can be shown on the screen in an emergency."
+        },
+        {
+            "name":"The_position_switch_off_text",
+            "value":"[TS_918782]_You won't receive warnings ahead of earthquakes if you disable this. Disable anyway?"
+        },
+        {
+            "name":"EarthquakeLocationLongitudeWest",
+            "value":"[TS_918775]_(%2$s°S, %1$s°E)"
+        },
+        {
+            "name":"button_open",
+            "value":"[TS_918808]_Enable"
+        },
+        {
+            "name":"EarthquakeCenter",
+            "value":"[TS_918781]_Epicenter"
+        },
+        {
+            "name":"earthquake_alarm_notify",
+            "value":"[TS_918756]_Emergency alerts"
+        },
+        {
+            "name":"PermissionDescriptionContent_3",
+            "value":"[TS_918817]_This is used to obtain your device's precise location in order to send earthquake alerts."
+        },
+        {
+            "name":"The_position_switch_off",
+            "value":"[TS_918815]_Enable location"
+        },
+        {
+            "name":"PermissionDescriptionContent_1",
+            "value":"[TS_918794]_When starting this service, you need to apply for the following 1 permission, which can be revoked by going to \"Settings\" > \"Apps and Services\" > \"Application Management\" > \"More\" > \"Show System Programs\" > \"Emergency Information\":"
+        },
+        {
+            "name":"emergency_alter_title",
+            "value":"[TS_918813]_Preview alert"
+        },
+        {
+            "name":"PermissionDescriptionContent_2",
+            "value":"[TS_918751]_Location"
+        },
+        {
+            "name":"EarthquakeInfoTitle",
+            "value":"[TS_918818]_Alert details"
+        },
+        {
+            "name":"earthquake_warning_summary",
+            "value":"[TS_918783]_Receive early warnings in the event of an earthquake."
+        },
+        {
+            "name":"EarthquakeLocationLatitudeNorth",
+            "value":"[TS_918816]_(%2$s°N, %1$s°E)"
+        },
+        {
+            "name":"GET_LOCATION_IN_BACKGROUND",
+            "value":"[TS_919809]_This is used to obtain location information when running in the background."
+        },
+        {
+            "name":"Earthquakeability_label",
+            "value":"[TS_918798]_label"
+        },
+        {
+            "name":"importantDialogContent_2",
+            "value":"[TS_918819]_To provide earthquake alerts, this service requires an Internet connection and the Location permission. When an earthquake occurs,  earthquake alert servers will send alerts and provide access to emergency services to affected users based on their location and device information. For a detailed introduction to this feature and information about supported regions, tap %s."
+        },
+        {
+            "name":"EarthquakeLocationLatitudeSouth",
+            "value":"[TS_918788]_(%2$s°S, %1$s°W)"
+        },
+        {
+            "name":"importantDialogContent_3",
+            "value":"[TS_918750]_here"
+        },
+        {
+            "name":"function_settings_text",
+            "value":"[TS_918814]_Settings"
+        },
+        {
+            "name":"EarthquakeArriving",
+            "value":"[TS_918801]_Before seismic waves arrive"
+        },
+        {
+            "name":"EarthquakeIntensity",
+            "value":"[TS_918795]_Intensity (%s)"
+        },
+        {
+            "name":"EarthquakeUpdate",
+            "value":"[TS_918779]_Time of earthquake"
+        },
+        {
+            "name":"EarthquakeArrivedLongTips",
+            "value":"[TS_918789]_An alarm will sound when seismic waves hit. You'll see options to find shelter, contact help, and display personal emergency information."
+        },
+        {
+            "name":"oobe_EarthquakeWarningServer_content",
+            "value":"[TS_922508]_This service can send an alert to you when an earthquake is detected. It requires an Internet connection and the Location permission. It also needs to obtain your device and location information. By turning this on, you agree to these terms as well as the <a link=\"disclaimStatement\">Disclaimer</a>, <a link=\"privacyStatement\">Statement About Earthquake Alerts and Privacy</a>, and <a link=\"permissionStatement\">Permissions Notice</a>."
+        },
+        {
+            "name":"EarthquakeWarningServer",
+            "value":"[TS_922507]_Earthquake alerts"
+        },
+        {
+            "name":"InfoEdit_delete",
+            "value":"[TS_922506]_Delete"
+        },
+        {
+            "name":"InfoEdit_edit",
+            "value":"[TS_922509]_More options"
+        },
+        {
+            "name":"ContactsEdit_close",
+            "value":"[TS_922512]_Remove emergency contact"
+        },
+        {
+            "name":"InfoEdit_dail",
+            "value":"[TS_922510]_Call"
+        },
+        {
+            "name":"InfoEdit_show_dialpad",
+            "value":"[TS_943733]_Show keypad"
+        },
+        {
+            "name":"InfoEdit_edits_info",
+            "value":"[TS_943734]_Edit"
+        },
+        {
+            "name":"System",
+            "value":"[TS_942700]_System"
+        },
+        {
+            "name":"notificationSwitchDialogContent",
+            "value":"[TS_962106]_To receive earthquake alerts, allow Emergency SOS to send you notifications in app settings."
+        },
+        {
+            "name":"emergencyInfromation",
+            "value":"[TS_967502]_Emergency!"
+        },
+        {
+            "name":"emergencyInfromationText",
+            "value":"[TS_967504]_Magnitude %2$s earthquake detected in %1$s. %4$s expected in %3$s."
+        },
+        {
+            "name":"EmergencyWarningSettings_all",
+            "value":"[TS_967503]_This service requires an %1$s connection and the %2$s permission. It also needs to read and upload/transfer location information to provide earthquake warnings. By turning this on, you agree to these terms as well as the %3$s. For more details about how your personal information is processed, refer to the %4$s and %5$s."
+        },
+        {
+            "name":"closeLocationService_title",
+            "value":"[TS_970572]_Disable auto location"
+        },
+        {
+            "name":"earthquake_location_notice",
+            "value":"[TS_971050]_To manually grant location access, select \"Allow all the time\" and \"Precise location\" in Settings > Apps & services > More apps > Emergency SOS > Location."
+        },
+        {
+            "name":"Sos_emergency_title",
+            "value":"[TS_971588]_Emergency SOS"
+        },
+        {
+            "name":"Sos_Auto_Send_Location_Detail_Active_two",
+            "value":"[TS_971603]_Permissions Notice"
+        },
+        {
+            "name":"Sos_Auto_Send_Location_Detail",
+            "value":"[TS_971594]_This service requires an %1$s connection and the %2$s permission. It also needs to read and upload/transfer your location information and phone number. This is to facilitate the provision of emergency rescue services. By turning it on, you agree to these terms. For more details about how your personal information is processed, refer to the %3$s and %4$s."
+        },
+        {
+            "name":"Sos_Auto_Send_Location_Info",
+            "value":"[TS_971615]_Send your encrypted location to the police when you make an emergency call (Chinese mainland only)."
+        },
+        {
+            "name":"Sos_Auto_Call",
+            "value":"[TS_971604]_Auto-SOS call"
+        },
+        {
+            "name":"Sos_video",
+            "value":"[TS_971616]_sos_english.amr"
+        },
+        {
+            "name":"Sos_Auto_Send_Location_Detail_Active_one",
+            "value":"[TS_971628]_Statement About Emergency Location Reporting and Privacy"
+        },
+        {
+            "name":"Sos_Auto_Call_Test",
+            "value":"[TS_971614]_Preview SOS message"
+        },
+        {
+            "name":"Sos_Auto_Send_info",
+            "value":"[TS_971631]_Auto-SOS message"
+        },
+        {
+            "name":"Sos_Auto_Send_Location_Detail_Dark_one",
+            "value":"[TS_971626]_Internet"
+        },
+        {
+            "name":"Sos_Auto_Send_Location_When_Call_Detail",
+            "value":"[TS_971596]_Allow the system to obtain your location when you start an emergency call."
+        },
+        {
+            "name":"Sos_emergency_personal_info",
+            "value":"[TS_971587]_Set personal and medical information."
+        },
+        {
+            "name":"Sos_Permission_Title_1",
+            "value":"[TS_971624]_Emergency location reporting permissions"
+        },
+        {
+            "name":"Sos_Permission_Title_2",
+            "value":"[TS_971627]_Auto-SOS message permissions"
+        },
+        {
+            "name":"Sos_Permission_Description_4",
+            "value":"[TS_971598]_Messaging"
+        },
+        {
+            "name":"Sos_Permission_Description_3",
+            "value":"[TS_971622]_This is used to obtain your device's precise location in order to send your location to your emergency contacts when Emergency SOS is activated."
+        },
+        {
+            "name":"Sos_Permission_Description_5",
+            "value":"[TS_971612]_This is used to automatically notify your contacts by SMS when Emergency SOS is activated."
+        },
+        {
+            "name":"Sos_Permission_Description_2",
+            "value":"[TS_971593]_This is used to access your device's precise location, which helps to provide more effective rescue services in an emergency."
+        },
+        {
+            "name":"Sos_Auto_Send_info_Detail_notice_dark_one",
+            "value":"[TS_971599]_Messaging"
+        },
+        {
+            "name":"Sos_Auto_Send_info_Detail_notice_dark_Two",
+            "value":"[TS_971617]_Location"
+        },
+        {
+            "name":"Sos_Auto_Send_info_Detail_notice_all",
+            "value":"[TS_971595]_This service requires the %1$s and %2$s permissions and needs to read location information. By turning this on, you agree to these terms. For more details, refer to the %3$s and %4$s."
+        },
+        {
+            "name":"Sos_Auto_Send_info_Detail_notice_renew",
+            "value":"[TS_1061113]_This service requires the %1$s permission and needs to read location information. By turning this on, you agree to these terms. For more details, refer to the %2$s and %3$s."
+        },
+        {
+            "name":"Sos_Auto_Send_Location_When_Call",
+            "value":"[TS_971613]_Automatically obtain location"
+        },
+        {
+            "name":"Sos_Auto_Send_info_Detail_notice_active_two",
+            "value":"[TS_971586]_Permissions Notice"
+        },
+        {
+            "name":"Sos_Auto_Send_info_Detail_notice_active_one",
+            "value":"[TS_971590]_Statement About Auto-SOS Message and Privacy"
+        },
+        {
+            "name":"Sos_Auto_Send_Location",
+            "value":"[TS_971623]_Report location"
+        },
+        {
+            "name":"sos_permissions_tips_of_auto_send_sms",
+            "value":"[TS_973282]_To manually grant location access, select \"Precise location\" in Settings > Apps & services > More apps > Emergency SOS > Location."
+        },
+        {
+            "name":"Emergency_message_without_location",
+            "value":"[TS_973273]_[Emergency SOS]\nThere's an emergency and I need your help. You're being notified because you are one of my emergency contacts. I might not be able to pick up right now."
+        },
+        {
+            "name":"stop_share_location_prompt_content",
+            "value":"[TS_973281]_SOS messages will stop being sent to your emergency contacts if you exit now. Exit?"
+        },
+        {
+            "name":"exit",
+            "value":"[TS_973283]_Exit"
+        },
+        {
+            "name":"emergency_number_alarm",
+            "value":"[TS_973275]_Personal alarm"
+        },
+        {
+            "name":"no_service_message_and_call_unavailable",
+            "value":"[TS_973272]_No service. SMS and phone services are unavailable."
+        },
+        {
+            "name":"emergency_number_traffic",
+            "value":"[TS_973270]_Traffic accident"
+        },
+        {
+            "name":"share_location_background_tips",
+            "value":"[TS_973267]_Sending location to emergency contacts"
+        },
+        {
+            "name":"unable_auto_dial_dialog_title",
+            "value":"[TS_973280]_Unable to call for help"
+        },
+        {
+            "name":"send_sms_notify_emergency_contact",
+            "value":"[TS_973268]_A message will also be sent to your emergency contacts"
+        },
+        {
+            "name":"Permission_denied_to_send_sms",
+            "value":"[TS_973269]_This app doesn't have permission to send SMS messages."
+        },
+        {
+            "name":"no_sim_message_and_call_unavailable",
+            "value":"[TS_973276]_No SIM. SMS and phone services are unavailable."
+        },
+        {
+            "name":"sos_is_auto_calling",
+            "value":"[TS_973284]_Auto-calling…"
+        },
+        {
+            "name":"unable_auto_dial_dialog_summary",
+            "value":"[TS_973278]_Add at least one emergency contact first."
+        },
+        {
+            "name":"Emergency_message",
+            "value":"[TS_973271]_[Emergency SOS]\nThere's an emergency and I need your help. You're being notified because you are one of my emergency contacts.\nMy current location is: %s. I might not be able to pick up right now."
+        },
+        {
+            "name":"unable_auto_dial_dialog_add",
+            "value":"[TS_973279]_Add"
+        },
+        {
+            "name":"unable_send_help_info",
+            "value":"[TS_973266]_Unable to send message"
+        },
+        {
+            "name":"unable_auto_dial_and_send_sms_dialog_title",
+            "value":"[TS_973277]_Unable to call or message"
+        },
+        {
+            "name":"emergency_location_service_text",
+            "value":"[TS_973713]_Your location information will be used with Emergency SOS. This service requires an Internet connection and the Location permission. It also needs to read and upload/transfer location information and your phone number, which will be used to provide emergency rescue services. By turning this on, you agree to these terms. For more details about how your personal information is processed, refer to the <a link=\"privacyStatement\">Statement About Emergency Location Reporting and Privacy</a> and <a link=\"permissionStatement\">Permissions Notice</a>."
+        },
+        {
+            "name":"emergency_location_service_title",
+            "value":"[TS_973714]_Emergency location reporting"
+        },
+        {
+            "name":"aml_permission_location_info",
+            "value":"[TS_975242]_This is used to obtain your precise location information, which helps to provide more effective rescue services in an emergency."
+        },
+        {
+            "name":"aml_switch_title",
+            "value":"[TS_975240]_ Emergency Location Services"
+        },
+        {
+            "name":"aml_permission_message_info",
+            "value":"[TS_975237]_This is used to send Emergency SOS messages."
+        },
+        {
+            "name":"aml_short_notification",
+            "value":"[TS_975236]_<body><span style='subtitle'>This service requires an Internet connection and the Location permission. It needs to enable Location Services, and will read and upload/transfer this device's phone number, location information, and IMEI. By turning this on, you agree to these terms. For more details about how your personal information is processed, refer to the </span><span style='privacyStatement'>Statement About  Emergency Location Services and Privacy</span><span style='subtitle'> and </span><span style='permission'>Permissions Notice</span><span style='subtitle'>.</span></body>"
+        },
+        {
+            "name":"aml_permission_info_title",
+            "value":"[TS_975241]_This service requires the following permission:"
+        },
+        {
+            "name":"sos_calling_summary",
+            "value":"[TS_974963]_Call in progress. Tap to join."
+        },
+        {
+            "name":"sos_is_playing_recording",
+            "value":"[TS_974964]_Playing SOS message. Tap to enter call."
+        },
+        {
+            "name":"aml_permission_dialog_title",
+            "value":"[TS_975238]_ Emergency Location Services permissions"
+        },
+        {
+            "name":"aml_switch_summary",
+            "value":"[TS_975239]_Automatically send your location to emergency services when you make an emergency call or send an emergency message. Subject to availability."
+        },
+        {
+            "name":"remove_last_emergency_contact_prompt_content",
+            "value":"[TS_978924]_Remove %s from your emergency contacts? They will no longer be able to receive automatic SOS messages or calls."
+        },
+        {
+            "name":"remove_emergency_contact_text",
+            "value":"[TS_978925]_Remove emergency contact"
+        },
+        {
+            "name":"earthquake_problem_feedback",
+            "value":"[TS_980464]_This is used for reporting issues related to earthquake alerts."
+        },
+        {
+            "name":"InfoEdit_back",
+            "value":"[TS_968745]_Back"
+        },
+        {
+            "name":"earthquake_advanced",
+            "value":"[TS_980463]_Advanced settings"
+        },
+        {
+            "name":"permission_reason_contacts",
+            "value":"[TS_988713]_This is used to manage contacts."
+        },
+        {
+            "name":"one_finger_double_click",
+            "value":"[TS_988307]_Double-tap to activate"
+        },
+        {
+            "name":"positioning",
+            "value":"[TS_988308]_Location"
+        },
+        {
+            "name":"not_available",
+            "value":"[TS_988306]_Can't be used"
+        },
+        {
+            "name":"teaching_dialog_complete",
+            "value":"[TS_994165]_OK"
+        },
+        {
+            "name":"satellite_not_support",
+            "value":"[TS_995413]_Emergency SOS is unavailable when Tiantong Satellite Communications is enabled."
+        },
+        {
+            "name":"earthquake_warning_notification_text_without_device_address",
+            "value":"[TS_996718]_Magnitude %2$s earthquake detected in %1$s. %3$s expected in your area."
+        },
+        {
+            "name":"popup_button_gotosettings",
+            "value":"[TS_996296]_Go to Settings"
+        },
+        {
+            "name":"notification_switch_dialog_content",
+            "value":"[TS_996295]_This is to send you earthquake alerts. You can enable notifications in Settings."
+        },
+        {
+            "name":"notification_switch_dialog_title",
+            "value":"[TS_996294]_Emergency SOS would like to send you notifications"
+        },
+        {
+            "name":"earthquake_shelter_setting_dialog",
+            "value":"[TS_998357]_No supported map apps found. Find somewhere safe nearby."
+        },
+        {
+            "name":"open_phone_to_emergency_calls",
+            "value":"[TS_1055020]_Unfold for emergency calls"
+        },
+        {
+            "name":"earthquake_shelter_setting_notice",
+            "value":"[TS_998356]_Install Maps to search for shelters."
+        },
+        {
+            "name":"fall_down_detection_disclaimer",
+            "value":"[TS_1054807]_Fall detection disclaimer"
+        },
+        {
+            "name":"cannot_enable_fall_down_sos",
+            "value":"[TS_1054799]_Can't enable Auto-SOS after fall"
+        },
+        {
+            "name":"car_accident_auto_call_for_help_title",
+            "value":"[TS_1054818]_Auto-SOS after crash"
+        },
+        {
+            "name":"fall_down_message",
+            "value":"[TS_1054797]_[Emergency SOS – Fall detection]\nMy phone detected that I've fallen and need your help. You're being notified because you are one of my emergency contacts.\nMy current location is: %s"
+        },
+        {
+            "name":"cannot_enable_car_accident_sos",
+            "value":"[TS_1054837]_Can't enable Auto-SOS after crash"
+        },
+        {
+            "name":"car_accident_detection_disclaimer_content_one",
+            "value":"[TS_1054791]_If your device detects a severe car crash, it will automatically call your emergency contacts and send an SMS message containing your location. Please make sure that your emergency contacts are aware of this feature, so as to ensure that these messages are not disregarded or misunderstood."
+        },
+        {
+            "name":"car_accident_sos_message_without_location",
+            "value":"[TS_1054826]_[Emergency SOS – Car crash]\nMy phone detected that I've been in a crash and need your help. You're being notified because you are one of my emergency contacts."
+        },
+        {
+            "name":"car_accident_detection_disclaimer_content_two",
+            "value":"[TS_1054794]_This feature works by interpreting data from your device's sensors. Sensor data patterns that resemble car crashes may unintentionally trigger this feature. In some cases, a crash may not produce sensor data capable of triggering this feature. Please also note that your device's connectivity and status may affect its ability to make phone calls and send messages."
+        },
+        {
+            "name":"fall_down_detection_disclaimer_content_four",
+            "value":"[TS_1054817]_This feature is only available in the Chinese mainland."
+        },
+        {
+            "name":"car_accident_detection_disclaimer_content_four",
+            "value":"[TS_1054838]_This feature is only available in the Chinese mainland."
+        },
+        {
+            "name":"fall_down_detection_disclaimer_content_one",
+            "value":"[TS_1054832]_If your device detects a fall, it will automatically call your emergency contacts and send an SMS message containing your location. Please make sure that your emergency contacts are aware of this feature, so as to ensure that these messages are not disregarded or misunderstood."
+        },
+        {
+            "name":"car_accident_detection_disclaimer_content_three",
+            "value":"[TS_1054824]_ is not liable for any damages that may occur due to sensor measurements, network connectivity, or device status, or due to messages being disregarded or misunderstood."
+        },
+        {
+            "name":"car_accident_detection_disclaimer",
+            "value":"[TS_1054800]_Car Crash Detection Disclaimer"
+        },
+        {
+            "name":"fall_down_message_without_location",
+            "value":"[TS_1054804]_[Emergency SOS – Fall detection]\nMy phone detected that I've fallen and need your help. You're being notified because you are one of my emergency contacts."
+        },
+        {
+            "name":"car_accident_permission_title",
+            "value":"[TS_1054816]_Auto-SOS after crash permissions"
+        },
+        {
+            "name":"car_accident_sos_message",
+            "value":"[TS_1054806]_[Emergency SOS – Car crash]\nMy phone detected that I've been in a car crash and need your help. You're being notified because you are one of my emergency contacts.\nMy current location is: %s."
+        },
+        {
+            "name":"fall_down_auto_call_for_help_title",
+            "value":"[TS_1054803]_Auto-SOS after fall"
+        },
+        {
+            "name":"fall_down_detection_disclaimer_content_two",
+            "value":"[TS_1054831]_This feature works by interpreting data from your device's sensors. Sensor data patterns that resemble falls may unintentionally trigger this feature. In some cases, a fall may not produce sensor data capable of triggering this feature. Please also note that your device's connectivity and status may affect its ability to make phone calls and send messages."
+        },
+        {
+            "name":"fall_down_trigger_prompt",
+            "value":"[TS_1054829]_It looks like you fell at %1$s. Your phone will make an emergency call if you don't respond."
+        },
+        {
+            "name":"fall_down_auto_call_notice_all",
+            "value":"[TS_1054819]_This service requires the %1$s permission to access your location. By turning this on, you agree to these terms and the %2$s. For more details about how your personal information is processed, refer to the %3$s and %4$s."
+        },
+        {
+            "name":"sos_is_playing_recording_1",
+            "value":"[TS_1054812]_Playing SOS message.\nTap to enter call."
+        },
+        {
+            "name":"fall_down_detection_disclaimer_content_three",
+            "value":"[TS_1054821]_ is not liable for any damages that may occur due to sensor measurements, network connectivity, or device status, or due to messages being disregarded or misunderstood."
+        },
+        {
+            "name":"car_accident_detection_statement_on_service_and_privacy",
+            "value":"[TS_1054811]_Statement About Auto-SOS After Crash and Privacy"
+        },
+        {
+            "name":"car_accident_trigger_prompt",
+            "value":"[TS_1054823]_It looks like you were in a car crash at %1$s. Your phone will make an emergency call if you don't respond."
+        },
+        {
+            "name":"fall_down_detection_statement_on_service_and_privacy",
+            "value":"[TS_1054808]_Statement About Auto-SOS After Fall and Privacy"
+        },
+        {
+            "name":"car_accident_auto_call_notice_all",
+            "value":"[TS_1054802]_This service requires the %1$s permission to access your location information. By turning this on, you agree to these terms as well as the %2$s. For more details about how your personal information is processed, refer to the %3$s and %4$s."
+        },
+        {
+            "name":"fall_down_permission_title",
+            "value":"[TS_1054814]_Auto-SOS after fall permissions"
+        },
+        {
+            "name":"car_accident_detection_disclaimer_in_short_notice",
+            "value":"[TS_1056572]_Car Crash Detection Disclaimer"
+        },
+        {
+            "name":"fall_down_detection_disclaimer_in_short_notice",
+            "value":"[TS_1056573]_Fall Detection Disclaimer"
+        },
+        {
+            "name":"Location_Net_Privacy",
+            "value":"[TS_1074038]_LocationNet Privacy Policy"
+        },
+        {
+            "name":"Sos_Auto_Send_Location_Detail_new",
+            "value":"[TS_1074101]_This service requires an %1$s connection and the %2$s permission, and will read and upload/transfer your location information and phone number in order to send them to third-party emergency services. By turning this on, you agree to the above terms. For details about the permissions this service requires, refer to the %3$s.\nThis service is provided by the third parties named below. For details about personal information processing, refer to:\n%4$s. China Academy of Information and Communications Technology (CAICT). %5$s\n%6$s. Shenzhen LocationNet Technology Co., Ltd. %7$s"
+        },
+        {
+            "name":"Emergency_Position_Service_Privacy",
+            "value":"[TS_1074037]_Statement About Emergency Location Services Platform and Privacy"
+        },
+        {
+            "name":"emergency_location_service_text_new",
+            "value":"[TS_1075651]_When you make an SOS call, this service sends your encrypted location to emergency services so they may better aid you. This service requires an Internet connection and the Location permission, and will read and upload/transfer your location information and phone number in order to send them to emergency services. By turning this on, you agree to the above terms. For details about the permissions this service requires, refer to the <a link=\"permissionStatement\">Permissions Notice</a>.\nThis service is provided by the third parties named below. For details about personal information processing, refer to:\n${param1}. Statement About Emergency Location Services Platform and Privacy () of China Academy of Information and Communications Technology (CAICT)\n${param2}. LocationNet Privacy Policy () of Shenzhen LocationNet Technology Co., Ltd."
+        },
+        {
+            "name":"unsupport_satellite_card_content",
+            "value":"[TS_1071108]_Unable to send messages during satellite calls."
+        },
+        {
+            "name":"satellite",
+            "value":"[TS_1085166]_Tiantong satellite messaging"
+        },
+        {
+            "name":"position",
+            "value":"[TS_1085162]_Location: %s"
+        },
+        {
+            "name":"address_details",
+            "value":"[TS_1085167]_Address: %s"
+        },
+        {
+            "name":"location_south_east",
+            "value":"[TS_1085159]_%1$s S %2$s E"
+        },
+        {
+            "name":"location_north_west",
+            "value":"[TS_1085169]_%1$s N %2$s W"
+        },
+        {
+            "name":"location_south_west",
+            "value":"[TS_1085165]_%1$s S %2$s W"
+        },
+        {
+            "name":"location_north_east",
+            "value":"[TS_1085168]_%1$s N %2$s E"
+        },
+        {
+            "name":"map_url",
+            "value":"[TS_1085164]_"
+        },
+        {
+            "name":"NumberEdit_delete",
+            "value":"[TS_1102632]_%s has been deleted"
+        },
+        {
+            "name":"emergency_rescue_slogan",
+            "value":"[TS_1098189]_Rescue team"
+        },
+        {
+            "name":"phrases_button",
+            "value":"[TS_1098212]_Quick messages"
+        },
+        {
+            "name":"fracture",
+            "value":"[TS_1104101]_Fracture"
+        },
+        {
+            "name":"building_collapse",
+            "value":"[TS_1104107]_Building collapse"
+        },
+        {
+            "name":"emergency_rescue_submit_message_subtitle1",
+            "value":"[TS_1098177]_You can report your location and situation to nearby rescue teams."
+        },
+        {
+            "name":"China_Broadnet",
+            "value":"[TS_1098235]_China Broadnet"
+        },
+        {
+            "name":"rescue_signal_level_middle",
+            "value":"[TS_1098182]_Signal strength: Medium"
+        },
+        {
+            "name":"hanging_up_voice_call",
+            "value":"[TS_1098205]_End call from rescue team"
+        },
+        {
+            "name":"in_good_status",
+            "value":"[TS_1104104]_Doing okay"
+        },
+        {
+            "name":"emergency_rescue_save_power_tips",
+            "value":"[TS_1098185]_To conserve battery, turn the screen off while you wait for help."
+        },
+        {
+            "name":"rescue_message_communication_banner_content",
+            "value":"[TS_1098229]_Tap to report your situation."
+        },
+        {
+            "name":"rescue_signal_level_strong",
+            "value":"[TS_1098224]_Signal strength: Strong"
+        },
+        {
+            "name":"road_damage",
+            "value":"[TS_1104102]_Road damage"
+        },
+        {
+            "name":"rescue_message_sending_banner_title",
+            "value":"[TS_1098201]_Sending message…"
+        },
+        {
+            "name":"surrounding_environment",
+            "value":"[TS_1104108]_Surroundings"
+        },
+        {
+            "name":"emergency_rescue_not_select_distress_situation",
+            "value":"[TS_1100293]_Situation not selected"
+        },
+        {
+            "name":"flood",
+            "value":"[TS_1104115]_Flooding"
+        },
+        {
+            "name":"rescue_message_communication_banner_title",
+            "value":"[TS_1098247]_Communicate with rescue team"
+        },
+        {
+            "name":"send_position_btn_text",
+            "value":"[TS_1098213]_Send location information"
+        },
+        {
+            "name":"rescue_signal_level_low",
+            "value":"[TS_1098198]_Signal strength: Weak"
+        },
+        {
+            "name":"rescue_message_send_success_banner_content",
+            "value":"[TS_1098230]_Rescue devices have successfully acquired your distress signal. Please maintain position and await emergency response."
+        },
+        {
+            "name":"emergency_rescue_exit_once_title",
+            "value":"[TS_1098200]_Exit Off-grid emergency communication?"
+        },
+        {
+            "name":"personal_status",
+            "value":"[TS_1104100]_Health status"
+        },
+        {
+            "name":"emergency_rescue_disclaimer_content_all",
+            "value":"[TS_1104322]_This service requires the %1$s permission and needs to read your phone number(s), IMEI(s), and location information. By turning this on, you agree to these terms and the %2$s. For details about how your personal information is processed, refer to the %3$s and %4$s."
+        },
+        {
+            "name":"emergency_rescue_wait_for_send",
+            "value":"[TS_1098193]_Waiting to send"
+        },
+        {
+            "name":"emergency_rescue_title",
+            "value":"[TS_1098239]_Off-grid emergency communication"
+        },
+        {
+            "name":"ANSWER_CALL",
+            "value":"[TS_1098250]_answer call"
+        },
+        {
+            "name":"hangUpCompleted",
+            "value":"[TS_1104113]_Call ended"
+        },
+        {
+            "name":"emergency_rescue_service_title",
+            "value":"[TS_1098222]_Off-grid emergency communication"
+        },
+        {
+            "name":"there_are_children",
+            "value":"[TS_1104111]_There are children"
+        },
+        {
+            "name":"switching_audio_channels",
+            "value":"[TS_1098183]_Switch audio channels"
+        },
+        {
+            "name":"emergency_rescue_disaster_situation_title",
+            "value":"[TS_1098251]_Situation"
+        },
+        {
+            "name":"emergency_rescue_privacy_statement",
+            "value":"[TS_1104321]_Statement About Off-Grid Emergency Communication and Privacy"
+        },
+        {
+            "name":"emergency_rescue_auto_send_rescue_message",
+            "value":"[TS_1098237]_Send"
+        },
+        {
+            "name":"landslide",
+            "value":"[TS_1104098]_Landslide"
+        },
+        {
+            "name":"there_are_old_people",
+            "value":"[TS_1104103]_There are elderly people"
+        },
+        {
+            "name":"emergency_rescue_message_send_failed_tips",
+            "value":"[TS_1098194]_Signal unstable. Message will resend when signal is restored."
+        },
+        {
+            "name":"voiceCall",
+            "value":"[TS_1098181]_Answer call from rescue team"
+        },
+        {
+            "name":"emergency_rescue_second",
+            "value":"[TS_1098196]_Seconds"
+        },
+        {
+            "name":"detected_cellular_signal_dialog_content",
+            "value":"[TS_1104096]_Mobile network available. After exiting, you will be able to make calls over your carrier's network."
+        },
+        {
+            "name":"emergency_rescue_receive_d2d_subtitle1",
+            "value":"[TS_1098210]_You can report your location and situation to nearby rescue teams."
+        },
+        {
+            "name":"rescue_message_send_success_banner_title",
+            "value":"[TS_1098225]_Delivered"
+        },
+        {
+            "name":"send_button",
+            "value":"[TS_1098226]_Send"
+        },
+        {
+            "name":"emergency_rescue_submit_success_title",
+            "value":"[TS_1098178]_Message delivered"
+        },
+        {
+            "name":"emergency_rescue_team",
+            "value":"[TS_1098171]_Rescue team"
+        },
+        {
+            "name":"keyboard_button",
+            "value":"[TS_1098240]_Keyboard"
+        },
+        {
+            "name":"emergency_rescue_location_title",
+            "value":"[TS_1098199]_Location"
+        },
+        {
+            "name":"emergency_rescue_describe_distress",
+            "value":"[TS_1103585]_Describe your situation"
+        },
+        {
+            "name":"emergency_rescue_sending",
+            "value":"[TS_1098216]_Sending"
+        },
+        {
+            "name":"emergency_rescue_exit_completely_content",
+            "value":"[TS_1098188]_If you turn this off, your device won't be able to search for nearby rescue teams when there is no network coverage. You are advised to keep this turned on.\n\nAre you sure you want to turn this off?"
+        },
+        {
+            "name":"emergency_rescue_answer_call_failed",
+            "value":"[TS_1098203]_Answer failed."
+        },
+        {
+            "name":"disaster_situation_fire",
+            "value":"[TS_1098232]_Fire"
+        },
+        {
+            "name":"unable_to_walk",
+            "value":"[TS_1104099]_Unable to walk"
+        },
+        {
+            "name":"emergency_rescue_sended_status",
+            "value":"[TS_1098238]_Delivered"
+        },
+        {
+            "name":"message_textarea_placeholder",
+            "value":"[TS_1098191]_Describe your situation"
+        },
+        {
+            "name":"emergency_rescue_view_details",
+            "value":"[TS_1098234]_View details"
+        },
+        {
+            "name":"someone_injured",
+            "value":"[TS_1104097]_People injured"
+        },
+        {
+            "name":"incomingCall",
+            "value":"[TS_1098186]_Incoming call"
+        },
+        {
+            "name":"emergency_rescue_my_rescue_info",
+            "value":"[TS_1098252]_SOS details"
+        },
+        {
+            "name":"emergency_rescue_get_location_failed",
+            "value":"[TS_1098184]_Unable to obtain location"
+        },
+        {
+            "name":"emergency_rescue_call_finish",
+            "value":"[TS_1103584]_Call ended"
+        },
+        {
+            "name":"emergency_rescue_service_content",
+            "value":"[TS_1098228]_Off-grid emergency rescue provides you with emergency rescue services. This service requires the use of location permissions to read your local phone number, IMEI, and location information in order to offer offline emergency rescue services. By turning on the switch, you agree to the above content. For details on personal information processing, please refer to <a link=\"emergencyRescuePrivacyStatement\">Statement About Off-grid emergency rescue</a> and <a link=\"emcResourcePermissionStatement\">Permissions Notice</a>."
+        },
+        {
+            "name":"emergency_rescue_sending_status",
+            "value":"[TS_1098197]_Sending…"
+        },
+        {
+            "name":"emergency_rescue_send_already",
+            "value":"[TS_1098190]_Sent"
+        },
+        {
+            "name":"emergency_rescue_description",
+            "value":"[TS_1098180]_When this is on, you can send SOS messages to and receive calls from nearby rescue personnel in areas without mobile network coverage."
+        },
+        {
+            "name":"emergency_rescue_exit_current_rescue",
+            "value":"[TS_1098231]_Exit"
+        },
+        {
+            "name":"food_shortage",
+            "value":"[TS_1104114]_Food shortage"
+        },
+        {
+            "name":"hypothermia",
+            "value":"[TS_1104109]_Hypothermia"
+        },
+        {
+            "name":"rescue_signal_detected",
+            "value":"[TS_1098173]_Waiting to send message…"
+        },
+        {
+            "name":"emergency_rescue_submit_message_title",
+            "value":"[TS_1098248]_Send SOS message"
+        },
+        {
+            "name":"rescue_message_send_failed_banner_title",
+            "value":"[TS_1098241]_Unable to send message"
+        },
+        {
+            "name":"rescue_signal_level_none",
+            "value":"[TS_1098236]_Signal strength: No signal"
+        },
+        {
+            "name":"head_injury",
+            "value":"[TS_1104105]_Head injury"
+        },
+        {
+            "name":"emergency_rescue_submit_success_subtitle1",
+            "value":"[TS_1098176]_Your SOS message was received by rescue personnel. Please wait for rescue."
+        },
+        {
+            "name":"emergency_rescue_submit_success_subtitle2",
+            "value":"[TS_1098242]_Remain at coordinates and await extraction team"
+        },
+        {
+            "name":"there_are_women",
+            "value":"[TS_1104110]_There are women"
+        },
+        {
+            "name":"select_disaster_situation",
+            "value":"[TS_1104320]_Select your situation"
+        },
+        {
+            "name":"emergency_rescue_exit_completely_title",
+            "value":"[TS_1098175]_Remind"
+        },
+        {
+            "name":"lose_blood",
+            "value":"[TS_1104112]_Blood loss"
+        },
+        {
+            "name":"emergency_rescue_receive_d2d_title",
+            "value":"[TS_1098172]_Rescue team signal detected"
+        },
+        {
+            "name":"trapped",
+            "value":"[TS_1104106]_People trapped"
+        },
+        {
+            "name":"additional_info_list_content_1",
+            "value":"[TS_1113802]_%d. Remain calm and composed. Conserve your strength."
+        },
+        {
+            "name":"emc_rescue_current_location",
+            "value":"[TS_1113800]_Current location: %s"
+        },
+        {
+            "name":"additional_info_list_content_2",
+            "value":"[TS_1113803]_%d. Put your safety first. Don't move unless safe to do so."
+        },
+        {
+            "name":"additional_info_list_content_3",
+            "value":"[TS_1113801]_%d. To save power, turn the screen off while you wait for help."
+        },
+        {
+            "name":"menu_title_additional_info",
+            "value":"[TS_1113799]_Important"
+        },
+        {
+            "name":"emc_rescue_permission_notice_content_2",
+            "value":"[TS_1113220]_This is used to obtain the device's location, so that it can be sent to emergency rescue teams when you are outside of network coverage."
+        },
+        {
+            "name":"emc_rescue_permission_notice_title",
+            "value":"[TS_1113219]_Off-grid emergency communication permissions"
+        },
+        {
+            "name":"emc_rescue_location_permission_subtitle",
+            "value":"[TS_1113214]_Location"
+        },
+        {
+            "name":"earthquake_source_test",
+            "value":"[TS_1114521]_(Test)"
+        },
+        {
+            "name":"earthquake_source_trial_run",
+            "value":"[TS_1114522]_(Trial run)"
+        },
+        {
+            "name":"earthquake_warning_canceled",
+            "value":"[TS_1114523]_Earthquake warning lifted."
+        },
+        {
+            "name":"earthquake_feeling_5",
+            "value":"[TS_1116507]_Highly destructive"
+        },
+        {
+            "name":"earthquake_feeling_1",
+            "value":"[TS_1116510]_No shaking"
+        },
+        {
+            "name":"earthquake_feeling_2",
+            "value":"[TS_1116512]_Weak shaking"
+        },
+        {
+            "name":"earthquake_feeling_3",
+            "value":"[TS_1116506]_Strong shaking"
+        },
+        {
+            "name":"earthquake_feeling_4",
+            "value":"[TS_1116508]_Destructive"
+        },
+        {
+            "name":"earthquake_info_source",
+            "value":"[TS_1116504]_Warning issued by China Earthquake Early Warning Network %s"
+        },
+        {
+            "name":"earthquake_warning_info",
+            "value":"[TS_1116509]_Stay calm. Drop, cover, and hold on. If outdoors, move to an open area. Protect your head. Avoid using elevators."
+        },
+        {
+            "name":"earthquake_feeling_reminder_1",
+            "value":"[TS_1116511]_Shaking not expected, stay calm"
+        },
+        {
+            "name":"earthquake_feeling_reminder_2",
+            "value":"[TS_1116513]_Shaking expected, stay calm"
+        },
+        {
+            "name":"earthquake_feeling_reminder_3",
+            "value":"[TS_1116505]_Shaking expected, be prepared"
+        },
+        {
+            "name":"earthquake_about_to_arrive",
+            "value":"[TS_1118422]_Seismic waves arriving imminently"
+        },
+        {
+            "name":"earthquake_feeling_reminder_4",
+            "value":"[TS_1116514]_Shaking expected, protect yourself"
+        },
+        {
+            "name":"earthquake_feeling_reminder_5",
+            "value":"[TS_1116515]_Danger, protect yourself"
+        },
+        {
+            "name":"earthquake_arrived",
+            "value":"[TS_1118421]_Seismic waves have arrived"
+        },
+        {
+            "name":"exit_emc_rescue_mode_notification_title",
+            "value":"[TS_1119531]_Exited emergency communication"
+        },
+        {
+            "name":"search_now_button",
+            "value":"[TS_1119530]_Search now"
+        },
+        {
+            "name":"exit_emc_rescue_mode_notification_content",
+            "value":"[TS_1119529]_To search again for nearby rescue teams, tap \"Search now\"."
+        },
+        {
+            "name":"epicenter_location",
+            "value":"[TS_1122417]_Epicenter"
+        },
+        {
+            "name":"estimated_intensity",
+            "value":"[TS_1122416]_Est. intensity (%s)"
+        },
+        {
+            "name":"hyacinth_satellite_not_support",
+            "value":"[TS_1127007]_Emergency SOS is unavailable when Hyacinth satellite network is enabled."
+        },
+        {
+            "name":"emc_rescue_disclaimer_content_part_1",
+            "value":"[TS_1122973]_The emergency rescue signals that this feature searches for are transmitted by specialized rescue teams, such as fire departments, using specialized equipment.  has no control over these rescue signals, nor can it guarantee that rescue teams will travel to your location to provide rescue services.\n\n"
+        },
+        {
+            "name":"emc_rescue_disclaimer_content_part_2",
+            "value":"[TS_1122974]_The off-grid emergency communication feature is intended solely as a reference to aid you in assessing safety risks and making safety decisions. This feature is only used to search for rescue signals, and does not actively send out distress signals. Enabling this feature does not guarantee that rescue teams will come to your aid. Rescue signals are transmitted by rescue teams using specialized equipment. If your device does not detect a rescue signal, it is your responsibility to take appropriate safety measures based on your situation. If your device detects a rescue signal, you should accurately report your situation to rescue personnel. You should take reasonable measures to stay safe based on your current environment, both before and after rescue teams contact you. You shall bear sole responsibility for any risks or consequences that may arise from any course of action you take based on the off-grid emergency communication feature.\n\n"
+        },
+        {
+            "name":"emc_rescue_disclaimer_content_part_3",
+            "value":"[TS_1122972] shall not assume liability for any losses that may be incurred if your device does not receive rescue signals, or you do not receive aid, owing to factors such as terrain, buildings, and weather, or due to other force majeure events."
+        },
+        {
+            "name":"emc_rescue_china_broadnet_brand_tips",
+            "value":"[TS_1138498]_Frequency band provided by China Broadnet."
+        }
+    ]
+}

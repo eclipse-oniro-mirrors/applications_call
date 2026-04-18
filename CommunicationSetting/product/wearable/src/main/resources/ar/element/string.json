@@ -1,0 +1,25 @@
+{
+    "string":[
+        {
+            "name":"watch_permission_history_no_record",
+            "value":"لا توجد سجلات",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"watch_traffic_ranking_the_month",
+            "value":"استخدام بيانات الجوال (شهريًا)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"watch_loading",
+            "value":"جارٍ التحميل...",
+            "attr":{
+                "priority":"LT"
+            }
+        }
+    ]
+}

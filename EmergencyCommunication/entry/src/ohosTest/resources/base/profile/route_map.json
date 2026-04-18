@@ -1,0 +1,12 @@
+{
+    "routerMap": [
+        {
+            "name": "EmergencyContactsInfo",
+            "pageSourceFile": "src/main/ets/pages/EmergencyContactsInfo.ets",
+            "buildFunction": "EmergencyContactsInfoBuilder",
+            "data": {
+                "description": "this is EmergencyContactsInfo"
+            }
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "string":[
+        {
+            "name":"Apn_The_name_cannot_be_empty",
+            "value":"مطلوب إدخال الاسم",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Apn_The_APN_cannot_be_empty",
+            "value":"مطلوب إدخال اسم نقطة الوصول",
+            "attr":{
+                "priority":"translate"
+            }
+        }
+    ]
+}

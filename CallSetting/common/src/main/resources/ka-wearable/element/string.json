@@ -1,0 +1,25 @@
+{
+    "string":[
+        {
+            "name":"Apn_enum_Not_specified",
+            "value":"განუსაზ\u200bღვრელი",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"ColpMmi",
+            "value":"დაკავშირე\u200bბული ხაზის ID",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"CfMmi",
+            "value":"ზარის გადამისა\u200bმართება",
+            "attr":{
+                "priority":"LT"
+            }
+        }
+    ]
+}

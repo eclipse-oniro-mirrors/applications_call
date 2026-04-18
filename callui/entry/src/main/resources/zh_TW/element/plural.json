@@ -1,0 +1,112 @@
+{
+    "plural":[
+        {
+            "name":"conference_member_str",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"\t| %s 人",
+                    "attr":{
+                        "priority":"LT"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"number_marked",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"\t| %d 人標記",
+                    "attr":{
+                        "priority":"LT"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"minutes",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"%d 分鐘後",
+                    "attr":{
+                        "priority":"LT"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"hoursLater",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"%d 小時後",
+                    "attr":{
+                        "priority":"LT"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"conference_member_number",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"\t| %d 人",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"call_time_hour",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"%d 小時",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"call_time_sec",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"%d 秒",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"call_time_min",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"%d 分鐘",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"video_ringtone_selected_tip",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"已選取 %d 項",
+                    "attr":{
+                        "priority":"LT"
+                    }
+                }
+            ]
+        }
+    ]
+}

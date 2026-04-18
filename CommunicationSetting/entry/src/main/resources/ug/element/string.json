@@ -1,0 +1,662 @@
+{
+    "string":[
+        {
+            "name":"mobile_data_manage_entry",
+            "value":"ئېقىم باشقۇرۇش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"wlan",
+            "value":"\u200fWLAN",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"no_match_result",
+            "value":"ماس نەتىجە يوق",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"network_title",
+            "value":"تور ئىشلىتىش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"searching",
+            "value":"ئەپ ئىزدەش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"all",
+            "value":"بارلىق",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"system_applications",
+            "value":"سىستېما",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"system_and_service",
+            "value":"سىستېما ۋە مۇلازىمەت",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"loading",
+            "value":"يۈكلەۋاتىدۇ…",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"more",
+            "value":"باشقىلار",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"traffic_ranking_of_this_month",
+            "value":"بۇ ئايلىق ئېقىم ئىشلىتىش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data",
+            "value":"كۆچمە ئىقىم",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"forbid",
+            "value":"ئېتىك",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"data_calculation_different_from_shown",
+            "value":"يۈرۈتكۈچىنىڭ ئېقىم ھېسابلاش ئۇسۇلى بۇ ئۈسكۈنىنىڭكى بىلەن ئوخشىماسلىقى مۇمكىن",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"traffic_ranking",
+            "value":"ئېقىم رېتى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"sim_card_2",
+            "value":"كارتا 2 (%1$s)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"sim_card_1",
+            "value":"كارتا 1 (%1$s)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_and_WLAN",
+            "value":"كۆچمە ئېقىم ۋە WLAN",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"flow_used",
+            "value":"ئىشلەتكەن ئېقىم",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"no_networked_apps",
+            "value":"تورغا ئۇلانغان ئەپ يوق",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"not_allow",
+            "value":"چەكلەش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"body_network_access_policy",
+            "value":"كۆچمە ئېقىم ئېتىلسە، بەزى ئىقتىدارلار ئىشلىمەسلىكى مۇمكىن. تەڭشەك > كۆچمە ئېقىم > ئېقىم باشقۇرۇش > ئەپ تورى دېگەن ئورۇندىن ئۆزگەرتەلەيسىز.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"only_wlan",
+            "value":"پەقەت WLAN",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"title_network_access_policy",
+            "value":"\u200f«%s» نىڭ كۆچمە ئېقىم ئىشلىتىشىگە رۇخسەتمۇ؟",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"last_30_days",
+            "value":"ئۆتكەن %s كۈن",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"last_24_hours",
+            "value":"ئۆتكەن %s سائەت",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_network",
+            "value":"كۆچمە تور",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"ranking_of_this_month",
+            "value":"بۇ ئايلىق كۆچمە ئېقىم رېتى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"category_media_service",
+            "value":"مېدىيا مۇلازىمىتى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"category_security_service",
+            "value":"بىخەتەرلىك مۇلازىمىتى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"category_location_service",
+            "value":"ئورۇن ئۇچۇرى مۇلازىمىتى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"category_WLAN_service",
+            "value":"\u200fWLAN مۇلازىمىتى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"category_general_service",
+            "value":"ئورتاق",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"category_system",
+            "value":"سىستېما",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"category_nfc_service",
+            "value":"\u200fNFC مۇلازىمىتى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"wlan_ranking_of_this_month",
+            "value":"بۇ ئايلىق WLAN ئىشلىتىش",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"network_no_service",
+            "value":"مۇلازىمەت يوق",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"category_call_service",
+            "value":"چاقىرىق مۇلازىمىتى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"category_debug_system",
+            "value":"سىستېما سىناش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"allow_mobile_data_and_WLAN",
+            "value":"كۆچمە ئېقىم ۋە WLAN",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"allow_mobile_data",
+            "value":"كۆچمە ئېقىم",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"allow_WLAN",
+            "value":"\u200fWLAN",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"category_update",
+            "value":"يۇمشاق دېتال يېڭىلاش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"category_rtc_service",
+            "value":"شۇئان ئالاقە مۇلازىمىتى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"show_system_processes",
+            "value":"سىستېما يۈرۈملىرىنى كۆرسىتىش",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hide_system_processes",
+            "value":"سىستېما يۈرۈملىرىنى يوشۇرۇش",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"allow",
+            "value":"رۇخسەت",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"title_wifi_only_network_access_policy",
+            "value":"\u200f«%s» تور ئىشلەتمەكچى",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"category_uninstalled_apps",
+            "value":"ئۆچۈرۈلگەن ئەپ",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"accessibility_more",
+            "value":"باشقا تاللانمىلار",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"accessibility_back",
+            "value":"قايتىش",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"usage_reminders_index",
+            "value":"چەك ئەسكەرتمىسى (كارتا %d)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"data_plan_settings",
+            "value":"يۈرۈشلۈك تەڭشىكى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"monthly_data_reminder",
+            "value":"ئايلىق ئېقىم ئەسكەرتمىسى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"daily_limit_data_reminder",
+            "value":"كۈندىلىك ئىشلەتكەن ئېقىم چەك (%2$s) كە ‎%1$s يەتكەندە ئەسكەرتىدۇ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"data_limit",
+            "value":"يۈرۈشلۈك چېكى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"reopen_the_current_card",
+            "value":"قايتا ئېچىش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"data_traffic_reached_the_limit",
+            "value":"ئىشلەتكەن ئېقىم بېكىتىلگەن چەككە يەتكەن.\nكۆچمە ئېقىمنى قايتا ئاچسىڭىز، تور ھەققى ئارتىپ كېتىشى مۇمكىن.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"got_it",
+            "value":"بىلدىم",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"reminder",
+            "value":"ئەسكەرتىش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"usage_reminders",
+            "value":"چەك ئەسكەرتمىسى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"unlimited_data",
+            "value":"چەكسىز ئېقىم",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"reopen",
+            "value":"قايتا ئېچىش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"confirm",
+            "value":"جەزملەش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"more_data_usage_settings_title",
+            "value":"باشقا ئېقىم تەڭشىكى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"not_set",
+            "value":"بېكىتمىگەن",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"monthly_limit_data_reminder",
+            "value":"ئايلىق ئىشلەتكەن ئېقىم چەك (%2$s) كە ‎%1$s يەتكەندە ئەسكەرتىدۇ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"disable_mobile_data",
+            "value":"كۆچمە ئېقىم ئېتىك",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"over_monthly_limit",
+            "value":"ئېقىم ئايلىق چەكتىن ئاشقاندا",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"start_date",
+            "value":"باشلىنىش كۈنى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"current_sim_data_traffic_reached_the_limit",
+            "value":"نۆۋەتتىكى SIM كارتىنىڭ ئېقىم چېكى توشۇپ، كۆچمە ئېقىم ئېتىلگەن. قايتا ئاچسىڭىز، تور ھەققى ئارتىپ كېتىشى مۇمكىن.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"switch_to_another_card",
+            "value":"كارتا ئالماشتۇرۇش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"disconnect",
+            "value":"تورنى ئۈزۈش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"cancel",
+            "value":"بىكار قىلىش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"daily_data_reminder",
+            "value":"كۈندىلىك ئېقىم ئەسكەرتمىسى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"traffice_package_remain",
+            "value":"قالدۇق كۈندىلىك ئېقىم",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"accessibility_selected",
+            "value":"تاللاندى",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"data_plan_settings_index",
+            "value":"يۈرۈشلۈك تەڭشىكى (كارتا %d)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"traffice_package_out",
+            "value":"كۈندىلىك ئېقىمدىن ئارتۇق",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"used_traffice",
+            "value":"ئىشلەتكەن كۈندىلىك ئېقىم",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"forbid_operation",
+            "value":"بۇ ئىقتىدارنى پەقەت ئۈسكۈنە ئىگىسى ئىشلىتەلەيدۇ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"accessibility_unselected",
+            "value":"تاللانمىدى",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"today",
+            "value":"بۈگۈن",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"show_compatible_apps",
+            "value":"ماسلىشىدىغان ئەپ كۆرسىتىش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"hide_compatible_apps",
+            "value":"ماسلىشىدىغان ئەپ يوشۇرۇش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"traffic_chart_view_net_used_day",
+            "value":"\u200f%1$s ئىشلەتكەن: %2$s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"traffic_chart_view_net_used_day_today",
+            "value":"بۈگۈن %1$s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"owner_of_device",
+            "value":"ئۈسكۈنە ئىگىسى",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hotspot_name",
+            "value":"كۆچمە تور نۇقتىسى",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"esim_card",
+            "value":"\u200f%1$s (%2$s)",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"esim_usage_reminders_index",
+            "value":"چەك ئەسكەرتمىسى (eSIM %d)",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"data_plan_esim_settings_index",
+            "value":"يۈرۈشلۈك تەڭشىكى (eSIM %d)",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"flow_display_title",
+            "value":"ئېقىم كۆرسىتىش",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"usage_display_summary",
+            "value":"ئۇقتۇرۇش بالدىقىدا ئېقىم ئۇچۇرى كۆرسىتىش",
+            "attr":{
+                "priority":"translate"
+            }
+        }
+    ]
+}

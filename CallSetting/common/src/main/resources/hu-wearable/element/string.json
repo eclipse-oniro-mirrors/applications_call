@@ -1,0 +1,32 @@
+{
+    "string":[
+        {
+            "name":"CwMmi",
+            "value":"Hívás\u200bvárakoztatás",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"ColpMmi",
+            "value":"Csatlakozta\u200btott vonal azonosítója",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"CfMmi",
+            "value":"Hívás\u200bátirányítás",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"ColrMmi",
+            "value":"Csatlakozta\u200btott vonal azonosítójá\u200bnak korlátozása",
+            "attr":{
+                "priority":"LT"
+            }
+        }
+    ]
+}

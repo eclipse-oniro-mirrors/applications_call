@@ -1,0 +1,18 @@
+{
+    "string":[
+        {
+            "name":"ColrMmi",
+            "value":"ID-Einschrän\u200bkung der verbundenen Leitung",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Apn_button_authenticationType",
+            "value":"Authentifizierungs\u200btyp",
+            "attr":{
+                "priority":"LT"
+            }
+        }
+    ]
+}

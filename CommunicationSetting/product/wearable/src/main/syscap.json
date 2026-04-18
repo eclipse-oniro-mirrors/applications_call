@@ -1,0 +1,14 @@
+{
+  "devices": {
+    "general": [
+      "default",
+      "wearable"
+    ]
+  },
+  "production": {
+    "removedSysCaps": [
+      "SystemCapability.PowerManager.BatteryManager.Extension",
+      "SystemCapability.PowerManager.PowerManager.Extension"
+    ]
+  }
+}

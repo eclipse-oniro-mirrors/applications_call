@@ -1,0 +1,11 @@
+{
+    "string":[
+        {
+            "name":"APN_NAME",
+            "value":"Åtkomstpunkts\u200bnamn (APN)",
+            "attr":{
+                "priority":"LT"
+            }
+        }
+    ]
+}

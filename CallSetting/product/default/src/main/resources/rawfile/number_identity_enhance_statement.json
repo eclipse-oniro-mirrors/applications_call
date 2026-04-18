@@ -1,0 +1,29 @@
+{
+  "version": "1.0",
+  "title": "$string:enhance_statement_title",
+  "content": "$string:enhance_statement_content",
+  "abilities": [
+    {
+      "key": "privacyStatement",
+      "value": {
+        "bundleName": "com.ohos.callsetting",
+        "abilityName": "NumberIdentityPrivacyStatementUIExtAbility",
+        "parameters": {
+          "type": "privacyStatement",
+          "ability.want.params.uiExtensionType": "sys/commonUI"
+        }
+      }
+    },
+    {
+      "key": "permissionStatement",
+      "value": {
+        "bundleName": "com.ohos.callsetting",
+        "abilityName": "NumberIdentityPrivacyStatementUIExtAbility",
+        "parameters": {
+          "type": "permissionStatement",
+          "ability.want.params.uiExtensionType": "sys/commonUI"
+        }
+      }
+    }
+  ]
+}

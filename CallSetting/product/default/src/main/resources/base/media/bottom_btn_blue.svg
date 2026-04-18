@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="338px" height="100px" viewBox="0 0 338 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Button/Action/bottom</title>
+    <defs>
+        <path d="M337.995592,0 L337.999048,27.3965796 C295.544614,72.1157462 235.52858,100 169,100 C102.470923,100 42.454489,72.1153293 -5.68434189e-14,27.3955765 L0.00440769102,0 L337.995592,0 Z" id="path-1"></path>
+        <path d="M169,2 C226.317433,2 278.800854,8.6622562 319.384475,19.7123146 L319.168053,19.6482019 C319.733202,19.8226311 320.313132,19.9993023 320.897942,20.1816976 L321.400172,20.3395195 C329.028448,22.7568759 337.003426,26.3097432 323.57358,38.6481981 L323.413518,38.8055793 C282.496724,75.6063571 228.363452,98 169,98 C109.51666,98 55.2846465,75.5158152 14.3387422,38.5824389 C1.61692675,26.7417209 10.1221152,22.4921617 17.8436322,19.9849465 L18.3361022,19.8269412 C18.58159,19.7490693 18.825797,19.6728512 19.0680037,19.5980959 C19.1223877,19.5813107 19.1770718,19.5644412 19.2320559,19.5474876 C59.7274415,8.5953785 111.970977,2 169,2 Z" id="path-3"></path>
+        <filter x="-4.6%" y="-9.4%" width="109.3%" height="131.2%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="6" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="7.05联系人&amp;电话gui" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="没有联系人" transform="translate(-64.000000, -366.000000)">
+            <g id="Button/Action/bottom" transform="translate(64.000000, 366.000000)">
+                <g id="编组" transform="translate(-0.004408, 0.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="形状结合"></g>
+                    <g id="形状结合" mask="url(#mask-2)">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                        <use fill="#1F71FF" fill-rule="evenodd" xlink:href="#path-3"></use>
+                    </g>
+                </g>
+                <text id="按钮文字" font-family="HarmonyHeiTi-Medium, HarmonyHeiTi" font-size="38.004405" font-weight="400" fill="#FFFFFF">
+                    <tspan x="110" y="60">知道了</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

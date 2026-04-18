@@ -1,0 +1,207 @@
+{
+    "string":[
+        {
+            "name":"beidou_satellite_message_service_no_net",
+            "value":"Δεν υπάρχει σύνδεση στο Ίντερνετ. Συνδεθείτε στο Ίντερνετ και δοκιμάστε ξανά.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"go_use_beidou_message_tips",
+            "value":"Έχετε ενεργοποιήσει τα Δορυφορικά μηνύματα BeiDou. Μεταβείτε στην εφαρμογή Μηνύματα για να αρχίσετε να τα χρησιμοποιείτε.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hangUp",
+            "value":"Τέλος",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"start_beidou_satellite_message",
+            "value":"Δορυφορικά μηνύματα BeiDou",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"wearable_bluee_text",
+            "value":"Όταν το ρολόι είναι συνδεδεμένο με το τηλέφωνο, τα δεδομένα κινητής τηλεφωνίας του ρολογιού θα απενεργοποιούνται αυτόματα για εξοικονόμηση ενέργειας. Θα επανενεργοποιούνται, αν αποσυνδεθούν.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"save",
+            "value":"Αποθήκευση",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Apn_enum_None",
+            "value":"Κανένα",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"wearable_roaming_subtitle",
+            "value":"Ενεργοποιήστε τα δεδομένα κατά την περιαγωγή. Επικοινωνήστε με τον πάροχό σας για λεπτομέρειες.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_data_networkProvider",
+            "value":"Πάροχος",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"APN_MMS",
+            "value":"MMS",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"do_not_show_again",
+            "value":"Να μην εμφανιστεί ξανά",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"APN_ADD_APN",
+            "value":"Νέο APN",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"APN_common",
+            "value":"Γενικά",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_data_dataRoaming",
+            "value":"Περιαγωγή δεδομένων",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_data",
+            "value":"Δεδομένα κινητής τηλεφωνίας",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Apn_confirm",
+            "value":"OK",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"gotIt",
+            "value":"OK",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_data_charges",
+            "value":"Ενδέχεται να ισχύουν χρεώσεις για τη χρήση δεδομένων.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"go_use_beidou_satellite_message",
+            "value":"Μετάβαση στην εφαρμογή Μηνύματα;",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"beidou_satellite_message_service_details_1",
+            "value":"%s. Η δυνατότητα αυτή είναι διαθέσιμη μόνο σε χρήστες China Mobile που έχουν ενεργοποιήσει δυνατότητες δορυφορικής επικοινωνίας για τον λογαριασμό τους. Για περισσότερες πληροφορίες, επικοινωνήστε με την εξυπηρέτηση πελατών της China Mobile.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"beidou_satellite_message_no_sim_card_descriptions",
+            "value":"Για να χρησιμοποιήσετε αυτήν την υπηρεσία, τοποθετήστε μια Κάρτα SIM China Mobile με ενεργοποιημένα τα Δορυφορικά μηνύματα BeiDou.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"APN_Not_set",
+            "value":"Δεν έχει ρυθμιστεί",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"APN_NAME",
+            "value":"Όνομα σημείου πρόσβασης (APN)",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"wearable_bluee_title",
+            "value":"Το Bluetooth συνδέθηκε",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"go_to_use",
+            "value":"Μετάβαση",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Apn_The_name_cannot_be_empty",
+            "value":"Το όνομα δεν μπορεί να είναι κενό.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"beidou_satellite_message",
+            "value":"Δορυφορικά μηνύματα BeiDou",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Apn_The_APN_cannot_be_empty",
+            "value":"Το APN δεν μπορεί να είναι κενό.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"APN_EDIT_APN",
+            "value":"Επεξεργασία σημείου πρόσβασης",
+            "attr":{
+                "priority":"translate"
+            }
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "string":[
+        {
+            "name":"EmergencyWarningSettings_8",
+            "value":"الإشعار المتعلق بالأذونات",
+            "attr":{
+                "priority":"LT"
+            }
+        }
+    ]
+}

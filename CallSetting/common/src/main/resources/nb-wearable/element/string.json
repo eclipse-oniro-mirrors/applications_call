@@ -1,0 +1,25 @@
+{
+    "string":[
+        {
+            "name":"BaMmi",
+            "value":"Nummer\u200bsperring",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"ClirMmi",
+            "value":"Utgående nummer\u200bvisning",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"ClipMmi",
+            "value":"Innkommende nummer\u200bvisning",
+            "attr":{
+                "priority":"LT"
+            }
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "string":[
+        {
+            "name":"watch_permission_history_no_record",
+            "value":"कोई रिकॉर्ड नहीं",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"watch_traffic_ranking_the_month",
+            "value":"मोबाइल डेटा उपयोग (मासिक)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"watch_loading",
+            "value":"लोड हो रहा है…",
+            "attr":{
+                "priority":"LT"
+            }
+        }
+    ]
+}

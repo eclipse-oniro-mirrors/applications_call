@@ -1,0 +1,201 @@
+{
+  "version": {
+    "curVersion": "1.0.5"
+  },
+  "searchPages": [
+    {
+      "pageTitle": "$string:mobile_data_manage_entry",
+      "pageDescription": "",
+      "entryKey": "mobile_data_manage_entry",
+      "path": [
+        "$string:mobile_network",
+        "$string:mobile_data_manage_entry"
+      ],
+      "supportDevices": [
+        "phone",
+        "tablet"
+      ],
+      "params": "0,-1,-1",
+      "searchItems": [
+        {
+          "itemName": "mobile_data_manage_entry",
+          "itemTitle": "$string:mobile_data_manage_entry",
+          "itemDescription": "",
+          "icon": "",
+          "enable": "true",
+          "childItems": "",
+          "supportDevices": [
+            "phone",
+            "tablet"
+          ],
+          "alias": "流量管理|手机流量|mobiledata|liuliang",
+          "checkItem": {
+            "type": "function",
+            "checkKey": "isSupportMobileNetworkPage",
+            "value": "true"
+          }
+        }
+      ]
+    },
+    {
+      "pageTitle": "$string:network_title",
+      "pageDescription": "",
+      "entryKey": "mobile_data_manage_entry",
+      "path": [
+        "$string:mobile_network",
+        "$string:mobile_data_manage_entry",
+        "$string:network_title"
+      ],
+      "supportDevices": [
+        "phone",
+        "tablet"
+      ],
+      "params": "1,-1,-1",
+      "searchItems": [
+        {
+          "itemName": "network_title",
+          "itemTitle": "$string:network_title",
+          "itemDescription": "",
+          "icon": "",
+          "enable": "true",
+          "childItems": "",
+          "checkItem": {
+            "type": "function",
+            "checkKey": "isSupportMobileNetworkPage",
+            "value": "true"
+          },
+          "alias": ""
+        }
+      ]
+    },
+    {
+      "pageTitle": "$string:ranking_of_this_month",
+      "pageDescription": "",
+      "entryKey": "mobile_data_manage_entry",
+      "path": [
+        "$string:mobile_network",
+        "$string:mobile_data_manage_entry",
+        "$string:traffic_ranking"
+      ],
+      "supportDevices": [
+        "phone",
+        "tablet"
+      ],
+      "params": "2,-1,-1",
+      "searchItems": [
+        {
+          "itemName": "ranking_of_this_month",
+          "itemTitle": "$string:ranking_of_this_month",
+          "itemDescription": "",
+          "icon": "",
+          "enable": "true",
+          "childItems": "",
+          "alias": "",
+          "checkItem": {
+            "type": "param",
+            "checkKey": "const.telephony.slotCount",
+            "value": "1"
+          }
+        },
+        {
+          "itemName": "ranking_of_this_month",
+          "itemTitle": "$string:ranking_of_this_month",
+          "itemDescription": "",
+          "icon": "",
+          "enable": "true",
+          "childItems": "",
+          "alias": "",
+          "checkItem": {
+            "type": "param",
+            "checkKey": "const.telephony.slotCount",
+            "value": "2"
+          }
+        }
+      ]
+    },
+    {
+      "pageTitle": "$string:wlan_ranking_of_this_month",
+      "pageDescription": "",
+      "entryKey": "mobile_data_manage_entry",
+      "path": [
+        "$string:mobile_network",
+        "$string:mobile_data_manage_entry"
+      ],
+      "supportDevices": [
+        "phone",
+        "tablet"
+      ],
+      "params": "0,-1,-1",
+      "searchItems": [
+        {
+          "itemName": "wlan_ranking_of_this_month",
+          "itemTitle": "$string:wlan_ranking_of_this_month",
+          "itemDescription": "",
+          "icon": "",
+          "enable": "true",
+          "childItems": "",
+          "alias": "",
+          "checkItem": {
+            "type": "function",
+            "checkKey": "isShowMobileNetworkWlanRankingResult",
+            "value": "true"
+          }
+        }
+      ]
+    },
+    {
+      "pageTitle": "$string:more_data_usage_settings_title",
+      "pageDescription": "",
+      "entryKey": "mobile_data_manage_entry",
+      "path": [
+        "$string:mobile_network",
+        "$string:mobile_data_manage_entry",
+        "$string:more_data_usage_settings_title"
+      ],
+      "supportDevices": [
+        "phone",
+        "tablet"
+      ],
+      "params": "4,-1,-1",
+      "searchItems": [
+        {
+          "itemName": "more_data_usage_settings_title",
+          "itemTitle": "$string:more_data_usage_settings_title",
+          "itemDescription": "",
+          "icon": "",
+          "enable": "false",
+          "childItems": "",
+          "alias": "",
+          "checkItem": {
+            "type": "function",
+            "checkKey": "hasSimCard",
+            "value": "true"
+          }
+        },
+        {
+          "itemName": "data_plan_settings",
+          "itemTitle": "$string:data_plan_settings",
+          "itemDescription": "",
+          "icon": "",
+          "enable": "false",
+          "childItems": "",
+          "alias": "",
+          "checkItem": {
+            "type": "function",
+            "checkKey": "hasSimCard",
+            "value": "true"
+          }
+        },
+        {
+          "itemName": "usage_reminders",
+          "itemTitle": "$string:usage_reminders",
+          "itemDescription": "",
+          "icon": "",
+          "enable": "false",
+          "childItems": "",
+          "alias": ""
+        }
+      ]
+    }
+  ]
+}
