@@ -1,0 +1,15 @@
+{
+  "string": [
+    {
+      "name": "app_name",
+      "value": "通话设置"
+    },
+    {
+      "name":"callSetting_title",
+      "value":"通话设置",
+      "attr":{
+        "priority":"translate"
+      }
+    }
+  ]
+}

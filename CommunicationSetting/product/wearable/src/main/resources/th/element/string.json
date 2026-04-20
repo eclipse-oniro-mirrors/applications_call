@@ -1,0 +1,25 @@
+{
+    "string":[
+        {
+            "name":"watch_permission_history_no_record",
+            "value":"ไม่มีบันทึก",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"watch_traffic_ranking_the_month",
+            "value":"การใช้ข้อมูลมือถือ (รายเดือน)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"watch_loading",
+            "value":"กำลังโหลด…",
+            "attr":{
+                "priority":"LT"
+            }
+        }
+    ]
+}

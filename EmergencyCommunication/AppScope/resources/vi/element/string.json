@@ -1,0 +1,11 @@
+{
+    "string":[
+        {
+            "name":"app_name",
+            "value":"SOS khẩn cấp",
+            "attr":{
+                "priority":"translate"
+            }
+        }
+    ]
+}

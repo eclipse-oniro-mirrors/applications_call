@@ -1,0 +1,137 @@
+{
+    "string":[
+        {
+            "name":"auto_recording_object",
+            "value":"Appliquer à",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"deselect_all",
+            "value":"Désélectionner tout",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"call_meeting",
+            "value":"Conférence téléphonique",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"select_all",
+            "value":"Sélectionner tout",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"no_number_specified",
+            "value":"Aucun numéro",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"unknown",
+            "value":"Inconnu",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"delete",
+            "value":"Supprimer",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"specified_number",
+            "value":"Numéros spécifiés",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"automatic_recording_of_calls",
+            "value":"Enregistrement automatique des appels",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"automatically_record_call_viewed",
+            "value":"Les enregistrements des appels sont accessibles dans l'application Enregistreur sonore.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"unset_recorder",
+            "value":"Non défini",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"call_numbers_finish_des",
+            "value":"Enregistré sous Téléphone > Plus > Enregistrements d'appels. Veuillez toucher pour voir.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"add_specified_number",
+            "value":"Ajouter des numéros",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"cancel",
+            "value":"Annuler",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"is_delete_number",
+            "value":"Supprimer le numéro sélectionné ?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"all_calls",
+            "value":"Tous les appels",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"is_delete_all_number",
+            "value":"Supprimer tous les numéros ?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"voice_long_press",
+            "value":"Toucher deux fois et maintenir pour plus d'options",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"add",
+            "value":"Ajouter",
+            "attr":{
+                "priority":"translate"
+            }
+        }
+    ]
+}

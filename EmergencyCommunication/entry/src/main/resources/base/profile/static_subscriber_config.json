@@ -1,0 +1,14 @@
+{
+  "commonEvents": [
+    {
+      "name": "D2DSignalReceiverAbility",
+      "permission": "",
+      "events": [
+        "usual.event.EMC_RESCUE_SIGNAL_DETECTED",
+        "usual.event.EMC_RESCUE_RECEIVE_MESSAGE",
+        "usual.event.EMC_RESCUE_RECEIVE_CALL",
+        "emc.event.EMC_RESCUE_ENABLE_FUNC_SWITCH"
+      ]
+    }
+  ]
+}

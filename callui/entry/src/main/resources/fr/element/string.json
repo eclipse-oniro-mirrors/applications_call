@@ -1,0 +1,1450 @@
+{
+    "string":[
+        {
+            "name":"incoming_call_rejection_sms",
+            "value":"Répondre par SMS",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"waitingInvitation",
+            "value":"En attente de l'acceptation du correspondant.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"emergency",
+            "value":"Urgence",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hangUp",
+            "value":"Raccrocher",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"anti_fraud_continue_call",
+            "value":"Continuer l'appel",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"super_privacy_dialog_call_summary",
+            "value":"Le mode super privé empêche l'accès au micro. Désactiver temporairement le mode pour cet appel ?",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"telephone_Conference",
+            "value":"Conférence téléphonique",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"voicemail",
+            "value":"Messagerie vocale",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"open_phone_for_video_call",
+            "value":"Déplier pour passer en appel vidéo",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"switchToVoice",
+            "value":"Voix",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"hangUpReply",
+            "value":"Répondre avec",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"saveNumber",
+            "value":"Enregistrer le numéro",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"close",
+            "value":"Fermer",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"combine_conference_failed",
+            "value":"La conférence téléphonique a échoué.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"hop_with_device_name",
+            "value":"Connecté à %s",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"quickReply",
+            "value":"Réponse rapide",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"dialing_banner",
+            "value":"Numérotation en cours",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"silent_call_symbol",
+            "value":"Appel confidentiel",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"keyBoard",
+            "value":"Pavé de numérotation",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"disable_super_privacy_and_answer",
+            "value":"Désactiver et répondre",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"voip_dialing_banner",
+            "value":"| Appel en cours",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"maintain",
+            "value":"En attente",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"wiredHeadset",
+            "value":"Écouteurs filaires",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"switch_rear_camera",
+            "value":"Passer sur l'appareil photo arrière",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"voiceToVideoConfirmMsg",
+            "value":"Vous avez reçu une demande d'appel vidéo. L'accepter ?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Real_Estate_Agency",
+            "value":"Agent immobilier",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"combine_conference_upper_limit",
+            "value":"Nombre maximum de participants atteint. Les appels ne peuvent pas être fusionnés.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"hold_calling",
+            "value":"Appel en attente",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"DTMF_CONFIRM",
+            "value":"Oui",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_dialing",
+            "value":"Appel via le réseau satellite Tiantong en cours",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"addToExistingContact",
+            "value":"Ajouter à un contact existant",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"contactPerson",
+            "value":"Contacts",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"incoming_conflicts_video_call",
+            "value":"Répondre à l'appel vidéo mettra fin à l'appel en cours",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"manageUsers",
+            "value":"Gérer les utilisateurs",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"speaker",
+            "value":"Haut-parleur",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"incoming_conflicts_drop_existing_call",
+            "value":"Répondre à cet appel mettra fin à l'appel en cours",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"answeredTimeout",
+            "value":"Connexion en cours.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"audio_output",
+            "value":"Sortie audio",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"customSMS",
+            "value":"Personnalisé",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"hangingUp",
+            "value":"Fin d'appel en cours.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"flip_phone_for_front_camera",
+            "value":"L'appareil photo se situe à l'arrière du téléphone.\nPour pouvoir vous voir de face, veuillez plier le téléphone, puis tournez-le pour que l'appareil photo soit face à vous.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"hangUpCompleted",
+            "value":"Appel terminé",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobileNetwork",
+            "value":"Le réseau mobile n'est pas disponible.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"financial_management_insurance",
+            "value":"Assurance et prêts",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"custom",
+            "value":"Personnalisé",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"callFailed_fdn_only",
+            "value":"Les appels sortants sont restreints par la liste de numéros autorisés (FDN).",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"callui_description",
+            "value":"Téléphone",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"answerThePhone",
+            "value":"Désolé, je ne peux pas parler maintenant.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"switchCamera",
+            "value":"Changer de caméra",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"video_answer",
+            "value":"Prendre comme appel vidéo",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"callBackReminder",
+            "value":"Notification de rappel",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"exchange",
+            "value":"Permuter",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"switch_front_camera",
+            "value":"Passer sur l'appareil photo avant",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"partyIsRinging",
+            "value":"Sonnerie en cours.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"sent",
+            "value":"Envoyer",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"cancel",
+            "value":"Annuler",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"keep",
+            "value":"Mettre en attente",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"addCall",
+            "value":"Autre appel",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"select_device",
+            "value":"Sélectionner un appareil",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"contactMeLater",
+            "value":"Je suis en réunion. Je reviens vers vous dès que possible.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"voiceCall",
+            "value":"Répondre en vocal",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"advertising_and_promotion",
+            "value":"Publicité",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"anti_fraud_risk_reminder",
+            "value":"C'est peut-être un appel frauduleux. Soyez vigilants.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"super_privacy_dialog_title",
+            "value":"Mode super privé activé",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"backLater",
+            "value":"Je vous rappellerai.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"incoming_conflicts_drop_current_call",
+            "value":"Répondre à l'appel entrant mettra fin à l'appel en cours.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"rejectVideoMsg",
+            "value":"Le correspondant a rejeté votre demande d'appel vidéo.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"connecting",
+            "value":"Connexion en cours.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"separate_conference_failed",
+            "value":"L'appel ne peut pas être divisé.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"turn_off_camera",
+            "value":"Désactiver la caméra",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"LeatherUIExtAbility_in_super_privacy",
+            "value":"Le mode super privé empêche l'accès au micro. Veuillez ouvrir le rabat pour répondre.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"beThereSoon",
+            "value":"Je suis en chemin.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"incoming_conflicts_drop_holding_call",
+            "value":"Répondre à cet appel mettra fin à l'appel actuellement en attente.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"shutDown",
+            "value":"Désactiver",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"markAs",
+            "value":"Marquer comme",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"incomingCall",
+            "value":"Appel entrant",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"switchVoiceCallMsg",
+            "value":"Le correspondant est passé en appel vocal.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mergeCall",
+            "value":"Fusionner",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"remind",
+            "value":"Rappel",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"gotIt",
+            "value":"OK",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"SMS_Sent",
+            "value":"Message envoyé à %s.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"taxi",
+            "value":"Taxi",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mute",
+            "value":"Silencieux",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"phoneHandset",
+            "value":"Récepteur",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"turn_off_airplane_and_calls",
+            "value":"Désactiver le mode avion pour faire un appel ?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"adding_contact",
+            "value":"Ajouter des contacts",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"blueetoothDevice",
+            "value":"Appareil Bluetooth",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"super_privacy_dialog_video_call_summary",
+            "value":"Le mode super privé empêche l'accès au micro et à l'appareil photo. Désactiver temporairement le mode pour cet appel ?",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"dialing",
+            "value":"Numérotation en cours",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"hanging_up_video_call",
+            "value":"Terminer l'appel vidéo",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"recorder_toast_error_400",
+            "value":"Erreur inconnue.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"videoCall",
+            "value":"Appel vidéo",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"createNewContact",
+            "value":"Créer un nouveau contact",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"slide_to_answer",
+            "value":"Faire glisser pour répondre",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"harassing_call",
+            "value":"Spam",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"unknownNumber",
+            "value":"Numéro inconnu",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"ok",
+            "value":"OK",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"closeCountDown",
+            "value":"Fermer (%s)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"sms",
+            "value":"Message",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"callHold",
+            "value":"En attente",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"accept",
+            "value":"Accepter",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"addToBlocklist",
+            "value":"Ajouter à la liste de blocage",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"call_assistant_answer_setting_title",
+            "value":"Réponse automatique",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"confirmAdd",
+            "value":"Ajouter",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"courier_and_food_delivery",
+            "value":"Service de livraison",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"call_assistant_setting_title",
+            "value":"Appel Celia",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_dialing_tips",
+            "value":"Cela peut prendre un moment. Veuillez patienter.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"recording",
+            "value":"Enregistrer",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"unmute",
+            "value":"Activer le micro",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fraud_phone_call",
+            "value":"Risque élevé",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"call_assistant_brief",
+            "value":"Résumer",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"rejectVideo",
+            "value":"Rejeter",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"ture_on_camera",
+            "value":"Activer la caméra",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"answering_call_prompt",
+            "value":"Dire \"%s\" pour répondre à l'appel",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"symbol_comma",
+            "value":",\t",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"anti_fraud_hangup_black",
+            "value":"Raccrocher et bloquer",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"unlock_try_again",
+            "value":"Veuillez déverrouiller votre appareil, puis réessayez.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"inTheConference",
+            "value":"Réunion en cours",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"LeatherUIExtAbility_switch_between_calls",
+            "value":"Veuillez ouvrir la couverture pour alterner entre les appels",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"call_assistant_voicefix",
+            "value":"Améliorer la voix",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"anti_fraud_deceived",
+            "value":"Alerte d'escroquerie",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"video_ringtone_no_delete",
+            "value":"La suppression des éléments en cours d'utilisation a échoué.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"anti_fraud_identifies",
+            "value":"Vérification des risques en cours",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"app_voip_dialing_banner",
+            "value":"%s | Appel en cours.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"no_video_ringtone",
+            "value":"Aucune sonnerie vidéo",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone_from_photo_picker",
+            "value":"Sélectionner depuis Galerie",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"message_Failed",
+            "value":"L'envoi du message a échoué.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"DTMF_CANCEL",
+            "value":"Non",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"not_support_hold",
+            "value":"L'appel ne peut pas être mis en attente.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"app_voip_incoming_voice",
+            "value":"%s | Appel vocal",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"DTMF_DIALOG_INFO",
+            "value":"Envoyer les tonalités suivantes ?\n\n%s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"videoCallToVoiceToast",
+            "value":"Le correspondant a sélectionné l'appel vocal. L'appel est passé sur le récepteur.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"app_hold_conference",
+            "value":"%s | Conférence téléphonique en attente",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"antifraud_center_phone_call",
+            "value":"Escroquerie suspectée",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"disableChangedToEarpiece",
+            "value":"Le récepteur n'est pas disponible durant les appels satellite.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"LeatherUIExtAbility_fraud_phone_calls",
+            "value":"Appel frauduleux",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"call_assistant_text",
+            "value":"Taper du texte pour parler",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"manage",
+            "value":"Gérer",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone",
+            "value":"Sonneries vidéo",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"app_voip_incoming_video",
+            "value":"%s | Appel vidéo",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"my_video_ringtone",
+            "value":"Ma sonnerie vidéo",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"switchVideoCallFailed",
+            "value":"Le passage en appel vidéo a échoué.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"establishVideoCallFailed",
+            "value":"Le lancement de l'appel vidéo a échoué.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"call_assistant_translate",
+            "value":"Traduire en direct",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone_deselect_all",
+            "value":"Désélectionner tout",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"marked",
+            "value":"\t(marqué)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"app_hold_call",
+            "value":"%s | Appel en attente",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"addToBlockListConfirm",
+            "value":"Vous ne recevrez plus d'appels téléphoniques ou de messages de ce contact.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"national_antifraud_center_tips",
+            "value":"Alerte du Centre national de lutte contre la fraude",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"reject_call_prompt",
+            "value":"Dire \"%s\" pour rejeter l'appel",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"end_call_prompt",
+            "value":"Dire \"%s\" pour mettre fin à l'appel",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"callBack",
+            "value":"Rappeler %s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"app_video_conference",
+            "value":"%s | Conférence vidéo",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"video_ringtone_select_all",
+            "value":"Sélectionner tout",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"CALENDAR_ACCESS_TOAST",
+            "value":"Veuillez d'abord autoriser l'accès à Agenda depuis Paramètres.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"two_way_silent_call",
+            "value":"Appel confidentiel bidirectionnel",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"open_phone_to_use_handset",
+            "value":"Déplier pour utiliser le récepteur",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"no_cdma_volte_warn_text",
+            "value":"Les appels ne sont actuellement pas disponibles sur la carte SIM %1$s (China Telecom) car les services de réseau mobile ne sont pas activés.\n\nVous pouvez obtenir de l'aide en contactant le service clients de China Telecom au %2$s.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"video_ringtone_size_limit",
+            "value":"Veuillez sélectionner une vidéo plus petite que %s.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"delete",
+            "value":"Supprimer",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"use",
+            "value":"Appliquer",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"joining",
+            "value":"Participation à l'appel/réunion en cours.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"app_voice_conference",
+            "value":"%s | Conférence téléphonique",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"video_ringtone_delete_dialog_tip1",
+            "value":"Supprimer les éléments sélectionnés ?",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"anti_fraud_beware_being_deceived",
+            "value":"Alerte d'escroquerie",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"penglai_mode_notice",
+            "value":"Ceci ne peut pas être effectué en mode Penglai.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name": "not_support_toast",
+            "value": "Cette opération n'est pas prise en charge dans ce mode."
+        },
+        {
+            "name":"show_dialpad",
+            "value":"Afficher le pavé de numérotation",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hanging_up_voice_call",
+            "value":"Terminer l'appel vocal",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"call_turn_off_recording",
+            "value":"Mettre fin à l'enregistrement",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"InfoEdit_back",
+            "value":"Retour",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"one_finger_double_click",
+            "value":"Toucher deux fois pour activer",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"wired_headset_selected",
+            "value":"Casque filaire sélectionné",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"answer",
+            "value":"Répondre, bouton",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"sim_card_num_no_space",
+            "value":"SIM %s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"recorded",
+            "value":"Enregistré",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hanging_up_voice_call_button",
+            "value":"Terminer l'appel vocal, bouton",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"switching_audio_channels",
+            "value":"Changer de canal audio",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"cancel_waiting",
+            "value":"Terminer la mise en attente",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"my_video",
+            "value":"Mon fil vidéo",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hanging_up_video_call_button",
+            "value":"Terminer l'appel vidéo, bouton",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"call_mute_on",
+            "value":"Couper le son",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"call_hd_symbol",
+            "value":"HD",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"peer_video",
+            "value":"Image vidéo de l'interlocuteur",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"blueetooth_device_selected",
+            "value":"Appareil Bluetooth sélectionné",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hide_dialpad",
+            "value":"Masquer le pavé de numérotation",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"notepad",
+            "value":"Bloc-notes",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"disableChangedToEarpiece_hyacinth",
+            "value":"Le récepteur n'est pas disponible durant les appels satellite Jacinthe.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_dialing",
+            "value":"Appel via le réseau satellite Jacinthe en cours",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"anti_fraud_best_mind_tips",
+            "value":"Alerte du Centre de Pékin de lutte contre la fraude",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"new_calling_can_only_use_in_full_screen",
+            "value":"Les services d'appel avancé ne sont disponibles qu'en affichage en plein écran.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"new_calling",
+            "value":"Appel avancé",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"try_new_calling",
+            "value":"Essayer Appel avancé ?",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"call_summarization_is_turned_off",
+            "value":"Résumé de l'appel désactivé. Fonctionnalité non disponible pour les appels multi-personnes.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"summarizeOn",
+            "value":"Résumé de l'appel",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"conference_different_cards",
+            "value":"Les conférences téléphoniques ne sont pas disponibles avec différentes cartes SIM sur le même appareil.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"please_expand_your_phone",
+            "value":"Veuillez déplier pour afficher.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"summary_failed_turned_on",
+            "value":"L'activation du résumé d'appel a échoué.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"summary_is_abnormal",
+            "value":"Erreur du service de résumé d'appel. Veuillez réessayer ultérieurement.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"conference_calls_are_not_available",
+            "value":"Les conférences téléphoniques ne sont pas disponibles",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"wechat_multiCall",
+            "value":"%s | Appel en groupe",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"wechat_videoCall",
+            "value":"%s | Appel vidéo",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"wechat_voiceCall",
+            "value":"%s | Appel vocal",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+	    {
+            "name":"selected_device",
+            "value":"%s sélectionné",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hearing_aids_device_selected",
+            "value":"Appareil d'aide auditive sélectionné",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"accessibility_change_speaker",
+            "value":"Passer au haut-parleur",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"accessibility_change_phoneset",
+            "value":"Passer au récepteur du téléphone",
+            "attr":{
+                "priority":"translate"
+            }
+        }
+    ]
+}

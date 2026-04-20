@@ -1,0 +1,11 @@
+{
+    "string":[
+        {
+            "name":"app_name",
+            "value":"Emergency SOS",
+            "attr":{
+                "priority":"LT"
+            }
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "string":[
+        {
+            "name":"wearable_roaming_subtitle",
+            "value":"漫游时开启数据业务，详情请咨询运营商",
+            "attr":{
+                "priority":"code"
+            }
+        },
+        {
+            "name":"wearable_bluee_title",
+            "value":"蓝牙已连接",
+            "attr":{
+                "priority":"code"
+            }
+        },
+        {
+            "name":"Apn_The_name_cannot_be_empty",
+            "value":"名称不能为空",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Apn_The_APN_cannot_be_empty",
+            "value":"APN 不能为空",
+            "attr":{
+                "priority":"translate"
+            }
+        }
+    ]
+}

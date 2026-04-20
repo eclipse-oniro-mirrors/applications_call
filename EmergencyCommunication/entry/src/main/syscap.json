@@ -1,0 +1,14 @@
+{
+  "devices": {
+    "general": [
+      "tablet",
+      "default"
+    ]
+  },
+  "production": {
+    "removedSysCaps": [
+      "SystemCapability.PowerManager.BatteryManager.Extension",
+      "SystemCapability.PowerManager.PowerManager.Extension"
+    ]
+  }
+}

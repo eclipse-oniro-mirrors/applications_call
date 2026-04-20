@@ -1,0 +1,29 @@
+{
+    "string":[
+        {
+            "name":"permission_access_install_app_list",
+            "value":"access install app list"
+        },
+        {
+            "name":"watch_traffic_ranking_the_month",
+            "value":"Mobile data usage (monthly)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"watch_permission_history_no_record",
+            "value":"No records",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"watch_loading",
+            "value":"Loading…",
+            "attr":{
+                "priority":"LT"
+            }
+        }
+    ]
+}

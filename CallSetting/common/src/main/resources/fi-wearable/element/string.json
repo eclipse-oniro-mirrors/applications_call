@@ -1,0 +1,11 @@
+{
+    "string":[
+        {
+            "name":"Apn_button_APN_Roaming_Agreement",
+            "value":"APN verkkovierailu\u200bprotokolla",
+            "attr":{
+                "priority":"LT"
+            }
+        }
+    ]
+}

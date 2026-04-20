@@ -1,0 +1,560 @@
+{
+  "module": {
+    "name": "entry",
+    "type": "entry",
+    "description": "$string:module_desc",
+    "mainElement": "com.ohos.emergencycommunication.EmergencyCallAbility",
+    "deviceTypes": [
+      "default",
+      "tablet"
+    ],
+    "querySchemes": [
+      "maps"
+    ],
+    "deliveryWithInstall": true,
+    "installationFree": false,
+    "pages": "$profile:main_pages",
+    "routerMap": "$profile:route_map",
+    "metadata": [
+      {
+        "name": "ArkTSPartialUpdate",
+        "value": "true"
+      },
+      {
+        "name": "action.settings.search.path",
+        "value": "searchConfig/searchPage.json"
+      },
+      {
+        "name": "client_id",
+        "value": "110439619"
+      },
+      {
+        "name": "earthquake_enhance_statement",
+        "value": "rawfile:earthquake_enhance_statement.json"
+      },
+      {
+        "name": "emergency_communication_enhance_statement",
+        "value": "rawfile:emergency_communication_enhance_statement.json"
+      },
+      {
+        "name": "ohos.graphics2d.text.adapter_text_height"
+      },
+      {
+        "name": "emergency_rescue_enhance_statement",
+        "value": "rawfile:emergency_rescue_enhance_statement.json"
+      }
+    ],
+    "abilities": [
+      {
+        "name": "com.ohos.emergencycommunication.EmergencyCallAbility",
+        "srcEntry": "./ets/emergencycallability/EmergencyCallAbility.ets",
+        "description": "$string:EntryAbility_desc",
+        "icon": "$media:ic_warning",
+        "label": "$string:EntryAbility_label",
+        "startWindowIcon": "$media:app_start_window_icon",
+        "startWindowBackground": "$color:black",
+        "exported": true,
+        "launchType": "singleton",
+        "supportWindowMode": ["fullscreen"],
+        "removeMissionAfterTerminate": true,
+        "orientation": "follow_desktop",
+        "permissions": [
+          "ohos.permission.GET_TELEPHONY_STATE"
+        ],
+        "skills": [
+          {
+            "actions": [
+              "action.ohos.push.listener"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "com.ohos.emergencycommunication.SOSEmergencyCallAbility",
+        "srcEntry": "./ets/sosemergencycallability/SOSEmergencyCallAbility.ets",
+        "icon": "$media:ic_warning",
+        "startWindowIcon": "$media:app_start_window_icon",
+        "startWindowBackground": "$color:black",
+        "supportWindowMode": ["fullscreen"],
+        "removeMissionAfterTerminate": true,
+        "orientation": "follow_desktop",
+        "exported": true,
+        "permissions": [
+          "ohos.permission.GET_TELEPHONY_STATE"
+        ],
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "SosExternalAbility",
+        "srcEntry": "./ets/sosemergencycallability/SosExternalAbility.ets",
+        "startWindowIcon": "$media:app_start_window_icon",
+        "startWindowBackground": "$color:black",
+        "supportWindowMode": ["fullscreen"],
+        "removeMissionAfterTerminate": true,
+        "orientation": "follow_desktop",
+        "launchType": "singleton",
+        "exported": false
+      },
+      {
+        "name": "com.ohos.emergencycommunication.PersonalSafetySosAbility",
+        "srcEntry": "./ets/PersonalSafetySosServiceAbility/PersonalSafetySosAbility.ets",
+        "startWindowIcon": "$media:app_start_window_icon",
+        "startWindowBackground": "$color:black",
+        "supportWindowMode": ["fullscreen"],
+        "removeMissionAfterTerminate": true,
+        "orientation": "portrait",
+        "exported": true,
+        "permissions": [
+          "ohos.permission.GET_TELEPHONY_STATE"
+        ]
+      }
+    ],
+    "extensionAbilities": [
+      {
+        "name": "com.ohos.emergencycommunication.EmergencyInfoAbility",
+        "srcEntry": "./ets/emergencycallability/EmergencyInfoAbility.ets",
+        "description": "$string:emergencyInfo",
+        "icon": "$media:ic_warning",
+        "label": "$string:emergencyInfo",
+        "exported": true,
+        "type": "sys/commonUI",
+        "permissions": [
+          "ohos.permission.SET_TELEPHONY_STATE"
+        ]
+      },
+      {
+        "name": "BackupExtensionAbility",
+        "srcEntry": "./ets/backup/EmergencyCallBackupExtension.ets",
+        "description": "$string:emergencyInfo",
+        "label": "$string:emergencyInfo",
+        "type": "backup",
+        "exported": false,
+        "metadata": [
+          {
+            "name": "ohos.extension.backup",
+            "resource": "$profile:backup_config"
+          }
+        ]
+      },
+      {
+        "name": "OobeStatementAbility",
+        "srcEntry": "./ets/emergencycallability/OobeStatementAbility.ets",
+        "description": "OobeStatementAbility",
+        "exported": true,
+        "type": "sys/commonUI",
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.access.business_and_privacy_statement"
+            ]
+          }
+        ],
+        "metadata": [
+          {
+            "name": "metadata.access.number_identity.privacy_statement",
+            "value": "privacy_statement.json"
+          },
+          {
+            "name": "metadata.access.business_and_privacy_statement",
+            "value": "satellite_privacy_statement.json"
+          }
+        ],
+        "permissions": [
+          "ohos.permission.SET_TELEPHONY_STATE"
+        ]
+      },
+      {
+        "name": "OobeStatementAbilityPrivacy",
+        "srcEntry": "./ets/emergencycallability/OobeStatementAbilityPrivacy.ets",
+        "description": "OobeStatementAbility",
+        "exported": true,
+        "type": "sys/commonUI",
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.access.business_and_privacy_statement"
+            ]
+          }
+        ],
+        "metadata": [
+          {
+            "name": "metadata.access.number_identity.privacy_statement",
+            "value": "privacy_statement.json"
+          },
+          {
+            "name": "metadata.access.business_and_privacy_statement",
+            "value": "satellite_privacy_statement.json"
+          }
+        ],
+        "permissions": [
+          "ohos.permission.SET_TELEPHONY_STATE"
+        ]
+      },
+      {
+        "name": "OobeStatementAbilityDisclaimStatement",
+        "srcEntry": "./ets/emergencycallability/OobeStatementAbilityDisclaimAbility.ets",
+        "description": "OobeStatementAbilityDisclaimAbility",
+        "exported": true,
+        "type": "sys/commonUI",
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.access.business_and_privacy_statement"
+            ]
+          }
+        ],
+        "metadata": [
+          {
+            "name": "metadata.access.number_identity.privacy_statement",
+            "value": "privacy_statement.json"
+          },
+          {
+            "name": "metadata.access.business_and_privacy_statement",
+            "value": "satellite_privacy_statement.json"
+          }
+        ],
+        "permissions": [
+          "ohos.permission.SET_TELEPHONY_STATE"
+        ]
+      },
+      {
+        "name": "EccServiceExtAbility",
+        "srcEntry": "./ets/serviceextability/EccServiceExtAbility.ets",
+        "type": "service",
+        "exported": true,
+        "description": "service",
+        "permissions": [
+          "ohos.permission.GET_TELEPHONY_STATE"
+        ]
+      },
+      {
+        "name": "com.ohos.emergencycommunication.SosHelpAbility",
+        "srcEntry": "./ets/emergencycallability/SosHelpAbility.ets",
+        "description": "$string:auto_send_earthquake_alarm_message",
+        "icon": "$media:ic_app_icon",
+        "label": "$string:auto_send_earthquake_alarm_message",
+        "exported": true,
+        "type": "sys/commonUI",
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.access.business_and_privacy_statement"
+            ]
+          }
+        ],
+        "metadata": [
+          {
+            "name": "metadata.access.number_identity.privacy_statement",
+            "value": "privacy_statement.json"
+          },
+          {
+            "name": "metadata.access.business_and_privacy_statement",
+            "value": "satellite_privacy_statement.json"
+          }
+        ],
+        "permissions": [
+          "ohos.permission.SET_TELEPHONY_STATE"
+        ]
+      },
+      {
+        "name": "OobeEmergencyAbilityPrivacy",
+        "srcEntry": "./ets/emergencycallability/OobeEmergencyAbilityPrivacy.ets",
+        "description": "OobeEmergencyAbilityPrivacy",
+        "exported": true,
+        "type": "sys/commonUI",
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.access.business_and_privacy_statement"
+            ]
+          }
+        ],
+        "metadata": [
+          {
+            "name": "metadata.access.number_identity.privacy_statement",
+            "value": "privacy_statement.json"
+          },
+          {
+            "name": "metadata.access.business_and_privacy_statement",
+            "value": "satellite_privacy_statement.json"
+          }
+        ],
+        "permissions": [
+          "ohos.permission.SET_TELEPHONY_STATE"
+        ]
+      },
+      {
+        "name": "OobeEmergencyStatementAbility",
+        "srcEntry": "./ets/emergencycallability/OobeEmergencyStatementAbility.ets",
+        "description": "OobeStatementAbility",
+        "exported": true,
+        "type": "sys/commonUI",
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.access.business_and_privacy_statement"
+            ]
+          }
+        ],
+        "metadata": [
+          {
+            "name": "metadata.access.number_identity.privacy_statement",
+            "value": "privacy_statement.json"
+          },
+          {
+            "name": "metadata.access.business_and_privacy_statement",
+            "value": "satellite_privacy_statement.json"
+          }
+        ],
+        "permissions": [
+          "ohos.permission.SET_TELEPHONY_STATE"
+        ]
+      },
+      {
+        "name": "SosMessagePrivacyCenterUIExtAbility",
+        "srcEntry": "./ets/emergencycallability/SosMessagePrivacyCenterUIExtAbility.ets",
+        "description": "$string:EntryAbility_desc",
+        "icon": "$media:ic_warning",
+        "label": "$string:EntryAbility_label",
+        "type": 'sys/commonUI',
+        "exported": true,
+        "permissions": [
+          "ohos.permission.ACCESS_SECURITY_PRIVACY_CENTER"
+        ],
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.access.business_and_privacy_statement"
+            ]
+          }
+        ],
+        "metadata": [
+          {
+            "name": "metadata.access.business_and_privacy_statement",
+            "value": 'sos_message_data_privacy.json'
+          }
+        ]
+      },
+      {
+        "description": "DataShareExtAbility",
+        "name": "EmergencyDataShareExtAbility",
+        "icon": "$media:app_icon",
+        "srcEntry": "./ets/emergencydatashareextability/EmergencyDataShareExtAbility.ets",
+        "type": "dataShare",
+        "permissions": [
+          "ohos.permission.GET_TELEPHONY_STATE"
+        ],
+        "uri": "datashare://com.ohos.emergencycommunication",
+        "exported": true
+      },
+      {
+        "name": "com.ohos.emergencycommunication.EmergencyContactsInfoAbility",
+        "srcEntry": "./ets/emergencycallability/EmergencyContactsInfoAbility.ets",
+        "description": "$string:emergencyContact",
+        "icon": "$media:ic_warning",
+        "label": "$string:emergencyContact",
+        "exported": true,
+        "type": "sys/commonUI",
+        "permissions": [
+          "ohos.permission.GET_TELEPHONY_STATE"
+        ]
+      },
+      {
+        "name": "com.ohos.emergencycommunication.EmergencyInfoUIExtAbility",
+        "srcEntry": "./ets/emergencycallability/EmergencyInfoAbility.ets",
+        "description": "$string:emergencyInfo",
+        "icon": "$media:ic_warning",
+        "label": "$string:emergencyInfo",
+        "exported": true,
+        "type": "sys/commonUI",
+        "permissions": [
+          "ohos.permission.GET_TELEPHONY_STATE"
+        ]
+      }
+    ],
+    "requestPermissions": [
+      {
+        "name": "ohos.permission.APPROXIMATELY_LOCATION",
+        "reason": "$string:GET_APPROXIMATELY_LOCATION",
+        "usedScene": {
+          "abilities": [
+            "com.ohos.emergencycommunication.EmergencyCallAbility"
+          ]
+        }
+      },
+      {
+        "name": "ohos.permission.LOCATION",
+        "reason": "$string:GET_LOCATION",
+        "usedScene": {
+          "abilities": [
+            "com.ohos.emergencycommunication.EmergencyCallAbility"
+          ]
+        }
+      },
+      {
+        "name": "ohos.permission.SEND_MESSAGES",
+        "reason": "$string:SEND_MESSAGES",
+        "usedScene": {
+          "abilities": [
+            "com.ohos.emergencycommunication.EmergencyCallAbility"
+          ]
+        }
+      },
+      {
+        "name": "ohos.permission.MANAGE_SECURE_SETTINGS",
+        "reason": "$string:MANAGE_SECURE_SETTINGS"
+      },
+      {
+        "name": "ohos.permission.MANAGE_SETTINGS",
+        "reason": "$string:MANAGE_SECURE_SETTINGS"
+      },
+      {
+        "name": "ohos.permission.PLACE_CALL",
+        "reason": "$string:PLACE_CALL"
+      },
+      {
+        "name": "ohos.permission.GET_TELEPHONY_STATE",
+        "reason": "$string:GET_TELEPHONY_STATE"
+      },
+      {
+        "name": "ohos.permission.LOCATION_IN_BACKGROUND",
+        "reason": "$string:GET_LOCATION_IN_BACKGROUND",
+        "usedScene": {
+          "abilities": [
+            "com.ohos.emergencycommunication.EmergencyCallAbility"
+          ]
+        }
+      },
+      {
+        "name": "ohos.permission.GET_NETWORK_INFO",
+        "reason": "$string:GET_NETWORK_INFO"
+      },
+      {
+        "name": "ohos.permission.INTERNET",
+        "reason": "$string:ACCESS_NETWORK"
+      },
+      {
+        "name": "ohos.permission.CONTROL_LOCATION_SWITCH",
+        "reason": "$string:MANAGE_SECURE_SETTINGS"
+      },
+      {
+        "name": "ohos.permission.VIBRATE",
+        "reason": "$string:ATTEST_KEY"
+      },
+      {
+        "name": "ohos.permission.ACCESS_NOTIFICATION_POLICY",
+        "reason": "$string:ATTEST_KEY"
+      },
+      {
+        "name": "ohos.permission.START_ABILITIES_FROM_BACKGROUND",
+        "reason": "$string:GET_LOCATION_IN_BACKGROUND"
+      },
+      {
+        "name": "ohos.permission.MODIFY_AUDIO_SETTINGS"
+      },
+      {
+        "name": "ohos.permission.SET_TELEPHONY_STATE"
+      },
+      {
+        "name": "ohos.permission.ACCESS_SCREEN_LOCK_INNER"
+      },
+      {
+        "name": "ohos.permission.LAUNCH_DATA_PRIVACY_CENTER",
+        "reason": "$string:MANAGE_SECURE_SETTINGS"
+      },
+      {
+        "name": "ohos.permission.CALLED_BELOW_LOCK_SCREEN"
+      },
+      {
+        "name": "ohos.permission.CALLED_UIEXTENSION_ON_LOCK_SCREEN"
+      },
+      {
+        "name": "ohos.permission.READ_CONTACTS",
+        "reason": "$string:permission_reason_contacts",
+        "usedScene": {
+          "abilities": [
+            "com.ohos.emergencycommunication.SOSEmergencyCallAbility",
+            "com.ohos.emergencycommunication.SosHelpAbility",
+            "com.ohos.emergencycommunication.EmergencyInfoAbility",
+            "com.ohos.emergencycommunication.EmergencyCallAbility",
+            "com.ohos.emergencycommunication.EmergencyEarthquakeAbility",
+            "com.ohos.emergencycommunication.PersonalSafetySosAbility",
+            "com.ohos.emergencycommunication.EmergencyContactsInfoAbility",
+            "com.ohos.emergencycommunication.EmergencyInfoUIExtAbility"
+          ]
+        }
+      },
+      {
+        "name": "ohos.permission.RUNNING_LOCK"
+      },
+      {
+        "name": "ohos.permission.DEVICE_STANDBY_EXEMPTION"
+      },
+      {
+        "name": "ohos.permission.GET_BUNDLE_INFO"
+      },
+      {
+        "name": "ohos.permission.MANAGE_LOCAL_ACCOUNTS"
+      },
+      {
+        "name": "ohos.permission.SET_UNREMOVABLE_NOTIFICATION"
+      },
+      {
+        "name": "ohos.permission.ANSWER_CALL",
+        "reason": "$string:ANSWER_CALL",
+        "usedScene": {
+          "abilities": [
+            "EmergencyRescueCallAbility"
+          ],
+          "when": "inuse"
+        }
+      },
+      {
+        "name": "ohos.permission.LOCATION_SWITCH_IGNORED",
+        "usedScene": {
+          "abilities": [
+            "com.ohos.demomanager",
+            "com.ohos.parentcontrol",
+            "com.ohos.aml",
+            "com.ohos.findservice",
+            "com.huawei.hmsapp.samplemanagement",
+            "com.ohos.emergencycommunication"
+          ]
+        }
+      },
+      {
+        "name": "ohos.permission.NOTIFICATION_CONTROLLER"
+      }
+    ]
+  }
+}

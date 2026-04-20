@@ -1,0 +1,948 @@
+{
+    "string":[
+        {
+            "name":"dialing",
+            "value":"[TS_849087]_Dialing"
+        },
+        {
+            "name":"contactPerson",
+            "value":"[TS_849099]_Contacts"
+        },
+        {
+            "name":"videoCall",
+            "value":"[TS_849043]_Video call"
+        },
+        {
+            "name":"hangUpReply",
+            "value":"[TS_849069]_Respond with"
+        },
+        {
+            "name":"sms",
+            "value":"[TS_849010]_Message"
+        },
+        {
+            "name":"mergeCall",
+            "value":"[TS_849100]_Merge calls"
+        },
+        {
+            "name":"recording",
+            "value":"[TS_849103]_Record"
+        },
+        {
+            "name":"mute",
+            "value":"[TS_849036]_Mute"
+        },
+        {
+            "name":"exchange",
+            "value":"[TS_849097]_Swap"
+        },
+        {
+            "name":"partyIsRinging",
+            "value":"[TS_849076]_Ringing…"
+        },
+        {
+            "name":"maintain",
+            "value":"[TS_849071]_On hold"
+        },
+        {
+            "name":"keep",
+            "value":"[TS_849046]_Hold"
+        },
+        {
+            "name":"addCall",
+            "value":"[TS_849039]_Add call"
+        },
+        {
+            "name":"unknownNumber",
+            "value":"[TS_849119]_Unknown number"
+        },
+        {
+            "name":"answerThePhone",
+            "value":"[TS_849139]_Sorry, I can't talk right now."
+        },
+        {
+            "name":"cancel",
+            "value":"[TS_849115]_Cancel"
+        },
+        {
+            "name":"turn_off_airplane_and_calls",
+            "value":"[TS_849075]_Disable Airplane mode to make a call?"
+        },
+        {
+            "name":"contactMeLater",
+            "value":"[TS_849096]_I'm in a meeting. I'll get back to you ASAP."
+        },
+        {
+            "name":"backLater",
+            "value":"[TS_849017]_I'll call you back."
+        },
+        {
+            "name":"callHold",
+            "value":"[TS_849022]_On hold"
+        },
+        {
+            "name":"beThereSoon",
+            "value":"[TS_849145]_I'm on my way."
+        },
+        {
+            "name":"shutDown",
+            "value":"[TS_849135]_Disable"
+        },
+        {
+            "name":"emptyStr",
+            "value":" "
+        },
+        {
+            "name":"select_device",
+            "value":"[TS_878215]_Select device"
+        },
+        {
+            "name":"READ_CONTACTS",
+            "value":"[TS_849044]_Read contacts"
+        },
+        {
+            "name":"SET_TELEPHONY_STATE",
+            "value":"[TS_849082]_set telephony state"
+        },
+        {
+            "name":"voiceCall",
+            "value":"[TS_878824]_Voice"
+        },
+        {
+            "name":"incoming_call_rejection_sms",
+            "value":"[TS_860462]_Respond with text"
+        },
+        {
+            "name":"waitingInvitation",
+            "value":"[TS_878821]_Waiting for the other party to accept…"
+        },
+        {
+            "name":"emergency",
+            "value":"[TS_849121]_Emergency"
+        },
+        {
+            "name":"GET_TELEPHONY_STATE",
+            "value":"[TS_849131]_Get telephony state"
+        },
+        {
+            "name":"incoming_conflicts_drop_current_call",
+            "value":"[TS_878216]_Answering the incoming call will end your current active call."
+        },
+        {
+            "name":"rejectVideoMsg",
+            "value":"[TS_878826]_The other party rejected your video call request."
+        },
+        {
+            "name":"hangUp",
+            "value":"[TS_849055]_End"
+        },
+        {
+            "name":"symbol_comma",
+            "value":"[TS_865553]_,\t"
+        },
+        {
+            "name":"telephone_Conference",
+            "value":"[TS_849028]_Conference call"
+        },
+        {
+            "name":"PLACE_CALL",
+            "value":"[TS_849067]_place call"
+        },
+        {
+            "name":"separate_conference_failed",
+            "value":"[TS_865549]_Unable to separate call."
+        },
+        {
+            "name":"switchToVoice",
+            "value":"[TS_878818]_Voice"
+        },
+        {
+            "name":"START_ABILITIES_FROM_BACKGROUND",
+            "value":"[TS_849163]_Start abilities from background"
+        },
+        {
+            "name":"saveNumber",
+            "value":"[TS_849058]_Save number"
+        },
+        {
+            "name":"incoming_conflicts_drop_holding_call",
+            "value":"[TS_878213]_Answering this call will end the one currently on hold."
+        },
+        {
+            "name":"combine_conference_failed",
+            "value":"[TS_865550]_Unable to conference call."
+        },
+        {
+            "name":"incomingCall",
+            "value":"[TS_849143]_Incoming call"
+        },
+        {
+            "name":"switchVoiceCallMsg",
+            "value":"[TS_878828]_The other party switched to a voice call."
+        },
+        {
+            "name":"remind",
+            "value":"[TS_849077]_Reminder"
+        },
+        {
+            "name":"quickReply",
+            "value":"[TS_860464]_Quick response"
+        },
+        {
+            "name":"dialing_banner",
+            "value":"[TS_879900]_Dialing"
+        },
+        {
+            "name":"READ_CALENDAR",
+            "value":"[TS_860457]_Allows the app to read calendar information"
+        },
+        {
+            "name":"gotIt",
+            "value":"[TS_849050]_Got it"
+        },
+        {
+            "name":"SMS_Sent",
+            "value":"[TS_849124]_Message sent to %s."
+        },
+        {
+            "name":"KEEP_BACKGROUND_RUNNING",
+            "value":"[TS_849038]_Keep background running"
+        },
+        {
+            "name":"keyBoard",
+            "value":"[TS_878829]_Keypad"
+        },
+        {
+            "name":"phoneHandset",
+            "value":"[TS_849013]_Receiver"
+        },
+        {
+            "name":"wiredHeadset",
+            "value":"[TS_849032]_Wired headphones"
+        },
+        {
+            "name":"callBack",
+            "value":"[TS_861536]_Call back: %s"
+        },
+        {
+            "name":"answer",
+            "value":"[TS_849024]_Answer, button"
+        },
+        {
+            "name":"voiceToVideoConfirmMsg",
+            "value":"[TS_878819]_You have received a video call invitation. Accept it?"
+        },
+        {
+            "name":"combine_conference_upper_limit",
+            "value":"[TS_865552]_Maximum number of participants reached. Unable to merge calls."
+        },
+        {
+            "name":"CALENDAR_ACCESS_TOAST",
+            "value":"[TS_861535]_Grant access to Calendar in Settings first."
+        },
+        {
+            "name":"blueetoothDevice",
+            "value":"[TS_849095]_Bluetooth device"
+        },
+        {
+            "name":"DTMF_CONFIRM",
+            "value":"[TS_860455]_Yes"
+        },
+        {
+            "name":"GET_BUNDLE_INFO_PRIVILEGED",
+            "value":"[TS_849130]_Get bundle info privileged"
+        },
+        {
+            "name":"voip_of_XX",
+            "value":"[TS_878212]_XX VOIP"
+        },
+        {
+            "name":"incoming_conflicts_video_call",
+            "value":"[TS_879901]_Video answering this call will end the current call"
+        },
+        {
+            "name":"manageUsers",
+            "value":"[TS_849026]_Manage users"
+        },
+        {
+            "name":"message_Failed",
+            "value":"[TS_849048]_Message could not be sent."
+        },
+        {
+            "name":"RUNNING_LOCK",
+            "value":"[TS_849161]_running lock"
+        },
+        {
+            "name":"speaker",
+            "value":"[TS_849062]_Speaker"
+        },
+        {
+            "name":"NOTIFICATION_CONTROLLER",
+            "value":"[TS_849063]_Notification controller"
+        },
+        {
+            "name":"GET_WALLPAPER",
+            "value":"[TS_860453]_get wallpaper"
+        },
+        {
+            "name":"ACCELEROMETER",
+            "value":"[TS_849118]_accelerometer"
+        },
+        {
+            "name":"incoming_conflicts_drop_existing_call",
+            "value":"[TS_878210]_Answering this call will end the current call"
+        },
+        {
+            "name":"DTMF_CANCEL",
+            "value":"[TS_860459]_No"
+        },
+        {
+            "name":"CONNECTIVITY_INTERNAL",
+            "value":"[TS_860461]_connectivity internal"
+        },
+        {
+            "name":"customSMS",
+            "value":"[TS_849021]_Custom"
+        },
+        {
+            "name":"not_support_hold",
+            "value":"[TS_858441]_Could not hold call."
+        },
+        {
+            "name":"hangingUp",
+            "value":"[TS_849012]_Ending call…"
+        },
+        {
+            "name":"ok",
+            "value":"[TS_856445]_OK"
+        },
+        {
+            "name":"ANSWER_CALL",
+            "value":"[TS_849035]_Answer call"
+        },
+        {
+            "name":"hangUpCompleted",
+            "value":"[TS_849066]_Call ended"
+        },
+        {
+            "name":"accept",
+            "value":"[TS_878823]_Accept"
+        },
+        {
+            "name":"mobileNetwork",
+            "value":"[TS_849008]_Mobile network not available."
+        },
+        {
+            "name":"DTMF_DIALOG_INFO",
+            "value":"[TS_860456]_Send the following tones?\n\n%s"
+        },
+        {
+            "name":"WRITE_CALENDAR",
+            "value":"[TS_860463]_Allows the app to write calendar information"
+        },
+        {
+            "name":"videoCallToVoiceToast",
+            "value":"[TS_878827]_The other party selected voice call. Switched to receiver."
+        },
+        {
+            "name":"callui_description",
+            "value":"[TS_849083]_Phone"
+        },
+        {
+            "name":"VIBRATE",
+            "value":"[TS_849006]_vibrate"
+        },
+        {
+            "name":"switchCamera",
+            "value":"[TS_878820]_Switch cameras"
+        },
+        {
+            "name":"callBackReminder",
+            "value":"[TS_849054]_Callback reminder"
+        },
+        {
+            "name":"sent",
+            "value":"[TS_860460]_Send"
+        },
+        {
+            "name":"SEND_MESSAGES",
+            "value":"[TS_849126]_Send messages"
+        },
+        {
+            "name":"MANAGE_SECURE_SETTINGS",
+            "value":"[TS_849042]_manage secure settings"
+        },
+        {
+            "name":"voip_description",
+            "value":"[TS_878214]_VOIP"
+        },
+        {
+            "name":"rejectVideo",
+            "value":"[TS_878822]_Reject"
+        },
+        {
+            "name":"establishVideoCallFailed",
+            "value":"[TS_883754]_Unable to start a video call."
+        },
+        {
+            "name":"recorder_toast_error_400",
+            "value":"[TS_883147]_Unknown error."
+        },
+        {
+            "name":"callFailed_fdn_only",
+            "value":"[TS_898504]_Outgoing calls are restricted by FDN."
+        },
+        {
+            "name":"switchVideoCallFailed",
+            "value":"[TS_902856]_Unable to switch to video call."
+        },
+        {
+            "name":"no_cdma_volte_warn_text",
+            "value":"[TS_906168]_Calls are currently unavailable on SIM %1$s (China Telecom) because mobile network services aren't activated.\n\nFor assistance, contact China Telecom customer service at %2$s."
+        },
+        {
+            "name":"GET_NETWORK_INFO",
+            "value":"[TS_849157]_get network info"
+        },
+        {
+            "name":"open_phone_for_video_call",
+            "value":"[TS_919752]_Unfold for video"
+        },
+        {
+            "name":"open_phone_to_use_handset",
+            "value":"[TS_919740]_Unfold to use the receiver"
+        },
+        {
+            "name":"audio_output",
+            "value":"[TS_922772]_Audio output"
+        },
+        {
+            "name":"slide_to_answer",
+            "value":"[TS_919757]_Slide to answer"
+        },
+        {
+            "name":"GET_BUNDLE_INFO",
+            "value":"[TS_927070]_get app bundle name for voip call"
+        },
+        {
+            "name":"voip_dialing_banner",
+            "value":"[TS_927069]_Calling"
+        },
+        {
+            "name":"satellite_dialing",
+            "value":"[TS_917588]_Calling via Tiantong satellite network"
+        },
+        {
+            "name":"disableChangedToEarpiece",
+            "value":"[TS_917589]_Receiver not available during satellite calls."
+        },
+        {
+            "name":"satellite_dialing_tips",
+            "value":"[TS_917587]_This may take a moment. Please wait."
+        },
+        {
+            "name":"advertising_and_promotion",
+            "value":"[TS_919743]_Advertisement"
+        },
+        {
+            "name":"call_turn_off_recording",
+            "value":"[TS_919741]_End recording"
+        },
+        {
+            "name":"marked",
+            "value":"[TS_919755]_\t(Marked)"
+        },
+        {
+            "name":"taxi",
+            "value":"[TS_919742]_Taxi"
+        },
+        {
+            "name":"Real_Estate_Agency",
+            "value":"[TS_919748]_Estate agent"
+        },
+        {
+            "name":"call_mute_on",
+            "value":"[TS_919738]_Mute"
+        },
+        {
+            "name":"harassing_call",
+            "value":"[TS_919737]_Spam"
+        },
+        {
+            "name":"courier_and_food_delivery",
+            "value":"[TS_919756]_Delivery service"
+        },
+        {
+            "name":"financial_management_insurance",
+            "value":"[TS_919744]_Insurance & loans"
+        },
+        {
+            "name":"fraud_phone_call",
+            "value":"[TS_919751]_High risk"
+        },
+        {
+            "name":"PRIVACY_INDICATION",
+            "value":"[TS_934584]_Privacy Indication"
+        },
+        {
+            "name":"super_privacy_dialog_title",
+            "value":"[TS_934919]_Super Privacy mode"
+        },
+        {
+            "name":"super_privacy_dialog_call_summary",
+            "value":"[TS_934920]_Super Privacy mode is blocking microphone access. Temporarily disable it for this call?"
+        },
+        {
+            "name":"super_privacy_dialog_video_call_summary",
+            "value":"[TS_934918]_Super Privacy mode is blocking microphone and camera access. Temporarily disable it for this call?"
+        },
+        {
+            "name":"disable_super_privacy_and_answer",
+            "value":"[TS_934917]_Disable & answer"
+        },
+        {
+            "name":"SCREEN_UNLOCK",
+            "value":"[TS_944187]_access screen unlock when the app is in the background"
+        },
+        {
+            "name":"WRITE_CONTACTS",
+            "value":"[TS_943608]_Write contacts"
+        },
+        {
+            "name":"show_dialpad",
+            "value":"[TS_944582]_Show keypad"
+        },
+        {
+            "name":"hanging_up_voice_call",
+            "value":"[TS_944588]_End voice call"
+        },
+        {
+            "name":"READ_CALL_LOG",
+            "value":"[TS_943610]_Read Call Log"
+        },
+        {
+            "name":"close",
+            "value":"[TS_943611]_Close"
+        },
+        {
+            "name":"addToBlockListConfirm",
+            "value":"[TS_945497]_You will no longer receive phone calls and messages from this contact."
+        },
+        {
+            "name":"markAs",
+            "value":"[TS_943609]_Mark as"
+        },
+        {
+            "name":"wired_headset_selected",
+            "value":"[TS_944581]_Wired headphones selected"
+        },
+        {
+            "name":"switch_rear_camera",
+            "value":"[TS_944583]_Switch to rear camera"
+        },
+        {
+            "name":"adding_contact",
+            "value":"[TS_944591]_Add contacts"
+        },
+        {
+            "name":"hanging_up_video_call",
+            "value":"[TS_944585]_End video call"
+        },
+        {
+            "name":"recorded",
+            "value":"[TS_944580]_Recorded"
+        },
+        {
+            "name":"closeCountDown",
+            "value":"[TS_943607]_Close (%s)"
+        },
+        {
+            "name":"addToBlocklist",
+            "value":"[TS_945496]_Add to blocklist"
+        },
+        {
+            "name":"confirmAdd",
+            "value":"[TS_945495]_Add"
+        },
+        {
+            "name":"blueetooth_device_selected",
+            "value":"[TS_944589]_Bluetooth device selected"
+        },
+        {
+            "name":"custom",
+            "value":"[TS_943606]_Custom"
+        },
+        {
+            "name":"switching_audio_channels",
+            "value":"[TS_944584]_Switch audio channels"
+        },
+        {
+            "name":"unmute",
+            "value":"[TS_944586]_Unmute"
+        },
+        {
+            "name":"hide_dialpad",
+            "value":"[TS_944590]_Hide keypad"
+        },
+        {
+            "name":"cancel_waiting",
+            "value":"[TS_944587]_End hold"
+        },
+        {
+            "name":"switch_front_camera",
+            "value":"[TS_944593]_Switch to front camera"
+        },
+        {
+            "name":"ture_on_camera",
+            "value":"[TS_944592]_Enable camera"
+        },
+        {
+            "name":"addToExistingContact",
+            "value":"[TS_950926]_Add to existing contact"
+        },
+        {
+            "name":"createNewContact",
+            "value":"[TS_950927]_Create new contact"
+        },
+        {
+            "name":"video_answer",
+            "value":"[TS_951462]_Answer video call"
+        },
+        {
+            "name":"call_assistant_setting_title",
+            "value":"[TS_948032]_Celia Call"
+        },
+        {
+            "name":"call_assistant_translate",
+            "value":"[TS_948033]_Live translate"
+        },
+        {
+            "name":"call_assistant_voicefix",
+            "value":"[TS_948031]_Enhance voice"
+        },
+        {
+            "name":"call_assistant_text",
+            "value":"[TS_948035]_Type to speak"
+        },
+        {
+            "name":"call_assistant_brief",
+            "value":"[TS_948034]_Summarize"
+        },
+        {
+            "name":"voicemail",
+            "value":"[TS_863839]_Voicemail"
+        },
+        {
+            "name":"connecting",
+            "value":"[TS_964064]_Connecting…"
+        },
+        {
+            "name":"hicar_connection",
+            "value":"[TS_967977]_Obtains the HiCar connection information."
+        },
+        {
+            "name":"answering_call_prompt",
+            "value":"[TS_960012]_Say \"%s\" to answer"
+        },
+        {
+            "name":"answering_call_words",
+            "value":"[TS_960011]_接听电话"
+        },
+        {
+            "name":"reject_call_prompt",
+            "value":"[TS_960014]_Say \"%s\" to reject"
+        },
+        {
+            "name":"end_call_prompt",
+            "value":"[TS_960013]_Say \"%s\" to end"
+        },
+        {
+            "name":"hangup_call_words",
+            "value":"[TS_960015]_挂断电话"
+        },
+        {
+            "name":"hop_with_device_name",
+            "value":"[TS_973174]_Connected to %s"
+        },
+        {
+            "name":"silent_call_symbol",
+            "value":"[TS_974362]_Privacy enhanced call"
+        },
+        {
+            "name":"answeredTimeout",
+            "value":"[TS_977499]_Connecting…"
+        },
+        {
+            "name":"LeatherUIExtAbility_switch_between_calls",
+            "value":"[TS_978816]_Open cover to switch calls"
+        },
+        {
+            "name":"LeatherUIExtAbility_fraud_phone_calls",
+            "value":"[TS_978817]_Scam call"
+        },
+        {
+            "name":"LeatherUIExtAbility_in_super_privacy",
+            "value":"[TS_978813]_Super Privacy mode is blocking microphone access. Open the cover to answer."
+        },
+        {
+            "name":"one_finger_double_click",
+            "value":"[TS_988328]_Double-tap to activate"
+        },
+        {
+            "name":"InfoEdit_back",
+            "value":"[TS_993021]_Back"
+        },
+        {
+            "name":"sim_card_num_no_space",
+            "value":"[TS_992700]_SIM %s"
+        },
+        {
+            "name":"call_hd_symbol",
+            "value":"[TS_992699]_HD"
+        },
+        {
+            "name":"hanging_up_voice_call_button",
+            "value":"[TS_989419]_End voice call, button"
+        },
+        {
+            "name":"hanging_up_video_call_button",
+            "value":"[TS_989418]_End video call, button"
+        },
+        {
+            "name":"hold_calling",
+            "value":"[TS_998184]_Call on hold"
+        },
+        {
+            "name":"PREPARE_APP_TERMINATE",
+            "value":"[TS_997758]_prepare app terminate"
+        },
+        {
+            "name":"my_video",
+            "value":"[TS_998186]_My video feed"
+        },
+        {
+            "name":"app_voip_dialing_banner",
+            "value":"[TS_999108]_%s | Calling…"
+        },
+        {
+            "name":"app_voip_incoming_voice",
+            "value":"[TS_999111]_%s | Voice call"
+        },
+        {
+            "name":"app_hold_conference",
+            "value":"[TS_999113]_%s | Conference call on hold"
+        },
+        {
+            "name":"app_voip_incoming_video",
+            "value":"[TS_999114]_%s | Video call"
+        },
+        {
+            "name":"turn_off_camera",
+            "value":"[TS_999115]_Disable camera"
+        },
+        {
+            "name":"app_hold_call",
+            "value":"[TS_999112]_%s | Call on hold"
+        },
+        {
+            "name":"app_video_conference",
+            "value":"[TS_999110]_%s | Video conference call"
+        },
+        {
+            "name":"app_voice_conference",
+            "value":"[TS_999109]_%s | Conference call"
+        },
+        {
+            "name":"inTheConference",
+            "value":"[TS_1008166]_Meeting in progress"
+        },
+        {
+            "name":"joining",
+            "value":"[TS_1008167]_Joining…"
+        },
+        {
+            "name":"unlock_try_again",
+            "value":"[TS_1010560]_Unlock your device and try again."
+        },
+        {
+            "name":"antifraud_center_phone_call",
+            "value":"[TS_1020902]_Suspected scam"
+        },
+        {
+            "name":"national_antifraud_center_tips",
+            "value":"[TS_1020901]_National Anti-Fraud Center alert"
+        },
+        {
+            "name":"anti_fraud_continue_call",
+            "value":"[TS_1024168]_Continue call"
+        },
+        {
+            "name":"anti_fraud_hangup_black",
+            "value":"[TS_1024169]_Hang up & block"
+        },
+        {
+            "name":"anti_fraud_deceived",
+            "value":"[TS_1024167]_Scam alert"
+        },
+        {
+            "name":"anti_fraud_identifies",
+            "value":"[TS_1024166]_Checking for risks"
+        },
+        {
+            "name":"anti_fraud_risk_reminder",
+            "value":"[TS_1024170]_This may be a scam call. Please be vigilant."
+        },
+        {
+            "name":"call_assistant_answer_setting_title",
+            "value":"[TS_1026217]_Auto-answer"
+        },
+        {
+            "name":"peer_video",
+            "value":"[TS_1000579]_The other party's video image"
+        },
+        {
+            "name":"flip_phone_for_front_camera",
+            "value":"[TS_1056314]_The camera is located on the rear of the phone.\nTo see yourself in the frame, fold the phone and turn it so the camera is facing you."
+        },
+        {
+            "name":"two_way_silent_call",
+            "value":"[TS_1050127]_Two-way privacy enhanced call"
+        },
+        {
+            "name":"video_ringtone_delete_dialog_tip1",
+            "value":"[TS_1071091]_Delete selected items?"
+        },
+        {
+            "name":"video_ringtone_no_delete",
+            "value":"[TS_1071083]_Unable to delete items while they are in use."
+        },
+        {
+            "name":"no_video_ringtone",
+            "value":"[TS_1071078]_No video ringtones"
+        },
+        {
+            "name":"video_ringtone_from_photo_picker",
+            "value":"[TS_1071088]_Select from Gallery"
+        },
+        {
+            "name":"manage",
+            "value":"[TS_1071095]_Manage"
+        },
+        {
+            "name":"video_ringtone",
+            "value":"[TS_1071079]_Video ringtones"
+        },
+        {
+            "name":"my_video_ringtone",
+            "value":"[TS_1071096]_My ringback video"
+        },
+        {
+            "name":"video_ringtone_deselect_all",
+            "value":"[TS_1071082]_Deselect all"
+        },
+        {
+            "name":"video_ringtone_select_all",
+            "value":"[TS_1071094]_Select all"
+        },
+        {
+            "name":"video_ringtone_size_limit",
+            "value":"[TS_1072008]_Select a video smaller than %s."
+        },
+        {
+            "name":"delete",
+            "value":"[TS_1071084]_Delete"
+        },
+        {
+            "name":"use",
+            "value":"[TS_1071099]_Apply"
+        },
+        {
+            "name":"GYROSCOPE",
+            "value":"[TS_1071627]_gyroscope"
+        },
+        {
+            "name":"anti_fraud_beware_being_deceived",
+            "value":"[TS_1082470]_Scam alert"
+        },
+        {
+            "name":"penglai_mode_notice",
+            "value":"[TS_1083670]_Unable to do this in Penglai mode."
+        },
+        {
+            "name":"new_calling_can_only_use_in_full_screen",
+            "value":"[TS_1103583]_Advanced Calling services only available in full-screen view."
+        },
+        {
+            "name":"anti_fraud_best_mind_tips",
+            "value":"[TS_1106462]_Beijing Anti-Fraud Center alert"
+        },
+        {
+            "name":"disableChangedToEarpiece_hyacinth",
+            "value":"[TS_1100828]_Receiver not available during Hyacinth satellite calls."
+        },
+        {
+            "name":"notepad",
+            "value":"[TS_1100829]_Notepad"
+        },
+        {
+            "name":"hyacinth_dialing",
+            "value":"[TS_1100827]_Calling via Hyacinth satellite network"
+        },
+        {
+            "name":"call_summarization_is_turned_off",
+            "value":"[TS_1110552]_Call summary disabled. Feature not available on multi-person calls."
+        },
+        {
+            "name":"summarizeOn",
+            "value":"[TS_1109369]_Call summary"
+        },
+        {
+            "name":"new_calling",
+            "value":"[TS_1113271]_Advanced Calling"
+        },
+        {
+            "name":"try_new_calling",
+            "value":"[TS_1113272]_Try Advanced Calling?"
+        },
+        {
+            "name":"conference_different_cards",
+            "value":"[TS_1119151]_Conference calls can't be made with different SIM cards on the same device."
+        },
+        {
+            "name":"please_expand_your_phone",
+            "value":"[TS_1119153]_Unfold to view."
+        },
+        {
+            "name":"summary_failed_turned_on",
+            "value":"[TS_1119149]_Unable to turn on call summary."
+        },
+        {
+            "name":"summary_is_abnormal",
+            "value":"[TS_1119148]_Call summary service error. Try again later."
+        },
+        {
+            "name":"conference_calls_are_not_available",
+            "value":"[TS_1119152]_Conference calls are not available"
+        },
+        {
+            "name":"wechat_multiCall",
+            "value":"[TS_1122360]_%s | Group call"
+        },
+        {
+            "name":"wechat_videoCall",
+            "value":"[TS_1122359]_%s | Video call"
+        },
+        {
+            "name":"wechat_voiceCall",
+            "value":"[TS_1122361]_%s | Voice call"
+        },
+        {
+            "name":"selected_device",
+            "value":"[TS_1128505]_%s selected"
+        },
+        {
+            "name":"not_support_toast",
+            "value":"[TS_1139100]_This operation is not supported in this mode."
+        }
+    ]
+}

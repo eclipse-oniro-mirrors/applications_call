@@ -1,0 +1,25 @@
+{
+    "string":[
+        {
+            "name":"watch_loading",
+            "value":"កំពុងផ្ទុក…",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"watch_permission_history_no_record",
+            "value":"គ្មានកំណត់ត្រាទេ",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"watch_traffic_ranking_the_month",
+            "value":"ការប្រើប្រាស់ទិន្នន័យចល័ត (ប្រចាំខែ)",
+            "attr":{
+                "priority":"LT"
+            }
+        }
+    ]
+}

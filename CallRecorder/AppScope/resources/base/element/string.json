@@ -1,0 +1,11 @@
+{
+    "string":[
+        {
+            "name":"app_name",
+            "value":"Call recordings",
+            "attr":{
+                "priority":"LT"
+            }
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+  "mainTitleResource": "$string:number_identity_setting_title",
+  "dstBundleName": "com.ohos.callsetting",
+  "dstAbilityName": "com.ohos.callsetting.NumberIdentityPrivacyCenterUIExtAbility",
+  "customDisplayProp": [
+    {
+      "propKey": "const.telephony.slotCount",
+      "regex": "1|2"
+    }
+  ]
+}

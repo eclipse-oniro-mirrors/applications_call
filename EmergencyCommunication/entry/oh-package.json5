@@ -1,0 +1,20 @@
+{
+  "name": "emergencycall",
+  "version": "1.0.0",
+  "description": "Please describe the basic information.",
+  "main": "",
+  "author": "",
+  "license": "",
+  "dependencies": {
+//    "@hms-paf/ui-widget-permission": "14.16.9-327",
+//    "@hms-paf/ui-widget-consent": "14.16.9-327",
+//    "@hms-paf/ui-widget-base": "14.16.9-327",
+//    "@hms-paf/ui-widget-webview": "14.16.9-327",
+//    "@hms-security/consent": "6.12.5-300",
+//    '@hms-security/consent-base': "6.12.5-300",
+//    "@hms-security/consent_grs_system": "6.12.5-300",
+//    "@hms-paf/ui-widget-permission-v2": "14.17.5-300",
+//    "@hms-paf/ui-widget-webview-v2": "14.17.5-300"
+  }
+}
+

@@ -1,0 +1,40 @@
+{
+    "plural":[
+        {
+            "name":"call_numbers_finish",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"ཁ་པར་གཏོང་ལེན་གྱི་སྒྲ་ཕབ་ %d ལེགས་འགྲུབ་བྱུང་།",
+                    "attr":{
+                        "priority":"LT"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"use_numbers",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"ཨང་གྲངས་ %d",
+                    "attr":{
+                        "priority":"LT"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"is_delete_plural_number",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"ཨང་གྲངས་ %d སུབ་ཀྱི་ཡིན་ནམ།",
+                    "attr":{
+                        "priority":"LT"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,365 @@
+{
+    "plural":[
+        {
+            "name":"im_message_smc_connecting",
+            "value":[
+                {
+                    "quantity":"one",
+                    "value":"Conectándose al satélite (%d)…",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"other",
+                    "value":"Conectándose al satélite (%d)…",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"satellite_message_fifteen_minute",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"Hace %d min",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"Hace %d min",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"satellite_reconnecting",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"Reconectando (%d s)…",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"Reconectando (%d s)…",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"satellite_service_details_01",
+            "value":[
+                {
+                    "quantity":"one",
+                    "value":"Las llamadas por satélite Tiantong se limitan a %d minuto como máximo.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"other",
+                    "value":"Las llamadas por satélite Tiantong se limitan a %d minutos como máximo.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"satellite_call_duration_limit_disconnect_tips",
+            "value":[
+                {
+                    "quantity":"one",
+                    "value":"La duración máxima de las llamadas es de %1$s minutos. Esta llamada finalizará en %2$s segundo.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"other",
+                    "value":"La duración máxima de las llamadas es de %1$s minutos. Esta llamada finalizará en %2$s segundos.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"im_message_status_sending",
+            "value":[
+                {
+                    "quantity":"one",
+                    "value":"Enviando (%d)…",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"other",
+                    "value":"Enviando (%d)…",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"satellite_call_temp_limit_disconnect_tips",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"Dispositivo demasiado caliente. La llamada finalizará en %s segundos.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"Dispositivo demasiado caliente. La llamada finalizará en %s segundo.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"im_message_smc_to_receive",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"%s respuestas más pendientes de recibir",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"%s respuesta más pendiente de recibir",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"number_identity_permission_dialog_desc",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"Este servicio requiere %d permisos:",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"Este servicio requiere %d permiso:",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"im_message_smc_receiving",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"Recibiendo (%d)…",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"Recibiendo (%d)…",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"not_link_satellite_dialog_negative",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"Salir (%d)",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"Salir (%d)",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"video_ringtone_selected_tip",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"%d seleccionados",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"%d seleccionado",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"call_time_sec",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"%d segundos",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"%d segundo",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"call_time_min",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"%d minutos",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"%d minuto",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"call_time_hour",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"%d horas",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"%d hora",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"satellite_countdown",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"La disponibilidad del satélite está a punto de finalizar. Se desconectará en %d segundos.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"La disponibilidad del satélite está a punto de finalizar. Se desconectará en %d segundo.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"not_link_hyacinth_satellite_auto_exit_notification_Text",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"Se ha deshabilitado Comunicaciones por satélite Hyacinth porque no se ha establecido conexión satelital durante %d segundos.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"Se ha deshabilitado Comunicaciones por satélite Hyacinth porque no se ha establecido conexión satelital durante %d segundo.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"hyacinth_not_link_satellite_dialog_message",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"No se ha establecido conexión satelital durante %d segundos. Se deshabilitará Comunicaciones por satélite Hyacinth.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"No se ha establecido conexión satelital durante %d segundo. Se deshabilitará Comunicaciones por satélite Hyacinth.",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"hyacinth_available_time",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"Disponible para las próximas %d horas",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"Disponible para la próxima %d hora",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        }
+    ]
+}

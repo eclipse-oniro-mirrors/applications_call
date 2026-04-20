@@ -1,0 +1,17 @@
+{
+  "plural":[
+    {
+      "name":"hoursLater",
+      "value":[
+        {
+          "quantity":"one",
+          "value":"In %d hour"
+        },
+        {
+          "quantity":"other",
+          "value":"In %d hours"
+        }
+      ]
+    }
+  ]
+}

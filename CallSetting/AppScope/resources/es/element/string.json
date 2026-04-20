@@ -1,0 +1,12 @@
+{
+    "string":[
+        {
+            "name":"callSetting_title",
+            "value":"Ajustes de llamadas",
+            "attr":{
+                "priority":"translate"
+            }
+        }
+    ]
+}
+

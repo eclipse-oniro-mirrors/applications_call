@@ -1,0 +1,3060 @@
+{
+    "string":[
+        {
+            "name":"beidou_satellite_message_service_no_net",
+            "value":"No hay conexión a Internet. Conéctate a Internet y vuelve a intentarlo.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"go_use_beidou_message_tips",
+            "value":"Has habilitado el servicio Mensajería de satélite BeiDou. Ve a Mensajes para comenzar a usarlo.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"hangUp",
+            "value":"Finalizar",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"start_beidou_satellite_message",
+            "value":"Mensajería de satélite BeiDou",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"wearable_bluee_text",
+            "value":"Cuando el reloj esté conectado al teléfono, los datos móviles del reloj se deshabilitarán automáticamente para ahorrar batería. Se volverán a habilitar si se desconectan los dispositivos.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"save",
+            "value":"Guardar",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Apn_enum_None",
+            "value":"Ninguno",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"wearable_roaming_subtitle",
+            "value":"Habilita los datos durante la itinerancia. Ponte en contacto con tu operador para obtener más detalles.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_data_networkProvider",
+            "value":"Operador",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"APN_MMS",
+            "value":"MMS",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"do_not_show_again",
+            "value":"No volver a mostrar",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"APN_ADD_APN",
+            "value":"APN nuevo",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"APN_common",
+            "value":"Generales",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_dataRoaming",
+            "value":"Itinerancia de datos",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data",
+            "value":"Datos móviles",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Apn_confirm",
+            "value":"Aceptar",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"gotIt",
+            "value":"Aceptar",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_charges",
+            "value":"Se pueden aplicar tarifas por uso de datos.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"go_use_beidou_satellite_message",
+            "value":"¿Quieres ir a la aplicación Mensajes?",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"beidou_satellite_message_service_details_1",
+            "value":"%s. Esta función solo está disponible para usuarios de China Mobile que tengan funciones de comunicación por satélite activadas para su cuenta. Para obtener más información, ponte en contacto con el servicio de atención al cliente de China Mobile.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"beidou_satellite_message_no_sim_card_descriptions",
+            "value":"Para utilizar este servicio, inserta una tarjeta SIM de China Mobile con Mensajería de satélite BeiDou activada.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"APN_Not_set",
+            "value":"Sin configurar",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"APN_NAME",
+            "value":"Nombre del punto de acceso (APN)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"wearable_bluee_title",
+            "value":"Función Bluetooth conectada",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"go_to_use",
+            "value":"Ir",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Apn_The_name_cannot_be_empty",
+            "value":"El nombre es obligatorio.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"beidou_satellite_message",
+            "value":"Mensajería de satélite BeiDou",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Apn_The_APN_cannot_be_empty",
+            "value":"El APN es obligatorio.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"APN_EDIT_APN",
+            "value":"Editar AP",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"im_smc_tips_starfinder_blocking",
+            "value":"%1$s\nVe a un espacio abierto",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"im_smc_tips_outdoor_blocking",
+            "value":"Obstrucción detectada",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_best",
+            "value":"Conectado al mejor satélite",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"go_setting",
+            "value":"Ir a Ajustes",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Apn_Deleting_an_APN",
+            "value":"Eliminar APN",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_call_notice",
+            "value":"Nota",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_setting",
+            "value":"Ajustes",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"preference_settings",
+            "value":"Modo",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"message_status_sent",
+            "value":"Enviado",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Call_forward_user_unreachable",
+            "value":"Cuando no esté disponible",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_no_sim_card",
+            "value":"No hay ninguna SIM disponible",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"fold_window_dialog_remind_title",
+            "value":"Abre el teléfono",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"voicemail",
+            "value":"Buzón de voz",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"fusion_call_switch_short_notification",
+            "value":"Permite mejorar la calidad de las llamadas vía WLAN o datos móviles cuando la recepción de la red es deficiente. Para obtener más información sobre cómo se procesan tus datos personales, consulta la %1$s.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"distributed_call_settings_sms_sharing_title",
+            "value":"Mensajes",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"registration_failed",
+            "value":"Error de registro de red",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"motion_reduce_call_descrition",
+            "value":"Levanta el teléfono para bajar el volumen del timbre de las llamadas entrantes.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_no_region_card_descriptions",
+            "value":"Las comunicaciones por satélite Tiantong no se admiten en la región actual. Para obtener más información sobre las regiones que las admiten, consulta las preguntas frecuentes.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_signal_descriptions",
+            "value":"China Telecom\nSatélite Tiantong",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"speedDial",
+            "value":"Marcación rápida",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_notification_title",
+            "value":"Función Comunicaciones por satélite deshabilitada",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"start_skycom_satellite_communications",
+            "value":"Comunicaciones por satélite Tiantong",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"distributed_call_settings_network_sharing_title_pad",
+            "value":"Internet",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"video_ring_tone",
+            "value":"Ringback tones de vídeo",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Notify_during_call",
+            "value":"Informarme de las llamadas entrantes durante una llamada.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Change_the",
+            "value":"Editar",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Apn_APN_enabled",
+            "value":"APN habilitado",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"automatic_carrier_selection",
+            "value":"¿Seleccionar un operador de forma automática?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"distributed_call_settings_phone_sharing_title",
+            "value":"Llamadas telefónicas",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"beidou_satellite_message_select_sim_card",
+            "value":"Selecciona una tarjeta SIM para la mensajería de satélite. Confirma con tu operador si este servicio está activado.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"call_about",
+            "value":"Acerca de",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Call_forward_no_busy",
+            "value":"Cuando la línea esté ocupada",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"stop_dialog",
+            "value":"Deshabilitar",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_message_just_now",
+            "value":"Ahora mismo",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"cancel_space",
+            "value":"Cancelar",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_cancel",
+            "value":"Cancelar",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"more",
+            "value":"Más",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_revoke_authorization_message",
+            "value":"Este servicio dejará de estar disponible si lo deshabilitas. ¿Deshabilitar de todos modos?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_network",
+            "value":"Redes móviles",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_register",
+            "value":"Registrado en la red.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"upper_tilt_phone",
+            "value":"Inclina el dispositivo hacia arriba",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"number_identity_permission_dialog_name_1",
+            "value":"Contactos",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"video_ring_tone_desc",
+            "value":"Reproducir ringback tones de vídeo para llamadas entrantes y salientes.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"number_identity_permission_dialog_name_3",
+            "value":"Registros de llamadas",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"ERROR_CODE_NOT_OPENED_TIANDIWINGCARD",
+            "value":"Los servicios satelitales no están activados actualmente para esta SIM. Ponte en contacto con tu operador para obtener asistencia.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"number_identity_permission_dialog_name_2",
+            "value":"Mensajes",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"APN_Restoring_default_APN_settings",
+            "value":"Restableciendo los ajustes predeterminados de APN…",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_card2",
+            "value":"Red de SIM 2",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_data_card1",
+            "value":"Red de SIM 1",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Call_forward_deactivated",
+            "value":"Desactivado",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"portrait_reminder",
+            "value":"Pon el teléfono en posición horizontal",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"confim_space",
+            "value":"Aceptar",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_exited_for_system_error",
+            "value":"Error del sistema. Se ha deshabilitado la función Comunicaciones por satélite Tiantong. Vuelve a habilitarla e inténtalo de nuevo.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_exited_for_system_error",
+            "value":"Error del sistema. La función Comunicaciones por satélite Hyacinth se ha deshabilitado. Vuelve a habilitarla y e inténtalo de nuevo.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"voice_control",
+            "value":"Control por voz",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_location_permission_descriptions",
+            "value":"Se utiliza para alinear el dispositivo con el satélite y añadir información de ubicación a tus mensajes.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"distributed_call_settings_network_sharing_title",
+            "value":"Internet",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"fold_window_dialog_remind_message",
+            "value":"Cuando utilices comunicaciones satelitales, mantén el teléfono abierto y en posición horizontal.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"re_calibrate",
+            "value":"Reintentar",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Call_waiting",
+            "value":"Llamada en espera",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"motion_reduce_call_descrition_pad",
+            "value":"Levanta el dispositivo para bajar el volumen del timbre de las llamadas entrantes.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"advertising_and_promotion",
+            "value":"Publicidad",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"shut_down",
+            "value":"No",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"super_privacy_dialog_title",
+            "value":"Modo Superprivacidad",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_Automatic_selection",
+            "value":"Seleccionar automáticamente",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_network",
+            "value":"Red satelital",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Call_forward_unconditional",
+            "value":"Desviar siempre",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"im_message_smc_shake",
+            "value":"Inclina el dispositivo para completar el círculo",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"open_mobile_data",
+            "value":"Habilitar datos móviles",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"float_left_right_phone",
+            "value":"Encuentra el satélite",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"call_history_merging",
+            "value":"Unir registro de llamadas",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"landscape_reminder",
+            "value":"Mantén el teléfono en posición vertical",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"APN_TITLE",
+            "value":"APN",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_tips",
+            "value":"Nota",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"re_connecting_satellite",
+            "value":"Reconectar",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Apn_OK",
+            "value":"Aceptar",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_select_sim_card",
+            "value":"Selecciona una tarjeta SIM para disfrutar de llamadas y mensajes por satélite. Confirma con tu operador si este servicio está activado.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"motion_quick_call_title",
+            "value":"Responder llamadas",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"by_time",
+            "value":"Por fecha y hora",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_call_message_notice",
+            "value":"Alguien ha intentado llamarte o enviarte un mensaje. Para ver los detalles, conéctate al satélite y abre las aplicaciones Teléfono o Mensajes.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"motion_pick_up_reduce_volume",
+            "value":"Levantar para bajar el volumen",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"To",
+            "value":"Desviar a",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_signal",
+            "value":"Señal",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"float_upper_down_phone",
+            "value":"Coloca la pelota en el centro",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"motion_pick_up_reduce_volume_pad",
+            "value":"Levantar para bajar el volumen",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"aim_satellite",
+            "value":"Buscar satélite",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_not_enabled",
+            "value":"Comunicaciones por satélite Tiantong no habilitada.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"re_wait_loading",
+            "value":"Volver a buscar",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_enhance_status",
+            "value":"Conexión+",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"smc_keep_posture",
+            "value":"No muevas el teléfono",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_data_enabled4G",
+            "value":"Habilitar 4G",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"new_satellite_signal_descriptions",
+            "value":"Satélite Tiantong",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"open_mobile_data_detail",
+            "value":"Esta función requiere una conexión de datos móviles. Ve a Ajustes para habilitar los datos móviles.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"distributed_network_never_connect",
+            "value":"Conexión manual",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"wifi_calling_tips",
+            "value":"Si has activado la función Llamadas vía WLAN, el teléfono puede establecer las llamadas por redes WLAN o por la red de tu operador, en función de la preferencia que hayas establecido y de qué señal tenga más potencia. Antes de activar esta función, consulta con tu operador las tarifas aplicables y otros detalles.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_hunt_success",
+            "value":"Conectado al satélite",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Apn_cancel",
+            "value":"Cancelar",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"float_window_keep_posture",
+            "value":"Mantén esta posición",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_data_enabled5G",
+            "value":"Habilitar 5G",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_service_location",
+            "value":"Localización",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"left_rotate_phone",
+            "value":"Gira el dispositivo a la izquierda",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"float_keep_current_posture",
+            "value":"Mantén esta posición",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"APN_TITLE_MSG",
+            "value":"Generales",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_hunt_failed",
+            "value":"Error de conexión",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"advance_options_title",
+            "value":"Más",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"send_failed",
+            "value":"Error al enviar",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"device_calibrate_failed",
+            "value":"Error de calibración",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"incoming_notification_setting",
+            "value":"Notificaciones de llamadas entrantes",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"ERROR_CODE_OTHERS",
+            "value":"Error de red. Ponte en contacto con tu operador para obtener asistencia.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"device_offset_reminder",
+            "value":"Dirige el dispositivo hacia el satélite",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"answer_voice_calls_by_flipping",
+            "value":"Se requiere una confirmación manual si silencias el timbre antes de abrir el teléfono.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"8300999",
+            "value":"Error desconocido.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_closeAutoSelect",
+            "value":"Deshabilitar selección automática",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"motion_quick_call_descrition_fold_teton",
+            "value":"Acerca el teléfono al oído para responder una llamada entrante. Si estás utilizando el modo altavoz o auriculares Bluetooth, se pasará al modo auricular si se levanta el teléfono.\n\n*Solo disponible con el dispositivo cerrado.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"incoming_call_rejection_sms",
+            "value":"Responder con SMS",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"fusion_call_switch_short_notification_sub2",
+            "value":"Declaración acerca de Mejora en la calidad de las llamadas y la privacidad",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Deactivation",
+            "value":"Deshabilitar",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"new_satellite_descriptions",
+            "value":"Satélite Tiantong",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_volte",
+            "value":"Llamadas VoLTE HD",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"keep_current_posture",
+            "value":"Mantén esta posición",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"app_about_name",
+            "value":"Teléfono",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Apn_The_MCC_must_be_a_3_digit_number",
+            "value":"El campo MCC debe contener 3 dígitos.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"super_privacy_dialog_call_summary",
+            "value":"El modo Superprivacidad está bloqueando el acceso al micrófono. ¿Quieres deshabilitarlo temporalmente para esta llamada?",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_service_select_sim",
+            "value":"Seleccionar SIM",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_message",
+            "value":"Mensajes",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"im_smc_calibrate_failed",
+            "value":"Error de calibración",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_phone",
+            "value":"Teléfono",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"disable_super_privacy_and_call",
+            "value":"Deshabilitar y llamar",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"APN_Reset_to_Default",
+            "value":"Restablecer valores predeterminados",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"others",
+            "value":"Otros",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"selectContacts",
+            "value":"Seleccionar contacto",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"distributed_network_auto_connect",
+            "value":"Conexión automática",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"phone_ring_tone",
+            "value":"Tono",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"disable_super_privacy_and_answer",
+            "value":"Deshabilitar y responder",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"wifi_calling",
+            "value":"Llamadas vía WLAN",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Apn_MNC_must_be_2_or_3_digits",
+            "value":"El campo MNC debe contener 2 o 3 dígitos.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"motion_call_setting_search_system",
+            "value":"Sistema",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"end_call_by_power",
+            "value":"Colgar con botón de encendido/apagado",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"WiFi_first",
+            "value":"WLAN preferida",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"motion_muting_reduce_call_title",
+            "value":"Silenciar tono/Bajar volumen",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"motion_flip_mute_volume",
+            "value":"Voltear para silenciar el tono",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_exit",
+            "value":"Deshabilitar",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"enter_in_call",
+            "value":"No se puede habilitar el servicio Comunicaciones por satélite Tiantong durante una llamada.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"sim_select",
+            "value":"SIM",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"frequently_asked_questions",
+            "value":"Preguntas frecuentes",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"hicall_user_info_skip",
+            "value":"Omitir",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"device_calibrating",
+            "value":"Calibrando…",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"im_smc_received_satellite_return",
+            "value":"Confirmación de satélite recibida",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_service_no_phone_number",
+            "value":"Número desconocido",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_not_serve",
+            "value":"Sin servicio",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"exit_satellite_service_tips",
+            "value":"¿Quieres deshabilitar Comunicaciones por satélite Tiantong?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"full_screen",
+            "value":"Pantalla completa",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"APN_Creating_an_APN",
+            "value":"APN nuevo",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_data_turn_on_data_roaming",
+            "value":"La itinerancia de datos puede generar tarifas por uso de datos adicionales. ¿Habilitar de todos modos?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"not_link_satellite_dialog_message",
+            "value":"No se ha establecido conexión con el satélite durante %d segundos. Se deshabilitará Comunicaciones por satélite Tiantong.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_settings_skytone_mode",
+            "value":"No disponible cuando se utiliza SkyTone.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_revoke_authorization",
+            "value":"Deshabilitar servicio",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"meetime_network_descriptions",
+            "value":"Envía y recibe mensajes de satélite BeiDou a través de las aplicaciones Mensajes o MeeTime.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"customer_service",
+            "value":"Línea de atención al cliente",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"lower_tilt_phone",
+            "value":"Inclina el dispositivo hacia abajo",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"unknown",
+            "value":"Desconocido",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_settings_explain",
+            "value":"Nota",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_settings_details_descriptions3",
+            "value":"Cuando te conectes al satélite Tiantong, se enviará tu ubicación precisa al operador del satélite.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"enabled",
+            "value":"Habilitar",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_Search",
+            "value":"Buscando...",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"distributed_call_settings_sms_sharing_title_pad",
+            "value":"Mensajes",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"float_window_keep_posture_check_occlusion",
+            "value":"Asegúrate de que no haya obstáculos en el camino.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"float_window_keep_posture_wait_patiently",
+            "value":"Espera.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_able",
+            "value":"Redes disponibles",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Turn_on",
+            "value":"Habilitar",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"skycom_satellite_communications",
+            "value":"Comunicaciones por satélite Tiantong",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"closed",
+            "value":"Desactivado",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"about_personal_info_list",
+            "value":"Información personal recopilada",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Apn_give_up_the_modification",
+            "value":"¿Descartar los cambios?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"401",
+            "value":"Error de parámetro.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_permission_count",
+            "value":"Este servicio requiere el siguiente permiso:",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_permission_usage_details",
+            "value":"Permisos de Comunicaciones por satélite Tiantong",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_search_failed",
+            "value":"Satélite no encontrado",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"device_calibrating_tips",
+            "value":"Inclina el dispositivo para completar el círculo",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"motion_flip_mute_volume_pad",
+            "value":"Voltear para silenciar el tono",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"open_phone_to_answer_calls",
+            "value":"Abrir para responder llamadas de voz",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"find_out_how_we_use_your_data",
+            "value":"Cómo utilizamos tus datos",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"ERROR_CODE_NOT_ACTIVATED_SIM",
+            "value":"El IMEI de este dispositivo no está registrado en la red satelital de Tiantong.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Call_forward_no_reply",
+            "value":"Cuando no haya respuesta",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_general",
+            "value":"Generales",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"super_privacy_dialog_video_call_summary",
+            "value":"El modo Superprivacidad está bloqueando el acceso al micrófono y a la cámara. ¿Quieres deshabilitarlo temporalmente para esta llamada?",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"distributed_call_settings_phone_sharing_title_pad",
+            "value":"Llamadas telefónicas",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"business_and_privacy_statement",
+            "value":"Declaraciones de privacidad",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"right_rotate_phone",
+            "value":"Gira el dispositivo a la derecha",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Call_forward",
+            "value":"Ajustes de desvío de llamadas",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"answer_calls_list",
+            "value":"Levantar para responder",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"vowifi_mobile_network_preferred",
+            "value":"Red móvil preferida",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"ERROR_CODE_NOT_OPENED_ROAMING",
+            "value":"Error de estado del gateway. Ponte en contacto con tu operador para obtener asistencia.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_search",
+            "value":"Cargando…",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_settings_airplane_mode",
+            "value":"Comunicaciones por satélite Tiantong no está disponible en modo Avión.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_alignment",
+            "value":"Buscando satélite…",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_disable",
+            "value":"%s (prohibida)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"meetime_network_title",
+            "value":"Mensajería de satélite BeiDou de MeeTime",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"by_contact",
+            "value":"Por contacto",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"start_skycom_satellite_communications_sub3",
+            "value":"Cuando te conectes al satélite Tiantong, se enviará tu ubicación precisa al operador del satélite.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"call_setting_incoming",
+            "value":"Llamadas entrantes",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_hunt_timeout",
+            "value":"Fin del tiempo de espera de la conexión por satélite",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"quick_gestures",
+            "value":"Accesos directos y gestos",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"im_message_smc_receive_fail",
+            "value":"Error de recepción",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"banner",
+            "value":"Tira",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"fold_remind_tips_message",
+            "value":"Error de la conexión satelital. Mantén el teléfono abierto mientras lo uses.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"contact_str_copysim_notification",
+            "value":"Notificación",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_search_tips",
+            "value":"Esto funciona mejor en espacios abiertos, sin obstrucciones y al aire libre.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"number_identity_permission_dialog_desc",
+            "value":"Este servicio requiere los siguientes permisos:",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"distributed_share_message_data",
+            "value":"Enviar y recibir mensajes en dispositivos cercanos.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_new_fold_un_support_toast",
+            "value":"Abre el teléfono para utilizar las comunicaciones satelitales.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"distributed_call_settings_network_sharing_descriptions_pad",
+            "value":"Si no hay ninguna red disponible, utiliza automáticamente la red móvil del teléfono si está cerca.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"motion_quick_call_descrition",
+            "value":"Acerca el teléfono al oído para responder una llamada entrante. Si estás en modo Altavoz o estás utilizando auriculares Bluetooth, al levantar el teléfono se cambiará el audio al receptor.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"number_identity_permission_dialog_title",
+            "value":"Permisos de identificación de llamadas y mensajes",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"motion_quick_mute_descrition_pad",
+            "value":"Voltea el dispositivo para silenciarlo cuando recibas una llamada entrante.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"location_south_east",
+            "value":"%1$s S %2$s E",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"sim_card_num_no_space",
+            "value":"SIM %s",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_fail",
+            "value":"No se ha podido obtener la lista de operadores. Vuelve a intentarlo más tarde.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_enableDataWhileRoaming",
+            "value":"Conectarse a servicios de datos en itinerancia.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"beidou_satellite_message_service_settings_airplane_mode",
+            "value":"No se puede usar la Mensajería de satélite BeiDou en modo Avión.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"im_message_smc_no_new_message_to_receive",
+            "value":"No hay respuestas pendientes de recibir.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"cannnot_dial_satellite_call_tips",
+            "value":"Dispositivo demasiado caliente. Espera hasta que el dispositivo se enfríe y vuelve a intentarlo.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"im_smc_tips_outdoor_use",
+            "value":"Ve a un sitio al aire libre",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_service_settings_enable_tips",
+            "value":"Dado que la capacidad del satélite es limitada, utiliza esta función solo cuando no dispongas de servicio celular. Si se habilita el servicio Comunicaciones por satélite Tiantong, se deshabilitarán la WLAN, los datos móviles y los Servicios de localización, así como las funciones relacionadas.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"edm_operate_prohibit_tip",
+            "value":"La administración de la empresa prohíbe esta operación.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"smc_right_rotate_device",
+            "value":"Gira el dispositivo a la derecha",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"copyright_new",
+            "value":"Teléfono. Todos los derechos reservados. ©%1$s-%2$s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"risk_identity_engine",
+            "value":"Motor",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_details_2_new",
+            "value":"%s. Este servicio requiere la activación del operador para poder utilizarse. Para obtener más información sobre la activación, la disponibilidad y las tarifas, ponte en contacto con tu operador de comunicaciones satelitales.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"call_version",
+            "value":"Versión %s",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"device_calibrating_fail_tips",
+            "value":"Sosteniendo el teléfono en posición vertical, gíralo en círculo",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_Registering_disable",
+            "value":"Registrándose en %s (prohibida)…",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Network_response_abnormal",
+            "value":"La red no responde.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"anti_fraud_text",
+            "value":"Recibe alertas de posibles estafas durante las llamadas.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"number_identity_permission_dialog_purpose_2",
+            "value":"Se utiliza para determinar si se debe bloquear un mensaje.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"number_identity_permission_dialog_purpose_1",
+            "value":"Se utiliza para comprobar si un número es un contacto o está en la lista de bloqueo / lista de confianza.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_details_3",
+            "value":"%s. Este servicio solo está disponible en China continental.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_service_details_0",
+            "value":"%1$s. Como la capacidad del satélite es limitada, te recomendamos utilizar tu red celular cuando tengas servicio. %2$s",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"number_identity_permission_dialog_purpose_3",
+            "value":"Se utiliza para marcar números de teléfono por categoría y determinar si se debe bloquear un mensaje.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"number_identity_setting_title",
+            "value":"Identificación de llamadas y mensajes",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"privacy_statement",
+            "value":"Declaración acerca de Teléfono y la privacidad",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_service_details_1_new",
+            "value":"",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"distributed_share_call_data",
+            "value":"Hacer y recibir llamadas telefónicas en dispositivos cercanos.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"im_smc_tips_starfinder_loading",
+            "value":"%1$s\npara obtener una señal satelital",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"beidou_satellite_short_notification",
+            "value":"<body><span style='normal'>Este servicio requiere una conexión a </span><span style='bold'>Internet</span><span style='normal'> para autenticar tu cuenta y consultar tu saldo. Cuando esta opción esté activada, podrás enviar mensajes a través del satélite BeiDou cuando no tengas una conexión con una red móvil o WLAN. Durante su uso, este servicio debe leer y cargar/transferir el número de teléfono del dispositivo, el contenido del mensaje del satélite BeiDou y la información de ubicación. Esto es para proporcionar la Mensajería de satélite BeiDou. Si activas este selector, aceptas los términos anteriores y el </span><span style='userAgreements'>Contrato de usuario de Mensajería de satélite BeiDou</span><span style='normal'>. Para obtener más detalles sobre cómo se procesa tu información personal, consulta la </span><span style='privacyStatement'>Declaración acerca de Mensajería de satélite BeiDou y la privacidad</span><span style='normal'>.</span></body>",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"location_south_west",
+            "value":"%1$s S %2$s O",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"not_link_satellite_auto_exit_notification_Text",
+            "value":"Se ha deshabilitado Comunicaciones por satélite Tiantong porque no se ha establecido conexión satelital durante %d segundos.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"enhance_statement_title",
+            "value":"Identificación de llamadas y mensajes",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_data_confirmation_function",
+            "value":"Confirmar que este servicio esté disponible antes de habilitarlo. De lo contrario, las llamadas normales pueden verse afectadas.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_connecting",
+            "value":"Conectándose (%d)…",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"im_smc_lift_device",
+            "value":"Inclina el dispositivo hacia ti",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"ERROR_CODE_NOT_SUPPORT_CARD",
+            "value":"Esta tarjeta SIM no es compatible con los servicios satelitales de Tiantong. Ponte en contacto con tu operador para reemplazarla.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_showname",
+            "value":"SIM %1$s: %2$s",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_esim_showname",
+            "value":"eSIM %1$s: %2$s",
+            "attr":{
+                "priority":"code"
+            }
+        },
+        {
+            "name":"automatic_enrollment",
+            "value":"Registro automático\u2026",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"anti_fraud",
+            "value":"Protección de seguridad inteligente",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"enterprise_number_identity",
+            "value":"Habilitar para aplicaciones empresariales",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_chooseNetworkProvider",
+            "value":"Elige un operador.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"distributed_call_settings_descriptions_pad",
+            "value":"",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"exit_beidou_satellite_message_service_tips",
+            "value":"¿Salir de Mensajería de satélite BeiDou?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_network_descriptions",
+            "value":"Llamadas y mensajes de texto a través del sistema satelital Tiantong.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"im_smc_receive_auto_change_01",
+            "value":"Ha finalizado el tiempo de espera para la conexión. Se ha cambiado a otro satélite.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"not_link_satellite_dialog_positive",
+            "value":"No salir",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_Registering",
+            "value":"Registrándose en %s...",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"location_north_west",
+            "value":"%1$s N %2$s O",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"number_identity_setting_text_1",
+            "value":"Cuando recibes una llamada o un mensaje de un número desconocido, este servicio te permite saber de qué se trata y te ayuda a decidir cómo responder.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"distributed_call_settings_title",
+            "value":"Compartir comunicación",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_settings_window_suggest",
+            "value":"Abre esta ventana en pantalla completa para habilitar Comunicaciones por satélite Tiantong.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"keep_current_posture_wait_patiently",
+            "value":"Esto puede tardar unos instantes\nEspera",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"unlock_after_call_notification_descriptions",
+            "value":"Las llamadas entrantes siempre se muestran en forma de tiras cuando juegas, navegas en un mapa o ves imágenes y vídeos en pantalla completa.\n\nSiempre se muestran en pantalla completa cuando usas los modos Personas mayores o Expedición.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"unlock_after_call_notification",
+            "value":"Notificaciones cuando esté desbloqueado",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"number_identity_short_notification",
+            "value":"<body><span style='normal'>Este servicio requiere una conexión a </span><span style='bold'>Internet</span><span style='normal'> y el permiso de </span><span style='bold'>Contactos</span><span style='normal'>, y necesita leer tus contactos, leer y modificar el registro de llamadas, y leer y cargar/transferir contenido de mensajes SMS. Si activas este selector, aceptas estos términos. Para conocer más detalles sobre cómo se procesa tu información personal, consulta la </span><span style='privacyStatement'>Declaración acerca de Identificación de llamadas y mensajes y la privacidad</span><span style='normal'> y el </span><span style='permissionStatement'>Aviso de permisos</span><span style='normal'>.</span></body>",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"automatic_recording_of_calls",
+            "value":"Grabación automática de llamadas",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"8300003",
+            "value":"Error interno del sistema.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_call_not_support_earpiece",
+            "value":"Para mantener una conexión estable, el receptor no está disponible durante las llamadas satelitales.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"8300001",
+            "value":"Valor no válido.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"8300002",
+            "value":"No se puede acceder a este servicio.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"cancel",
+            "value":"Cancelar",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"distributed_share_network_data",
+            "value":"Compartir conexión a Internet con dispositivos cercanos.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"motion_quick_mute_descrition",
+            "value":"Voltea el teléfono para silenciarlo cuando recibas una llamada entrante.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"im_smc_note_content",
+            "value":"Omitir la calibración puede afectar a tu capacidad para utilizar las comunicaciones satelitales. ¿Omitir de todos modos?",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"im_message_smc_receive_success",
+            "value":"Se ha recibido correctamente",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"text_paragraphs",
+            "value":"Si deshabilitas esta opción, el teléfono solo se registrará en las redes que selecciones manualmente. Esto puede deshabilitar tu servicio de datos. Es posible que tu red actual no esté disponible temporalmente durante la selección manual de red. ¿Deshabilitar de todos modos?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"opened",
+            "value":"Activado",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"location_north_east",
+            "value":"%1$s N %2$s E",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"phone_ring_Card2",
+            "value":"SIM %1$s: %2$s",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"improve_call_quality",
+            "value":"Optimizar calidad de llamada",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"im_smc_lower_device",
+            "value":"Inclina el dispositivo lejos de ti",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"text_paragraphs_no_data",
+            "value":"Si deshabilitas esta opción, el teléfono solo se registrará en las redes que selecciones manualmente. Esto puede deshabilitar tu servicio de datos. ¿Deshabilitar de todos modos?",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"distributed_call_settings_descriptions",
+            "value":"",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_service_no_sim_card_descriptions",
+            "value":"Inserta una tarjeta SIM con la función Comunicaciones por satélite Tiantong activada y vuelve a intentarlo.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"beidou_satellite_message_service_details_0",
+            "value":"%1$s. Durante el uso, la WLAN y los datos móviles se deshabilitarán temporalmente. Los servicios se restablecerán al salir.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_data_preferredNetwork",
+            "value":"Red preferida: %s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"beidou_satellite_message_service_details_2",
+            "value":"%s. Esta función solo está disponible en China continental.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"phone_ring_Card1",
+            "value":"SIM %1$s: %2$s",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"motion_quick_call_descrition_fold",
+            "value":"Acerca el teléfono al oído para responder una llamada entrante. Si estás en modo altavoz o estás utilizando auriculares Bluetooth, al levantar el teléfono se cambiará el audio al receptor.\nSolo disponible en la pantalla principal.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"networkAnomaly",
+            "value":"La red no responde. No se ha podido configurar.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"enhance_statement_content",
+            "value":"Este servicio requiere una conexión a Internet y el permiso de Contactos. También necesita leer tus contactos, leer y modificar el registro de llamadas, y leer y cargar/transferir el contenido de los mensajes SMS. Esto permite identificar llamadas y mensajes de números desconocidos. Si activas este selector, aceptas estos términos. Para conocer más detalles sobre cómo se procesa tu información personal, consulta la <a link=\"privacyStatement\">Declaración acerca de Identificación de llamadas y mensajes y la privacidad</a> y el <a link=\"permissionStatement\">Aviso de permisos</a>.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"keep_current_posture_check_occlusion",
+            "value":"Ahora dirige el dispositivo hacia el satélite.\nAsegúrate de que no haya obstáculos en el camino, como árboles o edificios.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"smc_left_rotate_device",
+            "value":"Gira el dispositivo a la izquierda",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_data_card1_or_card2",
+            "value":"Red de SIM 1/SIM 2",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_short_notification_info",
+            "value":"<body><span style='normal'>Este servicio requiere el permiso de </span><span style='bold'>Localización</span><span style='normal'> y utiliza los Servicios de localización para obtener tu ubicación. Si activas este selector, aceptas estos términos anteriores y el </span><span style='userAgreements'>Contrato de usuario de Comunicaciones por satélite Tiantong</span><span style='normal'>. Para conocer más detalles, consulta la </span><span style='privacyStatement'>Declaración acerca de Comunicaciones por satélite Tiantong y la privacidad</span><span style='normal'> y el </span><span style='permissionStatement'>Aviso de permisos</span><span style='normal'>.</span></body>",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"beidou_satellite_message_enter_in_call",
+            "value":"No se puede usar la Mensajería de satélite BeiDou cuando hay una llamada en curso.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"multi_device_collaboration",
+            "value":"Más opciones de conectividad",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"start_skycom_satellite_communications_sub1",
+            "value":"Cuando no tengas cobertura WLAN ni celular, podrás seguir utilizando las funciones de llamadas y mensajes de tu teléfono a través del satélite.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"201",
+            "value":"Error en la verificación del permiso.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"incoming_notification_setting_tips",
+            "value":"Puedes elegir que las notificaciones de llamadas entrantes se muestren en pantalla completa o como tiras. Cambia tus preferencias en cualquier momento en Teléfono > Ajustes > Notificaciones cuando esté desbloqueado.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"unlock_after_call_notification_description",
+            "value":"Las llamadas entrantes siempre se muestran en forma de tiras cuando juegas, navegas en un mapa o ves imágenes y vídeos en pantalla completa.\n\nSiempre se muestran en pantalla completa cuando usas los modos Simple, Personas mayores o Expedición.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"car_satellite_tips",
+            "value":"Haz y recibe llamadas en tu teléfono utilizando la red satelital de tu vehículo.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"using_beidou_toast",
+            "value":"No disponible mientras se utilicen las funciones de satélite de BeiDou.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"car_satellite_title",
+            "value":"Comunicaciones satelitales dentro del vehículo",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_service_settings_window_mode",
+            "value":"Las Comunicaciones por satélite Tiantong no admiten Ventanas múltiples.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"InfoEdit_back",
+            "value":"Volver",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone_delete_dialog_tip1",
+            "value":"¿Eliminar los elementos seleccionados?",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone_no_delete",
+            "value":"No se pueden eliminar elementos mientras están en uso.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"no_video_ringtone",
+            "value":"Sin vídeos como tono",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone_from_photo_picker",
+            "value":"Seleccionar desde Galería",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"manage",
+            "value":"Gestionar",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone",
+            "value":"Vídeos como tono",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone_small_no_show",
+            "value":"Los tonos de vídeo no se pueden editar en ventanas flotantes.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"my_video_ringtone",
+            "value":"Mi vídeo de espera",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone_deselect_all",
+            "value":"Deselec todo",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"remind",
+            "value":"Aviso",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone_select_all",
+            "value":"Seleccionar todo",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"sms",
+            "value":"Mensaje",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone_size_limit",
+            "value":"Selecciona un vídeo de menos de %s.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"call_assistant_setting_title",
+            "value":"Respuesta automática",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"delete",
+            "value":"Eliminar",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"use",
+            "value":"Aplicar",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone_dialog_system_error",
+            "value":"Error del sistema. Vuelve a intentarlo.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone_dialog_no_space",
+            "value":"Memoria insuficiente. Libera espacio y vuelve a intentarlo.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone_dialog_Exceeding_limit_title",
+            "value":"Se ha alcanzado la cantidad máxima de vídeos como tono",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone_dialog_Exceeding_limit_content",
+            "value":"Elimina los vídeos como tono de algunos contactos para liberar espacio.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ringtone_dialog_type_error",
+            "value":"Solo se admiten vídeos en MP4.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"InfoEdit_edits_info",
+            "value":"Editar",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"click_go_to_settings",
+            "value":"Pulsa para configurar",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"penglai_mode_notice",
+            "value":"No se puede realizar esta operación en el modo Penglai.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"smart_call_making",
+            "value":"Llamada inteligente",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"incoming_outgoing_calls_voice_control",
+            "value":"Responder y rechazar llamadas",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"video_type",
+            "value":"Vídeo %d",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Incoming_call_voice_announcement",
+            "value":"Aviso de voz de llamadas entrantes",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"talkback_not_selected",
+            "value":"Sin seleccionar",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"talkback_selected",
+            "value":"Se ha seleccionado",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_connect_failed",
+            "value":"Desconectado",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"new_hyacinth_satellite_signal_descriptions",
+            "value":"Satélite Hyacinth",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_signal_descriptions",
+            "value":"China Telecom\nSatélite Hyacinth",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"keep_current_posture_hyacinth",
+            "value":"Mantén esta posición",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_service_no_available_time",
+            "value":"No hay períodos de tiempo disponibles",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"close_button",
+            "value":"Cerrar",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"more_options",
+            "value":"Más opciones",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"New_CAll",
+            "value":"Llamadas avanzadas",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"details",
+            "value":"Información",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_connect_failed_not_time",
+            "value":"En este momento, no hay satélites disponibles. Vuelve a intentarlo más tarde.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"switched_to_next_satellite",
+            "value":"Se ha cambiado al siguiente satélite",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"switching_to_next_satellite",
+            "value":"Cambiando pronto al siguiente satélite\nEs posible que la conexión se interrumpa brevemente",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"cellular_network_notify_text",
+            "value":"Ya no se requiere una red por satélite. ¿Deshabilitarla?",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"cellular_network_notify_ignore_button",
+            "value":"Ignorar",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"cellular_network_notify_close_button",
+            "value":"Deshabilitar la red por satélite",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"cellular_network_notify_title",
+            "value":"Red móvil disponible",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_data_esim_card",
+            "value":"Red de eSIM %s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_device_calibrating_tips",
+            "value":"Inclina el dispositivo en un ángulo grande para completar la calibración",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_short_notification_info",
+            "value":"<body><span style='normal'>Cuando estés fuera de las coberturas de WLAN y red celular, puedes seguir utilizando las funciones de llamadas y mensajes de tu teléfono vía satélite.\n\nDurante el uso, este servicio necesita acceder a tu </span><span style='bold'>ubicación</span><span style='normal'> para comunicarse con el satélite. Si activas esta opción, aceptas el </span><span style='userAgreements'>Contrato de usuario de Hyacinth</span><span style='normal'>. Para obtener detalles sobre cómo se procesa tu información personal, consulta la </span><span style='privacyStatement'>Declaración acerca de Hyacinth y la privacidad</span><span style='normal'> y el </span><span style='permissionStatement'>Aviso de permisos</span><span style='normal'>.</span></body>",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_not_found_satellite",
+            "value":"No se han encontrado satélites disponibles. Vuelve a intentarlo más tarde.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_service_no_region_card",
+            "value":"Comunicaciones por satélite Hyacinth no es compatible con la región actual. Para obtener más información sobre las regiones admitidas, consulta las Preguntas frecuentes.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_service_permission_usage_details",
+            "value":"Permisos de Comunicaciones por satélite Hyacinth",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_connect_failed_guide",
+            "value":"En este momento, no hay satélites disponibles. Siguiente ventana disponible: %1$s-%2$s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_service_network_description",
+            "value":"Llamadas y mensajes de texto vía satélite.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_service_enter_in_call",
+            "value":"No se puede habilitar Comunicaciones por satélite Hyacinth durante una llamada.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"start_hyacinth_satellite_communications",
+            "value":"Comunicaciones por satélite Hyacinth",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_service_settings_window_mode",
+            "value":"Comunicaciones por satélite Hyacinth no admite el modo Ventanas múltiples.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_service_airplane_mode",
+            "value":"Comunicaciones por satélite Hyacinth no está disponible en modo Avión.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_service_tiantong_mode",
+            "value":"Comunicaciones por satélite Hyacinth no estará disponible mientras esté en uso Comunicaciones por satélite Tiantong.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_service_not_enabled",
+            "value":"No se ha habilitado Comunicaciones por satélite Hyacinth.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellites_not_available",
+            "value":"No se puede confirmar la disponibilidad del satélite en este momento. ¿Continuar de todos modos?",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_service_settings_window_suggest",
+            "value":"Abre esta ventana en pantalla completa para habilitar Comunicaciones por satélite Hyacinth.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"esim_card_num_no_space",
+            "value":"eSIM %s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_communications",
+            "value":"Comunicaciones por satélite Hyacinth",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_service_no_sim_card",
+            "value":"Inserta una tarjeta SIM con la función Comunicaciones por satélite Hyacinth activada y vuelve a intentarlo.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"exit_hyacinth_satellite_service_tips",
+            "value":"¿Deshabilitar Comunicaciones por satélite Hyacinth?",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"phone_ring_Card3",
+            "value":"eSIM %1$s: %2$s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_notification_title",
+            "value":"Se ha deshabilitado Comunicaciones por satélite",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"new_calling_can_only_use_in_full_screen",
+            "value":"Los servicios de Llamadas avanzadas solo están disponibles en vista de pantalla completa.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"New_CAll_DESC",
+            "value":"El servicio lo proporciona tu operador.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_activate_immediatly",
+            "value":"Activar ahora",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_activate",
+            "value":"Activar Hyacinth",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_activate_text",
+            "value":"<body><span style='normal'>Con Hyacinth, puedes hacer llamadas y enviar mensajes de texto, incluso cuando te encuentras fuera del área de cobertura de la red. Dado que los satélites Hyacinth todavía se están desplegando, actualmente este servicio solo se encuentra disponible en determinados momentos del día. Durante el uso, este servicio accederá a tu información de </span><span style='bold'>ubicación y red</span><span style='normal'> para confirmar la disponibilidad del satélite.</span></body>",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"celia",
+            "value":"Llamada con Celia",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"call_setting_call",
+            "value":"Llamadas",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_service_settings_skytone_mode",
+            "value":"No disponible cuando SkyTone está en uso.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"tiantong_satellite_service_hyacinth_mode",
+            "value":"Comunicaciones por satélite Tiantong no está disponible cuando Comunicaciones por satélite Hyacinth está en uso.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"send_success",
+            "value":"Se ha enviado correctamente",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"im_message_smc_satellite_no_receipt_tips",
+            "value":"Es posible que el mensaje no haya llegado a un satélite. Vuelve a intentarlo en un área al aire libre sin obstrucciones.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"callSetting_title",
+            "value":"Ajustes de llamadas",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_available_time_tomorrow",
+            "value":"Mañana: %1$s-%2$s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_available_time_today",
+            "value":"%1$s-%2$s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_available_time_tomorrow_end",
+            "value":"%1$s-%2$s (mañana)",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_available_tips",
+            "value":"Disponible:\n%1$s\n%2$s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_request_location_permission",
+            "value":"No se ha otorgado acceso a Localización. ¿Otorgar ahora?",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_location_enable_permission",
+            "value":"Otorgar acceso",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_available_tips_single",
+            "value":"Disponible: %s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"float_better_angle",
+            "value":"Busca un mejor ángulo",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"call_setting_celia_description",
+            "value":"Permite que Celia responda y resuma tus llamadas.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"hyacinth_available_time_refresh",
+            "value":"Los períodos disponibles se actualizarán automáticamente cuando se deshabilite la función Comunicaciones por satélite Tiantong.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"unlock_after_call_notification_descriptions_normal",
+            "value":"Las llamadas entrantes siempre aparecen en forma de tiras cuando estás usando juegos, navegando en un mapa o viendo imágenes y vídeos en pantalla completa.\n\nSiempre se muestran en pantalla completa en modo Personas mayores.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"call_setting_getting_hyacinth_available_time",
+            "value":"Buscando franjas horarias disponibles…",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_available_time_connection_use",
+            "value":"Se utiliza para comprobar las franjas horarias disponibles y conectarse al satélite.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"need_system_location",
+            "value":"Habilita Servicios de localización en Ajustes",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"not_support_toast",
+            "value":"No se admite esta operación en este modo."
+        }
+    ]
+}

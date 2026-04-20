@@ -1,8 +1,0 @@
-{
-  "src": [
-    "pages/index",
-    "pages/networkStand",
-    "pages/apnList",
-    "pages/apnDetail"
-  ]
-}
