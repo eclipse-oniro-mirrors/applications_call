@@ -16,6 +16,7 @@
 #include "callRecorder.h"
 #include "napi/log.h"
 #include "sys/stat.h"
+#include <cstdlib>
 #include <unistd.h>
 #include <cstring>
 
@@ -26,24 +27,25 @@ namespace {
 const int32_t SUCCESS = 0;
 const int32_t MAX_PERMS = 0777;
 const int32_t TARGET_PERMS = 432;
+const size_t PARENT_DIR_COMPONENT_LEN = 2;
 }
 
 // 允许的沙箱目录前缀列表
-static const char* ALLOWED_DIR_PREFIXES[] = {
+static const char* g_allowedDirPrefixes[] = {
     "/storage/Users/currentUser/Sounds/CallRecord/",
     "/storage/Users/currentUser/Music/SoundRecorder/"
 };
-static constexpr size_t ALLOWED_DIR_PREFIX_COUNT = 2;
+static constexpr size_t g_allowedDirPrefixCount = 2;
 
 /**
  * 获取指定索引的前缀长度
  */
 static size_t GetPrefixLen(size_t index)
 {
-    if (index >= ALLOWED_DIR_PREFIX_COUNT) {
+    if (index >= g_allowedDirPrefixCount) {
         return 0;
     }
-    return strlen(ALLOWED_DIR_PREFIXES[index]);
+    return strlen(g_allowedDirPrefixes[index]);
 }
 
 /**
@@ -55,7 +57,7 @@ static bool StartsWithPrefix(const std::string& path, size_t prefixIndex)
     if (path.length() < prefixLen) {
         return false;
     }
-    return path.compare(0, prefixLen, ALLOWED_DIR_PREFIXES[prefixIndex]) == 0;
+    return path.compare(0, prefixLen, g_allowedDirPrefixes[prefixIndex]) == 0;
 }
 
 /**
@@ -84,7 +86,7 @@ static bool HasParentTraversal(const std::string& filePath)
         
         // 提取当前路径分量
         size_t componentLen = i - start;
-        if (componentLen == 2 && start + 1 < len &&
+        if (componentLen == PARENT_DIR_COMPONENT_LEN && start + 1 < len &&
             filePath[start] == '.' && filePath[start + 1] == '.') {
             return true; // 发现 ".." 父目录遍历
         }
@@ -121,7 +123,7 @@ static bool IsPathSecure(const std::string& filePath)
     // 2. 路径必须在允许目录前缀列表中的某一个下
     bool prefixMatched = false;
     size_t matchedPrefixLen = 0;
-    for (size_t i = 0; i < ALLOWED_DIR_PREFIX_COUNT; i++) {
+    for (size_t i = 0; i < g_allowedDirPrefixCount; i++) {
         if (StartsWithPrefix(filePath, i)) {
             prefixMatched = true;
             matchedPrefixLen = GetPrefixLen(i);
@@ -134,20 +136,20 @@ static bool IsPathSecure(const std::string& filePath)
     }
     
     // 3. 解析真实路径，检查符号链接是否指向允许目录外
-    char realPath[PATH_MAX] = {0};
-    if (realPath(filePath.c_str(), realPath) != nullptr) {
-        size_t realPathLen = strlen(realPath);
+    char resolvedPath[PATH_MAX] = {0};
+    if (realpath(filePath.c_str(), resolvedPath) != nullptr) {
+        size_t realPathLen = strlen(resolvedPath);
         bool realPathMatched = false;
-        for (size_t i = 0; i < ALLOWED_DIR_PREFIX_COUNT; i++){
+        for (size_t i = 0; i < g_allowedDirPrefixCount; i++) {
             size_t prefixLen = GetPrefixLen(i);
             if (prefixLen == 0) { continue; }
-            if (realPathLen >= prefixLen && strncmp(realPath, ALLOWED_DIR_PREFIXES[i], prefixLen) == 0){
+            if (realPathLen >= prefixLen && strncmp(resolvedPath, g_allowedDirPrefixes[i], prefixLen) == 0) {
                 realPathMatched = true;
                 break;
             }
         }
         if (!realPathMatched) {
-            CALL_RECORDER_LOGE("Real path out of sandbox: %{public}s", realPath);
+            CALL_RECORDER_LOGE("Real path out of sandbox: %{public}s", resolvedPath);
             return false;
         }
     } else {
