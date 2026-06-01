@@ -35,14 +35,14 @@ static const char* g_allowedDirPrefixes[] = {
     "/storage/Users/currentUser/Sounds/CallRecord/",
     "/storage/Users/currentUser/Music/SoundRecorder/"
 };
-static constexpr size_t g_allowedDirPrefixCount = 2;
+static constexpr size_t ALLOWED_DIR_PREFIX_COUNT = 2;
 
 /**
  * 获取指定索引的前缀长度
  */
 static size_t GetPrefixLen(size_t index)
 {
-    if (index >= g_allowedDirPrefixCount) {
+    if (index >= ALLOWED_DIR_PREFIX_COUNT) {
         return 0;
     }
     return strlen(g_allowedDirPrefixes[index]);
@@ -123,7 +123,7 @@ static bool IsPathSecure(const std::string& filePath)
     // 2. 路径必须在允许目录前缀列表中的某一个下
     bool prefixMatched = false;
     size_t matchedPrefixLen = 0;
-    for (size_t i = 0; i < g_allowedDirPrefixCount; i++) {
+    for (size_t i = 0; i < ALLOWED_DIR_PREFIX_COUNT; i++) {
         if (StartsWithPrefix(filePath, i)) {
             prefixMatched = true;
             matchedPrefixLen = GetPrefixLen(i);
@@ -140,7 +140,7 @@ static bool IsPathSecure(const std::string& filePath)
     if (realpath(filePath.c_str(), resolvedPath) != nullptr) {
         size_t realPathLen = strlen(resolvedPath);
         bool realPathMatched = false;
-        for (size_t i = 0; i < g_allowedDirPrefixCount; i++) {
+        for (size_t i = 0; i < ALLOWED_DIR_PREFIX_COUNT; i++) {
             size_t prefixLen = GetPrefixLen(i);
             if (prefixLen == 0) { continue; }
             if (realPathLen >= prefixLen && strncmp(resolvedPath, g_allowedDirPrefixes[i], prefixLen) == 0) {
