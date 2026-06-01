@@ -32,7 +32,7 @@ import { registerNetworkStateChange, unRegisterNetworkStateChange } from '../mod
 import { getRadioTechnologyFromStr } from '../common/utils/NetworkModeUtils';
 import sim from '@ohos.telephony.sim';
 import { AlertDialog } from '@ohos.arkui.advanced.Dialog';
-import { formatResourceToString } from '../common/utils/formatResourceToString';
+import { formatResourceToString, formatResourceToStringWithArgs } from '../common/utils/formatResourceToString';
 import { NetworkOperatorsParams } from '../model/MobileLoaderParams';
 import { MobileViewData } from '../viewModel/MobileDataViewModel/MobileViewData';
 import { EditableTitleBar, LengthMetrics } from '@kit.ArkUI';
@@ -58,6 +58,7 @@ class ObjInterface {
 }
 
 const TAG = 'NetworkOperators';
+const REGISTERING_DIALOG_MIN_MS: number = 480;
 
 @Builder
 export function NetworkOperatorsLoader($$: NetworkOperatorsParams): void {
@@ -97,6 +98,9 @@ export default struct NetworkOperators {
   @StorageProp('fontSizeScaleMargin') fontSizeScaleMargin: string = '';
   @State isListHidden: boolean = true;
   private isInitDataEnableChange: boolean = false;
+  private registeringDialogOpenTimeMs: number = 0;
+  private registeringCloseDelayTimerId: number = -1;
+  private manualRegFromForbiddenItem: boolean = false;
 
   private watchCellularData() {
     LogUtils.i(TAG, 'Current Cellular Data status:' + this.isCellularDataEnable.isDataEnable +
@@ -124,20 +128,24 @@ export default struct NetworkOperators {
     }
   }
 
-  async reQuery(slotId: number) {
+  async reQuery(slotId: number, showToast: boolean = true) {
     let data = await radio.getOperatorName(slotId);
     if (data) {
       this.operateShowContent = data;
-      promptAction.showToast({
-        message: $r('app.string.mobile_register'),
-        duration: 2000
-      })
+      if (showToast) {
+        promptAction.showToast({
+          message: $r('app.string.mobile_register'),
+          duration: 2000
+        })
+      }
     } else {
       this.operateShowContent = formatResourceToString($r('app.string.mobile_not_serve'));
-      promptAction.showToast({
-        message: $r('app.string.mobile_Search'),
-        duration: 2000
-      })
+      if (showToast) {
+        promptAction.showToast({
+          message: $r('app.string.mobile_Search'),
+          duration: 2000
+        })
+      }
       this.isGetOperatorName(slotId);
     }
   }
@@ -213,6 +221,11 @@ export default struct NetworkOperators {
   }
 
   aboutToDisappear() {
+    if (this.registeringCloseDelayTimerId !== -1) {
+      clearTimeout(this.registeringCloseDelayTimerId);
+      this.registeringCloseDelayTimerId = -1;
+    }
+    this.dialogController.close();
     this.restoreCellularData();
     unRegisterNetworkStateChange();
     removeAirPlaneModeListener();
@@ -421,15 +434,17 @@ export default struct NetworkOperators {
    */
   private processOperatorInfo(operatorInfo: NetworkInformation): NetworkInformation {
     // 运营商名称映射表
-    const OPERATOR_NAME_MAP: Record<string, string> = {
-      'CHN-TELECOM': '中国电信',
-      'CHN-UNICOM': '中国联通',
-      'CHINA BROADNET': '中国广电',
-      'CHA_UNION': '中国联通',
-      'CHINA_UNICOM': '中国联通',
-      'CHINA_MOBILE': '中国移动',
-      'CHINA_TELECOM': '中国电信',
-      'CHINA_BROADNET': '中国广电',
+    const OPERATOR_NAME_MAP: Record<string, Resource> = {
+      'CHN-TELECOM': $r('app.string.china_telecom'),
+      'CHN-UNICOM': $r('app.string.china_unicom'),
+      'CHINA BROADNET': $r('app.string.china_broadnet'),
+      'CHA_UNION': $r('app.string.china_unicom'),
+      'CHINA_UNICOM': $r('app.string.china_unicom'),
+      'CHINA_MOBILE': $r('app.string.china_mobile'),
+      'CHINA MOBILE': $r('app.string.china_mobile'),
+      'CHINA_TELECOM': $r('app.string.china_telecom'),
+      'CHINA_BROADNET': $r('app.string.china_broadnet'),
+      '中国移动':$r('app.string.china_mobile')
     };
 
     const ACT_TO_NETWORK_GEN_MAP: Record<number, string> = {
@@ -456,7 +471,7 @@ export default struct NetworkOperators {
 
     //处理运营商名称
     if (OPERATOR_NAME_MAP[operatorName]) {
-      processedInfo.operatorName = OPERATOR_NAME_MAP[operatorName];
+      processedInfo.operatorName = formatResourceToString(OPERATOR_NAME_MAP[operatorName]);
     }
 
     const radioTechArcIndex = processedInfo.operatorNumeric.split(" ").length
@@ -551,13 +566,32 @@ export default struct NetworkOperators {
       let setModePromise = radio.setNetworkSelectionMode(networkSelectionModeOptions);
       setModePromise.then(() => {
         LogUtils.i(TAG, 'setNetworkSelectionMode success.');
+        const fromForbidden: boolean = this.manualRegFromForbiddenItem;
+        this.manualRegFromForbiddenItem = false;
         this.showColor = true;
-        this.dialogController.close(); // Close register dialog
-        promptAction.showToast({
-          message: $r('app.string.mobile_register'),
-          duration: 2000
-        })
-        this.setModeFlagBool = false;
+        if (this.registeringCloseDelayTimerId !== -1) {
+          clearTimeout(this.registeringCloseDelayTimerId);
+          this.registeringCloseDelayTimerId = -1;
+        }
+        const elapsed: number = Date.now() - this.registeringDialogOpenTimeMs;
+        const delayMs: number = Math.max(0, REGISTERING_DIALOG_MIN_MS - elapsed);
+        if (fromForbidden) {
+          this.registeringCloseDelayTimerId = setTimeout(() => {
+            this.registeringCloseDelayTimerId = -1;
+            this.dialogController.close();
+            this.whenManualRegFailed();
+          }, delayMs);
+          return;
+        }
+        this.registeringCloseDelayTimerId = setTimeout(() => {
+          this.registeringCloseDelayTimerId = -1;
+          this.dialogController.close();
+          promptAction.showToast({
+            message: $r('app.string.mobile_register'),
+            duration: 2000
+          });
+          this.setModeFlagBool = false;
+        }, delayMs);
       }, (err: BusinessError) => {
         LogUtils.e(TAG, 'clickToManualReg-setNetworkSelectionMode failed, promise: err' + JSON.stringify(err));
         this.whenManualRegFailed();
@@ -578,8 +612,11 @@ export default struct NetworkOperators {
       secondaryButton: {
         value: $r('app.string.confim_space'),
         action: () => {
-          this.dialogControllerTow.open();
-          this.backToAutomaticReg();
+          this.regFailDialog.close();
+          this.dialogControllerTow.close();
+          setTimeout(() => {
+            this.backToAutomaticReg();
+          }, 100);
         }
       },
     }),
@@ -590,6 +627,11 @@ export default struct NetworkOperators {
   })
 
   private whenManualRegFailed() {
+    this.manualRegFromForbiddenItem = false;
+    if (this.registeringCloseDelayTimerId !== -1) {
+      clearTimeout(this.registeringCloseDelayTimerId);
+      this.registeringCloseDelayTimerId = -1;
+    }
     this.dialogController.close();
     // If click fast(No wait for Modem's manual search result, etc) to set auto mode here,
     // previous manual mode's setNetworkSelectionMode promise will not react.
@@ -604,7 +646,6 @@ export default struct NetworkOperators {
   }
 
   private async backToAutomaticReg() {
-    LogUtils.i(TAG, 'Callback when the second button(ok) is clicked');
     let networkInformation: NetworkInformation = {
       operatorName: '',
       operatorNumeric: '',
@@ -618,23 +659,23 @@ export default struct NetworkOperators {
       resumeSelection: true
     }
 
-    // After network register fails, click OK to select automatic network search.
-    if (!this.setModeFlagBool) {
-      this.setModeFlagBool = true;
-      await radio.setNetworkSelectionMode(networkSelectionModeOptions).then(() => {
-        LogUtils.i(TAG, 'setNetworkSelectionMode success');
-        this.dialogControllerTow.close();
-        this.listOperators = [];
-        this.listOperatorsCache = this.listOperators;
-        this.isAppear = true;
-        this.isDataEnable = true;
-        this.reQuery(this.slotId);
-        this.setModeFlagBool = false;
-      }, (err: BusinessError) => {
-        this.setModeFlagBool = false;
-        LogUtils.e(TAG, 'setNetworkSelectionMode failed, promise: err' + JSON.stringify(err));
-      })
+    this.setModeFlagBool = true;
+    try {
+      await radio.setNetworkSelectionMode(networkSelectionModeOptions);
+      LogUtils.i(TAG, 'setNetworkSelectionMode success');
+      this.listOperators = [];
+      this.listOperatorsCache = this.listOperators;
+      this.isAppear = true;
+      this.isDataEnable = true;
+      await this.reQuery(this.slotId, false);
+      promptAction.showToast({
+        message: $r('app.string.mobile_Search'),
+        duration: 2000
+      });
+    } catch (err) {
+      LogUtils.e(TAG, 'setNetworkSelectionMode failed: ' + JSON.stringify(err as BusinessError));
     }
+    this.setModeFlagBool = false;
   }
 
   @Styles
@@ -826,11 +867,16 @@ export default struct NetworkOperators {
                   })
                   .backgroundColor($r('sys.color.comp_background_primary'))
                   .onClick(() => {
-                    this.itemOperatorName = item.operatorName;
+                    const nameWithTech: string = item.operatorName + ' ' + item.radioTech;
                     if (item.state === 3) {
-                      this.disOperatorName = false;
-                    } else {
+                      this.itemOperatorName =
+                        formatResourceToStringWithArgs($r('app.string.mobile_disable'), nameWithTech);
                       this.disOperatorName = true;
+                      this.manualRegFromForbiddenItem = true;
+                    } else {
+                      this.itemOperatorName = nameWithTech;
+                      this.disOperatorName = true;
+                      this.manualRegFromForbiddenItem = false;
                     }
                     if (item.state === 2) {
                       promptAction.showToast({
@@ -839,6 +885,7 @@ export default struct NetworkOperators {
                       })
                     } else {
                       this.showColor = false;
+                      this.registeringDialogOpenTimeMs = Date.now();
                       this.dialogController.open();
                       let networkInformation: NetworkInformation = {
                         operatorName: item.operatorName,

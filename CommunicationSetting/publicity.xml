@@ -15,4 +15,4 @@
 -->
 
 <packageInfo package="com.ohos.communicationsetting" feature="提供流量统计和应用联网功能。"
-             author="华为终端有限公司" label="com.ohos.communicationsetting"/>
+             author="" label="com.ohos.communicationsetting"/>

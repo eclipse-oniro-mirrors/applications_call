@@ -29,9 +29,21 @@ public:
         if (buf == nullptr) {
             return "";
         }
-        size_t len;
-        napi_get_value_string_utf8(env, object, buf, FILE_PATH, &len);
-        std::string res = std::string(buf);
+        size_t len = 0;
+        napi_status status = napi_get_value_string_utf8(env, object, buf, FILE_PATH, &len);
+        if (status != napi_ok) {
+            free(buf);
+            return "";
+        }
+        // 检查实际字符串长度是否超过缓冲区安全范围
+        // napi_get_value_string_utf8在buf中写入最多FILE_PATH-1个字符+null终止符
+        // 当len >= FILE_PATH-1时，字符串可能已被截断（等于FILE_PATH-1也可能刚好填满）
+        // 为安全起见，当len >= FILE_PATH-1时视为不完整，拒绝使用
+        if (len >= FILE_PATH - 1) {
+            free(buf);
+            return "";
+        }
+        std::string res = std::string(buf, len);
         free(buf);
         return res;
     }

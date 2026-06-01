@@ -72,11 +72,15 @@ export function iconsOneByOneProc(appList: AppInfo[], context: Context): AppInfo
         // result =
         //   hdsDrawable.getHdsLayeredIcon(bundleName, drawableDescriptor as LayeredDrawableDescriptor, 48, true);
         // appInfo.img = result;
+        // 兼容去掉 hdsDrawable 的场景：直接使用 bundle 的 layered drawable 生成当前应用图标
+        appInfo.img = drawableDescriptor.getPixelMap();
       } else {
         // pixelMap = drawableDescriptor.getPixelMap();
         // result = hdsDrawable.getHdsIcon(bundleName, pixelMap, HDSUtil.defaultSize, mask, true);
         // appInfo.img = result;
         // pixelMap.release();
+        // 兼容去掉 hdsDrawable 的场景：直接使用 drawableDescriptor 生成当前应用图标
+        appInfo.img = drawableDescriptor.getPixelMap();
       }
     } catch (error) {
       if (appInfo.isCompatibleApp) {

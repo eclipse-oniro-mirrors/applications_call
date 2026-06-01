@@ -53,6 +53,8 @@ import LocationUtils from '../utils/LocationUtils';
 import { accessibility } from '@kit.AccessibilityKit';
 import { isTablet } from '../utils/DeviceTypeUtils';
 import LayoutUtils from '../utils/LayoutUtils';
+import { geoLocationManager } from '@kit.LocationKit';
+
 //import { HdsNavigation, HdsNavigationAttribute, HdsNavigationTitleMode } from '@kit.UIDesignKit';
 
 const TAG = 'emergencyCallIndex';
@@ -430,9 +432,31 @@ struct emergencyCall {
       LogUtils.e(TAG, `isSatelliteModeOn err = ${JSON.stringify(err)}`);
     }
   }
+  // 定义持续定位参数
+  request: geoLocationManager.ContinuousLocationRequest= {
+    'interval': 1,
+    'locationScenario': geoLocationManager.UserActivityScenario.NAVIGATION
+  }
+  // 持续定位回调函数
+  locationCallback = (location:geoLocationManager.Location):void => {
+    // this.getUIContext().getPromptAction().showToast({message:'开启成功'+JSON.stringify(location)})
+    LogUtils.i(TAG,'locationCallback: data: ' + JSON.stringify(location));
+  };
+  //卫星监听回调函数
+  gnssStatusCb = (satelliteStatusInfo:geoLocationManager.SatelliteStatusInfo):void => {
+    LogUtils.i(TAG,'satelliteStatusChange: ' + JSON.stringify(satelliteStatusInfo));
+    // this.getUIContext().getPromptAction().showToast({message:'卫星数量：'+satelliteStatusInfo.satellitesNumber})
+  }
 
   aboutToAppear(): void {
     LogUtils.i(TAG, `emergency_call aboutToAppear`);
+    // 开启位置监听（持续定位）和卫星监听
+    try {
+      geoLocationManager.on('locationChange', this.request, this.locationCallback);
+      geoLocationManager.on('satelliteStatusChange', this.gnssStatusCb);
+    } catch (err) {
+      LogUtils.e(TAG,"errCode:" + JSON.stringify(err));
+    }
     this.curColor = commonData.backgroundColor.index;
     this.mEmergencyCallController.setWindowBackgroundColor(commonData.backgroundColor.index);
     this.clickActiveContactItemIds = [];
@@ -489,6 +513,9 @@ struct emergencyCall {
 
   aboutToDisappear() {
     LogUtils.e(TAG, `emergency_call aboutToDisappear`);
+    // 关闭位置监听和卫星监听
+    geoLocationManager.off('locationChange', this.locationCallback);
+    geoLocationManager.off('satelliteStatusChange', this.gnssStatusCb);
     OnScreenOff.unsubscribe();
     if (!LocationUtils.getInstance().ignoreLocationSwitch) {
       LogUtils.i(TAG, 'emergency_call aboutToDisappear setLocationSwitchIgnored');
@@ -1382,8 +1409,7 @@ struct emergencyCall {
               .accessibilityText(this.mEmergencyCallController.formatResourceToString(
                 $r('app.string.InfoEdit_back')))
 
-              //if (this.isAutoLocation) {
-              if (true) {
+              if (this.isAutoLocation) {
                 Row() {
                   SymbolGlyph($r('sys.symbol.dot_grid_2x2'))
                     .fontSize($r('app.float.emc_padding_level12'))

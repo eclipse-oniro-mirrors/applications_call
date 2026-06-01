@@ -49,6 +49,7 @@ export class VibrationUtils {
   private audioManager: audio.AudioManager;
   private audioVolumeManager: audio.AudioVolumeManager;
   private audioVolumeGroupManager: audio.AudioVolumeGroupManager | null = null;
+  private isIncomingVibrating: boolean = false;
 
   constructor() {
     this.audioManager = audio.getAudioManager()
@@ -120,6 +121,56 @@ export class VibrationUtils {
       this.audioVolumeGroupManager = value;
     } catch (err) {
       LogUtils.e(TAG, `Failed to obtain the volume group infos list. ${err}`);
+    }
+  }
+
+  /**
+   * 来电响铃振动（振动/响铃模式）
+   */
+  public startIncomingRingVibration(): void {
+    if (this.isIncomingVibrating) {
+      return;
+    }
+    try {
+      vibrator.startVibration({
+        type: 'time',
+        duration:2000
+      }, {
+        id: 0,
+        usage: 'alarm'
+      }, (error: BusinessError) => {
+        if (error) {
+          LogUtils.e(TAG,` Failed to start vibration. Code: ${error.code}, message: ${error.message}`);
+          return;
+        }
+        LogUtils.i(TAG,` Succeed in starting vibration`);
+      });
+    } catch (err) {
+      LogUtils.e(TAG,`An unexpected error occurred. Code: ${err?.code}, message: ${err?.message}`);
+    }
+  }
+
+  /**
+   * 接听/拒接/挂断时停止来电振动
+   */
+  public stopIncomingRingVibration(): void {
+    if (!this.isIncomingVibrating) {
+      return;
+    }
+    try {
+      vibrator.stopVibration(vibrator.VibratorStopMode.VIBRATOR_STOP_MODE_TIME, (error) => {
+        if (error) {
+          LogUtils.e(TAG, 'stopIncomingRingVibration fail, error.code: ' + error.code +
+            ' ,error.message: ' + error.message);
+          return;
+        }
+        this.isIncomingVibrating = false;
+        LogUtils.i(TAG, 'stopIncomingRingVibration success');
+      });
+    } catch (err) {
+      this.isIncomingVibrating = false;
+      LogUtils.e(TAG, 'stopIncomingRingVibration errCode: ' + (err as BusinessError).code + ' ,msg: ' +
+      (err as BusinessError).message);
     }
   }
 

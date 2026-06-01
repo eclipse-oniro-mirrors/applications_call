@@ -2,8 +2,8 @@
   "app": {
     "bundleName": "com.ohos.callui",
     "vendor": "huawei",
-    "versionCode": 60100108,
-    "versionName": "6.1.0.108",
+    "versionCode": 60100112,
+    "versionName": "6.1.0.112",
     "icon": "$media:app_icon",
     "label": "$string:app_name",
     "generateBuildHash": true,
