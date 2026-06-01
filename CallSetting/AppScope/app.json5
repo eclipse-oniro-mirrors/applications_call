@@ -2,8 +2,8 @@
   "app": {
     "bundleName": "com.ohos.callsetting",
     "vendor": "huawei",
-    "versionCode": 60000368,
-    "versionName": "6.0.0.368",
+    "versionCode": 60000371,
+    "versionName": "6.0.0.371",
     "icon": "$media:app_icon",
     "label": "$string:callSetting_title",
     "generateBuildHash": true,

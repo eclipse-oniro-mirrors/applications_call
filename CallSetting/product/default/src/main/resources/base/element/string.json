@@ -3148,6 +3148,22 @@
         {
             "name":"not_support_toast",
             "value":"This operation is not supported in this mode."
+        },
+        {
+            "name": "china_mobile",
+            "value": "China Mobile"
+        },
+        {
+            "name": "china_telecom",
+            "value": "China Telecom"
+        },
+        {
+            "name": "china_unicom",
+            "value": "China Unicom"
+        },
+        {
+            "name": "china_broadnet",
+            "value": "China Broadnet"
         }
     ]
 }

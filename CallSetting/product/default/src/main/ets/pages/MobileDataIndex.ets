@@ -1136,9 +1136,9 @@ struct MobileDataIndex {
       this.cardTwoLteOrNrBuilder()
     }
 
-    if (!this.cardTwoVolteIsHide) {
-      this.cardTwoVolteBuilder()
-    }
+    // if (!this.cardTwoVolteIsHide) {
+    //   this.cardTwoVolteBuilder()
+    // }
 
     if (this.isShowWifiCallingSwitchCard2) {
       this.cardTwoWifiCallingBuilder();
@@ -1317,9 +1317,9 @@ struct MobileDataIndex {
         }
       }
 
-      if (!this.cardOneVolteIsHide) {
-        this.cardOneVolteBuilder()
-      }
+      // if (!this.cardOneVolteIsHide) {
+      //   this.cardOneVolteBuilder()
+      // }
       if (this.isShowWifiCallingSwitchCard1) {
         this.cardOneWifiCallingBuilder();
       }

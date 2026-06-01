@@ -55,6 +55,15 @@ export default class MainAbility extends UIAbility {
   private mCallColumnUtils: CallColumnUtils = CallColumnUtils.getInstance();
   private windowStatus: window.WindowStatusType = window.WindowStatusType.UNDEFINED;
 
+  private async setPortraitOrientation(mainWindow: window.Window): Promise<void> {
+    try {
+      await mainWindow.setPreferredOrientation(window.Orientation.PORTRAIT);
+      LogUtils.i(TAG, 'setPreferredOrientation PORTRAIT success');
+    } catch (err) {
+      LogUtils.e(TAG, `setPreferredOrientation failed, err: ${JSON.stringify(err)}`);
+    }
+  }
+
   onCreate(want: Want, launchParam: AbilityConstant.LaunchParam) {
     LogUtils.i(TAG, 'onCreate');
     if (CallDataManager.getInstance().callList.length === 0) {
@@ -122,6 +131,7 @@ export default class MainAbility extends UIAbility {
 
       let mainWindow = windowStage.getMainWindowSync();
       this.windowObj = mainWindow;
+      this.setPortraitOrientation(mainWindow);
 
       maximizeByPcMode(this.context, this.windowObj);
 

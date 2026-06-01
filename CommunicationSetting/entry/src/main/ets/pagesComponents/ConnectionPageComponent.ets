@@ -54,6 +54,7 @@ const ANIM_DURATION: number = 150;
 const CIRCLE_ANIM_DURATION: number = 30;
 const SEARCH_BUTTON_ID = 'connectionSearchButton';
 const SEARCH_BACK_BUTTON_ID = 'connectionSearchBackButton';
+const NAV_TITLE_BG_COLOR: ResourceColor = $r('sys.color.ohos_id_color_sub_background');
 
 @Component
 export struct ConnectionPageComponent {
@@ -221,7 +222,7 @@ export struct ConnectionPageComponent {
     .onBackPressed((): boolean => {
       return this.onBackClick();
     })
-    .backgroundColor($r('sys.color.ohos_id_color_sub_background'))
+    .backgroundColor(NAV_TITLE_BG_COLOR)
 
     // .expandSafeArea([SafeAreaType.SYSTEM], [SafeAreaEdge.TOP, SafeAreaEdge.BOTTOM])
   }
@@ -247,7 +248,7 @@ export struct ConnectionPageComponent {
       },
       {
         value: 'system_process',
-        icon: $r('sys.symbol.dot_grid_2x2'),
+        icon: $r('app.media.ic_public_more'),
         isEnabled: true,
         action: () => {
           this.switchSystemProcessDisplayModel();
@@ -262,7 +263,7 @@ export struct ConnectionPageComponent {
     if (showCompatible) {
       menus.push({
         value: 'compatible_app',
-        icon: $r('sys.symbol.dot_grid_2x2'),
+        icon: $r('app.media.ic_public_more'),
         isEnabled: true,
         action: () => {
           this.switchCompatibilityAppDisplayMode();
@@ -314,7 +315,7 @@ export struct ConnectionPageComponent {
         .height(56) // 保持原有逻辑的高度
       }
     }
-    .backgroundColor($r('sys.color.ohos_id_color_sub_background'))
+    .backgroundColor(NAV_TITLE_BG_COLOR)
 
   }
 
@@ -544,7 +545,7 @@ export struct ConnectionPageComponent {
     .height('100%')
     .scrollBar(BarState.Off)
     .edgeEffect(EdgeEffect.Spring)
-    .clip(false)
+    .clip(true)
   }
 
   @Builder
@@ -878,7 +879,7 @@ export struct ConnectionPageComponent {
 
         this.forEachShow()
       }
-      .clip(false)
+      .clip(true)
       .contentEndOffset(this.generalVerticalMargin())
       .edgeEffect(EdgeEffect.Spring)
       .scrollBar(BarState.Off)

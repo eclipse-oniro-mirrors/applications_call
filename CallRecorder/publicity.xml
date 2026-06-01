@@ -14,4 +14,4 @@
      limitations under the License.
 -->
 
-<packageInfo label="com.ohos.callrecorder" package="com.ohos.callrecorder" feature="通话录音是华为自研的通话录音及自动录音功能。" author="华为终端有限公司"> </packageInfo>
+<packageInfo label="com.ohos.callrecorder" package="com.ohos.callrecorder" feature="通话录音是XX自研的通话录音及自动录音功能。" author=""> </packageInfo>

@@ -15,6 +15,7 @@
 
 #include "napi/callRecorder.h"
 #include "napi/utils.h"
+#include "napi/log.h"
 #include "napi/native_api.h"
 
 
@@ -24,16 +25,43 @@ static napi_value HandleFilePermsNapi(napi_env env, napi_callback_info info) {
     napi_value args[1] = {nullptr};
     napi_get_cb_info(env, info, &argc, args, nullptr, nullptr);
     
-    napi_valuetype filePathIn;
-    napi_typeof(env, args[0], &filePathIn);
+    // 校验参数数量
+    if (argc < 1) {
+        CALL_RECORDER_LOGE("HandleFilePermsNapi requires at least 1 argument");
+        napi_value result = nullptr;
+        napi_status status = napi_create_int32(env, 0, &result);
+        if (status != napi_ok) {
+            napi_throw_error(env, nullptr, "Failed to create int32 result");
+            return nullptr;
+        }
+        return result;
+    }
+    
+    // 校验参数类型
+    napi_valuetype filePathType = napi_undefined;
+    napi_status typeofStatus = napi_typeof(env, args[0], &filePathType);
+    if (typeofStatus != napi_ok || filePathType != napi_string) {
+        CALL_RECORDER_LOGE("HandleFilePermsNapi arg[0] must be string");
+        napi_value result = nullptr;
+        napi_status status = napi_create_int32(env, 0, &result);
+        if (status != napi_ok) {
+            napi_throw_error(env, nullptr, "Failed to create int32 result");
+            return nullptr;
+        }
+        return result;
+    }
     
     std::string filePath = Utils::GetStringValue(env, args[0]);
 
     CallRecorder &recorder = CallRecorder::GetInstance();
     bool ret = recorder.HandleFilePermission(filePath);
     
-    napi_value handleFilePermissionResult;
-    napi_create_int32(env, ret, &handleFilePermissionResult);
+    napi_value handleFilePermissionResult = nullptr;
+    napi_status createStatus = napi_create_int32(env, ret, &handleFilePermissionResult);
+    if (createStatus != napi_ok) {
+        napi_throw_error(env, nullptr, "Failed to create int32 result");
+        return nullptr;
+    }
     return handleFilePermissionResult;
 }
 

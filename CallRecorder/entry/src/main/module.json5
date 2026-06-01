@@ -13,20 +13,6 @@
     "pages": "$profile:main_pages",
     "extensionAbilities": [
       {
-        "description": "$string:backup_restore",
-        "name": "BackupExtensionAbility",
-        "srcEntry": "./ets/serviceextability/BackupExtension.ets",
-        "label": "$string:backup_restore",
-        "type": "backup",
-        "exported": false,
-        "metadata": [
-          {
-            "name": "ohos.extension.backup",
-            "resource": "$profile:backup_config"
-          }
-        ]
-      },
-      {
         "name": "com.ohos.callrecorder.CallRecorderAbility",
         "srcEntry": "./ets/callrecorderuiextability/CallRecorderAbility.ets",
         "description": "$string:CallrecorderAbility_desc",
@@ -119,15 +105,6 @@
         "usedScene": {
           "abilities": [
             "com.ohos.callrecorder.CallRecorderServiceExtensionAbility"
-          ]
-        }
-      },
-      {
-        "name": "ohos.permission.MANAGE_SECURE_SETTINGS",
-        "reason": "$string:backup_restore",
-        "usedScene": {
-          "abilities": [
-            "BackupExtensionAbility"
           ]
         }
       },

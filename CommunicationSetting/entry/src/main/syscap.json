@@ -5,6 +5,11 @@
       "tablet"
     ]
   },
+  "development": {
+    "addedSysCaps": [
+      "SystemCapability.Window.SessionManager"
+    ]
+  },
   "production": {
     "removedSysCaps": [
       "SystemCapability.PowerManager.BatteryManager.Extension",

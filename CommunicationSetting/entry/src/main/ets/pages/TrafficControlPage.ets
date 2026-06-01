@@ -92,6 +92,8 @@ const ANIM_DURATION: number = 150;
 const CIRCLE_ANIM_DURATION: number = 30;
 const SEARCH_BUTTON_ID = 'searchButton';
 const SEARCH_BACK_BUTTON_ID = 'searchBackButton';
+const TRAFFIC_NAV_BACK_BUTTON_ID = 'trafficNavBackButton';
+const NAV_TITLE_BG_COLOR: ResourceColor = $r('sys.color.ohos_id_color_sub_background');
 
 @Entry
 @Component
@@ -263,11 +265,13 @@ struct TrafficControlPage {
       (data: AllAppInfoList) => {
         if (!data) {
           LogUtil.info(TAG, 'getAppTrafficsDataDetails getAllAppTraffics data is empty.');
+          this.trafficLoadingFinished = LoadingFinished.FINISHED;
           return;
         }
         if (data.slotId !== this.simSelectedIndexes[0]) {
           LogUtil.info(TAG,
             `result not match, current slotid: ${this.simSelectedIndexes[0]}, result slotid: ${data.slotId}`);
+          this.trafficLoadingFinished = LoadingFinished.FINISHED;
           return;
         }
         this.totalCount = data.appList.length;
@@ -383,14 +387,14 @@ struct TrafficControlPage {
       let isVisible: boolean = this.pageInfos.size() === 0;
       AppStorage.setOrCreate(TRAFFIC_CONTROL_PAGE_VISIBLE_STATUS, isVisible);
     })
-    .hideBackButton(!this.isShowBackIcon && this.searchMode === SearchMode.NOT_SEARCHING)
+    .hideBackButton(this.searchMode === SearchMode.NOT_SEARCHING)
     .title(this.NavTitleBuilder())
     .titleMode(NavigationTitleMode.Mini)
     .width('100%')
     .layoutWeight(1)
     .navDestination(this.PageMap)
     .mode(NavigationMode.Stack)
-    .backgroundColor($r('sys.color.ohos_id_color_sub_background'))
+    .backgroundColor(NAV_TITLE_BG_COLOR)
   }
 
   // 统一的标题栏 Builder
@@ -404,6 +408,26 @@ struct TrafficControlPage {
           this.searchingTitle()
 
         } else {
+          if (this.isShowBackIcon) {
+            Button({ type: ButtonType.Circle }) {
+              SymbolGlyph($r('sys.symbol.chevron_backward'))
+                .width(24)
+                .height(24)
+                .draggable(false)
+                .fontSize('24vp')
+                .fontColor([$r('sys.color.ohos_id_color_primary')])
+            }
+            .id(TRAFFIC_NAV_BACK_BUTTON_ID)
+            .draggable(false)
+            .width('40vp')
+            .height('40vp')
+            .backgroundColor($r('sys.color.ohos_id_color_text_field_sub_bg'))
+            .margin({ end: LengthMetrics.vp(8) })
+            .onClick(() => {
+              this.onBackClick();
+            })
+            .accessibilityText($r('app.string.accessibility_back'))
+          }
 
           Text($r('app.string.mobile_data_manage_entry')) // 注意确认文案是否正确
             .fontSize(20)
@@ -436,7 +460,7 @@ struct TrafficControlPage {
       })
 
     }
-    .backgroundColor($r('sys.color.ohos_id_color_sub_background'))
+    .backgroundColor(NAV_TITLE_BG_COLOR)
   }
 
   // private titleParam(): HdsNavigationTitleBarOptions {
@@ -658,7 +682,7 @@ struct TrafficControlPage {
           })
         }
       }
-      .clip(false)
+      .clip(true)
       .width('100%')
       .height('100%')
       .scrollBar(BarState.Off)
@@ -848,7 +872,7 @@ struct TrafficControlPage {
         })
       }
     }
-    .clip(false)
+    .clip(true)
     .width('100%')
     .height('100%')
     .scrollBar(BarState.Off)
@@ -955,11 +979,13 @@ struct TrafficControlPage {
     this.mPresenter.getAllAppTraffics(0, this.simSelectedIndexes[0], (data: AllAppInfoList) => {
       if (!data) {
         LogUtil.info(TAG, 'onSegmentButtonIndexChanged getAllAppTraffics data is empty');
+        this.trafficLoadingFinished = LoadingFinished.FINISHED;
         return;
       }
       if (data.slotId !== this.simSelectedIndexes[0]) {
         LogUtil.info(TAG,
           `result not match, current slotid: ${this.simSelectedIndexes[0]}, result slotid: ${data.slotId}`);
+        this.trafficLoadingFinished = LoadingFinished.FINISHED;
         return;
       }
       this.totalCount = data.appList.length;

@@ -25,6 +25,10 @@ export struct constructedImage {
       Image(this.appInfo?.img)
         .width('48vp')
         .height('48vp')
+        // 统一图标外观：无论底层返回的是圆角图还是直角图，这里都按固定圆角渲染
+        // 保留上层图标加载逻辑不变，仅在展示层做兜底，避免出现“部分圆角、部分直角”
+        .borderRadius('12vp')
+        .clip(true)
         .draggable(false)
       // 分身应用的角标
       if (this.appInfo?.appIndex && Utils.checkAppIndexExists(this.appInfo.appIndex)) {
