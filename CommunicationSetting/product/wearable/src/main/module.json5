@@ -1,0 +1,43 @@
+{
+  "module": {
+    "name": "wearable_communicationsetting",
+    "type": "entry",
+    "description": "$string:watch_traffic_ranking_the_month",
+    "mainElement": "TrafficStatisticsAbility",
+    "deviceTypes": [
+      "wearable",
+      "default"
+    ],
+    "deliveryWithInstall": true,
+    "installationFree": false,
+    "pages": "$profile:main_pages",
+    "extensionAbilities": [
+      {
+        "name": "TrafficStatisticsAbility",
+        "srcEntry": "./ets/mainAbility/TrafficStatisticsAbility.ets",
+        "description": "$string:watch_traffic_ranking_the_month",
+        "label": "$string:watch_traffic_ranking_the_month",
+        "icon": "$media:app_icon",
+        "type": "sys/commonUI",
+        "exported": true,
+        "permissions": [
+          "ohos.permission.GET_BUNDLE_INFO_PRIVILEGED"
+        ]
+      }
+    ],
+    "requestPermissions": [
+      {
+        "name": "ohos.permission.GET_NETWORK_STATS"
+      },
+      {
+        "name": "ohos.permission.GET_BUNDLE_INFO_PRIVILEGED"
+      },
+      {
+        "name": "ohos.permission.GET_BUNDLE_INFO"
+      },
+      {
+        "name": "ohos.permission.GET_BUNDLE_RESOURCES"
+      }
+    ]
+  }
+}

@@ -1,0 +1,137 @@
+{
+    "string":[
+        {
+            "name":"auto_recording_object",
+            "value":"Aplicar a",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"deselect_all",
+            "value":"Deselec todo",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"call_meeting",
+            "value":"Llamada en conferencia",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"select_all",
+            "value":"Selec todo",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"no_number_specified",
+            "value":"Sin números",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"unknown",
+            "value":"Desconocido",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"delete",
+            "value":"Eliminar",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"specified_number",
+            "value":"Números especificados",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"automatic_recording_of_calls",
+            "value":"Grabación automática de llamadas",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"automatically_record_call_viewed",
+            "value":"Las grabaciones de llamadas pueden encontrarse en la aplicación Grabadora.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"unset_recorder",
+            "value":"Sin configurar",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"call_numbers_finish_des",
+            "value":"Guardada/s en Teléfono > Más > Grabaciones de llamadas. Pulsa para ver.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"add_specified_number",
+            "value":"Añadir números",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"cancel",
+            "value":"Cancelar",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"is_delete_number",
+            "value":"¿Eliminar este número?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"all_calls",
+            "value":"Todas las llamadas",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"is_delete_all_number",
+            "value":"¿Eliminar todos los números?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"voice_long_press",
+            "value":"Pulsar dos veces y mantener pulsado para ver más opciones",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"add",
+            "value":"Añadir",
+            "attr":{
+                "priority":"translate"
+            }
+        }
+    ]
+}

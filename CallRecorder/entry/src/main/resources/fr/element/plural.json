@@ -1,0 +1,61 @@
+{
+    "plural":[
+        {
+            "name":"call_numbers_finish",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"%d appels enregistrés",
+                    "attr":{
+                        "priority":"LT"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"%d appel enregistré",
+                    "attr":{
+                        "priority":"LT"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"use_numbers",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"%d",
+                    "attr":{
+                        "priority":"LT"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"%d",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"is_delete_plural_number",
+            "value":[
+                {
+                    "quantity":"one",
+                    "value":"Supprimer %d numéro ?",
+                    "attr":{
+                        "priority":"translate"
+                    }
+                },
+                {
+                    "quantity":"other",
+                    "value":"Supprimer %d numéros ?",
+                    "attr":{
+                        "priority":"LT"
+                    }
+                }
+            ]
+        }
+    ]
+}

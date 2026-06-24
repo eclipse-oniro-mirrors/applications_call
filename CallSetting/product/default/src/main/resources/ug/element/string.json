@@ -1,0 +1,3032 @@
+{
+    "string":[
+        {
+            "name":"Apn_Deleting_an_APN",
+            "value":"\u200fAPN ئۆچۈرۈش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"incoming_call_rejection_sms",
+            "value":"چاقىرىق رەت قىلىش ئۇچۇرى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_setting",
+            "value":"تەڭشەك",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_volte",
+            "value":"\u200fVoLTE سۈزۈك چاقىرىق",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"app_about_name",
+            "value":"تېلېفون",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"automatic_enrollment",
+            "value":"ئۆزلۈكىدىن تىزىملاش...",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Apn_The_MCC_must_be_a_3_digit_number",
+            "value":"\u200fMCC چوقۇم 3 خانىلىق سان بولۇشى كېرەك.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"voicemail",
+            "value":"ئۈنخەت",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"registration_failed",
+            "value":"تور تىزىملانمىدى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"APN_Reset_to_Default",
+            "value":"سۈكۈتكە قايتۇرۇش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"speedDial",
+            "value":"تېز چاقىرىش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"phone_ring_tone",
+            "value":"قوڭغۇراق",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Apn_APN_enabled",
+            "value":"\u200fAPN ئوچۇق",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"automatic_carrier_selection",
+            "value":"ئۆزلۈكىدىن يۈرۈتكۈچى تاللاشنى ئاچامسىز؟",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Apn_MNC_must_be_2_or_3_digits",
+            "value":"\u200fMNC چوقۇم 2 ياكى 3 خانىلىق سان بولۇشى كېرەك.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_fail",
+            "value":"يۈرۈتكۈچى تىزىملىكى يۈكلەنمىدى، كېيىنرەك قايتا سىناڭ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"New_CAll",
+            "value":"كۈچەيمە چاقىرىق",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"New_CAll_DESC",
+            "value":"بارلىق مۇلازىمەتنى تور يۈرۈتكۈچى تەمىنلەيدۇ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"call_about",
+            "value":"ھەققىدە",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"more",
+            "value":"باشقىلار",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_enableDataWhileRoaming",
+            "value":"رايون ئاتلىغاندا كۆچمە ئېقىم ئىشلىتىلىدۇ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"APN_MMS",
+            "value":"رەڭلىك ئۇچۇر",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_register",
+            "value":"تورغا تىزىملاندى.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"APN_ADD_APN",
+            "value":"\u200fAPN قۇرۇش",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"APN_Restoring_default_APN_settings",
+            "value":"سۈكۈت APN تەڭشىكىگە قايتۇرۇلۇۋاتىدۇ...",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_card2",
+            "value":"كارتا 2 تورى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_card1",
+            "value":"كارتا 1 تورى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"automatic_recording_of_calls",
+            "value":"چاقىرىق ئۈنگە ئېلىش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"confim_space",
+            "value":"جەزملەش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"APN_Creating_an_APN",
+            "value":"\u200fAPN قۇرۇش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_turn_on_data_roaming",
+            "value":"كەزمە ئېقىم ئېچىلسا، كېزىش ھەققى كېلىشى مۇمكىن. ئاچامسىز؟",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"APN_common",
+            "value":"ئورتاق",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"customer_service",
+            "value":"مۇلازىمەت تېلېفونى",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"shut_down",
+            "value":"ئېتىك",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_Automatic_selection",
+            "value":"ئۆزلۈكىدىن تاللاش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"text_paragraphs",
+            "value":"بۇنى ئەتسىڭىز، يۈرۈتكۈچى تورىنى قولدا تاللاش كېرەك. يانفون ئۆزلۈكىدىن يۈرۈتكۈچى تاللىمايدۇ، تور مۇلازىمىتى ئىشلىمەسلىكى مۇمكىن. قولدا تور تاللاش جەريانىدا كۆچمە ئېقىم مۇلازىمىتىمۇ ۋاقىتلىق ئېتىلىدۇ. ئېتەمسىز؟",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_dataRoaming",
+            "value":"كەزمە ئېقىم",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"opened",
+            "value":"ئوچۇق",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_Search",
+            "value":"ئىزدەۋاتىدۇ…",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data",
+            "value":"كۆچمە ئېقىم",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"call_history_merging",
+            "value":"سۆزلىشىش خاتىرىسى بىرىكتۈرۈش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_able",
+            "value":"ئىشلەيدىغان تور",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"APN_TITLE",
+            "value":"\u200fAPN",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"phone_ring_Card2",
+            "value":"كارتا %1$s: %2$s",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_tips",
+            "value":"دىققەت",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Apn_confirm",
+            "value":"جەزملەش",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Apn_OK",
+            "value":"جەزملەش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"about_personal_info_list",
+            "value":"توپلايدىغان شەخسىي ئۇچۇر تىزىملىكى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"call_version",
+            "value":"نەشرى %s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Apn_give_up_the_modification",
+            "value":"ئۆزگەرتىشنى تاشلامسىز؟",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"by_time",
+            "value":"ۋاقىت بويىچە",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"gotIt",
+            "value":"بىلدىم",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_charges",
+            "value":"يۈرۈتكۈچى ئېقىم ھەققى ئېلىشى مۇمكىن.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_general",
+            "value":"ئورتاق",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"phone_ring_Card1",
+            "value":"كارتا %1$s: %2$s",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"APN_Not_set",
+            "value":"بېكىتمىگەن",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Call_forward",
+            "value":"چاقىرىق يۆتكەش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"privacy_statement",
+            "value":"تېلېفون ۋە مەخپىيەتلىك ھەققىدە بايانات",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"APN_NAME",
+            "value":"ئۇلىنىش نۇقتىسىنىڭ نامى (APN)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Apn_cancel",
+            "value":"بىكار قىلىش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"by_contact",
+            "value":"ئالاقىداش بويىچە",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"APN_TITLE_MSG",
+            "value":"ئورتاق",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Apn_The_name_cannot_be_empty",
+            "value":"نام بوش قالمىسۇن.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_confirmation_function",
+            "value":"ئېچىشتىن بۇرۇن يۈرۈتكۈچىدىن بۇ مۇلازىمەتنىڭ بارلىقىنى سۈرۈشتۈرۈپ جەزملەڭ، بولمىسا ئادەتتىكى چاقىرىققا تەسىر يېتىدۇ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Apn_The_APN_cannot_be_empty",
+            "value":"ئۇلىنىش نۇقتىسىنىڭ نامى (APN) بوش قالمىسۇن.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Deactivation",
+            "value":"ئېتىش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Call_forward_user_unreachable",
+            "value":"ئۇلانمىغاندا",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"others",
+            "value":"باشقا",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_cancel",
+            "value":"بىكار قىلىش",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_data_networkProvider",
+            "value":"تور يۈرۈتكۈچى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"unlock_after_call_notification",
+            "value":"قۇلۇپ ئوچۇق كەلگەن تېلېفون",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"cancel",
+            "value":"بىكار قىلىش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"full_screen",
+            "value":"تولۇق ئېكران",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Call_waiting",
+            "value":"چاقىرىق كۈتۈش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"unknown",
+            "value":"ئېنىقسىز",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Call_forward_unconditional",
+            "value":"ئىزچىل يۆتكەش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Turn_on",
+            "value":"ئېچىش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"To",
+            "value":"يۆتكەيدىغان نومۇر:",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Call_forward_no_reply",
+            "value":"ئالمىغاندا",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_disable",
+            "value":"\u200f%s (چەكلەنگەن)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"8300999",
+            "value":"ئېنىقسىز خاتالىق كۆرۈلدى.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"banner",
+            "value":"بالداق",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"unlock_after_call_notification_description",
+            "value":"ئويۇن، خەرىتىدە يول باشلاش، تولۇق ئېكرانلىق ھالەتتە رەسىم ۋە سىن كۆرۈش جەريانىدا كەلگەن تېلېفون ئۇقتۇرۇشى ئىزچىل بالداق شەكلىدە كۆرۈنىدۇ. ئاددىي ھالەت، ياشانغانلار ھالىتى ۋە دالا ھالىتىدە كەلگەن تېلېفون ئىزچىل تولۇق ئېكرانلىق كۆرۈنىدۇ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"APN_EDIT_APN",
+            "value":"ئۇلىنىش نۇقتىسى ئۆزگەرتىش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"go_setting",
+            "value":"تەڭشەك",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Call_forward_deactivated",
+            "value":"ئېتىك",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_call_notice",
+            "value":"ئەسكەرتىش",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Notify_during_call",
+            "value":"سۆزلىشىۋاتقاندا كەلگەن تېلېفون ئۇقتۇرۇلىدۇ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_Registering",
+            "value":"\u200f%s ئارقىلىق تىزىملىنىۋاتىدۇ...",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Call_forward_no_busy",
+            "value":"ئالدىراش چاغدا",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"open_mobile_data",
+            "value":"كۆچمە ئېقىمنى ئېچىش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_Registering_disable",
+            "value":"\u200f%s (چەكلەنگەن) ئارقىلىق تىزىملىنىۋاتىدۇ...",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_preferredNetwork",
+            "value":"مايىل تور: %s",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_notification_title",
+            "value":"تيەنتۇڭ سۈنئىي ھەمراھ ئالاقىسى ئېتىلدى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Change_the",
+            "value":"ئۆزگەرتىش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"upper_tilt_phone",
+            "value":"يانفوننى يۇقىرىغىراق قىيسايتىڭ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"device_calibrating",
+            "value":"تۈزىتىۋاتىدۇ",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"8300003",
+            "value":"سىستېمىدا ئىچكى خاتالىق كۆرۈلدى.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_exited_for_system_error",
+            "value":"سىستېمىدا خاتالىق كۆرۈلۈپ، تيەنتۇڭ سۈنئىي ھەمراھ ئالاقىسى ئېتىلدى. ئىشلىتىش ئۈچۈن قايتا ئۇلاڭ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_exited_for_system_error",
+            "value":"سىستېمىدا خاتالىق كۆرۈلۈپ، ياقۇت سۈنئىي ھەمراھ ئالاقىسى ئېتىلدى. قايتا ئۇلىنىش قۇرۇڭ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"8300001",
+            "value":"كىرگۈزگەن قىممەت دائىرىدە ئەمەس.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"8300002",
+            "value":"مۇلازىمەت ئۇلانمىدى.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_not_serve",
+            "value":"مۇلازىمەت يوق",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"re_calibrate",
+            "value":"قايتا تۈزىتىش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"lower_tilt_phone",
+            "value":"يانفوننى تۆۋەنگىرەك قىيسايتىڭ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"float_window_keep_posture_check_occlusion",
+            "value":"بۇ يۆنىلىشتە توسالغۇ بولمىسۇن.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"float_window_keep_posture_wait_patiently",
+            "value":"سەل كۈتۈڭ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"portrait_reminder",
+            "value":"تۈزبوي تۇتۇڭ",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"landscape_reminder",
+            "value":"تىكبوي تۇتۇڭ",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"closed",
+            "value":"ئېتىك",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"re_connecting_satellite",
+            "value":"قايتا ئۇلاش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"text_paragraphs_no_data",
+            "value":"بۇنى ئەتسىڭىز، يۈرۈتكۈچى تورىنى قولدا تاللاش كېرەك. يانفون ئۆزلۈكىدىن يۈرۈتكۈچى تاللىمايدۇ، تور مۇلازىمىتى ئىشلىمەسلىكى مۇمكىن. ئېتەمسىز؟",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_search_failed",
+            "value":"سۈنئىي ھەمراھ تېپىلمىدى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"device_calibrating_tips",
+            "value":"ئۈسكۈنىنى قىيسايتىپ چەمبەرنى پۈتۈنلەڭ",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_signal",
+            "value":"سىگنال",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"float_upper_down_phone",
+            "value":"دۈگىلەك مەركەزگە توغرىلانسۇن.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Network_response_abnormal",
+            "value":"توردا ئىنكاس يوق.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"networkAnomaly",
+            "value":"توردا ئىنكاس يوق، بېكىتىلمەيدۇ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"right_rotate_phone",
+            "value":"يانفوننى ئوڭغىراق تۇتۇڭ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_not_enabled",
+            "value":"تيەنتۇڭ سۈنئىي ھەمراھ ئالاقىسى ئېچىلمىغان.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"re_wait_loading",
+            "value":"قايتا ئىزدەش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_search",
+            "value":"يۈكلەۋاتىدۇ",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_settings_airplane_mode",
+            "value":"ئۇچۇش ھالىتىدە تيەنتۇڭ سۈنئىي ھەمراھ ئالاقىسى ئېچىلمايدۇ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_alignment",
+            "value":"سۈنئىي ھەمراھ ئىزدەۋاتىدۇ",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_hunt_success",
+            "value":"سۈنئىي ھەمراھقا ئۇلاندى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"left_rotate_phone",
+            "value":"يانفوننى سولغىراق تۇتۇڭ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_hunt_failed",
+            "value":"سۈنئىي ھەمراھقا ئۇلانمىدى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"device_calibrate_failed",
+            "value":"تۈزىتىلمىدى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"201",
+            "value":"ئىجازەت دەلىللەنمىدى.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"device_offset_reminder",
+            "value":"سۈنئىي ھەمراھقا توغرىلاڭ",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_hunt_timeout",
+            "value":"سۈنئىي ھەمراھقا ئۇلىنىش ۋاقتى ئېشىپ كەتتى.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_search_tips",
+            "value":"ئامال بار ئوچۇقچىلىقتا تۇرۇڭ، ئەتراپتا سىگنال توسۇۋالىدىغان نەرسە بولمىسۇن.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"401",
+            "value":"ئۆلچەم تەكشۈرۈلمىدى.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"keep_current_posture",
+            "value":"مۇشۇ قىياپەتنى ساقلاڭ، يۆتكەلمەڭ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_message",
+            "value":"ئۇچۇر",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_phone",
+            "value":"تېلېفون",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_signal_descriptions",
+            "value":"جۇڭگو تېلېگرافى\nتيەنتۇڭ سۈنئىي ھەمراھى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"not_link_satellite_dialog_positive",
+            "value":"داۋام",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"location_south_east",
+            "value":"جەنۇب ‎%1$s‎ شەرق ‎%2$s‎",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"location_north_west",
+            "value":"شىمال ‎%1$s‎ غەرب ‎%2$s‎",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"keep_current_posture_wait_patiently",
+            "value":"سۈنئىي ھەمراھ يىراقتا، شۇڭا ئالاقە سىگنالىنى يەتكۈزۈشكە ۋاقىت كېتىدۇ.\nسەل كۈتۈڭ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"cannnot_dial_satellite_call_tips",
+            "value":"ئۈسكۈنە قىزىپ كەتتى، سوۋۇغاندا قايتا سىناڭ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_call_not_support_earpiece",
+            "value":"سۈنئىي ھەمراھ بىلەن مۇقىم ئۇلىنىش ئۈچۈن قۇلاق ھالەت ئىشلىمەيدۇ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"location_north_east",
+            "value":"شىمال ‎%1$s‎ شەرق ‎%2$s‎",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"float_left_right_phone",
+            "value":"سۈنئىي ھەمراھ قانات شەكىللىك رايونغا كىرسۇن.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"device_calibrating_fail_tips",
+            "value":"ئۈسكۈنىنى تىك تۇتۇپ ھالقا شەكلىدە چۆرۈپ تۈزىتىڭ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"keep_current_posture_check_occlusion",
+            "value":"سۈنئىي ھەمراھقا توغرىلاندى.\nبۇ يۆنىلىشتە بىنا ياكى دەرەخ دېگەندەك توسالغۇ بولمىسۇن.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"float_window_keep_posture",
+            "value":"نۆۋەتتىكى قىياپەتنى ساقلاڭ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"location_south_west",
+            "value":"جەنۇب ‎%1$s غەرب ‎%2$s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"float_keep_current_posture",
+            "value":"نۆۋەتتىكى قىياپەتنى ساقلاڭ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_connecting",
+            "value":"ئۇلىنىۋاتىدۇ (%d)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"super_privacy_dialog_title",
+            "value":"يۇقىرى مەخپىيەتلىك ھالىتى",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"disable_super_privacy_and_call",
+            "value":"ئېتىش ۋە چاقىرىش",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"super_privacy_dialog_call_summary",
+            "value":"يۇقىرى مەخپىيەتلىك ھالىتىدە مىكروفون چەكلەنگەن. چاقىرىق داۋامىدا بۇ ھالەتنى ۋاقىتلىق ئېتەمسىز؟",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"super_privacy_dialog_video_call_summary",
+            "value":"يۇقىرى مەخپىيەتلىك ھالىتىدە مىكروفون ۋە كامېرا چەكلەنگەن. چاقىرىق داۋامىدا بۇ ھالەتنى ۋاقىتلىق ئېتەمسىز؟",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"disable_super_privacy_and_answer",
+            "value":"قوبۇللىغاندا ئېتىش",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"number_identity_permission_dialog_name_1",
+            "value":"ئالاقىداش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"not_link_satellite_dialog_message",
+            "value":"سۈنئىي ھەمراھ بىلەن ئۇلانمىغان ۋاقىت %d سېكۇنتقا يەتتى، تيەنتۇڭ سۈنئىي ھەمراھ ئالاقىسى چېكىنىدۇ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"number_identity_setting_title",
+            "value":"نومۇر ۋە ئۇچۇر تونۇش",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"not_link_satellite_auto_exit_notification_Text",
+            "value":"سۈنئىي ھەمراھ بىلەن ئۇلانمىغان ۋاقىت %d سېكۇنتقا يېتىپ، تيەنتۇڭ سۈنئىي ھەمراھ ئالاقىسى ئېتىلدى. ئىشلىتىش ئۈچۈن قايتا ئۇلاڭ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"number_identity_permission_dialog_name_3",
+            "value":"سۆزلىشىش خاتىرىسى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"number_identity_permission_dialog_name_2",
+            "value":"ئۇچۇر",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_settings_window_mode",
+            "value":"«تيەنتۇڭ سۈنئىي ھەمراھ ئالاقىسى» كۆپ كۆزنەك قوللىمايدۇ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_enabled4G",
+            "value":"\u200f4G",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_data_enabled5G",
+            "value":"\u200f5G",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"ERROR_CODE_NOT_SUPPORT_CARD",
+            "value":"بۇ كارتا سۈنئىي ھەمراھ مۇلازىمىتىنى قوللىمايدۇ، سۈنئىي ھەمراھ مۇلازىمىتى يۈرۈتكۈچى بىلەن ئالاقىلىشىپ كارتا ئالماشتۇرۇڭ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"ERROR_CODE_NOT_OPENED_TIANDIWINGCARD",
+            "value":"بۇ كارتا سۈنئىي ھەمراھ كەسپىنى ئاچمىغان، سۈنئىي ھەمراھ مۇلازىمىتى يۈرۈتكۈچى بىلەن ئالاقىلىشىپ ئاچقۇزۇڭ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"ERROR_CODE_NOT_ACTIVATED_SIM",
+            "value":"بۇ ئۈسكۈنىنىڭ IMEI نومۇرى تيەنتۇڭ سۈنئىي ھەمراھ تورىغا تىزىملانمىغان.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"ERROR_CODE_NOT_OPENED_ROAMING",
+            "value":"يۈرۈتكۈچى تور ئېغىزى ھالىتىدە خاتالىق بار، سۈنئىي ھەمراھ يۈرۈتكۈچى بىلەن ئالاقىلىشىڭ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"ERROR_CODE_OTHERS",
+            "value":"توردا خاتالىق بار، سۈنئىي ھەمراھ يۈرۈتكۈچى بىلەن ئالاقىلىشىڭ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"message_status_sent",
+            "value":"يوللاندى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"im_smc_calibrate_failed",
+            "value":"تۈزىتىلمىدى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"number_identity_permission_dialog_title",
+            "value":"نومۇر ۋە ئۇچۇر تونۇش ئىجازەتلىرى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"im_smc_receive_auto_change_01",
+            "value":"ئۇلىنىش ۋاقتى ئېشىپ كېتىپ، سۈنئىي ھەمراھ ئالماشتى.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"number_identity_setting_text_1",
+            "value":"بۇ مۇلازىمەت كەلگەن تېلېفون ۋە ئۇچۇرنى ئاڭلىق ئېنىقلاپ، دەخلى، ئالدامچى، يوللانما مۇلازىمىتى، بازار تەشۋىقات تېلېفونلىرى ھەمدە ئەخلەت ۋە ئېلان ئۇچۇر قاتارلىقلارنى تونۇپ بېرىدۇ، شۇنداقلا نومۇر تەپسىلاتىنى تەكشۈرۈش مۇلازىمىتى تەمىنلەيدۇ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"im_smc_tips_outdoor_use",
+            "value":"سىرتتا ئىشلىتىش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"number_identity_short_notification",
+            "value":"<body><span style='normal'>بۇ مۇلازىمەت </span><span style='bold'>تور</span><span style='normal'> ئىشلىتىدۇ؛ </span><span style='bold'>ئالاقىداش</span><span style='normal'> ئىجازىتى ئالىدۇ؛ ئالاقىداش ئوقۇيدۇ؛ سۆزلىشىش خاتىرىسى ۋە قىسقا ئۇچۇر مەزمۇنىنى ئوقۇپ يۈكلەيدۇ؛ يۇقىرىقىلار ناتونۇش نومۇر ۋە ئۇچۇر تونۇش مۇلازىمەتلىرىنى تەمىنلەش ئۈچۈن ئىشلىتىلىدۇ. بۇ مۇلازىمەتنى ئاچسىڭىز، يۇقىرىقىلارغا قوشۇلغان بولىسىز. شەخسىي ئۇچۇر بىر تەرەپ قىلىش ھەققىدىكى تەپسىلاتلارنى </span><span style='privacyStatement'>«نومۇر ۋە ئۇچۇر تونۇش ۋە مەخپىيەتلىك ھەققىدە بايانات»</span><span style='normal'> ۋە </span><span style='permissionStatement'>«ئىجازەت ئىشلىتىش كۆرسەتمىسى»</span><span style='normal'> ئارقىلىق كۆرۈڭ.</span></body>",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"im_smc_received_satellite_return",
+            "value":"سۈنئىي ھەمراھ جەزملىدى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_settings_skytone_mode",
+            "value":"دۇنيا كېزەر مۇلازىمىتىنى ئىشلىتىۋاتقاندا تيەنتۇڭ سۈنئىي ھەمراھ ئالاقىسى ئېچىلمايدۇ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"im_message_smc_receive_success",
+            "value":"قوبۇللاندى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"im_message_smc_shake",
+            "value":"ئۈسكۈنىنى قىيسايتىپ چەمبەرنى پۈتۈنلەڭ",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"open_phone_to_answer_calls",
+            "value":"قاتلاقنى ئېچىپ تېلېفون ئېلىش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"enhance_statement_content",
+            "value":"بۇ مۇلازىمەت تور ئىشلىتىدۇ؛ ئالاقىداش ئىجازىتى ئالىدۇ؛ ئالاقىداش ئوقۇيدۇ؛ سۆزلىشىش خاتىرىسىنى ئوقۇيدۇ ۋە ئۆزگەرتىدۇ؛ قىسقا ئۇچۇر مەزمۇنىنى ئوقۇپ يۈكلەيدۇ؛ يۇقىرىقىلار ناتونۇش نومۇر ۋە ئۇچۇر تونۇش مۇلازىمەتلىرىنى تەمىنلەش ئۈچۈن ئىشلىتىلىدۇ. بۇ تاللانمىنى ئاچسىڭىز، يۇقىرىقىلارغا قوشۇلغان بولىسىز. شەخسىي ئۇچۇر بىر تەرەپ قىلىش ھەققىدىكى تەپسىلاتلارنى <a link=\"privacyStatement\">«نومۇر ۋە ئۇچۇر تونۇش ۋە مەخپىيەتلىك ھەققىدە بايانات»</a> ۋە <a link=\"permissionStatement\">«ئىجازەت ئىشلىتىش كۆرسەتمىسى»</a> ئارقىلىق كۆرۈڭ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"number_identity_permission_dialog_purpose_2",
+            "value":"بۇ ئىجازەت قىسقا ئۇچۇر توسۇش-توسماسلىقنى قارار قىلىش ئۈچۈن ئىشلىتىلىدۇ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"number_identity_permission_dialog_purpose_1",
+            "value":"بۇ ئىجازەت نومۇرنىڭ ئالاقىداش تىزىملىكى ۋە ئاق/قارا تىزىملىكتە بار-يوقلۇقىنى ئېنىقلاش ئۈچۈن ئىشلىتىلىدۇ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"smc_keep_posture",
+            "value":"مۇشۇ ھالەتتە تۇتۇڭ",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"number_identity_permission_dialog_purpose_3",
+            "value":"بۇ ئىجازەت تېلېفون نومۇرىغا بەلگە سېلىش ۋە قىسقا ئۇچۇر توسۇش-توسماسلىقنى قارار قىلىش ئۈچۈن ئىشلىتىلىدۇ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"im_smc_tips_starfinder_loading",
+            "value":"%1$s\nئارقىلىق توسالغۇدىن ساقلىنىڭ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"send_failed",
+            "value":"يوللانمىدى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"enhance_statement_title",
+            "value":"نومۇر ۋە ئۇچۇر تونۇش مۇلازىمىتى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"answer_voice_calls_by_flipping",
+            "value":"توك مەنبە ياكى ئۈن كۇنۇپكىسىنى بېسىپ ئۈنسىزلىگەندىن كېيىن يانفون قاتلىقىنى ئاچقاندا تېلېفون ئېلىشنى قولدا جەزملەش كېرەك.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"im_message_smc_receive_fail",
+            "value":"قوبۇللانمىدى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_showname",
+            "value":"كارتا %1$s: %2$s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_service_esim_showname",
+            "value":"‏eSIM %1$s:‏ ‎%2$s‎",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_service_no_sim_card",
+            "value":"ئىشلەيدىغان SIM يوق",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_service_select_sim",
+            "value":"\u200fSIM كارتا تاللاش",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_service_network_descriptions",
+            "value":"تيەنتۇڭ سۈنئىي ھەمراھ تورى ئارقىلىق تېلېفونلىشىش ۋە ئۇچۇرلىشىشقا بولىدۇ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"start_skycom_satellite_communications",
+            "value":"تيەنتۇڭ سۈنئىي ھەمراھ ئالاقىسى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"stop_dialog",
+            "value":"ئېتىش",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"enter_in_call",
+            "value":"سۆزلىشىۋاتقاندا تيەنتۇڭ سۈنئىي ھەمراھ ئالاقىسى ئېچىلمايدۇ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_revoke_authorization_message",
+            "value":"مۇلازىمەتنى ئەتسىڭىز بۇ ئىقتىدار ئىشلىمەيدۇ، ئېتەمسىز؟",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"sim_select",
+            "value":"\u200fSIM كارتا تاللاش",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"frequently_asked_questions",
+            "value":"دائىملىق سوئاللار",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_service_no_phone_number",
+            "value":"ئېنىقسىز",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"exit_satellite_service_tips",
+            "value":"تيەنتۇڭ سۈنئىي ھەمراھ ئالاقىسىدىن چېكىنەمسىز؟",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_service_settings_enable_tips",
+            "value":"سۈنئىي ھەمراھ مەنبەسى چەكلىك، شۇڭا كۆچمە تور بار چاغدا سۈنئىي ھەمراھ ئالاقىسىنى ئىشلەتمەڭ. سۈنئىي ھەمراھ ئالاقىسىنى ئاچسىڭىز، WLAN، كۆچمە ئېقىم ۋە ئورۇن مۇلازىمىتى ئېتىلىدۇ ۋە ئالاقىدار ئىقتىدارلار ئىشلىمەيدۇ، ئاچامسىز؟",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_location_permission_descriptions",
+            "value":"بۇ ئىجازەت ئورۇن ئۇچۇرىنى ئېنىقلاپ سۈنئىي ھەمراھقا توغرىلاش ۋە ئۇچۇر يوللىغاندا ئورۇن ئۇچۇرىنى قوشۇپ يوللاش ئۈچۈن ئىشلىتىلىدۇ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_revoke_authorization",
+            "value":"مۇلازىمەتنى ئېتىش",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_service_settings_explain",
+            "value":"ئەسكەرتىش",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_network",
+            "value":"سۈنئىي ھەمراھ تورى",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_service_settings_details_descriptions3",
+            "value":"تيەنتۇڭ سۈنئىي ھەمراھ ئالاقىسى بىلەن ئۇلانسىڭىز، ئېنىق ئورۇن ئۇچۇرىڭىز تيەنتۇڭ سۈنئىي ھەمراھى يۈرۈتكۈچىگە ئەۋەتىلىدۇ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"enabled",
+            "value":"ئېچىش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"skycom_satellite_communications",
+            "value":"تيەنتۇڭ سۈنئىي ھەمراھ ئالاقىسى",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_service_select_sim_card",
+            "value":"سۈنئىي ھەمراھقا ئۇلانغاندا تېلېفون ۋە ئۇچۇرلىشىدىغان SIM كارتا تاللاڭ. بۇ كارتىنىڭ ئالاقىدار ئىقتىدارلىرى يۈرۈتكۈچى ئارقىلىق ئېچىلغان بولۇشى كېرەك.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_service_permission_count",
+            "value":"بۇ مۇلازىمەتكە تۆۋەندىكى ئىجازەت كېرەك:",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_permission_usage_details",
+            "value":"تيەنتۇڭ سۈنئىي ھەمراھ ئالاقىسى ئىجازەتلىرى",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_service_no_sim_card_descriptions",
+            "value":"بۇ ئىقتىدارنى قوللايدىغان SIM كارتا بايقالمىدى، تيەنتۇڭ سۈنئىي ھەمراھ ئالاقە مۇلازىمىتىنى ئاچقان SIM كارتا سېلىپ قايتا سىناڭ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"start_skycom_satellite_communications_sub3",
+            "value":"تيەنتۇڭ سۈنئىي ھەمراھ ئالاقىسى بىلەن ئۇلانسىڭىز، ئېنىق ئورۇن ئۇچۇرىڭىز تيەنتۇڭ سۈنئىي ھەمراھى يۈرۈتكۈچىگە ئەۋەتىلىدۇ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"start_skycom_satellite_communications_sub1",
+            "value":"بۇ مۇلازىمەت WLAN ۋە كۆچمە تور يوق ئوچۇقچىلىق مۇھىتتا تيەنتۇڭ سۈنئىي ھەمراھ تورى ئارقىلىق تېلېفون ۋە ئۇچۇر قاتارلىق ئاساسىي مۇلازىمەتلەرنى تەمىنلەيدۇ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_closeAutoSelect",
+            "value":"ئاپتوماتىك تاللاشنى ئېتىش",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_data_chooseNetworkProvider",
+            "value":"قولدا ياكى ئۆزلۈكىدىن تاللاشقا بولىدۇ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"cancel_space",
+            "value":"بىكار قىلىش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_network",
+            "value":"كۆچمە تور",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"im_message_smc_no_new_message_to_receive",
+            "value":"قوبۇللايدىغان ئۇچۇر يوق",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"open_mobile_data_detail",
+            "value":"بۇ مۇلازىمەت كۆچمە ئېقىم ئىشلىتىدۇ، تەڭشەكتىن ئېچىڭ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"advertising_and_promotion",
+            "value":"ئېلان",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"sim_card_num_no_space",
+            "value":"كارتا %s",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_exit",
+            "value":"چېكىنىش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_details_2_new",
+            "value":"%s. بۇ مۇلازىمەتنى سۈنئىي ھەمراھ مۇلازىمىتى يۈرۈتكۈچى ئارقىلىق ئاچىسىز. سىز تۇرۇشلۇق رايوندا تەمىنلىنىش ئەھۋالى، ئېچىش ئۇسۇلى ۋە ھەق ئېلىش ئۆلچىمىنى يۈرۈتكۈچىدىن سۈرۈشتۈرۈڭ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_details_3",
+            "value":"%s. بۇ ئىقتىدار پەقەت جۇڭگو چوڭ قۇرۇقلۇقى رايونىدا ئىشلەيدۇ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_details_0",
+            "value":"%1$s. سۈنئىي ھەمراھ مەنبەسى چەكلىك، شۇڭا كۆچمە تور بار چاغدا، كۆچمە تور ئارقىلىق ئالاقە قىلىڭ. %2$s",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_details_1_new",
+            "value":"%s. ئىشلىتىش جەريانىدا WLAN، كۆچمە ئېقىم ۋە ئورۇن مۇلازىمىتى ئېتىلىدۇ. خۇاۋېي ئورتاقلاشقۇچ، سىمسىز سۇنۇش ۋە دۇنيا كېزەر قاتارلىق ئالاقىدار ئىقتىدارلار ئىشلىمەيدۇ. بۇ مۇلازىمەتتىن چېكىنگەندە ئەسلىگە كېلىدۇ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"fusion_call_switch_short_notification_sub2",
+            "value":"چاقىرىق ياخشىلاش ۋە مەخپىيەتلىك ھەققىدە بايانات",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"fusion_call_switch_short_notification",
+            "value":"كۆچمە تور ياكى WLAN ئارقىلىق چاقىرىق سۈپىتى ياخشىلىنىدۇ. ئاچسىڭىز، يۇقىرىقىلارغا قوشۇلغان بولىسىز. شەخسىي ئۇچۇر ئىشلىتىش ھەققىدىكى تەپسىلاتلارنى «%1$s» ئارقىلىق كۆرۈڭ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"improve_call_quality",
+            "value":"چاقىرىق ياخشىلاش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"advance_options_title",
+            "value":"ئالىي",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"meetime_network_descriptions",
+            "value":"قىسقا ئۇچۇر ياكى تەلراۋان ئارقىلىق بېيدوۋ سۈنئىي ھەمراھ ئۇچۇرى يوللاش-قوبۇللاشقا بولىدۇ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"meetime_network_title",
+            "value":"تەلراۋان بېيدوۋ سۈنئىي ھەمراھ ئۇچۇرى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_card1_or_card2",
+            "value":"كارتا 1/كارتا 2 تورى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"incoming_notification_setting",
+            "value":"كەلگەن تېلېفون ئۇقتۇرۇشى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"incoming_notification_setting_tips",
+            "value":"تېلېفون > تەڭشەك > قۇلۇپ ئوچۇق كەلگەن تېلېفون دېگەن ئورۇندىن كەلگەن تېلېفون ئۇقتۇرۇشىنى بالداق ياكى تولۇق ئېكرانلىق شەكىلدە كۆرۈنىدىغان قىلىپ تاللىيالايسىز.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"unlock_after_call_notification_descriptions",
+            "value":"ئويۇن، خەرىتىدە يول باشلاش، تولۇق ئېكرانلىق ھالەتتە رەسىم ۋە سىن كۆرۈش جەريانىدا كەلگەن تېلېفون ئۇقتۇرۇشى ئىزچىل بالداق شەكلىدە كۆرۈنىدۇ. ياشانغانلار ھالىتى ۋە دالا ھالىتىدە كەلگەن تېلېفون ئىزچىل تولۇق ئېكرانلىق كۆرۈنىدۇ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"unlock_after_call_notification_descriptions_normal",
+            "value":"ئويۇن، خەرىتىدە يول باشلاش، تولۇق ئېكرانلىق ھالەتتە رەسىم ۋە سىن كۆرۈش جەريانىدا كەلگەن تېلېفون ئۇقتۇرۇشى ئىزچىل بالداق شەكلىدە كۆرۈنىدۇ. ياشانغانلار ھالىتىدە كەلگەن تېلېفون ئىزچىل تولۇق ئېكرانلىق كۆرۈنىدۇ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"call_setting_incoming",
+            "value":"كەلگەن تېلېفون",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"number_identity_permission_dialog_desc",
+            "value":"بۇ مۇلازىمەتكە تۆۋەندىكى ئىجازەتلەر كېرەك:",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"selectContacts",
+            "value":"ئالاقىداش تاللاش",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ring_tone",
+            "value":"سىنلىق قوڭغۇراق",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"video_ring_tone_desc",
+            "value":"كەلگەن ۋە چاقىرغان تېلېفون ئۈچۈن يۈرۈتكۈچى سىنلىق قوڭغۇراقلىرى قويۇلىدۇ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"end_call_by_power",
+            "value":"توك مەنبەدە تېلېفون ئۈزۈش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"voice_control",
+            "value":"ئاۋازلىق تىزگىن",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"copyright_new",
+            "value":"نەشر ھوقۇقى ©%1$s-%2$s «تېلېفون» غا تەۋە",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hicall_user_info_skip",
+            "value":"ئاتلاش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"im_smc_note_content",
+            "value":"تۈزىتىشتىن ئاتلىسىڭىز، سۈنئىي ھەمراھ ئۇچۇر ئالاقىسى ئوڭۇشلۇق بولماسلىقى مۇمكىن، ئاتلامسىز؟",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"contact_str_copysim_notification",
+            "value":"ئەسكەرتىش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"distributed_call_settings_title",
+            "value":"ئورتاق ئالاقە",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"distributed_call_settings_descriptions",
+            "value":"<body><span style='normal'>ئەتراپتىكى ئوخشاش خۇاۋېي ھېسابىغا تىزىملاپ كىرگەن ئۈسكۈنە بۇ ئۈسكۈنىنىڭ كۆچمە ئالاقە تورى ئارقىلىق تورغا چىقالايدۇ، تېلېفون ۋە ئۇچۇرلىشالايدۇ. بۇ مۇلازىمەت كۆكچىش ۋە WLAN ئىقتىدارى، ئۈسكۈنە ئۇچۇرى، تور ئۇچۇرى ۋە ئالاقە ئۇچۇرىنى ئىشلىتىدۇ. يەنە تېلېفون ئورتاقلىشىش ئىقتىدارى تەخمىنىي ئورۇن ئۇچۇرىنى ئىشلىتىدۇ. بۇ مۇلازىمەتنى ئاچسىڭىز، يۇقىرىقىلارغا قوشۇلغان بولىسىز. </span><span style='moreDetail'>تەپسىلات</span></body>",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"distributed_call_settings_descriptions_pad",
+            "value":"<body><span style='normal'>بۇ ئىقتىدار ئارقىلىق ئەتراپتىكى ئوخشاش خۇاۋېي ھېسابىغا تىزىملاپ كىرگەن ئۈسكۈنىنىڭ كۆچمە ئالاقە تورىنى ئىشلىتىپ، تېلېفون ۋە ئۇچۇرلىشىشقا بولىدۇ. ھەر ئىككى ئۈسكۈنىدە كۆكچىش، WLAN ھەمدە ئالاقىدار ئورتاقلىشىش ئىقتىدارى ئوچۇق بولۇشى كېرەك. بۇ مۇلازىمەت ئۈسكۈنە ئۇچۇرى، تور ئۇچۇرى ۋە ئالاقە ئۇچۇرىنى ئىشلىتىدۇ. بۇنىڭدىن باشقا، تېلېفونلىشىش ئىقتىدارى تەخمىنىي ئورۇن ئۇچۇرىنى ئىشلىتىدۇ. ئاچسىڭىز، يۇقىرىقىلارغا قوشۇلغان بولىسىز. </span><span style='moreDetail'>تەپسىلات</span></body>",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"distributed_call_settings_network_sharing_title_pad",
+            "value":"تور",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"distributed_call_settings_network_sharing_descriptions_pad",
+            "value":"تور يوق چاغدا ئەتراپتىكى يانفونىڭىزنىڭ كۆچمە ئېقىمىنى ئىشلىتەلەيسىز.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"distributed_call_settings_phone_sharing_title_pad",
+            "value":"تېلېفونلىشىش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"distributed_call_settings_sms_sharing_title_pad",
+            "value":"ئۇچۇرلىشىش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"distributed_call_settings_network_sharing_title",
+            "value":"تور ئورتاقلىشىش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"distributed_call_settings_phone_sharing_title",
+            "value":"تېلېفون ئورتاقلىشىش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"distributed_call_settings_sms_sharing_title",
+            "value":"ئۇچۇر ئورتاقلىشىش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"distributed_share_call_data",
+            "value":"ئەتراپتىكى ئۈسكۈنىلىرىڭىز بۇ ئۈسكۈنىنىڭ ئالاقە ئىقتىدارىنى ئىشلىتىپ تېلېفونلىشالايدۇ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"distributed_share_message_data",
+            "value":"ئەتراپتىكى ئۈسكۈنىلىرىڭىز بۇ ئۈسكۈنىنىڭ ئالاقە ئىقتىدارىنى ئىشلىتىپ ئۇچۇر يوللىيالايدۇ ۋە قوبۇللىيالايدۇ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"distributed_share_network_data",
+            "value":"ئەتراپتىكى ئۈسكۈنىلىرىڭىز بۇ ئۈسكۈنىنىڭ كۆچمە ئېقىمى ئارقىلىق تورغا چىقالايدۇ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"distributed_network_auto_connect",
+            "value":"ئۆزلۈكىدىن ئۇلاش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"distributed_network_never_connect",
+            "value":"قولدا ئۇلاش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"smc_left_rotate_device",
+            "value":"ئۈسكۈنىنى سولغىراق تۇتۇڭ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"smc_right_rotate_device",
+            "value":"ئۈسكۈنىنى ئوڭغىراق تۇتۇڭ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"im_smc_lift_device",
+            "value":"ئۈسكۈنىنى ئۈستىگە قىيسايتىڭ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"im_smc_lower_device",
+            "value":"ئۈسكۈنىنى تۆۋەنگە قىيسايتىڭ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"find_out_how_we_use_your_data",
+            "value":"مەلۇماتلىرىڭىزنى ئىشلىتىش ئۇسۇلىمىز",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"hangUp",
+            "value":"ئۈزۈش",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"business_and_privacy_statement",
+            "value":"مەخپىيەتلىك باياناتى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"new_satellite_descriptions",
+            "value":"تيەنتۇڭ سۈنئىي ھەمراھى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_message_just_now",
+            "value":"بايا",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_call_message_notice",
+            "value":"يېڭى تېلېفون ياكى ئۇچۇر كەلدى، كۆرۈش ئۈچۈن سۈنئىي ھەمراھقا ئۇدۇللاڭ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"aim_satellite",
+            "value":"ئۇدۇللاش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_enhance_status",
+            "value":"كۈچەيمە",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"new_satellite_signal_descriptions",
+            "value":"تيەنتۇڭ سۈنئىي ھەمراھى",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"more_options",
+            "value":"باشقا تاللانمىلار",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"details",
+            "value":"چۈشەندۈرۈش",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"enterprise_number_identity",
+            "value":"كارخانا ئەپلىرىدە نومۇر تونۇش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_settings_window_suggest",
+            "value":"«تيەنتۇڭ سۈنئىي ھەمراھ ئالاقىسى» نى تولۇق ئېكرانلىق ھالەتتە ئېچىش كېرەك.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"multi_device_collaboration",
+            "value":"كۆپ ئۈسكۈنە ھەمكارلىقى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_new_fold_un_support_toast",
+            "value":"سۈنئىي ھەمراھ ئالاقىسىنى ئىشلىتىش ئۈچۈن قاتلاقنى ئېچىڭ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"beidou_satellite_message_service_no_net",
+            "value":"نۆۋەتتە تور يوق، ئاۋۋال تورنى ئېچىپ، ئاندىن قايتا سىناڭ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"go_use_beidou_message_tips",
+            "value":"بېيدوۋ سۈنئىي ھەمراھ ئۇچۇرى ئاچتىڭىز، كىرىپ ئىشلىتەمسىز؟",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"exit_beidou_satellite_message_service_tips",
+            "value":"بېيدوۋ سۈنئىي ھەمراھ ئۇچۇرىدىن چېكىنەمسىز؟",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"start_beidou_satellite_message",
+            "value":"بېيدوۋ سۈنئىي ھەمراھ ئۇچۇرى",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"beidou_satellite_message_select_sim_card",
+            "value":"سۈنئىي ھەمراھقا ئۇلانغاندا ئۇچۇرلىشىدىغان SIM كارتا تاللاڭ. بۇ كارتىنىڭ ئالاقىدار ئىقتىدارلىرى يۈرۈتكۈچى ئارقىلىق ئېچىلغان بولۇشى كېرەك.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"beidou_satellite_message_service_settings_airplane_mode",
+            "value":"ئۇچۇش ھالىتىدە بېيدوۋ سۈنئىي ھەمراھ ئۇچۇرى ئېچىلمايدۇ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"do_not_show_again",
+            "value":"قايتا ئەسكەرتمەڭ",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"go_use_beidou_satellite_message",
+            "value":"بېيدوۋ سۈنئىي ھەمراھ ئۇچۇرىغا كىرىش",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"beidou_satellite_message_service_details_1",
+            "value":"%s. بۇ ئىقتىدارنى ھازىرچە سۈنئىي ھەمراھ ئالاقە ئىقتىدارىنى ئاچقان كۆچمە خەۋەرلىشىش ئىشلەتكۈچىلىرىلا ئىشلىتەلەيدۇ، ئېچىش ۋە ھەق ئېلىش ئۆلچىمىنى جۇڭگو كۆچمە خەۋەرلىشىشى مۇلازىمەت مەركىزىدىن سۈرۈشتۈرۈڭ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"beidou_satellite_message_service_details_0",
+            "value":"%1$s. ئىشلىتىش جەريانىدا كۆچمە تور ۋە WLAN ئېتىلىپ، ئالاقىدار ئىقتىدارلار توختايدۇ، بۇ مۇلازىمەتتىن چېكىنگەندە ئەسلىگە كېلىدۇ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"beidou_satellite_message_service_details_2",
+            "value":"%s. بۇ ئىقتىدار پەقەت جۇڭگو چوڭ قۇرۇقلۇقى رايونىدا ئىشلەيدۇ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"beidou_satellite_message_no_sim_card_descriptions",
+            "value":"بۇ ئىقتىدارنى قوللايدىغان SIM كارتا بايقالمىدى، بېيدوۋ سۈنئىي ھەمراھ ئۇچۇرىنى ئاچقان جۇڭگو كۆچمە خەۋەرلىشىشى SIM كارتىسى سېلىپ، قايتا سىناڭ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"go_to_use",
+            "value":"كىرىش",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"beidou_satellite_message_enter_in_call",
+            "value":"سۆزلىشىۋاتقاندا بېيدوۋ سۈنئىي ھەمراھ ئۇچۇرى ئېچىلمايدۇ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"beidou_satellite_short_notification",
+            "value":"<body><span style='normal'>بۇ مۇلازىمەت </span><span style='bold'>تور</span><span style='normal'> ئارقىلىق كۆچمە سۇپا ئىشلەتكۈچى ئىجازىتىنى دەلىللەيدۇ ۋە قالدۇق تەكشۈرىدۇ. ئاچسىڭىز، كۆچمە تور ۋە WLAN يوق مۇھىتتا «ئۇچۇر» مۇلازىمىتىدە بېيدوۋ سۈنئىي ھەمراھ ئۇچۇرى ئىقتىدارىنى ئىشلىتەلەيسىز. بۇ مۇلازىمەت بۇ ئۈسكۈنىنىڭ تېلېفون نومۇرى، بېيدوۋ ئۇچۇر مەزمۇنى ۋە ئورۇن ئۇچۇرىنى ئوقۇپ يۈكلەيدۇ؛ يۇقىرىقىلار بېيدوۋ سۈنئىي ھەمراھ ئۇچۇرى مۇلازىمىتى تەمىنلەش ئۈچۈن ئىشلىتىلىدۇ. ئاچسىڭىز، يۇقىرىقى مەزمۇن ۋە </span><span style='userAgreements'>«بېيدوۋ سۈنئىي ھەمراھ ئۇچۇرى ئىشلەتكۈچىلەر كېلىشىمى»</span><span style='normal'> گە قوشۇلغان بولىسىز. شەخسىي ئۇچۇر بىر تەرەپ قىلىش ھەققىدىكى تەپسىلاتلارنى </span><span style='privacyStatement'>«بېيدوۋ سۈنئىي ھەمراھ ئۇچۇرى ۋە مەخپىيەتلىك ھەققىدە بايانات»</span><span style='normal'> ئارقىلىق كۆرۈڭ.</span></body>",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"beidou_satellite_message",
+            "value":"بېيدوۋ سۈنئىي ھەمراھ ئۇچۇرى",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"risk_identity_engine",
+            "value":"خەۋپ تونۇش موتورى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"motion_muting_reduce_call_title",
+            "value":"ئۈنسىزلەش/ئۈن تۆۋەنلىتىش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"penglai_mode_notice",
+            "value":"پېڭلەي ھالەت بۇ مەشغۇلاتنى قوللىمايدۇ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"motion_quick_call_descrition",
+            "value":"تېلېفون كەلگەندە قۇلاققا تۇتسىڭىز، تېلېفون ئېلىنىدۇ؛ ياڭراتقۇ ياكى كۆكچىشلىق تىڭشىغۇچ ھالىتىدە قۇلاققا تۇتسىڭىز، ئۆزلۈكىدىن قۇلاق ھالەتكە ئالمىشىدۇ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"motion_reduce_call_descrition",
+            "value":"تېلېفون كەلگەندە يانفوننى قولغا ئالسىڭىز ئۈن تۆۋەنلەيدۇ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"motion_quick_mute_descrition_pad",
+            "value":"تېلېفون كەلگەندە ئۈسكۈنىنى ئۆرۈسىڭىز ئۈنسىزلىنىدۇ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"motion_call_setting_search_system",
+            "value":"سىستېما",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"motion_flip_mute_volume",
+            "value":"ئۆرۈپ ئۈنسىزلەش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"motion_quick_mute_descrition",
+            "value":"تېلېفون كەلگەندە يانفوننى ئۆرۈسىڭىز ئۈنسىزلىنىدۇ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"motion_reduce_call_descrition_pad",
+            "value":"تېلېفون كەلگەندە ئۈسكۈنىنى قولغا ئالسىڭىز ئۈن تۆۋەنلەيدۇ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"motion_quick_call_title",
+            "value":"تېز چاقىرىق",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"motion_pick_up_reduce_volume",
+            "value":"قولغا ئېلىپ ئۈن تۆۋەنلىتىش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"motion_flip_mute_volume_pad",
+            "value":"ئۆرۈپ ئۈنسىزلەش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"motion_quick_call_descrition_fold",
+            "value":"تېلېفون كەلگەندە قۇلاققا تۇتسىڭىز، تېلېفون ئېلىنىدۇ؛ ياڭراتقۇ ياكى كۆكچىشلىق تىڭشىغۇچ ھالىتىدە قۇلاققا تۇتسىڭىز، ئۆزلۈكىدىن قۇلاق ھالەتكە ئالمىشىدۇ (قاتلاق ھالەتتە كىچىك ئېكران تېز چاقىرىق ئىقتىدارىنى قوللىمايدۇ).",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"motion_pick_up_reduce_volume_pad",
+            "value":"قولغا ئېلىپ ئۈن تۆۋەنلىتىش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"quick_gestures",
+            "value":"تېزلەتمە ۋە ئىشارە",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"motion_quick_call_descrition_fold_teton",
+            "value":"تېلېفون كەلگەندە قۇلاققا تۇتسىڭىز، تېلېفون ئېلىنىدۇ؛ ياڭراتقۇ ياكى تىڭشىغۇچ ھالىتىدە قۇلاققا تۇتسىڭىز، ئۆزلۈكىدىن قۇلاق ھالەتكە ئالمىشىدۇ (بۇ ئىقتىدار قاتلاق ھالەتتە ئىشلەيدۇ).",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"answer_calls_list",
+            "value":"تېز چاقىرىق",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"anti_fraud",
+            "value":"ئاڭلىق بىخەتەرلىك قوغداش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"anti_fraud_text",
+            "value":"خەۋپ بار تېلېفونلارنى ئېنىقلاپ ئەسكەرتىدۇ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_short_notification_info",
+            "value":"<body><span style='normal'>بۇ مۇلازىمەت تيەنتۇڭ سۈنئىي ھەمراھ ئالاقە مۇلازىمەتلىرىنى تەمىنلەش ئۈچۈن </span><span style='bold'>ئورۇن</span><span style='normal'> ئىجازىتى ئالىدۇ؛ ئورۇن مۇلازىمىتىنى ئاچىدۇ ۋە ئورۇن ئۇچۇرىنى ئوقۇيدۇ. بۇ مۇلازىمەتنى ئاچسىڭىز، يۇقىرىقى شەرت ۋە </span><span style='userAgreements'>«تيەنتۇڭ سۈنئىي ھەمراھ ئالاقىسى ئىشلەتكۈچىلەر كېلىشىمى»</span><span style='normal'> گە قوشۇلغان بولىسىز. شەخسىي ئۇچۇر بىر تەرەپ قىلىش ھەققىدىكى تەپسىلاتلارنى </span><span style='privacyStatement'>«تيەنتۇڭ سۈنئىي ھەمراھ ئالاقىسى ۋە مەخپىيەتلىك ھەققىدە بايانات»</span><span style='normal'> ۋە </span><span style='permissionStatement'>ئىجازەت ئىشلىتىش كۆرسەتمىسى</span><span style='normal'> ئارقىلىق كۆرۈڭ.</span></body>",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_location",
+            "value":"ئورۇن",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Apn_enum_None",
+            "value":"يوق",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"close_button",
+            "value":"ئېتىش",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fold_window_dialog_remind_title",
+            "value":"قاتلاقنى ئېچىڭ",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"fold_window_dialog_remind_message",
+            "value":"سۈنئىي ھەمراھ ئالاقىسىنى ئىشلەتكەندە ئۈسكۈنە قاتلىقى ئوچۇق بولسۇن، تۈزبوي ھالەتتە تۇتۇڭ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"fold_remind_tips_message",
+            "value":"تيەنتۇڭ سۈنئىي ھەمراھ ئالاقىسى ئۇلانمىدى. ئۈسكۈنە قاتلىقى ئوچۇق بولسۇن.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_service_no_region_card_descriptions",
+            "value":"بۇ رايوندا تيەنتۇڭ سۈنئىي ھەمراھ ئالاقىسى يوق، قوللايدىغان رايونلارنى «دائىملىق سوئاللار» بېتىدىن كۆرۈڭ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"preference_settings",
+            "value":"مايىللىق",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"wifi_calling_tips",
+            "value":"ئەگەر «WLAN چاقىرىق» ئىقتىدارىنى ئاچسىڭىز، يانفون سىز مايىل تەڭشەك بويىچە WLAN تورى ياكى يۈرۈتكۈچى تورى ئارقىلىق سۆزلىشىدۇ (قايسى تورنىڭ سىگنالى كۈچلۈك بولسا شۇ ئىشلىتىلىدۇ). بۇ ئىقتىدارنى ئېچىشتىن بۇرۇن يۈرۈتكۈچىدىن ھەق ئېلىش تەپسىلاتىنى سۈرۈشتۈرۈڭ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"wifi_calling",
+            "value":"\u200fWLAN چاقىرىق",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"WiFi_first",
+            "value":"باشتا WLAN",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"car_satellite_tips",
+            "value":"ماشىنا سۈنئىي ھەمراھ تورىغا ئۇلاپ تېلېفونلىشىشقا بولىدۇ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"car_satellite_title",
+            "value":"ماشىنا سۈنئىي ھەمراھ ئالاقىسى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"im_smc_tips_starfinder_blocking",
+            "value":"بۇ ئورۇندا %1$s بار.\nئوچۇقچىلىق جايدا ئىشلىتىڭ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"im_smc_tips_outdoor_blocking",
+            "value":"توسالغۇ",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_best",
+            "value":"ئەڭ ياخشى سۈنئىي ھەمراھقا ئۇلاندى.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"vowifi_mobile_network_preferred",
+            "value":"باشتا كۆچمە تور",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"edm_operate_prohibit_tip",
+            "value":"كارخانا تۈزۈمى بۇ مەشغۇلاتنى چەكلەيدۇ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"using_beidou_toast",
+            "value":"بېيدوۋ سۈنئىي ھەمراھ ئىشلىتىلىۋاتىدۇ، كېيىنرەك قايتا سىناڭ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"InfoEdit_back",
+            "value":"قايتىش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"video_ringtone_delete_dialog_tip1",
+            "value":"تاللىغان مەزمۇننى ئۆچۈرەمسىز؟",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"video_ringtone_no_delete",
+            "value":"نۆۋەتتە ئىشلەتكەن مەنبە ئۆچۈرۈلمەيدۇ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"no_video_ringtone",
+            "value":"سىنلىق قوڭغۇراق يوق",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"video_ringtone_from_photo_picker",
+            "value":"ئامباردىن تاللاش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"manage",
+            "value":"باشقۇرۇش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"video_ringtone",
+            "value":"سىنلىق قوڭغۇراق",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"video_ringtone_small_no_show",
+            "value":"سىنلىق قوڭغۇراق كىچىك كۆزنەكتە تەھرىرلەنمەيدۇ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"my_video_ringtone",
+            "value":"سىنلىق قوڭغۇراقلىرىم",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"video_ringtone_deselect_all",
+            "value":"قالدۇرۇش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"remind",
+            "value":"ئەسكەرتمە",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"video_ringtone_select_all",
+            "value":"ھەممىنى تاللاش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"sms",
+            "value":"ئۇچۇر",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"video_ringtone_size_limit",
+            "value":"سىغىمى ‎%s دىن كىچىك سىن تاللاڭ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"call_assistant_setting_title",
+            "value":"شياۋيى تېلېفونچى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"delete",
+            "value":"ئۆچۈرۈش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"use",
+            "value":"قوللىنىش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"video_ringtone_dialog_system_error",
+            "value":"سىستېمىدا خاتالىق كۆرۈلدى، قايتا سىناڭ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"video_ringtone_dialog_no_space",
+            "value":"بوشلۇق يېتەرسىز، سىستېما بوشلۇقىنى تازىلاپ، قايتا سىناڭ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"video_ringtone_dialog_Exceeding_limit_title",
+            "value":"سىنلىق قوڭغۇراق سانى چەككە يەتكەن",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"video_ringtone_dialog_Exceeding_limit_content",
+            "value":"باشقا ئالاقىداش ئۈچۈن بېكىتكەن سىنلىق قوڭغۇراقنى سىستېما كەلگەن تېلېفون قوڭغۇرىقى ھالىتىگە قايتۇرۇپ، قايتا سىناڭ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"video_ringtone_dialog_type_error",
+            "value":"نۆۋەتتە پەقەت ‎.mp4 فورماتلىق سىن قوللايدۇ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"InfoEdit_edits_info",
+            "value":"تەھرىرلەش",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"click_go_to_settings",
+            "value":"چېكىپ تەڭشەككە كىرىڭ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"incoming_outgoing_calls_voice_control",
+            "value":"تېلېفون ئېلىش ۋە رەت قىلىش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"smart_call_making",
+            "value":"ئاڭلىق چاقىرىق",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Incoming_call_voice_announcement",
+            "value":"كەلگەن تېلېفوننى ئاۋازلىق ئاڭلىتىش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"video_type",
+            "value":"سىن %d",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"talkback_not_selected",
+            "value":"تاللانمىدى",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"talkback_selected",
+            "value":"تاللاندى",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_connect_failed",
+            "value":"سۈنئىي ھەمراھ ئۈزۈك",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"new_hyacinth_satellite_signal_descriptions",
+            "value":"ياقۇت سۈنئىي ھەمراھى",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_signal_descriptions",
+            "value":"جۇڭگو تېلېگرافى\nياقۇت سۈنئىي ھەمراھى",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"keep_current_posture_hyacinth",
+            "value":"ئورۇن چوڭ ئۆزگەرسە سىگنالغا تەسىر يېتىدۇ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_service_no_available_time",
+            "value":"ئىشلەيدىغان ۋاقىت بۆلىكى يوق",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_connect_failed_not_time",
+            "value":"نۆۋەتتە ئىشلەيدىغان سۈنئىي ھەمراھ يوق، كېيىنرەك قايتا سىناڭ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"switched_to_next_satellite",
+            "value":"كېيىنكى سۈنئىي ھەمراھقا ئالماشتى.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"switching_to_next_satellite",
+            "value":"كېيىنكى سۈنئىي ھەمراھقا ئالماشماقچى. ئۇلىنىش نەچچە سېكۇنت ئۈزۈلۈشى مۇمكىن.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"cellular_network_notify_text",
+            "value":"ئەتراپتا كۆچمە تور بار، سۈنئىي ھەمراھ تورىنى ئېتىپ، كۆچمە تور ئىشلەتسىڭىز بولىدۇ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"cellular_network_notify_ignore_button",
+            "value":"ئېتىبارسىزلاش",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"cellular_network_notify_close_button",
+            "value":"ئېتىش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"cellular_network_notify_title",
+            "value":"كۆچمە تور بار",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_data_esim_card",
+            "value":"\u200feSIM %s تورى",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_device_calibrating_tips",
+            "value":"ئۈسكۈنىنى ئەڭ بەك قىيسايتىپ تۈزىتىڭ",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_short_notification_info",
+            "value":"<body><span style='normal'>كۆچمە تور ۋە WLAN يوق رايوندا بۇ مۇلازىمەت ئارقىلىق تېلېفون ۋە ئۇچۇر قاتارلىق ئاساسىي ئىقتىدارلارنى ئىشلىتەلەيسىز. بۇ مۇلازىمەت </span><span style='bold'>ئورۇن</span><span style='normal'> ئۇچۇرىڭىزنى ئوقۇپ، سۈنئىي ھەمراھ بىلەن ئالاقە قۇرۇشقا ئىشلىتىدۇ. ئاچسىڭىز، </span><span style='userAgreements'>«ياقۇت ئىشلەتكۈچىلەر كېلىشىمى»</span><span style='normal'> گە قوشۇلغان بولىسىز. شەخسىي ئۇچۇر بىر تەرەپ قىلىش ھەققىدىكى تەپسىلاتلارنى </span><span style='privacyStatement'>«ياقۇت ۋە مەخپىيەتلىك ھەققىدە بايانات»</span><span style='normal'> ۋە </span><span style='permissionStatement'>«ئىجازەت ئىشلىتىش كۆرسەتمىسى»</span><span style='normal'> ئارقىلىق كۆرۈڭ.</span></body>",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_not_found_satellite",
+            "value":"ئىشلەيدىغان سۈنئىي ھەمراھ تېپىلمىدى، كېيىنرەك قايتا سىناڭ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_service_no_region_card",
+            "value":"بۇ رايوندا ياقۇت سۈنئىي ھەمراھ ئالاقىسى يوق، قوللايدىغان رايونلارنى «دائىملىق سوئاللار» بېتىدىن كۆرۈڭ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_service_permission_usage_details",
+            "value":"ياقۇت سۈنئىي ھەمراھ ئالاقىسى ئىجازەتلىرى",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_connect_failed_guide",
+            "value":"نۆۋەتتە ئىشلەيدىغان سۈنئىي ھەمراھ يوق، كېيىنكى ئىشلەيدىغان ۋاقىت بۆلىكى تەخمىنەن: %1$s ~ %2$s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite_service_network_description",
+            "value":"سۈنئىي ھەمراھ تېلېفون ۋە ئۇچۇر",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_service_enter_in_call",
+            "value":"سۆزلىشىۋاتقاندا ياقۇت سۈنئىي ھەمراھ ئالاقىسى ئېچىلمايدۇ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"start_hyacinth_satellite_communications",
+            "value":"ياقۇت سۈنئىي ھەمراھ ئالاقىسى",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_service_settings_window_mode",
+            "value":"ياقۇت سۈنئىي ھەمراھ ئالاقىسى كۆپ كۆزنەك قوللىمايدۇ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_service_airplane_mode",
+            "value":"ئۇچۇش ھالىتىدە ياقۇت سۈنئىي ھەمراھ ئالاقىسى ئېچىلمايدۇ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_service_tiantong_mode",
+            "value":"تيەنتۇڭ سۈنئىي ھەمراھ ئالاقىسىنى ئىشلىتىۋاتقاندا ياقۇت سۈنئىي ھەمراھ ئالاقىسى ئېچىلمايدۇ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_service_not_enabled",
+            "value":"ياقۇت سۈنئىي ھەمراھ ئالاقىسى ئېتىك.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellites_not_available",
+            "value":"نۆۋەتتىكى ۋاقىت بۆلىكىدە ئىشلەيدىغان سۈنئىي ھەمراھ بارلىقى ئېنىقلانمىدى، داۋاملاشتۇرامسىز؟",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_service_settings_window_suggest",
+            "value":"ياقۇت سۈنئىي ھەمراھ ئالاقىسىنى تولۇق ئېكرانلىق ھالەتتە ئېچىش كېرەك.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"esim_card_num_no_space",
+            "value":"\u200feSIM %s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_communications",
+            "value":"ياقۇت سۈنئىي ھەمراھ ئالاقىسى",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_service_no_sim_card",
+            "value":"بۇ ئىقتىدارنى قوللايدىغان SIM كارتا بايقالمىدى، ياقۇت سۈنئىي ھەمراھ ئالاقىسى مۇلازىمىتىنى قوللايدىغان SIM كارتا سېلىپ قايتا سىناڭ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"exit_hyacinth_satellite_service_tips",
+            "value":"ياقۇت سۈنئىي ھەمراھ ئالاقىسىنى ئېتەمسىز؟",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"phone_ring_Card3",
+            "value":"\u200feSIM %1$s:‏ %2$s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_notification_title",
+            "value":"ياقۇت سۈنئىي ھەمراھ ئالاقىسى ئېتىلدى",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"new_calling_can_only_use_in_full_screen",
+            "value":"كۈچەيمە چاقىرىق مۇلازىمىتى پەقەت تولۇق ئېكرانلىق ئىشلەيدۇ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_activate_text",
+            "value":"<body><span style='normal'>ياقۇت مۇلازىمىتى ياقۇت سۈنئىي ھەمراھ تېلېفون ۋە ئۇچۇر ئىقتىدارى بىلەن تەمىنلەيدۇ. ئۇ ئارقىلىق كۆچمە تور يوق جايلاردىمۇ ئالاقە قىلالايسىز. ياقۇت سۈنئىي ھەمراھلىرى تېخى ئورنىتىلىۋاتقان بولغاچقا، ھازىرچە ئىشلىتىش ۋاقتىغا چەك قويۇلىدۇ. بۇ مۇلازىمەت </span><span style='bold'>ئورۇن ۋە تور ئىجازىتى</span><span style='normal'> ئارقىلىق ئىشلەتكىلى بولىدىغان ۋاقىتنى ئېنىقلايدۇ.</span></body>",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_activate_immediatly",
+            "value":"ئاكتىپلاش",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_activate",
+            "value":"ياقۇت ئاكتىپلاش",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"celia",
+            "value":"شياۋيى چاقىرىق",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"call_setting_call",
+            "value":"چاقىرىق",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_service_settings_skytone_mode",
+            "value":"دۇنيا كېزەر ئىشلەۋاتقاندا ياقۇت سۈنئىي ھەمراھ ئالاقىسى ئىشلىمەيدۇ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"tiantong_satellite_service_hyacinth_mode",
+            "value":"ياقۇت سۈنئىي ھەمراھ ئالاقىسىنى ئىشلىتىۋاتقاندا تيەنتۇڭ سۈنئىي ھەمراھ ئالاقىسى ئېچىلمايدۇ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"send_success",
+            "value":"يوللاندى",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"im_message_smc_satellite_no_receipt_tips",
+            "value":"ئۇچۇر سۈنئىي ھەمراھقا يەتمىگەن بولۇشى مۇمكىن، ئوچۇقچىلىق جايدا قايتا سىناڭ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"callSetting_title",
+            "value":"چاقىرىق تەڭشىكى",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_available_time_tomorrow",
+            "value":"ئەتە: %1$s ~ %2$s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_available_time_today",
+            "value":"%1$s ~ %2$s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_available_time_tomorrow_end",
+            "value":"%1$s ~ ئەتە %2$s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_available_tips",
+            "value":"ئىشلەيدىغان ۋاقىت:\n%1$s\n%2$s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_request_location_permission",
+            "value":"ئورۇن ئىجازىتى ئېتىك، ئاچامسىز؟",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_location_enable_permission",
+            "value":"ئېچىش",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_available_tips_single",
+            "value":"ئىشلەيدىغان ۋاقىت: %s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"float_better_angle",
+            "value":"تېخىمۇ ياخشى بۇلۇڭ تېپىڭ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"call_setting_celia_description",
+            "value":"شياۋيى تېلېفونچى، چاقىرىق ئۈزۈندىسى قاتارلىق مۇلازىمەتلەر بار.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"hyacinth_available_time_refresh",
+            "value":"تيەنتۇڭ سۈنئىي ھەمراھ مۇلازىمىتى ئېتىك ھالەتتە ئىشلەيدىغان ۋاقىت بۆلىكى ئۆزلۈكىدىن يېڭىلىنىدۇ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"call_setting_getting_hyacinth_available_time",
+            "value":"ئىشلەيدىغان ۋاقىت بۆلىكى تەكشۈرۈلۈۋاتىدۇ...",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_available_time_connection_use",
+            "value":"بۇ ئىجازەت سۈنئىي ھەمراھ ئىشلەيدىغان ۋاقىت بۆلىكىنى تەكشۈرۈش، ئۇلاش ۋە ئىشلىتىش ئۈچۈن كېرەك.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"need_system_location",
+            "value":"سىستېما ئورۇن مۇلازىمىتىنى ئېچىش كېرەك",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"not_support_toast",
+            "value":"نۆۋەتتىكى ھالەت بۇ مەشغۇلاتنى قوللىمايدۇ."
+        }
+    ]
+}

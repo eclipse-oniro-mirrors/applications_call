@@ -1,0 +1,11 @@
+{
+    "string":[
+        {
+            "name":"APN_NAME",
+            "value":"Zugangs\u200bpunkt\u200bname (APN)",
+            "attr":{
+                "priority":"LT"
+            }
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "default",
+  "version": "1.0.0",
+  "description": "Some dependencies are written here.",
+  "main": "",
+  "author": "",
+  "license": "",
+  "dependencies": {
+    "@ohos/common": "../../common",
+    "@ohos/cust": "../../feature/cust",
+//    "@hms-security/agoh-base-sdk": "1.4.6-300",
+//    "@hms-paf/ui-widget-base": "14.16.9-314",
+//    "@hms-paf/ui-widget-emptypage": "14.16.9-314",
+//    "@hms-paf/ui-widget-base-v2": "14.17.7-304",
+//    "@hms-paf/ui-widget-about-v2": "14.17.7-304",
+//    "@hms-paf/ui-widget-permission-v2": "14.17.7-304",
+//    "@hms-paf/ui-widget-webview-v2": "14.17.7-304",
+    "@ohos/lottie": "2.0.23"
+  },
+  "overrides": {
+//    "@hms-security/agoh-base-sdk": "1.4.6-300",
+//    "@hms-paf/ui-widget-base": "14.16.9-314",
+//    "@hms-paf/ui-widget-emptypage": "14.16.9-314",
+//    "@hms-paf/ui-widget-base-v2": "14.17.7-304",
+//    "@hms-paf/ui-widget-about-v2": "14.17.7-304",
+//    "@hms-paf/ui-widget-permission-v2": "14.17.7-304",
+//    "@hms-paf/ui-widget-webview-v2": "14.17.7-304"
+  }
+}

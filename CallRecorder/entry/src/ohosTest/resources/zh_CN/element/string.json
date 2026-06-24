@@ -1,0 +1,148 @@
+{
+  "string": [
+    {
+      "name": "module_test_desc",
+      "value": "测试能力描述"
+    },
+    {
+      "name": "TestAbility_desc",
+      "value": "测试能力"
+    },
+    {
+      "name": "TestAbility_label",
+      "value": "测试标签"
+    },
+    {
+      "name": "module_desc",
+      "value": "模块描述"
+    },
+    {
+      "name": "CallrecorderAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "CallrecorderAbility_label",
+      "value": "通话录音"
+    },
+    {
+      "name": "GET_STARTUP_INFO",
+      "value": "初始化call_record数据库"
+    },
+    {
+      "name": "mobile_setting",
+      "value": "设置"
+    },
+    {
+      "name": "mobile_data_commonly_used",
+      "value": "常用"
+    },
+    {
+      "name": "automatic_recording_of_calls",
+      "value": "通话自动录音"
+    },
+    {
+      "name": "cancel",
+      "value": "取消"
+    },
+    {
+      "name": "emptyStr",
+      "value": " "
+    },
+    {
+      "name": "automatically_record_call_viewed",
+      "value": "电话接通时自动录音，录音文件可在录音机应用中查看"
+    },
+    {
+      "name": "auto_recording_object",
+      "value": "自动录音对象"
+    },
+    {
+      "name": "auto_recording_object_selection",
+      "value": "自动录音对象选择"
+    },
+    {
+      "name": "specified_number",
+      "value": "指定号码"
+    },
+    {
+      "name": "initialize_the_database",
+      "value": "初始化数据库"
+    },
+    {
+      "name": "no_number_specified",
+      "value": "没有指定号码"
+    },
+    {
+      "name": "add_specified_number",
+      "value": "添加指定号码"
+    },
+    {
+      "name": "auto_recording_object_saving",
+      "value": "自动录音对象保存"
+    },
+    {
+      "name": "all_calls",
+      "value": "所有通话"
+    },
+    {
+      "name": "call_recorder",
+      "value": "通话录音"
+    },
+    {
+      "name": "opened",
+      "value": "已开启"
+    },
+    {
+      "name": "closed",
+      "value": "已关闭"
+    },
+    {
+      "name": "call_auto_recorder",
+      "value": "通话自动录音"
+    },
+    {
+      "name": "unset_recorder",
+      "value": "未设置"
+    },
+    {
+      "name": "delete",
+      "value": "删除"
+    },
+    {
+      "name": "select_all",
+      "value": "全选"
+    },
+    {
+      "name": "deselect_all",
+      "value": "取消全选"
+    },
+    {
+      "name": "is_delete_number",
+      "value": "是否删除此号码？"
+    },
+    {
+      "name": "is_delete_all_number",
+      "value": "是否删除全部号码？"
+    },
+    {
+      "name": "unknown",
+      "value": "未知"
+    },
+    {
+      "name": "call_meeting",
+      "value": "电话会议"
+    },
+    {
+      "name": "call_numbers_finish_des",
+      "value": "已保存到电话 \"电话\" >\"更多\" >\"通话录音\",请点击查看"
+    },
+    {
+      "name": "callrecorderUIExtensionAbility_desc",
+      "value": "描述"
+    },
+    {
+      "name": "callrecorderUIExtensionAbility_label",
+      "value": "标签"
+    }
+  ]
+}

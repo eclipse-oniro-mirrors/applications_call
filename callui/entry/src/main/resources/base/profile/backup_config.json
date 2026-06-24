@@ -1,0 +1,13 @@
+{
+  "allowToBackupRestore": true,
+  "extraInfo": {
+    "supportScene": [
+      "hmos2next",
+      "next2next"
+    ]
+  },
+  "fullBackupOnly": true,
+  "includes": [
+    "data/storage/el2/base/haps/*/preferences/"
+  ]
+}

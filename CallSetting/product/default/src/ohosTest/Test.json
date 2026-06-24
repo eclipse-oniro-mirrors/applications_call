@@ -1,0 +1,55 @@
+{
+  "description": "Configuration for demo Tests",
+  "driver": {
+    "type": "OHJSUnitTest",
+    "test-timeout": "300000",
+    "bundle-name": "com.ohos.callsetting",
+    "module-name": "callsetting_test",
+    "shell-timeout": "600000",
+    "testcase-timeout": "80000",
+    "compile-mode": "esmodule",
+    "coverage": true,
+    "package-tool-path": "D:\\Local\\coverage\\node_modules\\@ohos\\coverage"
+  },
+  "kits": [
+    {
+      "pre-push": [
+        "target mount",
+        "mount -o remount,rw /",
+        "chmod 777 system/app/CallSetting/",
+        "rm -rf /system/app/CallSetting/*"
+      ],
+      "push": [
+        "CallSetting.hap->/system/app/CallSetting/CallSetting.hap",
+        "common.hsp->/system/app/CallSetting/common.hsp"
+      ],
+      "post-push": [
+        "chmod 777 system/app/CallSetting",
+        "param set persist.bms.test-upgrade true",
+        "reboot"
+      ],
+      "type": "PushKit"
+    },
+    {
+      "type": "ShellKit",
+      "run-command": [
+        "mount -o remount,rw /",
+        "target mount",
+        "power-shell setmode 602",
+        "power-shell wakeup",
+        "uinput -T -m 300 2700 280 200"
+      ],
+      "teardown-command":[
+        "power-shell setmode 600"
+      ]
+    },
+    {
+      "test-file-name": [
+        "common.hsp",
+        "CallSetting.hap",
+        "CallSettingTest.hap"
+      ],
+      "type": "AppInstallKit"
+    }
+  ]
+}

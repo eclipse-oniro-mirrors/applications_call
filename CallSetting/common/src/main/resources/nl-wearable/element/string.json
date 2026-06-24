@@ -1,0 +1,18 @@
+{
+    "string":[
+        {
+            "name":"CwMmi",
+            "value":"Wissel\u200bgesprek",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"CfMmi",
+            "value":"Oproep door\u200bschakelen",
+            "attr":{
+                "priority":"LT"
+            }
+        }
+    ]
+}

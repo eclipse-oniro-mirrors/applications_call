@@ -1,0 +1,218 @@
+{
+    "string":[
+        {
+            "name":"beidou_satellite_message_service_no_net",
+            "value":"Nessuna connessione Internet. Connettiti a Internet e riprova.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"go_use_beidou_message_tips",
+            "value":"Hai attivato BeiDou Satellite Messaging. Vai in Messaggi per iniziare ad usarlo.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hangUp",
+            "value":"Termina",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"start_beidou_satellite_message",
+            "value":"BeiDou Satellite Messaging",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"wearable_bluee_text",
+            "value":"Quando l'orologio è collegato al telefono, i dati mobili dell'orologio verranno automaticamente disattivati per risparmiare energia. Saranno riattivati in caso di disconnessione.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"save",
+            "value":"Salva",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Apn_enum_None",
+            "value":"Nessuno",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"wearable_roaming_subtitle",
+            "value":"Attiva i dati durante il roaming. Contatta il tuo operatore per i dettagli.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_data_networkProvider",
+            "value":"Operatore",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"APN_MMS",
+            "value":"MMS",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"do_not_show_again",
+            "value":"Non mostrare più",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"APN_ADD_APN",
+            "value":"Nuovo APN",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"APN_common",
+            "value":"Generale",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_data_dataRoaming",
+            "value":"Roaming dati",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_data",
+            "value":"Dati mobili",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Apn_confirm",
+            "value":"OK",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"gotIt",
+            "value":"OK",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_data_charges",
+            "value":"Potrebbero essere applicati costi per l'utilizzo dei dati.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"go_use_beidou_satellite_message",
+            "value":"Vuoi andare in Messaggi?",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"beidou_satellite_message_service_details_1",
+            "value":"%s. Questa funzione è disponibile solo per gli utenti China Mobile che hanno attivato le funzioni di comunicazione satellitare per il proprio account. Per ulteriori informazioni, contatta il servizio clienti di China Mobile.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"beidou_satellite_message_no_sim_card_descriptions",
+            "value":"Per utilizzare questo servizio, inserisci una scheda SIM China Mobile con BeiDou Satellite Messaging attivato.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"APN_Not_set",
+            "value":"Non impostato",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"APN_NAME",
+            "value":"Nome del punto di accesso (APN)",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"wearable_bluee_title",
+            "value":"Bluetooth connesso",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"go_to_use",
+            "value":"Vai",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Apn_The_name_cannot_be_empty",
+            "value":"Il nome non può essere vuoto.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"beidou_satellite_message",
+            "value":"BeiDou Satellite Messaging",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Apn_The_APN_cannot_be_empty",
+            "value":"L'APN non può essere vuoto.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_available_time_refresh",
+            "value":"I periodi di tempo disponibili verranno aggiornati automaticamente quando la funzione Comunicazioni satellitari Tiantong sarà disabilitata.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"APN_EDIT_APN",
+            "value":"Modifica punto di accesso",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name": "not_support_toast",
+            "value": "Questa operazione non è supportata in questa modalità."
+        }
+    ]
+}

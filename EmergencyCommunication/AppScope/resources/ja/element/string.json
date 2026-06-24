@@ -1,0 +1,11 @@
+{
+    "string":[
+        {
+            "name":"app_name",
+            "value":"緊急SOS",
+            "attr":{
+                "priority":"translate"
+            }
+        }
+    ]
+}

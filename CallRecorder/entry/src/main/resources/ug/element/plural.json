@@ -1,0 +1,61 @@
+{
+    "plural":[
+        {
+            "name":"call_numbers_finish",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"%d چاقىرىق ئۈنگە ئېلىندى",
+                    "attr":{
+                        "priority":"LT"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"%d چاقىرىق ئۈنگە ئېلىندى",
+                    "attr":{
+                        "priority":"LT"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"use_numbers",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"%d",
+                    "attr":{
+                        "priority":"LT"
+                    }
+                },
+                {
+                    "quantity":"one",
+                    "value":"%d",
+                    "attr":{
+                        "priority":"LT"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"is_delete_plural_number",
+            "value":[
+                {
+                    "quantity":"one",
+                    "value":"%d نومۇرنى ئۆچۈرەمسىز؟",
+                    "attr":{
+                        "priority":"LT"
+                    }
+                },
+                {
+                    "quantity":"other",
+                    "value":"%d نومۇرنى ئۆچۈرەمسىز؟",
+                    "attr":{
+                        "priority":"LT"
+                    }
+                }
+            ]
+        }
+    ]
+}

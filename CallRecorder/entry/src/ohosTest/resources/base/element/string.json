@@ -1,0 +1,144 @@
+{
+  "string": [
+    {
+      "name": "module_test_desc",
+      "value": "test ability description"
+    },
+    {
+      "name": "TestAbility_desc",
+      "value": "the test ability"
+    },
+    {
+      "name": "TestAbility_label",
+      "value": "test label"
+    },
+    {
+      "name": "module_desc",
+      "value": "module description"
+    },
+    {
+      "name": "CallrecorderAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "CallrecorderAbility_label",
+      "value": "label"
+    },
+    {
+      "name": "GET_STARTUP_INFO",
+      "value": "init call_record database"
+    },
+    {
+      "name": "mobile_data_commonly_used",
+      "value": "commonly_used"
+    },
+    {
+      "name": "automatic_recording_of_calls",
+      "value": "Auto-record calls"
+    },
+    {
+      "name": "emptyStr",
+      "value": " "
+    },
+    {
+      "name": "automatically_record_call_viewed",
+      "value": "Call recordings can be found in the Recorder app."
+    },
+    {
+      "name": "auto_recording_object",
+      "value": "Auto-record settings"
+    },
+    {
+      "name": "auto_recording_object_selection",
+      "value": "auto recording object selection"
+    },
+    {
+      "name": "specified_number",
+      "value": "Specified numbers"
+    },
+    {
+      "name": "initialize_the_database",
+      "value": "initialize the database"
+    },
+    {
+      "name": "no_number_specified",
+      "value": "No numbers"
+    },
+    {
+      "name": "add_specified_number",
+      "value": "ADD NUMBERS"
+    },
+    {
+      "name": "auto_recording_object_saving",
+      "value": "auto recording object saving"
+    },
+    {
+      "name": "all_calls",
+      "value": "All calls"
+    },
+    {
+      "name": "call_recorder",
+      "value": "call recorder"
+    },
+    {
+      "name": "opened",
+      "value": "Enabled"
+    },
+    {
+      "name": "closed",
+      "value": "Disabled"
+    },
+    {
+      "name": "call_auto_recorder",
+      "value": "Auto-record calls"
+    },
+    {
+      "name": "unset_recorder",
+      "value": "None"
+    },
+    {
+      "name": "delete",
+      "value": "DELETE"
+    },
+    {
+      "name": "select_all",
+      "value": "Select all"
+    },
+    {
+      "name": "deselect_all",
+      "value": "Deselect all"
+    },
+    {
+      "name": "cancel",
+      "value": "CANCEL"
+    },
+    {
+      "name": "is_delete_number",
+      "value": "Delete this number?"
+    },
+    {
+      "name": "is_delete_all_number",
+      "value": "Delete all numbers?"
+    },
+    {
+      "name": "unknown",
+      "value": "unknown"
+    },
+    {
+      "name": "call_meeting",
+      "value": "call meeting"
+    },
+    {
+      "name": "call_numbers_finish_des",
+      "value": "Saved to Phone > More > Call recordings.Touch to view."
+    },
+    {
+      "name": "callrecorderUIExtensionAbility_desc",
+      "value": "callrecorder is system api"
+    },
+    {
+      "name": "callrecorderUIExtensionAbility_label",
+      "value": "callrecorder"
+    }
+  ]
+}

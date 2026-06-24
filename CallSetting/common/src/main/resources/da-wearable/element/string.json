@@ -1,0 +1,18 @@
+{
+    "string":[
+        {
+            "name":"BaMmi",
+            "value":"Opkalds\u200bspærring",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mmiError",
+            "value":"Forbindelses\u200bproblemer eller ugyldig MMI-kode.",
+            "attr":{
+                "priority":"LT"
+            }
+        }
+    ]
+}

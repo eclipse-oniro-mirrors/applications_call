@@ -1,0 +1,2510 @@
+{
+    "string":[
+        {
+            "name":"yes",
+            "value":"شۇنداق",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergencyContact",
+            "value":"جىددىي ئالاقىداش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"fullName",
+            "value":"ئىسىم-فامىلە",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"address",
+            "value":"ئادرېس",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"drugStatus",
+            "value":"سالامەتلىك ئەھۋالى ۋە دىققەت قىلىدىغان ئىشلار",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"emergencyCallsOnly",
+            "value":"پەقەت جىددىي چاقىرىق",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"editEmergencyInfo",
+            "value":"جىددىي ئۇچۇر تەھرىرلەش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"clearInfo",
+            "value":"بارلىق ئۇچۇر ۋە ئالاقىداشنى تازىلامسىز؟",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"getLocation",
+            "value":"بۇ يەرنى چېكىپ ئورۇن بەلگىلەڭ",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"addEmergencyContact",
+            "value":"جىددىي ئالاقىداش قوشۇش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"notAdded",
+            "value":"قوشمىغان",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"no",
+            "value":"ياق",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"organDonor",
+            "value":"ئەزا تەقدىم قىلغۇچى",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"add",
+            "value":"قوشۇش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"peopleAdded",
+            "value":"%d",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"bloodType",
+            "value":"قان تىپى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"editEmergencyContact",
+            "value":"جىددىي ئالاقىداشنى تەھرىرلەش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"medicalInfo",
+            "value":"داۋالىنىش ئۇچۇرى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"gettingLocation",
+            "value":"ئورۇن بەلگىلەۋاتىدۇ...",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"clearAll",
+            "value":"ھەممىنى تازىلاش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"sendNow",
+            "value":"يوللاش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"emergencyInfo",
+            "value":"جىددىي قۇتقۇزۇش ئۇچۇرى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"drug",
+            "value":"دورا",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"personalInfo",
+            "value":"شەخسىي ئۇچۇر",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"allergies",
+            "value":"سەزگۈرلۈك (رېئاكسىيە)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"determine",
+            "value":"جەزملەش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"POLICE",
+            "value":"بۇلاڭچىلىق سىگنالى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"clear",
+            "value":"تازىلاش",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"getLocationService",
+            "value":"ئۆزلۈكىدىن ئورۇن بەلگىلەش",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"getLocationMsg1",
+            "value":"جىددىي ئەھۋالدا ياردەم ئېلىشنى قولايلاشتۇرۇش ئۈچۈن ئۈسكۈنە ئۆزلۈكىدىن ئورۇن بەلگىلەپ، ئېكران ئۈستىدە كۆرسىتىدۇ. شۇ ئورۇن ئۇچۇرىنى چەكسىڭىز، ئۈچىنچى تەرەپ خەرىتىسىدە ئېچىلىدۇ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"continue",
+            "value":"ئېتىش",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"allergiesPlacement",
+            "value":"مەسىلەن، خاسىڭ، گۈل چېڭى",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"removeContact",
+            "value":"«%s» نى جىددىي ئالاقىداشتىن چىقىرامسىز؟",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"personalEmergencyInfo",
+            "value":"جىددىي شەخسىي ئۇچۇر",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"drugPlacement",
+            "value":"مەسىلەن، لېپرىن، ئاسپىرىن",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"permissionConfirm",
+            "value":"بىلدىم",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"AMBULANCE",
+            "value":"جىددىي قۇتقۇزۇش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"emergencyContacts",
+            "value":"جىددىي ئالاقە",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"sendSmsSuccess",
+            "value":"ئۇچۇر يوللاندى.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"already_in_contacts",
+            "value":"جىددىي ئالاقىداش قاتارىدا %s بار.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"notEmergencyNumberMsg",
+            "value":"تېلېفون قىلىنمىدى، %s جىددىي نومۇر ئەمەس.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"remove",
+            "value":"چىقىرىۋېتىش",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"FIRE",
+            "value":"ئوت ئاپىتى سىگنالى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"warnContent",
+            "value":"جىددىي قۇتقۇزۇش ئۇچۇرى جىددىي ئەھۋال كۆرۈلگەندە جىددىي قۇتقۇزۇش خادىملىرىنىڭ سىزگە دەل ۋاقتىدا ياردەم بېرىشى ئۈچۈن پايدىلىق. بۇ ئۇچۇرلار ئۈسكۈنىڭىزدىلا ساقلىنىدۇ، ئۈسكۈنە قۇلۇپلاق ھالەتتىمۇ خالىغان كىشى نومۇر بېسىش ئېكرانىدىن كۆرەلەيدۇ. ئالاقىداش > ئىسىم كارتام دېگەن ئورۇندىن تەڭشەيسىز.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"contactsWarnContent",
+            "value":"جىددىي ئالاقىداش جىددىي ئەھۋال كۆرۈلگەندە قۇتقۇزۇش خادىملىرىنىڭ سىزنى دەل ۋاقتىدا قۇتقۇزۇشىغا ياردەم بېرەلەيدۇ. بۇ ئۇچۇرلار پەقەت ئۈسكۈنىڭىزدە ساقلىنىدۇ، ئەمما ئۈسكۈنە قۇلۇپلاق ھالەتتىمۇ خالىغان كىشى نومۇر بېسىش ئېكرانىدىن كۆرەلەيدۇ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"removecontact",
+            "value":"جىددىي ئالاقىداشنى چىقىرىۋېتىش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"drugStatusPlacement",
+            "value":"مەسىلەن، زىققا كېسىلى",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"notifyContact",
+            "value":"ئالاقىداشقا ئۇقتۇرۇش",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"closeLocationServiceMsg",
+            "value":"ئەتسىڭىز، جىددىي تېلېفون قىلغاندا ئۆزلۈكىدىن ئورۇن بەلگىلەنمەيدۇ. ئېتەمسىز؟",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"CANCEL",
+            "value":"بىكار قىلىش",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"closeLocationService",
+            "value":"ئۆزلۈكىدىن ئورۇن بەلگىلەشنى ئېتىش",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"sendMsgNotice",
+            "value":"ئۇچۇر ئارقىلىق بۇ كىشىنى جىددىي ئالاقىداش قاتارىغا قوشقانلىقىڭىزنى ئۆزىگە ئۇقتۇرۇپ قويۇڭ، جىددىي ئەھۋالدا نېمە ئىش بولغانلىقىنى بىلەلمەي قالمىسۇن.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"addContact",
+            "value":"ئالاقىداش قوشۇش",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"rightCall",
+            "value":"سولغا سىيرىسىڭىز %s نى چاقىرىدۇ",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"noLocationPermissionDesc",
+            "value":"بۇ ئىجازەت جىددىي چاقىرىقتا ئورۇن ئۇچۇرىڭىزنى ئېنىقلاش ئۈچۈن ئىشلىتىلىدۇ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"sendMsg",
+            "value":"سىزنى جىددىي ئالاقىداش قاتارىغا قوشتۇم. بىرەر خەتەرلىك ياكى جىددىي ئەھۋالغا دۇچ كەلسەم، ئۇچۇر كېلىدۇ. [خۇاۋېي جىددىي قۇتقۇزۇش مۇلازىمىتى]",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"noStated",
+            "value":"يوق",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"sendSmsFail",
+            "value":"ئۇچۇر يوللانمىدى (سەۋەبى ئېنىقسىز).",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"getLocationFailed",
+            "value":"ئورۇن بەلگىلەنمىدى، قايتا سىناڭ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"InfoEdit_edits_info",
+            "value":"تەھرىرلەش",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"InfoEdit_show_dialpad",
+            "value":"نومۇرتاختا كۆرسىتىش",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"InfoEdit_delete",
+            "value":"ئۆچۈرۈش",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"InfoEdit_edit",
+            "value":"باشقا تاللانمىلار",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"ContactsEdit_close",
+            "value":"جىددىي ئالاقىداشنى چىقىرىۋېتىش",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"InfoEdit_dail",
+            "value":"چاقىرىش",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"noLocationPermissionTitle",
+            "value":"تەڭشەكتىن «جىددىي ئالاقە» ئۈچۈن ئورۇن ئىجازىتى بېرىڭ",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"GET_APPROXIMATELY_LOCATION",
+            "value":"بۇ ئىجازەت تەخمىنىي ئورۇن ئۇچۇرىنى ئوقۇش ئۈچۈن ئىشلىتىلىدۇ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"list_learn_about_emergency_shelters_title",
+            "value":"پاناھلىنىش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"auto_send_earthquake_alarm_message",
+            "value":"يەرتەۋرەش سىگنالى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"list_learn_about_emergency_shelters",
+            "value":"ئەتراپتىكى جىددىي پاناھلىنىش ۋە جىددىي قۇتقۇزۇش ئورۇنلىرى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"warning_area_and_function_text",
+            "value":"بۇ ئىقتىدار ۋە ئىشلەيدىغان رايونلار ھەققىدە",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"important_state_title",
+            "value":"مۇھىم بايانات",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"alarm_close_dialog_remind_title",
+            "value":"ئەسكەرتىش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeLocation",
+            "value":"تەۋرەش مەركىزى",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"list_dial_emergency_contact_number",
+            "value":"بۇ يەردىن جىددىي ئەھۋالدا ئالاقىلىشىدىغانلارنى باشقۇرىسىز",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"button_agree",
+            "value":"قوشۇلىمەن",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeAlarmTest",
+            "value":"كۆرەك ئاگاھلاندۇرۇش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"define_disclaimer",
+            "value":"مەسئۇلىيەت باياناتى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"button_agree_and_open",
+            "value":"قوشۇلىمەن ۋە ئاچىمەن",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeInfofrom",
+            "value":"ئۇچۇر مەنبەسى: %s",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeDistance",
+            "value":"تەۋرەش مەركىزى بىلەن بولغان ئارىلىق",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"list_quickly_show_emergency_information",
+            "value":"زۆرۈر تېپىلغاندا باشقىلارغا تېز كۆرسىتىدىغان جىددىي قۇتقۇزۇشقا ئالاقىدار ئۇچۇرلار",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"button_open",
+            "value":"ئېچىش",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"EarthquakeCenter",
+            "value":"تەۋرەش مەركىزى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"earthquake_alarm_notify",
+            "value":"جىددىي سىگنال ئۇقتۇرۇشى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"emergency_alter_title",
+            "value":"ئۆرنەك سىگنال",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"earthquake_warning_summary",
+            "value":"يەرتەۋرەش بايقالغاندا سىزگە ئۇقتۇرۇش كېلىدۇ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"function_settings_text",
+            "value":"تەڭشەك",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeUpdate",
+            "value":"يەرتەۋرەش ۋاقتى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeMagnitude",
+            "value":"بال",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeFelling1",
+            "value":"بوش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeFelling3",
+            "value":"ئېغىر بولۇشى مۇمكىن",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeArrived",
+            "value":"يەرتەۋرەش دولقۇنى كەلگەندە",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeArrivingLongTips",
+            "value":"يەرتەرۋەش دولقۇنى يېتىپ كېلىدىغان ۋاقىتنى ئۆزلۈكىدىن ئۆلچەپ ئاۋازلىق ۋاقىت سانايدۇ ۋە تەڭ تىترىتىدۇ. شۇ چاغدا دەرھال يېقىندىكى بىخەتەر ئورۇن ياكى ئۈستى ئوچۇق جايغا بېرىپ پاناھلىنىڭ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"The_position_switch_off_text",
+            "value":"بۇنى ئەتسىڭىز، يەرتەۋرەش ئاگاھلاندۇرۇشلىرى كەلمەيدۇ. ئېتەمسىز؟",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeArriving",
+            "value":"يەرتەۋرەش دولقۇنىدىن بۇرۇن",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Historical_warning_information",
+            "value":"كونا ئاگاھلاندۇرۇش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeWarningTitle1_2",
+            "value":"يەرتەۋرەش دولقۇنى كەلدى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Turn_on_Emergency_Information_and_Warning_text",
+            "value":"يەرتەۋرەش سىگنالى مۇلازىمىتى ئورۇن ئۇچۇرى بويىچە سىز تۇرۇشلۇق رايونغا ئالاقىدار ئاگاھلاندۇرۇش بېرىدۇ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeNext",
+            "value":"كېيىنكى ئەسكەرتمە",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Historical_warning_information_explain",
+            "value":"بارلىق ئاگاھلاندۇرۇش بۇ يەردە.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeWarningServer",
+            "value":"يەرتەۋرەش سىگنالى مۇلازىمىتى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeFelling2",
+            "value":"كۈچلۈك",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Disclaimer_Instructions",
+            "value":"يەرتەۋرەش سىگنالى ئالاقىدار ھۆكۈمەت ئورۇنلىرىنىڭ ئىجازىتى بىلەن تەمىنلىنىدۇ، خۇاۋېينىڭ ئۇلارنى تىزگىنلەش ھوقۇقى يوق.\nيەرتەۋرەش سىگنالى مۇلازىمىتى پەقەت بىخەتەرلىك ئەھۋالى ھەققىدە ئۇچۇر ۋە كۆرسەتمە بېرىدىغان پايدىلانما. سىگنال بېرىلىپ يەر تەۋرىگۈچە پەقەت نەچچە سېكۇنتلا ۋاقىت بولۇشى مۇمكىن، شۇڭا سىگنال تاپشۇرۇۋالغان ھامان دەرھال پاناھلىنىڭ. سىگنال كەلمىگەن، ئەمما يەرتەۋرەشنى سەزگەن ھالەتتىمۇ دەرھال پاناھلىنىش كېرەك. يەرتەۋرەش سىگنالى بويىچە ئىش كۆرۈپ كېلىپ چىققان ھەرقانداق خەتەر ۋە ئاقىۋەتكە ئۆزىڭىز مەسئۇل بولىسىز.\nيەرتەۋرەشنى سېزىشتىكى يېتەرسىزلىك، تورنىڭ راۋان بولماسلىقى، ئۈچىنچى تەرەپ ئۈسكۈنىلىرىدە كاشىلا كۆرۈلۈش ياكى مۆلچەرلەش/تىزگىنلەشكە بولمايدىغان باشقا سەۋەبلەردىن يەرتەۋرەش ئۇچۇرى ۋاقتىدا كەلمەي قېلىشى مۇمكىن، ئۇلار سەۋەبلىك ھەرقانداق زىيان كۆرۈلسە، خۇاۋېي ھېچقانداق مەسئۇلىيەتنى ئۈستىگە ئالمايدۇ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Permission_Instructions",
+            "value":"يەرتەۋرەش سىگنالى ئىجازىتى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"emergencyInfromation",
+            "value":"جىددىي ئاگاھلاندۇرۇش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeWarningTitle1",
+            "value":"يەرتەۋرەش دولقۇنى كېلىۋاتىدۇ، پاناھلىنىڭ!",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeWarningTitle3",
+            "value":"جىددىيلەشمەڭ، ئاسما نەرسىلەرگە يېقىن بارماڭ، لىفىتقا چىقماڭ. ئوچۇقچىلىق يەرگە بېرىۋېلىڭ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeAlarmTesting",
+            "value":"سىناقنى ئېتىش (%s)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"PermissionDescriptionContent_3",
+            "value":"بۇ ئىجازەت يەرتەۋرەش ئاگاھلاندۇرۇشى ئەۋەتىش ئۈچۈن ئۈسكۈنىنىڭ ئېنىق ئورنىنى بەلگىلەشكە ئىشلىتىلىدۇ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeInfoTitle",
+            "value":"ئاگاھلاندۇرۇش تەپسىلاتى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"GET_LOCATION_IN_BACKGROUND",
+            "value":"يەرتەۋرەش سىگنالى مۇلازىمىتى ئارقا سۇپىدا يۈرگەندە ئورۇن ئۇچۇرىنى ئوقۇيدۇ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeArrivedLongTips",
+            "value":"ئاۋازلىق سىگنال چېلىنىپ، تېز ياردەم ئېغىزى، ئەتراپتىكى ئەڭ قولاي پاناھلىنىش ئورنىغا يول باشلاش، جىددىي ئالاقىداشنىڭ تېلېفون نومۇرىنى ئېچىش ۋە جىددىي قۇتقۇزۇشقا كېرەكلىك ئۇچۇرلارنى كۆرسىتىش قاتارلىق تاللانمىلار تەمىنلىنىدۇ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"oobe_EarthquakeWarningServer_content",
+            "value":"«يەرتەۋرەش سىگنالى» مۇلازىمىتى يەرتەۋرەش بايقالغاندا سىزگە ئۇقتۇرۇش يوللايدۇ. بۇ مۇلازىمەت تور ئىشلىتىدۇ؛ ئورۇن ئىجازىتى ئالىدۇ؛ ئۈسكۈنە ۋە ئورۇن ئۇچۇرىنى ئوقۇپ، يەرتەۋرەش ئاگاھلاندۇرۇشى يەتكۈزۈش ئۈچۈن ئىشلىتىدۇ. بۇ مۇلازىمەتنى ئاچسىڭىز، يۇقىرىقى شەرتلەر، <a link=\"disclaimStatement\">مەسئۇلىيەت باياناتى</a>، <a link=\"privacyStatement\">«يەرتەۋرەش سىگنالى ۋە مەخپىيەتلىك ھەققىدە بايانات»</a> ۋە <a link=\"permissionStatement\">«ئىجازەت ئىشلىتىش كۆرسەتمىسى»</a> گە قوشۇلغان بولىسىز.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeLocationLongitudeEast",
+            "value":"(غەرب %1$s گىرادۇس، شىمال %2$s گىرادۇس)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EmergencyWarningSettings_7",
+            "value":"يەرتەۋرەش سىگنالى ۋە مەخپىيەتلىك ھەققىدە بايانات",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EmergencyWarningSettings_8",
+            "value":"ئىجازەت ئىشلىتىش كۆرسەتمىسى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EmergencyWarningSettings_4",
+            "value":"ئورۇن",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EmergencyWarningSettings_2",
+            "value":"تور",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"emergencyInfromationText",
+            "value":"\u200f%1$s تەۋەسىدە %2$s بال يەر تەۋرىدى. %3$s، %4$s",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"importantDialogContent_8",
+            "value":"بۇ ئۇلانما",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"earthquake_location_notice",
+            "value":"تەڭشەك > ئەپ ۋە تۈپئەپ > باشقا ئەپلەر > جىددىي ئالاقە > ئورۇن دېگەن بەتتىن ئىزچىل رۇخسەتلىك ئىجازەت بېرىپ، ئاندىن «ئېنىق ئورۇن» تاللانمىسىنى ئېچىڭ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeLocationLongitudeWest",
+            "value":"(شەرق %1$s گىرادۇس، جەنۇب %2$s گىرادۇس)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"notificationSwitchDialogContent",
+            "value":"«جىددىي ئالاقە» ئىجازەت تەڭشىكىدىن ئۇقتۇرۇش تاللانمىسىنى ئېچىڭ. بۇ ئىجازەت يەرتەۋرەش ئاگاھلاندۇرۇشى يوللاش ئۈچۈن ئىشلىتىلىدۇ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"The_position_switch_off",
+            "value":"ئورۇن مۇلازىمىتى ئېتىك",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"PermissionDescriptionContent_2",
+            "value":"ئورۇن",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeLocationLatitudeNorth",
+            "value":"(شەرق %1$s گىرادۇس، شىمال %2$s گىرادۇس)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeLocationLatitudeSouth",
+            "value":"(غەرب %1$s گىرادۇس، جەنۇب %2$s گىرادۇس)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"importantDialogContent_3",
+            "value":"بۇ يەر",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeIntensity",
+            "value":"كۈچ: %s",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"importantDialogContent_4",
+            "value":"«قوشۇلىمەن» نى چەكسىڭىز، %1$s ھەمدە سىزگە يەرتەۋرەش ئاگاھلاندۇرۇشى تەمىنلەشكە قوشۇلغان بولىسىز. شەخسىي ئۇچۇر بىر تەرەپ قىلىش ھەققىدىكى تەپسىلاتلارنى «%2$s» ۋە «%3$s» ئارقىلىق كۆرۈڭ. %4$s ئارقىلىق ئۆزگىرىش تەپسىلاتىنى كۆرەلەيسىز.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"importantDialogContent_2",
+            "value":"بۇ مۇلازىمەت تور ئىشلىتىدۇ؛ ئورۇن ئىجازىتى ئالىدۇ. بۇ مۇلازىمەت يەرتەۋرەش ئاگاھلاندۇرۇشى تەمىنلەيدۇ. يەر تەۋرىگەندە خۇاۋېي يەرتەۋرەش سىگنالى مۇلازىمىتى مەمۇرىي رايون ئۇچۇرى ۋە ئۈسكۈنە ئۇچۇرى بويىچە يەرتەۋرەش دائىرىسىدىكى ئىشلەتكۈچىلەرگە ئاگاھلاندۇرۇش ۋە پاناھلىنىش ئۇچۇرى يوللايدۇ. تەپسىلاتىنى %sدىن كۆرۈڭ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EmergencyWarningSettings_all",
+            "value":"بۇ مۇلازىمەت %1$s ئىشلىتىدۇ؛ %2$s ئىجازىتى ئالىدۇ؛ ئورۇن ئۇچۇرىنى ئوقۇپ يۈكلەيدۇ؛ يۇقىرىقىلار يەرتەۋرەش سىگنالى مۇلازىمەتلىرىنى تەمىنلەش ئۈچۈن ئىشلىتىلىدۇ. بۇنى ئاچسىڭىز، «%3$s» ۋە يۇقىرىقىلارغا قوشۇلغان بولىسىز. شەخسىي ئۇچۇر بىر تەرەپ قىلىش ھەققىدىكى تەپسىلاتلارنى «%4$s» ۋە «%5$s» ئارقىلىق كۆرۈڭ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"closeLocationService_title",
+            "value":"ئۆزلۈكىدىن ئورۇن بەلگىلەشنى ئېتىش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_info",
+            "value":"ئۆزلۈكىدىن قۇتقۇزۇش ئۇچۇرى يوللاش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Permission_Title_1",
+            "value":"جىددىي قۇتقۇزۇشقا ئورۇن يوللاش ئىجازىتى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Permission_Description_3",
+            "value":"بۇ ئىجازەت ئۈسكۈنىنىڭ ئېنىق ئورۇن ئۇچۇرىنى ئوقۇپ، جىددىي ئالاقىداشقا يوللايدىغان جىددىي قۇتقۇزۇش ئۇچۇرىغا قوشۇش ئۈچۈن ئىشلىتىلىدۇ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Permission_Description_5",
+            "value":"بۇ ئىجازەت جىددىي ئەھۋال كۆرۈلگەندە جىددىي ئالاقىداشقا ئۆزلۈكىدىن جىددىي قۇتقۇزۇش ئۇچۇرى يوللاش ئۈچۈن ئىشلىتىلىدۇ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Permission_Description_2",
+            "value":"بۇ ئىجازەت ئۈسكۈنىنىڭ ئېنىق ئورۇن ئۇچۇرىنى ئېنىقلاپ، جىددىي قۇتقۇزۇش مۇلازىمىتى تەمىنلەش ئۈچۈن ئىشلىتىلىدۇ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_emergency_title",
+            "value":"\u200fSOS جىددىي قۇتقۇزۇش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_Location_Info",
+            "value":"جۇڭگو چوڭ قۇرۇقلۇقى رايونىدا جىددىي قۇتقۇزۇش مەركىزىگە تېلېفون قىلسىڭىز، ئورنىڭىز مەخپىيلەشتۈرۈلۈپ ساقچىلارغا ئەۋەتىلىپ، سىزگە ياردەم بېرىش قولايلاشتۇرۇلىدۇ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Call",
+            "value":"ئاپتوماتىك جىددىي قۇتقۇزۇش تېلېفونى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Call_Test",
+            "value":"جىددىي ياردەم (SOS) ئۇچۇرىنى ئاڭلاش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_emergency_personal_info",
+            "value":"شەخسىي ئۇچۇر ۋە تېببىي ئۇچۇرلار",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_Location",
+            "value":"جىددىي قۇتقۇزۇشقا ئورۇن ئۇچۇرى يوللاش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_Location_Detail",
+            "value":"بۇ مۇلازىمەت %1$s ئىشلىتىدۇ؛ %2$s ئىجازىتى ئالىدۇ؛ ئورۇن ئۇچۇرى ۋە بۇ ئۈسكۈنىنىڭ يانفون نومۇرىنى ئوقۇپ ۋە يوللاپ، جىددىي قۇتقۇزۇش مۇلازىمەتلىرىنى تەمىنلەيدۇ. بۇ مۇلازىمەتنى ئاچسىڭىز، يۇقىرىقىلارغا قوشۇلغان بولىسىز. شەخسىي ئۇچۇر بىر تەرەپ قىلىش ھەققىدىكى تەپسىلاتلارنى «%3$s» ۋە «%4$s» ئارقىلىق كۆرۈڭ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Permission_Description_4",
+            "value":"ئۇچۇر",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_Location_Detail_Active_two",
+            "value":"ئىجازەت ئىشلىتىش كۆرسەتمىسى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_Location_Detail_Active_one",
+            "value":"جىددىي قۇتقۇزۇشقا ئورۇن ئۇچۇرى يوللاش ۋە مەخپىيەتلىك ھەققىدە بايانات",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_Location_Detail_Dark_one",
+            "value":"تور",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_info_Detail_notice_dark_one",
+            "value":"ئۇچۇر",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_info_Detail_notice_dark_Two",
+            "value":"ئورۇن",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_info_Detail_notice_all",
+            "value":"بۇ مۇلازىمەت %1$s ۋە %2$s ئىجازىتى ئالىدۇ؛ ئورۇن ئۇچۇرىنى ئوقۇپ، ئۆزلۈكىدىن قۇتقۇزۇش ئۇچۇرى يوللاش مۇلازىمىتى تەمىنلەيدۇ. بۇنى ئاچسىڭىز، يۇقىرىقىلارغا قوشۇلغان بولىسىز. شەخسىي ئۇچۇر بىر تەرەپ قىلىش ھەققىدىكى تەپسىلاتلارنى «%3$s» ۋە «%4$s» ئارقىلىق كۆرۈڭ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_info_Detail_notice_renew",
+            "value":"بۇ مۇلازىمەت %1$s ئىجازىتى ئالىدۇ؛ ئورۇن ئۇچۇرىنى ئوقۇپ، ئۆزلۈكىدىن قۇتقۇزۇش ئۇچۇرى يوللاش مۇلازىمىتى تەمىنلەيدۇ. بۇنى ئاچسىڭىز، يۇقىرىقىلارغا قوشۇلغان بولىسىز. شەخسىي ئۇچۇر بىر تەرەپ قىلىش ھەققىدىكى تەپسىلاتلارنى «%2$s» ۋە «%3$s» ئارقىلىق كۆرۈڭ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_info_Detail_notice_active_two",
+            "value":"ئىجازەت ئىشلىتىش كۆرسەتمىسى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_info_Detail_notice_active_one",
+            "value":"ئۆزلۈكىدىن قۇتقۇزۇش ئۇچۇرى يوللاش ۋە مەخپىيەتلىك ھەققىدە بايانات",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"sos_permissions_tips_of_auto_send_sms",
+            "value":"تەڭشەك > ئەپ ۋە تۈپئەپ > باشقا ئەپلەر > جىددىي ئالاقە > ئورۇن دېگەن بەتتىن ئېنىق ئورۇن ئىجازىتىنى ئېچىڭ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Emergency_message_without_location",
+            "value":"[جىددىي ياردەم كېرەك! SOS] جىددىي ئەھۋالغا يولۇقتۇم، ياردەم كېرەك. سىز مېنىڭ جىددىي ئالاقىلاشقۇچۇم، شۇڭا بۇ ئۇچۇرنى تاپشۇرۇۋالدىڭىز. تېلېفون ئالالماسلىقىم مۇمكىن.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"stop_share_location_prompt_content",
+            "value":"چېكىنسىڭىز، جىددىي ئالاقىداشقا ياردەم سوراش ئۇچۇرى يوللانمايدۇ. چېكىنەمسىز؟",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"exit",
+            "value":"چېكىنىش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Permission_Title_2",
+            "value":"ئۆزلۈكىدىن قۇتقۇزۇش ئۇچۇرى يوللاش ئىجازەتلىرى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"emergency_number_alarm",
+            "value":"سىگنال",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"emergency_location_service_text",
+            "value":"جىددىي قۇتقۇزۇش (SOS) چاقىرغاندا ئورۇن ئۇچۇرىڭىز ئۆزلۈكىدىن ساقچى تەرەپكە ئەۋەتىلىپ، سىزگە ياردەم تەمىنلەش قولايلاشتۇرۇلىدۇ. بۇ مۇلازىمەت تور ئىشلىتىدۇ؛ ئورۇن ئىجازىتى ئالىدۇ؛ ئورۇن ئۇچۇرى ۋە بۇ ئۈسكۈنىنىڭ تېلېفون نومۇرىنى ئوقۇپ ۋە يۈكلەپ، جىددىي ياردەم مۇلازىمىتى تەمىنلەش ئۈچۈن ئىشلىتىدۇ. بۇ مۇلازىمەتنى ئاچسىڭىز، يۇقىرىقى مەزمۇنلارغا قوشۇلغان بولىسىز. شەخسىي ئۇچۇر بىر تەرەپ قىلىش ھەققىدىكى تەپسىلاتلارنى <a link=\"privacyStatement\">«جىددىي قۇتقۇزۇشقا ئورۇن ئۇچۇرى يوللاش ۋە مەخپىيەتلىك ھەققىدە بايانات»</a> ۋە <a link=\"permissionStatement\">«ئىجازەت ئىشلىتىش كۆرسەتمىسى»</a> ئارقىلىق كۆرۈڭ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"no_service_message_and_call_unavailable",
+            "value":"مۇلازىمەت يوق، ئۇچۇر ۋە تېلېفون قاتارلىق SIM مۇلازىمەتلىرى ئىشلىمەيدۇ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"sos_calling_summary",
+            "value":"چاقىرىق يۈرۈۋاتىدۇ، چېكىپ قوشۇلالايسىز.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"emergency_number_traffic",
+            "value":"قاتناش ھادىسىسى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"share_location_background_tips",
+            "value":"ئورنىڭىزنى جىددىي ئالاقىداشقا يوللاۋاتىمىز",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"unable_auto_dial_dialog_title",
+            "value":"جىددىي تېلېفون قىلىنمايدۇ",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"send_sms_notify_emergency_contact",
+            "value":"جىددىي ئالاقىداشقا قۇتقۇزۇش ئۇچۇرى يوللىنىدۇ",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Permission_denied_to_send_sms",
+            "value":"ئەپنىڭ ئۇچۇر يوللاش ئىجازىتى يوق.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"no_sim_message_and_call_unavailable",
+            "value":"ئۈسكۈنىدە SIM كارتا يوق، ئۇچۇر ۋە تېلېفون ئىقتىدارى ئىشلىمەيدۇ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"sos_is_auto_calling",
+            "value":"ئۆزلۈكىدىن چاقىرىۋاتىدۇ...",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_Location_When_Call_Detail",
+            "value":"جىددىي قۇتقۇزۇش تېلېفونى قىلغاندا ئورۇن ئۇچۇرى ئۆزلۈكىدىن ئوقۇلىدۇ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"unable_auto_dial_dialog_summary",
+            "value":"كەمىدە بىر جىددىي ئالاقىداش قوشۇش كېرەك.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"sos_is_playing_recording",
+            "value":"جىددىي قۇتقۇزۇش ئۇچۇرى قويۇلۇۋاتىدۇ، چېكىپ كىرىڭ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"emergency_location_service_title",
+            "value":"جىددىي قۇتقۇزۇشقا ئورۇن ئۇچۇرى يوللاش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Emergency_message",
+            "value":"[جىددىي ياردەم كېرەك! SOS] جىددىي ئەھۋالغا يولۇقتۇم، ياردەم كېرەك. سىز مېنىڭ جىددىي ئالاقىلاشقۇچۇم، شۇڭا بۇ ئۇچۇرنى تاپشۇرۇۋالدىڭىز. نۆۋەتتىكى ئورنۇم: %s. تېلېفون ئالالماسلىقىم مۇمكىن.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_Location_When_Call",
+            "value":"جىددىي تېلېفوندا ئۆزلۈكىدىن ئورۇن ئۇچۇرىنى ئوقۇش",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"unable_auto_dial_dialog_add",
+            "value":"قوشۇش",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"unable_send_help_info",
+            "value":"قۇتقۇزۇش ئۇچۇرى يوللانمىدى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"unable_auto_dial_and_send_sms_dialog_title",
+            "value":"جىددىي قۇتقۇزۇش چاقىرىقى ياكى ئۇچۇرى يوللانمىدى",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"aml_permission_location_info",
+            "value":"بۇ ئىجازەت ئېنىق ئورۇن ئۇچۇرىنى ئوقۇپ ياردەم تەمىنلەش ئۈچۈن ئىشلىتىلىدۇ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"aml_switch_title",
+            "value":"خۇاۋېي جىددىي ئورۇن مۇلازىمىتى",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"aml_permission_message_info",
+            "value":"بۇ ئىجازەت جىددىي قۇتقۇزۇش ئۇچۇرى يوللاش ئۈچۈن ئىشلىتىلىدۇ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"aml_short_notification",
+            "value":"<body><span style='subtitle'>بۇ مۇلازىمەت تور ئىشلىتىدۇ؛ ئورۇن ئىجازىتى ئالىدۇ؛ ئورۇن مۇلازىمىتىنى ئاچىدۇ؛ بۇ ئۈسكۈنىنىڭ تېلېفون نومۇرى، ئورۇن ئۇچۇرى ۋە IMEI نى ئوقۇپ ۋە يۈكلەپ، جىددىي قۇتقۇزۇش مۇلازىمەتلىرىنى تەمىنلەيدۇ. بۇ مۇلازىمەتنى ئاچسىڭىز، يۇقىرىقىلارغا قوشۇلغان بولىسىز. شەخسىي ئۇچۇر بىر تەرەپ قىلىش ھەققىدىكى تەپسىلاتلارنى </span><span style='privacyStatement'>«خۇاۋېي جىددىي ئورۇن مۇلازىمىتى ۋە مەخپىيەتلىك ھەققىدە بايانات»</span><span style='subtitle'> ۋە </span><span style='permission'>«ئىجازەت ئىشلىتىش كۆرسەتمىسى»</span><span style='subtitle'> ئارقىلىق كۆرۈڭ.</span></body>",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"aml_permission_info_title",
+            "value":"بۇ مۇلازىمەتكە تۆۋەندىكى ئىجازەت كېرەك:",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"aml_permission_dialog_title",
+            "value":"خۇاۋېي جىددىي ئورۇن مۇلازىمىتى ئىجازەتلىرى",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"aml_switch_summary",
+            "value":"چەتئەلگە چىققاندا سىز تۇرغان رايوندا خۇاۋېي جىددىي ئورۇن مۇلازىمىتى بار بولسا، جىددىي قۇتقۇزۇش تېلېفونى قىلغان ياكى جىددىي قۇتقۇزۇش ئۇچۇرى يوللىغاندا، ئورۇن ئۇچۇرىڭىز قۇتقۇزغۇچى خادىملارغا ئۆزلۈكىدىن ئەۋەتىلىدۇ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"remove_last_emergency_contact_prompt_content",
+            "value":"جىددىي ئالاقىداش قاتارىدىن «%s» نى چىقىرىۋەتسىڭىز، ئۇ جىددىي قۇتقۇزۇش چاقىرىقى ياكى ئۇچۇرىڭىزنى تاپشۇرۇۋالمايدۇ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"remove_emergency_contact_text",
+            "value":"جىددىي ئالاقىداشنى چىقىرىۋېتەمسىز؟",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"warnInfo",
+            "value":"جىددىي ئۇچۇر بېكىتىپ، %s دېگەن ئورۇنغا كىرىڭ",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"earthquake_problem_feedback",
+            "value":"يەرتەۋرەش ئاگاھلاندۇرۇشى بىلەن ئالاقىدار مەسىلىلەرنى ئىنكاس قىلىش ئۈچۈن ئىشلىتىلىدۇ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"InfoEdit_back",
+            "value":"قايتىش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"System",
+            "value":"سىستېما",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_advanced",
+            "value":"ئالىي",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"permission_reason_contacts",
+            "value":"ئالاقىداش باشقۇرۇشقا ئىشلىتىلىدۇ",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"one_finger_double_click",
+            "value":"قوش چەكسىڭىز يۈرگۈزۈلىدۇ",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"positioning",
+            "value":"ئورۇن بەلگىلەش",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"not_available",
+            "value":"ئىشلىمەيدۇ",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"teaching_dialog_complete",
+            "value":"پۈتتى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_not_support",
+            "value":"تيەنتۇڭ سۈنئىي ھەمراھ تورى ئوچۇق، SOS ئىقتىدارى ئىشلىمەيدۇ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"earthquake_warning_notification_text_without_device_address",
+            "value":"\u200f%1$s تەۋەسىدە %2$s بال يەر تەۋرىدى. سىز تۇرۇشلۇق رايونغا تەسىرى %3$s.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"notification_switch_dialog_content",
+            "value":"بۇ ئىجازەت يەرتەۋرەش ئاگاھلاندۇرۇشى يوللاش ئۈچۈن ئىشلىتىلىدۇ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"notification_switch_dialog_title",
+            "value":"«جىددىي ئالاقە» مۇلازىمىتى ئۈچۈن ئۇقتۇرۇش ئىجازىتى كېرەك",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"popup_button_gotosettings",
+            "value":"تەڭشەك",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"earthquake_shelter_setting_dialog",
+            "value":"ئىزدىگىلى بولمىدى، دەرھال ئەتراپتىكى بىخەتەر جايغا بېرىۋېلىڭ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"open_phone_to_emergency_calls",
+            "value":"جىددىي چاقىرىش ئۈچۈن قاتلاقنى ئېچىڭ",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_shelter_setting_notice",
+            "value":"ھازىرچە خەرىتە ئارقىلىق ئىزدەشنى قوللايدۇ، ئاۋۋال چۈشۈرۈپ قاچىلاڭ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fall_down_detection_disclaimer",
+            "value":"يىقىلىشنى بايقاش مەسئۇلىيەت باياناتى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"cannot_enable_fall_down_sos",
+            "value":"يىقىلغاندا ياردەم سوراش ئېچىلمايدۇ",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"car_accident_detection_disclaimer_in_short_notice",
+            "value":"قاتناش ۋەقەسى بايقاش مەسئۇلىيەت باياناتى",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"car_accident_auto_call_for_help_title",
+            "value":"قاتناش ۋەقەسىدە ئۆزلۈكىدىن ياردەم سوراش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"cannot_enable_car_accident_sos",
+            "value":"قاتناش ۋەقەسىدە ياردەم سوراش ئېچىلمايدۇ",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"car_accident_detection_disclaimer_content_one",
+            "value":"ئۈسكۈنىڭىز سەزگۈچ ئارقىلىق ئېھتىمال كۆرۈلگەن ئېغىر قاتناش ۋەقەسىنى بايقاپ، جىددىي ئالاقىداشلىرىڭىزغا تېلېفون قىلىدۇ ۋە ئورۇن ئۇچۇرىنى قوشۇپ ئۇچۇر يوللايدۇ. جىددىي ئالاقىداشلارغا شۇنداق ئۇچۇر ۋە تېلېفون كەلسە كۆرمەي قالماسلىق ۋە خاتا چۈشەنمەسلىك ھەققىدە ئالدىن ئۇقتۇرۇپ قويۇڭ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"car_accident_detection_disclaimer_content_two",
+            "value":"بۇ ئىقتىدار ئۈسكۈنىدىكى سەزگۈچ مەلۇماتىغا تايىنىدۇ، سەزگۈچ مەلۇماتى قاتناش ۋەقەسى كۆرۈلگەندىكى مەلۇماتقا ئوخشاش ئۆزگەرسە، قاتناش ۋەقەسى كۆرۈلمىگەن ئەھۋالدىمۇ بۇ ئىقتىدار قوزغىلىپ كېتىشى ياكى بەزىدە قاتناش ۋەقەسى كۆرۈلگەندىمۇ سەزگۈچ مەلۇماتى ئۆزگەرمىسە بۇ ئىقتىدار قوزغالماي قېلىشى مۇمكىن؛ يەنە تېلېفون قىلىش ۋە ئۇچۇر يوللاش ئىقتىدارى تور ۋە ئۈسكۈنە ھالىتىگە تايىنىدۇ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"fall_down_detection_disclaimer_content_four",
+            "value":"بۇ ئىقتىدار پەقەت جۇڭگو چوڭ قۇرۇقلۇقى رايونىدا ئىشلىتىلىدۇ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"car_accident_detection_disclaimer_content_four",
+            "value":"بۇ ئىقتىدار پەقەت جۇڭگو چوڭ قۇرۇقلۇقى رايونىدا ئىشلىتىلىدۇ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"fall_down_detection_disclaimer_content_one",
+            "value":"ئۈسكۈنىڭىز سەزگۈچ ئارقىلىق يىقىلىپ كەتكەنلىك ئېھتىماللىقىنى بايقاپ، جىددىي ئالاقىداشلىرىڭىزغا تېلېفون قىلىدۇ ۋە ئورۇن ئۇچۇرىنى قوشۇپ ئۇچۇر يوللايدۇ. جىددىي ئالاقىداشلارغا شۇنداق ئۇچۇر ۋە تېلېفون كەلسە كۆرمەي قالماسلىق ۋە خاتا چۈشەنمەسلىك ھەققىدە ئالدىن ئۇقتۇرۇپ قويۇڭ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"car_accident_detection_disclaimer_content_three",
+            "value":"سەزگۈچنىڭ بايقاش ئىقتىدارى، تور ئۇلىنىشى، ئۈسكۈنە ھالىتى، مەزمۇن كەملىكى ياكى خاتا چۈشىنىش سەۋەبلىك كېلىپ چىققان ھەرقانداق زىيانغا خۇاۋېي مەسئۇل ئەمەس.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"car_accident_detection_disclaimer",
+            "value":"قاتناش ۋەقەسى بايقاش مەسئۇلىيەت باياناتى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"car_accident_permission_title",
+            "value":"قاتناش ۋەقەسىدە ئۆزلۈكىدىن ياردەم سوراش مۇلازىمىتى ئىجازەتلىرى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"fall_down_auto_call_for_help_title",
+            "value":"يىقىلغاندا ئۆزلۈكىدىن ياردەم سوراش",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"fall_down_detection_disclaimer_content_two",
+            "value":"بۇ ئىقتىدار ئۈسكۈنىدىكى سەزگۈچ مەلۇماتىغا تايىنىدۇ؛ سەزگۈچ مەلۇماتى يىقىلغانغا ئوخشاش ئۆزگەرسە، يىقىلمىغان ئەھۋالدىمۇ بۇ ئىقتىدار قوزغىلىپ كېتىشى ياكى بەزىدە يىقىلىپ چۈشكەندىمۇ سەزگۈچ مەلۇماتى ئۆزگەرمىسە بۇ ئىقتىدار قوزغالماي قېلىشى مۇمكىن؛ يەنە تېلېفون قىلىش ۋە ئۇچۇر يوللاش ئىقتىدارى تور ۋە ئۈسكۈنە ھالىتىگە تايىنىدۇ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"fall_down_trigger_prompt",
+            "value":"سىستېما %1$s دە يىقىلىپ چۈشكەنلىكىڭىزنى بايقىدى، ئۆزلۈكىدىن جىددىي قۇتقۇزۇش تېلېفونى قىلىدۇ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fall_down_auto_call_notice_all",
+            "value":"بۇ مۇلازىمەت %1$s ئىجازىتى ئالىدۇ؛ ئورۇن ئۇچۇرىنى ئوقۇپ، يىقىلغاندا ياردەم سوراش مۇلازىمەتلىرىنى تەمىنلەيدۇ. بۇنى ئاچسىڭىز، «%2$s» ۋە يۇقىرىقىلارغا قوشۇلغان بولىسىز. شەخسىي ئۇچۇر بىر تەرەپ قىلىش ھەققىدىكى تەپسىلاتلارنى «%3$s» ۋە «%4$s» ئارقىلىق كۆرۈڭ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fall_down_detection_disclaimer_in_short_notice",
+            "value":"يىقىلىشنى بايقاش مەسئۇلىيەت باياناتى",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"sos_is_playing_recording_1",
+            "value":"جىددىي قۇتقۇزۇش (SOS) ئۇچۇرى قويۇلۇۋاتىدۇ، چەكسىڭىز چاقىرىققا كىرىدۇ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fall_down_detection_disclaimer_content_three",
+            "value":"سەزگۈچنىڭ بايقاش ئىقتىدارى، تور ئۇلىنىشى، ئۈسكۈنە ھالىتى، مەزمۇن كەملىكى ياكى خاتا چۈشىنىش سەۋەبلىك كېلىپ چىققان ھەرقانداق زىيانغا خۇاۋېي مەسئۇل ئەمەس.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"car_accident_detection_statement_on_service_and_privacy",
+            "value":"قاتناش ۋەقەسىدە ئۆزلۈكىدىن ياردەم سوراش ۋە مەخپىيەتلىك ھەققىدە بايانات",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"car_accident_trigger_prompt",
+            "value":"سىستېما %1$s دە قاتناش ۋەقەسىگە ئۇچرىغانلىقىڭىزنى بايقىدى، ئۆزلۈكىدىن جىددىي قۇتقۇزۇش تېلېفونى قىلىدۇ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fall_down_detection_statement_on_service_and_privacy",
+            "value":"يىقىلغاندا ئۆزلۈكىدىن ياردەم سوراش ۋە مەخپىيەتلىك ھەققىدە بايانات",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"car_accident_auto_call_notice_all",
+            "value":"بۇ مۇلازىمەت %1$s ئىجازىتى ئالىدۇ؛ ئورۇن ئۇچۇرىنى ئوقۇپ، قاتناش ۋەقەسىدە ياردەم سوراش مۇلازىمەتلىرىنى تەمىنلەيدۇ. بۇنى ئاچسىڭىز، «%2$s» ۋە يۇقىرىقىلارغا قوشۇلغان بولىسىز. شەخسىي ئۇچۇر بىر تەرەپ قىلىش ھەققىدىكى تەپسىلاتلارنى «%3$s» ۋە «%4$s» ئارقىلىق كۆرۈڭ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fall_down_permission_title",
+            "value":"يىقىلغاندا ئۆزلۈكىدىن ياردەم سوراش مۇلازىمىتى ئىجازەتلىرى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"fall_down_message",
+            "value":"[يىقىلىپ چۈشتۈم - SOS]\nخۇاۋېي يانفونۇم يىقىلغانلىقىمنى بايقاپ بۇ ئۇچۇرنى ئۆزلۈكىدىن يوللىدى. سىز مېنىڭ جىددىي ئالاقىلاشقۇچۇم، شۇڭا سىزگە بۇ ئۇچۇر كەلدى. نۆۋەتتىكى ئورنۇم: %s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"car_accident_sos_message_without_location",
+            "value":"[قاتناش ۋەقەسى - SOS]\nخۇاۋېي يانفونۇم قاتناش ھادىسىسى كۆرۈلگەنلىكىنى بايقاپ بۇ ئۇچۇرنى ئۆزلۈكىدىن يوللىدى. سىز مېنىڭ جىددىي ئالاقىلاشقۇچۇم، شۇڭا سىزگە بۇ ئۇچۇر كەلدى.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fall_down_message_without_location",
+            "value":"[يىقىلىپ چۈشتۈم - SOS]\nخۇاۋېي يانفونۇم يىقىلغانلىقىمنى بايقاپ بۇ ئۇچۇرنى ئۆزلۈكىدىن يوللىدى. سىز مېنىڭ جىددىي ئالاقىلاشقۇچۇم، شۇڭا سىزگە بۇ ئۇچۇر كەلدى.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"car_accident_sos_message",
+            "value":"[قاتناش ۋەقەسى - SOS]\nخۇاۋېي يانفونۇم قاتناش ھادىسىسى كۆرۈلگەنلىكىنى بايقاپ بۇ ئۇچۇرنى ئۆزلۈكىدىن يوللىدى. سىز مېنىڭ جىددىي ئالاقىلاشقۇچۇم، شۇڭا سىزگە بۇ ئۇچۇر كەلدى. نۆۋەتتىكى ئورنۇم: %s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Location_Net_Privacy",
+            "value":"ئورۇن تورى مەخپىيەتلىك تۈزۈمى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_Location_Detail_new",
+            "value":"بۇ مۇلازىمەت %1$s ئىشلىتىدۇ؛ %2$s ئىجازىتى ئالىدۇ؛ ئورۇن ئۇچۇرى ۋە بۇ ئۈسكۈنىنىڭ تېلېفون نومۇرىنى ئوقۇپ ئۈچىنچى تەرەپكە يوللايدۇ؛ يۇقىرىقىلار جىددىي قۇتقۇزۇش مۇلازىمەتلىرىنى تەمىنلەش ئۈچۈن ئىشلىتىلىدۇ. بۇ مۇلازىمەتنى ئاچسىڭىز، يۇقىرىقىلارغا قوشۇلغان بولىسىز. ئىجازەت ئىشلىتىش ھەققىدىكى تەپسىلاتلارنى «%3$s» ئارقىلىق كۆرۈڭ. بۇ مۇلازىمەتنى تۆۋەندىكى ئۈچىنچى تەرەپ تەمىنلەيدۇ، شەخسىي ئۇچۇر بىر تەرەپ قىلىشقا ئالاقىدار تەپسىلاتلارنى تۆۋەندىن كۆرۈڭ:\n%4$s. جۇڭگو ئۇچۇر-ئالاقە ئاكادېمىيەسى، %5$s.\n%6$s. شېنجېن ئورۇن تورى تېخنىكا چەكلىك شىركىتى، %7$s.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Emergency_Position_Service_Privacy",
+            "value":"جىددىي ئورۇن مۇلازىمەت سۇپىسى ۋە مەخپىيەتلىك ھەققىدە بايانات",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"emergency_location_service_text_new",
+            "value":"جىددىي (SOS) ياردەم سورىغاندا ئورۇن ئۇچۇرىڭىز مەخپىيلەشتۈرۈلۈپ ساقچى تەرەپكە ئەۋەتىلىپ، ياردەم تەمىنلەش قولايلاشتۇرۇلىدۇ. بۇ مۇلازىمەت تور ئىشلىتىدۇ؛ ئورۇن ئۇچۇرى ۋە بۇ ئۈسكۈنىنىڭ تېلېفون نومۇرىنى ئوقۇپ يوللايدۇ؛ يۇقىرىقىلار ساقچى چاقىرىش ۋە قۇتقۇزۇش مۇلازىمىتى تەمىنلەش ئۈچۈن ئىشلىتىلىدۇ. بۇ تاللانمىنى ئاچسىڭىز، يۇقىرىقىلارغا قوشۇلغان بولىسىز. ئىجازەت ئىشلىتىشكە ئالاقىدار تەپسىلاتلارنى <a link=\"permissionStatement\">ئىجازەت ئىشلىتىش كۆرسەتمىسى</a> ئارقىلىق كۆرۈڭ.\nبۇ مۇلازىمەتنى تۆۋەندىكى ئۈچىنچى تەرەپ تەمىنلەيدۇ، شەخسىي ئۇچۇر بىر تەرەپ قىلىش ھەققىدىكى تەپسىلاتلارنى تۆۋەندىن كۆرۈڭ:\n${param1}. جۇڭگو ئۇچۇر-ئالاقە ئاكادېمىيەسى «جىددىي ئورۇن مۇلازىمەت سۇپىسى ۋە مەخپىيەتلىك ھەققىدە بايانات» ()\n${param2}. شېنجېن ئورۇن تورى تېخنىكا چەكلىك شىركىتى «ئورۇن تورى مەخپىيەتلىك تۈزۈمى» ()",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"unsupport_satellite_card_content",
+            "value":"تيەنتۇڭ سۈنئىي ھەمراھ تورىدا سۆزلىشىۋاتقاندا ئۇچۇر يوللانمايدۇ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite",
+            "value":"تيەنتۇڭ سۈنئىي ھەمراھ ئۇچۇرى",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"location_south_east",
+            "value":"جەنۇب ‎%1$s شەرق ‎%2$s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"location_north_west",
+            "value":"شىمال ‎%1$s غەرب ‎%2$s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"location_north_east",
+            "value":"شىمال ‎%1$s شەرق ‎%2$s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"address_details",
+            "value":"ئادرېس: %s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"location_south_west",
+            "value":"جەنۇب ‎%1$s غەرب ‎%2$s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"position",
+            "value":"ئورۇن: %s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"NumberEdit_delete",
+            "value":"%s ئۆچۈرۈلدى",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_slogan",
+            "value":"قۇتقۇزغۇچى ئۇچۇرى",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"phrases_button",
+            "value":"تېز ئۇچۇر",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_submit_message_subtitle1",
+            "value":"ئەتراپتىكى قۇتقۇزغۇچىلارغا ئورۇن ۋە ئۇچرىغان ئاپەت ئۇچۇرىنى يوللاشقا بولىدۇ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"rescue_signal_level_middle",
+            "value":"قۇتقۇزۇش سىگنالى: ئوتتۇرىھال",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_save_power_tips",
+            "value":"توك تېجەش ئۈچۈن ئېكراننى ئېتىپ كۈتۈڭ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"rescue_message_communication_banner_content",
+            "value":"ئۇچرىغان ئاپەتنى چۈشەندۈرسىڭىز بولىدۇ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"rescue_signal_level_strong",
+            "value":"قۇتقۇزۇش سىگنالى: كۈچلۈك",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"rescue_message_sending_banner_title",
+            "value":"ئۇچۇر يوللىنىۋاتىدۇ",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"rescue_message_communication_banner_title",
+            "value":"قۇتقۇزغۇچىلار بىلەن ئالاقە",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"rescue_signal_level_low",
+            "value":"قۇتقۇزۇش سىگنالى: ئاجىز",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_exit_once_title",
+            "value":"جىددىي ئالاقىدىن چېكىنەمسىز؟",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_service_title",
+            "value":"تورسىز جىددىي ئالاقە",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_disaster_situation_title",
+            "value":"ئاپەت",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_message_send_failed_tips",
+            "value":"سىگنال مۇقىمسىز، مۇقىملاشقاندا ئۇچۇر ئۆزلۈكىدىن قايتا يوللىنىدۇ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_receive_d2d_subtitle1",
+            "value":"ئەتراپتىكى قۇتقۇزغۇچىلارغا ئورۇن ۋە ئۇچرىغان ئاپەت ئۇچۇرىنى يوللاشقا بولىدۇ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"send_button",
+            "value":"يوللاش",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_submit_success_title",
+            "value":"ئۇچۇر يەتكۈزۈلدى",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_team",
+            "value":"قۇتقۇزغۇچى",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"keyboard_button",
+            "value":"كىرگۈزگۈچ",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_location_title",
+            "value":"ئورۇن ئۇچۇرى",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_sending",
+            "value":"يوللىنىۋاتىدۇ",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_exit_completely_content",
+            "value":"بۇنى ئەتسىڭىز، تور يوق ئەھۋالدا جىددىي قۇتقۇزۇش سىگنالى تاپقىلى بولمايدۇ، بىخەتەرلىك ئۈچۈن ئەتمەسلىكنى تەۋسىيە قىلىمىز، يەنىلا ئېتەمسىز؟",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"disaster_situation_fire",
+            "value":"ئوت",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_sended_status",
+            "value":"يەتكۈزۈلگەن",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"message_textarea_placeholder",
+            "value":"ئۇچرىغان ئاپەتنى چۈشەندۈرۈڭ",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_view_details",
+            "value":"تەپسىلات",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_my_rescue_info",
+            "value":"ياردەم سوراش ئۇچۇرى",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_get_location_failed",
+            "value":"ئورۇن بەلگىلەنمىدى.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_sending_status",
+            "value":"يوللىنىۋاتىدۇ",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_exit_current_rescue",
+            "value":"جىددىي ئالاقىدىن چېكىنىش",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"rescue_signal_detected",
+            "value":"ئۇچۇر يوللانماقچى",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_submit_message_title",
+            "value":"ياردەم سوراش",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"rescue_message_send_failed_banner_title",
+            "value":"ئۇچۇر يوللانمىدى",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"rescue_signal_level_none",
+            "value":"قۇتقۇزۇش سىگنالى: يوق",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_receive_d2d_title",
+            "value":"ئەتراپتا قۇتقۇزۇش سىگنالى بار",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"China_Broadnet",
+            "value":"جۇڭگو رادىيو-تېلېۋىزىيە تورى",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"send_position_btn_text",
+            "value":"ئورۇن ئۇچۇرى يوللاش",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_wait_for_send",
+            "value":"يوللانماقچى",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"switching_audio_channels",
+            "value":"ئاۋاز يولىنى ئالماشتۇرۇش",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"incomingCall",
+            "value":"كەلگەن تېلېفون",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_call_finish",
+            "value":"سۆزلىشىش ئاخىرلاشتى",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_disclaimer_content_all",
+            "value":"بۇ مۇلازىمەت %1$s ئىجازىتى ئالىدۇ؛ بۇ ئۈسكۈنىنىڭ تېلېفون نومۇرى، IMEI ۋە ئورۇن ئۇچۇرىنى ئوقۇيدۇ؛ يۇقىرىقىلار تورسىز جىددىي ئالاقە مۇلازىمىتى تەمىنلەش ئۈچۈن ئىشلىتىلىدۇ. بۇنى ئاچسىڭىز، «%2$s» ۋە يۇقىرىقىلارغا قوشۇلغان بولىسىز. شەخسىي ئۇچۇر بىر تەرەپ قىلىش ھەققىدىكى تەپسىلاتلارنى «%3$s» ۋە «%4$s» ئارقىلىق كۆرۈڭ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_privacy_statement",
+            "value":"تورسىز جىددىي ئالاقە مۇلازىمىتى ۋە مەخپىيەتلىك ھەققىدە بايانات",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fracture",
+            "value":"سۆڭەك سۇنغان",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"building_collapse",
+            "value":"ئۆي ئۆرۈلگەن",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"in_good_status",
+            "value":"ياخشى ھالەتتە",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"road_damage",
+            "value":"يول بۇزۇلغان",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"surrounding_environment",
+            "value":"ئەتراپ مۇھىت",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_not_select_distress_situation",
+            "value":"ئۇچرىغان ئاپەت تاللانمىغان",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"flood",
+            "value":"كەلكۈن",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"personal_status",
+            "value":"سالامەتلىك",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"there_are_children",
+            "value":"بالا بار",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"landslide",
+            "value":"كۆچكۈن",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"there_are_old_people",
+            "value":"ياشانغانلار بار",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"detected_cellular_signal_dialog_content",
+            "value":"كۆچمە تور سىگنالى ئەسلىگە كەلدى، چېكىنىپ كۆچمە تور ئارقىلىق تېلېفون قىلسىڭىز بولىدۇ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_describe_distress",
+            "value":"ئۇچرىغان ئاپەتنى چۈشەندۈرۈڭ",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_answer_call_failed",
+            "value":"قوبۇللانمىدى.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"unable_to_walk",
+            "value":"ماڭالمايمەن",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"someone_injured",
+            "value":"يارىدار بار",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_description",
+            "value":"كۆچمە تور يوق مۇھىتتا جىددىي قۇتقۇزۇش سىگنالى بايقالسا، ئەتراپتىكى قۇتقۇزغۇچىلارنىڭ ئۈسكۈنىسىگە ياردەم سوراش ئۇچۇرى يوللاش ۋە جىددىي قۇتقۇزۇش تېلېفونى قوبۇللاشقا بولىدۇ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"food_shortage",
+            "value":"يېمەكلىك كەم",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hypothermia",
+            "value":"ئۈششۈك",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"head_injury",
+            "value":"باش يارىلانغان",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_submit_success_subtitle1",
+            "value":"قۇتقۇزغۇچىلار ئۇچۇرىڭىزنى تاپشۇرۇۋالدى، كۈتۈپ تۇرۇڭ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"there_are_women",
+            "value":"قىز/ئاياللار بار",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"select_disaster_situation",
+            "value":"ئەھۋالىڭىزنى تاللاڭ",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"lose_blood",
+            "value":"قانسىراش",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"trapped",
+            "value":"قاپسىلىپ قالغان",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_feeling_5",
+            "value":"ئېغىر بۇزغۇنچىلىق",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_feeling_1",
+            "value":"سېزىلمەيدۇ",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_feeling_2",
+            "value":"بوش",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_feeling_3",
+            "value":"كۈچلۈك",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_feeling_4",
+            "value":"بۇزغۇنچىلىق",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_info_source",
+            "value":"ئۇچۇر مەنبەسى: جۇڭگو يەرتەۋرەشتىن ئاگاھلاندۇرۇش تورى %s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_warning_info",
+            "value":"يەر تەۋرىگەندە ھودۇقماڭ، دەرھال پاناھلىنىڭ، باشنى قوغداڭ، لىفىت ئىشلەتمەڭ، سىرتتا بولسىڭىز ئوچۇقچىلىق جايغا بېرىۋېلىڭ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_feeling_reminder_1",
+            "value":"سېزىلمەيدۇ، ئەنسىرەش ھاجەتسىز.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_feeling_reminder_2",
+            "value":"تەۋرەيدۇ، ئەمما ئەنسىرەش ھاجەتسىز.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_feeling_reminder_3",
+            "value":"تەۋرەيدۇ، تەييارلىق كۆرۈڭ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_about_to_arrive",
+            "value":"يەرتەۋرەش دولقۇنى كەلمەكچى",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_feeling_reminder_4",
+            "value":"تەۋرەيدۇ، پاناھلىنىش كېرەك.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_feeling_reminder_5",
+            "value":"خەتەرلىك، دەرھال پاناھلىنىڭ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_warning_canceled",
+            "value":"يەرتەۋرەش ئاگاھلاندۇرۇشى توختىدى.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_source_test",
+            "value":"(سىناق)",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_source_trial_run",
+            "value":"(تەجرىبە)",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_arrived",
+            "value":"يەرتەۋرەش دولقۇنى كەلدى",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_title",
+            "value":"تورسىز جىددىي ئالاقە",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"voiceCall",
+            "value":"قۇتقۇزغۇچىلارنىڭ تېلېفونىنى ئېلىش",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_service_content",
+            "value":"«تورسىز جىددىي ئالاقە» سىزگە جىددىي ئالاقە مۇلازىمىتى تەمىنلەيدۇ. بۇ مۇلازىمەت ئورۇن ئىجازىتى ئالىدۇ؛ بۇ ئۈسكۈنىنىڭ تېلېفون نومۇرى، IMEI ۋە ئورۇن ئۇچۇرىنى ئوقۇيدۇ؛ يۇقىرىقىلار تورسىز جىددىي ئالاقە مۇلازىمىتى تەمىنلەش ئۈچۈن ئىشلىتىلىدۇ. ئاچسىڭىز، يۇقىرىقىلارغا قوشۇلغان بولىسىز. شەخسىي ئۇچۇر بىر تەرەپ قىلىش ھەققىدىكى تەپسىلاتلارنى <a link=\"emergencyRescuePrivacyStatement\">«تورسىز جىددىي ئالاقە مۇلازىمىتى ۋە مەخپىيەتلىك ھەققىدە بايانات»</a> ۋە <a link=\"emcResourcePermissionStatement\">«ئىجازەت ئىشلىتىش كۆرسەتمىسى»</a> ئارقىلىق كۆرۈڭ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"additional_info_list_content_1",
+            "value":"%d. جىددىيلەشمەڭ، ئارتۇقچە كۈچ خوراتماڭ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hanging_up_voice_call",
+            "value":"قۇتقۇزغۇچىلارنىڭ تېلېفونىنى ئۈزۈش",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emc_rescue_current_location",
+            "value":"نۆۋەتتىكى ئورۇن: %s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"additional_info_list_content_2",
+            "value":"%d. بىخەتەرلىككە دىققەت قىلىڭ، خەتەرلىك ھەرىكەتلەرنى قىلماڭ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"additional_info_list_content_3",
+            "value":"%d. توك تېجەش ئۈچۈن ئېكراننى ئېتىپ كۈتۈڭ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"menu_title_additional_info",
+            "value":"بىلدۈرگۈ",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"exit_emc_rescue_mode_notification_title",
+            "value":"تورسىز جىددىي ئالاقە ئېتىك",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"search_now_button",
+            "value":"ئىزدەش",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"exit_emc_rescue_mode_notification_content",
+            "value":"«ئىزدەش» نى چېكىپ، قايتا قۇتقۇزۇش سىگنالى ئىزدىسىڭىز بولىدۇ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emc_rescue_permission_notice_content_2",
+            "value":"بۇ ئىجازەت ئۈسكۈنە ئورنىنى ئېنىقلاپ، تورسىز جىددىي ئالاقە مۇلازىمىتىدە ئورۇن ئۇچۇرىنى جىددىي قۇتقۇزغۇچىلارنىڭ ئۈسكۈنىسىگە ئەۋەتىش ئۈچۈن ئىشلىتىلىدۇ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emc_rescue_location_permission_subtitle",
+            "value":"ئورۇن",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emc_rescue_permission_notice_title",
+            "value":"تورسىز جىددىي ئالاقە ئىجازەتلىرى",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"epicenter_location",
+            "value":"تەۋرەش مەركىزى",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"estimated_intensity",
+            "value":"مۆلچەر كۈچ: %s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emc_rescue_disclaimer_content_part_1",
+            "value":"تورسىز جىددىي ئالاقە ئىقتىدارى ئىزدەيدىغان سىگنالنى ئوت مۇداپىئە ئەترىتى قاتارلىق كەسپىي قۇتقۇزۇش ئەترەتلىرى مەخسۇس ئۈسكۈنە ئارقىلىق يوللايدۇ. قۇتقۇزۇش خادىملىرىنىڭ سىز تۇرۇشلۇق رايونغا بېرىش-بارماسلىقىنى خۇاۋېي باشقۇرالمايدۇ.\n",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emc_rescue_disclaimer_content_part_2",
+            "value":"تورسىز جىددىي ئالاقە ئىقتىدارى پەقەت سىز خەۋپ باھالاش ۋە بىخەتەرلىك قارارى چىقىرىشتا ئىشلەتسىڭىز بولىدىغان پايدىلانما. تورسىز جىددىي ئالاقە ئىقتىدارى جىددىي قۇتقۇزۇش سىگنالىنى ئىزدىيەلەيدۇ، ئەمما قۇتقۇزۇش ئۇچۇرى يوللىيالمايدۇ. بۇ ئىقتىدار قۇتقۇزغۇچىلارنىڭ كېلىپ قۇتقۇزۇشىغا كاپالەتلىك قىلمايدۇ. قۇتقۇزۇش سىگنالى قۇتقۇزۇش ئەترەتلىرىنىڭ مەخسۇس ئۈسكۈنىسىدىن يوللىنىدۇ، ئۈسكۈنىڭىز قۇتقۇزۇش سىگنالى تاپالمىسا، ئەھۋالغا قاراپ ئۆزىڭىز پاناھلىنىش تەدبىرى قوللىنىشىڭىز كېرەك. ئۈسكۈنىڭىز قۇتقۇزۇش سىگنالى قوبۇللىسا، ئەمەلىي ئاپەتكە ئۇچراش ئەھۋالىنى ئىنكاس قىلسىڭىز بولىدۇ. قۇتقۇزغۇچىلار سىز بىلەن ئالاقە قىلسۇن ياكى قىلمىسۇن، ئەمەلىي ئەھۋال ۋە مۇھىتقا قاراپ، قۇتۇلۇش تەدبىرى قوللىنىشىڭىز كېرەك. تورسىز جىددىي ئالاقە ئىقتىدارىنى ئىشلىتىپ قىلغان ھەرقانداق ئىش-ھەرىكەت سەۋەبلىك ھەرقانداق خەتەر ياكى ئاقىۋەت كېلىپ چىقسا، ئۆزىڭىز ئىگە.\n",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emc_rescue_disclaimer_content_part_3",
+            "value":"يەر شەكلى، قۇرۇلۇش، ھاۋارايى ۋە باشقا ھەرخىل تىزگىنلىگىلى بولمايدىغان سەۋەبلەردىن ئۈسكۈنە قۇتقۇزۇش سىگنالى تاپالماي ياكى سىز قۇتقۇزۇلماي كېلىپ چىققان ھەرقانداق ئاقىۋەتكە خۇاۋېي مەسئۇل ئەمەس.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergencyCall",
+            "value":"جىددىي تېلېفون",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_not_support",
+            "value":"ياقۇت سۈنئىي ھەمراھ تورى ئوچۇق، SOS ئىقتىدارى ئىشلىمەيدۇ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emc_rescue_china_broadnet_brand_tips",
+            "value":"تورسىز جىددىي ئالاقە قانىلىنى جۇڭگو رادىيو-تېلېۋىزىيە تورى تەمىنلەيدۇ.",
+            "attr":{
+                "priority":"translate"
+            }
+        }
+    ]
+}

@@ -1,0 +1,76 @@
+{
+  "color": [
+    {
+      "name": "start_window_background",
+      "value": "#F1F3F5"
+    },
+    {
+      "name": "font_color_182431",
+      "value": "#182431"
+    },
+    {
+      "name": "color_E3E3E3_grey",
+      "value": "#E3E3E3"
+    },
+    {
+      "name": "color_00000000_transparent",
+      "value": "#00000000"
+    },
+    {
+      "name": "detail_main_background",
+      "value": "#F1F3F5"
+    },
+    {
+      "name": "color_sys_back_1A000000",
+      "value": "#1A000000"
+    },
+    {
+      "name": "intent_card_bg_light_color",
+      "value": "#B3FFFFFF"
+    },
+    {
+      "name": "intent_card_bg_dark_color",
+      "value": "#4DFFFFFF"
+    },
+    {
+      "name": "intent_card_shadow_color",
+      "value": "#4D000000"
+    },
+    {
+      "name": "MeeTime_green_light",
+      "value": "#41BA41"
+    },
+    {
+      "name": "MeeTime_orange_light",
+      "value": "#ED6F21"
+    },
+    {
+      "name": "satellite_dialog_background_color",
+      "value": "#1A1A1A"
+    },
+    {
+      "name": "satellite_dialog_font_color",
+      "value": "#5291FF"
+    },
+    {
+      "name": "black",
+      "value": "#000000"
+    },
+    {
+      "name": "color_bind_sheet_background",
+      "value": "#FFF1F3F5"
+    },
+    {
+      "name": "gallery_button_border_color",
+      "value": "#33808080"
+    },
+    {
+      "name": "background_color",
+      "value": "#808080"
+    },
+    {
+      "name": "normal_call_bg_color",
+      "value": "#66000000"
+    }
+  ]
+}

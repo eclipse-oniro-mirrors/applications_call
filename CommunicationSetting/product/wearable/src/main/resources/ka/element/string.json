@@ -1,0 +1,25 @@
+{
+    "string":[
+        {
+            "name":"watch_loading",
+            "value":"იტვირთება…",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"watch_permission_history_no_record",
+            "value":"ჩანაწერები არ არის",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"watch_traffic_ranking_the_month",
+            "value":"მობილური ინტერნეტის გამოყენება (ყოველთვიურად)",
+            "attr":{
+                "priority":"LT"
+            }
+        }
+    ]
+}

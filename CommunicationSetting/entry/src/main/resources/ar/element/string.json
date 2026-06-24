@@ -1,0 +1,662 @@
+{
+    "string":[
+        {
+            "name":"usage_reminders_index",
+            "value":"تذكيرات الاستخدام (البطاقة %d)",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"mobile_data_manage_entry",
+            "value":"استخدام البيانات",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"body_network_access_policy",
+            "value":"يمكنك تغيير تفضيلاتك من \"الإعدادات > بيانات الجوال > استخدام البيانات > الاتصال بالإنترنت\".",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"traffic_ranking",
+            "value":"استخدام التطبيقات لبيانات الجوال",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"monthly_data_reminder",
+            "value":"تذكير مقدار استخدام البيانات الشهري",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"daily_limit_data_reminder",
+            "value":"تذكيري عند وصول استخدام البيانات \u200f%1$s (%2$s) من حد الاستخدام اليومي",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"category_nfc_service",
+            "value":"خدمة NFC",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"traffice_package_remain",
+            "value":"المتبقي",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"data_limit",
+            "value":"الحد الأقصى للبيانات",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"traffic_chart_view_net_used_day",
+            "value":"تم استخدام %2$s في %1$s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"system_applications",
+            "value":"النظام",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"data_traffic_reached_the_limit",
+            "value":"بلغ استخدام البيانات الحد الأقصى المعين.\nقد تُحتسب رسوم مقابل استخدام أية بيانات إضافية في حال القيام بإعادة تشغيل بيانات الجوال.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"got_it",
+            "value":"حسنًا",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"show_compatible_apps",
+            "value":"إظهار التطبيقات المتوافقة",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data_and_WLAN",
+            "value":"بيانات الجوال والشبكة اللاسلكية",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"usage_reminders",
+            "value":"تذكيرات الاستخدام",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"loading",
+            "value":"جارٍ التحميل…",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"allow_mobile_data",
+            "value":"بيانات الجوال",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"unlimited_data",
+            "value":"باقة بيانات غير محدودة",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"reopen",
+            "value":"إعادة التشغيل",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"wlan_ranking_of_this_month",
+            "value":"التطبيقات المستخدمة للشبكة اللاسلكية هذا الشهر",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"allow_WLAN",
+            "value":"الشبكة اللاسلكية",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"traffic_ranking_of_this_month",
+            "value":"استخدام البيانات لهذا الشهر",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_data",
+            "value":"بيانات الجوال",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"data_plan_settings_index",
+            "value":"إعدادات باقة البيانات (البطاقة %d)",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"flow_used",
+            "value":"البيانات المستخدمة",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"confirm",
+            "value":"موافق",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"more_data_usage_settings_title",
+            "value":"إعدادات إضافية",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"not_set",
+            "value":"بدون تعيين",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"hide_compatible_apps",
+            "value":"إخفاء التطبيقات المتوافقة",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"hide_system_processes",
+            "value":"إخفاء عمليات النظام",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"disable_mobile_data",
+            "value":"تم إيقاف بيانات الجوال",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"no_networked_apps",
+            "value":"لا توجد تطبيقات مرتبطة بالشبكة",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"over_monthly_limit",
+            "value":"عند تجاوز الحد الشهري",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"current_sim_data_traffic_reached_the_limit",
+            "value":"لقد بلغ استخدام البيانات الحد الأقصى لبطاقة SIM هذه وتم إيقاف بيانات الجوال. وفي حال القيام بتشغيل اتصال بيانات الجوال مجددًا، فستُحتسب رسوم مقابل استخدام البيانات.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"allow",
+            "value":"سماح",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"switch_to_another_card",
+            "value":"التبديل إلى بطاقة SIM الأخرى",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"forbid_operation",
+            "value":"لا يسمح للمستخدمين غير المالكين استخدام هذه الخاصية.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"category_location_service",
+            "value":"خدمات الموقع",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"data_calculation_different_from_shown",
+            "value":"قد تختلف طريقة احتساب شركة الاتصالات لمقدار البيانات المُستخدمة عن البيانات المعروضة هنا.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"disconnect",
+            "value":"إيقاف بيانات الجوال",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"daily_data_reminder",
+            "value":"تذكير مقدار استخدام البيانات اليومي",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"category_general_service",
+            "value":"خدمات عامة",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"category_rtc_service",
+            "value":"خدمة التواصل اللحظي",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"category_system",
+            "value":"النظام",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"today",
+            "value":"اليوم",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"data_plan_settings",
+            "value":"إعدادات الباقة",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"category_media_service",
+            "value":"خدمة الوسائط",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"only_wlan",
+            "value":"استخدام الشبكة اللاسلكية فقط",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"ranking_of_this_month",
+            "value":"استخدام البيانات لهذا الشهر",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"no_match_result",
+            "value":"لا توجد نتائج",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"traffic_chart_view_net_used_day_today",
+            "value":"تم استخدام %1$s اليوم",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"last_30_days",
+            "value":"آخر %s يومًا",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"sim_card_2",
+            "value":"البطاقة الثانية (%1$s)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"sim_card_1",
+            "value":"البطاقة الأولى (%1$s)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"category_uninstalled_apps",
+            "value":"التطبيقات المُزالة",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"reopen_the_current_card",
+            "value":"تشغيل بيانات الجوال",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"not_allow",
+            "value":"رفض",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"system_and_service",
+            "value":"النظام والخدمات",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"reminder",
+            "value":"إشعاري",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"allow_mobile_data_and_WLAN",
+            "value":"بيانات الجوال والشبكة اللاسلكية",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"more",
+            "value":"المزيد",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"show_system_processes",
+            "value":"إظهار عمليات النظام",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"title_wifi_only_network_access_policy",
+            "value":"هل تسمح لتطبيق %s بالاتصال بالإنترنت؟",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"mobile_network",
+            "value":"شبكة الجوال",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"category_security_service",
+            "value":"خدمة الحماية",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"traffice_package_out",
+            "value":"تجاوزت حد البيانات",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"network_no_service",
+            "value":"لا توجد خدمة",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"wlan",
+            "value":"الشبكة اللاسلكية",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"network_title",
+            "value":"الاتصال بالإنترنت",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"monthly_limit_data_reminder",
+            "value":"تذكيري عند وصول استخدام البيانات \u200f%1$s (%2$s) من حد الاستخدام الشهري",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"searching",
+            "value":"بحث",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"all",
+            "value":"الكل",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"title_network_access_policy",
+            "value":"هل تسمح لتطبيق %s باستخدام بيانات الجوال؟",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"used_traffice",
+            "value":"استخدام البيانات",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"last_24_hours",
+            "value":"آخر %s ساعة",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"category_update",
+            "value":"تحديث النظام",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"start_date",
+            "value":"تاريخ البدء",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"category_call_service",
+            "value":"خدمة المكالمات",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"category_WLAN_service",
+            "value":"خدمة الشبكة اللاسلكية (WLAN)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"cancel",
+            "value":"إلغاء",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"forbid",
+            "value":"غير مسموح",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"category_debug_system",
+            "value":"خدمة تصحيح الأخطاء",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"owner_of_device",
+            "value":"المالك",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hotspot_name",
+            "value":"الربط ونقطة الاتصال المتنقلة",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"accessibility_unselected",
+            "value":"غير محددة",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"accessibility_more",
+            "value":"المزيد من الخيارات",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"accessibility_selected",
+            "value":"محددة",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"accessibility_back",
+            "value":"رجوع",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"esim_card",
+            "value":"‏%1$s (%2$s)",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"esim_usage_reminders_index",
+            "value":"تذكيرات الاستخدام (eSIM %d)",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"data_plan_esim_settings_index",
+            "value":"إعدادات باقة بيانات (eSIM %d)",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"flow_display_title",
+            "value":"إظهار البيانات",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"usage_display_summary",
+            "value":"إظهار استخدام البيانات في لوحة الإشعارات",
+            "attr":{
+                "priority":"translate"
+            }
+        }
+    ]
+}

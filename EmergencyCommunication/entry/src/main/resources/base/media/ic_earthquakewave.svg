@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="203px" height="203px" viewBox="0 0 203 203" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>ic_地震横波</title>
+    <g id="ic_地震横波" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="地震装饰图形" style="mix-blend-mode: lighten;">
+            <circle id="椭圆形" fill="#FFCACA" opacity="0.35" cx="102" cy="102" r="9"></circle>
+            <circle id="椭圆形" stroke="#FFCACA" stroke-width="9" opacity="0.2" cx="101.5" cy="101.5" r="29"></circle>
+            <circle id="椭圆形" stroke="#FFCACA" stroke-width="9" opacity="0.09" cx="102" cy="102" r="51.5"></circle>
+            <circle id="椭圆形" stroke="#FFCACA" stroke-width="9" opacity="0.06" cx="102" cy="102" r="74.5"></circle>
+            <circle id="椭圆形" stroke="#FFCACA" stroke-width="9" opacity="0.03" cx="101.5" cy="101.5" r="97"></circle>
+        </g>
+    </g>
+</svg>

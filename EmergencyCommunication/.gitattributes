@@ -1,0 +1,4 @@
+entry/src/main/resources/rawfile/CarAccidentNoticeEn.amr filter=lfs diff=lfs merge=lfs -text
+entry/src/main/resources/rawfile/CarAccidentNoticeZh.amr filter=lfs diff=lfs merge=lfs -text
+entry/src/main/resources/rawfile/CarAccidentSosEn.amr filter=lfs diff=lfs merge=lfs -text
+entry/src/main/resources/rawfile/CarAccidentSosZh.amr filter=lfs diff=lfs merge=lfs -text

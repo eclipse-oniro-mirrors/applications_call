@@ -1,0 +1,16 @@
+{
+  "float": [
+    {
+      "name": "dialog_menu_font_size",
+      "value": "16vp"
+    },
+    {
+      "name": "value_24",
+      "value": "24vp"
+    },
+    {
+      "name": "title_mini_font_size",
+      "value": "14vp"
+    }
+  ]
+}

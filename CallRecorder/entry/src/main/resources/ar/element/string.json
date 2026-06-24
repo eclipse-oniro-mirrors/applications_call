@@ -1,0 +1,137 @@
+{
+    "string":[
+        {
+            "name":"auto_recording_object",
+            "value":"التطبيق على",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"deselect_all",
+            "value":"إلغاء تحديد الكل",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"call_meeting",
+            "value":"مكالمة جماعية",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"select_all",
+            "value":"تحديد الكل",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"no_number_specified",
+            "value":"لا توجد أرقام",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"add",
+            "value":"إضافة",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"unknown",
+            "value":"غير معروف",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"delete",
+            "value":"حذف",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"specified_number",
+            "value":"الأرقام المُحددة",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"automatic_recording_of_calls",
+            "value":"التسجيل التلقائي للمكالمات",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"automatically_record_call_viewed",
+            "value":"تسجيل المكالمات آليًا وحفظها في تطبيق \"مسجل الصوت\"",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"unset_recorder",
+            "value":"بدون تعيين",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"call_numbers_finish_des",
+            "value":"تم الحفظ في تطبيق \"الهاتف > المزيد > تسجيلات المكالمات\". انقر هنا للمعاينة.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"add_specified_number",
+            "value":"إضافة أرقام",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"cancel",
+            "value":"إلغاء",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"is_delete_number",
+            "value":"هل تريد حذف هذا الرقم؟",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"all_calls",
+            "value":"جميع المكالمات",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"is_delete_all_number",
+            "value":"هل تريد حذف جميع الأرقام؟",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"voice_long_press",
+            "value":"انقر مرتين ثم مطولاً لعرض المزيد من الخيارات",
+            "attr":{
+                "priority":"translate"
+            }
+        }
+    ]
+}

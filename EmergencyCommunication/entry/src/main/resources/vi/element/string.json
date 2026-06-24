@@ -1,0 +1,2510 @@
+{
+    "string":[
+        {
+            "name":"contactsWarnContent",
+            "value":"Việc thêm liên hệ trong trường hợp khẩn cấp có thể giúp ích cho những người ứng cứu đầu tiên trong trường hợp khẩn cấp. Bất kỳ ai cũng có thể đọc thông tin này mà không cần mở khóa thiết bị của bạn.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"auto_send_earthquake_alarm_message",
+            "value":"Cảnh báo động đất",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"list_learn_about_emergency_shelters",
+            "value":"Tìm nơi trú ẩn khẩn cấp ở gần.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Historical_warning_information",
+            "value":"Cảnh báo trước",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeLocationLongitudeEast",
+            "value":"(%2$s° Bắc, %1$s° Tây)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"address",
+            "value":"Địa chỉ",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"sos_permissions_tips_of_auto_send_sms",
+            "value":"Để cấp quyền truy cập vị trí theo cách thủ công, hãy chọn \"Vị trí chính xác\" trong Cài đặt > Ứng dụng & dịch vụ > Ứng dụng khác > SOS khẩn cấp > Vị trí.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeNext",
+            "value":"Xem lưu ý tiếp theo",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"alarm_close_dialog_remind_title",
+            "value":"Lưu ý",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"drugStatus",
+            "value":"Tình trạng y tế và thông tin khác",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"emergencyCallsOnly",
+            "value":"Chỉ cuộc gọi khẩn cấp",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"GET_APPROXIMATELY_LOCATION",
+            "value":"Quyền này được sử dụng để nhận vị trí gần đúng của bạn.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"EarthquakeMagnitude",
+            "value":"Quy mô",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"aml_permission_location_info",
+            "value":"Quyền này được dùng để nhận thông tin vị trí chính xác của bạn, giúp cung cấp dịch vụ cứu hộ hiệu quả hơn trong trường hợp khẩn cấp.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_Location_Detail",
+            "value":"Dịch vụ này yêu cầu kết nối %1$s và quyền truy cập %2$s. Dịch vụ này cũng cần đọc và tải lên/truyền tải thông tin vị trí cũng như số điện thoại của bạn. Việc này nhằm mục đích tạo điều kiện thuận lợi cho việc cung cấp các dịch vụ cứu hộ khẩn cấp. Bằng việc bật dịch vụ này, bạn đồng ý với các điều khoản này. Để biết thêm chi tiết về cách thông tin cá nhân của bạn được xử lý, hãy tham khảo %3$s và %4$s.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"clearInfo",
+            "value":"Xóa toàn bộ thông tin và liên lạc?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"list_dial_emergency_contact_number",
+            "value":"Quản lý các liên hệ trong trường hợp khẩn cấp của bạn.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"button_agree",
+            "value":"Đồng ý",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Emergency_message_without_location",
+            "value":"[SOS khẩn cấp]\nCó một tình huống khẩn cấp và tôi cần sự giúp đỡ của bạn. Bạn nhận được thông báo vì bạn là một trong những người liên hệ trong trường hợp khẩn cấp của tôi. Hiện giờ tôi có thể không tiện nghe máy.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"notAdded",
+            "value":"Không có",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"drugPlacement",
+            "value":"Ví dụ: lisinopril, aspirin",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"AMBULANCE",
+            "value":"Xe cứu thương",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"no",
+            "value":"Không",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"sendSmsSuccess",
+            "value":"Đã gửi tin nhắn.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_info",
+            "value":"Tin nhắn SOS tự động",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"bloodType",
+            "value":"Nhóm máu",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"editEmergencyContact",
+            "value":"Sửa liên hệ trong tình huống khẩn cấp",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Disclaimer_Instructions",
+            "value":"",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"removecontact",
+            "value":"Xóa liên hệ trong trường hợp khẩn cấp?",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"EmergencyWarningSettings_7",
+            "value":"Tuyên bố về Cảnh báo động đất và Quyền riêng tư",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"EmergencyWarningSettings_8",
+            "value":"Thông báo Quyền hạn",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"stop_share_location_prompt_content",
+            "value":"Tin nhắn SOS sẽ không còn được gửi cho các số liên hệ trong trường hợp khẩn cấp của bạn nếu bạn thoát ngay bây giờ. Thoát?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EmergencyWarningSettings_4",
+            "value":"Vị trí",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"EmergencyWarningSettings_2",
+            "value":"Internet",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"aml_switch_title",
+            "value":"",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"exit",
+            "value":"Thoát",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"car_accident_auto_call_for_help_title",
+            "value":"Tự động bắt đầu các dịch vụ trợ giúp sau tai nạn",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"button_agree_and_open",
+            "value":"Đồng ý và bật",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"emergencyInfromation",
+            "value":"Khẩn cấp!",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"EarthquakeWarningTitle1",
+            "value":"Động đất! Hãy ẩn nấp!",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"earthquake_shelter_setting_dialog",
+            "value":"Không tìm thấy ứng dụng bản đồ được hỗ trợ. Hãy tìm nơi an toàn ở gần đây.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"earthquake_problem_feedback",
+            "value":"Quyền này được sử dụng để báo cáo các vấn đề liên quan đến cảnh báo động đất.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeWarningTitle3",
+            "value":"Giữ bình tĩnh và tìm không gian mở hoặc nơi an toàn để ẩn nấp. Tránh thang máy và đồ vật treo cao.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeArrivingLongTips",
+            "value":"Việc đếm ngược sẽ bắt đầu và thiết bị của bạn sẽ rung. Bạn nên tìm nơi trú ẩn ở gần hoặc di chuyển ra một không gian thoáng đãng bên ngoài càng nhanh càng tốt.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"fullName",
+            "value":"Họ và tên",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeDistance",
+            "value":"Khoảng cách so với tâm chấn",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Permission_Title_1",
+            "value":"Quyền truy cập Báo cáo vị trí trong tình huống khẩn cấp",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Permission_Title_2",
+            "value":"Quyền gửi Tin nhắn SOS tự động",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Permission_Description_4",
+            "value":"Nhắn tin",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Sos_Permission_Description_3",
+            "value":"Quyền này được dùng để nhận vị trí chính xác của thiết bị nhằm gửi vị trí của bạn đến các liên hệ trong trường hợp khẩn cấp khi tính năng SOS khẩn cấp được kích hoạt.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"emergency_number_alarm",
+            "value":"Báo động cá nhân",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Permission_Description_5",
+            "value":"Quyền này được dùng để tự động thông báo cho các liên hệ của bạn bằng SMS khi tính năng SOS khẩn cấp được kích hoạt.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"clear",
+            "value":"Xóa",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Permission_Description_2",
+            "value":"Quyền này được dùng để truy cập vị trí chính xác của thiết bị của bạn, giúp cung cấp các dịch vụ cứu hộ hiệu quả hơn trong trường hợp khẩn cấp.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"list_quickly_show_emergency_information",
+            "value":"Thiết lập thông tin khẩn cấp cá nhân của bạn. Thông tin này có thể hiển thị trên màn hình trong trường hợp khẩn cấp.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"getLocationService",
+            "value":"Bật truy cập vị trí tự động?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"car_accident_detection_disclaimer_content_one",
+            "value":"Nếu thiết bị của bạn phát hiện thấy một vụ tai nạn ô tô nghiêm trọng, thiết bị sẽ tự động gọi cho các liên hệ trong trường hợp khẩn cấp của bạn và gửi một tin nhắn SMS kèm theo vị trí của bạn. Hãy đảm bảo rằng những liên hệ trong trường hợp khẩn cấp của bạn biết về tính năng này để đảm bảo rằng các thông báo này không bị bỏ qua hoặc hiểu lầm.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"button_open",
+            "value":"Bật",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"aml_permission_message_info",
+            "value":"Quyền này được sử dụng để gửi tin nhắn SOS khẩn cấp.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"continue",
+            "value":"OK",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"allergiesPlacement",
+            "value":"Ví dụ: củ lạc, phấn hoa",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"getLocation",
+            "value":"Chạm để nhận vị trí",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"notificationSwitchDialogContent",
+            "value":"Để nhận cảnh báo động đất, hãy cho phép dịch vụ SOS khẩn cấp gửi thông báo cho bạn trong mục Cài đặt ứng dụng.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"EarthquakeCenter",
+            "value":"Tâm chấn",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"aml_short_notification",
+            "value":"",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"addEmergencyContact",
+            "value":"Thêm liên hệ khẩn cấp",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"permissionConfirm",
+            "value":"OK",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"emergency_location_service_text",
+            "value":"Thông tin vị trí của bạn sẽ được sử dụng với tính năng SOS khẩn cấp. Dịch vụ này yêu cầu kết nối Internet và quyền truy cập Vị trí. Dịch vụ này cần đọc và tải lên/truyền thông tin vị trí và số điện thoại của bạn, những thông tin này sẽ được sử dụng để cung cấp dịch vụ cứu hộ khẩn cấp. Bằng việc bật tính năng này, bạn đồng ý với các điều khoản này. Để biết thêm chi tiết về cách thông tin cá nhân của bạn được xử lý, hãy tham khảo <a link=\"privacyStatement\">Tuyên bố về Dịch vụ Báo cáo vị trí trong tình huống khẩn cấp</a> và <a link=\"permissionStatement\">Thông báo Quyền</a>.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"aml_permission_info_title",
+            "value":"Dịch vụ này yêu cầu quyền sau đây:",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"System",
+            "value":"Hệ thống",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"add",
+            "value":"Thêm",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"already_in_contacts",
+            "value":"%s đã là số liên hệ trong trường hợp khẩn cấp rồi.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"notEmergencyNumberMsg",
+            "value":"Không thực hiện được cuộc gọi. %s không phải là số liên hệ trong trường hợp khẩn cấp.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"peopleAdded",
+            "value":"%d",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"no_service_message_and_call_unavailable",
+            "value":"Không có dịch vụ. Dịch vụ SMS và điện thoại không hoạt động.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"remove",
+            "value":"Xóa",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"sos_calling_summary",
+            "value":"Đang gọi điện. Chạm để tham gia.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"EarthquakeInfoTitle",
+            "value":"Chi tiết cảnh báo",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"earthquake_warning_summary",
+            "value":"Nhận cảnh báo sớm trong trường hợp xảy ra động đất.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"permission_reason_contacts",
+            "value":"Quyền này dùng để quản lý danh bạ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"medicalInfo",
+            "value":"Y tế",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"emergency_number_traffic",
+            "value":"Tai nạn giao thông",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"drugStatusPlacement",
+            "value":"Ví dụ: hen suyễn",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"earthquake_warning_notification_text_without_device_address",
+            "value":"Đã phát hiện trận động đất cường độ %2$s tại %1$s. Dự kiến %3$s ở khu vực của bạn.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"gettingLocation",
+            "value":"Đang định vị…",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeLocationLatitudeSouth",
+            "value":"(%2$s° Nam, %1$s° Tây)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"sendNow",
+            "value":"OK",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"drug",
+            "value":"Thuốc chữa bệnh",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"teaching_dialog_complete",
+            "value":"OK",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"closeLocationService",
+            "value":"Tắt truy cập vị trí tự động?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"share_location_background_tips",
+            "value":"Gửi vị trí cho các số liên hệ trong tình huống khẩn cấp",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeArriving",
+            "value":"Trước khi sóng địa chấn đến",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"unable_auto_dial_dialog_title",
+            "value":"Không gọi được giúp đỡ",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"addContact",
+            "value":"Thêm liên hệ",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"determine",
+            "value":"OK",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"car_accident_detection_disclaimer_content_four",
+            "value":"Tính năng này chỉ hoạt động ở Trung Quốc đại lục.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeUpdate",
+            "value":"Thời gian xảy ra động đất",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"yes",
+            "value":"Có",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"list_learn_about_emergency_shelters_title",
+            "value":"Tìm nơi trú ẩn",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"oobe_EarthquakeWarningServer_content",
+            "value":"Dịch vụ này có thể gửi cảnh báo cho bạn khi phát hiện có động đất. Dịch vụ này yêu cầu kết nối Internet và quyền truy cập Vị trí. Dịch vụ này cần nhận thông tin về thiết bị và vị trí của bạn. Bằng việc bật dịch vụ này, bạn đồng ý với các điều khoản này cũng như <a link=\"disclaimStatement\">Tuyên bố miễn trách nhiệm</a>, <a link=\"privacyStatement\">Tuyên bố về Cảnh báo động đất và Quyền riêng tư</a> và <a link=\"permissionStatement\">Thông báo Quyền hạn</a>.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"send_sms_notify_emergency_contact",
+            "value":"Tin nhắn cũng sẽ được gửi đến các số liên hệ trong tình huống khẩn cấp khác",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeWarningTitle1_2",
+            "value":"Động đất! Hãy ẩn nấp!",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"earthquake_advanced",
+            "value":"Cài đặt nâng cao",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Turn_on_Emergency_Information_and_Warning_text",
+            "value":"Cần có thông tin vị trí của bạn để cung cấp cảnh báo động đất cho khu vực của bạn.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"warning_area_and_function_text",
+            "value":"Phạm vi và mô tả tính năng",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"important_state_title",
+            "value":"Quan trọng",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"car_accident_detection_disclaimer",
+            "value":"Tuyên bố miễn trách nhiệm về tính năng Phát hiện tai nạn ô tô",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Permission_denied_to_send_sms",
+            "value":"Ứng dụng này không có quyền gửi tin nhắn SMS.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_emergency_title",
+            "value":"SOS khẩn cấp",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Historical_warning_information_explain",
+            "value":"Xem tất cả thông báo bạn đã nhận được.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_Location_Detail_Active_two",
+            "value":"Thông báo Quyền hạn",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeWarningServer",
+            "value":"Cảnh báo động đất",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeLocation",
+            "value":"Tâm chấn",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"noLocationPermissionTitle",
+            "value":"Dịch vụ SOS khẩn cấp yêu cầu quyền truy cập Vị trí",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_Location_Info",
+            "value":"Gửi vị trí đã mã hóa của bạn cho cảnh sát khi bạn thực hiện cuộc gọi khẩn cấp (chỉ ở Trung Quốc đại lục).",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"removeContact",
+            "value":"Xóa %s liên hệ trong trường hợp khẩn cấp?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Call",
+            "value":"Cuộc gọi SOS tự động",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"satellite_not_support",
+            "value":"Dịch vụ SOS khẩn cấp không hoạt động khi bật tính năng Liên lạc qua vệ tinh Tiantong.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_Location_Detail_Active_one",
+            "value":"Tuyên bố về Báo cáo vị trí trong tình huống khẩn cấp và Quyền riêng tư",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"no_sim_message_and_call_unavailable",
+            "value":"Không có SIM. Dịch vụ SMS và điện thoại không hoạt động.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"closeLocationService_title",
+            "value":"Tắt vị trí tự động",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"sos_is_auto_calling",
+            "value":"Đang tự động gọi…",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Call_Test",
+            "value":"Xem trước tin nhắn SOS",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"InfoEdit_edits_info",
+            "value":"Chỉnh sửa",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"warnInfo",
+            "value":"Đã xong? Hãy quay lại %s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"sendSmsFail",
+            "value":"Không gửi được tin nhắn SMS (Không rõ lý do).",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_Location_Detail_Dark_one",
+            "value":"Internet",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_Location_When_Call_Detail",
+            "value":"Cho phép hệ thống nhận vị trí của bạn khi bạn bắt đầu cuộc gọi khẩn cấp.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"FIRE",
+            "value":"Sở cứu hỏa",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeFelling1",
+            "value":"Rung chấn nhẹ",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"warnContent",
+            "value":"Thông tin này có thể giúp ích cho những người ứng cứu đầu tiên trong trường hợp khẩn cấp.\n\nThông tin này được lưu trữ trên thiết bị và bất kỳ ai cũng có thể truy cập mà không cần mở khóa thiết bị này. Bạn cũng có thể thiết lập chế độ này trong Danh bạ > Thẻ của tôi.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeFelling3",
+            "value":"Thiệt hại nghiêm trọng",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeFelling2",
+            "value":"Rung lắc mạnh",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Permission_Instructions",
+            "value":"Quyền cảnh báo động đất",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeArrived",
+            "value":"Sau khi sóng địa chấn đến",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeAlarmTest",
+            "value":"Xem trước báo động",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"define_disclaimer",
+            "value":"Tuyên bố miễn trách nhiệm",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"unable_auto_dial_dialog_summary",
+            "value":"Thêm ít nhất một liên hệ trong trường hợp khẩn cấp trước.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"clearAll",
+            "value":"Xóa toàn bộ",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"remove_last_emergency_contact_prompt_content",
+            "value":"Xóa %s khỏi danh sách liên hệ trong trường hợp khẩn cấp của bạn? Họ sẽ không còn nhận được tin nhắn hoặc cuộc gọi SOS tự động.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"closeLocationServiceMsg",
+            "value":"Nếu tắt tính năng này, thiết bị của bạn sẽ không tự động hiển thị vị trí của bạn khi bạn thực hiện cuộc gọi khẩn cấp.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"CANCEL",
+            "value":"Hủy",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"sos_is_playing_recording",
+            "value":"Đang phát tin nhắn SOS. Chạm để tham gia cuộc gọi.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"personalInfo",
+            "value":"Thông tin cá nhân",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_emergency_personal_info",
+            "value":"Đặt thông tin cá nhân và y tế.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"sendMsgNotice",
+            "value":"Bạn có thể gửi cho liên hệ này một tin nhắn văn bản cho họ biết bạn đã thêm họ làm liên hệ trong trường hợp khẩn cấp.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"emergencyInfromationText",
+            "value":"Đã phát hiện trận động đất cường độ %2$s tại %1$s. Dự kiến %4$s ở %3$s.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"noLocationPermissionDesc",
+            "value":"Quyền này được dùng để truy cập vị trí của bạn trong khi thực hiện cuộc gọi khẩn cấp.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"sendMsg",
+            "value":"",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"emergencyContact",
+            "value":"Liên hệ trong trường hợp khẩn cấp",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeInfofrom",
+            "value":"Nguồn: %s",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"popup_button_gotosettings",
+            "value":"Vào Cài đặt",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"POLICE",
+            "value":"Cảnh sát",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"importantDialogContent_8",
+            "value":"đây",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"earthquake_location_notice",
+            "value":"Để cấp quyền truy cập vị trí theo cách thủ công, hãy chọn \"Luôn cho phép\" và \"Vị trí chính xác\" trong mục Cài đặt > Ứng dụng & dịch vụ > Ứng dụng khác > SOS khẩn cấp > Vị trí.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeAlarmTesting",
+            "value":"Kết thúc bản xem trước (%s)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"importantDialogContent_4",
+            "value":"Bằng việc chạm vào Đồng ý, bạn đồng ý nhận dịch vụ \"Cảnh báo động đất\" và chấp nhận %1$s. Để biết thêm chi tiết về cách thông tin cá nhân của bạn được xử lý, hãy tham khảo %2$s và %3$s. Để biết thêm thông tin, hãy chạm vào %4$s.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"emergency_location_service_title",
+            "value":"Báo cáo vị trí trong tình huống khẩn cấp",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"editEmergencyInfo",
+            "value":"Sửa thông tin khi khẩn cấp",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"The_position_switch_off_text",
+            "value":"Bạn sẽ không nhận được cảnh báo trước khi xảy ra động đất nếu bạn tắt quyền này. Vẫn tắt?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"earthquake_shelter_setting_notice",
+            "value":"Hãy cài đặt Bản đồ để tìm kiếm nơi trú ẩn.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"getLocationMsg1",
+            "value":"Để giúp bạn báo cáo vị trí của mình trong trường hợp khẩn cấp, thiết bị của bạn sẽ tự động hiển thị vị trí của bạn khi bạn thực hiện cuộc gọi khẩn cấp. Bạn có thể chạm vào vị trí để xem thông tin vị trí trong ứng dụng bản đồ.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeLocationLongitudeWest",
+            "value":"(%2$s° Nam, %1$s° Đông)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"remove_emergency_contact_text",
+            "value":"Xóa liên hệ trong trường hợp khẩn cấp",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"noStated",
+            "value":"Chưa chỉ định",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"personalEmergencyInfo",
+            "value":"Thông tin khẩn cấp",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_info_Detail_notice_dark_one",
+            "value":"Nhắn tin",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_info_Detail_notice_dark_Two",
+            "value":"Vị trí",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"earthquake_alarm_notify",
+            "value":"Cảnh báo khẩn cấp",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Emergency_message",
+            "value":"[SOS khẩn cấp]\nCó một tình huống khẩn cấp và tôi cần sự giúp đỡ của bạn. Bạn nhận được thông báo vì bạn là một trong những người liên hệ trong trường hợp khẩn cấp của tôi.\nVị trí hiện tại của tôi là: %s. Hiện giờ tôi có thể không tiện nghe máy.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"PermissionDescriptionContent_3",
+            "value":"Quyền này được sử dụng để thu thập vị trí chính xác của thiết bị nhằm mục đích gửi cảnh báo động đất.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"emergencyContacts",
+            "value":"Số điện thoại khẩn cấp",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"The_position_switch_off",
+            "value":"Bật vị trí",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"organDonor",
+            "value":"Hiến tặng bộ phận cơ thể",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_alter_title",
+            "value":"Xem trước báo động",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"PermissionDescriptionContent_2",
+            "value":"Vị trí",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_info_Detail_notice_all",
+            "value":"Dịch vụ này yêu cầu %1$s và quyền truy cập %2$s cũng như cần đọc thông tin vị trí. Bằng việc bật tính năng này, bạn đồng ý với các điều khoản này. Để biết thêm chi tiết, hãy tham khảo %3$s và %4$s.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_Location_When_Call",
+            "value":"Tự động nhận vị trí",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_info_Detail_notice_active_two",
+            "value":"Thông báo Quyền hạn",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"unable_auto_dial_dialog_add",
+            "value":"Thêm",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeLocationLatitudeNorth",
+            "value":"(%2$s° Bắc, %1$s° Đông)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"unable_send_help_info",
+            "value":"Không gửi được tin nhắn",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"GET_LOCATION_IN_BACKGROUND",
+            "value":"Quyền này được sử dụng để nhận thông tin vị trí khi chạy dưới nền.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"aml_permission_dialog_title",
+            "value":"",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"getLocationFailed",
+            "value":"Không nhận được vị trí. Hãy chạm để thử lại.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"importantDialogContent_2",
+            "value":"",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"importantDialogContent_3",
+            "value":"đây",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"notifyContact",
+            "value":"Thông báo cho liên hệ?",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"emergencyInfo",
+            "value":"Thông tin khẩn cấp",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_info_Detail_notice_active_one",
+            "value":"Tuyên bố về Tin nhắn SOS tự động và Quyền riêng tư",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EmergencyWarningSettings_all",
+            "value":"Dịch vụ này yêu cầu kết nối %1$s và quyền truy cập %2$s. Dịch vụ này cần đọc và tải lên/truyền thông tin vị trí để đưa ra cảnh báo động đất. Bằng việc bật khóa chuyển này, bạn đồng ý với các điều khoản này cũng như %3$s. Để biết thêm chi tiết về cách thông tin cá nhân của bạn được xử lý, hãy tham khảo %4$s và %5$s.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"notification_switch_dialog_content",
+            "value":"Quyền này được dùng để gửi cho bạn thông báo động đất. Bạn có thể bật thông báo trong mục Cài đặt.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"aml_switch_summary",
+            "value":"Tự động gửi vị trí của bạn đến dịch vụ khẩn cấp khi bạn thực hiện cuộc gọi khẩn cấp hoặc gửi tin nhắn khẩn cấp. Tùy thuộc vào tính khả dụng.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"allergies",
+            "value":"Dị ứng",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"function_settings_text",
+            "value":"Cài đặt",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_Location",
+            "value":"Báo cáo vị trí",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"rightCall",
+            "value":"Vuốt sang phải để gọi %s",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"unable_auto_dial_and_send_sms_dialog_title",
+            "value":"Không gọi điện hay nhắn tin được",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"EarthquakeIntensity",
+            "value":"Cường độ (%s)",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"notification_switch_dialog_title",
+            "value":"Dịch vụ SOS khẩn cấp muốn gửi thông báo cho bạn",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"EarthquakeArrivedLongTips",
+            "value":"Chuông báo động sẽ vang lên khi có sóng địa chấn ập đến. Bạn sẽ thấy các tùy chọn để tìm nơi trú ẩn, liên hệ trợ giúp và hiển thị thông tin khẩn cấp cá nhân.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"car_accident_detection_statement_on_service_and_privacy",
+            "value":"Tuyên bố về Tự động bắt đầu các dịch vụ trợ giúp sau tai nạn và Quyền riêng tư",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fall_down_detection_disclaimer",
+            "value":"Tuyên bố miễn trách nhiệm về tính năng Phát hiện té ngã",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"cannot_enable_fall_down_sos",
+            "value":"Không thể bật Tự động bắt đầu các dịch vụ trợ giúp sau khi ngã",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"car_accident_detection_disclaimer_in_short_notice",
+            "value":"Tuyên bố miễn trách nhiệm về tính năng Phát hiện tai nạn ô tô",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fall_down_message",
+            "value":"[SOS khẩn cấp – Phát hiện té ngã]\nĐiện thoại của tôi phát hiện tôi đã bị ngã và cần bạn trợ giúp. Bạn nhận được thông báo vì bạn là một trong những liên hệ trong trường hợp khẩn cấp của tôi.\nVị trí hiện tại của tôi là: %s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_info_Detail_notice_renew",
+            "value":"Dịch vụ này yêu cầu quyền truy cập %1$s và cần đọc thông tin vị trí. Bằng việc bật tính năng này, bạn đồng ý với các điều khoản này. Để biết thêm chi tiết, hãy tham khảo %2$s và %3$s.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"cannot_enable_car_accident_sos",
+            "value":"Không thể bật Tự động bắt đầu các dịch vụ trợ giúp sau tai nạn",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"car_accident_sos_message_without_location",
+            "value":"[SOS khẩn cấp – Tai nạn ô tô]\nĐiện thoại của tôi phát hiện rằng tôi đã gặp tai nạn và cần bạn trợ giúp. Bạn nhận được thông báo vì bạn là một trong những liên hệ trong trường hợp khẩn cấp của tôi.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fall_down_detection_disclaimer_content_one",
+            "value":"Nếu thiết bị của bạn phát hiện bạn bị ngã, thiết bị sẽ tự động gọi cho các liên hệ trong trường hợp khẩn cấp của bạn và gửi một tin nhắn SMS kèm theo vị trí của bạn. Hãy đảm bảo rằng những liên hệ trong trường hợp khẩn cấp của bạn biết về tính năng này để đảm bảo rằng các thông báo này không bị bỏ qua hoặc hiểu lầm.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fall_down_message_without_location",
+            "value":"[SOS khẩn cấp – Phát hiện té ngã]\nĐiện thoại của tôi phát hiện tôi đã bị ngã và cần bạn trợ giúp. Bạn nhận được thông báo vì bạn là một trong những liên hệ trong trường hợp khẩn cấp của tôi.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"car_accident_permission_title",
+            "value":"Quyền Tự động bắt đầu các dịch vụ trợ giúp sau tai nạn",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"car_accident_sos_message",
+            "value":"[SOS khẩn cấp – Tai nạn ô tô]\nĐiện thoại của tôi phát hiện rằng tôi đã gặp tai nạn ô tô và cần bạn trợ giúp. Bạn nhận được thông báo vì bạn là một trong những liên hệ trong trường hợp khẩn cấp của tôi.\nVị trí hiện tại của tôi là: %s.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fall_down_auto_call_for_help_title",
+            "value":"Tự động bắt đầu các dịch vụ trợ giúp sau khi ngã",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fall_down_detection_disclaimer_content_two",
+            "value":"Tính năng này hoạt động bằng cách diễn giải dữ liệu từ các cảm biến trên thiết bị. Các mẫu dữ liệu cảm biến giống với tình huống ngã có thể vô tình kích hoạt tính năng này. Trong một số trường hợp, tình huống ngã có thể sẽ không tạo ra dữ liệu cảm biến có khả năng kích hoạt tính năng này. Cũng xin lưu ý rằng khả năng kết nối và trạng thái thiết bị của bạn có thể ảnh hưởng đến khả năng gọi điện và gửi tin nhắn.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fall_down_trigger_prompt",
+            "value":"Có vẻ như bạn đã bị ngã lúc %1$s. Điện thoại của bạn sẽ thực hiện cuộc gọi khẩn cấp nếu bạn không trả lời.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fall_down_auto_call_notice_all",
+            "value":"Dịch vụ này yêu cầu quyền truy cập %1$s để truy cập vị trí của bạn. Bằng việc bật tính năng này, bạn đồng ý với các điều khoản này và %2$s. Để biết thêm chi tiết về cách thông tin cá nhân của bạn được xử lý, hãy tham khảo %3$s và %4$s.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fall_down_detection_disclaimer_in_short_notice",
+            "value":"Tuyên bố miễn trách nhiệm về tính năng Phát hiện té ngã",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"sos_is_playing_recording_1",
+            "value":"Đang phát tin nhắn SOS.\nChạm để tham gia cuộc gọi.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"car_accident_trigger_prompt",
+            "value":"Có vẻ như bạn đã gặp tai nạn ô tô lúc %1$s. Điện thoại của bạn sẽ thực hiện cuộc gọi khẩn cấp nếu bạn không trả lời.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fall_down_detection_statement_on_service_and_privacy",
+            "value":"Tuyên bố về Tự động bắt đầu các dịch vụ trợ giúp sau khi ngã và Quyền riêng tư",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"car_accident_auto_call_notice_all",
+            "value":"Dịch vụ này yêu cầu quyền truy cập %1$s để truy cập thông tin vị trí của bạn. Bằng việc bật tính năng này, bạn đồng ý với các điều khoản này cũng như %2$s. Để biết thêm chi tiết về cách thông tin cá nhân của bạn được xử lý, hãy tham khảo %3$s và %4$s.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fall_down_permission_title",
+            "value":"Quyền Tự động bắt đầu các dịch vụ trợ giúp sau khi ngã",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_location_service_text_new",
+            "value":"Khi bạn thực hiện cuộc gọi SOS, dịch vụ này sẽ gửi vị trí được mã hóa của bạn đến các dịch vụ khẩn cấp để họ có thể hỗ trợ bạn tốt hơn. Dịch vụ này yêu cầu kết nối Internet và quyền truy cập Vị trí, đồng thời sẽ đọc và tải lên/truyền thông tin vị trí và số điện thoại của bạn nhằm gửi đến các dịch vụ khẩn cấp. Bằng việc bật nút chuyển này, bạn đồng ý với các điều khoản trên. Để biết thông tin chi tiết về các quyền mà dịch vụ này yêu cầu, hãy tham khảo <a link=\"permissionStatement\">Thông báo Quyền hạn</a>.\nDịch vụ này được cung cấp bởi các bên thứ ba có tên dưới đây. Để biết chi tiết về quá trình xử lý thông tin cá nhân của bạn, hãy tham khảo:\n${param1}. Tuyên bố về Nền tảng Dịch vụ Vị trí Khẩn cấp và Quyền riêng tư () của Học viện Công nghệ Thông tin và Truyền thông Trung Quốc (CAICT)\n${param2}. Chính sách Quyền riêng tư cho LocationNet () của Shenzhen LocationNet Technology Co., Ltd.",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"Location_Net_Privacy",
+            "value":"Chính sách Quyền riêng tư cho LocationNet",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Sos_Auto_Send_Location_Detail_new",
+            "value":"Dịch vụ này yêu cầu kết nối %1$s và quyền truy cập %2$s, đồng thời sẽ đọc và tải lên/truyền thông tin vị trí và số điện thoại của bạn nhằm gửi đến các dịch vụ khẩn cấp. Bằng việc bật nút chuyển này, bạn đồng ý với các điều khoản trên. Để biết thông tin chi tiết về các quyền mà dịch vụ này yêu cầu, hãy tham khảo %3$s.\nDịch vụ này được cung cấp bởi các bên thứ ba có tên dưới đây. Để biết chi tiết về quá trình xử lý thông tin cá nhân của bạn, hãy tham khảo:\n%4$s. Học viện Công nghệ Thông tin và Truyền thông Trung Quốc (CAICT). %5$s\n%6$s. Shenzhen LocationNet Technology Co., Ltd. %7$s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Emergency_Position_Service_Privacy",
+            "value":"Tuyên bố về Nền tảng Dịch vụ Vị trí Khẩn cấp và Quyền riêng tư",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"open_phone_to_emergency_calls",
+            "value":"Mở điện thoại ra để thực hiện cuộc gọi khẩn cấp",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"location_south_east",
+            "value":"%1$s Nam %2$s Đông",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"location_north_west",
+            "value":"%1$s N %2$s W",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"car_accident_detection_disclaimer_content_two",
+            "value":"Tính năng này hoạt động bằng cách diễn giải dữ liệu từ các cảm biến trên thiết bị. Các mẫu dữ liệu cảm biến giống với tai nạn ô tô có thể vô tình kích hoạt tính năng này. Trong một số trường hợp, vụ tai nạn có thể sẽ không tạo ra dữ liệu cảm biến có khả năng kích hoạt tính năng này. Cũng xin lưu ý rằng khả năng kết nối và trạng thái thiết bị của bạn có thể ảnh hưởng đến khả năng gọi điện và gửi tin nhắn.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"unsupport_satellite_card_content",
+            "value":"Không gửi được tin nhắn trong khi gọi điện qua vệ tinh.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fall_down_detection_disclaimer_content_four",
+            "value":"Tính năng này chỉ có sẵn ở Trung Quốc đại lục.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"car_accident_detection_disclaimer_content_three",
+            "value":"",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"location_north_east",
+            "value":"%1$s N %2$s E",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"address_details",
+            "value":"Địa chỉ: %s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fall_down_detection_disclaimer_content_three",
+            "value":"",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"location_south_west",
+            "value":"%1$s Nam %2$s Tây",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"position",
+            "value":"Vị trí: %s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"satellite",
+            "value":"Nhắn tin qua vệ tinh Tiantong",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"NumberEdit_delete",
+            "value":"%s đã bị xóa",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"InfoEdit_back",
+            "value":"Trở lại",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"one_finger_double_click",
+            "value":"Chạm đúp để kích hoạt",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"positioning",
+            "value":"Vị trí",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"InfoEdit_show_dialpad",
+            "value":"Hiện bàn phím",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"InfoEdit_delete",
+            "value":"Xóa",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"not_available",
+            "value":"Không thể sử dụng được",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"InfoEdit_edit",
+            "value":"Tùy chọn khác",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"ContactsEdit_close",
+            "value":"Xóa liên hệ trong trường hợp khẩn cấp",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"InfoEdit_dail",
+            "value":"Gọi điện",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_slogan",
+            "value":"Đội cứu hộ",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"phrases_button",
+            "value":"Tin nhắn nhanh",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_submit_message_subtitle1",
+            "value":"Bạn có thể báo cáo vị trí và tình hình của mình cho các thiết bị của các đội cứu hộ gần đó.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"rescue_signal_level_middle",
+            "value":"Cường độ tín hiệu: Trung bình",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_save_power_tips",
+            "value":"Để tiết kiệm pin, hãy tắt màn hình trong khi bạn chờ trợ giúp.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"rescue_message_communication_banner_content",
+            "value":"Chạm để báo cáo tình hình của bạn.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"rescue_signal_level_strong",
+            "value":"Cường độ tín hiệu: Mạnh",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"rescue_message_sending_banner_title",
+            "value":"Đang gửi tin nhắn…",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"rescue_message_communication_banner_title",
+            "value":"Liên lạc với đội cứu hộ",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"rescue_signal_level_low",
+            "value":"Cường độ tín hiệu: Yếu",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_exit_once_title",
+            "value":"Thoát cứu hộ khẩn cấp?",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_service_title",
+            "value":"SOS ngoài vùng phủ sóng",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_disaster_situation_title",
+            "value":"Tình huống",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_message_send_failed_tips",
+            "value":"Tín hiệu không ổn định. Tin nhắn sẽ được gửi lại khi tín hiệu được khôi phục.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_receive_d2d_subtitle1",
+            "value":"Bạn có thể báo cáo vị trí và tình hình của mình cho các thiết bị của các đội cứu hộ gần đó.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"send_button",
+            "value":"Gửi",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_submit_success_title",
+            "value":"Tin nhắn đã được gửi",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_team",
+            "value":"Đội cứu hộ",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"keyboard_button",
+            "value":"Bàn phím",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_location_title",
+            "value":"Vị trí",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_sending",
+            "value":"Đang gửi",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_exit_completely_content",
+            "value":"Nếu bạn tắt tính năng này, thiết bị sẽ không thể tìm kiếm các đội cứu hộ gần đó khi không có sóng mạng. Bạn nên luôn bật tính năng này.\n\nBạn có chắc chắn muốn tắt tính năng này không?",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"disaster_situation_fire",
+            "value":"Hỏa hoạn",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_sended_status",
+            "value":"Đã gửi",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"message_textarea_placeholder",
+            "value":"Mô tả tình huống của bạn",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_view_details",
+            "value":"Xem chi tiết",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_my_rescue_info",
+            "value":"Chi tiết SOS",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_get_location_failed",
+            "value":"Không lấy được vị trí",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_sending_status",
+            "value":"Đang gửi…",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_exit_current_rescue",
+            "value":"Thoát",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"rescue_signal_detected",
+            "value":"Đang chờ gửi tin nhắn…",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_submit_message_title",
+            "value":"Gửi tin nhắn SOS",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"rescue_message_send_failed_banner_title",
+            "value":"Không gửi được tin nhắn",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"rescue_signal_level_none",
+            "value":"Cường độ tín hiệu: Không có tín hiệu",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_receive_d2d_title",
+            "value":"Đã phát hiện tín hiệu đội cứu hộ",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"China_Broadnet",
+            "value":"China Broadnet",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"send_position_btn_text",
+            "value":"Gửi thông tin vị trí",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_wait_for_send",
+            "value":"Đang chờ để gửi",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"switching_audio_channels",
+            "value":"Chuyển đổi kênh âm thanh",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"incomingCall",
+            "value":"Cuộc gọi đến",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_call_finish",
+            "value":"Cuộc gọi đã kết thúc",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_disclaimer_content_all",
+            "value":"Dịch vụ này yêu cầu quyền truy cập %1$s, đồng thời cần đọc số điện thoại, IMEI và thông tin vị trí của bạn. Bằng việc bật tính năng này, bạn đồng ý với các điều khoản này và %2$s. Để biết thêm chi tiết về cách thông tin cá nhân của bạn được xử lý, vui lòng tham khảo %3$s và %4$s.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_privacy_statement",
+            "value":"Tuyên bố về Liên lạc khẩn cấp ngoại tuyến và Quyền riêng tư",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"fracture",
+            "value":"Gãy xương",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"building_collapse",
+            "value":"Tòa nhà bị sập",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"in_good_status",
+            "value":"Vẫn ổn",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"road_damage",
+            "value":"Đường bị hư hại",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"surrounding_environment",
+            "value":"Xung quanh",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_not_select_distress_situation",
+            "value":"Chưa chọn tình huống",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"flood",
+            "value":"Ngập lụt",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"personal_status",
+            "value":"Tình trạng sức khỏe",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"there_are_children",
+            "value":"Có trẻ em",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"landslide",
+            "value":"Sạt lở đất",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"there_are_old_people",
+            "value":"Có người già",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"detected_cellular_signal_dialog_content",
+            "value":"Mạng di động khả dụng. Sau khi thoát, bạn sẽ có thể thực hiện cuộc gọi qua mạng của nhà mạng.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_describe_distress",
+            "value":"Mô tả tình huống của bạn",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_answer_call_failed",
+            "value":"Trả lời không thành công.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"unable_to_walk",
+            "value":"Không đi bộ được",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"someone_injured",
+            "value":"Người bị thương",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_description",
+            "value":"Khi nút chuyển này bật, bạn có thể gửi tin nhắn SOS đến và nhận cuộc gọi từ nhân viên cứu hộ gần đó ở các khu vực không có sóng mạng di động.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"food_shortage",
+            "value":"Thiếu lương thực",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hypothermia",
+            "value":"Hạ thân nhiệt",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"head_injury",
+            "value":"Chấn thương đầu",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_submit_success_subtitle1",
+            "value":"Nhân viên cứu hộ đã nhận được tin nhắn SOS của bạn. Vui lòng chờ cứu hộ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"there_are_women",
+            "value":"Có phụ nữ",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"select_disaster_situation",
+            "value":"Chọn tình huống của bạn",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"lose_blood",
+            "value":"Mất máu",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"trapped",
+            "value":"Có người bị mắc kẹt",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_feeling_5",
+            "value":"Có sức tàn phá lớn",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_feeling_1",
+            "value":"Không có rung lắc",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_feeling_2",
+            "value":"Rung lắc nhẹ",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_feeling_3",
+            "value":"Rung lắc mạnh",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_feeling_4",
+            "value":"Tàn phá",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_info_source",
+            "value":"Cảnh báo được phát đi từ Mạng lưới cảnh báo sớm động đất của Trung Quốc %s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_warning_info",
+            "value":"Hãy giữ bình tĩnh. Nằm xuống, che đầu và bám chắc. Hãy di chuyển đến khu vực thông thoáng nếu đang ở ngoài trời. Hãy bảo vệ phần đầu. Tránh dùng thang máy.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_feeling_reminder_1",
+            "value":"Dự kiến không có rung lắc, hãy giữ bình tĩnh",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_feeling_reminder_2",
+            "value":"Dự kiến có rung lắc, hãy giữ bình tĩnh",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_feeling_reminder_3",
+            "value":"Dự kiến có rung lắc, hãy chuẩn bị sẵn sàng",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_about_to_arrive",
+            "value":"Sóng địa chấn sắp đến",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_feeling_reminder_4",
+            "value":"Dự kiến có rung lắc, hãy bảo vệ bản thân",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_feeling_reminder_5",
+            "value":"Nguy hiểm, hãy bảo vệ bản thân",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_warning_canceled",
+            "value":"Cảnh báo động đất được đã dỡ bỏ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_source_test",
+            "value":"(Thử nghiệm)",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_source_trial_run",
+            "value":"(Chạy thử)",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"earthquake_arrived",
+            "value":"Sóng địa chấn đã đến",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_title",
+            "value":"Liên lạc khẩn cấp ngoài vùng phủ sóng",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"voiceCall",
+            "value":"Trả lời cuộc gọi từ đội cứu hộ",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emergency_rescue_service_content",
+            "value":"Tính năng liên lạc khẩn cấp ngoài vùng phủ sóng hỗ trợ cung cấp dịch vụ cứu hộ trong trường hợp khẩn cấp. Dịch vụ này yêu cầu quyền truy cập Vị trí, cũng như cần đọc số điện thoại, IMEI và thông tin vị trí của bạn để cung cấp các dịch vụ liên quan khi bạn ở ngoài vùng phủ sóng. Bằng việc bật tính năng này, bạn đồng ý với các điều khoản này. Để biết thêm chi tiết về cách thông tin cá nhân của bạn được xử lý, hãy tham khảo <a link=\"emergencyRescuePrivacyStatement\">Tuyên bố về tính năng Liên lạc khẩn cấp ngoài vùng phủ sóng và Quyền riêng tư</a> cũng như <a link=\"emcResourcePermissionStatement\">Thông báo Quyền hạn</a>.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"additional_info_list_content_1",
+            "value":"%d. Hãy giữ bình tĩnh và điềm đạm. Giữ sức.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"hanging_up_voice_call",
+            "value":"Kết thúc cuộc gọi từ đội cứu hộ",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emc_rescue_current_location",
+            "value":"Vị trí hiện tại: %s",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"additional_info_list_content_2",
+            "value":"%d. Đặt sự an toàn của bạn lên hàng đầu. Đừng di chuyển nếu chưa đảm bảo an toàn.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"additional_info_list_content_3",
+            "value":"%d. Để tiết kiệm pin, hãy tắt màn hình trong khi chờ giúp đỡ.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"menu_title_additional_info",
+            "value":"Quan trọng",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"exit_emc_rescue_mode_notification_title",
+            "value":"Đã thoát liên lạc khẩn cấp",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"search_now_button",
+            "value":"Tìm kiếm ngay",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"exit_emc_rescue_mode_notification_content",
+            "value":"Để tìm kiếm lại các đội cứu hộ gần đó, hãy chạm vào \"Tìm kiếm ngay\".",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emc_rescue_permission_notice_content_2",
+            "value":"Quyền này được dùng để nhận vị trí của thiết bị, để có thể gửi đến đội cứu hộ khẩn cấp khi bạn ở ngoài vùng phủ sóng mạng.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emc_rescue_location_permission_subtitle",
+            "value":"Vị trí",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emc_rescue_permission_notice_title",
+            "value":"Quyền liên lạc khẩn cấp ngoài vùng phủ sóng",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emc_rescue_disclaimer_content_part_1",
+            "value":"",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emc_rescue_disclaimer_content_part_2",
+            "value":"Tính năng liên lạc khẩn cấp ngoại tuyến chỉ nhằm mục đích tham khảo để giúp bạn đánh giá rủi ro an toàn và đưa ra các quyết định an toàn. Tính năng này chỉ được dùng để tìm kiếm tín hiệu cứu hộ và không chủ động gửi đi tín hiệu cầu cứu. Việc bật tính năng này không đảm bảo rằng các đội cứu hộ sẽ đến giúp đỡ bạn. Các tín hiệu cứu hộ được truyền bởi các đội cứu hộ sử dụng thiết bị chuyên dụng. Nếu thiết bị của bạn không phát hiện tín hiệu cứu hộ, bạn có trách nhiệm thực hiện các biện pháp an toàn thích hợp dựa trên tình hình của mình. Nếu thiết bị của bạn phát hiện tín hiệu cứu hộ, bạn nên báo cáo chính xác tình hình của mình cho nhân viên cứu hộ. Bạn nên thực hiện các biện pháp hợp lý để giữ an toàn dựa trên môi trường hiện tại của mình, cả trước và sau khi đội cứu hộ liên hệ với bạn. Bạn sẽ chịu hoàn toàn trách nhiệm cho bất kỳ rủi ro hoặc hậu quả nào có thể phát sinh từ bất kỳ hành động nào bạn thực hiện dựa trên tính năng liên lạc khẩn cấp ngoại tuyến.\n\n",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emc_rescue_disclaimer_content_part_3",
+            "value":"",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"epicenter_location",
+            "value":"Tâm chấn",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name": "estimated_intensity",
+            "value": "Cường độ dự kiến (%s)",
+            "attr": {
+                "priority": "translate"
+            }
+        },
+        {
+            "name": "emergencyCall",
+            "value": "Cuộc gọi khẩn cấp",
+            "attr": {
+                "priority": "translate"
+            }
+        },
+        {
+            "name":"hyacinth_satellite_not_support",
+            "value":"Tính năng SOS khẩn cấp không hoạt động khi bật mạng vệ tinh Dạ lan hương.",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"emc_rescue_china_broadnet_brand_tips",
+            "value":"Băng tần do China Broadnet cung cấp.",
+            "attr":{
+                "priority":"translate"
+            }
+        }
+    ]
+}

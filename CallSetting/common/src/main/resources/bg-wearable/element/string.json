@@ -1,0 +1,39 @@
+{
+    "string":[
+        {
+            "name":"CwMmi",
+            "value":"Чакащо обаждане",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"ClirMmi",
+            "value":"Идентифика\u200bция на изходящи повиквания",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"ColpMmi",
+            "value":"Идентифика\u200bтор на свързана линия",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"ClipMmi",
+            "value":"Идентифика\u200bция на входящи повиквания",
+            "attr":{
+                "priority":"LT"
+            }
+        },
+        {
+            "name":"ColrMmi",
+            "value":"Ограничение за идентифика\u200bтор на свързана линия",
+            "attr":{
+                "priority":"LT"
+            }
+        }
+    ]
+}

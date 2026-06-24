@@ -1,0 +1,18 @@
+{
+    "string":[
+        {
+            "name":"Apn_The_name_cannot_be_empty",
+            "value":"名稱不可留空",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"Apn_The_APN_cannot_be_empty",
+            "value":"APN 不能為空白",
+            "attr":{
+                "priority":"translate"
+            }
+        }
+    ]
+}

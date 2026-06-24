@@ -1,0 +1,16 @@
+{
+  "float": [
+    {
+      "name": "traffic_text_font_size",
+      "value": "19vp"
+    },
+    {
+      "name": "mobile_data_overflow",
+      "value": "1"
+    },
+    {
+      "name": "traffic_title_line_height",
+      "value": "17.5vp"
+    }
+  ]
+}

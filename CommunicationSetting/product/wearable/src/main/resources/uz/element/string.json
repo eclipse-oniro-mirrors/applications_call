@@ -1,0 +1,25 @@
+{
+    "string":[
+        {
+            "name":"watch_loading",
+            "value":"Yuklanmoqda…",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"watch_permission_history_no_record",
+            "value":"Hech qanday qayd topilmadi",
+            "attr":{
+                "priority":"translate"
+            }
+        },
+        {
+            "name":"watch_traffic_ranking_the_month",
+            "value":"Mobil internetdan foydalanish (oylik)",
+            "attr":{
+                "priority":"translate"
+            }
+        }
+    ]
+}

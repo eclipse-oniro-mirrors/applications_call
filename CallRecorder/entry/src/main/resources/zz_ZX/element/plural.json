@@ -1,0 +1,91 @@
+{
+    "plural":[
+        {
+            "name":"call_numbers_finish",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"[TS_950207]_%d calls recorded"
+                },
+                {
+                    "quantity":"one",
+                    "value":"[TS_950214]_%d call recorded"
+                },
+                {
+                    "quantity":"zero",
+                    "value":"[TS_950208]_%d calls recorded"
+                },
+                {
+                    "quantity":"few",
+                    "value":"[TS_950209]_%d calls recorded"
+                },
+                {
+                    "quantity":"many",
+                    "value":"[TS_950213]_%d calls recorded"
+                },
+                {
+                    "quantity":"two",
+                    "value":"[TS_950201]_%d calls recorded"
+                }
+            ]
+        },
+        {
+            "name":"use_numbers",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"[TS_950203]_%d"
+                },
+                {
+                    "quantity":"one",
+                    "value":"[TS_950205]_%d"
+                },
+                {
+                    "quantity":"zero",
+                    "value":"[TS_950204]_%d"
+                },
+                {
+                    "quantity":"few",
+                    "value":"[TS_950215]_%d"
+                },
+                {
+                    "quantity":"many",
+                    "value":"[TS_950206]_%d"
+                },
+                {
+                    "quantity":"two",
+                    "value":"[TS_950200]_%d"
+                }
+            ]
+        },
+        {
+            "name":"is_delete_plural_number",
+            "value":[
+                {
+                    "quantity":"one",
+                    "value":"[TS_950216]_Delete %d number?"
+                },
+                {
+                    "quantity":"other",
+                    "value":"[TS_950211]_Delete %d numbers?"
+                },
+                {
+                    "quantity":"zero",
+                    "value":"[TS_950217]_Delete %d numbers?"
+                },
+                {
+                    "quantity":"few",
+                    "value":"[TS_950202]_Delete %d numbers?"
+                },
+                {
+                    "quantity":"many",
+                    "value":"[TS_950210]_Delete %d numbers?"
+                },
+                {
+                    "quantity":"two",
+                    "value":"[TS_950212]_Delete %d numbers?"
+                }
+            ]
+        }
+    ]
+}
