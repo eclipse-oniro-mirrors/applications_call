@@ -158,16 +158,16 @@ export default class EmergencyCallController {
       // let data: site.ReverseGeocodeResult | undefined =
       //   await LocationUtils.getInstance().reverseGeocode(currentLanguage, location.latitude, location.longitude);
 
-      let data: AdaptedReverseGeocodeResult | undefined =
-        await LocationUtils.getInstance().reverseGeocode(currentLanguage, location.latitude, location.longitude);
-      if (!data) {
-        LogUtils.e(TAG, `reverseGeocode is empty`);
-        callback({
-          isSuccess: false,
-          data: ''
-        })
-        return;
-      }
+      // let data: AdaptedReverseGeocodeResult | undefined =
+      //   await LocationUtils.getInstance().reverseGeocode(currentLanguage, location.latitude, location.longitude);
+      // if (!data) {
+      //   LogUtils.e(TAG, `reverseGeocode is empty`);
+      //   callback({
+      //     isSuccess: false,
+      //     data: ''
+      //   })
+      //   return;
+      // }
       LogUtils.i(TAG, 'reverseGeocode');
       /*if (data.addressDescription) {
         callback({
@@ -180,10 +180,10 @@ export default class EmergencyCallController {
           data: ''
         })
       }*/
-      if (data.formatAddress) {
+      if (location.latitude) {
         callback({
           isSuccess: true,
-          data: data.formatAddress
+          data: `经度：${location.longitude}，纬度：${location.latitude}`
         })
       } else {
         callback({

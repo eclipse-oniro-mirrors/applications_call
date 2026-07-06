@@ -672,21 +672,21 @@ export class SosEmergencySmsController {
     try {
       LocationUtils.getInstance().setLocationSwitchIgnored(true);
       const currentLocation = await geoLocationManager.getCurrentLocation(request);
-      const address:AdaptedReverseGeocodeResult|null = await this.getAddressFromLocation(currentLocation);
+      // const address:AdaptedReverseGeocodeResult|null = await this.getAddressFromLocation(currentLocation);
       if (sosType === SOS) {
-        if (address) {
-          const addressStr: string = `${address.formatAddress}${this.getLngLatLocationStr(currentLocation)}`;
+        if (currentLocation.latitude) {
+          const addressStr: string = `${this.getLngLatLocationStr(currentLocation)}`;
           const msgResource: Resource = $r('app.string.Emergency_message', addressStr);
           message = this.getStringByResource(msgResource);
         }
       } else {
         if (currentLocation) {
           let addressStr: string = ''
-          if (address) {
-            addressStr = `${address.formatAddress}${this.getLngLatLocationStr(currentLocation)}`;
-          } else {
-            addressStr = `${this.getLngLatLocationStr(currentLocation)}`;
-          }
+          // if (address) {
+          //   addressStr = `${address.formatAddress}${this.getLngLatLocationStr(currentLocation)}`;
+          // } else {
+          //   addressStr = `${this.getLngLatLocationStr(currentLocation)}`;
+          // }
           let msgResource: Resource = null!
           if (sosType === CAR_ACCIDENT) {
             msgResource = $r('app.string.car_accident_sos_message', addressStr);

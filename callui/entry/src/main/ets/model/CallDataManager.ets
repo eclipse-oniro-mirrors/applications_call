@@ -429,6 +429,28 @@ export default class CallDataManager {
     return this.callList.length === 1 && callData.callState === CallStateConst.CALL_STATUS_INCOMING;
   }
 
+  private isVoiceMailDialNumber(voiceMailNumber: string, dialNumber: string): boolean {
+    if (!voiceMailNumber?.length || !dialNumber?.length) {
+      return false;
+    }
+    if (voiceMailNumber === dialNumber) {
+      return true;
+    }
+    const vmDigits = voiceMailNumber.replace(/\D/g, '');
+    const dialDigits = dialNumber.replace(/\D/g, '');
+    if (!vmDigits.length || !dialDigits.length) {
+      return false;
+    }
+    if (vmDigits === dialDigits) {
+      return true;
+    }
+    const minMatchLen = 7;
+    if (vmDigits.length < minMatchLen || dialDigits.length < minMatchLen) {
+      return false;
+    }
+    return vmDigits.length >= dialDigits.length ? vmDigits.endsWith(dialDigits) : dialDigits.endsWith(vmDigits);
+  }
+
   /**
    * addCallList
    *
@@ -448,8 +470,8 @@ export default class CallDataManager {
     if (CallUtils.isInvalidNumber(targetObj.accountNumber)) {
       targetObj.isInvalidNumber = true;
     } else {
-      sim.getVoiceMailNumber(targetObj.accountId).then((voiceMailNumber) => {
-        const isVoiceMailNumber = voiceMailNumber === targetObj.accountNumber;
+      sim.getVoiceMailNumber(targetObj.accountId).then((voiceMailNumber: string) => {
+        const isVoiceMailNumber = this.isVoiceMailDialNumber(voiceMailNumber ?? '', targetObj.accountNumber ?? '');
         LogUtils.i(TAG, `current number isVoiceMailNumber: ${isVoiceMailNumber}`);
         if (!isVoiceMailNumber) {
           return;

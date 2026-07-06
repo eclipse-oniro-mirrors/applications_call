@@ -213,7 +213,6 @@ export struct TrafficDisplayComponent {
             }
             if (isOn) {
               this.trafficDisplayViewModel.haveSetMonthlyLimited((haveCheck: boolean) => {
-                this.trafficDisplayViewModel.trafficDisplayStatus = TrafficDispalyStatus.OPEN;
                 if (haveCheck) {
                   LogUtil.info(TAG, `save traffic display status true after limit value`);
                   this.trafficDisplayViewModel.saveTrafficDisplayStatus(isOn);
@@ -226,7 +225,6 @@ export struct TrafficDisplayComponent {
                 }
               })
             } else {
-              this.trafficDisplayViewModel.trafficDisplayStatus = TrafficDispalyStatus.CLOSE;
               LogUtil.info(TAG, `save traffic displayStatus false`);
               // 点击开启显示流量显示套餐限额又取消的情况无需存储数据
               this.trafficDisplayViewModel.saveTrafficDisplayStatus(isOn);

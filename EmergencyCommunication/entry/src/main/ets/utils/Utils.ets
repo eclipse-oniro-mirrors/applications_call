@@ -585,17 +585,7 @@ export class Utils {
   }
 
   public static getSosAudioFileName() {
-    let systemLanguage = '';
-    try {
-      systemLanguage = i18n.System.getSystemLanguage();
-    } catch (e) {
-      LogUtils.e(TAG, 'getSosAudioFileName: getSystemLanguage error: ' + JSON.stringify(e));
-    }
-    if (systemLanguage && ['zh-Hans', 'zh-Hant', 'ug', 'bo'].includes(systemLanguage)) {
-      return 'chinese.amr';
-    } else {
-      return 'english.amr';
-    }
+    return 'alarm.ogg';
   }
 
   /**

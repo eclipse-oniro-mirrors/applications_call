@@ -614,7 +614,7 @@ struct Index {
     }
     this.callEventChange = Constants.EVENT_DEFAULT_CALL_FAILED;
     if (this.message || this.primaryTitle) {
-      this.openMessageDialog?.open();
+      // this.openMessageDialog?.open();
     }
   }
 

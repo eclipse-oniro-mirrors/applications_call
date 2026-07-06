@@ -108,12 +108,12 @@ export default struct FuncBtn {
 
     if (this.btnType === 'keep') {
       return !this.isActive ? StringUtil.formatResourceToString($r('app.string.keep')) :
-      StringUtil.formatResourceToString($r('app.string.cancel_waiting'));
+        StringUtil.formatResourceToString($r('app.string.cancel_waiting'));
     }
 
     if (this.btnType === 'mute') {
       return !this.isActive ? StringUtil.formatResourceToString($r('app.string.call_mute_on')) :
-      StringUtil.formatResourceToString($r('app.string.unmute'));
+        StringUtil.formatResourceToString($r('app.string.unmute'));
     }
 
     if (this.btnType === 'record') {
@@ -174,7 +174,7 @@ export default struct FuncBtn {
   changeBtn(type: string) {
     const btnName = ['record'];
     if (Method.includes(btnName, type)) {
-      this.isActive = !this.isActive;
+      this.isActive = false;
     }
   }
 
@@ -527,6 +527,9 @@ export default struct FuncBtn {
   }
 
   private getBackgroundColor(): ResourceColor {
+    if (this.btnType === 'record' && this.isDisable) {
+      return 'rgba(255, 255, 255, 0.08)';
+    }
     if (this.isNewFoldPhoneExternalScreen) {
       if (this.isActive) {
         return 'rgba(255, 255, 255, 0.9)';

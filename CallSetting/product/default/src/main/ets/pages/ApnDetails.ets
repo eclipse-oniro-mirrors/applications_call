@@ -22,6 +22,7 @@ import {
   updateObjectValue,
   TitleBarLayout
 } from '@ohos/common/CommonIndex';
+import * as CallSettingsConstant from '../common/constant/CallSettingsConstant';
 import { EditableTitleBar, EditableLeftIconType } from '@ohos.arkui.advanced.EditableTitleBar'
 import { formatResourceToString } from '../common/utils/formatResourceToString';
 import systemParameterEnhance from '@ohos.systemParameterEnhance';
@@ -63,8 +64,8 @@ export default struct CallAPN {
   @State msg: ResourceStr = ''
   @StorageProp('fontSizeScale') fontSizeScale: number = 1;
   @StorageProp('fontSizeScaleMargin') fontSizeScaleMargin: string = '';
+  @StorageProp('naviIndicatorHeight') naviIndicatorHeight: number = 28;
   private scroller: Scroller = new Scroller();
-  private naviIndicatorHeight: number =  28;
 
   @Builder
   apnContentDialogContent() {
@@ -352,6 +353,7 @@ export default struct CallAPN {
           }
           .height('100%')
           .width('100%')
+          .padding({ bottom: this.naviIndicatorHeight + CallSettingsConstant.BOTTOM_MARGIN })
           .backgroundColor($r('sys.color.background_secondary'))
         }
       }
@@ -472,59 +474,66 @@ export default struct CallAPN {
 
   @Builder
   listBuilder() {
-    List({ scroller: this.scroller }) {
-      ForEach(this.detailsList, (item: SubDataType, index?: number) => {
-        ListItemGroup({ footer: this.itemFoot(item) }) {
-          ListItem() {
-            Column() {
+    Stack() {
+      List({ scroller: this.scroller }) {
+        ForEach(this.detailsList, (item: SubDataType, index?: number) => {
+          ListItemGroup({ footer: this.itemFoot(item) }) {
+            ListItem() {
               Column() {
-                if (item.type === 'Toggle') {
-                  this.TypeToggleContent(item, index)
-                } else {
-                  this.listSubBiulder(item, index)
+                Column() {
+                  if (item.type === 'Toggle') {
+                    this.TypeToggleContent(item, index)
+                  } else {
+                    this.listSubBiulder(item, index)
+                  }
                 }
-              }
-              .padding({
-                left: $r('sys.float.padding_level2'),
-                right: $r('sys.float.padding_level2'),
-                top: $r('sys.float.padding_level2')
-              })
-              .borderRadius($r('sys.float.corner_radius_level10'))
-              .backgroundColor($r('sys.color.comp_background_primary'))
-              .constraintSize({ minHeight: 56 });
-            };
-          }.margin({
-            top: index === 0 ? $r('sys.float.padding_level8') : $r('sys.float.padding_level0'),
-            bottom: this.getBottpmSpace(item, index),
+                .padding({
+                  left: $r('sys.float.padding_level2'),
+                  right: $r('sys.float.padding_level2'),
+                  top: $r('sys.float.padding_level2')
+                })
+                .borderRadius($r('sys.float.corner_radius_level10'))
+                .backgroundColor($r('sys.color.comp_background_primary'))
+                .constraintSize({ minHeight: 56 });
+              };
+            }.margin({
+              top: index === 0 ? $r('sys.float.padding_level8') : $r('sys.float.padding_level0'),
+              bottom: this.getBottpmSpace(item, index),
+            })
+            .enabled((this.common.isDefault === 0 ||
+              (item.key === 'mvnoValue' && this.common.mvnoType.description === '0')) ? false : true);
+          }
+          .margin({
+            left: getPaddingByDevice(),
+            right: getPaddingByDevice()
           })
-          .enabled((this.common.isDefault === 0 ||
-            (item.key === 'mvnoValue' && this.common.mvnoType.description === '0')) ? false : true);
-        }
-        .margin({
-          left: getPaddingByDevice(),
-          right: getPaddingByDevice()
-        })
-      }, (item: SubDataType, index: number) => {
-        return `listContentBuider_${index}`;
-      });
+        }, (item: SubDataType, index: number) => {
+          return `listContentBuider_${index}`;
+        });
+      }
+      .scrollBar(BarState.Off)
+      .width('100%')
+      .height('100%')
+      .contentEndOffset(CallSettingsConstant.BOTTOM_MARGIN + this.naviIndicatorHeight)
+
+      ScrollBar({
+        scroller: this.scroller,
+        direction: ScrollBarDirection.Vertical,
+        state: BarState.Auto
+      })
+        .position({ top: 0, right: 0 })
+        // 卡片距离标题栏 16 + 滑动条距离 4
+        .margin({ top: 20, bottom: this.naviIndicatorHeight })
     }
-    .scrollBar(BarState.Off)
     .width('100%')
     .layoutWeight(1)
-
-    ScrollBar({
-      scroller: this.scroller,
-      direction: ScrollBarDirection.Vertical,
-      state: BarState.Auto
-    })
-      .position({ top: 0, right: 0 })
-      // 卡片距离标题栏 16 + 滑动条距离 4
-      .margin({ top: 20, bottom: this.naviIndicatorHeight })
-      .layoutWeight(1)
   }
 
   getBottpmSpace(item: SubDataType, index?: number): Resource {
     if (this.common.profileID !== -1 && this.common.isDefault === 1) {
+      if (this.detailsList.length - 1 === index) {
+        return item.type === 'Toggle' ? $r('sys.float.padding_level0') : $r('sys.float.padding_level2');
+      }
       return item.type === 'Toggle' ? $r('sys.float.padding_level0') : $r('sys.float.padding_level6');
     } else {
       return this.detailsList.length - 1 === index ? $r('sys.float.padding_level16') :

@@ -54,8 +54,7 @@
         "label": "$string:callui_description",
         "supportWindowMode": [
           "fullscreen",
-          "split",
-          "floating"
+          "split"
         ],
         "startWindowIcon": "$media:app_start_window_icon",
         "startWindowBackground": "$color:black",
@@ -64,7 +63,7 @@
         "unclearableMission": true,
         "minWindowHeight": 700,
         "minWindowWidth": 320,
-        "orientation": "follow_desktop",
+        "orientation": "portrait",
         "launchType": "singleton",
         "skills": [
           {
@@ -87,8 +86,7 @@
         "icon": "$media:app_icon",
         "label": "$string:voip_description",
         "supportWindowMode": [
-          "fullscreen",
-          "floating"
+          "fullscreen"
         ],
         "startWindowIcon": "$media:app_start_window_icon",
         "startWindowBackground": "$color:black",
@@ -97,7 +95,7 @@
         "unclearableMission": true,
         "minWindowHeight": 700,
         "minWindowWidth": 320,
-        "orientation": "follow_desktop",
+        "orientation": "portrait",
         "launchType": "singleton",
         "skills": [
           {

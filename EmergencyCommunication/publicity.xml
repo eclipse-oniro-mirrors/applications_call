@@ -14,4 +14,4 @@
      limitations under the License.
 -->
 
-<packageInfo package="com.ohos.emergencycommunication" feature="紧急通信功能，包含紧急拨号、个人紧急信息、SOS、地震预警等功能" author="华为终端有限公司" label="com.ohos.emergencycommunication"></packageInfo>
+<packageInfo package="com.ohos.emergencycommunication" feature="紧急通信功能，包含紧急拨号、个人紧急信息、SOS、地震预警等功能" author="" label="com.ohos.emergencycommunication"></packageInfo>

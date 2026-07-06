@@ -32,6 +32,15 @@ export default class VoipAbility extends Ability {
   private windowObj?: window.Window;
   private mCallColumnUtils: CallColumnUtils = CallColumnUtils.getInstance();
 
+  private async setPortraitOrientation(mainWindow: window.Window): Promise<void> {
+    try {
+      await mainWindow.setPreferredOrientation(window.Orientation.PORTRAIT);
+      LogUtils.i(TAG, 'setPreferredOrientation PORTRAIT success');
+    } catch (err) {
+      LogUtils.e(TAG, `setPreferredOrientation failed, err: ${JSON.stringify(err)}`);
+    }
+  }
+
   onCreate(want: Want, launchParam: AbilityConstant.LaunchParam) {
     LogUtils.i(TAG, 'onCreate');
     GlobalContextHelper.getContext().set<common.UIAbilityContext>(Constants.VOIP_ABILITY_CONTEXT, this.context);
@@ -57,6 +66,7 @@ export default class VoipAbility extends Ability {
     });
     windowStage.getMainWindow().then((windowObj) => {
       this.windowObj = windowObj;
+      this.setPortraitOrientation(windowObj);
       // Obtain the window size
       try {
         this.mCallColumnUtils.updateBreakpoint(windowObj.getWindowProperties().windowRect.width);
