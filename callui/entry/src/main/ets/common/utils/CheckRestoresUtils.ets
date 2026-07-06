@@ -126,7 +126,7 @@ export function hasLimFreeSize(): boolean {
   return false;
 }
 
-// 智能检测需要开启弹窗 找到我的华为->服务->检测与帮助->右上角->设置->智能提醒通知
+// 智能检测需要开启弹窗 找到我的XX->服务->检测与帮助->右上角->设置->智能提醒通知
 export function sendStorageClearPopup(): void {
   let eventData: GeneratedObjectLiteralInterface = {
     'faultDescription': DESCRIPTION,

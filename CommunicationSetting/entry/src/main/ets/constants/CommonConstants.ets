@@ -89,9 +89,9 @@ export const EMITTER_RESET_MONTH_LIMIT_NOTICE_EVENT_ID = 10004;
 export const ABROAD_HOTSPOT_UID: number = 4294967292;
 
 /**
- * 手机设备搜索页搜索组件左边避让宽度: 返回键 24vp 边距 + 40vp + 8vp 搜索组件与返回键间距
+ * 手机设备搜索页搜索组件左边距，与标题文字左侧对齐
  */
-export const SEARCH_TITLE_START_MARGIN: number = 64;
+export const SEARCH_TITLE_START_MARGIN: number = 16;
 
 /**
  * 平板设备搜索页搜索组件左边避让宽度：返回键 16vp 边距 + 40vp + 8vp 搜索组件与返回键间距

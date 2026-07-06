@@ -1409,8 +1409,7 @@ struct emergencyCall {
               .accessibilityText(this.mEmergencyCallController.formatResourceToString(
                 $r('app.string.InfoEdit_back')))
 
-              //if (this.isAutoLocation) {
-              if (true) {
+              if (this.isAutoLocation) {
                 Row() {
                   SymbolGlyph($r('sys.symbol.dot_grid_2x2'))
                     .fontSize($r('app.float.emc_padding_level12'))

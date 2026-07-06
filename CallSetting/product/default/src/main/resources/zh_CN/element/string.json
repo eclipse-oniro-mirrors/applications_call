@@ -1115,7 +1115,7 @@
         },
         {
             "name":"satellite_service_details_1_new",
-            "value":"%s. 使用过程中，WLAN、移动数据和位置信息开关将被关闭，相关业务 (华为分享、无线投屏、天际通等) 不可使用。退出后将自动恢复。",
+            "value":"%s. 使用过程中，WLAN、移动数据和位置信息开关将被关闭，相关业务 (XX分享、无线投屏、天际通等) 不可使用。退出后将自动恢复。",
             "attr":{
                 "priority":"translate"
             }
@@ -2069,14 +2069,14 @@
         },
         {
             "name":"distributed_call_settings_descriptions",
-            "value":"<body><span style='normal'>附近登录相同华为账号的设备可共享本机的移动通信网络进行上网、接打电话、收发信息。本服务需要使用蓝牙、WLAN 功能、设备信息、网络信息和通讯信息。此外电话共享功能需要使用粗略位置信息。打开开关，即表示您同意上述内容。</span><span style='moreDetail'>了解详情</span></body>",
+            "value":"<body><span style='normal'>附近登录相同XX账号的设备可共享本机的移动通信网络进行上网、接打电话、收发信息。本服务需要使用蓝牙、WLAN 功能、设备信息、网络信息和通讯信息。此外电话共享功能需要使用粗略位置信息。打开开关，即表示您同意上述内容。</span><span style='moreDetail'>了解详情</span></body>",
             "attr":{
                 "priority":"translate"
             }
         },
         {
             "name":"distributed_call_settings_descriptions_pad",
-            "value":"<body><span style='normal'>此功能可让您使用附近登录相同华为账号的手机移动通信网络上网、接打电话、收发信息。这需要双方设备开启 WLAN、蓝牙，且手机需开启对应共享功能。本服务需要使用设备信息、网络信息和通讯信息。此外接打电话需要使用粗略位置信息。打开开关，即表示您同意上述内容。</span><span style='moreDetail'>了解详情</span></body>",
+            "value":"<body><span style='normal'>此功能可让您使用附近登录相同XX账号的手机移动通信网络上网、接打电话、收发信息。这需要双方设备开启 WLAN、蓝牙，且手机需开启对应共享功能。本服务需要使用设备信息、网络信息和通讯信息。此外接打电话需要使用粗略位置信息。打开开关，即表示您同意上述内容。</span><span style='moreDetail'>了解详情</span></body>",
             "attr":{
                 "priority":"translate"
             }
@@ -3141,7 +3141,7 @@
             "value": "中国移动"
         },
         {
-            "name": "china_telecom",
+            "name": "telecom",
             "value": "中国电信"
         },
         {

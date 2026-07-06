@@ -104,7 +104,7 @@
         },
         {
             "name":"sendMsg",
-            "value":"我已将您添加为紧急联系人，遇到危险时，将向您发送求助短信。【华为 SOS 紧急求助】",
+            "value":"我已将您添加为紧急联系人，遇到危险时，将向您发送求助短信。【 SOS 紧急求助】",
             "attr":{
                 "priority":"translate"
             }
@@ -862,7 +862,7 @@
         },
         {
             "name":"Disclaimer_Instructions",
-            "value":"地震预警信息由政府主管地震工作的相关部门授权后提供，华为不对其拥有任何控制权。\n地震预警信息仅作为您评估安全风险和做出安全决策的参考。地震预警只能提供几秒到几十秒的预警时间，收到预警时，您需根据预警时间和到达安全地点所需时间选择合理的避险措施。没有收到预警但感受到地震时仍需要避险。您基于地震预警服务做出任何行为导致的风险和后果均由您自行承担。\n由于地震预警盲区、网络连接不稳定、第三方设备故障以及其他各种不可抗力原因导致您未能实时收到地震预警信息，由此遭受的一切损失，华为不承担任何责任。",
+            "value":"地震预警信息由政府主管地震工作的相关部门授权后提供，XX不对其拥有任何控制权。\n地震预警信息仅作为您评估安全风险和做出安全决策的参考。地震预警只能提供几秒到几十秒的预警时间，收到预警时，您需根据预警时间和到达安全地点所需时间选择合理的避险措施。没有收到预警但感受到地震时仍需要避险。您基于地震预警服务做出任何行为导致的风险和后果均由您自行承担。\n由于地震预警盲区、网络连接不稳定、第三方设备故障以及其他各种不可抗力原因导致您未能实时收到地震预警信息，由此遭受的一切损失，XX不承担任何责任。",
             "attr":{
                 "priority":"translate"
             }
@@ -883,7 +883,7 @@
         },
         {
             "name":"importantDialogContent_2",
-            "value":"本服务需要联网、使用位置权限。本服务为您提供地震预警通知，地震发生时，华为地震预警服务器根据行政区域信息、设备信息，给此次地震影响范围内的用户推送地震预警通知以及求助入口，详细介绍和支持预警地区的说明请%s。",
+            "value":"本服务需要联网、使用位置权限。本服务为您提供地震预警通知，地震发生时，XX地震预警服务器根据行政区域信息、设备信息，给此次地震影响范围内的用户推送地震预警通知以及求助入口，详细介绍和支持预警地区的说明请%s。",
             "attr":{
                 "priority":"translate"
             }
@@ -1380,28 +1380,28 @@
         },
         {
             "name":"aml_short_notification",
-            "value":"<body><span style='subtitle'>本服务需联网，调用位置权限，开启定位开关，读取并传送用户本机号码、位置信息、IMEI，以提供紧急救援相关服务。打开开关，表示您同意上述内容。个人信息处理详情，请参阅</span><span style='privacyStatement'>关于华为紧急位置服务与隐私的声明</span><span style='subtitle'>、</span><span style='permission'>权限使用说明</span><span style='subtitle'>。</span></body>",
+            "value":"<body><span style='subtitle'>本服务需联网，调用位置权限，开启定位开关，读取并传送用户本机号码、位置信息、IMEI，以提供紧急救援相关服务。打开开关，表示您同意上述内容。个人信息处理详情，请参阅</span><span style='privacyStatement'>关于XX紧急位置服务与隐私的声明</span><span style='subtitle'>、</span><span style='permission'>权限使用说明</span><span style='subtitle'>。</span></body>",
             "attr":{
                 "priority":"translate"
             }
         },
         {
             "name":"aml_switch_summary",
-            "value":"在海外地区，如您所在的地区支持华为紧急位置服务，当您拨打紧急电话号码或发送紧急短信时，会将您的位置信息发送给急救人员。",
+            "value":"在海外地区，如您所在的地区支持XX紧急位置服务，当您拨打紧急电话号码或发送紧急短信时，会将您的位置信息发送给急救人员。",
             "attr":{
                 "priority":"translate"
             }
         },
         {
             "name":"aml_switch_title",
-            "value":"华为紧急位置服务",
+            "value":"XX紧急位置服务",
             "attr":{
                 "priority":"translate"
             }
         },
         {
             "name":"aml_permission_dialog_title",
-            "value":"“华为紧急位置服务”权限使用说明",
+            "value":"“XX紧急位置服务”权限使用说明",
             "attr":{
                 "priority":"translate"
             }
@@ -1555,14 +1555,14 @@
         },
         {
             "name":"car_accident_sos_message",
-            "value":"【车祸 SOS 求助！】\n我的华为手机检测到车祸，需要向您求助。您是我的紧急联系人，因此会收到此信息。我现在的位置是%s。",
+            "value":"【车祸 SOS 求助！】\n我的XX手机检测到车祸，需要向您求助。您是我的紧急联系人，因此会收到此信息。我现在的位置是%s。",
             "attr":{
                 "priority":"translate"
             }
         },
         {
             "name":"car_accident_sos_message_without_location",
-            "value":"【车祸 SOS 求助！】\n我的华为手机检测到车祸，需要向您求助。您是我的紧急联系人，因此会收到此信息。",
+            "value":"【车祸 SOS 求助！】\n我的XX手机检测到车祸，需要向您求助。您是我的紧急联系人，因此会收到此信息。",
             "attr":{
                 "priority":"translate"
             }
@@ -1611,7 +1611,7 @@
         },
         {
             "name":"car_accident_detection_disclaimer_content_three",
-            "value":"因传感器检测、网络连接、设备状态、内容遗漏或误解等因素导致的损失，华为不承担责任。",
+            "value":"因传感器检测、网络连接、设备状态、内容遗漏或误解等因素导致的损失，XX不承担责任。",
             "attr":{
                 "priority":"translate"
             }
@@ -1653,14 +1653,14 @@
         },
         {
             "name":"fall_down_message",
-            "value":"【跌倒 SOS 求助！】\n我的华为手机检测到跌倒，需要向您求助。您是我的紧急联系人，因此会收到此信息。我现在的位置是%s。",
+            "value":"【跌倒 SOS 求助！】\n我的XX手机检测到跌倒，需要向您求助。您是我的紧急联系人，因此会收到此信息。我现在的位置是%s。",
             "attr":{
                 "priority":"translate"
             }
         },
         {
             "name":"fall_down_message_without_location",
-            "value":"【跌倒 SOS 求助！】\n我的华为手机检测到跌倒，需要向您求助。您是我的紧急联系人，因此会收到此信息。",
+            "value":"【跌倒 SOS 求助！】\n我的XX手机检测到跌倒，需要向您求助。您是我的紧急联系人，因此会收到此信息。",
             "attr":{
                 "priority":"translate"
             }
@@ -1709,7 +1709,7 @@
         },
         {
             "name":"fall_down_detection_disclaimer_content_three",
-            "value":"因传感器检测、网络连接、设备状态、内容遗漏或误解等因素导致的损失，华为不承担责任。",
+            "value":"因传感器检测、网络连接、设备状态、内容遗漏或误解等因素导致的损失，XX不承担责任。",
             "attr":{
                 "priority":"translate"
             }
@@ -2597,7 +2597,7 @@
         },
         {
             "name":"emc_rescue_disclaimer_content_part_1",
-            "value":"无网应急通信功能所搜索的救援信号，由消防队等专业救援队伍使用专用设备发送，以及救援队伍是否前往您所处的受灾区域进行救援，华为不对其拥有任何控制权。\n",
+            "value":"无网应急通信功能所搜索的救援信号，由消防队等专业救援队伍使用专用设备发送，以及救援队伍是否前往您所处的受灾区域进行救援，XX不对其拥有任何控制权。\n",
             "attr":{
                 "priority":"translate"
             }
@@ -2611,7 +2611,7 @@
         },
         {
             "name":"emc_rescue_disclaimer_content_part_3",
-            "value":"由于地形、建筑物、天气以及其他各种不可抗力原因导致您的设备未搜索到救援信号或者您未被实施救援，由此遭受的一切损失，华为不承担任何责任。",
+            "value":"由于地形、建筑物、天气以及其他各种不可抗力原因导致您的设备未搜索到救援信号或者您未被实施救援，由此遭受的一切损失，XX不承担任何责任。",
             "attr":{
                 "priority":"translate"
             }

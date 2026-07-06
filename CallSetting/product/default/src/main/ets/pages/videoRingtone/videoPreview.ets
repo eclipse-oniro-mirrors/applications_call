@@ -546,7 +546,7 @@ export default struct videoPreview {
           Column() {
             Stack() {
               Button()
-                .backgroundColor($r('sys.color.confirm'))
+                .backgroundColor($r('app.color.answer_button_color'))
                 .width(64)
                 .height(64)
                 .borderRadius(32)
