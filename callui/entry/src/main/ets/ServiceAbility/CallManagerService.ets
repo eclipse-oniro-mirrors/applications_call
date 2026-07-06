@@ -864,6 +864,10 @@ export default class CallManagerService {
       }
       ReportUtil.getInstance().reportCallInActive(callData, oldState, newState);
       this.handleCallVibration(callData, oldState, newState);
+    } else if (newState === CallStateConst.CALL_STATUS_INCOMING ||
+      newState === CallStateConst.CALL_STATUS_WAITING) {
+      // 首次上报来电时 callList 尚无该路通话，需单独触发振动
+      this.handleCallVibration(callData, oldState, newState);
     }
     if (this.bannerNotificationManager?.isHeadUpEnabled(CallUtils.isVoipCall(callData)) && this.callData &&
       this.callData.callId === callData.callId && !shouldShowVideoRing(this.callData) &&
@@ -1023,6 +1027,24 @@ export default class CallManagerService {
   handleCallVibration(callData: DefaultCallData, oldState: number, newState: number) {
     if (callData.callType === CallStateConst.TYPE_VOIP) {
       return;
+    }
+    const isIncomingRingState = (state: number): boolean =>
+      state === CallStateConst.CALL_STATUS_INCOMING || state === CallStateConst.CALL_STATUS_WAITING;
+    const wasIncoming = isIncomingRingState(oldState);
+    const isIncoming = isIncomingRingState(newState);
+    if (isIncoming && !wasIncoming) {
+      VibrationUtils.getInstance().getRingerMode((value: audio.AudioRingMode) => {
+        if (value === audio.AudioRingMode.RINGER_MODE_VIBRATE ||
+          value === audio.AudioRingMode.RINGER_MODE_NORMAL) {
+          VibrationUtils.getInstance().startIncomingRingVibration();
+        }
+      });
+    } else if (wasIncoming && !isIncoming) {
+      const hasOtherIncoming = CallDataManager.getInstance().callList.some((call: DefaultCallData) =>
+        call.callId !== callData.callId && isIncomingRingState(call.callState));
+      if (!hasOtherIncoming) {
+        VibrationUtils.getInstance().stopIncomingRingVibration();
+      }
     }
     let newStateFlag: boolean = newState === CallStateConst.CALL_STATUS_DISCONNECTED ||
       newState === CallStateConst.CALL_STATUS_DISCONNECTING;

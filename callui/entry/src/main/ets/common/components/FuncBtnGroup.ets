@@ -91,7 +91,7 @@ export default struct FuncBtnGroup {
   @State btnList: Array<BtnStruct> = [];
   @StorageLink('isMute') @Watch('updateMuteState') isMute: boolean = false;
   @StorageProp('curBp') curBp: string = '';
-  @StorageLink('recorderStatus') @Watch('updateRecordBtnText') recorderStatus: string = RECORDER_STOP_STATUS;
+  @StorageLink('recorderStatus') recorderStatus: string = RECORDER_STOP_STATUS;
   private mCallServiceProxy?: CallServiceProxy;
   private mClone?: Clone;
   @StorageLink('onPageShow') @Watch('onPageShow') isOnPageShow: boolean = true;
@@ -157,7 +157,6 @@ export default struct FuncBtnGroup {
     callButtons.allButtonsList.forEach(v => v.iconText = textMap[v.type as string]);
     this.updateBtnList();
     this.updateMuteState(false);
-    this.updateRecordBtnText();
   }
 
   aboutToDisappear(): void {
@@ -240,8 +239,6 @@ export default struct FuncBtnGroup {
     let isSinkDistributeCall = AppStorage.get<boolean>('isDistributeSink') ?? false;
     let isSourceDistributeCall = AppStorage.get<boolean>('isDistributeSource') ?? false;
     let hasOutgoingCall = isOutgoingCall(this.callState);
-    let recorderStatus: string = AppStorage.get<string>('recorderStatus') ?? '';
-    let isRecordingRecordingActive = recorderStatus === RECORDER_START_STATUS;
     let isCsCall = this.callData.callType === CallTypeConst.CALL_TYPE_CS;
     let isSatelliteCall = this.callData.callType === CallStateConst.TYPE_SATELLITE;
     let isInOobe = AppStorage.get<boolean>('isInOobe') as boolean;
@@ -249,8 +246,8 @@ export default struct FuncBtnGroup {
 
     switch (btn.type) {
       case 'record':
-        btn.isDisable = this.retRecordingStoped(isForegroundCallActive, recorderStatus, isSinkDistributeCall);
-        btn.isActive = isRecordingRecordingActive;
+        btn.isDisable = true;
+        btn.isActive = false;
         break;
       case 'keep':
         btn.isDisable = isSatelliteCall || (!isForegroundCallActive && !isForegroundCallHolding);
@@ -671,11 +668,11 @@ export default struct FuncBtnGroup {
     if (this.callData.conferenceState) {
       this.mCallServiceProxy?.getMainCallId(this.callData.callId, (mainId: number) => {
         !awaitIsActive ? this.mCallServiceProxy?.holdCall(mainId) :
-        this.mCallServiceProxy?.unHoldCall(mainId);
+          this.mCallServiceProxy?.unHoldCall(mainId);
       });
     } else {
       !awaitIsActive ? this.mCallServiceProxy?.holdCall(this.callData.callId) :
-      this.mCallServiceProxy?.unHoldCall(this.callData.callId);
+        this.mCallServiceProxy?.unHoldCall(this.callData.callId);
     }
     ReportUtil.getInstance().reportCallInterfaceClickBtn('wait', !awaitIsActive);
   }
@@ -777,7 +774,7 @@ export default struct FuncBtnGroup {
         .opacity(1)
         .columnsGap(this.getColumnsGap())
         .rowsGap(this.isNewFoldPhoneInnerFullScreen || this.newFoldSplitPortraitScreenType > SplitScreenType.DEFAULT ?
-        $r('app.float.new_form_foldphone_func_btn_rows_gap') : this.rowsGap())
+          $r('app.float.new_form_foldphone_func_btn_rows_gap') : this.rowsGap())
         .width(this.isApplyNewStyle ? (this.appBtnStyle.btnWidth * 3 + this.btnLeftGap * 2) : 'auto')
         .height(this.isApplyNewStyle ? this.funcBtnStyle.funcBtnGroupHeight :
           (this.isNewFoldPhoneInnerFullScreen || this.newFoldSplitPortraitScreenType > SplitScreenType.DEFAULT ? 191 :

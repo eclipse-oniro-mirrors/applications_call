@@ -87,6 +87,11 @@ export class TrafficDisplayViewModel {
       };
       LogUtil.info(TAG, `fetch traffic display status: ${simId}`);
       SettingsDataService.getInstance().querySettingsInfo(actionData, (res: resType) => {
+        if (res?.code !== ResultCode.SUCCESS) {
+          LogUtil.warn(TAG, `query traffic display settings failed, code: ${res?.code}`);
+          this.trafficDisplayStatus = TrafficDispalyStatus.CLOSE;
+          return;
+        }
         this.handleTrafficDisplayDBData(res.abilityResult);
       }, this.context);
     } catch (e) {
@@ -141,7 +146,10 @@ export class TrafficDisplayViewModel {
     SettingsDataService.getInstance().insertOrUpdate(actionData, valueBucket, (res: resType) => {
       if (res?.code === ResultCode.FAILURE) {
         LogUtil.error(TAG, 'save show traffic value error');
+        this.trafficDisplayStatus = TrafficDispalyStatus.CLOSE;
+        return;
       }
+      this.trafficDisplayStatus = isOn ? TrafficDispalyStatus.OPEN : TrafficDispalyStatus.CLOSE;
     }, this.context);
     this.reportTrafficDisplaySwitchEvent(isOn);
   }
@@ -286,16 +294,22 @@ export class TrafficDisplayViewModel {
       return;
     }
 
+    const expectedKey = fetchFullKeyWord(this.currentSimId, QueryName.show_traffic);
+    let matched = false;
     abilityResult.forEach((resultObj) => {
       if (!resultObj.KEYWORD) {
-        this.trafficDisplayStatus = TrafficDispalyStatus.CLOSE;
-        LogUtil.error(TAG, 'query traffic display failed');
+        LogUtil.error(TAG, 'query traffic display row missing keyword');
         return;
       }
       LogUtil.info(TAG, `query traffic display key: ${resultObj.KEYWORD}, value: ${resultObj.VALUE}`);
-      if (resultObj.KEYWORD === fetchFullKeyWord(this.currentSimId, QueryName.show_traffic)) {
+      if (resultObj.KEYWORD === expectedKey) {
+        matched = true;
         this.trafficDisplayStatus = resultObj.VALUE === '1' ? TrafficDispalyStatus.OPEN : TrafficDispalyStatus.CLOSE;
       }
-    })
+    });
+    if (!matched) {
+      LogUtil.warn(TAG, `query traffic display no row for key: ${expectedKey}`);
+      this.trafficDisplayStatus = TrafficDispalyStatus.CLOSE;
+    }
   }
 }

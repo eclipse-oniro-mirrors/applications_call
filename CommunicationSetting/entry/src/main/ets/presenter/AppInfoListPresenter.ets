@@ -217,11 +217,23 @@ export default class AppInfoListPresenter {
   async getAllAppTraffics(networkType: number = 0, slotId: number = 0, callBack?: Function) {
     let simId = 0;
     LogUtil.info(TAG, 'getAllAppTraffics start')
+    const emptyResult: AllAppInfoList = {
+      slotId: slotId,
+      appList: [],
+      sysServiceList: new Map<number, number>(),
+      uninstalledAppsFlows: 0
+    };
     await sim.getSimAccountInfo(slotId).then(accountInfo => {
       simId = accountInfo.simId;
     }).catch((err: BusinessError) => {
       LogUtil.error(TAG, 'slot id : ' + slotId + ` getSimAccountInfo failed, promise: err->${JSON.stringify(err)}`);
     });
+    if (simId === 0) {
+      if (callBack) {
+        callBack(emptyResult);
+      }
+      return;
+    }
     const now = new Date();
     const firstDayOfMonth = new Date(now.getFullYear(), now.getMonth(), 1);
     let network: statistics.NetworkInfo = {
@@ -243,6 +255,9 @@ export default class AppInfoListPresenter {
       })
       .catch((err: Error) => {
         LogUtil.error(TAG, `get traffic stats by network failed, error message: ${err?.message}`);
+        if (callBack) {
+          callBack(emptyResult);
+        }
       });
   }
 

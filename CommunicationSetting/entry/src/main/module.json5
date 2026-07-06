@@ -80,6 +80,9 @@
         "reason": "$string:reason_manage_settings",
       },
       {
+        "name": "ohos.permission.MANAGE_SECURE_SETTINGS"
+      },
+      {
         "name": "ohos.permission.GET_NETWORK_INFO",
         "reason": "$string:GET_NETWORK_INFO"
       },
@@ -105,7 +108,10 @@
             "value": "singleton"
           }
         ],
-        "permissions": ["ohos.permission.GET_INSTALLED_BUNDLE_LIST"]
+        "permissions": [
+          "ohos.permission.GET_INSTALLED_BUNDLE_LIST",
+          "ohos.permission.MANAGE_SECURE_SETTINGS"
+        ]
       },
       {
         "name": "ConnectionExtAbility",

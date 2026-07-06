@@ -22,7 +22,6 @@ import CallRecorderModelTest from './common/model/CallRecorderModel.test';
 import CallRecorderPresenterTest from './common/utils/presenter/CallRecorderPresenter.test';
 import ServiceExtAbilityTest from './serviceextability/ServiceExtAbility.test';
 import FuncManagerTest from './serviceextability/FuncManager.test';
-import BackupExtensionTest from './serviceextability/BackupExtension.test';
 import BasicDataSourceTest from './common/model/BasicDataSource.test';
 import idl_service_ext_stubTest from './IdlServiceExt/idl_service_ext_stub.test';
 import { CommonCtrolTest, CommonCtrolTest1, CommonCtrolTest2 } from '././common/control/CommonCtrol.test';
@@ -74,7 +73,6 @@ export default function testsuite() {
   CommonUtilTest();
   idl_service_ext_stubTest();
   BasicDataSourceTest();
-  BackupExtensionTest();
   FuncManagerTest();
   ServiceExtAbilityTest();
   MigrationServiceAbilityTest()

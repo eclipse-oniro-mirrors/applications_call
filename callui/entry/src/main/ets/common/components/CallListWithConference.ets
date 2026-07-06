@@ -296,7 +296,7 @@ export default struct CallListWithConference {
                       .width(40)
                       .height(40)
                       .borderRadius(40)
-                      .backgroundColor($r('sys.color.confirm'))
+                      .backgroundColor($r('app.color.answer_button_color'))
                       .alignSelf(ItemAlign.Center)
                       .onClick(() => this.onAccept(item.callId, true))
                       .margin({ start: LengthMetrics.vp(16) })
