@@ -973,7 +973,7 @@ export default struct BottomBtn {
       if (centerPoint !== undefined) {
         this.translateX = centerPoint;
       }
-      this.bagroundColor = $r('sys.color.confirm');
+      this.bagroundColor = $r('app.color.answer_button_color');
       this.iconOpacity = 1;
       this.startTranslateAnimation();
       this.startAlpahAnimation();

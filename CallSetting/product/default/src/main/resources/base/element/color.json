@@ -71,6 +71,10 @@
     {
       "name": "normal_call_bg_color",
       "value": "#66000000"
+    },
+    {
+      "name": "answer_button_color",
+      "value": "#64BB5C"
     }
   ]
 }
