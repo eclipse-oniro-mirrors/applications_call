@@ -395,8 +395,6 @@ export default struct NetworkOperators {
       LogUtils.i(TAG, 'getNetworkSearchInformation start, slotId: ' + this.slotId);
       let promise = radio.getNetworkSearchInformation(this.slotId);
       promise.then(data => {
-        LogUtils.i(TAG, 'getNetworkSearchInformation success, searchResult length: ' + data.networkSearchResult.length
-          + ', response data: ' + JSON.stringify(data));
         if (needFilterEflInfo()) {
           data.networkSearchResult = data.networkSearchResult.filter((item) => item.radioTech !== '');
           LogUtils.i(TAG, 'getNetworkSearchInformation after filter, searchResult: ' + JSON.stringify(data.networkSearchResult));
