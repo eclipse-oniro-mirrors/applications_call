@@ -255,7 +255,7 @@ export default class BottomViewModel extends BaseViewModel<BottomViewModel> {
       return;
     }
     if (itemDeviceType === DeviceTypeConst.DEVICE_SPEAKER) {
-      if (this.isHaveMultiDevice || callType === CallStateConst.TYPE_VOIP) {
+      if (this.isHaveMultiDevice) {
         call.sendCallUiEvent(callId, Constants.EVENT_SPEAKER_OFF).then(() => {
           LogUtils.i(TAG, 'sendCallUiEvent EVENT_SPEAKER_OFF success');
         }).catch((err: BusinessError) => {
@@ -266,14 +266,6 @@ export default class BottomViewModel extends BaseViewModel<BottomViewModel> {
         itemDeviceType = this.currentHeadset;
       }
     } else {
-      if (callType === CallStateConst.TYPE_VOIP) {
-        call.sendCallUiEvent(callId, Constants.EVENT_SPEAKER_ON).then(() => {
-          LogUtils.i(TAG, 'sendCallUiEvent EVENT_SPEAKER_ON success');
-        }).catch((err: BusinessError) => {
-          LogUtils.e(TAG, 'sendCallUiEvent EVENT_SPEAKER_ON failed, err: ' + JSON.stringify(err));
-        });
-        return;
-      }
       itemDeviceType = DeviceTypeConst.DEVICE_SPEAKER;
       AppStorage.setOrCreate('isAutoOpenSpeaker', false);
     }

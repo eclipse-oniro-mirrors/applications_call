@@ -128,15 +128,15 @@ struct BuilderBridge {
 // ---------------------------------------------------------
 
 class MiniTitleOptions {
-  title: ResourceStr = '';
-  backgroundColor: ResourceColor = Color.Transparent;
+  public title: ResourceStr = '';
+  public backgroundColor: ResourceColor = Color.Transparent;
 }
 
 class SearchTitleParamOptions {
-  backgroundColor: ResourceColor = Color.Transparent;
-  backComponentId?: string;
-  stackBuilder?: CustomBuilder;
-  backIconAction?: () => void;
+  public backgroundColor: ResourceColor = Color.Transparent;
+  public backComponentId?: string;
+  public stackBuilder?: CustomBuilder;
+  public backIconAction?: () => void;
 }
 
 @Builder

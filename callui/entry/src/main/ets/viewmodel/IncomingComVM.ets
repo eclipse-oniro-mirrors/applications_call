@@ -83,8 +83,11 @@ export default class IncomingComVM extends BaseViewModel<IncomingComVM> {
     // If we are entering into here, the callData should be the primary incoming call!
     this.primaryIncomingCall = callData;
     this.callList = callList;
-    this.btnList =
-       IncomingModel.getInComingBtnListByVideoState(isVideoCall(callData.videoState), callData.isInvalidNumber, callData.isVoiceAnswerSupported as boolean);
+    this.btnList = IncomingModel.getInComingBtnListByVideoState(
+      isVideoCall(callData.videoState),
+      callData.isInvalidNumber,
+      callData.isVoiceAnswerSupported as boolean
+    );
   }
 
   /**

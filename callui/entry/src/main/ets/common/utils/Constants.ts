@@ -109,7 +109,6 @@ export const VOICE_CONTROL_SWITCH = 'voiceControlSwitch';
 export const VOICE_BROADCAST_SWITCH = 'voiceBroadcastSwitch';
 
 export const EVENT_SPEAKER_OFF = 'EVENT_SPEAKER_OFF';
-export const EVENT_SPEAKER_ON = 'EVENT_SPEAKER_ON';
 export const EVENT_REQUEST_FOCUS_FOR_ACCESSIBILITY = 'requestFocusForAccessibility';
 export const EVENT_TRIGGER_ACTION = 'common';
 
