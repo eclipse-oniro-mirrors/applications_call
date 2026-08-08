@@ -24,7 +24,6 @@ import DotUtil from '../util/Dot/DotUtils';
 import { data } from '@kit.TelephonyKit';
 import TrafficController from '../Controller/TrafficController';
 // import { HdsNavDestination, HdsNavDestinationAttribute } from '@kit.UIDesignKit';
-import { TitleParams } from '../view/TitleParams';
 
 const TAG: string = 'MoreSettingsPage';
 
@@ -74,8 +73,7 @@ export struct MoreSettingsPageComponent {
         .height('100%')
       }
     }
-    .title(TitleParams.MiniTitleParams($r('app.string.more_data_usage_settings_title'),
-      $r('sys.color.ohos_id_color_sub_background')))
+    .title(this.NavTitleBuilder)
     .backgroundColor($r('sys.color.ohos_id_color_sub_background'))
     .onBackPressed(() => {
       if (this.storage?.get<SearchInfo>(Keys.SEARCH_INFO)?.isMoreSettings()) {
@@ -88,6 +86,25 @@ export struct MoreSettingsPageComponent {
       }
       return true
     })
+  }
+
+  @Builder
+  NavTitleBuilder() {
+    Row() {
+      Text($r('app.string.more_data_usage_settings_title'))
+        .fontWeight(FontWeight.Bold)
+        .fontSize(20)
+        .fontColor($r('sys.color.ohos_id_color_text_primary'))
+        .maxLines(1)
+        .textOverflow({ overflow: TextOverflow.Ellipsis })
+    }
+    .width('100%')
+    .height(56)
+    .padding({
+      left: isTablet() ? 24 : 16,
+      right: isTablet() ? 24 : 16
+    })
+    .alignItems(VerticalAlign.Center)
   }
 
   @Builder

@@ -99,6 +99,7 @@ import bundleManager from '@ohos.bundle.bundleManager';
 import { NumberMarkManager } from '../model/NumberMarkService';
 import { ProximityUtils } from '../common/utils/ProximityUtils';
 import { aVPlayerStatePlaying, VideoController } from '../controller/VideoController';
+import { RingtoneController } from '../controller/RingtoneController';
 import { DisplayMode } from '../common/utils/ReportUtils/DisplayMode';
 // import { collaborationServiceManager } from '@kit.ServiceCollaborationKit';
 import dataShare from '@ohos.data.dataShare';
@@ -435,7 +436,7 @@ export default class CallManagerService {
       ReportUtil.getInstance().reportNotifyBarHangUp(CallUtils.getUECallType(callData));
       LogUtils.i(TAG, 'onAction hangup call');
     } else if (actionType === CallStateConst.TEXT_IN_CALL_MUTE) {
-      if (isVoipCall && CallDataManager.getInstance().getForegroundLiveCall()) {
+      if (isVoipCall && CallDataManager.getInstance().getForegroundCarrierLiveCall()) {
         LogUtils.i(TAG, 'there is live carrier call, ignore voip mute request');
         return;
       }
@@ -446,7 +447,7 @@ export default class CallManagerService {
     } else if (actionType === CallStateConst.TEXT_IN_CALL_UN_MUTE) {
       this.handleUnmuteAction(callData);
     } else if (actionType === CallStateConst.TEXT_IN_CALL_AUDIO_SPEAKER) {
-      if (isVoipCall && CallDataManager.getInstance().getForegroundLiveCall()) {
+      if (isVoipCall && CallDataManager.getInstance().getForegroundCarrierLiveCall()) {
         LogUtils.i(TAG, 'there is live carrier call, ignore voip speaker switch request');
         return;
       }
@@ -471,7 +472,7 @@ export default class CallManagerService {
   private handleUnmuteActionOfVoipCall(callData: DefaultCallData) {
     const hasMicPermission = callData.voipCallAttribute?.hasMicPermission;
     LogUtils.i(TAG, `hasMicPermission: ${hasMicPermission}`);
-    if (CallDataManager.getInstance().getForegroundLiveCall()) {
+    if (CallDataManager.getInstance().getForegroundCarrierLiveCall()) {
       LogUtils.i(TAG, 'there is live carrier call, ignore voip unmute request');
       return;
     }
@@ -785,8 +786,32 @@ export default class CallManagerService {
   }
 
   private async handleStartAbilityCase(callData: DefaultCallData) {
-    if (callData.callType === CallStateConst.TYPE_VOIP) {
+    // showBannerForIncomingCall=false：不发实况/横幅，但仍需拉起 Ability（三方或 CallUI）
+    if (callData.callType === CallStateConst.TYPE_VOIP &&
+      CallUtils.shouldSkipVoipIncomingLiveNotification(callData)) {
+      LogUtils.i(TAG, 'voip showBannerForIncomingCall is false, startAbility without banner/live');
+      BannerNotificationManager.enableBannerNotification(false);
+      BannerNotificationManager.getInstance().cancelVoipNotificationByCallId(callData.callId);
+      let call = getCallById(CallDataManager.getInstance().callList, callData.callId);
+      if (call) {
+        callData = call;
+      }
+      await this.getVisionGlassDisplayId(callData);
+      this.bannerNotificationManager?.setIsStartingAbility(true);
+      this.bannerNotificationManager?.setReady(true);
+      this.startAbility(callData);
       return;
+    }
+    // VoIP 属性完整且允许横幅时，由实况/横幅承接；属性缺失时回退 CallUI
+    if (callData.callType === CallStateConst.TYPE_VOIP && CallUtils.hasValidVoipUiAttribute(callData)) {
+      if (callData.callState === CallStateConst.CALL_STATUS_DIALING) {
+        this.bannerNotificationManager?.setReady(true);
+        this.bannerNotificationManager?.sendBannerNotification(callData, true);
+      }
+      return;
+    }
+    if (callData.callType === CallStateConst.TYPE_VOIP) {
+      LogUtils.w(TAG, 'voip attribute incomplete, fallback to CallUI startBannerOrAbility');
     }
     let call = getCallById(CallDataManager.getInstance().callList, callData.callId);
     if (call) {
@@ -805,8 +830,11 @@ export default class CallManagerService {
       } else {
         this.bannerNotificationManager?.setIsStartingAbility(true);
         this.bannerNotificationManager?.setReady(true);
+        if (callData.callType === CallStateConst.TYPE_VOIP) {
+          this.bannerNotificationManager?.sendBannerNotification(callData, true);
+        }
         // outgoing call first using the full screen dialing
-        this.startAbility();
+        this.startAbility(callData);
       }
       ReportUtil.getInstance().reportDualCallPoint(callData);
     } else {
@@ -872,6 +900,7 @@ export default class CallManagerService {
     if (this.bannerNotificationManager?.isHeadUpEnabled(CallUtils.isVoipCall(callData)) && this.callData &&
       this.callData.callId === callData.callId && !shouldShowVideoRing(this.callData) &&
     shouldShowVideoRing(callData) && VideoController.getInstance().getAvPlayerState() !== aVPlayerStatePlaying) {
+      RingtoneController.getInstance().stopRingtone();
       this.playingVideoRing(callData);
     }
 
@@ -1025,18 +1054,36 @@ export default class CallManagerService {
   }
 
   handleCallVibration(callData: DefaultCallData, oldState: number, newState: number) {
-    if (callData.callType === CallStateConst.TYPE_VOIP) {
-      return;
-    }
     const isIncomingRingState = (state: number): boolean =>
       state === CallStateConst.CALL_STATUS_INCOMING || state === CallStateConst.CALL_STATUS_WAITING;
     const wasIncoming = isIncomingRingState(oldState);
     const isIncoming = isIncomingRingState(newState);
+    const isVoip: boolean = callData.callType === CallStateConst.TYPE_VOIP;
+    // 自管铃 VoIP（如微信）：CallUI 不播系统铃，仅在离开振铃态时停铃/静音，避免双铃声与行为回归
+    if (isVoip && !CallUtils.shouldCallUiPlayVoipRingtone(callData)) {
+      if (wasIncoming && !isIncoming) {
+        const hasOtherIncoming = CallDataManager.getInstance().callList.some((call: DefaultCallData) =>
+          call.callId !== callData.callId && isIncomingRingState(call.callState));
+        if (!hasOtherIncoming) {
+          CallServiceProxy.getInstance().muteRinger();
+          RingtoneController.getInstance().stopRingtone();
+        }
+      }
+      return;
+    }
     if (isIncoming && !wasIncoming) {
+      // 免打扰/睡眠模式：只保留铃声，不触发来电振动
+      const isDndOrSleep = CallUtils.isDoNotDisturb(callData);
       VibrationUtils.getInstance().getRingerMode((value: audio.AudioRingMode) => {
-        if (value === audio.AudioRingMode.RINGER_MODE_VIBRATE ||
-          value === audio.AudioRingMode.RINGER_MODE_NORMAL) {
+        if (!isDndOrSleep && (value === audio.AudioRingMode.RINGER_MODE_VIBRATE ||
+          value === audio.AudioRingMode.RINGER_MODE_NORMAL)) {
           VibrationUtils.getInstance().startIncomingRingVibration();
+        } else if (isDndOrSleep) {
+          LogUtils.i(TAG, 'handleCallVibration: DND/sleep incoming, skip vibration');
+        }
+        if (value === audio.AudioRingMode.RINGER_MODE_NORMAL && !shouldShowVideoRing(callData) &&
+          !isDndOrSleep) {
+          RingtoneController.getInstance().playDefaultRingtone(CallUtils.getRingtoneAccountId(callData));
         }
       });
     } else if (wasIncoming && !isIncoming) {
@@ -1044,6 +1091,11 @@ export default class CallManagerService {
         call.callId !== callData.callId && isIncomingRingState(call.callState));
       if (!hasOtherIncoming) {
         VibrationUtils.getInstance().stopIncomingRingVibration();
+        RingtoneController.getInstance().stopRingtone();
+        // VoIP 仍通知底层静音，兼容应用侧/系统应用铃静音路径
+        if (isVoip) {
+          CallServiceProxy.getInstance().muteRinger();
+        }
       }
     }
     let newStateFlag: boolean = newState === CallStateConst.CALL_STATUS_DISCONNECTED ||
@@ -1230,7 +1282,7 @@ export default class CallManagerService {
       }
       return;
     }
-    if (this.currentVoipCallId == undefined || callData?.voipCallAttribute?.extensionId === '') {
+    if (this.currentVoipCallId == undefined || CallUtils.isMainProcessMode(callData?.voipCallAttribute)) {
       this.startUIAbility(want, callData);
     } else {
       AppStorage.setOrCreate('callData', callData);
@@ -1386,19 +1438,29 @@ export default class CallManagerService {
     LogUtils.i(TAG, 'generateWantAgent in voip call ');
 
     if (callData?.voipCallAttribute?.extensionId == '') {
-      want.bundleName = callData?.voipCallAttribute?.voipBundleName;
-      want.abilityName = callData?.voipCallAttribute?.abilityName;
+      const voipBundleName = callData?.voipCallAttribute?.voipBundleName;
+      const abilityName = callData?.voipCallAttribute?.abilityName;
+      // 属性不完整时保留 CallUI Ability，避免 startAbility 使用空 bundle/ability
+      if (!voipBundleName || !abilityName) {
+        LogUtils.w(TAG, 'voip attribute incomplete, keep CallUI want');
+        return want;
+      }
+      want.bundleName = voipBundleName;
+      want.abilityName = abilityName;
       if (want.parameters !== undefined) {
         want.parameters.VoIPCallId = callData?.voipCallAttribute?.voipCallId;
         want.parameters.isFromCallKit = true;
         want.parameters['ohos.extra.param.key.appCloneIndex'] = callData?.voipCallAttribute?.appIndex;
       }
-    } else {
+    } else if (CallUtils.isSubProcessMode(callData?.voipCallAttribute)) {
       want.bundleName = Constants.CALL_BUNDLE_NAME;
       want.abilityName = Constants.CALL_ABILITY_NAME_VOIP;
       if (want.parameters !== undefined) {
         want.parameters.callData = callData;
       }
+    } else {
+      // extensionId 未下发且属性不完整：保留 CallUI want
+      LogUtils.w(TAG, 'voip attribute incomplete or extensionId unset, keep CallUI want');
     }
 
     return want;
@@ -1696,6 +1758,7 @@ export default class CallManagerService {
         } else if ((res?.eventId as number) === Constants.EVENT_MUTE_RING && isIncomingCall(callData?.callState)) {
           callData.isRingSilenced = true;
           VideoController.getInstance()?.stopRinging();
+          RingtoneController.getInstance().stopRingtone();
         } else if ((res?.eventId as number) === Constants.EVENT_LOCAL_ALERTING) {
           AppStorage.setOrCreate('isRbtError', true);
         } else {

@@ -364,6 +364,20 @@ export function getForegroundLiveCall(callList: Array<DefaultCallData>): Default
   return undefined;
 }
 
+/**
+ * Find foreground live carrier call (excludes VoIP).
+ * Used to gate VoIP mute/speaker when a real carrier call is live.
+ */
+export function getForegroundCarrierLiveCall(callList: DefaultCallData[]): DefaultCallData | undefined {
+  const carrierCallList: DefaultCallData[] = [];
+  for (let call of callList) {
+    if (call.callType !== CallStateConst.TYPE_VOIP) {
+      carrierCallList.push(call);
+    }
+  }
+  return getForegroundLiveCall(carrierCallList);
+}
+
 function hasIncomingCall(callList: Array<DefaultCallData>): boolean {
   for (let call of callList) {
     if (isIncomingCall(call.callState)) {

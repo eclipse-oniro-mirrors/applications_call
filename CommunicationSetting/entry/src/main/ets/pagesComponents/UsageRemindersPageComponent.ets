@@ -48,7 +48,6 @@ import { DialogOperationState } from '../util/Dot/DotCommon';
 import SimServiceProxy from '../model/simServiceProxy';
 import { cardInfo, SimCradNameListener as SimCradListener } from '../util/SimCradNameListener';
 // import { HdsNavDestination, HdsNavDestinationAttribute } from '@kit.UIDesignKit';
-import { TitleParams } from '../view/TitleParams';
 import I18n from '@ohos.i18n';
 
 const TAG: string = 'UsageRemindersPage';
@@ -146,7 +145,7 @@ export struct UsageRemindersPageComponent {
       }
       .height('100%')
     }
-    .title(TitleParams.MiniTitleParams(this.setReminderTitle(), $r('sys.color.ohos_id_color_sub_background')))
+    .title(this.NavTitleBuilder)
     .backgroundColor($r('sys.color.ohos_id_color_sub_background'))
     .onBackPressed(() => {
       const popDestinationInfo = this.pageInfos.pop() // 弹出路由栈栈顶元素
@@ -162,6 +161,25 @@ export struct UsageRemindersPageComponent {
       }
       this.getUsageRemindersValues();
     })
+  }
+
+  @Builder
+  NavTitleBuilder() {
+    Row() {
+      Text(this.setReminderTitle())
+        .fontWeight(FontWeight.Bold)
+        .fontSize(20)
+        .fontColor($r('sys.color.ohos_id_color_text_primary'))
+        .maxLines(1)
+        .textOverflow({ overflow: TextOverflow.Ellipsis })
+    }
+    .width('100%')
+    .height(56)
+    .padding({
+      left: isTablet() ? 24 : 16,
+      right: isTablet() ? 24 : 16
+    })
+    .alignItems(VerticalAlign.Center)
   }
 
   @Builder

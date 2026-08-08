@@ -304,6 +304,11 @@ export default class BannerNotificationManager {
   private async sendVoipCallNotification(callData: DefaultCallData, index: number) {
     const callState: number = callData.callState;
     let isConferenceCall = callData.voipCallAttribute?.isConferenceCall;
+    if (CallUtils.shouldSkipVoipIncomingLiveNotification(callData)) {
+      LogUtils.i(TAG, 'cancelNotification by showBannerForIncomingCall false, callId:' + callData.callId);
+      this.cancelVoipNotificationByCallId(callData.callId);
+      return;
+    }
     let isStartBanner: boolean = this.isNeedStartBannerForVoip(callState);
     if (!isStartBanner) {
       LogUtils.i(TAG, 'cancelNotification by call state callId:' + callData.callId);
@@ -382,8 +387,16 @@ export default class BannerNotificationManager {
     if (CallUtils.isSosWithOutCallUiAbility(callData) === CallUtilsClass.HIDE_CALL_PAGE_WHEN_SOS_CALL) {
       return
     }
+    // showBannerForIncomingCall=false 时不发实况/横幅（含 VoIP 属性不完整走运营商通知分支的场景）
+    if (CallUtils.shouldSkipVoipIncomingLiveNotification(callData)) {
+      LogUtils.i(TAG, 'skip banner/live notification by showBannerForIncomingCall false, callId:' + callData.callId);
+      this.cancelVoipNotificationByCallId(callData.callId);
+      return;
+    }
     this.currentNotificationId = callData.callId;
-    let isVoipCall = callData.callType === CallStateConst.TYPE_VOIP;
+    // VoIP 属性缺失时按普通来电通知路径处理，保证能发出实况/拉起 CallUI
+    let isVoipCall = callData.callType === CallStateConst.TYPE_VOIP &&
+      CallUtils.hasValidVoipUiAttribute(callData);
 
     // carrier call
     if (!isVoipCall) {
@@ -682,7 +695,7 @@ export default class BannerNotificationManager {
   }
 
   private getSpeakerState(callState: Number, isVoipCall: boolean = false) {
-    if (isVoipCall && CallDataManager.getInstance().getForegroundLiveCall()) {
+    if (isVoipCall && CallDataManager.getInstance().getForegroundCarrierLiveCall()) {
       return false;
     }
     let isSpeakerOn: boolean | undefined = undefined;
@@ -1039,17 +1052,21 @@ export default class BannerNotificationManager {
     };
     if (data.callType === CallStateConst.TYPE_VOIP && want.parameters !== undefined) {
       if (data?.voipCallAttribute?.extensionId == '') {
-        want.bundleName = data?.voipCallAttribute?.voipBundleName;
-        want.abilityName = data?.voipCallAttribute?.abilityName;
-        want.parameters.VoIPCallId = data?.voipCallAttribute?.voipCallId;
-        want.parameters.isFromCallKit = true;
-        if (data?.voipCallAttribute?.appIndex == undefined || data?.voipCallAttribute?.appIndex == -1) {
-          let appIdentity = await bundleManager.getAppCloneIdentity(data?.voipCallAttribute?.uid);
-          LogUtils.i(TAG, 'getAppCloneIdentity uid:' + data?.voipCallAttribute?.uid +
-            ',appIndex:' + appIdentity?.appIndex);
-          data.voipCallAttribute.appIndex = appIdentity?.appIndex;
+        if (CallUtils.hasValidVoipUiAttribute(data)) {
+          want.bundleName = data?.voipCallAttribute?.voipBundleName;
+          want.abilityName = data?.voipCallAttribute?.abilityName;
+          want.parameters.VoIPCallId = data?.voipCallAttribute?.voipCallId;
+          want.parameters.isFromCallKit = true;
+          if (data?.voipCallAttribute?.appIndex == undefined || data?.voipCallAttribute?.appIndex == -1) {
+            let appIdentity = await bundleManager.getAppCloneIdentity(data?.voipCallAttribute?.uid);
+            LogUtils.i(TAG, 'getAppCloneIdentity uid:' + data?.voipCallAttribute?.uid +
+              ',appIndex:' + appIdentity?.appIndex);
+            data.voipCallAttribute.appIndex = appIdentity?.appIndex;
+          }
+          want.parameters['ohos.extra.param.key.appCloneIndex'] = data?.voipCallAttribute?.appIndex;
+        } else {
+          LogUtils.w(TAG, 'voip attribute incomplete, keep CallUI want for notification');
         }
-        want.parameters['ohos.extra.param.key.appCloneIndex'] = data?.voipCallAttribute?.appIndex;
       } else {
         want.abilityName = Constants.CALL_ABILITY_NAME_VOIP;
         want.parameters.callData = data;

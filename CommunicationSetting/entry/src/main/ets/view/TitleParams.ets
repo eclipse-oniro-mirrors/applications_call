@@ -15,7 +15,6 @@
 
 // import { HdsNavigationTitleBarOptions } from '@kit.UIDesignKit';
 import { isTablet } from '../util/DeviceUtil';
-import { LengthMetrics } from '@kit.ArkUI';
 
 /**
  * 标题栏通用模版
@@ -125,13 +124,25 @@ struct BuilderBridge {
 }
 
 // ---------------------------------------------------------
-// 2. 全局 Builder
+// 2. 全局 Builder（参数对象 + wrapBuilder，供 CustomBuilder 正确渲染）
 // ---------------------------------------------------------
 
+class MiniTitleOptions {
+  public title: ResourceStr = '';
+  public backgroundColor: ResourceColor = Color.Transparent;
+}
+
+class SearchTitleParamOptions {
+  public backgroundColor: ResourceColor = Color.Transparent;
+  public backComponentId?: string;
+  public stackBuilder?: CustomBuilder;
+  public backIconAction?: () => void;
+}
+
 @Builder
-function DrawMiniTitle(title: ResourceStr, backgroundColor: ResourceColor) {
+function DrawMiniTitle(options: MiniTitleOptions) {
   Row() {
-    Text(title)
+    Text(options.title)
       .fontWeight(FontWeight.Bold)
       .fontSize(20)
       .fontColor($r('sys.color.ohos_id_color_text_primary'))
@@ -144,12 +155,12 @@ function DrawMiniTitle(title: ResourceStr, backgroundColor: ResourceColor) {
     left: isTablet() ? 24 : 16,
     right: isTablet() ? 24 : 16
   })
-  .backgroundColor(backgroundColor)
+  .backgroundColor(options.backgroundColor)
   .alignItems(VerticalAlign.Center)
 }
 
 @Builder
-function DrawSearchTitle(backgroundColor: ResourceColor, backComponentId?: string, stackBuilder?: CustomBuilder, backIconAction?: () => void) {
+function DrawSearchTitle(options: SearchTitleParamOptions) {
   Row() {
     // 返回按钮
     SymbolGlyph($r('sys.symbol.chevron_backward'))
@@ -157,18 +168,18 @@ function DrawSearchTitle(backgroundColor: ResourceColor, backComponentId?: strin
       // 【修复1】SymbolGlyph 的颜色必须是数组
       .fontColor([$r('sys.color.ohos_id_color_primary')])
       .onClick(() => {
-        if (backIconAction) {
-          backIconAction();
+        if (options.backIconAction) {
+          options.backIconAction();
         }
       })
-      .id(backComponentId)
+      .id(options.backComponentId)
       .margin({ right: 16 })
 
     // 搜索组件区域
-    if (stackBuilder) {
+    if (options.stackBuilder) {
       Row() {
         // 【修复2】不能直接调用 stackBuilder()，改用中转组件
-        BuilderBridge({ builder: stackBuilder })
+        BuilderBridge({ builder: options.stackBuilder })
       }
       .layoutWeight(1)
     }
@@ -179,9 +190,12 @@ function DrawSearchTitle(backgroundColor: ResourceColor, backComponentId?: strin
     left: isTablet() ? 24 : 16,
     right: isTablet() ? 24 : 16
   })
-  .backgroundColor(backgroundColor)
+  .backgroundColor(options.backgroundColor)
   .alignItems(VerticalAlign.Center)
 }
+
+const wrappedMiniTitle: WrappedBuilder<[MiniTitleOptions]> = wrapBuilder(DrawMiniTitle);
+const wrappedSearchTitle: WrappedBuilder<[SearchTitleParamOptions]> = wrapBuilder(DrawSearchTitle);
 
 // ---------------------------------------------------------
 // 3. 工具类 (保持对外接口不变)
@@ -190,8 +204,13 @@ function DrawSearchTitle(backgroundColor: ResourceColor, backComponentId?: strin
 export class TitleParams {
 
   public static MiniTitleParams(title: ResourceStr, backgroundColor: ResourceColor): CustomBuilder {
-    return () => {
-      DrawMiniTitle(title, backgroundColor);
+    const options: MiniTitleOptions = {
+      title: title,
+      backgroundColor: backgroundColor
+    };
+    // wrapBuilder 后才能在 CustomBuilder 中正确渲染全局 @Builder
+    return (): void => {
+      wrappedMiniTitle.builder(options);
     };
   }
 
@@ -201,8 +220,14 @@ export class TitleParams {
     stackBuilder?: CustomBuilder,
     backIconAction?: Callback<void, void>
   ): CustomBuilder {
-    return () => {
-      DrawSearchTitle(backgroundColor, backComponentId, stackBuilder, backIconAction);
+    const options: SearchTitleParamOptions = {
+      backgroundColor: backgroundColor,
+      backComponentId: backComponentId,
+      stackBuilder: stackBuilder,
+      backIconAction: backIconAction
+    };
+    return (): void => {
+      wrappedSearchTitle.builder(options);
     };
   }
 }

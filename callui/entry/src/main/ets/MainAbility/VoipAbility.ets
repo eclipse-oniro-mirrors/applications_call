@@ -25,6 +25,7 @@ import CallColumnUtils from '../common/utils/CallColumnUtils';
 import display from '@ohos.display';
 import { DisplayUtil } from '../common/utils/DisplayUtil';
 import { BusinessError } from '@ohos.base';
+import { isTablet } from '../common/utils/DeviceTypeUtils';
 
 const TAG = 'VoipAbility';
 
@@ -33,6 +34,11 @@ export default class VoipAbility extends Ability {
   private mCallColumnUtils: CallColumnUtils = CallColumnUtils.getInstance();
 
   private async setPortraitOrientation(mainWindow: window.Window): Promise<void> {
+    // PAD 跟随桌面方向，避免横屏来电强制竖屏导致挂断后桌面仍为竖屏
+    if (isTablet()) {
+      LogUtils.i(TAG, 'skip setPreferredOrientation PORTRAIT for tablet');
+      return;
+    }
     try {
       await mainWindow.setPreferredOrientation(window.Orientation.PORTRAIT);
       LogUtils.i(TAG, 'setPreferredOrientation PORTRAIT success');

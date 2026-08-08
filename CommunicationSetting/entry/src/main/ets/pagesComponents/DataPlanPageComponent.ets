@@ -47,7 +47,6 @@ import SettingsSearchUtils from '../util/SettingsSearchUtils';
 import { common } from '@kit.AbilityKit';
 import { LIMIT_TRAFFIC_NOSET } from '../util/TrafficPackageUtil';
 // import { HdsNavDestination, HdsNavDestinationAttribute} from '@kit.UIDesignKit';
-import { TitleParams } from '../view/TitleParams';
 
 const TAG: string = 'DataPlanPage';
 
@@ -423,7 +422,7 @@ export struct DataPlanPageComponent {
       .edgeEffect(EdgeEffect.Spring)
       .scrollBar(BarState.Off)
     }
-    .title(TitleParams.MiniTitleParams(this.setDataPlanTitle(), $r('sys.color.ohos_id_color_sub_background')))
+    .title(this.NavTitleBuilder)
     .backgroundColor($r('sys.color.ohos_id_color_sub_background'))
     .onReady((ctx: NavDestinationContext) => {
       let tmp = ctx.pathInfo.param as number;
@@ -439,6 +438,25 @@ export struct DataPlanPageComponent {
       LogUtil.log(TAG, 'pop' + JSON.stringify(popDestinationInfo))
       return true;
     })
+  }
+
+  @Builder
+  NavTitleBuilder() {
+    Row() {
+      Text(this.setDataPlanTitle())
+        .fontWeight(FontWeight.Bold)
+        .fontSize(20)
+        .fontColor($r('sys.color.ohos_id_color_text_primary'))
+        .maxLines(1)
+        .textOverflow({ overflow: TextOverflow.Ellipsis })
+    }
+    .width('100%')
+    .height(56)
+    .padding({
+      left: isTablet() ? 24 : 16,
+      right: isTablet() ? 24 : 16
+    })
+    .alignItems(VerticalAlign.Center)
   }
 
   setDataPlanTitle() {

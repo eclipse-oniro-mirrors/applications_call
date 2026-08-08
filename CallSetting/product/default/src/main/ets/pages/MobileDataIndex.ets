@@ -997,7 +997,7 @@ struct MobileDataIndex {
   build() {
     Navigation(this.pathInfos) {
       EditableTitleBar({
-        title:$r('app.string.mobile_able'),
+        title:$r('app.string.mobile_data'),
         contentMargin:{top:LengthMetrics.px(100)},
         isSaveIconRequired: false,
         onCancel:()=>{

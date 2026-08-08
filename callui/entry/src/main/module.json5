@@ -63,7 +63,7 @@
         "unclearableMission": true,
         "minWindowHeight": 700,
         "minWindowWidth": 320,
-        "orientation": "portrait",
+        "orientation": "follow_desktop",
         "launchType": "singleton",
         "skills": [
           {
@@ -95,7 +95,7 @@
         "unclearableMission": true,
         "minWindowHeight": 700,
         "minWindowWidth": 320,
-        "orientation": "portrait",
+        "orientation": "follow_desktop",
         "launchType": "singleton",
         "skills": [
           {

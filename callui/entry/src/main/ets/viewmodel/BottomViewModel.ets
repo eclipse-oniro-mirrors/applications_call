@@ -35,6 +35,7 @@ import { AudioDevice } from '../model/audio/AudioDeviceType';
 import { removeWindowListener, terminateSelf } from '../model/TerminateManager';
 import { BusinessError } from '@kit.BasicServicesKit';
 import { ProximityUtils } from '../common/utils/ProximityUtils';
+import { RingtoneController } from '../controller/RingtoneController';
 import { AccessibilityUtil } from '../common/utils/AccessiblityUtil';
 import { StringUtil } from '../common/utils/StringUtil';
 
@@ -327,6 +328,8 @@ export default class BottomViewModel extends BaseViewModel<BottomViewModel> {
 
   async hangUpCall(callId: number, callCount: number): Promise<void> {
     CallServiceProxy.getInstance()?.hangUpCall(callId);
+    RingtoneController.getInstance().stopRingtone();
+    CallServiceProxy.getInstance().muteRinger();
     if (callCount <= 1) {
       const callData = CallDataManager.getInstance().callList.find(callData => callData.callId == callId);
       if (callData && callData.callState !== CallStateConst.CALL_STATUS_DISCONNECTED) {

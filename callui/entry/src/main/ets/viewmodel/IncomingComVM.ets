@@ -49,6 +49,7 @@ import { display } from '@kit.ArkUI';
 import { bundleManager } from '@kit.AbilityKit';
 import { isScreenLocked } from '../common/utils/DeviceTypeUtils';
 import { VideoController } from '../controller/VideoController';
+import { RingtoneController } from '../controller/RingtoneController';
 import BannerNotificationManager from '../model/BannerNotificationManager';
 
 const TAG = 'IncomingComVM';
@@ -82,8 +83,11 @@ export default class IncomingComVM extends BaseViewModel<IncomingComVM> {
     // If we are entering into here, the callData should be the primary incoming call!
     this.primaryIncomingCall = callData;
     this.callList = callList;
-    this.btnList =
-      IncomingModel.getInComingBtnListByVideoState(isVideoCall(callData.videoState), callData.isInvalidNumber);
+    this.btnList = IncomingModel.getInComingBtnListByVideoState(
+      isVideoCall(callData.videoState),
+      callData.isInvalidNumber,
+      callData.isVoiceAnswerSupported as boolean
+    );
   }
 
   /**
@@ -391,6 +395,9 @@ export default class IncomingComVM extends BaseViewModel<IncomingComVM> {
       LogUtils.e(TAG, `sendShortMessage failed, err: ${JSON.stringify(err)}`);
     }
     CallServiceProxy.getInstance().rejectCall(this.primaryIncomingCall.callId, false, msg);
+    VideoController.getInstance()?.releasePlay();
+    RingtoneController.getInstance().stopRingtone();
+    CallServiceProxy.getInstance().muteRinger();
     if (this.primaryIncomingCall.callType === CallStateConst.TYPE_SATELLITE) {
       ReportUtil.getInstance().reportSatelliteCallReject(2);
     }
@@ -414,6 +421,8 @@ export default class IncomingComVM extends BaseViewModel<IncomingComVM> {
     CallServiceProxy.getInstance()?.rejectCall(callId);
     let playVideoModel: VideoController = VideoController.getInstance();
     playVideoModel?.releasePlay();
+    RingtoneController.getInstance().stopRingtone();
+    CallServiceProxy.getInstance().muteRinger();
     LogUtils.i(TAG, 'onReject CallServiceProxy.getInstance().rejectCall :');
     if (this.callList.length >= 2) {
       ReportUtil.getInstance().reportMultiCallAction(0);

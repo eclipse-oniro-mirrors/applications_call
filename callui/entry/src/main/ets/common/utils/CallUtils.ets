@@ -40,6 +40,10 @@ import BannerNotificationManager from '../../model/BannerNotificationManager';
 
 const TAG = 'CallUtils';
 const SYS_USER_ID: number = 100;
+/** 自管来电铃的 VoIP 包名，CallUI 不为其播放系统铃，避免双铃声 */
+const VOIP_SELF_MANAGED_RINGTONE_BUNDLES: string[] = [
+  'com.tencent.wechat'
+];
 
 /**
  *  calllog package tool class
@@ -173,12 +177,76 @@ export class CallUtils {
     return callData?.callType === CallStateConst.TYPE_VOIP;
   }
 
-  public isMainProcessMode(attribute: VoipCallAttribute): boolean {
-    return attribute?.extensionId === '';
+  /**
+   * 是否由 CallUI 为该 VoIP 来电播放系统默认来电铃声。
+   * 自管铃应用（见 VOIP_SELF_MANAGED_RINGTONE_BUNDLES）返回 false，保持原有行为，避免双铃声。
+   */
+  public shouldCallUiPlayVoipRingtone(callData: DefaultCallData): boolean {
+    if (!this.isVoipCall(callData)) {
+      return false;
+    }
+    const bundleName: string = callData.voipCallAttribute?.voipBundleName ?? '';
+    if (bundleName !== '' && VOIP_SELF_MANAGED_RINGTONE_BUNDLES.includes(bundleName)) {
+      LogUtils.i(TAG, `shouldCallUiPlayVoipRingtone false, self-managed bundle: ${bundleName}`);
+      return false;
+    }
+    return true;
   }
 
-  public isSubProcessMode(attribute: VoipCallAttribute): boolean {
-    return attribute?.extensionId !== '';
+  /**
+   * 获取播铃使用的卡槽：VoIP 无有效卡槽，固定 SIM0；蜂窝按 accountId。
+   */
+  public getRingtoneAccountId(callData: DefaultCallData): number {
+    if (this.isVoipCall(callData)) {
+      return 0;
+    }
+    return callData.accountId === 1 ? 1 : 0;
+  }
+
+  /**
+   * VoIP 主进程来电是否已带齐拉起三方界面/实况通知所需属性。
+   * 属性缺失时需回退到 CallUI 全屏路径，否则会出现“有通话无界面”。
+   */
+  public hasValidVoipUiAttribute(callData: DefaultCallData): boolean {
+    if (!this.isVoipCall(callData)) {
+      return false;
+    }
+    const attr = callData.voipCallAttribute;
+    if (!attr) {
+      return false;
+    }
+    // 子进程模式走 CallUI voip 页，不依赖三方 bundle/ability
+    if (this.isSubProcessMode(attr)) {
+      return true;
+    }
+    // 主进程必须带齐三方 Ability 信息；extensionId 为 undefined 时不能当成子进程
+    return !!attr.voipBundleName && !!attr.abilityName;
+  }
+
+  /**
+   * VoIP 来电设置 showBannerForIncomingCall=false 时，不展示系统实况/横幅通知。
+   * 仅依据该字段控制，不依赖三方 Ability 属性是否完整；主进程振铃态生效。
+   */
+  public shouldSkipVoipIncomingLiveNotification(callData: DefaultCallData): boolean {
+    if (!this.isVoipCall(callData)) {
+      return false;
+    }
+    const attr = callData.voipCallAttribute;
+    // 主进程（含 extensionId 未下发）且明确关闭横幅/实况
+    if (!attr || !this.isMainProcessMode(attr) || attr.showBannerForIncomingCall !== false) {
+      return false;
+    }
+    return callData.callState === CallStateConst.CALL_STATUS_INCOMING ||
+      callData.callState === CallStateConst.CALL_STATUS_WAITING;
+  }
+
+  public isMainProcessMode(attribute?: VoipCallAttribute): boolean {
+    // extensionId 为空或未下发，均按主进程处理
+    return !attribute?.extensionId;
+  }
+
+  public isSubProcessMode(attribute?: VoipCallAttribute): boolean {
+    return !!attribute?.extensionId;
   }
 
   public isSosWithOutCallUiAbility(callData: DefaultCallData): number {
