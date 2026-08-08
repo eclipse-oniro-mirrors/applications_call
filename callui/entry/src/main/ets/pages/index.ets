@@ -78,6 +78,7 @@ import { uiEffect, displaySync, effectKit } from '@kit.ArkGraphics2D';
 import AudioDeviceManager from '../model/audio/AudioDeviceManager';
 import ScreenAdapterUtils from '../common/utils/ScreenAdapterUtils';
 import { aVPlayerStatePlaying, VideoController } from '../controller/VideoController';
+import { RingtoneController } from '../controller/RingtoneController';
 import { SystemMode } from '../common/utils/SystemMode';
 import { componentUtils, display, window, promptAction } from '@kit.ArkUI';
 import lazy { LevelMode } from '@kit.ArkUI';
@@ -557,6 +558,7 @@ struct Index {
     LogUtils.i(TAG, 'stopVideoPlayByState this.callState' + this.callState)
     if (!isIncomingCall(this.callState)) {
       this.playVideoModel!.stopRinging();
+      RingtoneController.getInstance().stopRingtone();
     }
   }
 

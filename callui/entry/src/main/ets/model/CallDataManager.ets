@@ -29,6 +29,7 @@ import BannerNotificationManager from './BannerNotificationManager';
 import {
   getForegroundCall,
   getForegroundLiveCall,
+  getForegroundCarrierLiveCall,
   isIncomingCall,
   isOutgoingCall,
   isAliveCall,
@@ -324,6 +325,10 @@ export default class CallDataManager {
 
   public getForegroundLiveCall() {
     return getForegroundLiveCall(this.callList);
+  }
+
+  public getForegroundCarrierLiveCall() {
+    return getForegroundCarrierLiveCall(this.callList);
   }
 
   public async clearCall(callData: DefaultCallData) {

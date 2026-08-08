@@ -35,6 +35,7 @@ import { getActiveCallId, setConferenceDisconnecting } from '../common/utils/Cal
 import DefaultCallData from '../common/struct/TypeUtils';
 import CallDataManager from './CallDataManager';
 import ConferenceConst from '../common/constant/ConferenceConst';
+import { RingtoneController } from '../controller/RingtoneController';
 
 const TAG = 'CallServiceProxy';
 const prefixLog = 'callUI app:@ohos.telephony.call:';
@@ -60,9 +61,11 @@ export default class CallServiceProxy {
 
   /**
    * Stops the ringtone.
+   * 同步停止 CallUI 本地 AVPlayer 铃声；VoIP 静音时底层未必下发 EVENT_MUTE_RING。
    */
   public muteRinger() {
     LogUtils.i(TAG, 'muteRinger');
+    RingtoneController.getInstance().stopRingtone();
     try {
       call.muteRinger();
     } catch (err) {

@@ -69,6 +69,7 @@ export default class DefaultCallData {
   public isAntiFraud?: boolean = false;
   public isMapNavigation?: boolean = false;
   public isMarkPanelShown?: boolean = false;
+  public isVoiceAnswerSupported?: boolean = false;
 }
 
 export type CallDataPatch = Patch<DefaultCallData, 'callId'>;

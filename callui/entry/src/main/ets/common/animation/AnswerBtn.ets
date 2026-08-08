@@ -24,6 +24,7 @@ import { VOICE_BROADCAST_SWITCH } from '../../common/utils/Constants';
 import ScreenAdapterUtils from '../utils/ScreenAdapterUtils';
 import { AppFuncBtnStyleData } from '../struct/TypeUtils';
 import image from '@ohos.multimedia.image';
+import config from '@ohos.accessibility.config';
 
 const TAG = 'AnswerBtn';
 const ICON_WIDTH = 68;
@@ -42,7 +43,7 @@ export default struct AnswerBtn {
   @State alphaThree: number = 0.08;
   @State isStopAnimation: boolean = false;
   @State incomingIcon: Resource = $r('sys.symbol.phone_fill');
-  @State answerBackgroundColor: Resource = $r('sys.color.confirm');
+  @State answerBackgroundColor: Resource = $r('app.color.answer_button_color');
   @State animationCount: number = 0;
   @Link isVideoCall: boolean;
   @Link isSatelliteCall: boolean;
@@ -55,8 +56,15 @@ export default struct AnswerBtn {
   @StorageLink('isApplyNewStyle') isApplyNewStyle: boolean = false;
   @StorageLink('funcBtnStyle') funcBtnStyle: AppFuncBtnStyleData = new AppFuncBtnStyleData();
   @StorageProp('isHyacinthMode') isHyacinthMode: boolean = false;
+  @State isAnimationOff: boolean = false;
   private isDisappear: boolean = false;
   private isRejected: boolean = false; // 是否已经点击拒接按钮
+  private animationOffObserver = (isOff: boolean) => {
+    this.isAnimationOff = isOff;
+    if (isOff) {
+      this.isStopAnimation = true;
+    }
+  };
 
   showIncomingA(): void {
     animateTo({
@@ -198,6 +206,9 @@ export default struct AnswerBtn {
   }
 
   startIncomingAnimation(): void {
+    if (this.isAnimationOff) {
+      return;
+    }
     this.showIncomingA();
     this.circleTwoA();
     this.circleThreeScaleA();
@@ -238,6 +249,14 @@ export default struct AnswerBtn {
 
   aboutToAppear(): void {
     LogUtils.i(TAG, `aboutToAppear voiceBroadcastSwitch:${this.voiceBroadcastSwitch}`);
+    config.animationOff.get().then((isOff: boolean) => {
+      this.isAnimationOff = isOff;
+      if (isOff) {
+        this.isStopAnimation = true;
+      }
+    }).catch((err: Error) => {
+      LogUtils.e(TAG, `get animationOff failed: ${err?.message}`);
+    });
     this.onBroadcastSwitchChange();
   }
 
@@ -257,7 +276,7 @@ export default struct AnswerBtn {
   }
 
   onPageStateChange() {
-    if (!this.isOnPageShow || this.isScreenOff) {
+    if (!this.isOnPageShow || this.isScreenOff || this.isAnimationOff) {
       this.isStopAnimation = true;
       return;
     }
@@ -330,7 +349,7 @@ export default struct AnswerBtn {
 
       Column() {
         Stack() {
-          if (!this.isStopAnimation &&
+          if (!this.isStopAnimation && !this.isAnimationOff &&
             getFirstCallByState(this.mIncomingVM.callList, CallStateConst.CALL_STATUS_INCOMING)) {
             this.animationAnswerBtn()
           } else {
@@ -358,7 +377,8 @@ export default struct AnswerBtn {
       }
       .layoutWeight(1)
       .onAppear(() => {
-        if (getFirstCallByState(this.mIncomingVM.callList, CallStateConst.CALL_STATUS_INCOMING)) {
+        if (!this.isAnimationOff &&
+          getFirstCallByState(this.mIncomingVM.callList, CallStateConst.CALL_STATUS_INCOMING)) {
           this.startIncomingAnimation();
         }
       })

@@ -118,13 +118,29 @@ export const remindList = [
   twoHour
 ];
 
-export function getInComingBtnListByVideoState(isVideo: boolean, isInvalidNumber = false): btn[] {
+export function getInComingBtnListByVideoState(
+  isVideo: boolean,
+  isInvalidNumber = false,
+  isVoiceAnswerSupported: boolean
+): btn[] {
   if (isInvalidNumber) {
     if (isVideo) {
-      return [voiceCallAnswerBtn];
+      // 无效号码 + 视频通话：只有支持语音接听才展示按钮
+      return isVoiceAnswerSupported ? [voiceCallAnswerBtn] : [];
     } else {
       return [];
     }
   }
-  return isVideo ? inComingVideoBtnList : inComingBtnList;
+  if (!isVideo) {
+    // 语音通话场景，返回原有按钮
+    return inComingBtnList;
+  }
+  // 视频通话场景，动态构建按钮数组
+  let tempList: btn[] = [msgBtn];
+  // 只有isVoiceAnswerSupported为true才加入语音接听按钮；false不加入
+  if (isVoiceAnswerSupported) {
+    tempList.push(voiceCallAnswerBtn);
+  }
+  tempList.push(remindBtn);
+  return tempList;
 }

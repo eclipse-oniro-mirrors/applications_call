@@ -131,6 +131,7 @@ export class VibrationUtils {
     if (this.isIncomingVibrating) {
       return;
     }
+    this.isIncomingVibrating = true;
     try {
       vibrator.startVibration({
         type: 'time',
@@ -140,12 +141,14 @@ export class VibrationUtils {
         usage: 'alarm'
       }, (error: BusinessError) => {
         if (error) {
+          this.isIncomingVibrating = false;
           LogUtils.e(TAG,` Failed to start vibration. Code: ${error.code}, message: ${error.message}`);
           return;
         }
         LogUtils.i(TAG,` Succeed in starting vibration`);
       });
     } catch (err) {
+      this.isIncomingVibrating = false;
       LogUtils.e(TAG,`An unexpected error occurred. Code: ${err?.code}, message: ${err?.message}`);
     }
   }

@@ -56,7 +56,6 @@ export default class TelephonyApi {
             hiTraceChain.setId(newTraceId)
           }
         }
-        //callBack(data);
         //TODO 临时方案，强制显示“HD“图标
         /*
          * 来去电页面的“HD”高清通话图标是否显示由callType的值决定，为TYPE_IMS时显示；
@@ -64,10 +63,13 @@ export default class TelephonyApi {
          * callType的值一直为TYPE_CS。也就是现在的通话模式是CS模式；
          * 而且通话模式由系统自动选择最优路线，应用层没办法手动修改为IMS模式。
          * 【处理方案】目前使用临时处理方案，修改callType属性强制显示通话界面的“HD"图标。
+         * 注意：不可覆盖 TYPE_VOIP / TYPE_SATELLITE，否则 VoIP 的 showBannerForIncomingCall 等逻辑失效。
          * */
-        let newData = data
-        newData.callType = 1 //将callType赋值为TYPE_IMS（临时方案）
-        callBack(newData);//执行回调（临时方案）
+        let newData = data;
+        if (data.callType === CallStateConst.TYPE_CS) {
+          newData.callType = CallStateConst.TYPE_IMS;
+        }
+        callBack(newData);
 
         if (data.callState === CallStateConst.CALL_STATUS_ACTIVE && ReportUtil.getInstance().callAnswerTime > 0) {
           ReportUtil.getInstance().isCallAnswerResponseTimeout(data.callType);

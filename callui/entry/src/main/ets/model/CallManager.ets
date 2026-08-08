@@ -29,6 +29,7 @@ import { isScreenLocked } from '../common/utils/DeviceTypeUtils';
 import { display } from '@kit.ArkUI';
 import deviceInfo from '@ohos.deviceInfo';
 import { abilityManager } from '@kit.AbilityKit';
+import CallUtils from '../common/utils/CallUtils';
 
 const TAG = 'CallManager';
 
@@ -66,7 +67,19 @@ export default class CallManager {
     LogUtils.i(TAG, 'update callData callId:' + callData.callId);
     if (callData.callType === CallStateConst.TYPE_VOIP) {
       await this.setHeadsUpEnabled(callData);
-      BannerNotificationManager.getInstance().sendBannerNotification(callData);
+      if (CallUtils.shouldSkipVoipIncomingLiveNotification(callData)) {
+        // 仅关闭实况/横幅；通话数据仍写入 CallDataManager，由 CallUI 拉起界面
+        LogUtils.i(TAG, 'skip voip live notification, showBannerForIncomingCall is false');
+        BannerNotificationManager.getInstance().cancelVoipNotificationByCallId(callData.callId);
+        this.mCallDataManager.update(callData);
+      } else if (CallUtils.hasValidVoipUiAttribute(callData)) {
+        this.mCallDataManager.update(callData);
+        BannerNotificationManager.getInstance().sendBannerNotification(callData);
+      } else {
+        // voipCallAttribute 未下发完整时，回退到 CallDataManager，由 CallUI 全屏承接界面
+        LogUtils.w(TAG, 'voip attribute incomplete, fallback to CallDataManager');
+        this.mCallDataManager.update(callData);
+      }
       if (callData.callState === CallStateConst.CALL_STATUS_DISCONNECTED && currentCallId === callData.callId) {
         GlobalContextHelper.getContext().getValue<common.UIAbilityContext>(Constants.VOIP_ABILITY_CONTEXT)?.
         terminateSelf().then(() => {
@@ -105,17 +118,16 @@ export default class CallManager {
        BannerNotificationManager.enableBannerNotification(false);
        return;
     }
-    let subVoipCallCheck = callData.voipCallAttribute?.extensionId !== '' &&
+    let subVoipCallCheck = CallUtils.isSubProcessMode(callData.voipCallAttribute) &&
       callData.callState === CallStateConst.CALL_STATUS_ACTIVE;
     if (subVoipCallCheck) {
       BannerNotificationManager.enableBannerNotification(false);
       return;
     }
-    let notShowBannerForIncomingCall = callData.voipCallAttribute?.extensionId === '' &&
-      callData.voipCallAttribute?.showBannerForIncomingCall !== undefined &&
-      !callData.voipCallAttribute?.showBannerForIncomingCall;
+    let notShowBannerForIncomingCall = CallUtils.isMainProcessMode(callData.voipCallAttribute) &&
+      callData.voipCallAttribute?.showBannerForIncomingCall === false;
     if (notShowBannerForIncomingCall) {
-      LogUtils.i(TAG, 'The current application is in the foreground.');
+      LogUtils.i(TAG, 'skip heads-up, showBannerForIncomingCall is false');
       BannerNotificationManager.enableBannerNotification(false);
       return;
     }
