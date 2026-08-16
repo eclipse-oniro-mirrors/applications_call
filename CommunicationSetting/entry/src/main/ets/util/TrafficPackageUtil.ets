@@ -189,12 +189,11 @@ export class TrafficPackageUtil {
     let totalFlow = 0;
     let currentDate = new Date();
     let todayTimestamp = currentDate.setHours(0, 0, 0, 0);
-    const msPerDay = 86400000;
-    let daysCount = Math.floor((endDate.getTime() - startDate.getTime()) / msPerDay);
-    for (let i = 0; i < daysCount; i++) {
-      let start = new Date(startDate.getTime() + i * msPerDay);
-      let end = new Date(start.getTime() + msPerDay);
-      let startTime = start.getTime();
+    for (let date = startDate; date < endDate; date.setDate(date.getDate() + 1)) {
+      let start = new Date(date);
+      let end = new Date(date);
+      end.setDate(date.getDate() + 1);
+      let startTime = startDate.getTime();
       let cacheData = TrafficDataCacheUtil.getInstance().queryCachedUsageInfoData(simId, startTime);
       let result = {
         startDate: 0,
@@ -241,15 +240,19 @@ export class TrafficPackageUtil {
       totalCallBack(newResult);
     }
 
-    const msPerDay = 86400000;
-    const daysCount = Math.floor((endDate.getTime() - startDate.getTime()) / msPerDay);
-    for (let i = 0; i < daysCount; i++) {
-      let start = new Date(startDate.getTime() + i * msPerDay);
-      let end = new Date(start.getTime() + msPerDay);
+    const msPerDay = 1000 * 60 * 60 * 24;
+    const date1Ms = startDate.getTime();
+    const date2Ms = endDate.getTime();
+    // 计算时间戳之差，并转换为天数
+    const days = Math.abs(date2Ms - date1Ms) / msPerDay;
+    for (let date = startDate; date < endDate; date.setDate(date.getDate() + 1)) {
+      let start = new Date(date);
+      let end = new Date(date);
+      end.setDate(date.getDate() + 1);
       AppInfoListPresenter.getInstance().getAllAppTrafficsOfCellular(simId, start, end).then((result) => {
         totalFlow = totalFlow + result.flow;
         packageUsages.push(result)
-        if (packageUsages.length === daysCount) {
+        if (packageUsages.length === days) {
           let newResult: AllPackageUsageInterface = {
             usage: packageUsages,
             totalFlow: totalFlow,
@@ -271,10 +274,8 @@ export class TrafficPackageUtil {
     let yLabels: string[] = [];
     let currentDate = new Date();
     let hasSameDay: boolean = false;
-    const msPerDay = 86400000;
-    let daysCount = Math.floor((endDate.getTime() - startDate.getTime()) / msPerDay);
-    for (let i = 0; i < daysCount; i++) {
-      let start = new Date(startDate.getTime() + i * msPerDay);
+    for (let date = startDate; date < endDate; date.setDate(date.getDate() + 1)) {
+      let start = new Date(date);
       if (hasSameDay === false && TrafficPackageUtil.isSameDay(currentDate, start)) {
         hasSameDay = true;
         yLabels.push(StringUtil.convertResourceToString($r('app.string.today'),
