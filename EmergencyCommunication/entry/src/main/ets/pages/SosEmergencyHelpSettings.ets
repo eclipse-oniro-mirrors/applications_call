@@ -183,7 +183,7 @@ export struct SosEmergencyHelpSettings {
         }
       },
     }),
-    showInSubWindow: true,
+    showInSubWindow: false,
   });
 
   private foldListener() {
