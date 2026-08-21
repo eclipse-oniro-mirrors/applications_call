@@ -18,7 +18,7 @@ import { common } from '@kit.AbilityKit';
 import LogUtils from '../common/utils/LogUtils';
 import { noop } from '../common/utils/Misc';
 import DefaultCallData, { CallDataPatch, callDataPatcher } from '../common/struct/TypeUtils';
-import numberLookup from '@ohos.contact.numberLookup';
+// import numberLookup from '@ohos.contact.numberLookup';
 import * as Constants from '../common/utils/Constants';
 import { dataShare, dataSharePredicates } from '@kit.ArkData';
 import { GlobalContextHelper } from '../common/utils/GlobalContextHelper';
@@ -142,7 +142,7 @@ export class NumberMarkService {
 
   async setNumberMarkInfo(params: MarkNumberParams): Promise<void> {
     const context = this.getUIAbilityContext();
-    await numberLookup.setNumberMarkInfo(context, params.accountNumber, params.markType, params.customMark);
+    // await numberLookup.setNumberMarkInfo(context, params.accountNumber, params.markType, params.customMark);
   }
 
   completeSetNumberMarkSteps(reason: string) {
